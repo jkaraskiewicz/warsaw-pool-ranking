@@ -1,0 +1,50 @@
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+env/
+venv/
+*.egg-info/
+dist/
+build/
+*.egg
+
+# Node
+node_modules/
+npm-debug.log
+yarn-error.log
+.angular/
+frontend/dist/
+frontend/coverage/
+
+# Environment
+.env
+.env.local
+*.env.prod
+
+# IDEs
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+.DS_Store
+
+# Database
+*.sql.backup
+backup-*.sql
+
+# Docker
+*.log
+
+# Coverage
+.coverage
+htmlcov/
+.pytest_cache/
+coverage/
+
+# OS
+Thumbs.db
+.DS_Store

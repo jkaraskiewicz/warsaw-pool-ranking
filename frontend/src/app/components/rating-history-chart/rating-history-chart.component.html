@@ -1,0 +1,12 @@
+<div class="chart-container">
+  <canvas
+    baseChart
+    [data]="lineChartData"
+    [options]="lineChartOptions"
+    type="line">
+  </canvas>
+</div>
+
+<div *ngIf="history.length === 0" class="no-data">
+  <p>No rating history available</p>
+</div>

@@ -1,0 +1,65 @@
+version: '3.8'
+
+services:
+  # PostgreSQL Database
+  db:
+    image: postgres:15-alpine
+    container_name: warsaw-pool-db
+    environment:
+      POSTGRES_DB: warsaw_pool_rankings
+      POSTGRES_USER: pool_app
+      POSTGRES_PASSWORD: ${POSTGRES_PASSWORD:-poolpass123}
+    volumes:
+      - postgres_data:/var/lib/postgresql/data
+      - ./database/schema.sql:/docker-entrypoint-initdb.d/schema.sql
+    ports:
+      - "5432:5432"
+    healthcheck:
+      test: ["CMD-SHELL", "pg_isready -U pool_app -d warsaw_pool_rankings"]
+      interval: 10s
+      timeout: 5s
+      retries: 5
+    networks:
+      - warsaw-pool-network
+
+  # Backend (FastAPI)
+  backend:
+    build:
+      context: ./backend
+      dockerfile: Dockerfile
+    container_name: warsaw-pool-backend
+    environment:
+      DATABASE_URL: postgresql://pool_app:${POSTGRES_PASSWORD:-poolpass123}@db:5432/warsaw_pool_rankings
+      PYTHONUNBUFFERED: 1
+    volumes:
+      - ./backend:/app
+      - ./database:/database
+    ports:
+      - "8000:8000"
+    depends_on:
+      db:
+        condition: service_healthy
+    networks:
+      - warsaw-pool-network
+    command: uvicorn app.main:app --host 0.0.0.0 --port 8000 --reload
+
+  # Frontend (Angular + Nginx)
+  frontend:
+    build:
+      context: ./frontend
+      dockerfile: Dockerfile
+    container_name: warsaw-pool-frontend
+    ports:
+      - "80:80"
+    depends_on:
+      - backend
+    networks:
+      - warsaw-pool-network
+
+volumes:
+  postgres_data:
+    driver: local
+
+networks:
+  warsaw-pool-network:
+    driver: bridge
