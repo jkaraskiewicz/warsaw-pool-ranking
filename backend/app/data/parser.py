@@ -92,13 +92,20 @@ class TournamentParser:
 
         Returns:
             Tournament info dictionary with keys:
-                - cuescore_id, name, start_date, end_date
+                - cuescore_id, name, start_date, end_date, venue_cuescore_id
         """
+        # Extract venue ID from venues array (if present)
+        venue_cuescore_id = None
+        venues = data.get('venues', [])
+        if venues and len(venues) > 0:
+            venue_cuescore_id = str(venues[0].get('venueId')) if venues[0].get('venueId') else None
+
         return {
             'cuescore_id': data.get('id'),
             'name': data.get('name'),
             'start_date': self._parse_date(data.get('startDate')),
             'end_date': self._parse_date(data.get('endDate')),
+            'venue_cuescore_id': venue_cuescore_id,
         }
 
     def _parse_participants(self, data: Dict) -> List[Dict]:

@@ -100,13 +100,29 @@ class WeeklySimulator:
             logger.error("No week boundaries generated - all games may have NULL timestamps")
             return pd.DataFrame()
 
-        logger.info(f"Simulating {len(week_endings)} weeks from {week_endings[0]} to {week_endings[-1]}")
+        # For large datasets, sample weeks to reduce computation
+        # Calculate snapshots every N weeks instead of every week
+        if len(games_df) > 100000:
+            snapshot_interval = 12  # Calculate every 12 weeks (~monthly) for very large datasets
+            logger.info(
+                f"Large dataset detected ({len(games_df)} games) - "
+                f"calculating snapshots every {snapshot_interval} weeks (~monthly)"
+            )
+        else:
+            snapshot_interval = 1  # Calculate every week for smaller datasets
+
+        logger.info(
+            f"Simulating {len(week_endings)} weeks from {week_endings[0]} to {week_endings[-1]} "
+            f"(snapshot interval: every {snapshot_interval} week(s))"
+        )
 
         # Collect all snapshots
         all_snapshots = []
 
         for idx, week_ending in enumerate(week_endings, 1):
-            logger.info(f"Processing week {idx}/{len(week_endings)}: {week_ending}")
+            # Skip weeks based on snapshot interval (but always include last week)
+            if idx % snapshot_interval != 0 and idx != len(week_endings):
+                continue
 
             # Get games up to this week
             games_up_to_week = games_df[games_df['played_at'] <= pd.Timestamp(week_ending)]
@@ -115,6 +131,12 @@ class WeeklySimulator:
                 logger.debug(f"No games for week {week_ending}, skipping")
                 continue
 
+            # Log progress with game counts
+            logger.info(
+                f"Processing snapshot week {idx}/{len(week_endings)} ({idx/len(week_endings)*100:.1f}%): "
+                f"{week_ending} - {len(games_up_to_week)} cumulative games"
+            )
+
             # Calculate ratings for this week
             week_snapshots = self._calculate_week_ratings(
                 games_up_to_week,
@@ -122,6 +144,11 @@ class WeeklySimulator:
             )
 
             all_snapshots.extend(week_snapshots)
+
+            # Log milestone progress
+            processed_snapshots = (idx // snapshot_interval) + (1 if idx == len(week_endings) and idx % snapshot_interval != 0 else 0)
+            if processed_snapshots % 5 == 0:
+                logger.info(f"Milestone: Completed {processed_snapshots} snapshot calculations, {len(all_snapshots)} total snapshots generated")
 
         # Convert to DataFrame
         snapshots_df = pd.DataFrame(all_snapshots)

@@ -79,7 +79,9 @@ def run_initial_data_collection():
             for venue in WARSAW_VENUES
         ]
 
-        orchestrator = WeeklyUpdateOrchestrator(db=db, dry_run=False)
+        # Use cache directory for faster re-runs during development
+        cache_dir = Path("/app/cache")
+        orchestrator = WeeklyUpdateOrchestrator(db=db, dry_run=False, cache_dir=cache_dir)
         orchestrator.run(venues_for_orchestrator)
 
         logger.info("✓ Initial data collection completed")

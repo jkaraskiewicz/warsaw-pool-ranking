@@ -23,10 +23,10 @@ from app.database import Base
 class ConfidenceLevel(str, PyEnum):
     """Player rating confidence levels."""
 
-    UNRANKED = "unranked"
-    PROVISIONAL = "provisional"
-    EMERGING = "emerging"
-    ESTABLISHED = "established"
+    unranked = "unranked"
+    provisional = "provisional"
+    emerging = "emerging"
+    established = "established"
 
 
 class Player(Base):
@@ -149,7 +149,7 @@ class Rating(Base):
     games_played = Column(Integer, nullable=False, default=0)
     total_wins = Column(Integer, nullable=False, default=0)
     total_losses = Column(Integer, nullable=False, default=0)
-    confidence_level = Column(Enum(ConfidenceLevel), nullable=False)
+    confidence_level = Column(Enum(ConfidenceLevel, name='confidence_level_enum', create_constraint=False), nullable=False)
     best_rating = Column(Float)
     best_rating_date = Column(Date)
     calculated_at = Column(DateTime, nullable=False, default=func.now())
@@ -175,7 +175,7 @@ class RatingSnapshot(Base):
     week_ending = Column(Date, nullable=False, index=True)
     rating = Column(Float, nullable=False)
     games_played = Column(Integer, nullable=False)
-    confidence_level = Column(Enum(ConfidenceLevel), nullable=False)
+    confidence_level = Column(Enum(ConfidenceLevel, name='confidence_level_enum', create_constraint=False), nullable=False)
     calculation_version = Column(String(10), nullable=False, default="v1")
     created_at = Column(DateTime, default=func.now())
 

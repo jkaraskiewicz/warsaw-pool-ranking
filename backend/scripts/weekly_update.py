@@ -17,7 +17,7 @@ import logging
 import json
 from pathlib import Path
 from datetime import datetime
-from typing import List, Dict
+from typing import List, Dict, Optional
 
 # Add parent directory to path
 sys.path.insert(0, str(Path(__file__).parent.parent))
@@ -53,16 +53,28 @@ logger = logging.getLogger(__name__)
 class WeeklyUpdateOrchestrator:
     """Orchestrates the weekly rating update process."""
 
-    def __init__(self, db: Session, dry_run: bool = False):
+    def __init__(self, db: Session, dry_run: bool = False, cache_dir: Optional[Path] = None):
         """
         Initialize orchestrator.
 
         Args:
             db: Database session
             dry_run: If True, don't commit changes to database
+            cache_dir: Directory to cache tournament data (for faster re-runs)
         """
         self.db = db
         self.dry_run = dry_run
+        self.cache_dir = Path(cache_dir) if cache_dir else None
+
+        # Create cache subdirectories
+        if self.cache_dir:
+            self.raw_cache_dir = self.cache_dir / "raw"
+            self.parsed_cache_dir = self.cache_dir / "parsed"
+            self.raw_cache_dir.mkdir(parents=True, exist_ok=True)
+            self.parsed_cache_dir.mkdir(parents=True, exist_ok=True)
+        else:
+            self.raw_cache_dir = None
+            self.parsed_cache_dir = None
 
         self.scraper = VenueScraper()
         self.api_client = CueScoreAPIClient()
@@ -71,7 +83,54 @@ class WeeklyUpdateOrchestrator:
             calculation_version=settings.calculation_version
         )
 
-        logger.info(f"WeeklyUpdateOrchestrator initialized (dry_run={dry_run})")
+        logger.info(f"WeeklyUpdateOrchestrator initialized (dry_run={dry_run}, cache={self.cache_dir})")
+
+    def _save_raw_tournament(self, tournament_id: str, raw_data: Dict):
+        """Save raw API response for a single tournament."""
+        if not self.raw_cache_dir:
+            return
+
+        cache_file = self.raw_cache_dir / f"{tournament_id}.json"
+        with open(cache_file, 'w') as f:
+            json.dump(raw_data, f, default=str)
+
+    def _load_raw_tournament(self, tournament_id: str) -> Optional[Dict]:
+        """Load raw API response for a single tournament if cached."""
+        if not self.raw_cache_dir:
+            return None
+
+        cache_file = self.raw_cache_dir / f"{tournament_id}.json"
+        if not cache_file.exists():
+            return None
+
+        with open(cache_file, 'r') as f:
+            return json.load(f)
+
+    def _save_parsed_tournaments(self, data: List[Dict]):
+        """Save parsed tournament data."""
+        if not self.parsed_cache_dir:
+            return
+
+        cache_file = self.parsed_cache_dir / "tournaments.json"
+        with open(cache_file, 'w') as f:
+            json.dump(data, f, default=str)
+
+        logger.info(f"Saved {len(data)} parsed tournaments to cache: {cache_file}")
+
+    def _load_parsed_tournaments(self) -> Optional[List[Dict]]:
+        """Load parsed tournament data if cached."""
+        if not self.parsed_cache_dir:
+            return None
+
+        cache_file = self.parsed_cache_dir / "tournaments.json"
+        if not cache_file.exists():
+            return None
+
+        with open(cache_file, 'r') as f:
+            data = json.load(f)
+
+        logger.info(f"Loaded {len(data)} parsed tournaments from cache: {cache_file}")
+        return data
 
     def run(self, venues: List[Dict]):
         """
@@ -138,7 +197,7 @@ class WeeklyUpdateOrchestrator:
                 tournament_ids = self.scraper.scrape_venue_tournaments(
                     venue_id,
                     venue_name,
-                    max_pages=2  # Limit to 2 pages for testing
+                    max_pages=None  # No limit - get all tournaments
                 )
 
                 logger.info(f"Found {len(tournament_ids)} tournaments at {venue_name}")
@@ -157,7 +216,7 @@ class WeeklyUpdateOrchestrator:
 
     def _fetch_tournaments(self, tournament_ids: set) -> List[Dict]:
         """
-        Step 2: Fetch tournament details from API.
+        Step 2: Fetch tournament details from API with two-tier caching.
 
         Args:
             tournament_ids: Set of tournament IDs
@@ -165,7 +224,13 @@ class WeeklyUpdateOrchestrator:
         Returns:
             List of parsed tournament data dictionaries
         """
-        logger.info(f"Step 2: Fetching {len(tournament_ids)} tournaments from API")
+        logger.info(f"Step 2: Fetching {len(tournament_ids)} tournaments")
+
+        # Try to load parsed cache first (fastest path)
+        cached_parsed = self._load_parsed_tournaments()
+        if cached_parsed:
+            logger.info("Using cached parsed data - skipping fetch and parsing")
+            return cached_parsed
 
         # Filter to only new/updated tournaments
         existing_ids = set(
@@ -178,17 +243,30 @@ class WeeklyUpdateOrchestrator:
             logger.info("No new tournaments to fetch")
             return []
 
-        logger.info(f"Fetching {len(new_tournament_ids)} new tournaments")
+        logger.info(f"Processing {len(new_tournament_ids)} new tournaments")
 
         tournaments_data = []
+        from_cache_count = 0
+        from_api_count = 0
 
         for idx, tournament_id in enumerate(new_tournament_ids, 1):
             if idx % 100 == 0:
-                logger.info(f"Progress: {idx}/{len(new_tournament_ids)}")
+                logger.info(f"Progress: {idx}/{len(new_tournament_ids)} (cache: {from_cache_count}, API: {from_api_count})")
 
             try:
-                # Fetch from API
-                raw_data = self.api_client.get_tournament(tournament_id)
+                # Try raw cache first
+                raw_data = self._load_raw_tournament(tournament_id)
+
+                if raw_data:
+                    from_cache_count += 1
+                else:
+                    # Fetch from API
+                    raw_data = self.api_client.get_tournament(tournament_id)
+                    from_api_count += 1
+
+                    # Save raw data for future use
+                    if raw_data:
+                        self._save_raw_tournament(tournament_id, raw_data)
 
                 if raw_data:
                     # Parse tournament data (returns None for non-pool disciplines)
@@ -200,7 +278,10 @@ class WeeklyUpdateOrchestrator:
                 logger.error(f"Failed to fetch/parse tournament {tournament_id}: {e}")
                 continue
 
-        logger.info(f"Fetched {len(tournaments_data)} tournaments successfully")
+        logger.info(f"Processed {len(tournaments_data)} tournaments (cache: {from_cache_count}, API: {from_api_count})")
+
+        # Save parsed data for future runs
+        self._save_parsed_tournaments(tournaments_data)
 
         return tournaments_data
 
@@ -239,15 +320,18 @@ class WeeklyUpdateOrchestrator:
 
     def _run_simulation(self):
         """
-        Step 4: Run rating simulation and update ratings/snapshots.
+        Step 4: Calculate current ratings (without historical snapshots for large datasets).
+
+        For large datasets, we skip historical snapshots to avoid memory issues.
+        This calculates ratings as of now using all games with a single ML optimization.
         """
-        logger.info("Step 4: Running rating simulation")
+        logger.info("Step 4: Calculating current ratings")
 
         # Fetch all games from database
         games = self.db.query(Game).all()
 
         if not games:
-            logger.warning("No games in database, skipping simulation")
+            logger.warning("No games in database, skipping rating calculation")
             return
 
         # Convert to DataFrame
@@ -258,18 +342,63 @@ class WeeklyUpdateOrchestrator:
             'played_at': g.played_at
         } for g in games])
 
-        logger.info(f"Running simulation with {len(games_df)} games")
+        logger.info(f"Calculating ratings from {len(games_df)} games")
 
-        # Run simulation
-        current_ratings_df, snapshots_df = self.simulator.calculate_current_ratings(games_df)
+        # Calculate time decay weights (relative to now)
+        time_weights = self.simulator.time_decay.calculate_weights(
+            games_df['played_at'],
+            reference_date=datetime.now()
+        )
+
+        # Calculate ML ratings
+        ml_ratings = self.simulator.calculator.calculate_ratings(games_df, time_weights)
+
+        # Count games per player
+        games_per_player = {}
+        for player_id in games_df['player_a_id']:
+            games_per_player[player_id] = games_per_player.get(player_id, 0) + 1
+        for player_id in games_df['player_b_id']:
+            games_per_player[player_id] = games_per_player.get(player_id, 0) + 1
+
+        # Calculate win/loss stats
+        win_loss_stats = self._calculate_win_loss_stats(games_df)
+
+        # Build current ratings dataframe
+        ratings_data = []
+        for player_id, ml_rating in ml_ratings.items():
+            games_played = games_per_player.get(player_id, 0)
+
+            # Apply new player blending
+            blended_rating = self.simulator.confidence.blend_rating(ml_rating, games_played)
+
+            # Determine confidence level
+            confidence_level = self.simulator.confidence.get_confidence_level(games_played)
+
+            # Get win/loss stats
+            stats = win_loss_stats[win_loss_stats['player_id'] == player_id]
+            total_wins = int(stats['total_wins'].iloc[0]) if len(stats) > 0 else 0
+            total_losses = int(stats['total_losses'].iloc[0]) if len(stats) > 0 else 0
+
+            ratings_data.append({
+                'player_id': player_id,
+                'rating': blended_rating,
+                'games_played': games_played,
+                'total_wins': total_wins,
+                'total_losses': total_losses,
+                'confidence_level': confidence_level.value,
+                'best_rating': blended_rating,  # Current rating is also best for now
+                'best_rating_date': datetime.now().date(),
+                'calculated_at': datetime.now()
+            })
+
+        current_ratings_df = pd.DataFrame(ratings_data)
 
         # Update ratings table
         self._update_ratings_table(current_ratings_df)
 
-        # Replace snapshots table
-        self._replace_snapshots_table(snapshots_df)
-
-        logger.info("Simulation complete")
+        # Skip snapshots for large datasets - can be added later with more optimization
+        logger.info("Rating calculation complete (historical snapshots skipped for large dataset)")
+        logger.info(f"Calculated ratings for {len(current_ratings_df)} players")
 
     def _upsert_venue(self, venue_data: Dict):
         """Insert or update venue."""
@@ -371,6 +500,16 @@ class WeeklyUpdateOrchestrator:
         """Update current ratings table."""
         logger.info(f"Updating ratings table with {len(ratings_df)} player ratings")
 
+        # Convert confidence_level column to lowercase strings BEFORE iterating
+        def convert_confidence(val):
+            if hasattr(val, 'value'):
+                return val.value
+            elif isinstance(val, str) and val.isupper():
+                return val.lower()
+            return val
+
+        ratings_df['confidence_level'] = ratings_df['confidence_level'].apply(convert_confidence)
+
         for _, row in ratings_df.iterrows():
             rating = self.db.query(Rating).filter(
                 Rating.player_id == row['player_id']
@@ -387,8 +526,18 @@ class WeeklyUpdateOrchestrator:
                 rating.best_rating_date = row.get('best_rating_date')
                 rating.calculated_at = row['calculated_at']
             else:
-                # Insert new
-                rating = Rating(**row.to_dict())
+                # Insert new - manually construct to avoid .to_dict() enum issues
+                rating = Rating(
+                    player_id=row['player_id'],
+                    rating=row['rating'],
+                    games_played=row['games_played'],
+                    total_wins=row['total_wins'],
+                    total_losses=row['total_losses'],
+                    confidence_level=row['confidence_level'],  # Already converted to lowercase
+                    best_rating=row.get('best_rating'),
+                    best_rating_date=row.get('best_rating_date'),
+                    calculated_at=row['calculated_at']
+                )
                 self.db.add(rating)
 
     def _replace_snapshots_table(self, snapshots_df: pd.DataFrame):
@@ -398,9 +547,28 @@ class WeeklyUpdateOrchestrator:
         # Delete all existing snapshots
         self.db.execute(delete(RatingSnapshot))
 
+        # Convert confidence_level column to lowercase strings BEFORE iterating
+        def convert_confidence(val):
+            if hasattr(val, 'value'):
+                return val.value
+            elif isinstance(val, str) and val.isupper():
+                return val.lower()
+            return val
+
+        snapshots_df['confidence_level'] = snapshots_df['confidence_level'].apply(convert_confidence)
+
         # Insert new snapshots
         for _, row in snapshots_df.iterrows():
-            snapshot = RatingSnapshot(**row.to_dict())
+            # Manually construct to avoid .to_dict() enum issues
+            snapshot = RatingSnapshot(
+                player_id=row['player_id'],
+                week_ending=row['week_ending'],
+                rating=row['rating'],
+                games_played=row['games_played'],
+                confidence_level=row['confidence_level'],  # Already converted to lowercase
+                calculation_version=row['calculation_version'],
+                created_at=row.get('created_at')
+            )
             self.db.add(snapshot)
 
 

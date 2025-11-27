@@ -12,8 +12,8 @@ class ConfidenceLevel(str, Enum):
 
     UNRANKED = "unranked"          # <10 games
     PROVISIONAL = "provisional"     # 10-49 games
-    EMERGING = "emerging"           # 50-99 games
-    ESTABLISHED = "established"     # 100+ games
+    EMERGING = "emerging"           # 50-199 games
+    ESTABLISHED = "established"     # 200+ games (matches FargoRate)
 
 
 class PlayerConfidence:
@@ -27,7 +27,7 @@ class PlayerConfidence:
     def __init__(
         self,
         starter_rating: float = 500.0,
-        established_games: int = 100,
+        established_games: int = 200,
         min_ranked_games: int = 10
     ):
         """
@@ -35,7 +35,7 @@ class PlayerConfidence:
 
         Args:
             starter_rating: Default rating for new players (default 500)
-            established_games: Games needed for fully established rating (default 100)
+            established_games: Games needed for fully established rating (default 200, matches FargoRate)
             min_ranked_games: Minimum games to appear in rankings (default 10)
         """
         self.starter_rating = starter_rating
@@ -60,8 +60,8 @@ class PlayerConfidence:
         Thresholds:
             - Unranked: <10 games
             - Provisional: 10-49 games
-            - Emerging: 50-99 games
-            - Established: 100+ games
+            - Emerging: 50-199 games
+            - Established: 200+ games (matches FargoRate)
         """
         if games_played < self.min_ranked_games:
             return ConfidenceLevel.UNRANKED

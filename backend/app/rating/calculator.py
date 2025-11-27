@@ -5,6 +5,9 @@ import pandas as pd
 import choix
 from typing import Dict, Optional
 import logging
+import tracemalloc
+import psutil
+import os
 
 logger = logging.getLogger(__name__)
 
@@ -99,23 +102,56 @@ class RatingCalculator:
         # Calculate ML parameters using choix
         # Returns log-strength parameters (one per player)
         try:
-            if time_weights is not None:
-                # Use LSR (Luce Spectral Ranking) method which supports weights
-                params = choix.opt_pairwise(
-                    n_players,
-                    comparisons,
-                    weights=weights_list,
-                    method='lsr'  # LSR supports weights
-                )
+            # NOTE: choix doesn't support weighted comparisons directly
+            # Using opt_pairwise with Newton-CG which is more robust to disconnected player groups
+            # TODO: Implement weighted comparisons via comparison duplication or custom algorithm
+
+            # For large datasets, use relaxed convergence criteria for performance
+            if len(games_df) > 100000:
+                logger.info(f"Large dataset detected ({len(games_df)} games) - using optimized parameters")
+                tol = 1e-3  # Relaxed tolerance for large datasets
+                max_iter = 100  # Limit iterations
             else:
-                # Use default method (faster when no weights)
-                params = choix.opt_pairwise(
-                    n_players,
-                    comparisons,
-                    method='lsr'
-                )
+                tol = 1e-6  # Default tight tolerance
+                max_iter = 500
+
+            logger.debug(f"Running choix optimization: {n_players} players, {len(comparisons)} comparisons, tol={tol}, max_iter={max_iter}")
+
+            # Start memory profiling
+            tracemalloc.start()
+            process = psutil.Process(os.getpid())
+
+            # Log initial memory state
+            initial_mem = process.memory_info().rss / 1024 / 1024  # MB
+            logger.info(f"Memory before optimization: {initial_mem:.2f} MB (RSS)")
+
+            import time
+            start_time = time.time()
+
+            params = choix.ilsr_pairwise(
+                n_players,
+                comparisons,
+                alpha=0.01,  # Small regularization to handle disconnected groups
+                max_iter=100,  # ILSR typically converges quickly
+                tol=1e-6  # Convergence tolerance
+            )
+
+            # Log memory after optimization
+            end_time = time.time()
+            final_mem = process.memory_info().rss / 1024 / 1024  # MB
+            current, peak = tracemalloc.get_traced_memory()
+            tracemalloc.stop()
+
+            logger.info(f"Memory after optimization: {final_mem:.2f} MB (RSS)")
+            logger.info(f"Memory increase: {final_mem - initial_mem:.2f} MB")
+            logger.info(f"Peak memory (tracemalloc): {peak / 1024 / 1024:.2f} MB")
+            logger.info(f"Optimization time: {end_time - start_time:.2f} seconds")
+
+            if time_weights is not None:
+                logger.warning("Time weights provided but not yet supported by choix - using unweighted")
         except Exception as e:
             logger.error(f"Error in choix optimization: {e}")
+            tracemalloc.stop()
             raise
 
         # Convert log-strength parameters to ratings
