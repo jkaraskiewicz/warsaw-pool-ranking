@@ -58,3 +58,30 @@ pub struct Venue {
     pub id: i64,
     pub name: String,
 }
+
+// --- API Response Structures ---
+
+/// Raw tournament API response from CueScore
+#[derive(Debug, Deserialize, Serialize)]
+pub struct TournamentResponse {
+    pub id: i64,
+    pub name: String,
+    pub venue_id: i64,
+    pub venue_name: String,
+    pub start_date: String, // ISO 8601 string from API
+    pub end_date: Option<String>,
+    pub matches: Vec<MatchResponse>,
+}
+
+/// Raw match API response from CueScore
+#[derive(Debug, Deserialize, Serialize)]
+pub struct MatchResponse {
+    pub id: i64,
+    pub player_a_id: i64,
+    pub player_a_name: String,
+    pub player_b_id: i64,
+    pub player_b_name: String,
+    pub score_a: i32,
+    pub score_b: i32,
+    pub played_at: String, // ISO 8601 datetime string
+}

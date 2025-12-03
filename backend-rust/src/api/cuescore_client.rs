@@ -1,5 +1,7 @@
-use crate::models::Tournament;
+use crate::cache::Cache;
+use crate::domain::models::{Tournament, TournamentResponse};
 use anyhow::{Context, Result};
+use log::{info, warn};
 use reqwest::Client;
 use serde_json::Value;
 use std::time::Duration;
@@ -74,20 +76,71 @@ impl CueScoreClient {
     }
 
     /// Fetch tournament details including games
-    pub async fn fetch_tournament_details(&self, tournament_id: i64) -> Result<Value> {
+    pub async fn fetch_tournament_details(&self, tournament_id: i64) -> Result<TournamentResponse> {
+        let url = Self::build_tournament_url(tournament_id);
+
+        self.apply_rate_limit().await;
+
+        let response = self.send_request(&url).await?;
+        let data: TournamentResponse = response.json().await?;
+
+        Ok(data)
+    }
+
+    /// Fetch tournament with cache integration
+    pub async fn fetch_and_cache_tournament(
+        &self,
+        tournament_id: i64,
+        cache: &Cache,
+    ) -> Result<TournamentResponse> {
+        // Check cache first
+        if let Some(cached) = self.load_from_cache(tournament_id, cache)? {
+            return Ok(cached);
+        }
+
+        // Fetch from API
+        let tournament = self.fetch_tournament_details(tournament_id).await?;
+
+        // Save to cache
+        self.save_to_cache(tournament_id, &tournament, cache)?;
+
+        Ok(tournament)
+    }
+
+    // --- Helper Methods (Short Functions) ---
+
+    fn build_tournament_url(tournament_id: i64) -> String {
+        format!("{}/tournaments/{}", API_BASE_URL, tournament_id)
+    }
+
+    async fn apply_rate_limit(&self) {
         sleep(self.rate_limit_delay).await;
+    }
 
-        let url = format!("{}/tournaments/{}", API_BASE_URL, tournament_id);
-
-        let response = self
-            .client
-            .get(&url)
+    async fn send_request(&self, url: &str) -> Result<reqwest::Response> {
+        self.client
+            .get(url)
             .send()
             .await
-            .context("Failed to fetch tournament details")?;
+            .context("Failed to send request")
+    }
 
-        let data = response.json().await?;
-        Ok(data)
+    fn load_from_cache(&self, tournament_id: i64, cache: &Cache) -> Result<Option<TournamentResponse>> {
+        let raw = cache.load_raw(&tournament_id.to_string())?;
+
+        match raw {
+            Some(json) => {
+                let tournament = serde_json::from_value(json)?;
+                Ok(Some(tournament))
+            }
+            None => Ok(None),
+        }
+    }
+
+    fn save_to_cache(&self, tournament_id: i64, tournament: &TournamentResponse, cache: &Cache) -> Result<()> {
+        let raw_json = serde_json::to_value(tournament)?;
+        cache.save_raw(&tournament_id.to_string(), &raw_json)?;
+        Ok(())
     }
 
     /// Check if there are more pages in the response
