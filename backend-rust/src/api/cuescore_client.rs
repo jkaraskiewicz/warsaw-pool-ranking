@@ -1,70 +1,60 @@
+use crate::api::parsers;
 use crate::cache::Cache;
 use crate::domain::models::{Tournament, TournamentResponse};
+use crate::http::RateLimitedClient;
+use crate::pagination::{PageIterator, PaginationConfig};
 use anyhow::{Context, Result};
 use log::{info, warn};
-use reqwest::Client;
 use serde_json::Value;
-use std::time::Duration;
-use tokio::time::sleep;
 
 const API_BASE_URL: &str = "https://api.cuescore.com";
-const RATE_LIMIT_DELAY_MS: u64 = 1000; // 1 request per second
+const RATE_LIMIT_MS: u64 = 1000;
+const USER_AGENT: &str = "WarsawPoolRankings/2.0";
+const TIMEOUT_SECS: u64 = 30;
 
 /// CueScore API client
 pub struct CueScoreClient {
-    client: Client,
-    rate_limit_delay: Duration,
+    client: RateLimitedClient,
 }
 
 impl CueScoreClient {
     /// Create a new CueScore API client
-    pub fn new() -> Self {
-        Self {
-            client: Client::new(),
-            rate_limit_delay: Duration::from_millis(RATE_LIMIT_DELAY_MS),
-        }
+    pub fn new() -> Result<Self> {
+        let client = RateLimitedClient::new(USER_AGENT, TIMEOUT_SECS, RATE_LIMIT_MS)?;
+        Ok(Self { client })
     }
 
     /// Fetch all tournaments for a venue
-    pub async fn fetch_venue_tournaments(&self, venue_id: i64) -> Result<Vec<Tournament>> {
+    pub async fn fetch_venue_tournaments(&mut self, venue_id: i64) -> Result<Vec<Tournament>> {
         info!("Fetching tournaments for venue {}", venue_id);
 
+        let config = PaginationConfig::new();
+        let mut pages = PageIterator::new(config);
         let tournaments = Vec::new();
-        let mut page = 1;
 
         loop {
-            // Rate limiting
-            sleep(self.rate_limit_delay).await;
+            if pages.has_reached_max() {
+                break;
+            }
 
-            let url = format!(
-                "{}/venues/{}/tournaments?page={}",
-                API_BASE_URL, venue_id, page
-            );
+            let url = Self::build_venue_tournaments_url(venue_id, pages.current_page());
+            let response = self.client.get(&url).await?;
 
-            let response = self
-                .client
-                .get(&url)
-                .send()
-                .await
-                .context("Failed to fetch tournaments")?;
-
-            if !response.status().is_success() {
-                warn!("Failed to fetch page {}: {}", page, response.status());
+            if !self.is_success(&response) {
+                warn!("Failed to fetch page {}: {}", pages.current_page(), response.status());
                 break;
             }
 
             let data: Value = response.json().await?;
 
             // TODO: Parse tournament data from response
-            // This is scaffolding - you'll need to implement actual parsing
-            // based on CueScore API response structure
+            // This is scaffolding - implement actual parsing based on API structure
 
-            // Check if we have more pages
             if !Self::has_more_pages(&data) {
                 break;
             }
 
-            page += 1;
+            pages.advance();
         }
 
         info!(
@@ -76,20 +66,30 @@ impl CueScoreClient {
     }
 
     /// Fetch tournament details including games
-    pub async fn fetch_tournament_details(&self, tournament_id: i64) -> Result<TournamentResponse> {
+    pub async fn fetch_tournament_details(&mut self, tournament_id: i64) -> Result<TournamentResponse> {
         let url = Self::build_tournament_url(tournament_id);
+        info!("Fetching tournament {} from {}", tournament_id, url);
 
-        self.apply_rate_limit().await;
+        let response = self.client.get(&url).await?;
 
-        let response = self.send_request(&url).await?;
-        let data: TournamentResponse = response.json().await?;
+        if !response.status().is_success() {
+            anyhow::bail!("API returned status: {}", response.status());
+        }
+
+        // First get the raw JSON to debug
+        let text = response.text().await?;
+        info!("Response preview: {}", &text[..text.len().min(500)]);
+
+        // Try to parse it
+        let data: TournamentResponse = serde_json::from_str(&text)
+            .with_context(|| format!("Failed to parse tournament response. Raw: {}", &text[..text.len().min(200)]))?;
 
         Ok(data)
     }
 
     /// Fetch tournament with cache integration
     pub async fn fetch_and_cache_tournament(
-        &self,
+        &mut self,
         tournament_id: i64,
         cache: &Cache,
     ) -> Result<TournamentResponse> {
@@ -110,19 +110,16 @@ impl CueScoreClient {
     // --- Helper Methods (Short Functions) ---
 
     fn build_tournament_url(tournament_id: i64) -> String {
-        format!("{}/tournaments/{}", API_BASE_URL, tournament_id)
+        format!("{}/tournament/?id={}", API_BASE_URL, tournament_id)
     }
 
-    async fn apply_rate_limit(&self) {
-        sleep(self.rate_limit_delay).await;
+    fn build_venue_tournaments_url(venue_id: i64, page: usize) -> String {
+        let base = format!("{}/venues/{}/tournaments", API_BASE_URL, venue_id);
+        crate::pagination::build_paginated_url(&base, page)
     }
 
-    async fn send_request(&self, url: &str) -> Result<reqwest::Response> {
-        self.client
-            .get(url)
-            .send()
-            .await
-            .context("Failed to send request")
+    fn is_success(&self, response: &reqwest::Response) -> bool {
+        response.status().is_success()
     }
 
     fn load_from_cache(&self, tournament_id: i64, cache: &Cache) -> Result<Option<TournamentResponse>> {
@@ -144,15 +141,7 @@ impl CueScoreClient {
     }
 
     /// Check if there are more pages in the response
-    fn has_more_pages(_data: &Value) -> bool {
-        // TODO: Implement based on actual API response structure
-        // Example: _data["pagination"]["has_more"].as_bool().unwrap_or(false)
-        false
-    }
-}
-
-impl Default for CueScoreClient {
-    fn default() -> Self {
-        Self::new()
+    fn has_more_pages(data: &Value) -> bool {
+        parsers::has_more_pages(data)
     }
 }

@@ -1,38 +1,38 @@
 use anyhow::{Context, Result};
 use log::info;
 use regex::Regex;
-use reqwest::Client;
 use scraper::{Html, Selector};
 use std::collections::HashSet;
-use std::time::Duration;
-use tokio::time::sleep;
+
+use crate::http::RateLimitedClient;
+use crate::pagination::{PageIterator, PaginationConfig};
 
 const BASE_URL: &str = "https://cuescore.com";
 const RATE_LIMIT_MS: u64 = 1000;
+const USER_AGENT: &str = "WarsawPoolRankings/2.0";
+const TIMEOUT_SECS: u64 = 30;
 
 /// Web scraper for discovering tournament IDs from CueScore venue pages
 pub struct VenueScraper {
-    client: Client,
-    rate_limit_delay: Duration,
+    client: RateLimitedClient,
     tournament_id_regex: Regex,
 }
 
 impl VenueScraper {
     /// Create a new venue scraper
     pub fn new() -> Result<Self> {
-        let client = Self::build_client()?;
+        let client = RateLimitedClient::new(USER_AGENT, TIMEOUT_SECS, RATE_LIMIT_MS)?;
         let tournament_id_regex = Self::compile_regex()?;
 
         Ok(Self {
             client,
-            rate_limit_delay: Duration::from_millis(RATE_LIMIT_MS),
             tournament_id_regex,
         })
     }
 
     /// Scrape tournament IDs from a venue's tournament pages
     pub async fn scrape_venue_tournaments(
-        &self,
+        &mut self,
         venue_id: i64,
         venue_name: &str,
         max_pages: Option<usize>,
@@ -40,18 +40,17 @@ impl VenueScraper {
         info!("Discovering tournaments from venue: {} (ID: {})", venue_name, venue_id);
 
         let venue_name_encoded = urlencoding::encode(venue_name);
+        let config = Self::build_pagination_config(max_pages);
+        let mut pages = PageIterator::new(config);
         let mut all_ids = HashSet::new();
-        let mut page = 1;
 
         loop {
-            if Self::reached_max_pages(page, max_pages) {
+            if pages.has_reached_max() {
                 break;
             }
 
-            let url = Self::build_url(&venue_name_encoded, venue_id, page);
-            info!("  → Page {}...", page);
-
-            Self::rate_limit(page, self.rate_limit_delay).await;
+            let url = Self::build_url(&venue_name_encoded, venue_id, pages.current_page());
+            info!("  → Page {}...", pages.current_page());
 
             let html = match self.fetch_page(&url).await {
                 Ok(html) => html,
@@ -69,7 +68,7 @@ impl VenueScraper {
                 break;
             }
 
-            page += 1;
+            pages.advance();
         }
 
         info!("  → Found {} tournaments total", all_ids.len());
@@ -78,40 +77,29 @@ impl VenueScraper {
 
     // --- Construction Helpers ---
 
-    fn build_client() -> Result<Client> {
-        Client::builder()
-            .user_agent("WarsawPoolRankings/2.0")
-            .timeout(Duration::from_secs(30))
-            .build()
-            .context("Failed to build HTTP client")
-    }
-
     fn compile_regex() -> Result<Regex> {
         Regex::new(r"/tournament/[^/]+/(\d+)")
             .context("Failed to compile tournament ID regex")
     }
 
+    // --- Pagination Configuration ---
+
+    fn build_pagination_config(max_pages: Option<usize>) -> PaginationConfig {
+        let mut config = PaginationConfig::new();
+        if let Some(max) = max_pages {
+            config = config.with_max_pages(max);
+        }
+        config
+    }
+
     // --- URL Building ---
 
     fn build_url(venue_name: &str, venue_id: i64, page: usize) -> String {
-        if page == 1 {
-            format!("{}/venue/{}/{}/tournaments", BASE_URL, venue_name, venue_id)
-        } else {
-            format!("{}/venue/{}/{}/tournaments?&page={}", BASE_URL, venue_name, venue_id, page)
-        }
+        let base = format!("{}/venue/{}/{}/tournaments", BASE_URL, venue_name, venue_id);
+        crate::pagination::build_paginated_url_with_params(&base, page)
     }
 
     // --- Pagination Logic ---
-
-    fn reached_max_pages(current: usize, max: Option<usize>) -> bool {
-        max.map_or(false, |m| current > m)
-    }
-
-    async fn rate_limit(page: usize, delay: Duration) {
-        if page > 1 {
-            sleep(delay).await;
-        }
-    }
 
     fn has_next_page(html: &Html) -> bool {
         let selector = Selector::parse("a:contains('Next »')").ok();
@@ -123,15 +111,24 @@ impl VenueScraper {
 
     // --- HTTP Fetching ---
 
-    async fn fetch_page(&self, url: &str) -> Result<Html> {
-        let response = self.client.get(url).send().await?;
+    async fn fetch_page(&mut self, url: &str) -> Result<Html> {
+        let response = self.client.get(url).await?;
 
+        self.check_response_status(&response)?;
+
+        let html_text = self.extract_html_text(response).await?;
+        Ok(Html::parse_document(&html_text))
+    }
+
+    fn check_response_status(&self, response: &reqwest::Response) -> Result<()> {
         if !response.status().is_success() {
             anyhow::bail!("HTTP error: {}", response.status());
         }
+        Ok(())
+    }
 
-        let html_text = response.text().await?;
-        Ok(Html::parse_document(&html_text))
+    async fn extract_html_text(&self, response: reqwest::Response) -> Result<String> {
+        response.text().await.context("Failed to extract HTML text")
     }
 
     // --- Tournament ID Extraction ---
@@ -144,8 +141,10 @@ impl VenueScraper {
         let mut seen = HashSet::new();
 
         for element in html.select(&selector) {
-            if let Some(id) = self.parse_tournament_id(element.value().attr("href")) {
+            let href = element.value().attr("href");
+            if let Some(id) = self.parse_tournament_id(href) {
                 if seen.insert(id) {
+                    info!("  Found tournament ID {} from href: {:?}", id, href);
                     ids.push(id);
                 }
             }

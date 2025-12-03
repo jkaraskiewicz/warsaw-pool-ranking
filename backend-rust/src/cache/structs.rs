@@ -125,7 +125,10 @@ impl Cache {
         }
 
         let json = fs::read_to_string(path)?;
-        let data = serde_json::from_str(&json)?;
+        let data = serde_json::from_str(&json)
+            .with_context(|| format!("Failed to parse JSON from {:?}. First 200 chars: {}",
+                path,
+                &json[..json.len().min(200)]))?;
         Ok(Some(data))
     }
 }
