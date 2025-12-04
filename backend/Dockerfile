@@ -3,12 +3,13 @@ FROM rust:latest AS builder
 
 WORKDIR /app
 
-# Copy Cargo.toml and Cargo.lock to leverage Docker cache
-COPY Cargo.toml Cargo.lock ./
+# Copy Cargo files
+COPY Cargo.toml ./
 
 # Build a dummy project to cache dependencies
 RUN mkdir src && echo "fn main() {}" > src/main.rs
 RUN cargo build --release
+RUN rm -rf src
 
 # Copy the actual source code
 COPY src ./src
@@ -21,9 +22,11 @@ FROM debian:bookworm-slim
 
 WORKDIR /app
 
-# Install necessary runtime dependencies (e.g., SQLite)
+# Install necessary runtime dependencies (SQLite, OpenSSL, CA certificates)
 RUN apt-get update && apt-get install -y --no-install-recommends \
     libsqlite3-0 \
+    libssl3 \
+    ca-certificates \
     && rm -rf /var/lib/apt/lists/*
 
 # Copy the built binary from the builder stage

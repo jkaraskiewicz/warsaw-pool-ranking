@@ -27,24 +27,17 @@ services:
       dockerfile: Dockerfile
     container_name: warsaw-pool-backend
     environment:
-      # For Rust, the DATABASE_PATH is relative to the WORKDIR /app
-      DATABASE_PATH: warsaw_pool_ranking.db
-      RUST_LOG: info # Set default log level for Rust backend
+      # SQLite database path
+      DATABASE_PATH: /app/data/warsaw_pool_ranking.db
+      RUST_LOG: info
     volumes:
-      # Mount the entire backend directory into the container
-      - ./backend:/app
-      - ./database:/database
+      # Persist the SQLite database
+      - backend_data:/app/data
     ports:
-      - "8000:8000" # Keep the port, even if currently unused by Rust binary
-    depends_on:
-      db:
-        condition: service_healthy
+      - "8000:8000"
     networks:
       - warsaw-pool-network
-    # Command to run the Rust application
-    # The Dockerfile CMD will be used by default: ./warsaw_pool_ranking process
-    # If you want to ingest, you'd need to override the command or exec into container
-    command: ./warsaw_pool_ranking serve --port 8000
+    command: /app/warsaw_pool_ranking serve --port 8000
 
   # Frontend (Angular + Nginx)
   frontend:
@@ -61,6 +54,8 @@ services:
 
 volumes:
   postgres_data:
+    driver: local
+  backend_data:
     driver: local
 
 networks:
