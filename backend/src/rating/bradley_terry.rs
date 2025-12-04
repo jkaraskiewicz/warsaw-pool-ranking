@@ -180,6 +180,7 @@ fn build_player_ratings(
 
         ratings.push(PlayerRating {
             player_id,
+            rating_type: "temp".to_string(), // Placeholder, to be overwritten by ProcessingService
             rating: rating_value,
             games_played,
             confidence_level: ConfidenceLevel::from_games_played(games_played),

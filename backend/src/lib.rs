@@ -30,7 +30,8 @@ pub fn interpret() -> Command {
 pub fn handle_serve(port: u16) -> Result<()> {
     let runtime = tokio::runtime::Runtime::new()?;
     runtime.block_on(async {
-        let service = ServerService::new(port);
+        let config = AppConfig::new();
+        let service = ServerService::new(port, config);
         service.run().await
     })
 }

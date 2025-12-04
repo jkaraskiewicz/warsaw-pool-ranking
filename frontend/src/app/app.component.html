@@ -1,7 +1,11 @@
 <mat-toolbar color="primary">
-  <span>{{ title }}</span>
+  <span [routerLink]="['/']" style="cursor: pointer;">{{ title }}</span>
+  <span class="spacer"></span>
+  <button mat-icon-button [routerLink]="['/admin']" aria-label="Admin Panel">
+    <mat-icon>admin_panel_settings</mat-icon>
+  </button>
 </mat-toolbar>
 
 <div class="container">
-  <app-player-list></app-player-list>
+  <router-outlet></router-outlet>
 </div>

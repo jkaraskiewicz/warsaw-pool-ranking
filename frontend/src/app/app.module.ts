@@ -14,25 +14,38 @@ import { MatIconModule } from '@angular/material/icon';
 import { MatButtonModule } from '@angular/material/button';
 import { MatDialogModule } from '@angular/material/dialog';
 import { MatProgressSpinnerModule } from '@angular/material/progress-spinner';
+import { MatPaginatorModule } from '@angular/material/paginator';
+import { MatSortModule } from '@angular/material/sort';
+import { MatSnackBarModule } from '@angular/material/snack-bar';
+import { MatButtonToggleModule } from '@angular/material/button-toggle';
 
 import { NgChartsModule } from 'ng2-charts';
+
+import { RouterModule, Routes } from '@angular/router';
 
 import { AppComponent } from './app.component';
 import { PlayerListComponent } from './components/player-list/player-list.component';
 import { PlayerOverlayComponent } from './components/player-overlay/player-overlay.component';
-import { RatingHistoryChartComponent } from './components/rating-history-chart/rating-history-chart.component';
+import { AdminComponent } from './components/admin/admin.component';
+
+const routes: Routes = [
+  { path: '', component: PlayerListComponent },
+  { path: 'admin', component: AdminComponent },
+  { path: '**', redirectTo: '' }
+];
 
 @NgModule({
   declarations: [
     AppComponent,
     PlayerListComponent,
     PlayerOverlayComponent,
-    RatingHistoryChartComponent
+    AdminComponent
   ],
   imports: [
     BrowserModule,
     BrowserAnimationsModule,
     HttpClientModule,
+    RouterModule.forRoot(routes),
     FormsModule,
     ReactiveFormsModule,
     MatToolbarModule,
@@ -45,6 +58,10 @@ import { RatingHistoryChartComponent } from './components/rating-history-chart/r
     MatButtonModule,
     MatDialogModule,
     MatProgressSpinnerModule,
+    MatPaginatorModule,
+    MatSortModule,
+    MatSnackBarModule,
+    MatButtonToggleModule,
     NgChartsModule
   ],
   providers: [],

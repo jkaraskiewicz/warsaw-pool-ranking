@@ -20,22 +20,22 @@
 
         <div class="stat-card">
           <div class="stat-label">Games Played</div>
-          <div class="stat-value">{{ player.games_played }}</div>
+          <div class="stat-value">{{ player.gamesPlayed }}</div>
         </div>
 
         <div class="stat-card">
           <div class="stat-label">Confidence</div>
           <div class="stat-value">
-            <mat-chip [color]="getConfidenceColor(player.confidence_level)" selected>
-              {{ player.confidence_level }}
+            <mat-chip [color]="getConfidenceColor(player.confidenceLevel)" selected>
+              {{ player.confidenceLevel }}
             </mat-chip>
           </div>
         </div>
 
         <div class="stat-card">
           <div class="stat-label">Recent Change</div>
-          <div class="stat-value" [class]="getChangeColor(player.recent_change)">
-            {{ formatChange(player.recent_change) }}
+          <div class="stat-value" [class]="getChangeColor(player.recentChange)">
+            {{ formatChange(player.recentChange) }}
           </div>
         </div>
       </div>
@@ -44,30 +44,27 @@
         <h3>Rating Details</h3>
         <div class="detail-row">
           <span class="detail-label">ML Rating:</span>
-          <span class="detail-value">{{ player.ml_rating.toFixed(1) }}</span>
+          <span class="detail-value">{{ player.mlRating.toFixed(1) }}</span>
         </div>
         <div class="detail-row">
           <span class="detail-label">Starter Weight:</span>
-          <span class="detail-value">{{ (player.starter_weight * 100).toFixed(0) }}%</span>
+          <span class="detail-value">{{ (player.starterWeight * 100).toFixed(0) }}%</span>
         </div>
         <div class="detail-row">
           <span class="detail-label">ML Weight:</span>
-          <span class="detail-value">{{ (player.ml_weight * 100).toFixed(0) }}%</span>
+          <span class="detail-value">{{ (player.mlWeight * 100).toFixed(0) }}%</span>
         </div>
         <div class="detail-row">
           <span class="detail-label">Effective Games:</span>
-          <span class="detail-value">{{ player.effective_games.toFixed(1) }}</span>
+          <span class="detail-value">{{ player.effectiveGames.toFixed(1) }}</span>
         </div>
         <div class="detail-row">
           <span class="detail-label">Last Played:</span>
-          <span class="detail-value">{{ formatDate(player.last_played) }}</span>
+          <span class="detail-value">{{ formatDate(player.lastPlayed) }}</span>
         </div>
       </div>
 
-      <div class="chart-section">
-        <h3>Rating History</h3>
-        <app-rating-history-chart [history]="history"></app-rating-history-chart>
-      </div>
+
 
       <div class="actions-section">
         <a [href]="getCueScoreUrl()" target="_blank" mat-raised-button color="primary">

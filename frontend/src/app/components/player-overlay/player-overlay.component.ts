@@ -1,7 +1,7 @@
 import { Component, OnInit, Inject } from '@angular/core';
 import { MAT_DIALOG_DATA, MatDialogRef } from '@angular/material/dialog';
 import { PlayerService } from '../../services/player.service';
-import { PlayerDetail, RatingSnapshot } from '../../models/player.model';
+import { PlayerDetail } from '../../models/player.model';
 
 @Component({
   selector: 'app-player-overlay',
@@ -10,13 +10,12 @@ import { PlayerDetail, RatingSnapshot } from '../../models/player.model';
 })
 export class PlayerOverlayComponent implements OnInit {
   player: PlayerDetail | null = null;
-  history: RatingSnapshot[] = [];
   loading: boolean = true;
 
   constructor(
     private playerService: PlayerService,
     public dialogRef: MatDialogRef<PlayerOverlayComponent>,
-    @Inject(MAT_DIALOG_DATA) public data: { playerId: number }
+    @Inject(MAT_DIALOG_DATA) public data: { playerId: number, ratingType: string }
   ) {}
 
   ngOnInit(): void {
@@ -26,10 +25,10 @@ export class PlayerOverlayComponent implements OnInit {
   loadPlayerData(): void {
     this.loading = true;
 
-    this.playerService.getPlayerDetail(this.data.playerId).subscribe({
+    this.playerService.getPlayerDetail(this.data.playerId, this.data.ratingType).subscribe({
       next: (player) => {
         this.player = player;
-        this.loadHistory();
+        this.loading = false;
       },
       error: (err) => {
         console.error('Error loading player:', err);
@@ -38,22 +37,9 @@ export class PlayerOverlayComponent implements OnInit {
     });
   }
 
-  loadHistory(): void {
-    this.playerService.getPlayerHistory(this.data.playerId).subscribe({
-      next: (history) => {
-        this.history = history;
-        this.loading = false;
-      },
-      error: (err) => {
-        console.error('Error loading history:', err);
-        this.loading = false;
-      }
-    });
-  }
-
   getCueScoreUrl(): string {
     if (!this.player) return '#';
-    return `https://cuescore.com/player/${this.player.cuescore_id}`;
+    return `https://cuescore.com/player/${this.player.cuescoreId}`;
   }
 
   getConfidenceColor(level: string): string {

@@ -1,3 +1,10 @@
+#[derive(Debug, Clone)]
+pub struct RatingPeriod {
+    pub name: String,
+    pub years: Option<u32>, // None implies "All Time"
+}
+
+#[derive(Debug, Clone)]
 pub struct RatingSettings {
     pub starter_rating: f64,
     pub virtual_games_weight: f64,
@@ -5,6 +12,7 @@ pub struct RatingSettings {
     pub established_games: i32,
     pub convergence_tolerance: f64,
     pub max_iterations: usize,
+    pub periods: Vec<RatingPeriod>,
 }
 
 impl Default for RatingSettings {
@@ -12,14 +20,23 @@ impl Default for RatingSettings {
         Self {
             starter_rating: 500.0,
             virtual_games_weight: 5.0,
-            min_ranked_games: 10,
+            min_ranked_games: 50,
             established_games: 200,
             convergence_tolerance: 1e-6,
             max_iterations: 100,
+            periods: vec![
+                RatingPeriod { name: "all".to_string(), years: None },
+                RatingPeriod { name: "1y".to_string(), years: Some(1) },
+                RatingPeriod { name: "2y".to_string(), years: Some(2) },
+                RatingPeriod { name: "3y".to_string(), years: Some(3) },
+                RatingPeriod { name: "4y".to_string(), years: Some(4) },
+                RatingPeriod { name: "5y".to_string(), years: Some(5) },
+            ],
         }
     }
 }
 
+#[derive(Debug, Clone)]
 pub struct ScraperSettings {
     pub rate_limit_ms: u64,
     pub user_agent: &'static str,
@@ -40,6 +57,7 @@ impl Default for ScraperSettings {
     }
 }
 
+#[derive(Debug, Clone)]
 pub struct AppConfig {
     pub rating: RatingSettings,
     pub scraper: ScraperSettings,

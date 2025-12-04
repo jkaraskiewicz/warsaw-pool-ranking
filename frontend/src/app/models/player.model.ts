@@ -1,32 +1,34 @@
 export interface PlayerListItem {
   rank: number;
-  player_id: number;
-  cuescore_id: string;
+  playerId: number;
+  cuescoreId: string;
   name: string;
+  ratingType: string;
   rating: number;
-  games_played: number;
-  confidence_level: 'unranked' | 'provisional' | 'emerging' | 'established';
-  recent_change: number | null;
+  gamesPlayed: number;
+  confidenceLevel: 'unranked' | 'provisional' | 'emerging' | 'established';
+  recentChange: number | null;
 }
 
 export interface PlayerDetail {
-  player_id: number;
-  cuescore_id: string;
+  playerId: number;
+  cuescoreId: string;
   name: string;
+  ratingType: string;
   rating: number;
-  games_played: number;
-  confidence_level: 'unranked' | 'provisional' | 'emerging' | 'established';
-  ml_rating: number;
-  starter_weight: number;
-  ml_weight: number;
-  effective_games: number;
-  last_played: string | null;
-  recent_change: number | null;
+  gamesPlayed: number;
+  confidenceLevel: 'unranked' | 'provisional' | 'emerging' | 'established';
+  mlRating: number;
+  starterWeight: number;
+  mlWeight: number;
+  effectiveGames: number;
+  lastPlayed: string | null;
+  recentChange: number | null;
 }
 
-export interface RatingSnapshot {
-  week_ending: string;
-  rating: number;
-  games_played: number;
-  confidence_level: 'unranked' | 'provisional' | 'emerging' | 'established';
+export interface PaginatedResponse<T> {
+  items: T[];
+  total: number;
+  page: number;
+  pageSize: number;
 }

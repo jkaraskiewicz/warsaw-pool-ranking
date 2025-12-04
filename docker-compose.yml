@@ -9,7 +9,7 @@ services:
       POSTGRES_PASSWORD: ${POSTGRES_PASSWORD:-poolpass123}
     volumes:
       - postgres_data:/var/lib/postgresql/data
-      - ./database/schema.sql:/docker-entrypoint-initdb.d/schema.sql
+      - ./backend/src/database/schema.sql:/docker-entrypoint-initdb.d/schema.sql
     ports:
       - "5432:5432"
     healthcheck:
@@ -44,7 +44,7 @@ services:
     # Command to run the Rust application
     # The Dockerfile CMD will be used by default: ./warsaw_pool_ranking process
     # If you want to ingest, you'd need to override the command or exec into container
-    command: ./warsaw_pool_ranking process
+    command: ./warsaw_pool_ranking serve --port 8000
 
   # Frontend (Angular + Nginx)
   frontend:

@@ -1,6 +1,7 @@
 use anyhow::Result;
 use log::{info, error};
 use std::collections::HashMap;
+use chrono::{Utc, Duration, NaiveDateTime};
 
 use crate::cache::Cache;
 use crate::config::settings::AppConfig;
@@ -22,12 +23,31 @@ impl ProcessingService {
     }
 
     pub fn run(&self) -> Result<()> {
-        info!("=== Starting Data Processing ===\n");
-
         let db_path = std::env::var("DATABASE_PATH")
             .unwrap_or_else(|_| "warsaw_pool_ranking.db".to_string());
+        let temp_db_path = format!("{}.tmp", db_path);
 
-        let pool = database::create_pool(&db_path)?;
+        info!("=== Starting Data Processing (Atomic) ===\n");
+        info!("Target DB: {}, Temp DB: {}", db_path, temp_db_path);
+
+        // Clean up previous temp file if exists
+        if std::path::Path::new(&temp_db_path).exists() {
+            std::fs::remove_file(&temp_db_path)?;
+        }
+
+        // Process to temp DB
+        self.process_to_db(&temp_db_path)?;
+
+        // Atomic swap
+        std::fs::rename(&temp_db_path, &db_path)?;
+        info!("Successfully swapped database to {}", db_path);
+        
+        info!("=== Processing Complete ===");
+        Ok(())
+    }
+
+    fn process_to_db(&self, db_path: &str) -> Result<()> {
+        let pool = database::create_pool(db_path)?;
         let mut conn = database::get_connection(&pool)?;
 
         // Step 1: Reset database (PoC - no migrations)
@@ -38,19 +58,33 @@ impl ProcessingService {
         let tournaments = self.load_tournaments_from_cache()?;
         info!("  → Loaded {} tournaments from cache\n", tournaments.len());
 
-        // Step 3: Insert tournaments and expand to games
-        let expanded_games = self.process_tournaments(&mut conn, &tournaments)?;
-        info!("  → Expanded to {} individual games\n", expanded_games.len());
+        // Step 3: Insert tournaments and expand to games (all games, before filtering for periods)
+        let all_expanded_games = self.process_tournaments(&mut conn, &tournaments)?;
+        info!("  → Expanded to {} individual games (total)", all_expanded_games.len());
 
-        // Step 4: Calculate ratings
-        let ratings = self.calculate_player_ratings(&expanded_games)?;
-        info!("  → Calculated ratings for {} players\n", ratings.len());
+        // Step 4: Calculate and save ratings for each period
+        for period in &self.config.rating.periods {
+            info!("  Calculating ratings for period: {}", period.name);
+            
+            let filtered_games = if let Some(years) = period.years {
+                let cutoff_date = Utc::now().naive_utc() - Duration::days((years * 365) as i64);
+                all_expanded_games.iter()
+                    .filter(|game| game.date >= cutoff_date)
+                    .cloned()
+                    .collect::<Vec<ExpandedGame>>()
+            } else {
+                all_expanded_games.clone()
+            };
 
-        // Step 5: Save ratings to database
-        self.save_ratings_to_db(&mut conn, &ratings)?;
-        info!("  → Saved ratings to database\n");
+            info!("    → {} games for period {}", filtered_games.len(), period.name);
 
-        info!("=== Processing Complete ===");
+            let ratings = self.calculate_player_ratings(&filtered_games, &period.name)?;
+            info!("    → Calculated ratings for {} players for period {}", ratings.len(), period.name);
+
+            self.save_ratings_to_db(&mut conn, &ratings, &period.name)?;
+            info!("    → Saved ratings for period {} to database\n", period.name);
+        }
+
         Ok(())
     }
 
@@ -78,13 +112,11 @@ impl ProcessingService {
                 continue;
             }
 
-            // Extract player names from tournament
             let player_names = self.extract_player_names(tournament);
 
             let tournament_db = self.insert_tournament_to_db(conn, tournament)?;
             let mut games = self.expand_tournament_games(tournament)?;
 
-            // Filter games with team players
             games.retain(|g| {
                 let w_name = player_names.get(&g.winner_id).map(|s| s.as_str()).unwrap_or("");
                 let l_name = player_names.get(&g.loser_id).map(|s| s.as_str()).unwrap_or("");
@@ -99,6 +131,7 @@ impl ProcessingService {
             info!("  Skipped {} doubles/team tournaments", skipped_count);
         }
 
+        // Apply time decay only once, on the full set of games, before filtering by period
         self.apply_time_decay_weights(&mut all_games);
         Ok(all_games)
     }
@@ -108,7 +141,7 @@ impl ProcessingService {
         lower.contains("debel") || 
         lower.contains("deblowy") || 
         lower.contains("double") || 
-        lower.contains(" par") || // space before par to avoid "party" etc, though "pary" is common
+        lower.contains(" par") || 
         lower.contains("pary") ||
         lower.contains("team")
     }
@@ -136,20 +169,17 @@ impl ProcessingService {
         )
     }
 
-    fn parse_tournament_date(&self, date_str: &str) -> Result<chrono::NaiveDateTime> {
+    fn parse_tournament_date(&self, date_str: &str) -> Result<NaiveDateTime> {
         use chrono::{DateTime, NaiveDateTime as ND};
 
-        // Try RFC3339 format (with timezone)
         if let Ok(dt) = DateTime::parse_from_rfc3339(date_str) {
             return Ok(dt.naive_utc());
         }
 
-        // Try naive datetime format (without timezone)
         if let Ok(dt) = ND::parse_from_str(date_str, "%Y-%m-%dT%H:%M:%S") {
             return Ok(dt);
         }
 
-        // Try with fractional seconds
         if let Ok(dt) = ND::parse_from_str(date_str, "%Y-%m-%dT%H:%M:%S%.f") {
             return Ok(dt);
         }
@@ -160,7 +190,7 @@ impl ProcessingService {
     fn parse_optional_tournament_date(
         &self,
         date_str: &Option<String>,
-    ) -> Result<Option<chrono::NaiveDateTime>> {
+    ) -> Result<Option<NaiveDateTime>> {
         match date_str {
             Some(s) => Ok(Some(self.parse_tournament_date(s)?)),
             None => Ok(None),
@@ -206,8 +236,8 @@ impl ProcessingService {
                 tournament_db_id,
                 first_player.id,
                 second_player.id,
-                1, // winner scored 1
-                0, // loser scored 0
+                1, 
+                0, 
                 game.date,
                 game.weight,
             )?;
@@ -230,16 +260,20 @@ impl ProcessingService {
     }
 
     fn apply_time_decay_weights(&self, games: &mut [ExpandedGame]) {
-        let current_date = chrono::Utc::now().naive_utc();
+        let current_date = Utc::now().naive_utc();
         rating::weighting::apply_weights_to_games(games, current_date);
     }
 
     fn calculate_player_ratings(
         &self,
         games: &[ExpandedGame],
+        rating_type: &str,
     ) -> Result<Vec<rating::PlayerRating>> {
         let game_results = self.convert_to_game_results(games);
-        let ratings = rating::calculate_ratings(&game_results, &self.config.rating);
+        let mut ratings = rating::calculate_ratings(&game_results, &self.config.rating);
+        for r in &mut ratings {
+            r.rating_type = rating_type.to_string();
+        }
         Ok(ratings)
     }
 
@@ -261,18 +295,18 @@ impl ProcessingService {
         &self,
         conn: &mut DbConn,
         ratings: &[rating::PlayerRating],
+        rating_type: &str,
     ) -> Result<()> {
-        let calculated_at = chrono::Utc::now().naive_utc();
+        let calculated_at = Utc::now().naive_utc();
 
         for player_rating in ratings {
-            // player_rating.player_id is actually a cuescore_id (i64)
-            // We need to look up the actual database player_id (i32)
             let cuescore_id = player_rating.player_id as i64;
             let player = database::players::upsert_player(conn, cuescore_id, "Unknown Player")?;
 
             if let Err(e) = database::ratings::insert_rating(
                 conn,
                 player.id,
+                rating_type,
                 player_rating.rating,
                 player_rating.games_played,
                 player_rating.confidence_level.as_str(),

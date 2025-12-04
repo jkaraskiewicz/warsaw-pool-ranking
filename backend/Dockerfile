@@ -1,5 +1,5 @@
 # Dockerfile for the Rust backend
-FROM rust:1.73-slim-buster AS builder
+FROM rust:latest AS builder
 
 WORKDIR /app
 
@@ -7,8 +7,7 @@ WORKDIR /app
 COPY Cargo.toml Cargo.lock ./
 
 # Build a dummy project to cache dependencies
-RUN mkdir src && echo "fn main() {}
-" > src/main.rs
+RUN mkdir src && echo "fn main() {}" > src/main.rs
 RUN cargo build --release
 
 # Copy the actual source code
@@ -18,7 +17,7 @@ COPY src ./src
 RUN cargo build --release
 
 # --- Final Stage ---
-FROM debian:buster-slim
+FROM debian:bookworm-slim
 
 WORKDIR /app
 
@@ -30,11 +29,7 @@ RUN apt-get update && apt-get install -y --no-install-recommends \
 # Copy the built binary from the builder stage
 COPY --from=builder /app/target/release/warsaw_pool_ranking ./
 
-# Copy the database schema and initial data (if needed at runtime)
-COPY database/schema.sql ./database/ # Assuming database schema is needed at runtime
-
 # Set environment variables if needed
 ENV DATABASE_PATH="warsaw_pool_ranking.db"
 
-# Command to run the application
-CMD ["./warsaw_pool_ranking", "process"]
+# Command to run the application (will be overridden by docker-compose.yml)

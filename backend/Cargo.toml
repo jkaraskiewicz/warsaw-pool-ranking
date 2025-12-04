@@ -3,9 +3,6 @@ name = "warsaw_pool_ranking"
 version = "0.1.0"
 edition = "2024"
 
-[[bin]]
-name = "temp_scraper_test"
-path = "src/temp_scraper_test.rs"
 
 [dependencies]
 # CLI arguments parsing

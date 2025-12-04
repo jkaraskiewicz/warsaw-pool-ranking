@@ -35,8 +35,9 @@ pub struct Game {
 
 /// Player rating
 #[derive(Debug, Clone, Serialize, Deserialize)]
-pub struct Rating {
+pub struct PlayerRating {
     pub player_id: i64,
+    pub rating_type: String,
     pub rating: f64,
     pub games_played: i32,
     pub confidence_level: ConfidenceLevel,

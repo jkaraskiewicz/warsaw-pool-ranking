@@ -34,9 +34,10 @@ pub struct Game {
 }
 
 #[derive(Debug, Clone)]
-pub struct Rating {
+pub struct DbRating {
     pub id: i32,
     pub player_id: i32,
+    pub rating_type: String,
     pub rating: f64,
     pub games_played: i32,
     pub confidence_level: String,
