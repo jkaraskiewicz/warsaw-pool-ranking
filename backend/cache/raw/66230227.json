@@ -1,1 +1,584 @@
-{"tournamentId": 66230227, "banner": [], "name": "Pictures Tour 2025 (14/16)", "type": 0, "format": 4, "breakrule": "alternate", "description": "Klub Pictures zaprasza na cykl amatorskich turniej\u00f3w bilardowych (27.08-17.12.2025)\r\n\r\nWpisowe: 50z\u0142\r\nZapisy maksymalnie do godz. 18:30 w dniu turnieju, mo\u017cliwo\u015b\u0107 (po poinformowaniu prowadz\u0105cego) sp\u00f3\u017anienia si\u0119 do godz. 19:15. \r\n\r\nPe\u0142en regulamin: https://cuescore.com/mglcuesports/posts/Regulamin+cyklu+Pictures+Tour+2025/66229489\r\n\r\n\r\n\r\nhttps://klubpictures.pl/ \r\nhttps://www.facebook.com/klubpictures/\r\nhttps://www.instagram.com/klub_pictures/", "dresscode": "", "defaultRaceTo": 0, "url": "https://cuescore.com/tournament/Pictures+Tour+2025+%2814%252F16%29/66230227", "timezone": "Europe/Warsaw", "displayDate": "November 26, 2025", "starttime": "2025-11-26T18:30:00+01:00", "stoptime": "2025-11-26T23:59:00+01:00", "deadline": "2025-11-26T18:30:00+01:00", "entrystart": "", "status": "Open", "discipline": "8-Ball", "disciplineId": 2, "branch": 1, "handicap": [], "contacts": [{"playerId": 1664278, "name": "Mariusz Ptaszy\u0144ski", "firstname": "Mariusz", "lastname": "Ptaszy\u0144ski", "url": "https://cuescore.com/player/Mariusz+Ptaszy%C5%84ski/1664278", "image": "https://img.cuescore.com/image/3/4/350e9a57e10bb71b6819c3d07ea9f53e.png?t=1702664077", "country": {"name": "Poland", "alpha3": "POL", "image": "https://cuescore.com/img/flags/png-country-4x2-none/res-640x480/pl.png", "continent": "Europe"}, "represents": []}], "owner": {"organizationId": 5133719, "stub": "mglcuesports", "name": "MGL Cue Sports", "url": "https://cuescore.com/mglcuesports", "logo": "//img.cuescore.com/image/7/2/71487152007d737c2f5de4f7821f7c9e.png?t=1555512394", "profileColor": "58a5fc"}, "organizers": [{"organizationId": 5133719, "stub": "mglcuesports", "name": "MGL Cue Sports", "url": "https://cuescore.com/mglcuesports", "logo": "//img.cuescore.com/image/7/2/71487152007d737c2f5de4f7821f7c9e.png?t=1555512394", "profileColor": "58a5fc"}], "venues": [{"venueId": 1634568, "name": "Klub Pictures", "url": "https://cuescore.com/venue/Klub+Pictures/1634568", "owner": {"organizationId": 5133719, "stub": "mglcuesports", "name": "MGL Cue Sports", "url": "https://cuescore.com/mglcuesports", "logo": "//img.cuescore.com/image/7/2/71487152007d737c2f5de4f7821f7c9e.png?t=1555512394", "profileColor": "58a5fc"}}], "sequence": 0, "standings": [], "matches": [], "rankings": [{"rankingId": 66196792, "name": "Pictures Tour 2025", "url": "https://cuescore.com/ranking/Pictures+Tour+2025/66196792", "branch": 1, "pointsystem": 0, "bestOf": 14, "season": 2025}, {"rankingId": 69473992, "name": "Pictures Tour 2025 - Zawodnik Miesi\u0105ca", "url": "https://cuescore.com/ranking/Pictures+Tour+2025+-+Zawodnik+Miesi%C4%85ca/69473992", "branch": 1, "pointsystem": 0, "bestOf": 5, "season": 2025}], "access": [1612287], "id": "66230227"}
+{
+  "banner": {
+    "original": "//img.cuescore.com/image/b/1/b5cefa4662eb2867c023ffa94d9cf146.png?t=1763847384",
+    "thumbnail": "//img.cuescore.com/image/b/7/b5cefa4662eb2867c023ffa94d9cf146.png?t=1763847384"
+  },
+  "breakrule": "alternate",
+  "deadline": "2025-11-26T18:30:00+01:00",
+  "defaultRaceTo": 4,
+  "description": "Klub Pictures zaprasza na cykl amatorskich turniejów bilardowych (27.08-17.12.2025)\r\n\r\nWpisowe: 50zł\r\nZapisy maksymalnie do godz. 18:30 w dniu turnieju, możliwość (po poinformowaniu prowadzącego) spóźnienia się do godz. 19:15. \r\n\r\nPełen regulamin: https://cuescore.com/mglcuesports/posts/Regulamin+cyklu+Pictures+Tour+2025/66229489\r\n\r\n\r\n\r\nhttps://klubpictures.pl/ \r\nhttps://www.facebook.com/klubpictures/\r\nhttps://www.instagram.com/klub_pictures/",
+  "discipline": "9-Ball",
+  "displayDate": "November 26, 2025",
+  "dresscode": "",
+  "format": 4,
+  "matches": [
+    {
+      "matchId": 72998845,
+      "playerA": {
+        "name": "Jakub Stryj",
+        "playerId": 16338394
+      },
+      "playerB": {
+        "name": "Maciej Grzegorz Lesiak",
+        "playerId": 1612287
+      },
+      "scoreA": 2,
+      "scoreB": 4,
+      "starttime": "2025-11-26T19:18:00",
+      "stoptime": "2025-11-26T20:01:24"
+    },
+    {
+      "matchId": 72998848,
+      "playerA": {
+        "name": "Mariusz Ptaszyński",
+        "playerId": 1664278
+      },
+      "playerB": {
+        "name": "Rafał Banaszek",
+        "playerId": 9395875
+      },
+      "scoreA": 4,
+      "scoreB": 2,
+      "starttime": "2025-11-26T19:57:38",
+      "stoptime": "2025-11-26T20:33:47"
+    },
+    {
+      "matchId": 72998851,
+      "playerA": {
+        "name": "Robert Kuba Kozioł",
+        "playerId": 2252210
+      },
+      "playerB": {
+        "name": "Piotr Buraczewski",
+        "playerId": 27677563
+      },
+      "scoreA": 4,
+      "scoreB": 1,
+      "starttime": "2025-11-26T18:50:28",
+      "stoptime": "2025-11-26T19:15:56"
+    },
+    {
+      "matchId": 72998854,
+      "playerA": {
+        "name": "Marek Głód",
+        "playerId": 2931051
+      },
+      "playerB": {
+        "name": "Artur Zasztowt",
+        "playerId": 1621306
+      },
+      "scoreA": 1,
+      "scoreB": 4,
+      "starttime": "2025-11-26T19:23:00",
+      "stoptime": "2025-11-26T20:21:10"
+    },
+    {
+      "matchId": 72998857,
+      "playerA": {
+        "name": "Norbert Rożnowski",
+        "playerId": 30177124
+      },
+      "playerB": {
+        "name": "Ariel Olszewski",
+        "playerId": 36115141
+      },
+      "scoreA": 2,
+      "scoreB": 4,
+      "starttime": "2025-11-26T19:16:00",
+      "stoptime": "2025-11-26T19:54:46"
+    },
+    {
+      "matchId": 72998860,
+      "playerA": {
+        "name": "Maciej Pęśko",
+        "playerId": 16245310
+      },
+      "playerB": {
+        "name": "Rafał Jaśkowski",
+        "playerId": 46019287
+      },
+      "scoreA": 4,
+      "scoreB": 3,
+      "starttime": "2025-11-26T19:16:52",
+      "stoptime": "2025-11-26T20:24:55"
+    },
+    {
+      "matchId": 72998863,
+      "playerA": {
+        "name": "Maciej Grzegorz Lesiak",
+        "playerId": 1612287
+      },
+      "playerB": {
+        "name": "Rafał Banaszek",
+        "playerId": 9395875
+      },
+      "scoreA": 4,
+      "scoreB": 0,
+      "starttime": "2025-11-26T20:34:10",
+      "stoptime": "2025-11-26T20:56:19"
+    },
+    {
+      "matchId": 72998866,
+      "playerA": {
+        "name": "Jakub Stryj",
+        "playerId": 16338394
+      },
+      "playerB": {
+        "name": "Władysław Machynia",
+        "playerId": 15653797
+      },
+      "scoreA": 0,
+      "scoreB": 4,
+      "starttime": "2025-11-26T20:02:00",
+      "stoptime": "2025-11-26T20:34:21"
+    },
+    {
+      "matchId": 72998869,
+      "playerA": {
+        "name": "Piotr Buraczewski",
+        "playerId": 27677563
+      },
+      "playerB": {
+        "name": "Artur Zasztowt",
+        "playerId": 1621306
+      },
+      "scoreA": 1,
+      "scoreB": 4,
+      "starttime": "2025-11-26T21:14:00",
+      "stoptime": "2025-11-26T21:37:28"
+    },
+    {
+      "matchId": 72998872,
+      "playerA": {
+        "name": "Robert Kuba Kozioł",
+        "playerId": 2252210
+      },
+      "playerB": {
+        "name": "Szymon Wandachowicz",
+        "playerId": 42969481
+      },
+      "scoreA": 2,
+      "scoreB": 4,
+      "starttime": "2025-11-26T21:30:00",
+      "stoptime": "2025-11-26T22:08:48"
+    },
+    {
+      "matchId": 72998875,
+      "playerA": {
+        "name": "Ariel Olszewski",
+        "playerId": 36115141
+      },
+      "playerB": {
+        "name": "Rafał Jaśkowski",
+        "playerId": 46019287
+      },
+      "scoreA": 4,
+      "scoreB": 1,
+      "starttime": "2025-11-26T20:39:00",
+      "stoptime": "2025-11-26T21:14:09"
+    },
+    {
+      "matchId": 72998878,
+      "playerA": {
+        "name": "Norbert Rożnowski",
+        "playerId": 30177124
+      },
+      "playerB": {
+        "name": "Daniel Hornowski",
+        "playerId": 6977908
+      },
+      "scoreA": 0,
+      "scoreB": 4,
+      "starttime": "2025-11-26T20:20:00",
+      "stoptime": "2025-11-26T20:45:50"
+    },
+    {
+      "matchId": 72998881,
+      "playerA": {
+        "name": "Rafał Banaszek",
+        "playerId": 9395875
+      },
+      "playerB": {
+        "name": "Władysław Machynia",
+        "playerId": 15653797
+      },
+      "scoreA": 1,
+      "scoreB": 4,
+      "starttime": "2025-11-26T18:56:18",
+      "stoptime": "2025-11-26T19:19:56"
+    },
+    {
+      "matchId": 72998884,
+      "playerA": {
+        "name": "Maciej Grzegorz Lesiak",
+        "playerId": 1612287
+      },
+      "playerB": {
+        "name": "Mariusz Ptaszyński",
+        "playerId": 1664278
+      },
+      "scoreA": 4,
+      "scoreB": 3,
+      "starttime": "2025-11-26T22:35:54",
+      "stoptime": "2025-11-26T23:24:27"
+    },
+    {
+      "matchId": 72998887,
+      "playerA": {
+        "name": "Artur Zasztowt",
+        "playerId": 1621306
+      },
+      "playerB": {
+        "name": "Szymon Wandachowicz",
+        "playerId": 42969481
+      },
+      "scoreA": 4,
+      "scoreB": 3,
+      "starttime": "2025-11-26T18:35:36",
+      "stoptime": "2025-11-26T19:21:22"
+    },
+    {
+      "matchId": 72998890,
+      "playerA": {
+        "name": "Piotr Buraczewski",
+        "playerId": 27677563
+      },
+      "playerB": {
+        "name": "Marek Głód",
+        "playerId": 2931051
+      },
+      "scoreA": 0,
+      "scoreB": 4,
+      "starttime": "2025-11-26T20:46:00",
+      "stoptime": "2025-11-26T21:09:14"
+    },
+    {
+      "matchId": 72998893,
+      "playerA": {
+        "name": "Rafał Jaśkowski",
+        "playerId": 46019287
+      },
+      "playerB": {
+        "name": "Daniel Hornowski",
+        "playerId": 6977908
+      },
+      "scoreA": 0,
+      "scoreB": 4,
+      "starttime": "2025-11-26T22:13:00",
+      "stoptime": "2025-11-26T22:29:41"
+    },
+    {
+      "matchId": 72998896,
+      "playerA": {
+        "name": "Ariel Olszewski",
+        "playerId": 36115141
+      },
+      "playerB": {
+        "name": "Maciej Pęśko",
+        "playerId": 16245310
+      },
+      "scoreA": 4,
+      "scoreB": 1,
+      "starttime": "2025-11-26T22:06:47",
+      "stoptime": "2025-11-26T22:53:45"
+    },
+    {
+      "matchId": 72998899,
+      "playerA": {
+        "name": "Władysław Machynia",
+        "playerId": 15653797
+      },
+      "playerB": {
+        "name": "Mariusz Ptaszyński",
+        "playerId": 1664278
+      },
+      "scoreA": 4,
+      "scoreB": 1,
+      "starttime": "2025-11-26T18:34:00",
+      "stoptime": "2025-11-26T18:56:52"
+    },
+    {
+      "matchId": 72998902,
+      "playerA": {
+        "name": "Rafał Banaszek",
+        "playerId": 9395875
+      },
+      "playerB": {
+        "name": "Jakub Stryj",
+        "playerId": 16338394
+      },
+      "scoreA": 4,
+      "scoreB": 3,
+      "starttime": "2025-11-26T22:29:30",
+      "stoptime": "2025-11-26T23:06:43"
+    },
+    {
+      "matchId": 72998905,
+      "playerA": {
+        "name": "Szymon Wandachowicz",
+        "playerId": 42969481
+      },
+      "playerB": {
+        "name": "Marek Głód",
+        "playerId": 2931051
+      },
+      "scoreA": 3,
+      "scoreB": 4,
+      "starttime": "2025-11-26T22:09:44",
+      "stoptime": "2025-11-26T22:50:59"
+    },
+    {
+      "matchId": 72998908,
+      "playerA": {
+        "name": "Artur Zasztowt",
+        "playerId": 1621306
+      },
+      "playerB": {
+        "name": "Robert Kuba Kozioł",
+        "playerId": 2252210
+      },
+      "scoreA": 0,
+      "scoreB": 4,
+      "starttime": "2025-11-26T20:24:00",
+      "stoptime": "2025-11-26T20:46:16"
+    },
+    {
+      "matchId": 72998911,
+      "playerA": {
+        "name": "Daniel Hornowski",
+        "playerId": 6977908
+      },
+      "playerB": {
+        "name": "Maciej Pęśko",
+        "playerId": 16245310
+      },
+      "scoreA": 4,
+      "scoreB": 0,
+      "starttime": "2025-11-26T21:35:00",
+      "stoptime": "2025-11-26T22:06:08"
+    },
+    {
+      "matchId": 72998914,
+      "playerA": {
+        "name": "Rafał Jaśkowski",
+        "playerId": 46019287
+      },
+      "playerB": {
+        "name": "Norbert Rożnowski",
+        "playerId": 30177124
+      },
+      "scoreA": 4,
+      "scoreB": 1,
+      "starttime": "2025-11-26T21:36:00",
+      "stoptime": "2025-11-26T22:14:14"
+    },
+    {
+      "matchId": 72998917,
+      "playerA": {
+        "name": "Mariusz Ptaszyński",
+        "playerId": 1664278
+      },
+      "playerB": {
+        "name": "Jakub Stryj",
+        "playerId": 16338394
+      },
+      "scoreA": 4,
+      "scoreB": 3,
+      "starttime": "2025-11-26T20:57:00",
+      "stoptime": "2025-11-26T21:46:27"
+    },
+    {
+      "matchId": 72998920,
+      "playerA": {
+        "name": "Władysław Machynia",
+        "playerId": 15653797
+      },
+      "playerB": {
+        "name": "Maciej Grzegorz Lesiak",
+        "playerId": 1612287
+      },
+      "scoreA": 4,
+      "scoreB": 3,
+      "starttime": "2025-11-26T21:46:34",
+      "stoptime": "2025-11-26T22:35:57"
+    },
+    {
+      "matchId": 72998923,
+      "playerA": {
+        "name": "Marek Głód",
+        "playerId": 2931051
+      },
+      "playerB": {
+        "name": "Robert Kuba Kozioł",
+        "playerId": 2252210
+      },
+      "scoreA": 2,
+      "scoreB": 4,
+      "starttime": "2025-11-26T21:10:08",
+      "stoptime": "2025-11-26T21:30:25"
+    },
+    {
+      "matchId": 72998926,
+      "playerA": {
+        "name": "Szymon Wandachowicz",
+        "playerId": 42969481
+      },
+      "playerB": {
+        "name": "Piotr Buraczewski",
+        "playerId": 27677563
+      },
+      "scoreA": 2,
+      "scoreB": 4,
+      "starttime": "2025-11-26T19:59:08",
+      "stoptime": "2025-11-26T20:38:15"
+    },
+    {
+      "matchId": 72998929,
+      "playerA": {
+        "name": "Maciej Pęśko",
+        "playerId": 16245310
+      },
+      "playerB": {
+        "name": "Norbert Rożnowski",
+        "playerId": 30177124
+      },
+      "scoreA": 2,
+      "scoreB": 4,
+      "starttime": "2025-11-26T20:46:00",
+      "stoptime": "2025-11-26T21:34:54"
+    },
+    {
+      "matchId": 72998932,
+      "playerA": {
+        "name": "Daniel Hornowski",
+        "playerId": 6977908
+      },
+      "playerB": {
+        "name": "Ariel Olszewski",
+        "playerId": 36115141
+      },
+      "scoreA": 4,
+      "scoreB": 2,
+      "starttime": "2025-11-26T18:41:00",
+      "stoptime": "2025-11-26T19:20:10"
+    },
+    {
+      "matchId": 72998935,
+      "playerA": {
+        "name": "Daniel Hornowski",
+        "playerId": 6977908
+      },
+      "playerB": {
+        "name": "Mariusz Ptaszyński",
+        "playerId": 1664278
+      },
+      "scoreA": 4,
+      "scoreB": 1,
+      "starttime": "2025-11-26T23:28:00",
+      "stoptime": "2025-11-27T00:05:45"
+    },
+    {
+      "matchId": 72998938,
+      "playerA": {
+        "name": "Robert Kuba Kozioł",
+        "playerId": 2252210
+      },
+      "playerB": {
+        "name": "Ariel Olszewski",
+        "playerId": 36115141
+      },
+      "scoreA": 2,
+      "scoreB": 4,
+      "starttime": "2025-11-26T23:28:00",
+      "stoptime": "2025-11-27T00:06:43"
+    },
+    {
+      "matchId": 72998941,
+      "playerA": {
+        "name": "Maciej Grzegorz Lesiak",
+        "playerId": 1612287
+      },
+      "playerB": {
+        "name": "Artur Zasztowt",
+        "playerId": 1621306
+      },
+      "scoreA": 4,
+      "scoreB": 3,
+      "starttime": "2025-11-26T23:28:00",
+      "stoptime": "2025-11-27T00:32:01"
+    },
+    {
+      "matchId": 72998944,
+      "playerA": {
+        "name": "Władysław Machynia",
+        "playerId": 15653797
+      },
+      "playerB": {
+        "name": "Marek Głód",
+        "playerId": 2931051
+      },
+      "scoreA": 2,
+      "scoreB": 4,
+      "starttime": "2025-11-26T23:28:00",
+      "stoptime": "2025-11-26T23:53:03"
+    },
+    {
+      "matchId": 72998947,
+      "playerA": {
+        "name": "Daniel Hornowski",
+        "playerId": 6977908
+      },
+      "playerB": {
+        "name": "Ariel Olszewski",
+        "playerId": 36115141
+      },
+      "scoreA": 1,
+      "scoreB": 4,
+      "starttime": "2025-11-27T00:06:00",
+      "stoptime": "2025-11-27T00:34:07"
+    },
+    {
+      "matchId": 72998950,
+      "playerA": {
+        "name": "Maciej Grzegorz Lesiak",
+        "playerId": 1612287
+      },
+      "playerB": {
+        "name": "Marek Głód",
+        "playerId": 2931051
+      },
+      "scoreA": 4,
+      "scoreB": 1,
+      "starttime": "2025-11-27T00:32:47",
+      "stoptime": "2025-11-27T01:08:21"
+    },
+    {
+      "matchId": 72998953,
+      "playerA": {
+        "name": "Ariel Olszewski",
+        "playerId": 36115141
+      },
+      "playerB": {
+        "name": "Maciej Grzegorz Lesiak",
+        "playerId": 1612287
+      },
+      "scoreA": 3,
+      "scoreB": 4,
+      "starttime": "2025-11-27T01:08:00",
+      "stoptime": "2025-11-27T01:56:58"
+    }
+  ],
+  "name": "Pictures Tour 2025 (14/16)",
+  "starttime": "2025-11-26T18:30:00+01:00",
+  "stoptime": "2025-11-26T23:59:00+01:00",
+  "timezone": "Europe/Warsaw",
+  "tournamentId": 66230227,
+  "type": 0,
+  "url": "https://cuescore.com/tournament/Pictures+Tour+2025+%2814%252F16%29/66230227",
+  "venues": [
+    {
+      "name": "Klub Pictures",
+      "venueId": 1634568
+    }
+  ]
+}

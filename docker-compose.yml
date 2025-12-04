@@ -20,26 +20,31 @@ services:
     networks:
       - warsaw-pool-network
 
-  # Backend (FastAPI)
+  # Backend (Rust)
   backend:
     build:
       context: ./backend
       dockerfile: Dockerfile
     container_name: warsaw-pool-backend
     environment:
-      DATABASE_URL: postgresql://pool_app:${POSTGRES_PASSWORD:-poolpass123}@db:5432/warsaw_pool_rankings
-      PYTHONUNBUFFERED: 1
+      # For Rust, the DATABASE_PATH is relative to the WORKDIR /app
+      DATABASE_PATH: warsaw_pool_ranking.db
+      RUST_LOG: info # Set default log level for Rust backend
     volumes:
+      # Mount the entire backend directory into the container
       - ./backend:/app
       - ./database:/database
     ports:
-      - "8000:8000"
+      - "8000:8000" # Keep the port, even if currently unused by Rust binary
     depends_on:
       db:
         condition: service_healthy
     networks:
       - warsaw-pool-network
-    command: uvicorn app.main:app --host 0.0.0.0 --port 8000 --reload
+    # Command to run the Rust application
+    # The Dockerfile CMD will be used by default: ./warsaw_pool_ranking process
+    # If you want to ingest, you'd need to override the command or exec into container
+    command: ./warsaw_pool_ranking process
 
   # Frontend (Angular + Nginx)
   frontend:

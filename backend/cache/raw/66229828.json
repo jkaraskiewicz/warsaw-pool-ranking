@@ -1,1 +1,28 @@
-{"tournamentId": 66229828, "banner": {"thumbnail": "//img.cuescore.com/image/1/7/1bc4702c18f2fc44cf8aaf7e39bc7a99.png?t=1756210449", "original": "//img.cuescore.com/image/1/1/1bc4702c18f2fc44cf8aaf7e39bc7a99.png?t=1756210449"}, "name": "Pictures Tour 2025 (MASTERS)", "type": 0, "format": 4, "breakrule": "alternate", "description": "Klub Pictures zaprasza na cykl amatorskich turniej\u00f3w bilardowych (27.08-17.12.2025)\r\n\r\nWpisowe w turnieju Masters:\r\n60z\u0142 (dla zawodnik\u00f3w, kt\u00f3rzy wzi\u0119li udzia\u0142 w minimum 10 turniejach), 80z\u0142 (dla zawodnik\u00f3w, kt\u00f3rzy wzieli udzia\u0142 w mniej ni\u017c 10 turniejach)\r\n\r\nDo turnieju Masters kwalifikuje si\u0119 16 najlepszych zawodnik\u00f3w cyklu, kt\u00f3rzy wzi\u0119li udzia\u0142 w minimum 5 turniejach.\r\n\r\nPe\u0142en regulamin: https://cuescore.com/mglcuesports/posts/Regulamin+cyklu+Pictures+Tour+2025/66229489\r\n\r\n\r\n\r\nhttps://klubpictures.pl/ \r\nhttps://www.facebook.com/klubpictures/\r\nhttps://www.instagram.com/klub_pictures/", "dresscode": "", "defaultRaceTo": 4, "url": "https://cuescore.com/tournament/Pictures+Tour+2025+%28MASTERS%29/66229828", "timezone": "Europe/Warsaw", "displayDate": "December 17, 2025", "starttime": "2025-12-17T18:30:00+01:00", "stoptime": "2025-12-17T23:59:00+01:00", "deadline": "2025-12-17T18:30:00+01:00", "entrystart": "2025-12-10T23:59:00+01:00", "status": "Open", "discipline": "10-Ball", "disciplineId": 4, "branch": 1, "handicap": [], "contacts": [{"playerId": 1664278, "name": "Mariusz Ptaszy\u0144ski", "firstname": "Mariusz", "lastname": "Ptaszy\u0144ski", "url": "https://cuescore.com/player/Mariusz+Ptaszy%C5%84ski/1664278", "image": "https://img.cuescore.com/image/3/4/350e9a57e10bb71b6819c3d07ea9f53e.png?t=1702664077", "country": {"name": "Poland", "alpha3": "POL", "image": "https://cuescore.com/img/flags/png-country-4x2-none/res-640x480/pl.png", "continent": "Europe"}, "represents": []}], "owner": {"organizationId": 5133719, "stub": "mglcuesports", "name": "MGL Cue Sports", "url": "https://cuescore.com/mglcuesports", "logo": "//img.cuescore.com/image/7/2/71487152007d737c2f5de4f7821f7c9e.png?t=1555512394", "profileColor": "58a5fc"}, "organizers": [{"organizationId": 5133719, "stub": "mglcuesports", "name": "MGL Cue Sports", "url": "https://cuescore.com/mglcuesports", "logo": "//img.cuescore.com/image/7/2/71487152007d737c2f5de4f7821f7c9e.png?t=1555512394", "profileColor": "58a5fc"}], "venues": [{"venueId": 1634568, "name": "Klub Pictures", "url": "https://cuescore.com/venue/Klub+Pictures/1634568", "owner": {"organizationId": 5133719, "stub": "mglcuesports", "name": "MGL Cue Sports", "url": "https://cuescore.com/mglcuesports", "logo": "//img.cuescore.com/image/7/2/71487152007d737c2f5de4f7821f7c9e.png?t=1555512394", "profileColor": "58a5fc"}}], "sequence": 0, "standings": [], "matches": [], "rankings": [{"rankingId": 66196792, "name": "Pictures Tour 2025", "url": "https://cuescore.com/ranking/Pictures+Tour+2025/66196792", "branch": 1, "pointsystem": 0, "bestOf": 14, "season": 2025}], "access": [1612287], "id": "66229828"}
+{
+  "banner": {
+    "original": "//img.cuescore.com/image/1/1/1bc4702c18f2fc44cf8aaf7e39bc7a99.png?t=1756210449",
+    "thumbnail": "//img.cuescore.com/image/1/7/1bc4702c18f2fc44cf8aaf7e39bc7a99.png?t=1756210449"
+  },
+  "breakrule": "alternate",
+  "deadline": "2025-12-17T18:30:00+01:00",
+  "defaultRaceTo": 4,
+  "description": "Klub Pictures zaprasza na cykl amatorskich turniejów bilardowych (27.08-17.12.2025)\r\n\r\nWpisowe w turnieju Masters:\r\n60zł (dla zawodników, którzy wzięli udział w minimum 10 turniejach), 80zł (dla zawodników, którzy wzieli udział w mniej niż 10 turniejach)\r\n\r\nDo turnieju Masters kwalifikuje się 16 najlepszych zawodników cyklu, którzy wzięli udział w minimum 5 turniejach.\r\n\r\nPełen regulamin: https://cuescore.com/mglcuesports/posts/Regulamin+cyklu+Pictures+Tour+2025/66229489\r\n\r\n\r\n\r\nhttps://klubpictures.pl/ \r\nhttps://www.facebook.com/klubpictures/\r\nhttps://www.instagram.com/klub_pictures/",
+  "discipline": "10-Ball",
+  "displayDate": "December 17, 2025",
+  "dresscode": "",
+  "format": 4,
+  "matches": [],
+  "name": "Pictures Tour 2025 (MASTERS)",
+  "starttime": "2025-12-17T18:30:00+01:00",
+  "stoptime": "2025-12-17T23:59:00+01:00",
+  "timezone": "Europe/Warsaw",
+  "tournamentId": 66229828,
+  "type": 0,
+  "url": "https://cuescore.com/tournament/Pictures+Tour+2025+%28MASTERS%29/66229828",
+  "venues": [
+    {
+      "name": "Klub Pictures",
+      "venueId": 1634568
+    }
+  ]
+}

@@ -1,27 +1,40 @@
-FROM python:3.11-slim
+# Dockerfile for the Rust backend
+FROM rust:1.73-slim-buster AS builder
 
 WORKDIR /app
 
-# Install system dependencies
-RUN apt-get update && apt-get install -y \
-    gcc \
-    postgresql-client \
+# Copy Cargo.toml and Cargo.lock to leverage Docker cache
+COPY Cargo.toml Cargo.lock ./
+
+# Build a dummy project to cache dependencies
+RUN mkdir src && echo "fn main() {}
+" > src/main.rs
+RUN cargo build --release
+
+# Copy the actual source code
+COPY src ./src
+
+# Build the Rust application
+RUN cargo build --release
+
+# --- Final Stage ---
+FROM debian:buster-slim
+
+WORKDIR /app
+
+# Install necessary runtime dependencies (e.g., SQLite)
+RUN apt-get update && apt-get install -y --no-install-recommends \
+    libsqlite3-0 \
     && rm -rf /var/lib/apt/lists/*
 
-# Copy requirements
-COPY requirements.txt .
+# Copy the built binary from the builder stage
+COPY --from=builder /app/target/release/warsaw_pool_ranking ./
 
-# Install Python dependencies
-RUN pip install --no-cache-dir -r requirements.txt
+# Copy the database schema and initial data (if needed at runtime)
+COPY database/schema.sql ./database/ # Assuming database schema is needed at runtime
 
-# Copy application code
-COPY . .
+# Set environment variables if needed
+ENV DATABASE_PATH="warsaw_pool_ranking.db"
 
-# Create directory for scripts
-RUN chmod +x scripts/*.py
-
-# Expose port
-EXPOSE 8000
-
-# Default command (can be overridden in docker-compose)
-CMD ["uvicorn", "app.main:app", "--host", "0.0.0.0", "--port", "8000"]
+# Command to run the application
+CMD ["./warsaw_pool_ranking", "process"]

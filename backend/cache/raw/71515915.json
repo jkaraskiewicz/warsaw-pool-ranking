@@ -1,1 +1,1739 @@
-{"tournamentId": 71515915, "banner": {"thumbnail": "//img.cuescore.com/image/e/7/e9cc0b1e5e34bc83297175326d04f5ad.png?t=1762258690", "original": "//img.cuescore.com/image/e/1/e9cc0b1e5e34bc83297175326d04f5ad.png?t=1762258690"}, "name": "Swiss 9-ball Open (4) ****", "type": 0, "format": 256, "breakrule": "alternate", "description": "Jesienny, otwarty (czyli dla wszystkich) turniej  w 9-bil, po szwajcarsku (czyli ka\u017cdy rozegra 6 mecz\u00f3w)!\r\n\r\nDla wszystkich uczestnik\u00f3w Turniej\u00f3w o Pierwszy Puchar, Amatorskiej \u00d3semki, Triathlonu Bilardowego, Poniedzia\u0142kowych Oldboy'\u00f3w po szwajcarsku, a tak\u017ce wszystkich pozosta\u0142ych ch\u0119tnych. Jedynym ograniczeniem jest liczba dost\u0119pnych miejsc na li\u015bcie startowej.\r\n\r\nZapisy ruszaj\u0105 17 listopada 2025 o godz. 13:00 >  https://forms.gle/159k6sjEq1m3Zad48", "dresscode": "ZAPISY (od 13:00 17.11.2025) https://forms.gle/159k6sjEq1m3Zad48\r\n", "defaultRaceTo": 4, "url": "https://cuescore.com/tournament/Swiss+9-ball+Open+%284%29+%2A%2A%2A%2A/71515915", "timezone": "Europe/Warsaw", "displayDate": "November 24, 2025", "starttime": "2025-11-24T19:00:00+01:00", "stoptime": "2025-11-24T23:59:00+01:00", "deadline": "", "entrystart": "2025-11-17T13:00:00+01:00", "status": "Open", "discipline": "9-Ball", "disciplineId": 3, "branch": 1, "handicap": [], "contacts": [{"playerId": 1612287, "name": "Maciej Grzegorz Lesiak", "firstname": "Maciej Grzegorz", "lastname": "Lesiak", "url": "https://cuescore.com/player/Maciej+Grzegorz+Lesiak/1612287", "image": "https://img.cuescore.com/image/2/4/2cf115d1df0825752b34e0510547da26.png?t=1683467983", "country": {"name": "Poland", "alpha3": "POL", "image": "https://cuescore.com/img/flags/png-country-4x2-none/res-640x480/pl.png", "continent": "Europe"}, "represents": {"organizationId": 5133719, "stub": "mglcuesports", "name": "MGL Cue Sports", "url": "https://cuescore.com/mglcuesports", "logo": "//img.cuescore.com/image/7/2/71487152007d737c2f5de4f7821f7c9e.png?t=1555512394", "profileColor": "58a5fc"}}], "owner": {"organizationId": 5133719, "stub": "mglcuesports", "name": "MGL Cue Sports", "url": "https://cuescore.com/mglcuesports", "logo": "//img.cuescore.com/image/7/2/71487152007d737c2f5de4f7821f7c9e.png?t=1555512394", "profileColor": "58a5fc"}, "organizers": [{"organizationId": 5133719, "stub": "mglcuesports", "name": "MGL Cue Sports", "url": "https://cuescore.com/mglcuesports", "logo": "//img.cuescore.com/image/7/2/71487152007d737c2f5de4f7821f7c9e.png?t=1555512394", "profileColor": "58a5fc"}], "venues": [{"venueId": 36031138, "name": "Z\u0142ota Bila - Centrum Bilardowe", "url": "https://cuescore.com/venue/Z%C5%82ota+Bila+-+Centrum+Bilardowe/36031138", "owner": {"organizationId": 7011764, "stub": "blackballevents", "name": "Black Ball Events", "url": "https://cuescore.com/blackballevents", "logo": "//img.cuescore.com/image/9/2/9b59b70e156f2f8d0f1a879411c6ffd1.png?t=1576160578", "profileColor": "000000"}}], "sequence": 0, "standings": [], "matches": [], "rankings": [{"rankingId": 63151321, "name": "Z\u0142ota Bila Swiss 9ball Open", "url": "https://cuescore.com/ranking/Z%C5%82ota+Bila+Swiss+9ball+Open/63151321", "branch": 1, "pointsystem": 0, "bestOf": 0, "season": 2025}, {"rankingId": 67095964, "name": "Z\u0142ota Bila (Mondays 2025) MGL", "url": "https://cuescore.com/ranking/Z%C5%82ota+Bila+%28Mondays+2025%29+MGL/67095964", "branch": 1, "pointsystem": 0, "bestOf": 11, "season": 2025}], "access": [1612287], "id": "71515915"}
+{
+  "banner": {
+    "original": "//img.cuescore.com/image/e/1/e9cc0b1e5e34bc83297175326d04f5ad.png?t=1762258690",
+    "thumbnail": "//img.cuescore.com/image/e/7/e9cc0b1e5e34bc83297175326d04f5ad.png?t=1762258690"
+  },
+  "breakrule": "alternate",
+  "deadline": "2025-11-24T19:19:00+01:00",
+  "defaultRaceTo": 4,
+  "description": "Jesienny, otwarty (czyli dla wszystkich) turniej  w 9-bil, po szwajcarsku (czyli każdy rozegra 6 meczów)!\r\n\r\nDla wszystkich uczestników Turniejów o Pierwszy Puchar, Amatorskiej Ósemki, Triathlonu Bilardowego, Poniedziałkowych Oldboy'ów po szwajcarsku, a także wszystkich pozostałych chętnych. Jedynym ograniczeniem jest liczba dostępnych miejsc na liście startowej.\r\n\r\nZapisy ruszają 17 listopada 2025 o godz. 13:00 >  https://forms.gle/159k6sjEq1m3Zad48",
+  "discipline": "9-Ball",
+  "displayDate": "November 24, 2025",
+  "dresscode": "ZAPISY (od 13:00 17.11.2025) https://forms.gle/159k6sjEq1m3Zad48\r\n\r\nLISTA REZERWOWYCH:\r\n1. Krzysztof Dyrek",
+  "format": 256,
+  "matches": [
+    {
+      "matchId": 72911449,
+      "playerA": {
+        "name": "Sebastian Szymkowski",
+        "playerId": 1660831
+      },
+      "playerB": {
+        "name": "Tomasz Sosnowski",
+        "playerId": 37359511
+      },
+      "scoreA": 4,
+      "scoreB": 1,
+      "starttime": "2025-11-24T19:07:00",
+      "stoptime": "2025-11-24T19:30:51"
+    },
+    {
+      "matchId": 72911452,
+      "playerA": {
+        "name": "Piotr Buraczewski",
+        "playerId": 27677563
+      },
+      "playerB": {
+        "name": "Władysław Machynia",
+        "playerId": 15653797
+      },
+      "scoreA": 1,
+      "scoreB": 4,
+      "starttime": "2025-11-24T19:07:35",
+      "stoptime": "2025-11-24T19:30:18"
+    },
+    {
+      "matchId": 72911455,
+      "playerA": {
+        "name": "Daniel Gontarek",
+        "playerId": 2893607
+      },
+      "playerB": {
+        "name": "Bogusław Krysiński",
+        "playerId": 64252549
+      },
+      "scoreA": 1,
+      "scoreB": 4,
+      "starttime": "2025-11-24T19:07:00",
+      "stoptime": "2025-11-24T19:44:07"
+    },
+    {
+      "matchId": 72911458,
+      "playerA": {
+        "name": "Marcin Kubalski",
+        "playerId": 1634586
+      },
+      "playerB": {
+        "name": "Mariusz Ścibor",
+        "playerId": 41935663
+      },
+      "scoreA": 4,
+      "scoreB": 0,
+      "starttime": "2025-11-24T19:07:36",
+      "stoptime": "2025-11-24T19:37:05"
+    },
+    {
+      "matchId": 72911461,
+      "playerA": {
+        "name": "Paweł Średnicki",
+        "playerId": 19570090
+      },
+      "playerB": {
+        "name": "Roman Wasilewski",
+        "playerId": 3606325
+      },
+      "scoreA": 0,
+      "scoreB": 4,
+      "starttime": "2025-11-24T19:07:37",
+      "stoptime": "2025-11-24T19:34:18"
+    },
+    {
+      "matchId": 72911464,
+      "playerA": {
+        "name": "Lesław Łukaszewicz",
+        "playerId": 4890123
+      },
+      "playerB": {
+        "name": "Adam Kuryłek",
+        "playerId": 53167912
+      },
+      "scoreA": 4,
+      "scoreB": 1,
+      "starttime": "2025-11-24T19:07:00",
+      "stoptime": "2025-11-24T19:33:17"
+    },
+    {
+      "matchId": 72911467,
+      "playerA": {
+        "name": "Radosław F. Kos",
+        "playerId": 4720099
+      },
+      "playerB": {
+        "name": "Oleksandr Brenko",
+        "playerId": 48902719
+      },
+      "scoreA": 0,
+      "scoreB": 4,
+      "starttime": "2025-11-24T19:07:00",
+      "stoptime": "2025-11-24T19:38:28"
+    },
+    {
+      "matchId": 72911470,
+      "playerA": {
+        "name": "Andrei Adziarykha",
+        "playerId": 20746132
+      },
+      "playerB": {
+        "name": "Rafal Cwiklinski",
+        "playerId": 15654331
+      },
+      "scoreA": 4,
+      "scoreB": 2,
+      "starttime": "2025-11-24T19:07:00",
+      "stoptime": "2025-11-24T19:48:20"
+    },
+    {
+      "matchId": 72911473,
+      "playerA": {
+        "name": "Piotr Oleszczuk",
+        "playerId": 10506292
+      },
+      "playerB": {
+        "name": "Krzysztof Dyrek",
+        "playerId": 5149700
+      },
+      "scoreA": 4,
+      "scoreB": 1,
+      "starttime": "2025-11-24T19:07:00",
+      "stoptime": "2025-11-24T19:31:40"
+    },
+    {
+      "matchId": 72911476,
+      "playerA": {
+        "name": "Nikita Rudenko",
+        "playerId": 3185376
+      },
+      "playerB": {
+        "name": "Wojtek Trajdos",
+        "playerId": 57205030
+      },
+      "scoreA": 1,
+      "scoreB": 4,
+      "starttime": "2025-11-24T19:07:00",
+      "stoptime": "2025-11-24T19:33:37"
+    },
+    {
+      "matchId": 72911479,
+      "playerA": {
+        "name": "Marta Wawrzyn",
+        "playerId": 2180579
+      },
+      "playerB": {
+        "name": "Maria Isaienko",
+        "playerId": 15310969
+      },
+      "scoreA": 2,
+      "scoreB": 3,
+      "starttime": "2025-11-24T19:07:00",
+      "stoptime": "2025-11-24T19:53:46"
+    },
+    {
+      "matchId": 72911482,
+      "playerA": {
+        "name": "Jakub Ładyński Eighty Nine Pucharowo Warszawa",
+        "playerId": 15492220
+      },
+      "playerB": {
+        "name": "Paweł Krysiński",
+        "playerId": 1664283
+      },
+      "scoreA": 0,
+      "scoreB": 4,
+      "starttime": "2025-11-24T19:07:42",
+      "stoptime": "2025-11-24T19:30:20"
+    },
+    {
+      "matchId": 72911485,
+      "playerA": {
+        "name": "Petro Sydorenko",
+        "playerId": 71410333
+      },
+      "playerB": {
+        "name": "Krzysztof Gastman",
+        "playerId": 5183665
+      },
+      "scoreA": 1,
+      "scoreB": 4,
+      "starttime": "2025-11-24T19:07:00",
+      "stoptime": "2025-11-24T19:45:34"
+    },
+    {
+      "matchId": 72911488,
+      "playerA": {
+        "name": "Sławomir Podpirka",
+        "playerId": 49409869
+      },
+      "playerB": {
+        "name": "Marcin Walczak",
+        "playerId": 2014190
+      },
+      "scoreA": 4,
+      "scoreB": 1,
+      "starttime": "2025-11-24T19:07:00",
+      "stoptime": "2025-11-24T19:48:01"
+    },
+    {
+      "matchId": 72911491,
+      "playerA": {
+        "name": "Łukasz Kolano",
+        "playerId": 2950431
+      },
+      "playerB": {
+        "name": "Filip Krawczyk",
+        "playerId": 2292556
+      },
+      "scoreA": 0,
+      "scoreB": 4,
+      "starttime": "2025-11-24T19:07:00",
+      "stoptime": "2025-11-24T19:33:09"
+    },
+    {
+      "matchId": 72911494,
+      "playerA": {
+        "name": "Piotr Popławski",
+        "playerId": 29179549
+      },
+      "playerB": {
+        "name": "Piotr Niewczas",
+        "playerId": 2383646
+      },
+      "scoreA": 4,
+      "scoreB": 1,
+      "starttime": "2025-11-24T19:07:44",
+      "stoptime": "2025-11-24T19:44:32"
+    },
+    {
+      "matchId": 72911497,
+      "playerA": {
+        "name": "Zbyszek Pezowicz",
+        "playerId": 3527353
+      },
+      "playerB": {
+        "name": "Michał Kozłowski",
+        "playerId": 6480431
+      },
+      "scoreA": 1,
+      "scoreB": 4,
+      "starttime": "2025-11-24T19:07:00",
+      "stoptime": "2025-11-24T19:42:11"
+    },
+    {
+      "matchId": 72911500,
+      "playerA": {
+        "name": "Konrad Kowalski",
+        "playerId": 1620822
+      },
+      "playerB": {
+        "name": "Andrzej Guzanowski",
+        "playerId": 40933435
+      },
+      "scoreA": 2,
+      "scoreB": 4,
+      "starttime": "2025-11-24T19:07:00",
+      "stoptime": "2025-11-24T19:48:42"
+    },
+    {
+      "matchId": 72911503,
+      "playerA": {
+        "name": "Mirosław Galas",
+        "playerId": 32939776
+      },
+      "playerB": {
+        "name": "Walk Over",
+        "playerId": 1000615
+      },
+      "scoreA": 0,
+      "scoreB": 0,
+      "starttime": "",
+      "stoptime": ""
+    },
+    {
+      "matchId": 72911506,
+      "playerA": {
+        "name": "Marcin Kubalski",
+        "playerId": 1634586
+      },
+      "playerB": {
+        "name": "Paweł Krysiński",
+        "playerId": 1664283
+      },
+      "scoreA": 2,
+      "scoreB": 4,
+      "starttime": "2025-11-24T19:55:12",
+      "stoptime": "2025-11-24T20:27:40"
+    },
+    {
+      "matchId": 72911509,
+      "playerA": {
+        "name": "Filip Krawczyk",
+        "playerId": 2292556
+      },
+      "playerB": {
+        "name": "Roman Wasilewski",
+        "playerId": 3606325
+      },
+      "scoreA": 3,
+      "scoreB": 4,
+      "starttime": "2025-11-24T19:55:00",
+      "stoptime": "2025-11-24T20:27:11"
+    },
+    {
+      "matchId": 72911512,
+      "playerA": {
+        "name": "Oleksandr Brenko",
+        "playerId": 48902719
+      },
+      "playerB": {
+        "name": "Sebastian Szymkowski",
+        "playerId": 1660831
+      },
+      "scoreA": 2,
+      "scoreB": 4,
+      "starttime": "2025-11-24T19:55:00",
+      "stoptime": "2025-11-24T20:32:07"
+    },
+    {
+      "matchId": 72911515,
+      "playerA": {
+        "name": "Lesław Łukaszewicz",
+        "playerId": 4890123
+      },
+      "playerB": {
+        "name": "Krzysztof Gastman",
+        "playerId": 5183665
+      },
+      "scoreA": 1,
+      "scoreB": 4,
+      "starttime": "2025-11-24T19:55:00",
+      "stoptime": "2025-11-24T20:21:50"
+    },
+    {
+      "matchId": 72911518,
+      "playerA": {
+        "name": "Michał Kozłowski",
+        "playerId": 6480431
+      },
+      "playerB": {
+        "name": "Piotr Oleszczuk",
+        "playerId": 10506292
+      },
+      "scoreA": 0,
+      "scoreB": 4,
+      "starttime": "2025-11-24T19:55:14",
+      "stoptime": "2025-11-24T20:14:42"
+    },
+    {
+      "matchId": 72911521,
+      "playerA": {
+        "name": "Władysław Machynia",
+        "playerId": 15653797
+      },
+      "playerB": {
+        "name": "Piotr Popławski",
+        "playerId": 29179549
+      },
+      "scoreA": 4,
+      "scoreB": 1,
+      "starttime": "2025-11-24T19:55:15",
+      "stoptime": "2025-11-24T20:17:44"
+    },
+    {
+      "matchId": 72911524,
+      "playerA": {
+        "name": "Sławomir Podpirka",
+        "playerId": 49409869
+      },
+      "playerB": {
+        "name": "Wojtek Trajdos",
+        "playerId": 57205030
+      },
+      "scoreA": 0,
+      "scoreB": 4,
+      "starttime": "2025-11-24T19:55:00",
+      "stoptime": "2025-11-24T20:11:03"
+    },
+    {
+      "matchId": 72911527,
+      "playerA": {
+        "name": "Bogusław Krysiński",
+        "playerId": 64252549
+      },
+      "playerB": {
+        "name": "Andrei Adziarykha",
+        "playerId": 20746132
+      },
+      "scoreA": 4,
+      "scoreB": 0,
+      "starttime": "2025-11-24T19:55:00",
+      "stoptime": "2025-11-24T20:29:14"
+    },
+    {
+      "matchId": 72911530,
+      "playerA": {
+        "name": "Andrzej Guzanowski",
+        "playerId": 40933435
+      },
+      "playerB": {
+        "name": "Maria Isaienko",
+        "playerId": 15310969
+      },
+      "scoreA": 4,
+      "scoreB": 0,
+      "starttime": "2025-11-24T19:55:00",
+      "stoptime": "2025-11-24T20:26:50"
+    },
+    {
+      "matchId": 72911533,
+      "playerA": {
+        "name": "Mirosław Galas",
+        "playerId": 32939776
+      },
+      "playerB": {
+        "name": "Marta Wawrzyn",
+        "playerId": 2180579
+      },
+      "scoreA": 4,
+      "scoreB": 0,
+      "starttime": "2025-11-24T19:55:00",
+      "stoptime": "2025-11-24T20:18:17"
+    },
+    {
+      "matchId": 72911536,
+      "playerA": {
+        "name": "Konrad Kowalski",
+        "playerId": 1620822
+      },
+      "playerB": {
+        "name": "Rafal Cwiklinski",
+        "playerId": 15654331
+      },
+      "scoreA": 4,
+      "scoreB": 0,
+      "starttime": "2025-11-24T19:55:00",
+      "stoptime": "2025-11-24T20:15:24"
+    },
+    {
+      "matchId": 72911539,
+      "playerA": {
+        "name": "Marcin Walczak",
+        "playerId": 2014190
+      },
+      "playerB": {
+        "name": "Piotr Niewczas",
+        "playerId": 2383646
+      },
+      "scoreA": 4,
+      "scoreB": 1,
+      "starttime": "2025-11-24T19:55:09",
+      "stoptime": "2025-11-24T20:27:06"
+    },
+    {
+      "matchId": 72911542,
+      "playerA": {
+        "name": "Daniel Gontarek",
+        "playerId": 2893607
+      },
+      "playerB": {
+        "name": "Nikita Rudenko",
+        "playerId": 3185376
+      },
+      "scoreA": 0,
+      "scoreB": 4,
+      "starttime": "2025-11-24T19:55:08",
+      "stoptime": "2025-11-24T20:12:37"
+    },
+    {
+      "matchId": 72911545,
+      "playerA": {
+        "name": "Zbyszek Pezowicz",
+        "playerId": 3527353
+      },
+      "playerB": {
+        "name": "Krzysztof Dyrek",
+        "playerId": 5149700
+      },
+      "scoreA": 0,
+      "scoreB": 4,
+      "starttime": "2025-11-24T19:55:08",
+      "stoptime": "2025-11-24T20:14:17"
+    },
+    {
+      "matchId": 72911548,
+      "playerA": {
+        "name": "Piotr Buraczewski",
+        "playerId": 27677563
+      },
+      "playerB": {
+        "name": "Tomasz Sosnowski",
+        "playerId": 37359511
+      },
+      "scoreA": 4,
+      "scoreB": 1,
+      "starttime": "2025-11-24T19:55:07",
+      "stoptime": "2025-11-24T20:16:23"
+    },
+    {
+      "matchId": 72911551,
+      "playerA": {
+        "name": "Adam Kuryłek",
+        "playerId": 53167912
+      },
+      "playerB": {
+        "name": "Petro Sydorenko",
+        "playerId": 71410333
+      },
+      "scoreA": 4,
+      "scoreB": 0,
+      "starttime": "2025-11-24T19:55:00",
+      "stoptime": "2025-11-24T20:18:00"
+    },
+    {
+      "matchId": 72911554,
+      "playerA": {
+        "name": "Łukasz Kolano",
+        "playerId": 2950431
+      },
+      "playerB": {
+        "name": "Radosław F. Kos",
+        "playerId": 4720099
+      },
+      "scoreA": 3,
+      "scoreB": 3,
+      "starttime": "2025-11-24T19:55:06",
+      "stoptime": "2025-11-24T20:38:06"
+    },
+    {
+      "matchId": 72911557,
+      "playerA": {
+        "name": "Jakub Ładyński Eighty Nine Pucharowo Warszawa",
+        "playerId": 15492220
+      },
+      "playerB": {
+        "name": "Paweł Średnicki",
+        "playerId": 19570090
+      },
+      "scoreA": 4,
+      "scoreB": 2,
+      "starttime": "2025-11-24T19:55:05",
+      "stoptime": "2025-11-24T20:26:07"
+    },
+    {
+      "matchId": 72911560,
+      "playerA": {
+        "name": "Mariusz Ścibor",
+        "playerId": 41935663
+      },
+      "playerB": {
+        "name": "Walk Over",
+        "playerId": 1000615
+      },
+      "scoreA": 0,
+      "scoreB": 0,
+      "starttime": "",
+      "stoptime": ""
+    },
+    {
+      "matchId": 72911563,
+      "playerA": {
+        "name": "Piotr Oleszczuk",
+        "playerId": 10506292
+      },
+      "playerB": {
+        "name": "Wojtek Trajdos",
+        "playerId": 57205030
+      },
+      "scoreA": 3,
+      "scoreB": 4,
+      "starttime": "2025-11-24T20:39:59",
+      "stoptime": "2025-11-24T21:11:31"
+    },
+    {
+      "matchId": 72911566,
+      "playerA": {
+        "name": "Paweł Krysiński",
+        "playerId": 1664283
+      },
+      "playerB": {
+        "name": "Władysław Machynia",
+        "playerId": 15653797
+      },
+      "scoreA": 4,
+      "scoreB": 3,
+      "starttime": "2025-11-24T20:40:00",
+      "stoptime": "2025-11-24T21:10:03"
+    },
+    {
+      "matchId": 72911569,
+      "playerA": {
+        "name": "Andrzej Guzanowski",
+        "playerId": 40933435
+      },
+      "playerB": {
+        "name": "Bogusław Krysiński",
+        "playerId": 64252549
+      },
+      "scoreA": 2,
+      "scoreB": 4,
+      "starttime": "2025-11-24T20:40:00",
+      "stoptime": "2025-11-24T21:21:22"
+    },
+    {
+      "matchId": 72911572,
+      "playerA": {
+        "name": "Krzysztof Gastman",
+        "playerId": 5183665
+      },
+      "playerB": {
+        "name": "Sebastian Szymkowski",
+        "playerId": 1660831
+      },
+      "scoreA": 4,
+      "scoreB": 2,
+      "starttime": "2025-11-24T20:40:00",
+      "stoptime": "2025-11-24T21:14:19"
+    },
+    {
+      "matchId": 72911575,
+      "playerA": {
+        "name": "Roman Wasilewski",
+        "playerId": 3606325
+      },
+      "playerB": {
+        "name": "Mirosław Galas",
+        "playerId": 32939776
+      },
+      "scoreA": 4,
+      "scoreB": 2,
+      "starttime": "2025-11-24T20:40:01",
+      "stoptime": "2025-11-24T21:11:59"
+    },
+    {
+      "matchId": 72911578,
+      "playerA": {
+        "name": "Lesław Łukaszewicz",
+        "playerId": 4890123
+      },
+      "playerB": {
+        "name": "Sławomir Podpirka",
+        "playerId": 49409869
+      },
+      "scoreA": 4,
+      "scoreB": 0,
+      "starttime": "2025-11-24T20:40:00",
+      "stoptime": "2025-11-24T20:58:10"
+    },
+    {
+      "matchId": 72911581,
+      "playerA": {
+        "name": "Filip Krawczyk",
+        "playerId": 2292556
+      },
+      "playerB": {
+        "name": "Marcin Kubalski",
+        "playerId": 1634586
+      },
+      "scoreA": 4,
+      "scoreB": 0,
+      "starttime": "2025-11-24T20:40:03",
+      "stoptime": "2025-11-24T21:06:42"
+    },
+    {
+      "matchId": 72911584,
+      "playerA": {
+        "name": "Oleksandr Brenko",
+        "playerId": 48902719
+      },
+      "playerB": {
+        "name": "Konrad Kowalski",
+        "playerId": 1620822
+      },
+      "scoreA": 4,
+      "scoreB": 1,
+      "starttime": "2025-11-24T20:40:00",
+      "stoptime": "2025-11-24T21:07:02"
+    },
+    {
+      "matchId": 72911587,
+      "playerA": {
+        "name": "Nikita Rudenko",
+        "playerId": 3185376
+      },
+      "playerB": {
+        "name": "Krzysztof Dyrek",
+        "playerId": 5149700
+      },
+      "scoreA": 4,
+      "scoreB": 1,
+      "starttime": "2025-11-24T20:40:04",
+      "stoptime": "2025-11-24T20:59:44"
+    },
+    {
+      "matchId": 72911590,
+      "playerA": {
+        "name": "Piotr Buraczewski",
+        "playerId": 27677563
+      },
+      "playerB": {
+        "name": "Piotr Popławski",
+        "playerId": 29179549
+      },
+      "scoreA": 3,
+      "scoreB": 4,
+      "starttime": "2025-11-24T20:40:04",
+      "stoptime": "2025-11-24T21:19:35"
+    },
+    {
+      "matchId": 72911593,
+      "playerA": {
+        "name": "Michał Kozłowski",
+        "playerId": 6480431
+      },
+      "playerB": {
+        "name": "Jakub Ładyński Eighty Nine Pucharowo Warszawa",
+        "playerId": 15492220
+      },
+      "scoreA": 4,
+      "scoreB": 0,
+      "starttime": "2025-11-24T20:40:05",
+      "stoptime": "2025-11-24T21:09:12"
+    },
+    {
+      "matchId": 72911596,
+      "playerA": {
+        "name": "Andrei Adziarykha",
+        "playerId": 20746132
+      },
+      "playerB": {
+        "name": "Maria Isaienko",
+        "playerId": 15310969
+      },
+      "scoreA": 2,
+      "scoreB": 2,
+      "starttime": "2025-11-24T20:40:00",
+      "stoptime": "2025-11-24T21:22:24"
+    },
+    {
+      "matchId": 72911599,
+      "playerA": {
+        "name": "Adam Kuryłek",
+        "playerId": 53167912
+      },
+      "playerB": {
+        "name": "Marcin Walczak",
+        "playerId": 2014190
+      },
+      "scoreA": 4,
+      "scoreB": 1,
+      "starttime": "2025-11-24T20:40:00",
+      "stoptime": "2025-11-24T21:18:14"
+    },
+    {
+      "matchId": 72911602,
+      "playerA": {
+        "name": "Mariusz Ścibor",
+        "playerId": 41935663
+      },
+      "playerB": {
+        "name": "Łukasz Kolano",
+        "playerId": 2950431
+      },
+      "scoreA": 4,
+      "scoreB": 2,
+      "starttime": "2025-11-24T20:40:07",
+      "stoptime": "2025-11-24T21:19:24"
+    },
+    {
+      "matchId": 72911605,
+      "playerA": {
+        "name": "Radosław F. Kos",
+        "playerId": 4720099
+      },
+      "playerB": {
+        "name": "Marta Wawrzyn",
+        "playerId": 2180579
+      },
+      "scoreA": 4,
+      "scoreB": 1,
+      "starttime": "2025-11-24T20:40:07",
+      "stoptime": "2025-11-24T21:14:03"
+    },
+    {
+      "matchId": 72911608,
+      "playerA": {
+        "name": "Piotr Niewczas",
+        "playerId": 2383646
+      },
+      "playerB": {
+        "name": "Rafal Cwiklinski",
+        "playerId": 15654331
+      },
+      "scoreA": 4,
+      "scoreB": 2,
+      "starttime": "2025-11-24T20:40:08",
+      "stoptime": "2025-11-24T21:08:05"
+    },
+    {
+      "matchId": 72911611,
+      "playerA": {
+        "name": "Paweł Średnicki",
+        "playerId": 19570090
+      },
+      "playerB": {
+        "name": "Tomasz Sosnowski",
+        "playerId": 37359511
+      },
+      "scoreA": 4,
+      "scoreB": 3,
+      "starttime": "2025-11-24T20:40:10",
+      "stoptime": "2025-11-24T21:17:47"
+    },
+    {
+      "matchId": 72911614,
+      "playerA": {
+        "name": "Daniel Gontarek",
+        "playerId": 2893607
+      },
+      "playerB": {
+        "name": "Zbyszek Pezowicz",
+        "playerId": 3527353
+      },
+      "scoreA": 4,
+      "scoreB": 2,
+      "starttime": "2025-11-24T20:40:11",
+      "stoptime": "2025-11-24T21:11:37"
+    },
+    {
+      "matchId": 72911617,
+      "playerA": {
+        "name": "Petro Sydorenko",
+        "playerId": 71410333
+      },
+      "playerB": {
+        "name": "Walk Over",
+        "playerId": 1000615
+      },
+      "scoreA": 0,
+      "scoreB": 0,
+      "starttime": "",
+      "stoptime": ""
+    },
+    {
+      "matchId": 72911620,
+      "playerA": {
+        "name": "Wojtek Trajdos",
+        "playerId": 57205030
+      },
+      "playerB": {
+        "name": "Krzysztof Gastman",
+        "playerId": 5183665
+      },
+      "scoreA": 4,
+      "scoreB": 2,
+      "starttime": "2025-11-24T21:25:00",
+      "stoptime": "2025-11-24T21:54:15"
+    },
+    {
+      "matchId": 72911623,
+      "playerA": {
+        "name": "Bogusław Krysiński",
+        "playerId": 64252549
+      },
+      "playerB": {
+        "name": "Roman Wasilewski",
+        "playerId": 3606325
+      },
+      "scoreA": 2,
+      "scoreB": 4,
+      "starttime": "2025-11-24T21:25:00",
+      "stoptime": "2025-11-24T22:04:49"
+    },
+    {
+      "matchId": 72911626,
+      "playerA": {
+        "name": "Paweł Krysiński",
+        "playerId": 1664283
+      },
+      "playerB": {
+        "name": "Piotr Oleszczuk",
+        "playerId": 10506292
+      },
+      "scoreA": 4,
+      "scoreB": 3,
+      "starttime": "2025-11-24T21:25:01",
+      "stoptime": "2025-11-24T22:00:08"
+    },
+    {
+      "matchId": 72911629,
+      "playerA": {
+        "name": "Władysław Machynia",
+        "playerId": 15653797
+      },
+      "playerB": {
+        "name": "Lesław Łukaszewicz",
+        "playerId": 4890123
+      },
+      "scoreA": 4,
+      "scoreB": 0,
+      "starttime": "2025-11-24T21:25:00",
+      "stoptime": "2025-11-24T21:43:04"
+    },
+    {
+      "matchId": 72911632,
+      "playerA": {
+        "name": "Andrzej Guzanowski",
+        "playerId": 40933435
+      },
+      "playerB": {
+        "name": "Sebastian Szymkowski",
+        "playerId": 1660831
+      },
+      "scoreA": 4,
+      "scoreB": 1,
+      "starttime": "2025-11-24T21:25:00",
+      "stoptime": "2025-11-24T22:01:12"
+    },
+    {
+      "matchId": 72911635,
+      "playerA": {
+        "name": "Nikita Rudenko",
+        "playerId": 3185376
+      },
+      "playerB": {
+        "name": "Filip Krawczyk",
+        "playerId": 2292556
+      },
+      "scoreA": 4,
+      "scoreB": 3,
+      "starttime": "2025-11-24T21:25:00",
+      "stoptime": "2025-11-24T21:59:51"
+    },
+    {
+      "matchId": 72911638,
+      "playerA": {
+        "name": "Oleksandr Brenko",
+        "playerId": 48902719
+      },
+      "playerB": {
+        "name": "Piotr Popławski",
+        "playerId": 29179549
+      },
+      "scoreA": 0,
+      "scoreB": 4,
+      "starttime": "2025-11-24T21:25:03",
+      "stoptime": "2025-11-24T21:52:48"
+    },
+    {
+      "matchId": 72911641,
+      "playerA": {
+        "name": "Adam Kuryłek",
+        "playerId": 53167912
+      },
+      "playerB": {
+        "name": "Michał Kozłowski",
+        "playerId": 6480431
+      },
+      "scoreA": 3,
+      "scoreB": 2,
+      "starttime": "2025-11-24T21:25:00",
+      "stoptime": "2025-11-24T22:08:36"
+    },
+    {
+      "matchId": 72911644,
+      "playerA": {
+        "name": "Mirosław Galas",
+        "playerId": 32939776
+      },
+      "playerB": {
+        "name": "Mariusz Ścibor",
+        "playerId": 41935663
+      },
+      "scoreA": 4,
+      "scoreB": 2,
+      "starttime": "2025-11-24T21:25:17",
+      "stoptime": "2025-11-24T21:55:44"
+    },
+    {
+      "matchId": 72911647,
+      "playerA": {
+        "name": "Andrei Adziarykha",
+        "playerId": 20746132
+      },
+      "playerB": {
+        "name": "Radosław F. Kos",
+        "playerId": 4720099
+      },
+      "scoreA": 3,
+      "scoreB": 3,
+      "starttime": "2025-11-24T21:25:00",
+      "stoptime": "2025-11-24T22:07:59"
+    },
+    {
+      "matchId": 72911650,
+      "playerA": {
+        "name": "Maria Isaienko",
+        "playerId": 15310969
+      },
+      "playerB": {
+        "name": "Marcin Kubalski",
+        "playerId": 1634586
+      },
+      "scoreA": 3,
+      "scoreB": 3,
+      "starttime": "2025-11-24T21:25:00",
+      "stoptime": "2025-11-24T22:09:00"
+    },
+    {
+      "matchId": 72911653,
+      "playerA": {
+        "name": "Sławomir Podpirka",
+        "playerId": 49409869
+      },
+      "playerB": {
+        "name": "Jakub Ładyński Eighty Nine Pucharowo Warszawa",
+        "playerId": 15492220
+      },
+      "scoreA": 1,
+      "scoreB": 4,
+      "starttime": "2025-11-24T21:25:19",
+      "stoptime": "2025-11-24T21:50:41"
+    },
+    {
+      "matchId": 72911656,
+      "playerA": {
+        "name": "Daniel Gontarek",
+        "playerId": 2893607
+      },
+      "playerB": {
+        "name": "Konrad Kowalski",
+        "playerId": 1620822
+      },
+      "scoreA": 1,
+      "scoreB": 4,
+      "starttime": "2025-11-24T21:25:00",
+      "stoptime": "2025-11-24T21:49:10"
+    },
+    {
+      "matchId": 72911659,
+      "playerA": {
+        "name": "Piotr Buraczewski",
+        "playerId": 27677563
+      },
+      "playerB": {
+        "name": "Krzysztof Dyrek",
+        "playerId": 5149700
+      },
+      "scoreA": 4,
+      "scoreB": 2,
+      "starttime": "2025-11-24T21:25:20",
+      "stoptime": "2025-11-24T21:50:24"
+    },
+    {
+      "matchId": 72911662,
+      "playerA": {
+        "name": "Paweł Średnicki",
+        "playerId": 19570090
+      },
+      "playerB": {
+        "name": "Marcin Walczak",
+        "playerId": 2014190
+      },
+      "scoreA": 4,
+      "scoreB": 2,
+      "starttime": "2025-11-24T21:25:20",
+      "stoptime": "2025-11-24T22:06:39"
+    },
+    {
+      "matchId": 72911665,
+      "playerA": {
+        "name": "Piotr Niewczas",
+        "playerId": 2383646
+      },
+      "playerB": {
+        "name": "Petro Sydorenko",
+        "playerId": 71410333
+      },
+      "scoreA": 4,
+      "scoreB": 2,
+      "starttime": "2025-11-24T21:25:21",
+      "stoptime": "2025-11-24T22:01:25"
+    },
+    {
+      "matchId": 72911668,
+      "playerA": {
+        "name": "Łukasz Kolano",
+        "playerId": 2950431
+      },
+      "playerB": {
+        "name": "Tomasz Sosnowski",
+        "playerId": 37359511
+      },
+      "scoreA": 1,
+      "scoreB": 4,
+      "starttime": "2025-11-24T21:25:00",
+      "stoptime": "2025-11-24T22:02:59"
+    },
+    {
+      "matchId": 72911671,
+      "playerA": {
+        "name": "Marta Wawrzyn",
+        "playerId": 2180579
+      },
+      "playerB": {
+        "name": "Rafal Cwiklinski",
+        "playerId": 15654331
+      },
+      "scoreA": 1,
+      "scoreB": 4,
+      "starttime": "2025-11-24T21:25:00",
+      "stoptime": "2025-11-24T21:53:20"
+    },
+    {
+      "matchId": 72911674,
+      "playerA": {
+        "name": "Zbyszek Pezowicz",
+        "playerId": 3527353
+      },
+      "playerB": {
+        "name": "Walk Over",
+        "playerId": 1000615
+      },
+      "scoreA": 0,
+      "scoreB": 0,
+      "starttime": "",
+      "stoptime": ""
+    },
+    {
+      "matchId": 72911677,
+      "playerA": {
+        "name": "Roman Wasilewski",
+        "playerId": 3606325
+      },
+      "playerB": {
+        "name": "Wojtek Trajdos",
+        "playerId": 57205030
+      },
+      "scoreA": 1,
+      "scoreB": 4,
+      "starttime": "2025-11-24T22:10:00",
+      "stoptime": "2025-11-24T22:38:09"
+    },
+    {
+      "matchId": 72911680,
+      "playerA": {
+        "name": "Paweł Krysiński",
+        "playerId": 1664283
+      },
+      "playerB": {
+        "name": "Bogusław Krysiński",
+        "playerId": 64252549
+      },
+      "scoreA": 4,
+      "scoreB": 0,
+      "starttime": "2025-11-24T22:10:00",
+      "stoptime": "2025-11-24T22:34:26"
+    },
+    {
+      "matchId": 72911683,
+      "playerA": {
+        "name": "Władysław Machynia",
+        "playerId": 15653797
+      },
+      "playerB": {
+        "name": "Andrzej Guzanowski",
+        "playerId": 40933435
+      },
+      "scoreA": 3,
+      "scoreB": 4,
+      "starttime": "2025-11-24T22:10:00",
+      "stoptime": "2025-11-24T22:45:03"
+    },
+    {
+      "matchId": 72911686,
+      "playerA": {
+        "name": "Piotr Popławski",
+        "playerId": 29179549
+      },
+      "playerB": {
+        "name": "Krzysztof Gastman",
+        "playerId": 5183665
+      },
+      "scoreA": 1,
+      "scoreB": 4,
+      "starttime": "2025-11-24T22:10:55",
+      "stoptime": "2025-11-24T22:42:11"
+    },
+    {
+      "matchId": 72911689,
+      "playerA": {
+        "name": "Nikita Rudenko",
+        "playerId": 3185376
+      },
+      "playerB": {
+        "name": "Adam Kuryłek",
+        "playerId": 53167912
+      },
+      "scoreA": 4,
+      "scoreB": 1,
+      "starttime": "2025-11-24T22:10:56",
+      "stoptime": "2025-11-24T22:30:28"
+    },
+    {
+      "matchId": 72911692,
+      "playerA": {
+        "name": "Mirosław Galas",
+        "playerId": 32939776
+      },
+      "playerB": {
+        "name": "Piotr Oleszczuk",
+        "playerId": 10506292
+      },
+      "scoreA": 0,
+      "scoreB": 4,
+      "starttime": "2025-11-24T22:10:57",
+      "stoptime": "2025-11-24T22:31:31"
+    },
+    {
+      "matchId": 72911695,
+      "playerA": {
+        "name": "Lesław Łukaszewicz",
+        "playerId": 4890123
+      },
+      "playerB": {
+        "name": "Filip Krawczyk",
+        "playerId": 2292556
+      },
+      "scoreA": 3,
+      "scoreB": 4,
+      "starttime": "2025-11-24T22:10:00",
+      "stoptime": "2025-11-24T22:39:20"
+    },
+    {
+      "matchId": 72911698,
+      "playerA": {
+        "name": "Sebastian Szymkowski",
+        "playerId": 1660831
+      },
+      "playerB": {
+        "name": "Jakub Ładyński Eighty Nine Pucharowo Warszawa",
+        "playerId": 15492220
+      },
+      "scoreA": 4,
+      "scoreB": 2,
+      "starttime": "2025-11-24T22:10:58",
+      "stoptime": "2025-11-24T22:36:33"
+    },
+    {
+      "matchId": 72911701,
+      "playerA": {
+        "name": "Oleksandr Brenko",
+        "playerId": 48902719
+      },
+      "playerB": {
+        "name": "Piotr Buraczewski",
+        "playerId": 27677563
+      },
+      "scoreA": 4,
+      "scoreB": 2,
+      "starttime": "2025-11-24T22:10:00",
+      "stoptime": "2025-11-24T22:44:43"
+    },
+    {
+      "matchId": 72911704,
+      "playerA": {
+        "name": "Andrei Adziarykha",
+        "playerId": 20746132
+      },
+      "playerB": {
+        "name": "Paweł Średnicki",
+        "playerId": 19570090
+      },
+      "scoreA": 4,
+      "scoreB": 2,
+      "starttime": "2025-11-24T22:10:00",
+      "stoptime": "2025-11-24T22:41:43"
+    },
+    {
+      "matchId": 72911707,
+      "playerA": {
+        "name": "Michał Kozłowski",
+        "playerId": 6480431
+      },
+      "playerB": {
+        "name": "Konrad Kowalski",
+        "playerId": 1620822
+      },
+      "scoreA": 4,
+      "scoreB": 1,
+      "starttime": "2025-11-24T22:11:00",
+      "stoptime": "2025-11-24T22:32:55"
+    },
+    {
+      "matchId": 72911710,
+      "playerA": {
+        "name": "Maria Isaienko",
+        "playerId": 15310969
+      },
+      "playerB": {
+        "name": "Piotr Niewczas",
+        "playerId": 2383646
+      },
+      "scoreA": 4,
+      "scoreB": 1,
+      "starttime": "2025-11-24T22:11:00",
+      "stoptime": "2025-11-24T22:55:11"
+    },
+    {
+      "matchId": 72911713,
+      "playerA": {
+        "name": "Radosław F. Kos",
+        "playerId": 4720099
+      },
+      "playerB": {
+        "name": "Mariusz Ścibor",
+        "playerId": 41935663
+      },
+      "scoreA": 4,
+      "scoreB": 1,
+      "starttime": "2025-11-24T22:11:01",
+      "stoptime": "2025-11-24T22:45:05"
+    },
+    {
+      "matchId": 72911716,
+      "playerA": {
+        "name": "Marcin Kubalski",
+        "playerId": 1634586
+      },
+      "playerB": {
+        "name": "Sławomir Podpirka",
+        "playerId": 49409869
+      },
+      "scoreA": 4,
+      "scoreB": 0,
+      "starttime": "2025-11-24T22:11:02",
+      "stoptime": "2025-11-24T22:30:14"
+    },
+    {
+      "matchId": 72911719,
+      "playerA": {
+        "name": "Daniel Gontarek",
+        "playerId": 2893607
+      },
+      "playerB": {
+        "name": "Marcin Walczak",
+        "playerId": 2014190
+      },
+      "scoreA": 2,
+      "scoreB": 4,
+      "starttime": "2025-11-24T22:11:02",
+      "stoptime": "2025-11-24T22:52:07"
+    },
+    {
+      "matchId": 72911722,
+      "playerA": {
+        "name": "Krzysztof Dyrek",
+        "playerId": 5149700
+      },
+      "playerB": {
+        "name": "Tomasz Sosnowski",
+        "playerId": 37359511
+      },
+      "scoreA": 3,
+      "scoreB": 4,
+      "starttime": "2025-11-24T22:11:00",
+      "stoptime": "2025-11-24T22:46:19"
+    },
+    {
+      "matchId": 72911725,
+      "playerA": {
+        "name": "Rafal Cwiklinski",
+        "playerId": 15654331
+      },
+      "playerB": {
+        "name": "Petro Sydorenko",
+        "playerId": 71410333
+      },
+      "scoreA": 1,
+      "scoreB": 4,
+      "starttime": "2025-11-24T22:11:00",
+      "stoptime": "2025-11-24T22:32:04"
+    },
+    {
+      "matchId": 72911728,
+      "playerA": {
+        "name": "Zbyszek Pezowicz",
+        "playerId": 3527353
+      },
+      "playerB": {
+        "name": "Łukasz Kolano",
+        "playerId": 2950431
+      },
+      "scoreA": 4,
+      "scoreB": 1,
+      "starttime": "2025-11-24T22:11:06",
+      "stoptime": "2025-11-24T22:33:52"
+    },
+    {
+      "matchId": 72911731,
+      "playerA": {
+        "name": "Marta Wawrzyn",
+        "playerId": 2180579
+      },
+      "playerB": {
+        "name": "Walk Over",
+        "playerId": 1000615
+      },
+      "scoreA": 0,
+      "scoreB": 0,
+      "starttime": "",
+      "stoptime": ""
+    },
+    {
+      "matchId": 72911734,
+      "playerA": {
+        "name": "Wojtek Trajdos",
+        "playerId": 57205030
+      },
+      "playerB": {
+        "name": "Paweł Krysiński",
+        "playerId": 1664283
+      },
+      "scoreA": 4,
+      "scoreB": 2,
+      "starttime": "2025-11-24T22:56:00",
+      "stoptime": "2025-11-24T23:24:02"
+    },
+    {
+      "matchId": 72911737,
+      "playerA": {
+        "name": "Roman Wasilewski",
+        "playerId": 3606325
+      },
+      "playerB": {
+        "name": "Krzysztof Gastman",
+        "playerId": 5183665
+      },
+      "scoreA": 1,
+      "scoreB": 4,
+      "starttime": "2025-11-24T22:56:00",
+      "stoptime": "2025-11-24T23:25:11"
+    },
+    {
+      "matchId": 72911740,
+      "playerA": {
+        "name": "Andrzej Guzanowski",
+        "playerId": 40933435
+      },
+      "playerB": {
+        "name": "Nikita Rudenko",
+        "playerId": 3185376
+      },
+      "scoreA": 4,
+      "scoreB": 3,
+      "starttime": "2025-11-24T22:56:00",
+      "stoptime": "2025-11-24T23:30:24"
+    },
+    {
+      "matchId": 72911743,
+      "playerA": {
+        "name": "Bogusław Krysiński",
+        "playerId": 64252549
+      },
+      "playerB": {
+        "name": "Piotr Oleszczuk",
+        "playerId": 10506292
+      },
+      "scoreA": 1,
+      "scoreB": 4,
+      "starttime": "2025-11-24T22:56:17",
+      "stoptime": "2025-11-24T23:19:57"
+    },
+    {
+      "matchId": 72911746,
+      "playerA": {
+        "name": "Władysław Machynia",
+        "playerId": 15653797
+      },
+      "playerB": {
+        "name": "Sebastian Szymkowski",
+        "playerId": 1660831
+      },
+      "scoreA": 4,
+      "scoreB": 0,
+      "starttime": "2025-11-24T22:56:00",
+      "stoptime": "2025-11-24T23:24:23"
+    },
+    {
+      "matchId": 72911749,
+      "playerA": {
+        "name": "Piotr Popławski",
+        "playerId": 29179549
+      },
+      "playerB": {
+        "name": "Filip Krawczyk",
+        "playerId": 2292556
+      },
+      "scoreA": 1,
+      "scoreB": 4,
+      "starttime": "2025-11-24T22:56:16",
+      "stoptime": "2025-11-24T23:24:15"
+    },
+    {
+      "matchId": 72911752,
+      "playerA": {
+        "name": "Oleksandr Brenko",
+        "playerId": 48902719
+      },
+      "playerB": {
+        "name": "Adam Kuryłek",
+        "playerId": 53167912
+      },
+      "scoreA": 4,
+      "scoreB": 1,
+      "starttime": "2025-11-24T22:56:00",
+      "stoptime": "2025-11-24T23:30:29"
+    },
+    {
+      "matchId": 72911755,
+      "playerA": {
+        "name": "Maria Isaienko",
+        "playerId": 15310969
+      },
+      "playerB": {
+        "name": "Michał Kozłowski",
+        "playerId": 6480431
+      },
+      "scoreA": 1,
+      "scoreB": 4,
+      "starttime": "2025-11-24T22:56:15",
+      "stoptime": "2025-11-24T23:28:44"
+    },
+    {
+      "matchId": 72911758,
+      "playerA": {
+        "name": "Andrei Adziarykha",
+        "playerId": 20746132
+      },
+      "playerB": {
+        "name": "Mirosław Galas",
+        "playerId": 32939776
+      },
+      "scoreA": 3,
+      "scoreB": 4,
+      "starttime": "2025-11-24T22:56:06",
+      "stoptime": "2025-11-24T23:33:00"
+    },
+    {
+      "matchId": 72911761,
+      "playerA": {
+        "name": "Radosław F. Kos",
+        "playerId": 4720099
+      },
+      "playerB": {
+        "name": "Marcin Kubalski",
+        "playerId": 1634586
+      },
+      "scoreA": 3,
+      "scoreB": 3,
+      "starttime": "2025-11-24T22:56:00",
+      "stoptime": "2025-11-24T23:42:07"
+    },
+    {
+      "matchId": 72911764,
+      "playerA": {
+        "name": "Lesław Łukaszewicz",
+        "playerId": 4890123
+      },
+      "playerB": {
+        "name": "Jakub Ładyński Eighty Nine Pucharowo Warszawa",
+        "playerId": 15492220
+      },
+      "scoreA": 4,
+      "scoreB": 0,
+      "starttime": "2025-11-24T22:56:00",
+      "stoptime": "2025-11-24T22:59:18"
+    },
+    {
+      "matchId": 72911767,
+      "playerA": {
+        "name": "Paweł Średnicki",
+        "playerId": 19570090
+      },
+      "playerB": {
+        "name": "Konrad Kowalski",
+        "playerId": 1620822
+      },
+      "scoreA": 1,
+      "scoreB": 4,
+      "starttime": "2025-11-24T22:56:00",
+      "stoptime": "2025-11-24T23:28:59"
+    },
+    {
+      "matchId": 72911770,
+      "playerA": {
+        "name": "Piotr Buraczewski",
+        "playerId": 27677563
+      },
+      "playerB": {
+        "name": "Piotr Niewczas",
+        "playerId": 2383646
+      },
+      "scoreA": 4,
+      "scoreB": 1,
+      "starttime": "2025-11-24T22:56:02",
+      "stoptime": "2025-11-24T23:21:37"
+    },
+    {
+      "matchId": 72911773,
+      "playerA": {
+        "name": "Marcin Walczak",
+        "playerId": 2014190
+      },
+      "playerB": {
+        "name": "Tomasz Sosnowski",
+        "playerId": 37359511
+      },
+      "scoreA": 3,
+      "scoreB": 3,
+      "starttime": "2025-11-24T22:56:00",
+      "stoptime": "2025-11-24T23:41:55"
+    },
+    {
+      "matchId": 72911776,
+      "playerA": {
+        "name": "Petro Sydorenko",
+        "playerId": 71410333
+      },
+      "playerB": {
+        "name": "Mariusz Ścibor",
+        "playerId": 41935663
+      },
+      "scoreA": 4,
+      "scoreB": 3,
+      "starttime": "2025-11-24T22:56:00",
+      "stoptime": "2025-11-24T23:28:10"
+    },
+    {
+      "matchId": 72911779,
+      "playerA": {
+        "name": "Zbyszek Pezowicz",
+        "playerId": 3527353
+      },
+      "playerB": {
+        "name": "Sławomir Podpirka",
+        "playerId": 49409869
+      },
+      "scoreA": 4,
+      "scoreB": 2,
+      "starttime": "2025-11-24T22:56:11",
+      "stoptime": "2025-11-24T23:31:11"
+    },
+    {
+      "matchId": 72911782,
+      "playerA": {
+        "name": "Krzysztof Dyrek",
+        "playerId": 5149700
+      },
+      "playerB": {
+        "name": "Walk Over",
+        "playerId": 1000615
+      },
+      "scoreA": 0,
+      "scoreB": 0,
+      "starttime": "",
+      "stoptime": ""
+    },
+    {
+      "matchId": 72911785,
+      "playerA": {
+        "name": "Rafal Cwiklinski",
+        "playerId": 15654331
+      },
+      "playerB": {
+        "name": "Łukasz Kolano",
+        "playerId": 2950431
+      },
+      "scoreA": 3,
+      "scoreB": 4,
+      "starttime": "2025-11-24T22:56:00",
+      "stoptime": "2025-11-24T23:30:42"
+    },
+    {
+      "matchId": 72911788,
+      "playerA": {
+        "name": "Marta Wawrzyn",
+        "playerId": 2180579
+      },
+      "playerB": {
+        "name": "Daniel Gontarek",
+        "playerId": 2893607
+      },
+      "scoreA": 4,
+      "scoreB": 0,
+      "starttime": "2025-11-24T22:56:00",
+      "stoptime": "2025-11-24T23:26:27"
+    }
+  ],
+  "name": "Swiss 9-ball Open (4) ****",
+  "starttime": "2025-11-24T19:00:00+01:00",
+  "stoptime": "2025-11-24T11:59:00+01:00",
+  "timezone": "Europe/Warsaw",
+  "tournamentId": 71515915,
+  "type": 0,
+  "url": "https://cuescore.com/tournament/Swiss+9-ball+Open+%284%29+%2A%2A%2A%2A/71515915",
+  "venues": [
+    {
+      "name": "Złota Bila - Centrum Bilardowe",
+      "venueId": 36031138
+    }
+  ]
+}

@@ -1,96 +1,82 @@
-# Warsaw Pool Rankings - Backend
+# Warsaw Pool Ranking - Rust Backend
 
-Python FastAPI backend for the Warsaw Pool Ranking System.
+Data acquisition backend for the Warsaw Pool Ranking system, written in Rust.
 
-## Setup
+## Features
 
-### Prerequisites
-- Python 3.11+
-- PostgreSQL 14+
+- **Web Scraping**: Discovers tournaments from CueScore venue pages
+- **API Client**: Fetches tournament details from CueScore API
+- **Two-Tier Caching**: Raw API responses and parsed tournament data
+- **Rate Limiting**: Automatic rate limiting (1 req/sec) for API and scraping
+- **Progress Tracking**: Human-readable progress indicators
 
-### Installation
+## Architecture
 
-1. Create virtual environment:
+### Modules
+
+- `api/` - CueScore API client with response parsing
+- `cache/` - Two-tier caching system (raw + parsed)
+- `config/` - Venue configuration
+- `domain/` - Data models and collections
+- `errors/` - Error handling utilities
+- `fetchers/` - Web scraping for tournament discovery
+- `http/` - HTTP client with rate limiting
+- `pagination/` - Pagination abstractions
+- `rate_limiter/` - Rate limiting logic
+
+## Usage
+
+### Configuration
+
+Update venue IDs in `src/config/venues.rs`:
+
+```rust
+pub fn get_venues() -> Vec<VenueConfig> {
+    vec![
+        VenueConfig::new(12345, "your-venue-name"),
+        // Add more venues...
+    ]
+}
+```
+
+To find venue IDs:
+1. Navigate to https://cuescore.com
+2. Search for your venue
+3. URL format: `https://cuescore.com/venue/{name}/{id}/`
+4. Extract the ID
+
+### Run Data Ingestion
+
 ```bash
-python -m venv venv
-source venv/bin/activate  # On Windows: venv\Scripts\activate
+# Set log level (optional)
+export RUST_LOG=info
+
+# Run ingestion
+cargo run -- ingest
 ```
 
-2. Install dependencies:
-```bash
-pip install -r requirements.txt
-```
+### Output
 
-3. Set up environment variables:
-```bash
-cp .env.example .env
-# Edit .env with your database credentials
-```
-
-4. Set up database:
-```bash
-# Create database
-createdb warsaw_pool_rankings
-
-# Run schema
-psql warsaw_pool_rankings < ../database/schema.sql
-```
-
-### Running the Server
-
-Development mode:
-```bash
-uvicorn app.main:app --reload --host 0.0.0.0 --port 8000
-```
-
-Production mode:
-```bash
-uvicorn app.main:app --host 0.0.0.0 --port 8000
-```
-
-API will be available at: http://localhost:8000
-
-API documentation: http://localhost:8000/docs
-
-## Project Structure
-
-```
-backend/
-├── app/
-│   ├── api/           # API endpoints
-│   ├── rating/        # Rating calculation modules
-│   ├── data/          # CueScore data collection
-│   ├── models.py      # SQLAlchemy models
-│   ├── database.py    # Database connection
-│   ├── config.py      # Configuration
-│   └── main.py        # FastAPI app
-├── tests/             # Unit tests
-├── requirements.txt   # Python dependencies
-└── .env              # Environment variables
-```
+Data is saved to `cache/` directory:
+- `cache/raw/{tournament_id}.json` - Raw API responses
+- `cache/parsed/tournaments.json` - Processed tournament data
 
 ## Development
 
-### Running Tests
 ```bash
-pytest
+# Check compilation
+cargo check
+
+# Run with logs
+RUST_LOG=debug cargo run -- ingest
+
+# Build release version
+cargo build --release
 ```
 
-### Code Formatting
-```bash
-black app/
-isort app/
-```
+## Architecture Principles
 
-### Type Checking
-```bash
-mypy app/
-```
-
-## API Endpoints
-
-- `GET /` - API health check
-- `GET /health` - Health check for monitoring
-- `GET /api/players` - List all players (coming soon)
-- `GET /api/player/:id` - Player details (coming soon)
-- `GET /api/player/:id/history` - Player rating history (coming soon)
+- **Small Files**: Each file focused on one responsibility
+- **Short Methods**: Functions kept to 5-15 lines
+- **Multiple Abstraction Layers**: Rate limiting, HTTP, pagination, parsing
+- **Composability**: Layers compose cleanly for testability

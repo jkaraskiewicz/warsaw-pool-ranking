@@ -1,1 +1,43 @@
-{"tournamentId": 59193217, "banner": [], "name": "Friendly match: Taiwan vs Poland (Day 1)", "type": 1, "format": 1, "breakrule": "alternate", "description": "", "dresscode": "", "defaultRaceTo": 7, "url": "https://cuescore.com/tournament/Friendly+match%3A+Taiwan+vs+Poland+%28Day+1%29/59193217", "timezone": "Europe/Warsaw", "displayDate": "April 24, 2025", "starttime": "2025-04-24T18:00:00+02:00", "stoptime": "2025-04-24T21:00:00+02:00", "deadline": "", "entrystart": "", "status": "Finished", "discipline": "9-Ball", "disciplineId": 3, "branch": 1, "handicap": [], "contacts": [{"playerId": 1612287, "name": "Maciej Grzegorz Lesiak", "firstname": "Maciej Grzegorz", "lastname": "Lesiak", "url": "https://cuescore.com/player/Maciej+Grzegorz+Lesiak/1612287", "image": "https://img.cuescore.com/image/2/4/2cf115d1df0825752b34e0510547da26.png?t=1683467983", "country": {"name": "Poland", "alpha3": "POL", "image": "https://cuescore.com/img/flags/png-country-4x2-none/res-640x480/pl.png", "continent": "Europe"}, "represents": {"organizationId": 5133719, "stub": "mglcuesports", "name": "MGL Cue Sports", "url": "https://cuescore.com/mglcuesports", "logo": "//img.cuescore.com/image/7/2/71487152007d737c2f5de4f7821f7c9e.png?t=1555512394", "profileColor": "58a5fc"}}], "owner": {"organizationId": 5133719, "stub": "mglcuesports", "name": "MGL Cue Sports", "url": "https://cuescore.com/mglcuesports", "logo": "//img.cuescore.com/image/7/2/71487152007d737c2f5de4f7821f7c9e.png?t=1555512394", "profileColor": "58a5fc"}, "organizers": [{"organizationId": 5133719, "stub": "mglcuesports", "name": "MGL Cue Sports", "url": "https://cuescore.com/mglcuesports", "logo": "//img.cuescore.com/image/7/2/71487152007d737c2f5de4f7821f7c9e.png?t=1555512394", "profileColor": "58a5fc"}], "venues": [{"venueId": 36031138, "name": "Z\u0142ota Bila - Centrum Bilardowe", "url": "https://cuescore.com/venue/Z%C5%82ota+Bila+-+Centrum+Bilardowe/36031138", "owner": {"organizationId": 7011764, "stub": "blackballevents", "name": "Black Ball Events", "url": "https://cuescore.com/blackballevents", "logo": "//img.cuescore.com/image/9/2/9b59b70e156f2f8d0f1a879411c6ffd1.png?t=1576160578", "profileColor": "000000"}}], "sequence": 0, "standings": [], "matches": [{"matchId": 59199475, "matchno": 1, "roundName": "Final", "round": 1, "playerA": {"teamId": 59189506, "name": "Poland", "url": "https://cuescore.com/team/Poland/59189506", "image": "https://img.cuescore.com/image/b/4/b65e00f0076abd0055a71ffa703e5bff.png?t=1483705613", "country": {"name": "Poland", "alpha3": "POL", "image": "https://cuescore.com/img/flags/png-country-4x2-none/res-640x480/pl.png", "continent": "Europe"}}, "playerB": {"teamId": 59190292, "name": "Taiwan", "url": "https://cuescore.com/team/Taiwan/59190292", "image": "https://img.cuescore.com/image/b/4/b65e00f0076abd0055a71ffa703e5bff.png?t=1483705613", "country": []}, "scoreA": 4, "scoreB": 4, "raceTo": 7, "discipline": "9-Ball", "disciplineId": 3, "branch": 1, "penalty": 0, "groupNo": 0, "inningsPlayerA": 0, "inningsPlayerB": 0, "highBreaksA": "", "highBreaksB": "", "runoutsA": 1, "runoutsB": 2, "lagWinner": "", "table": [], "tournamentId": 59193217, "challengeId": 0, "starttime": "2025-04-24T18:36:00", "stoptime": "2025-04-24T21:51:24", "matchstatus": "finished", "matchstatusCode": 2, "bestOfSets": 0, "useInnings": false, "frames": [], "properties": {"runoutsB": 2, "runoutsA": 1, "lagWinsB": 0, "lagWinsA": 0}, "sets": [], "curVersion": 227, "notes": [], "matchType": 1, "videoLink": "", "comment": "", "winnerNext": "", "loserNext": ""}], "rankings": [], "access": [], "teamEditIndividualAccess": "CAPTAIN", "id": "59193217"}
+{
+  "banner": [],
+  "breakrule": "alternate",
+  "deadline": "",
+  "defaultRaceTo": 7,
+  "description": "",
+  "discipline": "9-Ball",
+  "displayDate": "April 24, 2025",
+  "dresscode": "",
+  "format": 1,
+  "matches": [
+    {
+      "matchId": 59199475,
+      "playerA": {
+        "name": "Poland",
+        "playerId": null,
+        "teamId": 59189506
+      },
+      "playerB": {
+        "name": "Taiwan",
+        "playerId": null,
+        "teamId": 59190292
+      },
+      "scoreA": 4,
+      "scoreB": 4,
+      "starttime": "2025-04-24T18:36:00",
+      "stoptime": "2025-04-24T21:51:24"
+    }
+  ],
+  "name": "Friendly match: Taiwan vs Poland (Day 1)",
+  "starttime": "2025-04-24T18:00:00+02:00",
+  "stoptime": "2025-04-24T21:00:00+02:00",
+  "timezone": "Europe/Warsaw",
+  "tournamentId": 59193217,
+  "type": 1,
+  "url": "https://cuescore.com/tournament/Friendly+match%3A+Taiwan+vs+Poland+%28Day+1%29/59193217",
+  "venues": [
+    {
+      "name": "Złota Bila - Centrum Bilardowe",
+      "venueId": 36031138
+    }
+  ]
+}

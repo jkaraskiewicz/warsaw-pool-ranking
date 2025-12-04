@@ -9,60 +9,49 @@ A skill-based rating system for Warsaw pool players using the Bradley-Terry Maxi
 - **Weekly Historical Replay** - Full simulation from scratch each week
 - **Confidence Levels** - Unranked, Provisional, Emerging, Established
 - **Angular Frontend** - Searchable player list with rating history charts
-- **FastAPI Backend** - RESTful API with automatic OpenAPI docs
-- **PostgreSQL Database** - Persistent storage with weekly snapshots
+- **High-Performance Rust Backend** - Efficient data processing and rating calculation
+- **SQLite Database** - Persistent storage with weekly snapshots
 
 ## Quick Start with Docker (Recommended)
 
 ### 1. Configure Venues
 
-Edit `backend/config/venues.py` to add Warsaw pool venues:
+Edit `backend/src/config/venues.rs` to add Warsaw pool venues. This is a Rust file now, so the syntax will be Rust code:
 
-```python
-WARSAW_VENUES = [
-    {
-        "id": "67496954",
-        "slug": "147-break-nowogrodzka",
-        "name": "147 Break Nowogrodzka"
-    },
-]
+```rust
+pub fn get_venues() -> Vec<VenueConfig> {
+    vec![
+        VenueConfig { id: 2842336, name: "147 Break Zamieniecka".to_string(), slug: "147-break-zamieniecka".to_string() },
+        VenueConfig { id: 1698108, name: "147 Break Nowogrodzka".to_string(), slug: "147-break-nowogrodzka".to_string() },
+    ]
+}
 ```
 
 ### 2. Start Services
 
 ```bash
 # Build and start all services (PostgreSQL, Backend, Frontend)
-docker-compose up -d
+docker-compose up -d --build
 
-# Initialize database with historical data (10-30 minutes)
-docker-compose exec backend python scripts/init_database.py --auto
+# The Rust backend will automatically run `process` on startup.
+# To manually trigger ingest (e.g., for new data):
+# docker-compose exec backend ./warsaw_pool_ranking ingest
 ```
 
 ### 3. Access Application
 
 - **Frontend:** http://localhost
-- **Backend API:** http://localhost:8000
-- **API Docs:** http://localhost:8000/docs
-
-### 4. Weekly Updates
-
-```bash
-# Run manually
-docker-compose exec backend python scripts/run_weekly_update.py
-
-# Or schedule with cron
-0 2 * * 0 docker-compose exec -T backend python scripts/run_weekly_update.py
-```
+- **Backend (Rust CLI):** Run `docker-compose logs backend` to see processing output.
 
 ## Using Makefile (Optional)
 
 ```bash
 make up        # Start all services
-make init      # Initialize database
+make init      # The Rust backend initializes on start, this command is deprecated.
 make logs      # View logs
-make players   # Show top 10 players
-make stats     # Show database statistics
-make update    # Run weekly update
+make players   # Show top 10 players (requires custom Docker exec command for Rust)
+make stats     # Show database statistics (requires custom Docker exec command for Rust)
+make update    # The Rust backend processes on start, this command is deprecated.
 make down      # Stop all services
 ```
 
@@ -78,21 +67,20 @@ See `make help` for all commands.
 │  - Rating history chart (Chart.js)               │
 └────────────┬─────────────────────────────────────┘
              │
-             │ HTTP /api/*
+             │ (Accesses SQLite DB directly in backend container)
              ▼
 ┌──────────────────────────────────────────────────┐
-│  FastAPI Backend (Port 8000)                     │
-│  - GET /api/players                              │
-│  - GET /api/player/:id                           │
-│  - GET /api/player/:id/history                   │
+│  Rust Backend (CLI - processes on startup)       │
+│  - Scrapes CueScore data                         │
+│  - Calculates Bradley-Terry ratings              │
+│  - Stores data in SQLite                         │
 └────────────┬─────────────────────────────────────┘
              │
-             │ SQL
+             │ (Embedded within backend container)
              ▼
 ┌──────────────────────────────────────────────────┐
-│  PostgreSQL Database (Port 5432)                 │
+│  SQLite Database (File: warsaw_pool_ranking.db)  │
 │  - Players, Games, Ratings, Snapshots            │
-│  - Persistent volume: postgres_data              │
 └──────────────────────────────────────────────────┘
 ```
 
@@ -123,55 +111,71 @@ See `make help` for all commands.
 
 ```
 warsaw-pool-ranking/
-├── backend/
-│   ├── app/
-│   │   ├── api/              # FastAPI endpoints
-│   │   ├── data/             # CueScore scraper & API client
-│   │   ├── rating/           # Rating algorithm
-│   │   └── database.py       # SQLAlchemy setup
-│   ├── config/
-│   │   └── venues.py         # Venue configuration
-│   ├── scripts/
-│   │   ├── init_database.py  # Initial setup
-│   │   └── run_weekly_update.py
-│   └── tests/                # Unit tests (pytest)
+├── backend/                  # Rust backend
+│   ├── src/                  # Rust source code
+│   │   ├── api/              # CueScore API client
+│   │   ├── cache/            # Caching logic
+│   │   ├── cli/              # Command-line interface
+│   │   ├── config/           # Application configuration
+│   │   ├── database/         # Database interaction
+│   │   ├── domain/           # Core domain models and logic
+│   │   ├── fetchers/         # Web scraping logic
+│   │   ├── http/             # HTTP client with rate limiting
+│   │   ├── pagination/       # Pagination logic
+│   │   ├── rate_limiter/     # Rate limiting implementation
+│   │   ├── rating/           # Bradley-Terry rating algorithm
+│   │   └── services/         # High-level business logic (ingestion, processing)
+│   ├── Cargo.toml            # Rust project manifest
+│   └── Dockerfile            # Dockerfile for the Rust backend
 ├── frontend/
 │   └── src/app/
 │       ├── components/       # Angular components
 │       ├── services/         # HTTP services
 │       └── models/           # TypeScript interfaces
 ├── database/
-│   └── schema.sql            # PostgreSQL schema
+│   └── schema.sql            # SQLite schema
 ├── docker-compose.yml
-└── DESIGN.md                 # Detailed design document
+└── README.md
 ```
 
 ## Development
 
 ### Without Docker
 
-See [DATABASE_SETUP.md](DATABASE_SETUP.md) for manual setup instructions.
+To run the Rust backend locally:
+
+```bash
+cd backend
+# First, build the project
+cargo build --release
+
+# Then, run the processing step. It will ingest data if not cached.
+./target/release/warsaw_pool_ranking process
+
+# To ingest new data (and recache):
+./target/release/warsaw_pool_ranking ingest
+```
 
 ### Running Tests
 
 ```bash
 # With Docker
-docker-compose exec backend pytest -v
+docker-compose exec backend cargo test
 
 # Without Docker
 cd backend
-pytest -v
+cargo test
 ```
 
 ### Backend Development
 
 ```bash
-# Docker (with hot reload)
-docker-compose up -d
+# Docker (builds and runs)
+docker-compose up -d backend
 
-# Local
+# Local (with hot reload via `cargo watch` or manual recompilation)
 cd backend
-uvicorn app.main:app --reload
+cargo watch -x run -- process # Runs `process` on file changes
 ```
 
 ### Frontend Development
@@ -190,10 +194,10 @@ docker-compose up frontend
 
 ### CueScore Integration
 
-1. **Venue Scraping** - Scrapes tournament lists from venue pages
-2. **API Fetching** - Fetches tournament details via API
-3. **Game Parsing** - Converts match scores to individual games
-4. **Rate Limiting** - 1 request/second with exponential backoff
+1.  **Venue Scraping** - Scrapes tournament lists from venue pages
+2.  **API Fetching** - Fetches tournament details via API
+3.  **Game Parsing** - Converts match scores to individual games
+4.  **Rate Limiting** - 10 requests/second with caching and graceful error handling
 
 ### Adding Venues
 
@@ -202,37 +206,20 @@ Find venue on CueScore, extract from URL:
 https://cuescore.com/venue/{slug}/{id}/tournaments
 ```
 
-Add to `backend/config/venues.py`:
-```python
-{
-    "id": "venue_id",
-    "slug": "venue-slug",
-    "name": "Display Name"
-}
+Add to `backend/src/config/venues.rs`:
+```rust
+    VenueConfig { id: 12345, name: "New Venue Name".to_string(), slug: "new-venue-name".to_string() },
 ```
 
 ## Documentation
 
-- **[DESIGN.md](DESIGN.md)** - Complete system design and architecture
-- **[DOCKER_SETUP.md](DOCKER_SETUP.md)** - Docker deployment guide
-- **[DATABASE_SETUP.md](DATABASE_SETUP.md)** - Manual database setup
 - **[backend/tests/README.md](backend/tests/README.md)** - Testing guide
-
-## API Documentation
-
-Interactive API docs available at http://localhost:8000/docs when running.
-
-### Endpoints
-
-- `GET /api/players?min_games=10` - List ranked players
-- `GET /api/player/{id}` - Player details
-- `GET /api/player/{id}/history` - Rating history snapshots
 
 ## Technology Stack
 
-- **Backend:** Python 3.11, FastAPI, SQLAlchemy, choix, pandas, BeautifulSoup4
+- **Backend:** Rust (1.73+), `tokio`, `reqwest`, `ndarray`, `rusqlite`, `serde`
 - **Frontend:** Angular 17, TypeScript, Angular Material, Chart.js (ng2-charts)
-- **Database:** PostgreSQL 15
+- **Database:** SQLite (embedded within backend container)
 - **Deployment:** Docker, docker-compose, Nginx
 
 ## License

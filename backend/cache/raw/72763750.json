@@ -1,1 +1,404 @@
-{"tournamentId": 72763750, "banner": {"thumbnail": "//img.cuescore.com/image/3/7/35ca221908dbccd49e9170e97497f177.png?t=1763728592", "original": "//img.cuescore.com/image/3/1/35ca221908dbccd49e9170e97497f177.png?t=1763728592"}, "name": "147 Break Amateur Cup XIX turniej 3/15", "type": 0, "format": 4, "breakrule": "alternate", "description": "Turniej rankingowy WPT |  Niedziele 14:30 | klub 147 Break Zamieniecka | odmiana 8 bil | wpisowe 50 z\u0142 | system grupowy\r\nZapraszamy do nowego sklepu bilardowego Shooters - sklep dla graczy!", "dresscode": "", "defaultRaceTo": 2, "url": "https://cuescore.com/tournament/147+Break+Amateur+Cup+XIX+turniej+3%252F15/72763750", "timezone": "Europe/Warsaw", "displayDate": "November 23, 2025", "starttime": "2025-11-23T14:30:00+01:00", "stoptime": "2025-11-23T18:30:00+01:00", "deadline": "", "entrystart": "", "status": "Open", "discipline": "8-Ball", "disciplineId": 2, "branch": 1, "handicap": [], "contacts": [{"playerId": 1620195, "name": "Micha\u0142 Nowak", "firstname": "Micha\u0142", "lastname": "Nowak", "url": "https://cuescore.com/player/Micha%C5%82+Nowak/1620195", "image": "https://img.cuescore.com/image/1/4/15d291e83ead350107ae474e8623a6f5.png?t=1504629089", "country": {"name": "Poland", "alpha3": "POL", "image": "https://cuescore.com/img/flags/png-country-4x2-none/res-640x480/pl.png", "continent": "Europe"}, "represents": []}, {"playerId": 59183473, "name": "Kacper Kutra", "firstname": "Kacper", "lastname": "Kutra", "url": "https://cuescore.com/player/Kacper+Kutra/59183473", "image": "https://img.cuescore.com/image/8/4/862c792ba8eb7f97e626fbe6cbcc59f6.png", "country": {"name": "Poland", "alpha3": "POL", "image": "https://cuescore.com/img/flags/png-country-4x2-none/res-640x480/pl.png", "continent": "Europe"}, "represents": []}], "owner": {"organizationId": 7011764, "stub": "blackballevents", "name": "Black Ball Events", "url": "https://cuescore.com/blackballevents", "logo": "//img.cuescore.com/image/9/2/9b59b70e156f2f8d0f1a879411c6ffd1.png?t=1576160578", "profileColor": "000000"}, "organizers": [{"organizationId": 7011764, "stub": "blackballevents", "name": "Black Ball Events", "url": "https://cuescore.com/blackballevents", "logo": "//img.cuescore.com/image/9/2/9b59b70e156f2f8d0f1a879411c6ffd1.png?t=1576160578", "profileColor": "000000"}], "venues": [{"venueId": 2842336, "name": "147 Break Zamieniecka", "url": "https://cuescore.com/venue/147+Break+Zamieniecka/2842336", "owner": {"organizationId": 5133719, "stub": "mglcuesports", "name": "MGL Cue Sports", "url": "https://cuescore.com/mglcuesports", "logo": "//img.cuescore.com/image/7/2/71487152007d737c2f5de4f7821f7c9e.png?t=1555512394", "profileColor": "58a5fc"}}], "sequence": 0, "standings": [], "matches": [], "rankings": [], "access": [1620195], "id": "72763750"}
+{
+  "banner": {
+    "original": "//img.cuescore.com/image/3/1/35ca221908dbccd49e9170e97497f177.png?t=1763728592",
+    "thumbnail": "//img.cuescore.com/image/3/7/35ca221908dbccd49e9170e97497f177.png?t=1763728592"
+  },
+  "breakrule": "alternate",
+  "deadline": "",
+  "defaultRaceTo": 2,
+  "description": "Turniej rankingowy WPT |  Niedziele 14:30 | klub 147 Break Zamieniecka | odmiana 8 bil | wpisowe 50 zł | system grupowy\r\nZapraszamy do nowego sklepu bilardowego Shooters - sklep dla graczy!",
+  "discipline": "8-Ball",
+  "displayDate": "November 23, 2025",
+  "dresscode": "",
+  "format": 4,
+  "matches": [
+    {
+      "matchId": 72853894,
+      "playerA": {
+        "name": "Marta Wawrzyn",
+        "playerId": 2180579
+      },
+      "playerB": {
+        "name": "Wolny Los1",
+        "playerId": 2098390
+      },
+      "scoreA": 0,
+      "scoreB": 0,
+      "starttime": "",
+      "stoptime": ""
+    },
+    {
+      "matchId": 72853897,
+      "playerA": {
+        "name": "Jakub Tomasik",
+        "playerId": 65042038
+      },
+      "playerB": {
+        "name": "Hubert Trojan",
+        "playerId": 10322941
+      },
+      "scoreA": 3,
+      "scoreB": 1,
+      "starttime": "2025-11-23T14:37:00",
+      "stoptime": "2025-11-23T15:37:31"
+    },
+    {
+      "matchId": 72853900,
+      "playerA": {
+        "name": "Artur Lewandowski",
+        "playerId": 15492853
+      },
+      "playerB": {
+        "name": "Krzysztof Doroszkiewicz",
+        "playerId": 19794961
+      },
+      "scoreA": 2,
+      "scoreB": 1,
+      "starttime": "2025-11-23T14:36:00",
+      "stoptime": "2025-11-23T15:07:47"
+    },
+    {
+      "matchId": 72853903,
+      "playerA": {
+        "name": "Jarosław Lipiński",
+        "playerId": 21730096
+      },
+      "playerB": {
+        "name": "Kamil Felter",
+        "playerId": 56058259
+      },
+      "scoreA": 2,
+      "scoreB": 0,
+      "starttime": "2025-11-23T14:36:23",
+      "stoptime": "2025-11-23T14:56:48"
+    },
+    {
+      "matchId": 72853906,
+      "playerA": {
+        "name": "Piotr Leśniowski",
+        "playerId": 46165342
+      },
+      "playerB": {
+        "name": "Bartosz Bany",
+        "playerId": 41033260
+      },
+      "scoreA": 2,
+      "scoreB": 0,
+      "starttime": "2025-11-23T14:36:00",
+      "stoptime": "2025-11-23T14:55:08"
+    },
+    {
+      "matchId": 72853909,
+      "playerA": {
+        "name": "Tomasz Proc",
+        "playerId": 27985189
+      },
+      "playerB": {
+        "name": "Marian Svidzinskyi",
+        "playerId": 16753396
+      },
+      "scoreA": 0,
+      "scoreB": 2,
+      "starttime": "2025-11-23T14:36:35",
+      "stoptime": "2025-11-23T15:07:58"
+    },
+    {
+      "matchId": 72853912,
+      "playerA": {
+        "name": "Marta Wawrzyn",
+        "playerId": 2180579
+      },
+      "playerB": {
+        "name": "Hubert Trojan",
+        "playerId": 10322941
+      },
+      "scoreA": 3,
+      "scoreB": 0,
+      "starttime": "2025-11-23T15:39:00",
+      "stoptime": "2025-11-23T16:12:46"
+    },
+    {
+      "matchId": 72853915,
+      "playerA": {
+        "name": "Wolny Los1",
+        "playerId": 2098390
+      },
+      "playerB": {
+        "name": "Jakub Tomasik",
+        "playerId": 65042038
+      },
+      "scoreA": 0,
+      "scoreB": 0,
+      "starttime": "",
+      "stoptime": ""
+    },
+    {
+      "matchId": 72853918,
+      "playerA": {
+        "name": "Artur Lewandowski",
+        "playerId": 15492853
+      },
+      "playerB": {
+        "name": "Kamil Felter",
+        "playerId": 56058259
+      },
+      "scoreA": 2,
+      "scoreB": 1,
+      "starttime": "2025-11-23T15:08:00",
+      "stoptime": "2025-11-23T15:51:06"
+    },
+    {
+      "matchId": 72853921,
+      "playerA": {
+        "name": "Krzysztof Doroszkiewicz",
+        "playerId": 19794961
+      },
+      "playerB": {
+        "name": "Jarosław Lipiński",
+        "playerId": 21730096
+      },
+      "scoreA": 1,
+      "scoreB": 2,
+      "starttime": "2025-11-23T15:08:00",
+      "stoptime": "2025-11-23T15:44:56"
+    },
+    {
+      "matchId": 72853924,
+      "playerA": {
+        "name": "Piotr Leśniowski",
+        "playerId": 46165342
+      },
+      "playerB": {
+        "name": "Marian Svidzinskyi",
+        "playerId": 16753396
+      },
+      "scoreA": 0,
+      "scoreB": 2,
+      "starttime": "2025-11-23T15:41:00",
+      "stoptime": "2025-11-23T16:05:42"
+    },
+    {
+      "matchId": 72853927,
+      "playerA": {
+        "name": "Bartosz Bany",
+        "playerId": 41033260
+      },
+      "playerB": {
+        "name": "Tomasz Proc",
+        "playerId": 27985189
+      },
+      "scoreA": 2,
+      "scoreB": 1,
+      "starttime": "2025-11-23T15:41:52",
+      "stoptime": "2025-11-23T16:11:24"
+    },
+    {
+      "matchId": 72853930,
+      "playerA": {
+        "name": "Marta Wawrzyn",
+        "playerId": 2180579
+      },
+      "playerB": {
+        "name": "Jakub Tomasik",
+        "playerId": 65042038
+      },
+      "scoreA": 3,
+      "scoreB": 1,
+      "starttime": "2025-11-23T15:08:00",
+      "stoptime": "2025-11-23T15:40:07"
+    },
+    {
+      "matchId": 72853933,
+      "playerA": {
+        "name": "Hubert Trojan",
+        "playerId": 10322941
+      },
+      "playerB": {
+        "name": "Wolny Los1",
+        "playerId": 2098390
+      },
+      "scoreA": 0,
+      "scoreB": 0,
+      "starttime": "",
+      "stoptime": ""
+    },
+    {
+      "matchId": 72853936,
+      "playerA": {
+        "name": "Artur Lewandowski",
+        "playerId": 15492853
+      },
+      "playerB": {
+        "name": "Jarosław Lipiński",
+        "playerId": 21730096
+      },
+      "scoreA": 2,
+      "scoreB": 0,
+      "starttime": "2025-11-23T15:51:00",
+      "stoptime": "2025-11-23T16:26:09"
+    },
+    {
+      "matchId": 72853939,
+      "playerA": {
+        "name": "Kamil Felter",
+        "playerId": 56058259
+      },
+      "playerB": {
+        "name": "Krzysztof Doroszkiewicz",
+        "playerId": 19794961
+      },
+      "scoreA": 0,
+      "scoreB": 2,
+      "starttime": "2025-11-23T15:51:37",
+      "stoptime": "2025-11-23T16:14:03"
+    },
+    {
+      "matchId": 72853942,
+      "playerA": {
+        "name": "Piotr Leśniowski",
+        "playerId": 46165342
+      },
+      "playerB": {
+        "name": "Tomasz Proc",
+        "playerId": 27985189
+      },
+      "scoreA": 2,
+      "scoreB": 0,
+      "starttime": "2025-11-23T15:08:00",
+      "stoptime": "2025-11-23T15:36:40"
+    },
+    {
+      "matchId": 72853945,
+      "playerA": {
+        "name": "Marian Svidzinskyi",
+        "playerId": 16753396
+      },
+      "playerB": {
+        "name": "Bartosz Bany",
+        "playerId": 41033260
+      },
+      "scoreA": 1,
+      "scoreB": 2,
+      "starttime": "2025-11-23T15:08:00",
+      "stoptime": "2025-11-23T15:41:43"
+    },
+    {
+      "matchId": 72853948,
+      "playerA": {
+        "name": "Marta Wawrzyn",
+        "playerId": 2180579
+      },
+      "playerB": {
+        "name": "Bartosz Bany",
+        "playerId": 41033260
+      },
+      "scoreA": 0,
+      "scoreB": 2,
+      "starttime": "2025-11-23T16:15:00",
+      "stoptime": "2025-11-23T16:34:26"
+    },
+    {
+      "matchId": 72853951,
+      "playerA": {
+        "name": "Artur Lewandowski",
+        "playerId": 15492853
+      },
+      "playerB": {
+        "name": "Piotr Leśniowski",
+        "playerId": 46165342
+      },
+      "scoreA": 0,
+      "scoreB": 2,
+      "starttime": "2025-11-23T16:26:00",
+      "stoptime": "2025-11-23T16:48:56"
+    },
+    {
+      "matchId": 72853954,
+      "playerA": {
+        "name": "Marian Svidzinskyi",
+        "playerId": 16753396
+      },
+      "playerB": {
+        "name": "Krzysztof Doroszkiewicz",
+        "playerId": 19794961
+      },
+      "scoreA": 0,
+      "scoreB": 2,
+      "starttime": "2025-11-23T16:15:00",
+      "stoptime": "2025-11-23T16:46:42"
+    },
+    {
+      "matchId": 72853957,
+      "playerA": {
+        "name": "Jakub Tomasik",
+        "playerId": 65042038
+      },
+      "playerB": {
+        "name": "Jarosław Lipiński",
+        "playerId": 21730096
+      },
+      "scoreA": 1,
+      "scoreB": 2,
+      "starttime": "2025-11-23T16:26:00",
+      "stoptime": "2025-11-23T17:14:41"
+    },
+    {
+      "matchId": 72853960,
+      "playerA": {
+        "name": "Bartosz Bany",
+        "playerId": 41033260
+      },
+      "playerB": {
+        "name": "Piotr Leśniowski",
+        "playerId": 46165342
+      },
+      "scoreA": 2,
+      "scoreB": 0,
+      "starttime": "2025-11-23T16:49:00",
+      "stoptime": "2025-11-23T17:14:47"
+    },
+    {
+      "matchId": 72853963,
+      "playerA": {
+        "name": "Krzysztof Doroszkiewicz",
+        "playerId": 19794961
+      },
+      "playerB": {
+        "name": "Jarosław Lipiński",
+        "playerId": 21730096
+      },
+      "scoreA": 0,
+      "scoreB": 2,
+      "starttime": "2025-11-23T17:39:00",
+      "stoptime": "2025-11-23T17:39:33"
+    },
+    {
+      "matchId": 72853966,
+      "playerA": {
+        "name": "Bartosz Bany",
+        "playerId": 41033260
+      },
+      "playerB": {
+        "name": "Jarosław Lipiński",
+        "playerId": 21730096
+      },
+      "scoreA": 0,
+      "scoreB": 2,
+      "starttime": "2025-11-23T17:39:00",
+      "stoptime": "2025-11-23T18:05:19"
+    }
+  ],
+  "name": "147 Break Amateur Cup XIX turniej 3/15",
+  "starttime": "2025-11-23T14:30:00+01:00",
+  "stoptime": "2025-11-23T18:30:00+01:00",
+  "timezone": "Europe/Warsaw",
+  "tournamentId": 72763750,
+  "type": 0,
+  "url": "https://cuescore.com/tournament/147+Break+Amateur+Cup+XIX+turniej+3%252F15/72763750",
+  "venues": [
+    {
+      "name": "147 Break Zamieniecka",
+      "venueId": 2842336
+    }
+  ]
+}

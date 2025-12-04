@@ -1,1 +1,25 @@
-{"tournamentId": 36866872, "banner": [], "name": "Oldboyowy poniedzia\u0142ek po szwajcarsku (2)", "type": 0, "format": 2, "breakrule": "alternate", "description": "Turniej w 9-bil, w systemie szwajcarskim dla zawodniczek i zawodnik\u00f3w rocznika 1984 i starszych.\r\nWpisowe: 50z\u0142\r\nRozgrzewka: 18:30\r\nLosowanie pierwszej rundy i start turnieju: 19:00\r\nSystem szwajcarski: ka\u017cdy gra co rund\u0119 (w przypadku nieparzystej liczby zawodnik\u00f3w jeden otrzymuje wygran\u0105 walkowerem), rundy s\u0105 ograniczone czasowo, a kolejne pary losowane na podstawie dotychczasowych wynik\u00f3w w turnieju.\r\nLimit miejsc: 40.", "dresscode": "WYNIKI: https://challonge.com/pl/ZBO2", "defaultRaceTo": 0, "url": "https://cuescore.com/tournament/Oldboyowy+poniedzia%C5%82ek+po+szwajcarsku+%282%29/36866872", "timezone": "Europe/Warsaw", "displayDate": "March 4, 2024", "starttime": "2024-03-04T19:00:00+01:00", "stoptime": "2024-03-04T23:59:00+01:00", "deadline": "2024-03-04T18:59:00+01:00", "entrystart": "", "status": "Open", "discipline": "9-Ball", "disciplineId": 3, "branch": 1, "handicap": [], "contacts": [{"playerId": 1612287, "name": "Maciej Grzegorz Lesiak", "firstname": "Maciej Grzegorz", "lastname": "Lesiak", "url": "https://cuescore.com/player/Maciej+Grzegorz+Lesiak/1612287", "image": "https://img.cuescore.com/image/2/4/2cf115d1df0825752b34e0510547da26.png?t=1683467983", "country": {"name": "Poland", "alpha3": "POL", "image": "https://cuescore.com/img/flags/png-country-4x2-none/res-640x480/pl.png", "continent": "Europe"}, "represents": {"organizationId": 5133719, "stub": "mglcuesports", "name": "MGL Cue Sports", "url": "https://cuescore.com/mglcuesports", "logo": "//img.cuescore.com/image/7/2/71487152007d737c2f5de4f7821f7c9e.png?t=1555512394", "profileColor": "58a5fc"}}], "owner": {"organizationId": 5133719, "stub": "mglcuesports", "name": "MGL Cue Sports", "url": "https://cuescore.com/mglcuesports", "logo": "//img.cuescore.com/image/7/2/71487152007d737c2f5de4f7821f7c9e.png?t=1555512394", "profileColor": "58a5fc"}, "organizers": [{"organizationId": 5133719, "stub": "mglcuesports", "name": "MGL Cue Sports", "url": "https://cuescore.com/mglcuesports", "logo": "//img.cuescore.com/image/7/2/71487152007d737c2f5de4f7821f7c9e.png?t=1555512394", "profileColor": "58a5fc"}], "venues": [{"venueId": 36031138, "name": "Z\u0142ota Bila - Centrum Bilardowe", "url": "https://cuescore.com/venue/Z%C5%82ota+Bila+-+Centrum+Bilardowe/36031138", "owner": {"organizationId": 7011764, "stub": "blackballevents", "name": "Black Ball Events", "url": "https://cuescore.com/blackballevents", "logo": "//img.cuescore.com/image/9/2/9b59b70e156f2f8d0f1a879411c6ffd1.png?t=1576160578", "profileColor": "000000"}}], "sequence": 0, "standings": [], "matches": [], "rankings": [], "access": [], "id": "36866872"}
+{
+  "banner": [],
+  "breakrule": "alternate",
+  "deadline": "2024-03-04T18:59:00+01:00",
+  "defaultRaceTo": 0,
+  "description": "Turniej w 9-bil, w systemie szwajcarskim dla zawodniczek i zawodników rocznika 1984 i starszych.\r\nWpisowe: 50zł\r\nRozgrzewka: 18:30\r\nLosowanie pierwszej rundy i start turnieju: 19:00\r\nSystem szwajcarski: każdy gra co rundę (w przypadku nieparzystej liczby zawodników jeden otrzymuje wygraną walkowerem), rundy są ograniczone czasowo, a kolejne pary losowane na podstawie dotychczasowych wyników w turnieju.\r\nLimit miejsc: 40.",
+  "discipline": "9-Ball",
+  "displayDate": "March 4, 2024",
+  "dresscode": "WYNIKI: https://challonge.com/pl/ZBO2",
+  "format": 2,
+  "matches": [],
+  "name": "Oldboyowy poniedziałek po szwajcarsku (2)",
+  "starttime": "2024-03-04T19:00:00+01:00",
+  "stoptime": "2024-03-04T23:59:00+01:00",
+  "timezone": "Europe/Warsaw",
+  "tournamentId": 36866872,
+  "type": 0,
+  "url": "https://cuescore.com/tournament/Oldboyowy+poniedzia%C5%82ek+po+szwajcarsku+%282%29/36866872",
+  "venues": [
+    {
+      "name": "Złota Bila - Centrum Bilardowe",
+      "venueId": 36031138
+    }
+  ]
+}
