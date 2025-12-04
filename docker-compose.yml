@@ -37,7 +37,10 @@ services:
       - "8000:8000"
     networks:
       - warsaw-pool-network
-    command: /app/warsaw_pool_ranking serve --port 8000
+    # Command to run the Rust application
+    # The Dockerfile CMD will be used by default: ./warsaw_pool_ranking process
+    # If you want to ingest, you'd need to override the command or exec into container
+    command: ./entrypoint.sh
 
   # Frontend (Angular + Nginx)
   frontend:

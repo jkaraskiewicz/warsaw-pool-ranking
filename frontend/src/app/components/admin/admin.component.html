@@ -1,29 +1,29 @@
 <div class="admin-container">
   <mat-card class="admin-card">
     <mat-card-header>
-      <mat-card-title>Admin Panel</mat-card-title>
+      <mat-card-title>{{ 'ADMIN_PANEL' | translate }}</mat-card-title>
     </mat-card-header>
 
     <mat-card-content>
       <ng-container *ngIf="!adminService.isLoggedIn()">
         <form (submit)="login()">
           <mat-form-field appearance="outline" class="full-width">
-            <mat-label>Password</mat-label>
+            <mat-label>{{ 'PASSWORD' | translate }}</mat-label>
             <input matInput type="password" [(ngModel)]="password" name="password" required>
           </mat-form-field>
-          <button mat-raised-button color="primary" type="submit" [disabled]="!password">Login</button>
+          <button mat-raised-button color="primary" type="submit" [disabled]="!password">{{ 'LOGIN' | translate }}</button>
         </form>
       </ng-container>
 
       <ng-container *ngIf="adminService.isLoggedIn()">
-        <p>Logged in as Admin</p>
+        <p>{{ 'LOGGED_IN_AS_ADMIN' | translate }}</p>
         <div class="actions">
           <button mat-raised-button color="accent" (click)="refreshData()" [disabled]="loading">
             <mat-icon>refresh</mat-icon>
-            Refresh Data
+            {{ 'REFRESH_DATA' | translate }}
             <mat-spinner diameter="20" *ngIf="loading" class="spinner-inline"></mat-spinner>
           </button>
-          <button mat-stroked-button color="warn" (click)="logout()">Logout</button>
+          <button mat-stroked-button color="warn" (click)="logout()">{{ 'LOGOUT' | translate }}</button>
         </div>
       </ng-container>
     </mat-card-content>

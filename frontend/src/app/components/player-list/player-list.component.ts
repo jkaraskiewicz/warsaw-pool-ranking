@@ -22,12 +22,12 @@ export class PlayerListComponent implements OnInit {
 
   // Rating periods
   ratingTypes = [
-    { value: 'all', viewValue: 'All Time' },
-    { value: '1y', viewValue: 'Last Year' },
-    { value: '2y', viewValue: 'Last 2 Years' },
-    { value: '3y', viewValue: 'Last 3 Years' },
-    { value: '4y', viewValue: 'Last 4 Years' },
-    { value: '5y', viewValue: 'Last 5 Years' },
+    { value: 'all', viewValue: 'ALL_TIME' },
+    { value: '1y', viewValue: 'LAST_YEAR' },
+    { value: '2y', viewValue: 'LAST_2_YEARS' },
+    { value: '3y', viewValue: 'LAST_3_YEARS' },
+    { value: '4y', viewValue: 'LAST_4_YEARS' },
+    { value: '5y', viewValue: 'LAST_5_YEARS' },
   ];
   selectedRatingType: string = 'all';
 

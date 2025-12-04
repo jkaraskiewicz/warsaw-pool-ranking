@@ -27,6 +27,7 @@ import { AppComponent } from './app.component';
 import { PlayerListComponent } from './components/player-list/player-list.component';
 import { PlayerOverlayComponent } from './components/player-overlay/player-overlay.component';
 import { AdminComponent } from './components/admin/admin.component';
+import { TranslatePipe } from './pipes/translate.pipe';
 
 const routes: Routes = [
   { path: '', component: PlayerListComponent },
@@ -39,7 +40,8 @@ const routes: Routes = [
     AppComponent,
     PlayerListComponent,
     PlayerOverlayComponent,
-    AdminComponent
+    AdminComponent,
+    TranslatePipe
   ],
   imports: [
     BrowserModule,

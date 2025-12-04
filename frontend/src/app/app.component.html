@@ -1,7 +1,16 @@
 <mat-toolbar color="primary">
-  <span [routerLink]="['/']" style="cursor: pointer;">{{ title }}</span>
+  <span [routerLink]="['/']" style="cursor: pointer;">{{ title | translate }}</span>
   <span class="spacer"></span>
-  <button mat-icon-button [routerLink]="['/admin']" aria-label="Admin Panel">
+  
+  <button mat-button (click)="toggleLanguage()">
+    {{ currentLang === 'en' ? 'PL' : 'EN' }}
+  </button>
+
+  <button mat-icon-button (click)="toggleTheme()">
+    <mat-icon>{{ isDarkMode ? 'light_mode' : 'dark_mode' }}</mat-icon>
+  </button>
+
+  <button mat-icon-button [routerLink]="['/admin']" [attr.aria-label]="'ADMIN_PANEL' | translate">
     <mat-icon>admin_panel_settings</mat-icon>
   </button>
 </mat-toolbar>

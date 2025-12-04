@@ -22,15 +22,19 @@ FROM debian:bookworm-slim
 
 WORKDIR /app
 
-# Install necessary runtime dependencies (SQLite, OpenSSL, CA certificates)
+# Install necessary runtime dependencies (e.g., SQLite)
 RUN apt-get update && apt-get install -y --no-install-recommends \
     libsqlite3-0 \
+    sqlite3 \
     libssl3 \
     ca-certificates \
     && rm -rf /var/lib/apt/lists/*
 
 # Copy the built binary from the builder stage
 COPY --from=builder /app/target/release/warsaw_pool_ranking ./
+
+# Copy entrypoint script
+COPY entrypoint.sh ./
 
 # Set environment variables if needed
 ENV DATABASE_PATH="warsaw_pool_ranking.db"
