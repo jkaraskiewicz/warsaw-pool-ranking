@@ -18,7 +18,7 @@ export class PlayerListComponent implements OnInit {
   totalPlayers: number = 0;
   searchQuery: string = '';
   loading: boolean = true;
-  displayedColumns: string[] = ['rank', 'name', 'rating', 'games', 'confidence', 'change'];
+  displayedColumns: string[] = ['rank', 'name', 'rating', 'games', 'confidence'];
 
   // Rating periods
   ratingTypes = [
@@ -123,16 +123,5 @@ export class PlayerListComponent implements OnInit {
       default:
         return '';
     }
-  }
-
-  getChangeColor(change: number | null): string {
-    if (change === null) return '';
-    return change > 0 ? 'positive' : change < 0 ? 'negative' : '';
-  }
-
-  formatChange(change: number | null): string {
-    if (change === null) return '-';
-    const sign = change > 0 ? '+' : '';
-    return `${sign}${change.toFixed(1)}`;
   }
 }

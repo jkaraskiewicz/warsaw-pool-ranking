@@ -10,7 +10,6 @@ pub struct PlayerListItem {
     pub rating: f64,
     pub games_played: i32,
     pub confidence_level: String,
-    // pub recent_change: Option<f64>, // Not yet implemented
 }
 
 #[derive(Serialize)]
@@ -36,5 +35,4 @@ pub struct PlayerDetail {
     pub ml_weight: f64,
     pub effective_games: i32,
     pub last_played: Option<String>,
-    pub recent_change: Option<f64>,
 }

@@ -7,7 +7,6 @@ export interface PlayerListItem {
   rating: number;
   gamesPlayed: number;
   confidenceLevel: 'unranked' | 'provisional' | 'emerging' | 'established';
-  recentChange: number | null;
 }
 
 export interface PlayerDetail {
@@ -23,7 +22,6 @@ export interface PlayerDetail {
   mlWeight: number;
   effectiveGames: number;
   lastPlayed: string | null;
-  recentChange: number | null;
 }
 
 export interface PaginatedResponse<T> {

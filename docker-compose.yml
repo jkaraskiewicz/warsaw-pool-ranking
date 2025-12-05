@@ -33,6 +33,8 @@ services:
     volumes:
       # Persist the SQLite database
       - backend_data:/app/data
+      # Mount the host cache directory to persist raw data and skip re-fetching
+      - ./backend/cache:/app/cache
     ports:
       - "8000:8000"
     networks:

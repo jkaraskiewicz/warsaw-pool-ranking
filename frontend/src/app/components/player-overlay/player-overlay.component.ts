@@ -61,17 +61,6 @@ export class PlayerOverlayComponent implements OnInit {
     return date.toLocaleDateString('en-US', { year: 'numeric', month: 'short', day: 'numeric' });
   }
 
-  formatChange(change: number | null): string {
-    if (change === null) return '-';
-    const sign = change > 0 ? '+' : '';
-    return `${sign}${change.toFixed(1)}`;
-  }
-
-  getChangeColor(change: number | null): string {
-    if (change === null) return '';
-    return change > 0 ? 'positive' : change < 0 ? 'negative' : '';
-  }
-
   close(): void {
     this.dialogRef.close();
   }

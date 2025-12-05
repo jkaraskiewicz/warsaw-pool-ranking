@@ -208,7 +208,6 @@ pub async fn get_player_detail(
                 ml_weight,
                 effective_games: games_played,
                 last_played,
-                recent_change: None,
             }).into_response()
         },
         Err(rusqlite::Error::QueryReturnedNoRows) => StatusCode::NOT_FOUND.into_response(),
