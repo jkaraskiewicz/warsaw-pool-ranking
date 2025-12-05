@@ -3,11 +3,11 @@
   <span class="spacer"></span>
   
   <button mat-button (click)="toggleLanguage()">
-    {{ currentLang === 'en' ? 'PL' : 'EN' }}
+    {{ currentLang() === 'en' ? 'PL' : 'EN' }}
   </button>
 
   <button mat-icon-button (click)="toggleTheme()">
-    <mat-icon>{{ isDarkMode ? 'light_mode' : 'dark_mode' }}</mat-icon>
+    <mat-icon>{{ isDarkMode() ? 'light_mode' : 'dark_mode' }}</mat-icon>
   </button>
 
   <button mat-icon-button [routerLink]="['/admin']" [attr.aria-label]="'ADMIN_PANEL' | translate">

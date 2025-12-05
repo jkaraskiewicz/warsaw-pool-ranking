@@ -1,0 +1,40 @@
+syntax = "proto3";
+
+package api;
+
+// Player summary for lists
+message PlayerListItem {
+  int32 rank = 1;
+  int64 player_id = 2;
+  // cuescore_id is optional in Rust model, mapped to int64. 
+  // In proto3, optional fields are explicit.
+  optional int64 cuescore_id = 3; 
+  string name = 4;
+  double rating = 5;
+  int32 games_played = 6;
+  string confidence_level = 7; // string for JSON compatibility ("established", etc.)
+}
+
+// Detailed player view
+message PlayerDetail {
+  int64 player_id = 1;
+  optional int64 cuescore_id = 2;
+  string name = 3;
+  string cuescore_profile_url = 4;
+  double rating = 5;
+  int32 games_played = 6;
+  string confidence_level = 7;
+  double ml_rating = 8;
+  double starter_weight = 9;
+  double ml_weight = 10;
+  int32 effective_games = 11;
+  optional string last_played = 12; // Date string
+}
+
+// Paginated list response
+message PlayerListResponse {
+  repeated PlayerListItem items = 1;
+  int32 total = 2;
+  int32 page = 3;
+  int32 page_size = 4;
+}

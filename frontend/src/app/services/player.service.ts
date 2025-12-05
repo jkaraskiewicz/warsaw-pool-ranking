@@ -1,7 +1,7 @@
 import { Injectable } from '@angular/core';
 import { HttpClient, HttpParams } from '@angular/common/http';
 import { Observable } from 'rxjs';
-import { PlayerListItem, PlayerDetail, PaginatedResponse } from '../models/player.model';
+import { PlayerListItem, PlayerDetail, PlayerListResponse } from '../models/api';
 
 @Injectable({
   providedIn: 'root'
@@ -18,7 +18,7 @@ export class PlayerService {
     order: 'asc' | 'desc' = 'desc',
     filter: string = '',
     ratingType: string = 'all'
-  ): Observable<PaginatedResponse<PlayerListItem>> {
+  ): Observable<PlayerListResponse> {
     let params = new HttpParams()
       .set('page', page.toString())
       .set('page_size', pageSize.toString())
@@ -30,7 +30,7 @@ export class PlayerService {
       params = params.set('filter', filter);
     }
 
-    return this.http.get<PaginatedResponse<PlayerListItem>>(`${this.apiUrl}/players`, { params });
+    return this.http.get<PlayerListResponse>(`${this.apiUrl}/players`, { params });
   }
 
   getPlayerDetail(playerId: number, ratingType: string = 'all'): Observable<PlayerDetail> {

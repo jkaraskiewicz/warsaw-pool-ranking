@@ -1,126 +1,16 @@
-import { Injectable } from '@angular/core';
-import { BehaviorSubject } from 'rxjs';
+import { Injectable, signal, computed } from '@angular/core';
+import { DICTIONARY } from '../i18n/dictionary';
 
 export type Language = 'en' | 'pl';
-
-export const TRANSLATION_KEYS = {
-  PLAYER_RANKINGS: 'PLAYER_RANKINGS',
-  WARSAW_POOL_RANKINGS: 'WARSAW_POOL_RANKINGS',
-  SEARCH_PLAYERS: 'SEARCH_PLAYERS',
-  SEARCH_PLACEHOLDER: 'SEARCH_PLACEHOLDER',
-  RANK: 'RANK',
-  NAME: 'NAME',
-  RATING: 'RATING',
-  GAMES: 'GAMES',
-  CONFIDENCE: 'CONFIDENCE',
-  CHANGE: 'CHANGE',
-  ALL_TIME: 'ALL_TIME',
-  LAST_YEAR: 'LAST_YEAR',
-  LAST_2_YEARS: 'LAST_2_YEARS',
-  LAST_3_YEARS: 'LAST_3_YEARS',
-  LAST_4_YEARS: 'LAST_4_YEARS',
-  LAST_5_YEARS: 'LAST_5_YEARS',
-  ADMIN_PANEL: 'ADMIN_PANEL',
-  LOGIN: 'LOGIN',
-  LOGOUT: 'LOGOUT',
-  REFRESH_DATA: 'REFRESH_DATA',
-  RATING_DETAILS: 'RATING_DETAILS',
-  ML_RATING: 'ML_RATING',
-  STARTER_WEIGHT: 'STARTER_WEIGHT',
-  ML_WEIGHT: 'ML_WEIGHT',
-  EFFECTIVE_GAMES: 'EFFECTIVE_GAMES',
-  LAST_PLAYED: 'LAST_PLAYED',
-  VIEW_ON_CUESCORE: 'VIEW_ON_CUESCORE',
-  NO_PLAYERS_FOUND: 'NO_PLAYERS_FOUND',
-  PASSWORD: 'PASSWORD',
-  LOGGED_IN_AS_ADMIN: 'LOGGED_IN_AS_ADMIN',
-  ESTABLISHED: 'ESTABLISHED',
-  EMERGING: 'EMERGING',
-  PROVISIONAL: 'PROVISIONAL',
-  UNRANKED: 'UNRANKED'
-};
-
-const DICTIONARY = {
-  en: {
-    [TRANSLATION_KEYS.PLAYER_RANKINGS]: 'Player Rankings',
-    [TRANSLATION_KEYS.WARSAW_POOL_RANKINGS]: 'Warsaw Pool Rankings',
-    [TRANSLATION_KEYS.SEARCH_PLAYERS]: 'Search players',
-    [TRANSLATION_KEYS.SEARCH_PLACEHOLDER]: 'Type player name...',
-    [TRANSLATION_KEYS.RANK]: 'Rank',
-    [TRANSLATION_KEYS.NAME]: 'Name',
-    [TRANSLATION_KEYS.RATING]: 'Rating',
-    [TRANSLATION_KEYS.GAMES]: 'Games',
-    [TRANSLATION_KEYS.CONFIDENCE]: 'Confidence',
-    [TRANSLATION_KEYS.CHANGE]: 'Change',
-    [TRANSLATION_KEYS.ALL_TIME]: 'All Time',
-    [TRANSLATION_KEYS.LAST_YEAR]: 'Last Year',
-    [TRANSLATION_KEYS.LAST_2_YEARS]: 'Last 2 Years',
-    [TRANSLATION_KEYS.LAST_3_YEARS]: 'Last 3 Years',
-    [TRANSLATION_KEYS.LAST_4_YEARS]: 'Last 4 Years',
-    [TRANSLATION_KEYS.LAST_5_YEARS]: 'Last 5 Years',
-    [TRANSLATION_KEYS.ADMIN_PANEL]: 'Admin Panel',
-    [TRANSLATION_KEYS.LOGIN]: 'Login',
-    [TRANSLATION_KEYS.LOGOUT]: 'Logout',
-    [TRANSLATION_KEYS.REFRESH_DATA]: 'Refresh Data',
-    [TRANSLATION_KEYS.RATING_DETAILS]: 'Rating Details',
-    [TRANSLATION_KEYS.ML_RATING]: 'ML Rating:',
-    [TRANSLATION_KEYS.STARTER_WEIGHT]: 'Starter Weight:',
-    [TRANSLATION_KEYS.ML_WEIGHT]: 'ML Weight:',
-    [TRANSLATION_KEYS.EFFECTIVE_GAMES]: 'Effective Games:',
-    [TRANSLATION_KEYS.LAST_PLAYED]: 'Last Played:',
-    [TRANSLATION_KEYS.VIEW_ON_CUESCORE]: 'View on CueScore',
-    [TRANSLATION_KEYS.NO_PLAYERS_FOUND]: 'No players found matching',
-    [TRANSLATION_KEYS.PASSWORD]: 'Password',
-    [TRANSLATION_KEYS.LOGGED_IN_AS_ADMIN]: 'Logged in as Admin',
-    [TRANSLATION_KEYS.ESTABLISHED]: 'Established',
-    [TRANSLATION_KEYS.EMERGING]: 'Emerging',
-    [TRANSLATION_KEYS.PROVISIONAL]: 'Provisional',
-    [TRANSLATION_KEYS.UNRANKED]: 'Unranked'
-  },
-  pl: {
-    [TRANSLATION_KEYS.PLAYER_RANKINGS]: 'Ranking Graczy',
-    [TRANSLATION_KEYS.WARSAW_POOL_RANKINGS]: 'Ranking Bilardowy Warszawa',
-    [TRANSLATION_KEYS.SEARCH_PLAYERS]: 'Szukaj graczy',
-    [TRANSLATION_KEYS.SEARCH_PLACEHOLDER]: 'Wpisz imię gracza...',
-    [TRANSLATION_KEYS.RANK]: 'Miejsce',
-    [TRANSLATION_KEYS.NAME]: 'Imię',
-    [TRANSLATION_KEYS.RATING]: 'Ranking',
-    [TRANSLATION_KEYS.GAMES]: 'Gry',
-    [TRANSLATION_KEYS.CONFIDENCE]: 'Pewność',
-    [TRANSLATION_KEYS.CHANGE]: 'Zmiana',
-    [TRANSLATION_KEYS.ALL_TIME]: 'Cały Czas',
-    [TRANSLATION_KEYS.LAST_YEAR]: 'Ostatni Rok',
-    [TRANSLATION_KEYS.LAST_2_YEARS]: 'Ostatnie 2 Lata',
-    [TRANSLATION_KEYS.LAST_3_YEARS]: 'Ostatnie 3 Lata',
-    [TRANSLATION_KEYS.LAST_4_YEARS]: 'Ostatnie 4 Lata',
-    [TRANSLATION_KEYS.LAST_5_YEARS]: 'Ostatnie 5 Lat',
-    [TRANSLATION_KEYS.ADMIN_PANEL]: 'Panel Admina',
-    [TRANSLATION_KEYS.LOGIN]: 'Zaloguj',
-    [TRANSLATION_KEYS.LOGOUT]: 'Wyloguj',
-    [TRANSLATION_KEYS.REFRESH_DATA]: 'Odśwież Dane',
-    [TRANSLATION_KEYS.RATING_DETAILS]: 'Szczegóły Rankingu',
-    [TRANSLATION_KEYS.ML_RATING]: 'Ranking ML:',
-    [TRANSLATION_KEYS.STARTER_WEIGHT]: 'Waga Startowa:',
-    [TRANSLATION_KEYS.ML_WEIGHT]: 'Waga ML:',
-    [TRANSLATION_KEYS.EFFECTIVE_GAMES]: 'Efektywne Gry:',
-    [TRANSLATION_KEYS.LAST_PLAYED]: 'Ostatnia Gra:',
-    [TRANSLATION_KEYS.VIEW_ON_CUESCORE]: 'Zobacz na CueScore',
-    [TRANSLATION_KEYS.NO_PLAYERS_FOUND]: 'Nie znaleziono graczy pasujących do',
-    [TRANSLATION_KEYS.PASSWORD]: 'Hasło',
-    [TRANSLATION_KEYS.LOGGED_IN_AS_ADMIN]: 'Zalogowany jako Admin',
-    [TRANSLATION_KEYS.ESTABLISHED]: 'Ustalony',
-    [TRANSLATION_KEYS.EMERGING]: 'Wschodzący',
-    [TRANSLATION_KEYS.PROVISIONAL]: 'Tymczasowy',
-    [TRANSLATION_KEYS.UNRANKED]: 'Nierankingowy'
-  }
-};
 
 @Injectable({
   providedIn: 'root'
 })
 export class TranslationService {
-  private currentLang = new BehaviorSubject<Language>('en');
-  currentLang$ = this.currentLang.asObservable();
+  private currentLangSignal = signal<Language>('en');
+  
+  // Public signal for the current language
+  currentLang = this.currentLangSignal.asReadonly();
 
   constructor() {
     const savedLang = localStorage.getItem('lang') as Language;
@@ -130,14 +20,13 @@ export class TranslationService {
   }
 
   setLanguage(lang: Language) {
-    this.currentLang.next(lang);
+    this.currentLangSignal.set(lang);
     localStorage.setItem('lang', lang);
   }
 
   translate(key: string): string {
-    const lang = this.currentLang.value;
+    const lang = this.currentLangSignal();
     const dict = DICTIONARY[lang];
-    // Also handle dynamic keys (like lower case confidence levels) by uppercasing
     const normalizedKey = key.toUpperCase(); 
     return (dict as any)[normalizedKey] || (dict as any)[key] || key;
   }

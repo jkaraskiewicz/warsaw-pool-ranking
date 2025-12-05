@@ -44,3 +44,38 @@ pub struct DbRating {
     pub calculated_at: NaiveDateTime,
     pub created_at: Option<NaiveDateTime>,
 }
+
+// DTOs for joined queries
+#[derive(Debug, Clone)]
+pub struct PlayerWithRating {
+    pub player_id: i32,
+    pub cuescore_id: Option<i64>,
+    pub name: String,
+    pub rating: f64,
+    pub games_played: i32,
+    pub confidence_level: String,
+}
+
+#[derive(Debug, Clone)]
+pub enum SortColumn {
+    Name,
+    Rating,
+    GamesPlayed,
+}
+
+#[derive(Debug, Clone)]
+pub enum SortOrder {
+    Asc,
+    Desc,
+}
+
+#[derive(Debug, Clone)]
+pub struct PlayerFilter {
+    pub name_contains: Option<String>,
+    pub min_games: Option<i32>,
+    pub rating_type: String,
+    pub sort_by: SortColumn,
+    pub sort_order: SortOrder,
+    pub limit: usize,
+    pub offset: usize,
+}

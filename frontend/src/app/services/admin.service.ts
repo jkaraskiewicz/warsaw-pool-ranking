@@ -1,32 +1,33 @@
 import { Injectable } from '@angular/core';
 import { HttpClient, HttpHeaders } from '@angular/common/http';
 import { Observable } from 'rxjs';
+import { AuthService } from './auth.service';
 
 @Injectable({
   providedIn: 'root'
 })
 export class AdminService {
   private apiUrl = '/api/admin';
-  private tokenKey = 'admin_token';
 
-  constructor(private http: HttpClient) {}
+  constructor(
+    private http: HttpClient,
+    private authService: AuthService
+  ) {}
 
   login(password: string): void {
-    // Simple "login" by saving the token directly. 
-    // In this simplified scheme, the password serves as the Bearer token.
-    localStorage.setItem(this.tokenKey, password);
+    this.authService.login(password);
   }
 
   logout(): void {
-    localStorage.removeItem(this.tokenKey);
+    this.authService.logout();
   }
 
   isLoggedIn(): boolean {
-    return !!localStorage.getItem(this.tokenKey);
+    return this.authService.isLoggedIn();
   }
 
   triggerRefresh(): Observable<any> {
-    const token = localStorage.getItem(this.tokenKey);
+    const token = this.authService.getToken();
     const headers = new HttpHeaders().set('Authorization', `Bearer ${token}`);
     return this.http.post(`${this.apiUrl}/refresh`, {}, { headers });
   }

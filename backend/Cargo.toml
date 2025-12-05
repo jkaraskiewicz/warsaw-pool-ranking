@@ -49,3 +49,10 @@ axum = "0.7.5"
 tower = "0.4.13"
 tower-http = { version = "0.5.2", features = ["cors", "trace"] }
 
+# Protobuf
+prost = "0.13"
+prost-types = "0.13"
+
+[build-dependencies]
+prost-build = "0.13"
+

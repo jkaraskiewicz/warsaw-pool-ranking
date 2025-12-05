@@ -2,14 +2,23 @@ FROM node:18-alpine AS builder
 
 WORKDIR /app
 
+# Install protobuf compiler
+RUN apk add --no-cache protobuf
+
 # Copy package files
-COPY package*.json ./
+COPY frontend/package*.json ./
 
 # Install dependencies
-RUN npm ci --legacy-peer-deps
+RUN npm install --legacy-peer-deps
 
 # Copy source code
-COPY . .
+COPY frontend/ .
+
+# Copy proto definitions
+COPY proto /proto
+
+# Generate API models from Protobuf
+RUN npm run proto:generate
 
 # Build the Angular app for production
 RUN npm run build
@@ -21,7 +30,7 @@ FROM nginx:alpine
 COPY --from=builder /app/dist/warsaw-pool-rankings-frontend /usr/share/nginx/html
 
 # Copy nginx configuration
-COPY nginx.conf /etc/nginx/conf.d/default.conf
+COPY frontend/nginx.conf /etc/nginx/conf.d/default.conf
 
 EXPOSE 80
 

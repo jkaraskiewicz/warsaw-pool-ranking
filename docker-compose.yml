@@ -1,30 +1,9 @@
 services:
-  # PostgreSQL Database
-  db:
-    image: postgres:15-alpine
-    container_name: warsaw-pool-db
-    environment:
-      POSTGRES_DB: warsaw_pool_rankings
-      POSTGRES_USER: pool_app
-      POSTGRES_PASSWORD: ${POSTGRES_PASSWORD:-poolpass123}
-    volumes:
-      - postgres_data:/var/lib/postgresql/data
-      - ./backend/src/database/schema.sql:/docker-entrypoint-initdb.d/schema.sql
-    ports:
-      - "5432:5432"
-    healthcheck:
-      test: ["CMD-SHELL", "pg_isready -U pool_app -d warsaw_pool_rankings"]
-      interval: 10s
-      timeout: 5s
-      retries: 5
-    networks:
-      - warsaw-pool-network
-
   # Backend (Rust)
   backend:
     build:
-      context: ./backend
-      dockerfile: Dockerfile
+      context: .
+      dockerfile: backend/Dockerfile
     container_name: warsaw-pool-backend
     environment:
       # SQLite database path
@@ -32,7 +11,7 @@ services:
       RUST_LOG: info
     volumes:
       # Persist the SQLite database
-      - backend_data:/app/data
+      - app_data:/app/data
       # Mount the host cache directory to persist raw data and skip re-fetching
       - ./backend/cache:/app/cache
     ports:
@@ -40,15 +19,13 @@ services:
     networks:
       - warsaw-pool-network
     # Command to run the Rust application
-    # The Dockerfile CMD will be used by default: ./warsaw_pool_ranking process
-    # If you want to ingest, you'd need to override the command or exec into container
     command: ./entrypoint.sh
 
   # Frontend (Angular + Nginx)
   frontend:
     build:
-      context: ./frontend
-      dockerfile: Dockerfile
+      context: .
+      dockerfile: frontend/Dockerfile
     container_name: warsaw-pool-frontend
     ports:
       - "80:80"
@@ -58,9 +35,7 @@ services:
       - warsaw-pool-network
 
 volumes:
-  postgres_data:
-    driver: local
-  backend_data:
+  app_data:
     driver: local
 
 networks:

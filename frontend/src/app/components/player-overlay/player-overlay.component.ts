@@ -1,10 +1,26 @@
 import { Component, OnInit, Inject } from '@angular/core';
-import { MAT_DIALOG_DATA, MatDialogRef } from '@angular/material/dialog';
+import { CommonModule } from '@angular/common';
+import { MAT_DIALOG_DATA, MatDialogRef, MatDialogModule } from '@angular/material/dialog';
+import { MatIconModule } from '@angular/material/icon';
+import { MatButtonModule } from '@angular/material/button';
+import { MatProgressSpinnerModule } from '@angular/material/progress-spinner';
+import { MatChipsModule } from '@angular/material/chips';
 import { PlayerService } from '../../services/player.service';
-import { PlayerDetail } from '../../models/player.model';
+import { PlayerDetail } from '../../models/api';
+import { TranslatePipe } from '../../pipes/translate.pipe';
 
 @Component({
   selector: 'app-player-overlay',
+  standalone: true,
+  imports: [
+    CommonModule,
+    MatDialogModule,
+    MatIconModule,
+    MatButtonModule,
+    MatProgressSpinnerModule,
+    MatChipsModule,
+    TranslatePipe
+  ],
   templateUrl: './player-overlay.component.html',
   styleUrls: ['./player-overlay.component.scss']
 })
@@ -39,7 +55,7 @@ export class PlayerOverlayComponent implements OnInit {
 
   getCueScoreUrl(): string {
     if (!this.player) return '#';
-    return `https://cuescore.com/player/${this.player.cuescoreId}`;
+    return this.player.cuescoreProfileUrl;
   }
 
   getConfidenceColor(level: string): string {
@@ -55,7 +71,7 @@ export class PlayerOverlayComponent implements OnInit {
     }
   }
 
-  formatDate(dateString: string | null): string {
+  formatDate(dateString: string | null | undefined): string {
     if (!dateString) return 'N/A';
     const date = new Date(dateString);
     return date.toLocaleDateString('en-US', { year: 'numeric', month: 'short', day: 'numeric' });

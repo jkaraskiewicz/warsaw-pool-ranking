@@ -1,114 +1,75 @@
-import { Component, OnInit } from '@angular/core';
+import { Component } from '@angular/core';
+import { CommonModule } from '@angular/common';
+import { FormsModule } from '@angular/forms';
 import { MatDialog } from '@angular/material/dialog';
-import { PageEvent } from '@angular/material/paginator';
-import { Sort } from '@angular/material/sort';
-import { Subject } from 'rxjs';
-import { debounceTime, distinctUntilChanged } from 'rxjs/operators';
-import { PlayerService } from '../../services/player.service';
-import { PlayerListItem } from '../../models/player.model';
+import { PageEvent, MatPaginatorModule } from '@angular/material/paginator';
+import { Sort, MatSortModule } from '@angular/material/sort';
+import { MatCardModule } from '@angular/material/card';
+import { MatFormFieldModule } from '@angular/material/form-field';
+import { MatInputModule } from '@angular/material/input';
+import { MatIconModule } from '@angular/material/icon';
+import { MatTableModule } from '@angular/material/table';
+import { MatProgressSpinnerModule } from '@angular/material/progress-spinner';
+import { MatChipsModule } from '@angular/material/chips';
+
+import { PlayerListFacade } from './player-list.facade';
+import { PlayerListItem } from '../../models/api';
 import { PlayerOverlayComponent } from '../player-overlay/player-overlay.component';
+import { RatingTypeSelectorComponent } from '../shared/rating-type-selector/rating-type-selector.component';
+import { TranslatePipe } from '../../pipes/translate.pipe';
 
 @Component({
   selector: 'app-player-list',
+  standalone: true,
+  imports: [
+    CommonModule,
+    FormsModule,
+    MatCardModule,
+    MatFormFieldModule,
+    MatInputModule,
+    MatIconModule,
+    MatTableModule,
+    MatSortModule,
+    MatPaginatorModule,
+    MatProgressSpinnerModule,
+    MatChipsModule,
+    RatingTypeSelectorComponent,
+    TranslatePipe
+  ],
   templateUrl: './player-list.component.html',
   styleUrls: ['./player-list.component.scss']
 })
-export class PlayerListComponent implements OnInit {
-  players: PlayerListItem[] = [];
-  totalPlayers: number = 0;
-  searchQuery: string = '';
-  loading: boolean = true;
+export class PlayerListComponent {
   displayedColumns: string[] = ['rank', 'name', 'rating', 'games', 'confidence'];
-
-  // Rating periods
-  ratingTypes = [
-    { value: 'all', viewValue: 'ALL_TIME' },
-    { value: '1y', viewValue: 'LAST_YEAR' },
-    { value: '2y', viewValue: 'LAST_2_YEARS' },
-    { value: '3y', viewValue: 'LAST_3_YEARS' },
-    { value: '4y', viewValue: 'LAST_4_YEARS' },
-    { value: '5y', viewValue: 'LAST_5_YEARS' },
-  ];
-  selectedRatingType: string = 'all';
-
-  // Pagination state
-  pageIndex: number = 0;
-  pageSize: number = 100;
   pageSizeOptions: number[] = [10, 25, 50, 100];
-
-  // Sorting state
-  sortActive: string = 'rating';
-  sortDirection: 'asc' | 'desc' = 'desc';
-
-  private searchSubject = new Subject<string>();
+  searchQuery = '';
 
   constructor(
-    private playerService: PlayerService,
+    public facade: PlayerListFacade,
     private dialog: MatDialog
-  ) {
-    this.searchSubject.pipe(
-      debounceTime(400),
-      distinctUntilChanged()
-    ).subscribe(() => {
-      this.pageIndex = 0;
-      this.loadPlayers();
-    });
-  }
-
-  ngOnInit(): void {
-    this.loadPlayers();
-  }
-
-  loadPlayers(): void {
-    this.loading = true;
-    // API uses 1-based page, MatPaginator uses 0-based
-    this.playerService.getPlayers(
-      this.pageIndex + 1,
-      this.pageSize,
-      this.sortActive,
-      this.sortDirection,
-      this.searchQuery,
-      this.selectedRatingType
-    ).subscribe({
-      next: (response) => {
-        this.players = response.items;
-        this.totalPlayers = response.total;
-        this.loading = false;
-      },
-      error: (err) => {
-        console.error('Error loading players:', err);
-        this.loading = false;
-      }
-    });
-  }
+  ) {}
 
   onSearchChange(): void {
-    this.searchSubject.next(this.searchQuery);
+    this.facade.setFilter(this.searchQuery);
   }
 
   onPageChange(event: PageEvent): void {
-    this.pageIndex = event.pageIndex;
-    this.pageSize = event.pageSize;
-    this.loadPlayers();
+    this.facade.setPage(event.pageIndex, event.pageSize);
   }
 
   onSortChange(sort: Sort): void {
-    this.sortActive = sort.active;
-    this.sortDirection = sort.direction === '' ? 'desc' : sort.direction as 'asc' | 'desc';
-    this.loadPlayers();
+    this.facade.setSort(sort.active, sort.direction === '' ? 'desc' : sort.direction as 'asc' | 'desc');
   }
 
   onRatingTypeChange(type: string): void {
-    this.selectedRatingType = type;
-    this.pageIndex = 0; // Reset page on rating type change
-    this.loadPlayers();
+    this.facade.setRatingType(type);
   }
 
   openPlayerOverlay(player: PlayerListItem): void {
     this.dialog.open(PlayerOverlayComponent, {
       width: '800px',
       maxWidth: '95vw',
-      data: { playerId: player.playerId, ratingType: this.selectedRatingType }
+      data: { playerId: player.playerId, ratingType: this.facade.state().ratingType }
     });
   }
 
