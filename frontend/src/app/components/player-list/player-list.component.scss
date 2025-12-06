@@ -1,17 +1,19 @@
 .search-field {
   width: 100%;
-  margin-bottom: 1rem;
-}
-
-.rating-type-selector {
-  margin-bottom: 1rem;
-  display: flex;
-  flex-wrap: wrap;
+  margin-bottom: 1.5rem;
+  
+  ::ng-deep .mat-mdc-text-field-wrapper {
+    background-color: var(--bg-color);
+    border-radius: 8px;
+  }
 }
 
 .table-container {
   position: relative;
   min-height: 200px;
+  border-radius: 8px;
+  overflow: hidden;
+  border: 1px solid var(--border-color);
 }
 
 .loading-shade {
@@ -21,36 +23,54 @@
   bottom: 0;
   right: 0;
   background: rgba(255, 255, 255, 0.7);
-  z-index: 1;
+  z-index: 10;
   display: flex;
   align-items: center;
   justify-content: center;
+  backdrop-filter: blur(2px);
 }
 
-// Dark theme support for loading shade
 :host-context(.dark-theme) .loading-shade {
-  background: rgba(48, 48, 48, 0.7);
+  background: rgba(15, 23, 42, 0.7); // Dark slate
 }
 
 .players-table {
   width: 100%;
+  background-color: transparent; // Use card background
+
+  th.mat-mdc-header-cell {
+    font-weight: 600;
+    color: var(--text-secondary);
+    font-size: 0.875rem;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+    border-bottom-color: var(--border-color);
+  }
+
+  td.mat-mdc-cell {
+    color: var(--text-primary);
+    border-bottom-color: var(--border-color);
+    padding-top: 16px;
+    padding-bottom: 16px;
+  }
 }
 
 .player-row {
   cursor: pointer;
-  transition: background 0.2s;
+  transition: background-color 0.2s;
 
   &:hover {
-    background-color: rgba(0, 0, 0, 0.04);
+    background-color: rgba(0, 0, 0, 0.025);
   }
 }
 
 :host-context(.dark-theme) .player-row:hover {
-  background-color: rgba(255, 255, 255, 0.04);
+  background-color: rgba(255, 255, 255, 0.05);
 }
 
 .player-name {
-  font-weight: 500;
+  font-weight: 600;
+  font-size: 1rem;
   
   a {
     color: inherit;
@@ -58,31 +78,28 @@
     
     &:hover {
       text-decoration: underline;
+      color: #3b82f6;
     }
   }
 }
 
 .no-results {
   text-align: center;
-  padding: 2rem;
-  color: rgba(0, 0, 0, 0.54);
+  padding: 3rem;
+  color: var(--text-secondary);
+  font-size: 1.1rem;
 }
 
-:host-context(.dark-theme) .no-results {
-  color: rgba(255, 255, 255, 0.54);
-}
-
-.positive {
-  color: green;
-}
-
-.negative {
-  color: red;
-}
 .compare-fab {
   position: fixed;
-  bottom: 30px;
-  right: 30px;
+  bottom: 40px;
+  right: 40px;
   z-index: 100;
+  box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05);
+  transform: scale(1);
+  transition: transform 0.2s;
+  
+  &:active {
+    transform: scale(0.95);
+  }
 }
-

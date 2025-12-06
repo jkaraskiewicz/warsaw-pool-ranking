@@ -1,7 +1,11 @@
 <mat-toolbar color="primary">
-  <span [routerLink]="['/']" style="cursor: pointer;">{{ title | translate }}</span>
+  <span class="brand" [routerLink]="['/']">
+    <mat-icon>sports_score</mat-icon>
+    {{ title | translate }}
+  </span>
+
   <span class="spacer"></span>
-  
+
   <button mat-button [matMenuTriggerFor]="langMenu">
     {{ currentLang() | uppercase }}
     <mat-icon iconPositionEnd>arrow_drop_down</mat-icon>
@@ -20,6 +24,6 @@
   </button>
 </mat-toolbar>
 
-<div class="container">
+<div class="container main-content">
   <router-outlet></router-outlet>
 </div>
