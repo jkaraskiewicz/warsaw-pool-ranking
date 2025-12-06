@@ -4,6 +4,7 @@ import { RouterModule } from '@angular/router';
 import { MatToolbarModule } from '@angular/material/toolbar';
 import { MatIconModule } from '@angular/material/icon';
 import { MatButtonModule } from '@angular/material/button';
+import { MatMenuModule } from '@angular/material/menu';
 import { TranslatePipe } from './pipes/translate.pipe';
 import { ThemeService } from './services/theme.service';
 import { TranslationService } from './services/translation.service';
@@ -17,6 +18,7 @@ import { TranslationService } from './services/translation.service';
     MatToolbarModule,
     MatIconModule,
     MatButtonModule,
+    MatMenuModule,
     TranslatePipe
   ],
   templateUrl: './app.component.html',
@@ -37,8 +39,7 @@ export class AppComponent {
     this.themeService.toggleTheme();
   }
 
-  toggleLanguage() {
-    const newLang = this.currentLang() === 'en' ? 'pl' : 'en';
-    this.translationService.setLanguage(newLang);
+  setLanguage(lang: 'en' | 'pl') {
+    this.translationService.setLanguage(lang);
   }
 }

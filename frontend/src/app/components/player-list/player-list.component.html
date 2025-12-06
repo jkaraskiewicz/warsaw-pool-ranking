@@ -20,6 +20,13 @@
       (typeChange)="onRatingTypeChange($event)">
     </app-rating-type-selector>
 
+    <button mat-fab color="accent" class="compare-fab" 
+            *ngIf="selection.size === 2" 
+            (click)="comparePlayers()"
+            [attr.aria-label]="'COMPARISON' | translate">
+      <mat-icon>compare_arrows</mat-icon>
+    </button>
+
     <div class="table-container">
       <div *ngIf="facade.loading()" class="loading-shade">
         <mat-spinner></mat-spinner>
@@ -31,6 +38,16 @@
              [matSortDirection]="state.sortDirection"
              (matSortChange)="onSortChange($event)"
              class="players-table">
+        <ng-container matColumnDef="select">
+          <th mat-header-cell *matHeaderCellDef></th>
+          <td mat-cell *matCellDef="let player">
+            <mat-checkbox (click)="$event.stopPropagation()"
+                          (change)="$event ? toggleSelection(player) : null"
+                          [checked]="isSelected(player)">
+            </mat-checkbox>
+          </td>
+        </ng-container>
+
         <ng-container matColumnDef="rank">
           <th mat-header-cell *matHeaderCellDef>{{ 'RANK' | translate }}</th>
           <td mat-cell *matCellDef="let player">{{ player.rank }}</td>
@@ -51,6 +68,11 @@
         <ng-container matColumnDef="games">
           <th mat-header-cell *matHeaderCellDef mat-sort-header="games_played">{{ 'GAMES' | translate }}</th>
           <td mat-cell *matCellDef="let player">{{ player.gamesPlayed }}</td>
+        </ng-container>
+
+        <ng-container matColumnDef="matches">
+          <th mat-header-cell *matHeaderCellDef>{{ 'MATCHES' | translate }}</th>
+          <td mat-cell *matCellDef="let player">{{ player.matchesPlayed }}</td>
         </ng-container>
 
         <ng-container matColumnDef="confidence">

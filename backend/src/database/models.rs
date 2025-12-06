@@ -79,3 +79,11 @@ pub struct PlayerFilter {
     pub limit: usize,
     pub offset: usize,
 }
+
+#[derive(Debug, Clone)]
+pub struct HeadToHeadMatchRow {
+    pub date: NaiveDateTime,
+    pub tournament_name: String,
+    pub p1_wins: i32,
+    pub p2_wins: i32,
+}

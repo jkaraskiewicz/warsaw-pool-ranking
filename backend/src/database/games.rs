@@ -72,3 +72,44 @@ pub fn list_by_tournament(
 
     Ok(rows)
 }
+
+pub fn get_head_to_head_matches(
+    conn: &mut DbConn,
+    player1_id: i32,
+    player2_id: i32,
+) -> Result<Vec<super::models::HeadToHeadMatchRow>> {
+    let sql = "
+        SELECT 
+            g.date,
+            t.name as tournament_name,
+            SUM(CASE WHEN (g.first_player_id = ?1 AND g.first_player_score > g.second_player_score) OR (g.second_player_id = ?1 AND g.second_player_score > g.first_player_score) THEN 1 ELSE 0 END) as p1_wins,
+            SUM(CASE WHEN (g.first_player_id = ?2 AND g.first_player_score > g.second_player_score) OR (g.second_player_id = ?2 AND g.second_player_score > g.first_player_score) THEN 1 ELSE 0 END) as p2_wins
+        FROM games g
+        JOIN tournaments t ON g.tournament_id = t.id
+        WHERE (g.first_player_id = ?1 AND g.second_player_id = ?2)
+           OR (g.first_player_id = ?2 AND g.second_player_id = ?1)
+        GROUP BY g.tournament_id, t.name, g.date
+        ORDER BY g.date DESC
+    ";
+
+    let mut stmt = conn.prepare(sql)?;
+    let rows = stmt.query_map(params![player1_id, player2_id], |row| {
+        Ok(super::models::HeadToHeadMatchRow {
+            date: row.get(0)?,
+            tournament_name: row.get(1)?,
+            p1_wins: row.get(2)?,
+            p2_wins: row.get(3)?,
+        })
+    })?.collect::<rusqlite::Result<Vec<_>>>()?;
+
+    Ok(rows)
+}
+
+pub fn count_matches_played_for_player(
+    conn: &mut DbConn,
+    player_id: i32,
+) -> Result<i32> {
+    let sql = "SELECT COUNT(DISTINCT date) FROM games WHERE first_player_id = ?1 OR second_player_id = ?1";
+    conn.query_row(sql, params![player_id], |row| row.get(0))
+        .context("Failed to count matches played for player")
+}

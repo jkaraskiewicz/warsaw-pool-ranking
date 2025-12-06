@@ -13,6 +13,7 @@ message PlayerListItem {
   double rating = 5;
   int32 games_played = 6;
   string confidence_level = 7; // string for JSON compatibility ("established", etc.)
+  int32 matches_played = 8;
 }
 
 // Detailed player view
@@ -29,6 +30,7 @@ message PlayerDetail {
   double ml_weight = 10;
   int32 effective_games = 11;
   optional string last_played = 12; // Date string
+  int32 matches_played = 13;
 }
 
 // Paginated list response
@@ -37,4 +39,28 @@ message PlayerListResponse {
   int32 total = 2;
   int32 page = 3;
   int32 page_size = 4;
+}
+
+message HeadToHeadMatch {
+  string date = 1;
+  string tournament_name = 2;
+  int32 player1_wins = 3;
+  int32 player2_wins = 4;
+}
+
+message HeadToHeadStats {
+  int32 total_matches = 1;
+  int32 player1_match_wins = 2;
+  int32 player2_match_wins = 3;
+  int32 total_frames = 4;
+  int32 player1_frame_wins = 5;
+  int32 player2_frame_wins = 6;
+}
+
+message HeadToHeadResponse {
+  PlayerDetail player1 = 1;
+  PlayerDetail player2 = 2;
+  double probability_p1_wins = 3;
+  repeated HeadToHeadMatch matches = 4;
+  HeadToHeadStats stats = 5;
 }

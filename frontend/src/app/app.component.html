@@ -2,9 +2,14 @@
   <span [routerLink]="['/']" style="cursor: pointer;">{{ title | translate }}</span>
   <span class="spacer"></span>
   
-  <button mat-button (click)="toggleLanguage()">
-    {{ currentLang() === 'en' ? 'PL' : 'EN' }}
+  <button mat-button [matMenuTriggerFor]="langMenu">
+    {{ currentLang() | uppercase }}
+    <mat-icon iconPositionEnd>arrow_drop_down</mat-icon>
   </button>
+  <mat-menu #langMenu="matMenu">
+    <button mat-menu-item (click)="setLanguage('en')">English (EN)</button>
+    <button mat-menu-item (click)="setLanguage('pl')">Polski (PL)</button>
+  </mat-menu>
 
   <button mat-icon-button (click)="toggleTheme()">
     <mat-icon>{{ isDarkMode() ? 'light_mode' : 'dark_mode' }}</mat-icon>
