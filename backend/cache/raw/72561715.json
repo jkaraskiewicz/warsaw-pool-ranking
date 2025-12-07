@@ -1,245 +1,2072 @@
 {
+  "access": [
+    1620195
+  ],
   "banner": {
     "original": "//img.cuescore.com/image/1/1/1fc403037356e489b2623a873e1b34a6.png?t=1763385485",
     "thumbnail": "//img.cuescore.com/image/1/7/1fc403037356e489b2623a873e1b34a6.png?t=1763385485"
   },
+  "branch": 1,
   "breakrule": "alternate",
+  "contacts": [
+    {
+      "country": {
+        "alpha3": "POL",
+        "continent": "Europe",
+        "image": "https://cuescore.com/img/flags/png-country-4x2-none/res-640x480/pl.png",
+        "name": "Poland"
+      },
+      "firstname": "Michał",
+      "image": "https://img.cuescore.com/image/1/4/15d291e83ead350107ae474e8623a6f5.png?t=1504629089",
+      "lastname": "Nowak",
+      "name": "Michał Nowak",
+      "playerId": 1620195,
+      "represents": [],
+      "url": "https://cuescore.com/player/Micha%C5%82+Nowak/1620195"
+    },
+    {
+      "country": {
+        "alpha3": "POL",
+        "continent": "Europe",
+        "image": "https://cuescore.com/img/flags/png-country-4x2-none/res-640x480/pl.png",
+        "name": "Poland"
+      },
+      "firstname": "Kacper",
+      "image": "https://img.cuescore.com/image/8/4/862c792ba8eb7f97e626fbe6cbcc59f6.png",
+      "lastname": "Kutra",
+      "name": "Kacper Kutra",
+      "playerId": 59183473,
+      "represents": [],
+      "url": "https://cuescore.com/player/Kacper+Kutra/59183473"
+    }
+  ],
   "deadline": "",
   "defaultRaceTo": 4,
   "description": "Turniej rankingowy WPT | Wtorki 19:00 | klub Eighty Nine | odmiana 9 bil | wpisowe 60 zł  | system grupowy | pula nagród 40% sumy wpisowego \r\nZapraszamy do nowego sklepu bilardowego Shooters - sklep dla graczy!  www.sklepbilardowy.eu",
   "discipline": "9-Ball",
+  "disciplineId": 3,
   "displayDate": "November 18, 2025",
   "dresscode": "",
+  "entrystart": "",
   "format": 4,
+  "handicap": [],
   "matches": [
     {
+      "bestOfSets": 0,
+      "branch": 1,
+      "challengeId": 0,
+      "comment": "",
+      "curVersion": 57,
+      "discipline": "9-Ball",
+      "disciplineId": 3,
+      "frames": [],
+      "groupNo": 1,
+      "highBreaksA": "",
+      "highBreaksB": "",
+      "inningsPlayerA": 0,
+      "inningsPlayerB": 0,
+      "lagWinner": "",
+      "loserNext": "",
       "matchId": 72605635,
+      "matchType": 0,
+      "matchno": 1,
+      "matchstatus": "finished",
+      "matchstatusCode": 2,
+      "notes": [],
+      "penalty": 8,
       "playerA": {
+        "country": {
+          "alpha3": "POL",
+          "continent": "Europe",
+          "image": "https://cuescore.com/img/flags/png-country-4x2-none/res-640x480/pl.png",
+          "name": "Poland"
+        },
+        "firstname": "Jakub",
+        "image": "https://img.cuescore.com/image/0/4/0878e968cba11bd8ceb21fa4b3364c2a.png?t=1744922337",
+        "lastname": "Ładyński Eighty Nine Pucharowo Warszawa",
         "name": "Jakub Ładyński Eighty Nine Pucharowo Warszawa",
-        "playerId": 15492220
+        "playerId": 15492220,
+        "represents": [],
+        "url": "https://cuescore.com/player/Jakub+%C5%81ady%C5%84ski+Eighty+Nine+Pucharowo+Warszawa/15492220"
       },
       "playerB": {
+        "country": {
+          "alpha3": "POL",
+          "continent": "Europe",
+          "image": "https://cuescore.com/img/flags/png-country-4x2-none/res-640x480/pl.png",
+          "name": "Poland"
+        },
+        "firstname": "Wolny",
+        "image": "https://img.cuescore.com/image/8/4/862c792ba8eb7f97e626fbe6cbcc59f6.png",
+        "lastname": "Los",
         "name": "Wolny Los",
-        "playerId": 68255392
+        "playerId": 68255392,
+        "represents": [],
+        "url": "https://cuescore.com/player/Wolny+Los/68255392"
       },
+      "properties": {
+        "penalty": {
+          "description": "",
+          "invalid": false
+        }
+      },
+      "raceTo": 4,
+      "round": 1,
+      "roundName": "Round 1",
+      "runoutsA": 0,
+      "runoutsB": 0,
       "scoreA": 0,
       "scoreB": 0,
+      "sets": [],
       "starttime": "",
-      "stoptime": ""
+      "stoptime": "",
+      "table": [],
+      "tournamentId": 72561715,
+      "useInnings": false,
+      "videoLink": "",
+      "winnerNext": ""
     },
     {
+      "bestOfSets": 0,
+      "branch": 1,
+      "challengeId": 0,
+      "comment": "",
+      "curVersion": 57,
+      "discipline": "9-Ball",
+      "disciplineId": 3,
+      "frames": [],
+      "groupNo": 1,
+      "highBreaksA": "",
+      "highBreaksB": "",
+      "inningsPlayerA": 0,
+      "inningsPlayerB": 0,
+      "lagWinner": "B",
+      "loserNext": "",
       "matchId": 72605638,
+      "matchType": 0,
+      "matchno": 2,
+      "matchstatus": "finished",
+      "matchstatusCode": 2,
+      "notes": [
+        {
+          "note": "frame start",
+          "time": "2025-11-18T18:34:13.360Z"
+        },
+        {
+          "note": "B breaking",
+          "time": "2025-11-18T18:34:13.360Z"
+        },
+        {
+          "note": "B frame win",
+          "time": "2025-11-18T18:39:20.277Z"
+        },
+        {
+          "note": "frame end",
+          "time": "2025-11-18T18:39:20.277Z"
+        },
+        {
+          "note": "frame start",
+          "time": "2025-11-18T18:39:20.277Z"
+        },
+        {
+          "note": "A breaking",
+          "time": "2025-11-18T18:39:20.277Z"
+        },
+        {
+          "note": "A frame win",
+          "time": "2025-11-18T18:42:37.673Z"
+        },
+        {
+          "note": "frame end",
+          "time": "2025-11-18T18:42:37.673Z"
+        },
+        {
+          "note": "frame start",
+          "time": "2025-11-18T18:42:37.673Z"
+        },
+        {
+          "note": "B breaking",
+          "time": "2025-11-18T18:42:37.673Z"
+        },
+        {
+          "note": "A frame win",
+          "time": "2025-11-18T18:50:46.783Z"
+        },
+        {
+          "note": "frame end",
+          "time": "2025-11-18T18:50:46.783Z"
+        },
+        {
+          "note": "frame start",
+          "time": "2025-11-18T18:50:46.783Z"
+        },
+        {
+          "note": "A breaking",
+          "time": "2025-11-18T18:50:46.783Z"
+        },
+        {
+          "note": "B frame win",
+          "time": "2025-11-18T18:53:24.520Z"
+        },
+        {
+          "note": "frame end",
+          "time": "2025-11-18T18:53:24.520Z"
+        },
+        {
+          "note": "frame start",
+          "time": "2025-11-18T18:53:24.520Z"
+        },
+        {
+          "note": "B breaking",
+          "time": "2025-11-18T18:53:24.520Z"
+        },
+        {
+          "note": "B frame win",
+          "time": "2025-11-18T18:58:25.021Z"
+        },
+        {
+          "note": "frame end",
+          "time": "2025-11-18T18:58:25.021Z"
+        },
+        {
+          "note": "frame start",
+          "time": "2025-11-18T18:58:25.021Z"
+        },
+        {
+          "note": "A breaking",
+          "time": "2025-11-18T18:58:25.021Z"
+        },
+        {
+          "note": "B frame win",
+          "time": "2025-11-18T19:01:15.727Z"
+        },
+        {
+          "note": "frame end",
+          "time": "2025-11-18T19:01:15.727Z"
+        },
+        {
+          "note": "frame start",
+          "time": "2025-11-18T19:01:15.727Z"
+        },
+        {
+          "note": "B breaking",
+          "time": "2025-11-18T19:01:15.727Z"
+        },
+        {
+          "note": "B frame win",
+          "time": "2025-11-18T19:07:12.010Z"
+        },
+        {
+          "note": "frame end",
+          "time": "2025-11-18T19:07:12.010Z"
+        },
+        {
+          "note": "match end",
+          "time": "2025-11-18T19:07:13.114Z"
+        }
+      ],
+      "penalty": 0,
       "playerA": {
+        "country": {
+          "alpha3": "POL",
+          "continent": "Europe",
+          "image": "https://cuescore.com/img/flags/png-country-4x2-none/res-640x480/pl.png",
+          "name": "Poland"
+        },
+        "firstname": "Tomasz",
+        "image": "https://img.cuescore.com/image/e/4/e90700c2f11389bb58cb236a487deca6.png?t=1688494626",
+        "lastname": "Proc",
         "name": "Tomasz Proc",
-        "playerId": 27985189
+        "playerId": 27985189,
+        "represents": [],
+        "url": "https://cuescore.com/player/Tomasz+Proc/27985189"
       },
       "playerB": {
+        "country": {
+          "alpha3": "POL",
+          "continent": "Europe",
+          "image": "https://cuescore.com/img/flags/png-country-4x2-none/res-640x480/pl.png",
+          "name": "Poland"
+        },
+        "firstname": "Sebastian",
+        "image": "https://img.cuescore.com/image/8/4/8e25b60ff30ecb15ccb65e9c5875c024.png?t=1758874499",
+        "lastname": "Szymkowski",
         "name": "Sebastian Szymkowski",
-        "playerId": 1660831
+        "playerId": 1660831,
+        "represents": [],
+        "url": "https://cuescore.com/player/Sebastian+Szymkowski/1660831"
       },
+      "properties": {
+        "lagWinsA": 0,
+        "lagWinsB": 1,
+        "runoutsA": 0,
+        "runoutsB": 0
+      },
+      "raceTo": 4,
+      "round": 1,
+      "roundName": "Round 1",
+      "runoutsA": 0,
+      "runoutsB": 0,
       "scoreA": 2,
       "scoreB": 5,
+      "sets": [],
       "starttime": "2025-11-18T19:32:29",
-      "stoptime": "2025-11-18T20:07:15"
+      "stoptime": "2025-11-18T20:07:15",
+      "table": {
+        "branch": "American pool",
+        "branchId": 1,
+        "cloth": "",
+        "description": "",
+        "manufacturer": "Tournament Champion",
+        "model": "Sport",
+        "name": "2",
+        "pockets": "",
+        "size": 9,
+        "slate": "",
+        "tableId": 28337803,
+        "venue": {
+          "image": "https://img.cuescore.com/image/d/3/d93a0f12945263a55729e1f3b6a15aaa.png?t=1546596159",
+          "name": "Eighty Nine",
+          "owner": {
+            "logo": "//img.cuescore.com/image/9/2/9b59b70e156f2f8d0f1a879411c6ffd1.png?t=1576160578",
+            "name": "Black Ball Events",
+            "organizationId": 7011764,
+            "profileColor": "000000",
+            "stub": "blackballevents",
+            "url": "https://cuescore.com/blackballevents"
+          },
+          "url": "https://cuescore.com/venue/Eighty+Nine/3367445",
+          "venueId": 3367445
+        }
+      },
+      "tournamentId": 72561715,
+      "useInnings": false,
+      "videoLink": "",
+      "winnerNext": ""
     },
     {
+      "bestOfSets": 0,
+      "branch": 1,
+      "challengeId": 0,
+      "comment": "",
+      "curVersion": 57,
+      "discipline": "9-Ball",
+      "disciplineId": 3,
+      "frames": [],
+      "groupNo": 2,
+      "highBreaksA": "",
+      "highBreaksB": "",
+      "inningsPlayerA": 0,
+      "inningsPlayerB": 0,
+      "lagWinner": "",
+      "loserNext": "",
       "matchId": 72605641,
+      "matchType": 0,
+      "matchno": 3,
+      "matchstatus": "finished",
+      "matchstatusCode": 2,
+      "notes": [],
+      "penalty": 0,
       "playerA": {
+        "country": {
+          "alpha3": "POL",
+          "continent": "Europe",
+          "image": "https://cuescore.com/img/flags/png-country-4x2-none/res-640x480/pl.png",
+          "name": "Poland"
+        },
+        "firstname": "Bartosz",
+        "image": "https://img.cuescore.com/image/f/4/fb9bad1527efa9d8c48351f01254b7d5.png?t=1740400788",
+        "lastname": "Pierzchlewski",
         "name": "Bartosz Pierzchlewski",
-        "playerId": 5149715
+        "playerId": 5149715,
+        "represents": [],
+        "url": "https://cuescore.com/player/Bartosz+Pierzchlewski/5149715"
       },
       "playerB": {
+        "country": {
+          "alpha3": "POL",
+          "continent": "Europe",
+          "image": "https://cuescore.com/img/flags/png-country-4x2-none/res-640x480/pl.png",
+          "name": "Poland"
+        },
+        "firstname": "Maciej",
+        "image": "https://img.cuescore.com/image/8/4/862c792ba8eb7f97e626fbe6cbcc59f6.png",
+        "lastname": "Wierzchowski",
         "name": "Maciej Wierzchowski",
-        "playerId": 28336684
+        "playerId": 28336684,
+        "represents": [],
+        "url": "https://cuescore.com/player/Maciej+Wierzchowski/28336684"
       },
+      "properties": [],
+      "raceTo": 4,
+      "round": 1,
+      "roundName": "Round 1",
+      "runoutsA": 0,
+      "runoutsB": 0,
       "scoreA": 3,
       "scoreB": 4,
+      "sets": [],
       "starttime": "2025-11-18T19:22:00",
-      "stoptime": "2025-11-18T20:03:19"
+      "stoptime": "2025-11-18T20:03:19",
+      "table": {
+        "branch": "American pool",
+        "branchId": 1,
+        "cloth": "",
+        "description": "",
+        "manufacturer": "Tournament Champio",
+        "model": "Sport",
+        "name": "3",
+        "pockets": "",
+        "size": 0,
+        "slate": "",
+        "tableId": 28337824,
+        "venue": {
+          "image": "https://img.cuescore.com/image/d/3/d93a0f12945263a55729e1f3b6a15aaa.png?t=1546596159",
+          "name": "Eighty Nine",
+          "owner": {
+            "logo": "//img.cuescore.com/image/9/2/9b59b70e156f2f8d0f1a879411c6ffd1.png?t=1576160578",
+            "name": "Black Ball Events",
+            "organizationId": 7011764,
+            "profileColor": "000000",
+            "stub": "blackballevents",
+            "url": "https://cuescore.com/blackballevents"
+          },
+          "url": "https://cuescore.com/venue/Eighty+Nine/3367445",
+          "venueId": 3367445
+        }
+      },
+      "tournamentId": 72561715,
+      "useInnings": false,
+      "videoLink": "",
+      "winnerNext": ""
     },
     {
+      "bestOfSets": 0,
+      "branch": 1,
+      "challengeId": 0,
+      "comment": "",
+      "curVersion": 57,
+      "discipline": "9-Ball",
+      "disciplineId": 3,
+      "frames": [],
+      "groupNo": 2,
+      "highBreaksA": "",
+      "highBreaksB": "",
+      "inningsPlayerA": 0,
+      "inningsPlayerB": 0,
+      "lagWinner": "",
+      "loserNext": "",
       "matchId": 72605644,
+      "matchType": 0,
+      "matchno": 4,
+      "matchstatus": "finished",
+      "matchstatusCode": 2,
+      "notes": [],
+      "penalty": 0,
       "playerA": {
+        "country": {
+          "alpha3": "POL",
+          "continent": "Europe",
+          "image": "https://cuescore.com/img/flags/png-country-4x2-none/res-640x480/pl.png",
+          "name": "Poland"
+        },
+        "firstname": "Maciej",
+        "image": "https://img.cuescore.com/image/8/4/8bd3578c19ef8201ca1330519e82df1c.png?t=1707758826",
+        "lastname": "Pislewski",
         "name": "Maciej Pislewski",
-        "playerId": 7789003
+        "playerId": 7789003,
+        "represents": [],
+        "url": "https://cuescore.com/player/Maciej+Pislewski/7789003"
       },
       "playerB": {
+        "country": {
+          "alpha3": "POL",
+          "continent": "Europe",
+          "image": "https://cuescore.com/img/flags/png-country-4x2-none/res-640x480/pl.png",
+          "name": "Poland"
+        },
+        "firstname": "Filip",
+        "image": "https://img.cuescore.com/image/f/4/fe462523c1b7525b80ad5234b6bba236.png?t=1758613895",
+        "lastname": "Krawczyk",
         "name": "Filip Krawczyk",
-        "playerId": 2292556
+        "playerId": 2292556,
+        "represents": [],
+        "url": "https://cuescore.com/player/Filip+Krawczyk/2292556"
       },
+      "properties": [],
+      "raceTo": 4,
+      "round": 1,
+      "roundName": "Round 1",
+      "runoutsA": 0,
+      "runoutsB": 0,
       "scoreA": 3,
       "scoreB": 4,
+      "sets": [],
       "starttime": "2025-11-18T19:10:00",
-      "stoptime": "2025-11-18T19:41:19"
+      "stoptime": "2025-11-18T19:41:19",
+      "table": {
+        "branch": "American pool",
+        "branchId": 1,
+        "cloth": "",
+        "description": "",
+        "manufacturer": "",
+        "model": "",
+        "name": "1",
+        "pockets": "",
+        "size": 9,
+        "slate": "",
+        "tableId": 8819726,
+        "venue": {
+          "image": "https://img.cuescore.com/image/d/3/d93a0f12945263a55729e1f3b6a15aaa.png?t=1546596159",
+          "name": "Eighty Nine",
+          "owner": {
+            "logo": "//img.cuescore.com/image/9/2/9b59b70e156f2f8d0f1a879411c6ffd1.png?t=1576160578",
+            "name": "Black Ball Events",
+            "organizationId": 7011764,
+            "profileColor": "000000",
+            "stub": "blackballevents",
+            "url": "https://cuescore.com/blackballevents"
+          },
+          "url": "https://cuescore.com/venue/Eighty+Nine/3367445",
+          "venueId": 3367445
+        }
+      },
+      "tournamentId": 72561715,
+      "useInnings": false,
+      "videoLink": "",
+      "winnerNext": ""
     },
     {
+      "bestOfSets": 0,
+      "branch": 1,
+      "challengeId": 0,
+      "comment": "",
+      "curVersion": 57,
+      "discipline": "9-Ball",
+      "disciplineId": 3,
+      "frames": [],
+      "groupNo": 1,
+      "highBreaksA": "",
+      "highBreaksB": "",
+      "inningsPlayerA": 0,
+      "inningsPlayerB": 0,
+      "lagWinner": "",
+      "loserNext": "",
       "matchId": 72605647,
+      "matchType": 0,
+      "matchno": 5,
+      "matchstatus": "finished",
+      "matchstatusCode": 2,
+      "notes": [],
+      "penalty": 0,
       "playerA": {
+        "country": {
+          "alpha3": "POL",
+          "continent": "Europe",
+          "image": "https://cuescore.com/img/flags/png-country-4x2-none/res-640x480/pl.png",
+          "name": "Poland"
+        },
+        "firstname": "Jakub",
+        "image": "https://img.cuescore.com/image/0/4/0878e968cba11bd8ceb21fa4b3364c2a.png?t=1744922337",
+        "lastname": "Ładyński Eighty Nine Pucharowo Warszawa",
         "name": "Jakub Ładyński Eighty Nine Pucharowo Warszawa",
-        "playerId": 15492220
+        "playerId": 15492220,
+        "represents": [],
+        "url": "https://cuescore.com/player/Jakub+%C5%81ady%C5%84ski+Eighty+Nine+Pucharowo+Warszawa/15492220"
       },
       "playerB": {
+        "country": {
+          "alpha3": "POL",
+          "continent": "Europe",
+          "image": "https://cuescore.com/img/flags/png-country-4x2-none/res-640x480/pl.png",
+          "name": "Poland"
+        },
+        "firstname": "Sebastian",
+        "image": "https://img.cuescore.com/image/8/4/8e25b60ff30ecb15ccb65e9c5875c024.png?t=1758874499",
+        "lastname": "Szymkowski",
         "name": "Sebastian Szymkowski",
-        "playerId": 1660831
+        "playerId": 1660831,
+        "represents": [],
+        "url": "https://cuescore.com/player/Sebastian+Szymkowski/1660831"
       },
+      "properties": [],
+      "raceTo": 4,
+      "round": 2,
+      "roundName": "Round 2",
+      "runoutsA": 0,
+      "runoutsB": 0,
       "scoreA": 2,
       "scoreB": 5,
+      "sets": [],
       "starttime": "2025-11-18T19:07:00",
-      "stoptime": "2025-11-18T19:32:21"
+      "stoptime": "2025-11-18T19:32:21",
+      "table": {
+        "branch": "American pool",
+        "branchId": 1,
+        "cloth": "",
+        "description": "",
+        "manufacturer": "Tournament Champion",
+        "model": "Sport",
+        "name": "2",
+        "pockets": "",
+        "size": 9,
+        "slate": "",
+        "tableId": 28337803,
+        "venue": {
+          "image": "https://img.cuescore.com/image/d/3/d93a0f12945263a55729e1f3b6a15aaa.png?t=1546596159",
+          "name": "Eighty Nine",
+          "owner": {
+            "logo": "//img.cuescore.com/image/9/2/9b59b70e156f2f8d0f1a879411c6ffd1.png?t=1576160578",
+            "name": "Black Ball Events",
+            "organizationId": 7011764,
+            "profileColor": "000000",
+            "stub": "blackballevents",
+            "url": "https://cuescore.com/blackballevents"
+          },
+          "url": "https://cuescore.com/venue/Eighty+Nine/3367445",
+          "venueId": 3367445
+        }
+      },
+      "tournamentId": 72561715,
+      "useInnings": false,
+      "videoLink": "",
+      "winnerNext": ""
     },
     {
+      "bestOfSets": 0,
+      "branch": 1,
+      "challengeId": 0,
+      "comment": "",
+      "curVersion": 57,
+      "discipline": "9-Ball",
+      "disciplineId": 3,
+      "frames": [],
+      "groupNo": 1,
+      "highBreaksA": "",
+      "highBreaksB": "",
+      "inningsPlayerA": 0,
+      "inningsPlayerB": 0,
+      "lagWinner": "",
+      "loserNext": "",
       "matchId": 72605650,
+      "matchType": 0,
+      "matchno": 6,
+      "matchstatus": "finished",
+      "matchstatusCode": 2,
+      "notes": [],
+      "penalty": 4,
       "playerA": {
+        "country": {
+          "alpha3": "POL",
+          "continent": "Europe",
+          "image": "https://cuescore.com/img/flags/png-country-4x2-none/res-640x480/pl.png",
+          "name": "Poland"
+        },
+        "firstname": "Wolny",
+        "image": "https://img.cuescore.com/image/8/4/862c792ba8eb7f97e626fbe6cbcc59f6.png",
+        "lastname": "Los",
         "name": "Wolny Los",
-        "playerId": 68255392
+        "playerId": 68255392,
+        "represents": [],
+        "url": "https://cuescore.com/player/Wolny+Los/68255392"
       },
       "playerB": {
+        "country": {
+          "alpha3": "POL",
+          "continent": "Europe",
+          "image": "https://cuescore.com/img/flags/png-country-4x2-none/res-640x480/pl.png",
+          "name": "Poland"
+        },
+        "firstname": "Tomasz",
+        "image": "https://img.cuescore.com/image/e/4/e90700c2f11389bb58cb236a487deca6.png?t=1688494626",
+        "lastname": "Proc",
         "name": "Tomasz Proc",
-        "playerId": 27985189
+        "playerId": 27985189,
+        "represents": [],
+        "url": "https://cuescore.com/player/Tomasz+Proc/27985189"
       },
+      "properties": {
+        "penalty": {
+          "description": "",
+          "invalid": false
+        }
+      },
+      "raceTo": 4,
+      "round": 2,
+      "roundName": "Round 2",
+      "runoutsA": 0,
+      "runoutsB": 0,
       "scoreA": 0,
       "scoreB": 0,
+      "sets": [],
       "starttime": "",
-      "stoptime": ""
+      "stoptime": "",
+      "table": [],
+      "tournamentId": 72561715,
+      "useInnings": false,
+      "videoLink": "",
+      "winnerNext": ""
     },
     {
+      "bestOfSets": 0,
+      "branch": 1,
+      "challengeId": 0,
+      "comment": "",
+      "curVersion": 57,
+      "discipline": "9-Ball",
+      "disciplineId": 3,
+      "frames": [],
+      "groupNo": 2,
+      "highBreaksA": "",
+      "highBreaksB": "",
+      "inningsPlayerA": 0,
+      "inningsPlayerB": 0,
+      "lagWinner": "",
+      "loserNext": "",
       "matchId": 72605653,
+      "matchType": 0,
+      "matchno": 7,
+      "matchstatus": "finished",
+      "matchstatusCode": 2,
+      "notes": [],
+      "penalty": 0,
       "playerA": {
+        "country": {
+          "alpha3": "POL",
+          "continent": "Europe",
+          "image": "https://cuescore.com/img/flags/png-country-4x2-none/res-640x480/pl.png",
+          "name": "Poland"
+        },
+        "firstname": "Bartosz",
+        "image": "https://img.cuescore.com/image/f/4/fb9bad1527efa9d8c48351f01254b7d5.png?t=1740400788",
+        "lastname": "Pierzchlewski",
         "name": "Bartosz Pierzchlewski",
-        "playerId": 5149715
+        "playerId": 5149715,
+        "represents": [],
+        "url": "https://cuescore.com/player/Bartosz+Pierzchlewski/5149715"
       },
       "playerB": {
+        "country": {
+          "alpha3": "POL",
+          "continent": "Europe",
+          "image": "https://cuescore.com/img/flags/png-country-4x2-none/res-640x480/pl.png",
+          "name": "Poland"
+        },
+        "firstname": "Filip",
+        "image": "https://img.cuescore.com/image/f/4/fe462523c1b7525b80ad5234b6bba236.png?t=1758613895",
+        "lastname": "Krawczyk",
         "name": "Filip Krawczyk",
-        "playerId": 2292556
+        "playerId": 2292556,
+        "represents": [],
+        "url": "https://cuescore.com/player/Filip+Krawczyk/2292556"
       },
+      "properties": [],
+      "raceTo": 4,
+      "round": 2,
+      "roundName": "Round 2",
+      "runoutsA": 0,
+      "runoutsB": 0,
       "scoreA": 2,
       "scoreB": 4,
+      "sets": [],
       "starttime": "2025-11-18T20:07:00",
-      "stoptime": "2025-11-18T20:32:04"
+      "stoptime": "2025-11-18T20:32:04",
+      "table": {
+        "branch": "American pool",
+        "branchId": 1,
+        "cloth": "",
+        "description": "",
+        "manufacturer": "",
+        "model": "",
+        "name": "1",
+        "pockets": "",
+        "size": 9,
+        "slate": "",
+        "tableId": 8819726,
+        "venue": {
+          "image": "https://img.cuescore.com/image/d/3/d93a0f12945263a55729e1f3b6a15aaa.png?t=1546596159",
+          "name": "Eighty Nine",
+          "owner": {
+            "logo": "//img.cuescore.com/image/9/2/9b59b70e156f2f8d0f1a879411c6ffd1.png?t=1576160578",
+            "name": "Black Ball Events",
+            "organizationId": 7011764,
+            "profileColor": "000000",
+            "stub": "blackballevents",
+            "url": "https://cuescore.com/blackballevents"
+          },
+          "url": "https://cuescore.com/venue/Eighty+Nine/3367445",
+          "venueId": 3367445
+        }
+      },
+      "tournamentId": 72561715,
+      "useInnings": false,
+      "videoLink": "",
+      "winnerNext": ""
     },
     {
+      "bestOfSets": 0,
+      "branch": 1,
+      "challengeId": 0,
+      "comment": "",
+      "curVersion": 57,
+      "discipline": "9-Ball",
+      "disciplineId": 3,
+      "frames": [],
+      "groupNo": 2,
+      "highBreaksA": "",
+      "highBreaksB": "",
+      "inningsPlayerA": 0,
+      "inningsPlayerB": 0,
+      "lagWinner": "A",
+      "loserNext": "",
       "matchId": 72605656,
+      "matchType": 0,
+      "matchno": 8,
+      "matchstatus": "finished",
+      "matchstatusCode": 2,
+      "notes": [
+        {
+          "note": "frame start",
+          "time": "2025-11-18T19:21:27.335Z"
+        },
+        {
+          "note": "A breaking",
+          "time": "2025-11-18T19:21:27.335Z"
+        },
+        {
+          "note": "B frame win",
+          "time": "2025-11-18T19:21:30.287Z"
+        },
+        {
+          "note": "frame end",
+          "time": "2025-11-18T19:21:30.287Z"
+        },
+        {
+          "note": "frame start",
+          "time": "2025-11-18T19:21:30.287Z"
+        },
+        {
+          "note": "B breaking",
+          "time": "2025-11-18T19:21:30.287Z"
+        },
+        {
+          "note": "B frame win",
+          "time": "2025-11-18T19:21:30.711Z"
+        },
+        {
+          "note": "frame end",
+          "time": "2025-11-18T19:21:30.711Z"
+        },
+        {
+          "note": "frame start",
+          "time": "2025-11-18T19:21:30.711Z"
+        },
+        {
+          "note": "A breaking",
+          "time": "2025-11-18T19:21:30.711Z"
+        }
+      ],
+      "penalty": 0,
       "playerA": {
+        "country": {
+          "alpha3": "POL",
+          "continent": "Europe",
+          "image": "https://cuescore.com/img/flags/png-country-4x2-none/res-640x480/pl.png",
+          "name": "Poland"
+        },
+        "firstname": "Maciej",
+        "image": "https://img.cuescore.com/image/8/4/862c792ba8eb7f97e626fbe6cbcc59f6.png",
+        "lastname": "Wierzchowski",
         "name": "Maciej Wierzchowski",
-        "playerId": 28336684
+        "playerId": 28336684,
+        "represents": [],
+        "url": "https://cuescore.com/player/Maciej+Wierzchowski/28336684"
       },
       "playerB": {
+        "country": {
+          "alpha3": "POL",
+          "continent": "Europe",
+          "image": "https://cuescore.com/img/flags/png-country-4x2-none/res-640x480/pl.png",
+          "name": "Poland"
+        },
+        "firstname": "Maciej",
+        "image": "https://img.cuescore.com/image/8/4/8bd3578c19ef8201ca1330519e82df1c.png?t=1707758826",
+        "lastname": "Pislewski",
         "name": "Maciej Pislewski",
-        "playerId": 7789003
+        "playerId": 7789003,
+        "represents": [],
+        "url": "https://cuescore.com/player/Maciej+Pislewski/7789003"
       },
+      "properties": {
+        "lagWinsA": 1,
+        "lagWinsB": 0,
+        "runoutsA": 0,
+        "runoutsB": 0
+      },
+      "raceTo": 4,
+      "round": 2,
+      "roundName": "Round 2",
+      "runoutsA": 0,
+      "runoutsB": 0,
       "scoreA": 2,
       "scoreB": 4,
+      "sets": [],
       "starttime": "2025-11-18T20:08:00",
-      "stoptime": "2025-11-18T20:52:16"
+      "stoptime": "2025-11-18T20:52:16",
+      "table": {
+        "branch": "American pool",
+        "branchId": 1,
+        "cloth": "",
+        "description": "",
+        "manufacturer": "Tournament Champio",
+        "model": "Sport",
+        "name": "3",
+        "pockets": "",
+        "size": 0,
+        "slate": "",
+        "tableId": 28337824,
+        "venue": {
+          "image": "https://img.cuescore.com/image/d/3/d93a0f12945263a55729e1f3b6a15aaa.png?t=1546596159",
+          "name": "Eighty Nine",
+          "owner": {
+            "logo": "//img.cuescore.com/image/9/2/9b59b70e156f2f8d0f1a879411c6ffd1.png?t=1576160578",
+            "name": "Black Ball Events",
+            "organizationId": 7011764,
+            "profileColor": "000000",
+            "stub": "blackballevents",
+            "url": "https://cuescore.com/blackballevents"
+          },
+          "url": "https://cuescore.com/venue/Eighty+Nine/3367445",
+          "venueId": 3367445
+        }
+      },
+      "tournamentId": 72561715,
+      "useInnings": false,
+      "videoLink": "",
+      "winnerNext": ""
     },
     {
+      "bestOfSets": 0,
+      "branch": 1,
+      "challengeId": 0,
+      "comment": "",
+      "curVersion": 57,
+      "discipline": "9-Ball",
+      "disciplineId": 3,
+      "frames": [],
+      "groupNo": 1,
+      "highBreaksA": "",
+      "highBreaksB": "",
+      "inningsPlayerA": 0,
+      "inningsPlayerB": 0,
+      "lagWinner": "B",
+      "loserNext": "",
       "matchId": 72605659,
+      "matchType": 0,
+      "matchno": 9,
+      "matchstatus": "finished",
+      "matchstatusCode": 2,
+      "notes": [
+        {
+          "note": "frame start",
+          "time": "2025-11-18T19:10:23.028Z"
+        },
+        {
+          "note": "B breaking",
+          "time": "2025-11-18T19:10:23.028Z"
+        },
+        {
+          "note": "A frame win",
+          "time": "2025-11-18T19:15:03.889Z"
+        },
+        {
+          "note": "frame end",
+          "time": "2025-11-18T19:15:03.889Z"
+        },
+        {
+          "note": "frame start",
+          "time": "2025-11-18T19:15:03.889Z"
+        },
+        {
+          "note": "A breaking",
+          "time": "2025-11-18T19:15:03.889Z"
+        },
+        {
+          "note": "A frame win",
+          "time": "2025-11-18T19:19:50.992Z"
+        },
+        {
+          "note": "frame end",
+          "time": "2025-11-18T19:19:50.992Z"
+        },
+        {
+          "note": "frame start",
+          "time": "2025-11-18T19:19:50.992Z"
+        },
+        {
+          "note": "B breaking",
+          "time": "2025-11-18T19:19:50.992Z"
+        },
+        {
+          "note": "A frame win",
+          "time": "2025-11-18T19:24:59.986Z"
+        },
+        {
+          "note": "frame end",
+          "time": "2025-11-18T19:24:59.986Z"
+        },
+        {
+          "note": "frame start",
+          "time": "2025-11-18T19:24:59.986Z"
+        },
+        {
+          "note": "A breaking",
+          "time": "2025-11-18T19:24:59.986Z"
+        },
+        {
+          "note": "A frame win",
+          "time": "2025-11-18T19:33:33.770Z"
+        },
+        {
+          "note": "frame end",
+          "time": "2025-11-18T19:33:33.770Z"
+        },
+        {
+          "note": "frame start",
+          "time": "2025-11-18T19:33:33.770Z"
+        },
+        {
+          "note": "B breaking",
+          "time": "2025-11-18T19:33:33.770Z"
+        },
+        {
+          "note": "A frame win",
+          "time": "2025-11-18T19:37:04.089Z"
+        },
+        {
+          "note": "frame end",
+          "time": "2025-11-18T19:37:04.089Z"
+        },
+        {
+          "note": "match end",
+          "time": "2025-11-18T19:37:05.239Z"
+        }
+      ],
+      "penalty": 0,
       "playerA": {
+        "country": {
+          "alpha3": "POL",
+          "continent": "Europe",
+          "image": "https://cuescore.com/img/flags/png-country-4x2-none/res-640x480/pl.png",
+          "name": "Poland"
+        },
+        "firstname": "Jakub",
+        "image": "https://img.cuescore.com/image/0/4/0878e968cba11bd8ceb21fa4b3364c2a.png?t=1744922337",
+        "lastname": "Ładyński Eighty Nine Pucharowo Warszawa",
         "name": "Jakub Ładyński Eighty Nine Pucharowo Warszawa",
-        "playerId": 15492220
+        "playerId": 15492220,
+        "represents": [],
+        "url": "https://cuescore.com/player/Jakub+%C5%81ady%C5%84ski+Eighty+Nine+Pucharowo+Warszawa/15492220"
       },
       "playerB": {
+        "country": {
+          "alpha3": "POL",
+          "continent": "Europe",
+          "image": "https://cuescore.com/img/flags/png-country-4x2-none/res-640x480/pl.png",
+          "name": "Poland"
+        },
+        "firstname": "Tomasz",
+        "image": "https://img.cuescore.com/image/e/4/e90700c2f11389bb58cb236a487deca6.png?t=1688494626",
+        "lastname": "Proc",
         "name": "Tomasz Proc",
-        "playerId": 27985189
+        "playerId": 27985189,
+        "represents": [],
+        "url": "https://cuescore.com/player/Tomasz+Proc/27985189"
       },
+      "properties": {
+        "lagWinsA": 0,
+        "lagWinsB": 1,
+        "runoutsA": 0,
+        "runoutsB": 0
+      },
+      "raceTo": 4,
+      "round": 3,
+      "roundName": "Round 3",
+      "runoutsA": 0,
+      "runoutsB": 0,
       "scoreA": 5,
       "scoreB": 0,
+      "sets": [],
       "starttime": "2025-11-18T20:07:32",
-      "stoptime": "2025-11-18T20:37:07"
+      "stoptime": "2025-11-18T20:37:07",
+      "table": {
+        "branch": "American pool",
+        "branchId": 1,
+        "cloth": "",
+        "description": "",
+        "manufacturer": "Tournament Champion",
+        "model": "Sport",
+        "name": "2",
+        "pockets": "",
+        "size": 9,
+        "slate": "",
+        "tableId": 28337803,
+        "venue": {
+          "image": "https://img.cuescore.com/image/d/3/d93a0f12945263a55729e1f3b6a15aaa.png?t=1546596159",
+          "name": "Eighty Nine",
+          "owner": {
+            "logo": "//img.cuescore.com/image/9/2/9b59b70e156f2f8d0f1a879411c6ffd1.png?t=1576160578",
+            "name": "Black Ball Events",
+            "organizationId": 7011764,
+            "profileColor": "000000",
+            "stub": "blackballevents",
+            "url": "https://cuescore.com/blackballevents"
+          },
+          "url": "https://cuescore.com/venue/Eighty+Nine/3367445",
+          "venueId": 3367445
+        }
+      },
+      "tournamentId": 72561715,
+      "useInnings": false,
+      "videoLink": "",
+      "winnerNext": ""
     },
     {
+      "bestOfSets": 0,
+      "branch": 1,
+      "challengeId": 0,
+      "comment": "",
+      "curVersion": 57,
+      "discipline": "9-Ball",
+      "disciplineId": 3,
+      "frames": [],
+      "groupNo": 1,
+      "highBreaksA": "",
+      "highBreaksB": "",
+      "inningsPlayerA": 0,
+      "inningsPlayerB": 0,
+      "lagWinner": "",
+      "loserNext": "",
       "matchId": 72605662,
+      "matchType": 0,
+      "matchno": 10,
+      "matchstatus": "finished",
+      "matchstatusCode": 2,
+      "notes": [],
+      "penalty": 8,
       "playerA": {
+        "country": {
+          "alpha3": "POL",
+          "continent": "Europe",
+          "image": "https://cuescore.com/img/flags/png-country-4x2-none/res-640x480/pl.png",
+          "name": "Poland"
+        },
+        "firstname": "Sebastian",
+        "image": "https://img.cuescore.com/image/8/4/8e25b60ff30ecb15ccb65e9c5875c024.png?t=1758874499",
+        "lastname": "Szymkowski",
         "name": "Sebastian Szymkowski",
-        "playerId": 1660831
+        "playerId": 1660831,
+        "represents": [],
+        "url": "https://cuescore.com/player/Sebastian+Szymkowski/1660831"
       },
       "playerB": {
+        "country": {
+          "alpha3": "POL",
+          "continent": "Europe",
+          "image": "https://cuescore.com/img/flags/png-country-4x2-none/res-640x480/pl.png",
+          "name": "Poland"
+        },
+        "firstname": "Wolny",
+        "image": "https://img.cuescore.com/image/8/4/862c792ba8eb7f97e626fbe6cbcc59f6.png",
+        "lastname": "Los",
         "name": "Wolny Los",
-        "playerId": 68255392
+        "playerId": 68255392,
+        "represents": [],
+        "url": "https://cuescore.com/player/Wolny+Los/68255392"
       },
+      "properties": {
+        "penalty": {
+          "description": "",
+          "invalid": false
+        }
+      },
+      "raceTo": 4,
+      "round": 3,
+      "roundName": "Round 3",
+      "runoutsA": 0,
+      "runoutsB": 0,
       "scoreA": 0,
       "scoreB": 0,
+      "sets": [],
       "starttime": "",
-      "stoptime": ""
+      "stoptime": "",
+      "table": [],
+      "tournamentId": 72561715,
+      "useInnings": false,
+      "videoLink": "",
+      "winnerNext": ""
     },
     {
+      "bestOfSets": 0,
+      "branch": 1,
+      "challengeId": 0,
+      "comment": "",
+      "curVersion": 57,
+      "discipline": "9-Ball",
+      "disciplineId": 3,
+      "frames": [],
+      "groupNo": 2,
+      "highBreaksA": "",
+      "highBreaksB": "",
+      "inningsPlayerA": 0,
+      "inningsPlayerB": 0,
+      "lagWinner": "",
+      "loserNext": "",
       "matchId": 72605665,
+      "matchType": 0,
+      "matchno": 11,
+      "matchstatus": "finished",
+      "matchstatusCode": 2,
+      "notes": [],
+      "penalty": 0,
       "playerA": {
+        "country": {
+          "alpha3": "POL",
+          "continent": "Europe",
+          "image": "https://cuescore.com/img/flags/png-country-4x2-none/res-640x480/pl.png",
+          "name": "Poland"
+        },
+        "firstname": "Bartosz",
+        "image": "https://img.cuescore.com/image/f/4/fb9bad1527efa9d8c48351f01254b7d5.png?t=1740400788",
+        "lastname": "Pierzchlewski",
         "name": "Bartosz Pierzchlewski",
-        "playerId": 5149715
+        "playerId": 5149715,
+        "represents": [],
+        "url": "https://cuescore.com/player/Bartosz+Pierzchlewski/5149715"
       },
       "playerB": {
+        "country": {
+          "alpha3": "POL",
+          "continent": "Europe",
+          "image": "https://cuescore.com/img/flags/png-country-4x2-none/res-640x480/pl.png",
+          "name": "Poland"
+        },
+        "firstname": "Maciej",
+        "image": "https://img.cuescore.com/image/8/4/8bd3578c19ef8201ca1330519e82df1c.png?t=1707758826",
+        "lastname": "Pislewski",
         "name": "Maciej Pislewski",
-        "playerId": 7789003
+        "playerId": 7789003,
+        "represents": [],
+        "url": "https://cuescore.com/player/Maciej+Pislewski/7789003"
       },
+      "properties": [],
+      "raceTo": 4,
+      "round": 3,
+      "roundName": "Round 3",
+      "runoutsA": 0,
+      "runoutsB": 0,
       "scoreA": 4,
       "scoreB": 1,
+      "sets": [],
       "starttime": "2025-11-18T20:52:00",
-      "stoptime": "2025-11-18T21:16:12"
+      "stoptime": "2025-11-18T21:16:12",
+      "table": {
+        "branch": "American pool",
+        "branchId": 1,
+        "cloth": "",
+        "description": "",
+        "manufacturer": "Tournament Champio",
+        "model": "Sport",
+        "name": "3",
+        "pockets": "",
+        "size": 0,
+        "slate": "",
+        "tableId": 28337824,
+        "venue": {
+          "image": "https://img.cuescore.com/image/d/3/d93a0f12945263a55729e1f3b6a15aaa.png?t=1546596159",
+          "name": "Eighty Nine",
+          "owner": {
+            "logo": "//img.cuescore.com/image/9/2/9b59b70e156f2f8d0f1a879411c6ffd1.png?t=1576160578",
+            "name": "Black Ball Events",
+            "organizationId": 7011764,
+            "profileColor": "000000",
+            "stub": "blackballevents",
+            "url": "https://cuescore.com/blackballevents"
+          },
+          "url": "https://cuescore.com/venue/Eighty+Nine/3367445",
+          "venueId": 3367445
+        }
+      },
+      "tournamentId": 72561715,
+      "useInnings": false,
+      "videoLink": "",
+      "winnerNext": ""
     },
     {
+      "bestOfSets": 0,
+      "branch": 1,
+      "challengeId": 0,
+      "comment": "",
+      "curVersion": 57,
+      "discipline": "9-Ball",
+      "disciplineId": 3,
+      "frames": [],
+      "groupNo": 2,
+      "highBreaksA": "",
+      "highBreaksB": "",
+      "inningsPlayerA": 0,
+      "inningsPlayerB": 0,
+      "lagWinner": "",
+      "loserNext": "",
       "matchId": 72605668,
+      "matchType": 0,
+      "matchno": 12,
+      "matchstatus": "finished",
+      "matchstatusCode": 2,
+      "notes": [],
+      "penalty": 0,
       "playerA": {
+        "country": {
+          "alpha3": "POL",
+          "continent": "Europe",
+          "image": "https://cuescore.com/img/flags/png-country-4x2-none/res-640x480/pl.png",
+          "name": "Poland"
+        },
+        "firstname": "Filip",
+        "image": "https://img.cuescore.com/image/f/4/fe462523c1b7525b80ad5234b6bba236.png?t=1758613895",
+        "lastname": "Krawczyk",
         "name": "Filip Krawczyk",
-        "playerId": 2292556
+        "playerId": 2292556,
+        "represents": [],
+        "url": "https://cuescore.com/player/Filip+Krawczyk/2292556"
       },
       "playerB": {
+        "country": {
+          "alpha3": "POL",
+          "continent": "Europe",
+          "image": "https://cuescore.com/img/flags/png-country-4x2-none/res-640x480/pl.png",
+          "name": "Poland"
+        },
+        "firstname": "Maciej",
+        "image": "https://img.cuescore.com/image/8/4/862c792ba8eb7f97e626fbe6cbcc59f6.png",
+        "lastname": "Wierzchowski",
         "name": "Maciej Wierzchowski",
-        "playerId": 28336684
+        "playerId": 28336684,
+        "represents": [],
+        "url": "https://cuescore.com/player/Maciej+Wierzchowski/28336684"
       },
+      "properties": [],
+      "raceTo": 4,
+      "round": 3,
+      "roundName": "Round 3",
+      "runoutsA": 0,
+      "runoutsB": 0,
       "scoreA": 4,
       "scoreB": 1,
+      "sets": [],
       "starttime": "2025-11-18T21:09:00",
-      "stoptime": "2025-11-18T21:13:34"
+      "stoptime": "2025-11-18T21:13:34",
+      "table": {
+        "branch": "American pool",
+        "branchId": 1,
+        "cloth": "",
+        "description": "",
+        "manufacturer": "Tournament Champion",
+        "model": "Sport",
+        "name": "2",
+        "pockets": "",
+        "size": 9,
+        "slate": "",
+        "tableId": 28337803,
+        "venue": {
+          "image": "https://img.cuescore.com/image/d/3/d93a0f12945263a55729e1f3b6a15aaa.png?t=1546596159",
+          "name": "Eighty Nine",
+          "owner": {
+            "logo": "//img.cuescore.com/image/9/2/9b59b70e156f2f8d0f1a879411c6ffd1.png?t=1576160578",
+            "name": "Black Ball Events",
+            "organizationId": 7011764,
+            "profileColor": "000000",
+            "stub": "blackballevents",
+            "url": "https://cuescore.com/blackballevents"
+          },
+          "url": "https://cuescore.com/venue/Eighty+Nine/3367445",
+          "venueId": 3367445
+        }
+      },
+      "tournamentId": 72561715,
+      "useInnings": false,
+      "videoLink": "",
+      "winnerNext": ""
     },
     {
+      "bestOfSets": 0,
+      "branch": 1,
+      "challengeId": 0,
+      "comment": "",
+      "curVersion": 57,
+      "discipline": "9-Ball",
+      "disciplineId": 3,
+      "frames": [],
+      "groupNo": 0,
+      "highBreaksA": "",
+      "highBreaksB": "",
+      "inningsPlayerA": 0,
+      "inningsPlayerB": 0,
+      "lagWinner": "",
+      "loserNext": "",
       "matchId": 72605671,
+      "matchType": 0,
+      "matchno": 13,
+      "matchstatus": "finished",
+      "matchstatusCode": 2,
+      "notes": [],
+      "penalty": 0,
       "playerA": {
+        "country": {
+          "alpha3": "POL",
+          "continent": "Europe",
+          "image": "https://cuescore.com/img/flags/png-country-4x2-none/res-640x480/pl.png",
+          "name": "Poland"
+        },
+        "firstname": "Sebastian",
+        "image": "https://img.cuescore.com/image/8/4/8e25b60ff30ecb15ccb65e9c5875c024.png?t=1758874499",
+        "lastname": "Szymkowski",
         "name": "Sebastian Szymkowski",
-        "playerId": 1660831
+        "playerId": 1660831,
+        "represents": [],
+        "url": "https://cuescore.com/player/Sebastian+Szymkowski/1660831"
       },
       "playerB": {
+        "country": {
+          "alpha3": "POL",
+          "continent": "Europe",
+          "image": "https://cuescore.com/img/flags/png-country-4x2-none/res-640x480/pl.png",
+          "name": "Poland"
+        },
+        "firstname": "Bartosz",
+        "image": "https://img.cuescore.com/image/f/4/fb9bad1527efa9d8c48351f01254b7d5.png?t=1740400788",
+        "lastname": "Pierzchlewski",
         "name": "Bartosz Pierzchlewski",
-        "playerId": 5149715
+        "playerId": 5149715,
+        "represents": [],
+        "url": "https://cuescore.com/player/Bartosz+Pierzchlewski/5149715"
       },
+      "properties": [],
+      "raceTo": 4,
+      "round": 4,
+      "roundName": "Semi final",
+      "runoutsA": 0,
+      "runoutsB": 0,
       "scoreA": 4,
       "scoreB": 0,
+      "sets": [],
       "starttime": "2025-11-18T21:23:00",
-      "stoptime": "2025-11-18T21:39:29"
+      "stoptime": "2025-11-18T21:39:29",
+      "table": {
+        "branch": "American pool",
+        "branchId": 1,
+        "cloth": "",
+        "description": "",
+        "manufacturer": "Tournament Champion",
+        "model": "Sport",
+        "name": "2",
+        "pockets": "",
+        "size": 9,
+        "slate": "",
+        "tableId": 28337803,
+        "venue": {
+          "image": "https://img.cuescore.com/image/d/3/d93a0f12945263a55729e1f3b6a15aaa.png?t=1546596159",
+          "name": "Eighty Nine",
+          "owner": {
+            "logo": "//img.cuescore.com/image/9/2/9b59b70e156f2f8d0f1a879411c6ffd1.png?t=1576160578",
+            "name": "Black Ball Events",
+            "organizationId": 7011764,
+            "profileColor": "000000",
+            "stub": "blackballevents",
+            "url": "https://cuescore.com/blackballevents"
+          },
+          "url": "https://cuescore.com/venue/Eighty+Nine/3367445",
+          "venueId": 3367445
+        }
+      },
+      "tournamentId": 72561715,
+      "useInnings": false,
+      "videoLink": "",
+      "winnerNext": 15
     },
     {
+      "bestOfSets": 0,
+      "branch": 1,
+      "challengeId": 0,
+      "comment": "",
+      "curVersion": 57,
+      "discipline": "9-Ball",
+      "disciplineId": 3,
+      "frames": [],
+      "groupNo": 0,
+      "highBreaksA": "",
+      "highBreaksB": "",
+      "inningsPlayerA": 0,
+      "inningsPlayerB": 0,
+      "lagWinner": "",
+      "loserNext": "",
       "matchId": 72605674,
+      "matchType": 0,
+      "matchno": 14,
+      "matchstatus": "finished",
+      "matchstatusCode": 2,
+      "notes": [],
+      "penalty": 0,
       "playerA": {
+        "country": {
+          "alpha3": "POL",
+          "continent": "Europe",
+          "image": "https://cuescore.com/img/flags/png-country-4x2-none/res-640x480/pl.png",
+          "name": "Poland"
+        },
+        "firstname": "Filip",
+        "image": "https://img.cuescore.com/image/f/4/fe462523c1b7525b80ad5234b6bba236.png?t=1758613895",
+        "lastname": "Krawczyk",
         "name": "Filip Krawczyk",
-        "playerId": 2292556
+        "playerId": 2292556,
+        "represents": [],
+        "url": "https://cuescore.com/player/Filip+Krawczyk/2292556"
       },
       "playerB": {
+        "country": {
+          "alpha3": "POL",
+          "continent": "Europe",
+          "image": "https://cuescore.com/img/flags/png-country-4x2-none/res-640x480/pl.png",
+          "name": "Poland"
+        },
+        "firstname": "Jakub",
+        "image": "https://img.cuescore.com/image/0/4/0878e968cba11bd8ceb21fa4b3364c2a.png?t=1744922337",
+        "lastname": "Ładyński Eighty Nine Pucharowo Warszawa",
         "name": "Jakub Ładyński Eighty Nine Pucharowo Warszawa",
-        "playerId": 15492220
+        "playerId": 15492220,
+        "represents": [],
+        "url": "https://cuescore.com/player/Jakub+%C5%81ady%C5%84ski+Eighty+Nine+Pucharowo+Warszawa/15492220"
       },
+      "properties": [],
+      "raceTo": 4,
+      "round": 4,
+      "roundName": "Semi final",
+      "runoutsA": 0,
+      "runoutsB": 0,
       "scoreA": 4,
       "scoreB": 0,
+      "sets": [],
       "starttime": "2025-11-18T21:23:00",
-      "stoptime": "2025-11-18T21:41:10"
+      "stoptime": "2025-11-18T21:41:10",
+      "table": {
+        "branch": "American pool",
+        "branchId": 1,
+        "cloth": "",
+        "description": "",
+        "manufacturer": "",
+        "model": "",
+        "name": "1",
+        "pockets": "",
+        "size": 9,
+        "slate": "",
+        "tableId": 8819726,
+        "venue": {
+          "image": "https://img.cuescore.com/image/d/3/d93a0f12945263a55729e1f3b6a15aaa.png?t=1546596159",
+          "name": "Eighty Nine",
+          "owner": {
+            "logo": "//img.cuescore.com/image/9/2/9b59b70e156f2f8d0f1a879411c6ffd1.png?t=1576160578",
+            "name": "Black Ball Events",
+            "organizationId": 7011764,
+            "profileColor": "000000",
+            "stub": "blackballevents",
+            "url": "https://cuescore.com/blackballevents"
+          },
+          "url": "https://cuescore.com/venue/Eighty+Nine/3367445",
+          "venueId": 3367445
+        }
+      },
+      "tournamentId": 72561715,
+      "useInnings": false,
+      "videoLink": "",
+      "winnerNext": 15
     },
     {
+      "bestOfSets": 0,
+      "branch": 1,
+      "challengeId": 0,
+      "comment": "",
+      "curVersion": 57,
+      "discipline": "9-Ball",
+      "disciplineId": 3,
+      "frames": [],
+      "groupNo": 0,
+      "highBreaksA": "",
+      "highBreaksB": "",
+      "inningsPlayerA": 0,
+      "inningsPlayerB": 0,
+      "lagWinner": "",
+      "loserNext": "",
       "matchId": 72605677,
+      "matchType": 0,
+      "matchno": 15,
+      "matchstatus": "finished",
+      "matchstatusCode": 2,
+      "notes": [],
+      "penalty": 0,
       "playerA": {
+        "country": {
+          "alpha3": "POL",
+          "continent": "Europe",
+          "image": "https://cuescore.com/img/flags/png-country-4x2-none/res-640x480/pl.png",
+          "name": "Poland"
+        },
+        "firstname": "Sebastian",
+        "image": "https://img.cuescore.com/image/8/4/8e25b60ff30ecb15ccb65e9c5875c024.png?t=1758874499",
+        "lastname": "Szymkowski",
         "name": "Sebastian Szymkowski",
-        "playerId": 1660831
+        "playerId": 1660831,
+        "represents": [],
+        "url": "https://cuescore.com/player/Sebastian+Szymkowski/1660831"
       },
       "playerB": {
+        "country": {
+          "alpha3": "POL",
+          "continent": "Europe",
+          "image": "https://cuescore.com/img/flags/png-country-4x2-none/res-640x480/pl.png",
+          "name": "Poland"
+        },
+        "firstname": "Filip",
+        "image": "https://img.cuescore.com/image/f/4/fe462523c1b7525b80ad5234b6bba236.png?t=1758613895",
+        "lastname": "Krawczyk",
         "name": "Filip Krawczyk",
-        "playerId": 2292556
+        "playerId": 2292556,
+        "represents": [],
+        "url": "https://cuescore.com/player/Filip+Krawczyk/2292556"
       },
+      "properties": {
+        "penalty": []
+      },
+      "raceTo": 4,
+      "round": 5,
+      "roundName": "Final",
+      "runoutsA": 0,
+      "runoutsB": 0,
       "scoreA": 4,
       "scoreB": 3,
+      "sets": [],
       "starttime": "2025-11-18T21:51:00",
-      "stoptime": "2025-11-18T22:07:29"
+      "stoptime": "2025-11-18T22:07:29",
+      "table": {
+        "branch": "American pool",
+        "branchId": 1,
+        "cloth": "",
+        "description": "",
+        "manufacturer": "Tournament Champion",
+        "model": "Sport",
+        "name": "2",
+        "pockets": "",
+        "size": 9,
+        "slate": "",
+        "tableId": 28337803,
+        "venue": {
+          "image": "https://img.cuescore.com/image/d/3/d93a0f12945263a55729e1f3b6a15aaa.png?t=1546596159",
+          "name": "Eighty Nine",
+          "owner": {
+            "logo": "//img.cuescore.com/image/9/2/9b59b70e156f2f8d0f1a879411c6ffd1.png?t=1576160578",
+            "name": "Black Ball Events",
+            "organizationId": 7011764,
+            "profileColor": "000000",
+            "stub": "blackballevents",
+            "url": "https://cuescore.com/blackballevents"
+          },
+          "url": "https://cuescore.com/venue/Eighty+Nine/3367445",
+          "venueId": 3367445
+        }
+      },
+      "tournamentId": 72561715,
+      "useInnings": false,
+      "videoLink": "",
+      "winnerNext": ""
     }
   ],
   "name": "Eighty Nine Trophy XVIII - turniej 11/15",
+  "organizers": [
+    {
+      "logo": "//img.cuescore.com/image/9/2/9b59b70e156f2f8d0f1a879411c6ffd1.png?t=1576160578",
+      "name": "Black Ball Events",
+      "organizationId": 7011764,
+      "profileColor": "000000",
+      "stub": "blackballevents",
+      "url": "https://cuescore.com/blackballevents"
+    }
+  ],
+  "owner": {
+    "logo": "//img.cuescore.com/image/9/2/9b59b70e156f2f8d0f1a879411c6ffd1.png?t=1576160578",
+    "name": "Black Ball Events",
+    "organizationId": 7011764,
+    "profileColor": "000000",
+    "stub": "blackballevents",
+    "url": "https://cuescore.com/blackballevents"
+  },
+  "preseeds": {
+    "15492220": 1,
+    "1660831": 5,
+    "2292556": 6,
+    "27985189": 4,
+    "28336684": 7,
+    "5149715": 2,
+    "68255392": 8,
+    "7789003": 3
+  },
+  "rankings": [
+    {
+      "bestOf": 0,
+      "branch": 1,
+      "name": "Eighty Nine Trophy XVIII",
+      "pointsystem": 0,
+      "rankingId": 67543858,
+      "season": 2025,
+      "url": "https://cuescore.com/ranking/Eighty+Nine+Trophy+XVIII/67543858"
+    }
+  ],
+  "sequence": 0,
+  "standings": {
+    "1": [
+      {
+        "frameAvg": 0.714,
+        "frameLosses": 4,
+        "frameScore": 6,
+        "frameWinAvg": 5,
+        "frameWins": 10,
+        "highBreak": 0,
+        "inningAvg": 0,
+        "innings": 0,
+        "lagWins": 1,
+        "losses": 0,
+        "played": 2,
+        "player": {
+          "country": {
+            "alpha3": "POL",
+            "continent": "Europe",
+            "image": "https://cuescore.com/img/flags/png-country-4x2-none/res-640x480/pl.png",
+            "name": "Poland"
+          },
+          "firstname": "Sebastian",
+          "image": "https://img.cuescore.com/image/8/4/8e25b60ff30ecb15ccb65e9c5875c024.png?t=1758874499",
+          "lastname": "Szymkowski",
+          "name": "Sebastian Szymkowski",
+          "playerId": 1660831,
+          "represents": [],
+          "url": "https://cuescore.com/player/Sebastian+Szymkowski/1660831"
+        },
+        "points": 6,
+        "position": 1,
+        "runouts": 0,
+        "setLosses": 0,
+        "setScore": 0,
+        "setWins": 0,
+        "teamBestInningAvg": 0,
+        "teamIndividualPoints": 0,
+        "teamInningAvg": 0,
+        "teamInnings": 0,
+        "teamMatchPoints": 0,
+        "ties": 0,
+        "wins": 2
+      },
+      {
+        "frameAvg": 0.583,
+        "frameLosses": 5,
+        "frameScore": 2,
+        "frameWinAvg": 3.5,
+        "frameWins": 7,
+        "highBreak": 0,
+        "inningAvg": 0,
+        "innings": 0,
+        "lagWins": 0,
+        "losses": 1,
+        "played": 2,
+        "player": {
+          "country": {
+            "alpha3": "POL",
+            "continent": "Europe",
+            "image": "https://cuescore.com/img/flags/png-country-4x2-none/res-640x480/pl.png",
+            "name": "Poland"
+          },
+          "firstname": "Jakub",
+          "image": "https://img.cuescore.com/image/0/4/0878e968cba11bd8ceb21fa4b3364c2a.png?t=1744922337",
+          "lastname": "Ładyński Eighty Nine Pucharowo Warszawa",
+          "name": "Jakub Ładyński Eighty Nine Pucharowo Warszawa",
+          "playerId": 15492220,
+          "represents": [],
+          "url": "https://cuescore.com/player/Jakub+%C5%81ady%C5%84ski+Eighty+Nine+Pucharowo+Warszawa/15492220"
+        },
+        "points": 4,
+        "position": 2,
+        "runouts": 0,
+        "setLosses": 0,
+        "setScore": 0,
+        "setWins": 0,
+        "teamBestInningAvg": 0,
+        "teamIndividualPoints": 0,
+        "teamInningAvg": 0,
+        "teamInnings": 0,
+        "teamMatchPoints": 0,
+        "ties": 0,
+        "wins": 1
+      },
+      {
+        "frameAvg": 0.167,
+        "frameLosses": 10,
+        "frameScore": -8,
+        "frameWinAvg": 1,
+        "frameWins": 2,
+        "highBreak": 0,
+        "inningAvg": 0,
+        "innings": 0,
+        "lagWins": 1,
+        "losses": 2,
+        "played": 2,
+        "player": {
+          "country": {
+            "alpha3": "POL",
+            "continent": "Europe",
+            "image": "https://cuescore.com/img/flags/png-country-4x2-none/res-640x480/pl.png",
+            "name": "Poland"
+          },
+          "firstname": "Tomasz",
+          "image": "https://img.cuescore.com/image/e/4/e90700c2f11389bb58cb236a487deca6.png?t=1688494626",
+          "lastname": "Proc",
+          "name": "Tomasz Proc",
+          "playerId": 27985189,
+          "represents": [],
+          "url": "https://cuescore.com/player/Tomasz+Proc/27985189"
+        },
+        "points": 2,
+        "position": 3,
+        "runouts": 0,
+        "setLosses": 0,
+        "setScore": 0,
+        "setWins": 0,
+        "teamBestInningAvg": 0,
+        "teamIndividualPoints": 0,
+        "teamInningAvg": 0,
+        "teamInnings": 0,
+        "teamMatchPoints": 0,
+        "ties": 0,
+        "wins": 0
+      },
+      {
+        "frameAvg": 0,
+        "frameLosses": 0,
+        "frameScore": 0,
+        "frameWinAvg": 0,
+        "frameWins": 0,
+        "highBreak": 0,
+        "inningAvg": 0,
+        "innings": 0,
+        "lagWins": 0,
+        "losses": 0,
+        "played": 0,
+        "player": {
+          "country": {
+            "alpha3": "POL",
+            "continent": "Europe",
+            "image": "https://cuescore.com/img/flags/png-country-4x2-none/res-640x480/pl.png",
+            "name": "Poland"
+          },
+          "firstname": "Wolny",
+          "image": "https://img.cuescore.com/image/8/4/862c792ba8eb7f97e626fbe6cbcc59f6.png",
+          "lastname": "Los",
+          "name": "Wolny Los",
+          "playerId": 68255392,
+          "represents": [],
+          "url": "https://cuescore.com/player/Wolny+Los/68255392"
+        },
+        "points": 0,
+        "position": 4,
+        "runouts": 0,
+        "setLosses": 0,
+        "setScore": 0,
+        "setWins": 0,
+        "teamBestInningAvg": 0,
+        "teamIndividualPoints": 0,
+        "teamInningAvg": 0,
+        "teamInnings": 0,
+        "teamMatchPoints": 0,
+        "ties": 0,
+        "wins": 0
+      }
+    ],
+    "2": [
+      {
+        "frameAvg": 0.667,
+        "frameLosses": 6,
+        "frameScore": 6,
+        "frameWinAvg": 4,
+        "frameWins": 12,
+        "highBreak": 0,
+        "inningAvg": 0,
+        "innings": 0,
+        "lagWins": 0,
+        "losses": 0,
+        "played": 3,
+        "player": {
+          "country": {
+            "alpha3": "POL",
+            "continent": "Europe",
+            "image": "https://cuescore.com/img/flags/png-country-4x2-none/res-640x480/pl.png",
+            "name": "Poland"
+          },
+          "firstname": "Filip",
+          "image": "https://img.cuescore.com/image/f/4/fe462523c1b7525b80ad5234b6bba236.png?t=1758613895",
+          "lastname": "Krawczyk",
+          "name": "Filip Krawczyk",
+          "playerId": 2292556,
+          "represents": [],
+          "url": "https://cuescore.com/player/Filip+Krawczyk/2292556"
+        },
+        "points": 9,
+        "position": 1,
+        "runouts": 0,
+        "setLosses": 0,
+        "setScore": 0,
+        "setWins": 0,
+        "teamBestInningAvg": 0,
+        "teamIndividualPoints": 0,
+        "teamInningAvg": 0,
+        "teamInnings": 0,
+        "teamMatchPoints": 0,
+        "ties": 0,
+        "wins": 3
+      },
+      {
+        "frameAvg": 0.5,
+        "frameLosses": 9,
+        "frameScore": 0,
+        "frameWinAvg": 3,
+        "frameWins": 9,
+        "highBreak": 0,
+        "inningAvg": 0,
+        "innings": 0,
+        "lagWins": 0,
+        "losses": 2,
+        "played": 3,
+        "player": {
+          "country": {
+            "alpha3": "POL",
+            "continent": "Europe",
+            "image": "https://cuescore.com/img/flags/png-country-4x2-none/res-640x480/pl.png",
+            "name": "Poland"
+          },
+          "firstname": "Bartosz",
+          "image": "https://img.cuescore.com/image/f/4/fb9bad1527efa9d8c48351f01254b7d5.png?t=1740400788",
+          "lastname": "Pierzchlewski",
+          "name": "Bartosz Pierzchlewski",
+          "playerId": 5149715,
+          "represents": [],
+          "url": "https://cuescore.com/player/Bartosz+Pierzchlewski/5149715"
+        },
+        "points": 5,
+        "position": 2,
+        "runouts": 0,
+        "setLosses": 0,
+        "setScore": 0,
+        "setWins": 0,
+        "teamBestInningAvg": 0,
+        "teamIndividualPoints": 0,
+        "teamInningAvg": 0,
+        "teamInnings": 0,
+        "teamMatchPoints": 0,
+        "ties": 0,
+        "wins": 1
+      },
+      {
+        "frameAvg": 0.444,
+        "frameLosses": 10,
+        "frameScore": -2,
+        "frameWinAvg": 2.667,
+        "frameWins": 8,
+        "highBreak": 0,
+        "inningAvg": 0,
+        "innings": 0,
+        "lagWins": 0,
+        "losses": 2,
+        "played": 3,
+        "player": {
+          "country": {
+            "alpha3": "POL",
+            "continent": "Europe",
+            "image": "https://cuescore.com/img/flags/png-country-4x2-none/res-640x480/pl.png",
+            "name": "Poland"
+          },
+          "firstname": "Maciej",
+          "image": "https://img.cuescore.com/image/8/4/8bd3578c19ef8201ca1330519e82df1c.png?t=1707758826",
+          "lastname": "Pislewski",
+          "name": "Maciej Pislewski",
+          "playerId": 7789003,
+          "represents": [],
+          "url": "https://cuescore.com/player/Maciej+Pislewski/7789003"
+        },
+        "points": 5,
+        "position": 3,
+        "runouts": 0,
+        "setLosses": 0,
+        "setScore": 0,
+        "setWins": 0,
+        "teamBestInningAvg": 0,
+        "teamIndividualPoints": 0,
+        "teamInningAvg": 0,
+        "teamInnings": 0,
+        "teamMatchPoints": 0,
+        "ties": 0,
+        "wins": 1
+      },
+      {
+        "frameAvg": 0.389,
+        "frameLosses": 11,
+        "frameScore": -4,
+        "frameWinAvg": 2.333,
+        "frameWins": 7,
+        "highBreak": 0,
+        "inningAvg": 0,
+        "innings": 0,
+        "lagWins": 1,
+        "losses": 2,
+        "played": 3,
+        "player": {
+          "country": {
+            "alpha3": "POL",
+            "continent": "Europe",
+            "image": "https://cuescore.com/img/flags/png-country-4x2-none/res-640x480/pl.png",
+            "name": "Poland"
+          },
+          "firstname": "Maciej",
+          "image": "https://img.cuescore.com/image/8/4/862c792ba8eb7f97e626fbe6cbcc59f6.png",
+          "lastname": "Wierzchowski",
+          "name": "Maciej Wierzchowski",
+          "playerId": 28336684,
+          "represents": [],
+          "url": "https://cuescore.com/player/Maciej+Wierzchowski/28336684"
+        },
+        "points": 5,
+        "position": 4,
+        "runouts": 0,
+        "setLosses": 0,
+        "setScore": 0,
+        "setWins": 0,
+        "teamBestInningAvg": 0,
+        "teamIndividualPoints": 0,
+        "teamInningAvg": 0,
+        "teamInnings": 0,
+        "teamMatchPoints": 0,
+        "ties": 0,
+        "wins": 1
+      }
+    ]
+  },
   "starttime": "2025-11-18T19:00:00+01:00",
+  "status": "Finished",
+  "statusCode": 2,
   "stoptime": "2025-11-18T23:00:00+01:00",
   "timezone": "Europe/Warsaw",
   "tournamentId": 72561715,
@@ -247,7 +2074,17 @@
   "url": "https://cuescore.com/tournament/Eighty+Nine+Trophy+XVIII+-+turniej+11%252F15/72561715",
   "venues": [
     {
+      "image": "https://img.cuescore.com/image/d/3/d93a0f12945263a55729e1f3b6a15aaa.png?t=1546596159",
       "name": "Eighty Nine",
+      "owner": {
+        "logo": "//img.cuescore.com/image/9/2/9b59b70e156f2f8d0f1a879411c6ffd1.png?t=1576160578",
+        "name": "Black Ball Events",
+        "organizationId": 7011764,
+        "profileColor": "000000",
+        "stub": "blackballevents",
+        "url": "https://cuescore.com/blackballevents"
+      },
+      "url": "https://cuescore.com/venue/Eighty+Nine/3367445",
       "venueId": 3367445
     }
   ]

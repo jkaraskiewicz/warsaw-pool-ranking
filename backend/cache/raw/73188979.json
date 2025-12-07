@@ -1,19 +1,65 @@
 {
+  "access": [],
   "banner": {
     "original": "//img.cuescore.com/image/f/1/f33a9d1208f794f1241f9e47959585f9.png?t=1764592255",
     "thumbnail": "//img.cuescore.com/image/f/7/f33a9d1208f794f1241f9e47959585f9.png?t=1764592255"
   },
+  "branch": 1,
   "breakrule": "alternate",
+  "contacts": [
+    {
+      "country": {
+        "alpha3": "POL",
+        "continent": "Europe",
+        "image": "https://cuescore.com/img/flags/png-country-4x2-none/res-640x480/pl.png",
+        "name": "Poland"
+      },
+      "firstname": "Michał",
+      "image": "https://img.cuescore.com/image/1/4/15d291e83ead350107ae474e8623a6f5.png?t=1504629089",
+      "lastname": "Nowak",
+      "name": "Michał Nowak",
+      "playerId": 1620195,
+      "represents": [],
+      "url": "https://cuescore.com/player/Micha%C5%82+Nowak/1620195"
+    }
+  ],
   "deadline": "",
   "defaultRaceTo": 2,
   "description": "Serdecznie zapraszamy na wyjątkowe, świąteczne wydarzenie – I Amatorski Mikołajkowy Turniej Bilardowy dla Osób Niepełnosprawnych, który odbędzie się w przyjaznej atmosferze Klubu Shooters.\r\n\r\nTo świetna okazja, by w duchu zdrowej rywalizacji spotkać się przy stole bilardowym, sprawdzić swoje umiejętności i wspólnie spędzić aktywnie mikołajkowy czas!\r\n\r\n✅ Szczegóły wydarzenia:\r\n\r\n🎯 Odmiana gry: 8 bil\r\n👥 System rozgrywek: grupowy – każdy uczestnik rozegra kilka meczów\r\n🏆 Nagrody: puchary dla najlepszych zawodników\r\n🧾 Kto może zagrać?: osoby z aktualnym orzeczeniem o stopniu niepełnosprawności z wyłączeniem osób z doświadczeniem ligowym PZBil \r\n🎄 Turniej to nie tylko rywalizacja, ale również integracja i wspólna zabawa w atmosferze wzajemnego szacunku i sportowego ducha.\r\n🎁 Każdy uczestnik będzie dla nas zwycięzcą!\r\n\r\nzapisy przez stronę cuescore lub w wiaodmości sms pod numerem 517 648 279",
   "discipline": "8-Ball",
+  "disciplineId": 2,
   "displayDate": "December 8, 2025",
   "dresscode": "",
+  "entrystart": "",
   "format": 0,
+  "handicap": [],
   "matches": [],
   "name": "I Amatorski Mikołajkowy Turniej Bilardowy Dla Osób Niepełnosprawnych",
+  "organizers": [
+    {
+      "logo": "//img.cuescore.com/image/9/2/9b59b70e156f2f8d0f1a879411c6ffd1.png?t=1576160578",
+      "name": "Black Ball Events",
+      "organizationId": 7011764,
+      "profileColor": "000000",
+      "stub": "blackballevents",
+      "url": "https://cuescore.com/blackballevents"
+    }
+  ],
+  "owner": {
+    "logo": "//img.cuescore.com/image/9/2/9b59b70e156f2f8d0f1a879411c6ffd1.png?t=1576160578",
+    "name": "Black Ball Events",
+    "organizationId": 7011764,
+    "profileColor": "000000",
+    "stub": "blackballevents",
+    "url": "https://cuescore.com/blackballevents"
+  },
+  "preseeds": [],
+  "rankings": [],
+  "sequence": 0,
+  "standings": [],
   "starttime": "2025-12-08T18:00:00+01:00",
+  "status": "Open",
+  "statusCode": 0,
   "stoptime": "2025-12-08T22:00:00+01:00",
   "timezone": "Europe/Warsaw",
   "tournamentId": 73188979,
@@ -21,7 +67,17 @@
   "url": "https://cuescore.com/tournament/I+Amatorski+Miko%C5%82ajkowy+Turniej+Bilardowy+Dla+Os%C3%B3b+Niepe%C5%82nosprawnych/73188979",
   "venues": [
     {
+      "image": "https://img.cuescore.com/image/7/3/7afb0a44c256a53b5e27b584e3c27e2f.png?t=1742222226",
       "name": "Shooters",
+      "owner": {
+        "logo": "//img.cuescore.com/image/9/2/9b59b70e156f2f8d0f1a879411c6ffd1.png?t=1576160578",
+        "name": "Black Ball Events",
+        "organizationId": 7011764,
+        "profileColor": "000000",
+        "stub": "blackballevents",
+        "url": "https://cuescore.com/blackballevents"
+      },
+      "url": "https://cuescore.com/venue/Shooters/57050170",
       "venueId": 57050170
     }
   ]

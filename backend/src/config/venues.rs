@@ -23,7 +23,7 @@ impl VenueConfig {
 pub fn get_venues() -> Vec<VenueConfig> {
     vec![
         VenueConfig::new(2842336, "147-break-zamieniecka", "147 Break Zamieniecka"),
-        VenueConfig::new(2983061, "147-break-fort-wola", "147 Break Fort Wola"),
+        VenueConfig::new(29830615, "147-break-fort-wola", "147 Break Fort Wola"),
         VenueConfig::new(1698108, "147-break-nowogrodzka", "147 Break Nowogrodzka"),
         VenueConfig::new(57050170, "shooters", "Shooters"),
         VenueConfig::new(3367445, "eighty-nine", "Eighty Nine"),

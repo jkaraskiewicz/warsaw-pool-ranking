@@ -1,80 +1,468 @@
 {
+  "access": [
+    1612287
+  ],
   "banner": {
     "original": "//img.cuescore.com/image/1/1/1e01985d24e14381bffcba771f8ee511.png?t=1713528800",
     "thumbnail": "//img.cuescore.com/image/1/7/1e01985d24e14381bffcba771f8ee511.png?t=1713528800"
   },
+  "branch": 1,
   "breakrule": "alternate",
+  "contacts": [
+    {
+      "country": {
+        "alpha3": "POL",
+        "continent": "Europe",
+        "image": "https://cuescore.com/img/flags/png-country-4x2-none/res-640x480/pl.png",
+        "name": "Poland"
+      },
+      "firstname": "Maciej Grzegorz",
+      "image": "https://img.cuescore.com/image/2/4/2cf115d1df0825752b34e0510547da26.png?t=1683467983",
+      "lastname": "Lesiak",
+      "name": "Maciej Grzegorz Lesiak",
+      "playerId": 1612287,
+      "represents": {
+        "logo": "//img.cuescore.com/image/7/2/71487152007d737c2f5de4f7821f7c9e.png?t=1555512394",
+        "name": "MGL Cue Sports",
+        "organizationId": 5133719,
+        "profileColor": "58a5fc",
+        "stub": "mglcuesports",
+        "url": "https://cuescore.com/mglcuesports"
+      },
+      "url": "https://cuescore.com/player/Maciej+Grzegorz+Lesiak/1612287"
+    }
+  ],
   "deadline": "2024-04-20T16:59:00+02:00",
   "defaultRaceTo": 0,
   "description": "Bezpośrednie mecze o awans do finału Międzynarodowych Mistrzostw Polski Amatorów w 9-bil 2024 pomiędzy zawodnikami wyłonionymi z https://cuescore.com/tournament/Warszawskie+eliminacje+do+Mi%C4%99dzynarodowych+Mistrzostw+Polski+Amator%C3%B3w+2024+w+9-bil/41029735",
   "discipline": "9-Ball",
+  "disciplineId": 3,
   "displayDate": "April 20, 2024",
   "dresscode": "",
+  "entrystart": "",
   "format": 32,
+  "handicap": [],
   "matches": [
     {
+      "bestOfSets": 0,
+      "branch": 1,
+      "challengeId": 0,
+      "comment": "",
+      "curVersion": 19,
+      "discipline": "9-Ball",
+      "disciplineId": 3,
+      "frames": [],
+      "groupNo": 0,
+      "highBreaksA": "",
+      "highBreaksB": "",
+      "inningsPlayerA": 0,
+      "inningsPlayerB": 0,
+      "lagWinner": "",
+      "loserNext": "",
       "matchId": 42174760,
+      "matchType": 0,
+      "matchno": 1,
+      "matchstatus": "finished",
+      "matchstatusCode": 2,
+      "notes": [],
+      "penalty": 0,
       "playerA": {
+        "country": {
+          "alpha3": "POL",
+          "continent": "Europe",
+          "image": "https://cuescore.com/img/flags/png-country-4x2-none/res-640x480/pl.png",
+          "name": "Poland"
+        },
+        "firstname": "Michał",
+        "image": "https://img.cuescore.com/image/8/4/862c792ba8eb7f97e626fbe6cbcc59f6.png",
+        "lastname": "Kozłowski",
         "name": "Michał Kozłowski",
-        "playerId": 6480431
+        "playerId": 6480431,
+        "represents": [],
+        "url": "https://cuescore.com/player/Micha%C5%82+Koz%C5%82owski/6480431"
       },
       "playerB": {
+        "country": {
+          "alpha3": "POL",
+          "continent": "Europe",
+          "image": "https://cuescore.com/img/flags/png-country-4x2-none/res-640x480/pl.png",
+          "name": "Poland"
+        },
+        "firstname": "Michał",
+        "image": "https://img.cuescore.com/image/c/4/c15a7e4a7ed9571c434fc5c3428bcfac.png?t=1608583898",
+        "lastname": "Kopczyński",
         "name": "Michał Kopczyński",
-        "playerId": 1621300
+        "playerId": 1621300,
+        "represents": [],
+        "url": "https://cuescore.com/player/Micha%C5%82+Kopczy%C5%84ski/1621300"
       },
+      "properties": [],
+      "raceTo": 0,
+      "round": 1,
+      "roundName": "Winners qualification",
+      "runoutsA": 0,
+      "runoutsB": 0,
       "scoreA": 4,
       "scoreB": 2,
+      "sets": [],
       "starttime": "2024-04-20T16:53:00",
-      "stoptime": "2024-04-20T17:30:27"
+      "stoptime": "2024-04-20T17:30:27",
+      "table": {
+        "branch": "American pool",
+        "branchId": 1,
+        "cloth": "",
+        "description": "",
+        "manufacturer": "",
+        "model": "Tournament Champion Sport",
+        "name": "21",
+        "pockets": "",
+        "size": 9,
+        "slate": "",
+        "tableId": 2842379,
+        "venue": {
+          "image": "https://img.cuescore.com/image/e/3/ea714c9bb52caa765f7707d5dcbe7f3a.png?t=1533571231",
+          "name": "147 Break Zamieniecka",
+          "owner": {
+            "logo": "//img.cuescore.com/image/7/2/71487152007d737c2f5de4f7821f7c9e.png?t=1555512394",
+            "name": "MGL Cue Sports",
+            "organizationId": 5133719,
+            "profileColor": "58a5fc",
+            "stub": "mglcuesports",
+            "url": "https://cuescore.com/mglcuesports"
+          },
+          "url": "https://cuescore.com/venue/147+Break+Zamieniecka/2842336",
+          "venueId": 2842336
+        }
+      },
+      "tournamentId": 42132916,
+      "useInnings": false,
+      "videoLink": "",
+      "winnerNext": ""
     },
     {
+      "bestOfSets": 0,
+      "branch": 1,
+      "challengeId": 0,
+      "comment": "",
+      "curVersion": 19,
+      "discipline": "9-Ball",
+      "disciplineId": 3,
+      "frames": [],
+      "groupNo": 0,
+      "highBreaksA": "",
+      "highBreaksB": "",
+      "inningsPlayerA": 0,
+      "inningsPlayerB": 0,
+      "lagWinner": "",
+      "loserNext": "",
       "matchId": 42174763,
+      "matchType": 0,
+      "matchno": 2,
+      "matchstatus": "finished",
+      "matchstatusCode": 2,
+      "notes": [],
+      "penalty": 0,
       "playerA": {
+        "country": {
+          "alpha3": "POL",
+          "continent": "Europe",
+          "image": "https://cuescore.com/img/flags/png-country-4x2-none/res-640x480/pl.png",
+          "name": "Poland"
+        },
+        "firstname": "Karol",
+        "image": "https://img.cuescore.com/image/6/4/6f7e52f1994bc1d7e340fd2d84531b77.png?t=1708525719",
+        "lastname": "Gryżewski",
         "name": "Karol Gryżewski",
-        "playerId": 1664279
+        "playerId": 1664279,
+        "represents": [],
+        "url": "https://cuescore.com/player/Karol+Gry%C5%BCewski/1664279"
       },
       "playerB": {
+        "country": {
+          "alpha3": "POL",
+          "continent": "Europe",
+          "image": "https://cuescore.com/img/flags/png-country-4x2-none/res-640x480/pl.png",
+          "name": "Poland"
+        },
+        "firstname": "Witold",
+        "image": "https://img.cuescore.com/image/b/4/b8d09549e3feaf0f79d9bf859e11c662.png?t=1637758114",
+        "lastname": "Żarowski",
         "name": "Witold Żarowski",
-        "playerId": 2360900
+        "playerId": 2360900,
+        "represents": [],
+        "url": "https://cuescore.com/player/Witold+%C5%BBarowski/2360900"
       },
+      "properties": [],
+      "raceTo": 0,
+      "round": 1,
+      "roundName": "Winners qualification",
+      "runoutsA": 0,
+      "runoutsB": 0,
       "scoreA": 1,
       "scoreB": 4,
+      "sets": [],
       "starttime": "2024-04-20T17:05:00",
-      "stoptime": "2024-04-20T17:48:30"
+      "stoptime": "2024-04-20T17:48:30",
+      "table": {
+        "branch": "American pool",
+        "branchId": 1,
+        "cloth": "",
+        "description": "",
+        "manufacturer": "",
+        "model": "Tournament Champion Sport",
+        "name": "25",
+        "pockets": "",
+        "size": 9,
+        "slate": "",
+        "tableId": 2842382,
+        "venue": {
+          "image": "https://img.cuescore.com/image/e/3/ea714c9bb52caa765f7707d5dcbe7f3a.png?t=1533571231",
+          "name": "147 Break Zamieniecka",
+          "owner": {
+            "logo": "//img.cuescore.com/image/7/2/71487152007d737c2f5de4f7821f7c9e.png?t=1555512394",
+            "name": "MGL Cue Sports",
+            "organizationId": 5133719,
+            "profileColor": "58a5fc",
+            "stub": "mglcuesports",
+            "url": "https://cuescore.com/mglcuesports"
+          },
+          "url": "https://cuescore.com/venue/147+Break+Zamieniecka/2842336",
+          "venueId": 2842336
+        }
+      },
+      "tournamentId": 42132916,
+      "useInnings": false,
+      "videoLink": "",
+      "winnerNext": ""
     },
     {
+      "bestOfSets": 0,
+      "branch": 1,
+      "challengeId": 0,
+      "comment": "",
+      "curVersion": 19,
+      "discipline": "9-Ball",
+      "disciplineId": 3,
+      "frames": [],
+      "groupNo": 0,
+      "highBreaksA": "",
+      "highBreaksB": "",
+      "inningsPlayerA": 0,
+      "inningsPlayerB": 0,
+      "lagWinner": "",
+      "loserNext": "",
       "matchId": 42174766,
+      "matchType": 0,
+      "matchno": 3,
+      "matchstatus": "finished",
+      "matchstatusCode": 2,
+      "notes": [],
+      "penalty": 0,
       "playerA": {
+        "country": {
+          "alpha3": "POL",
+          "continent": "Europe",
+          "image": "https://cuescore.com/img/flags/png-country-4x2-none/res-640x480/pl.png",
+          "name": "Poland"
+        },
+        "firstname": "Paweł",
+        "image": "https://img.cuescore.com/image/2/4/28bf148820d8d37dcf1c10b645208b32.png?t=1666172386",
+        "lastname": "Średnicki",
         "name": "Paweł Średnicki",
-        "playerId": 19570090
+        "playerId": 19570090,
+        "represents": [],
+        "url": "https://cuescore.com/player/Pawe%C5%82+%C5%9Arednicki/19570090"
       },
       "playerB": {
+        "country": {
+          "alpha3": "POL",
+          "continent": "Europe",
+          "image": "https://cuescore.com/img/flags/png-country-4x2-none/res-640x480/pl.png",
+          "name": "Poland"
+        },
+        "firstname": "Krzysztof",
+        "image": "https://img.cuescore.com/image/8/4/862c792ba8eb7f97e626fbe6cbcc59f6.png",
+        "lastname": "Majkowski",
         "name": "Krzysztof Majkowski",
-        "playerId": 5133866
+        "playerId": 5133866,
+        "represents": [],
+        "url": "https://cuescore.com/player/Krzysztof+Majkowski/5133866"
       },
+      "properties": {
+        "penalty": []
+      },
+      "raceTo": 0,
+      "round": 1,
+      "roundName": "Winners qualification",
+      "runoutsA": 0,
+      "runoutsB": 0,
       "scoreA": 1,
       "scoreB": 4,
+      "sets": [],
       "starttime": "2024-04-20T16:53:00",
-      "stoptime": "2024-04-20T17:32:16"
+      "stoptime": "2024-04-20T17:32:16",
+      "table": {
+        "branch": "American pool",
+        "branchId": 1,
+        "cloth": "",
+        "description": "",
+        "manufacturer": "",
+        "model": "Tournament Champion Sport",
+        "name": "22",
+        "pockets": "",
+        "size": 9,
+        "slate": "",
+        "tableId": 2842380,
+        "venue": {
+          "image": "https://img.cuescore.com/image/e/3/ea714c9bb52caa765f7707d5dcbe7f3a.png?t=1533571231",
+          "name": "147 Break Zamieniecka",
+          "owner": {
+            "logo": "//img.cuescore.com/image/7/2/71487152007d737c2f5de4f7821f7c9e.png?t=1555512394",
+            "name": "MGL Cue Sports",
+            "organizationId": 5133719,
+            "profileColor": "58a5fc",
+            "stub": "mglcuesports",
+            "url": "https://cuescore.com/mglcuesports"
+          },
+          "url": "https://cuescore.com/venue/147+Break+Zamieniecka/2842336",
+          "venueId": 2842336
+        }
+      },
+      "tournamentId": 42132916,
+      "useInnings": false,
+      "videoLink": "",
+      "winnerNext": ""
     },
     {
+      "bestOfSets": 0,
+      "branch": 1,
+      "challengeId": 0,
+      "comment": "",
+      "curVersion": 19,
+      "discipline": "9-Ball",
+      "disciplineId": 3,
+      "frames": [],
+      "groupNo": 0,
+      "highBreaksA": "",
+      "highBreaksB": "",
+      "inningsPlayerA": 0,
+      "inningsPlayerB": 0,
+      "lagWinner": "",
+      "loserNext": "",
       "matchId": 42174769,
+      "matchType": 0,
+      "matchno": 4,
+      "matchstatus": "finished",
+      "matchstatusCode": 2,
+      "notes": [],
+      "penalty": 0,
       "playerA": {
+        "country": {
+          "alpha3": "POL",
+          "continent": "Europe",
+          "image": "https://cuescore.com/img/flags/png-country-4x2-none/res-640x480/pl.png",
+          "name": "Poland"
+        },
+        "firstname": "Marek",
+        "image": "https://img.cuescore.com/image/6/4/6df4dac2b2dfba4bfa68f1e2e4f2b9fc.png?t=1575458474",
+        "lastname": "Wideński",
         "name": "Marek Wideński",
-        "playerId": 5133872
+        "playerId": 5133872,
+        "represents": [],
+        "url": "https://cuescore.com/player/Marek+Wide%C5%84ski/5133872"
       },
       "playerB": {
+        "country": {
+          "alpha3": "POL",
+          "continent": "Europe",
+          "image": "https://cuescore.com/img/flags/png-country-4x2-none/res-640x480/pl.png",
+          "name": "Poland"
+        },
+        "firstname": "Brajan",
+        "image": "https://img.cuescore.com/image/7/4/7d0eac9908743891ca13c3d70d315319.png?t=1744044465",
+        "lastname": "Sawicki",
         "name": "Brajan Sawicki",
-        "playerId": 1718455
+        "playerId": 1718455,
+        "represents": [],
+        "url": "https://cuescore.com/player/Brajan+Sawicki/1718455"
       },
+      "properties": [],
+      "raceTo": 0,
+      "round": 1,
+      "roundName": "Winners qualification",
+      "runoutsA": 0,
+      "runoutsB": 0,
       "scoreA": 4,
       "scoreB": 1,
+      "sets": [],
       "starttime": "2024-04-20T17:31:00",
-      "stoptime": "2024-04-20T18:08:18"
+      "stoptime": "2024-04-20T18:08:18",
+      "table": {
+        "branch": "American pool",
+        "branchId": 1,
+        "cloth": "",
+        "description": "",
+        "manufacturer": "",
+        "model": "Tournament Champion Sport",
+        "name": "20",
+        "pockets": "",
+        "size": 9,
+        "slate": "",
+        "tableId": 2842378,
+        "venue": {
+          "image": "https://img.cuescore.com/image/e/3/ea714c9bb52caa765f7707d5dcbe7f3a.png?t=1533571231",
+          "name": "147 Break Zamieniecka",
+          "owner": {
+            "logo": "//img.cuescore.com/image/7/2/71487152007d737c2f5de4f7821f7c9e.png?t=1555512394",
+            "name": "MGL Cue Sports",
+            "organizationId": 5133719,
+            "profileColor": "58a5fc",
+            "stub": "mglcuesports",
+            "url": "https://cuescore.com/mglcuesports"
+          },
+          "url": "https://cuescore.com/venue/147+Break+Zamieniecka/2842336",
+          "venueId": 2842336
+        }
+      },
+      "tournamentId": 42132916,
+      "useInnings": false,
+      "videoLink": "",
+      "winnerNext": ""
     }
   ],
   "name": "Warszawskie eliminacje do Międzynarodowych Mistrzostw Polski Amatorów 2024 w 9-bil QF",
+  "organizers": [
+    {
+      "logo": "//img.cuescore.com/image/7/2/71487152007d737c2f5de4f7821f7c9e.png?t=1555512394",
+      "name": "MGL Cue Sports",
+      "organizationId": 5133719,
+      "profileColor": "58a5fc",
+      "stub": "mglcuesports",
+      "url": "https://cuescore.com/mglcuesports"
+    }
+  ],
+  "owner": {
+    "logo": "//img.cuescore.com/image/7/2/71487152007d737c2f5de4f7821f7c9e.png?t=1555512394",
+    "name": "MGL Cue Sports",
+    "organizationId": 5133719,
+    "profileColor": "58a5fc",
+    "stub": "mglcuesports",
+    "url": "https://cuescore.com/mglcuesports"
+  },
+  "preseeds": {
+    "1621300": 8,
+    "1718455": 2,
+    "19570090": 3,
+    "2360900": 4,
+    "5133866": 6,
+    "6480431": 1
+  },
+  "rankings": [],
+  "sequence": 0,
+  "standings": [],
   "starttime": "2024-04-20T17:00:00+02:00",
+  "status": "Finished",
+  "statusCode": 2,
   "stoptime": "2024-04-20T18:00:00+02:00",
   "timezone": "Europe/Warsaw",
   "tournamentId": 42132916,
@@ -82,7 +470,17 @@
   "url": "https://cuescore.com/tournament/Warszawskie+eliminacje+do+Mi%C4%99dzynarodowych+Mistrzostw+Polski+Amator%C3%B3w+2024+w+9-bil+QF/42132916",
   "venues": [
     {
+      "image": "https://img.cuescore.com/image/e/3/ea714c9bb52caa765f7707d5dcbe7f3a.png?t=1533571231",
       "name": "147 Break Zamieniecka",
+      "owner": {
+        "logo": "//img.cuescore.com/image/7/2/71487152007d737c2f5de4f7821f7c9e.png?t=1555512394",
+        "name": "MGL Cue Sports",
+        "organizationId": 5133719,
+        "profileColor": "58a5fc",
+        "stub": "mglcuesports",
+        "url": "https://cuescore.com/mglcuesports"
+      },
+      "url": "https://cuescore.com/venue/147+Break+Zamieniecka/2842336",
       "venueId": 2842336
     }
   ]

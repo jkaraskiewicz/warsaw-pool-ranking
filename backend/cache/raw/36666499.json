@@ -1,422 +1,2666 @@
 {
+  "access": [
+    1620195
+  ],
   "banner": [],
+  "branch": 1,
   "breakrule": "alternate",
+  "contacts": [
+    {
+      "country": {
+        "alpha3": "POL",
+        "continent": "Europe",
+        "image": "https://cuescore.com/img/flags/png-country-4x2-none/res-640x480/pl.png",
+        "name": "Poland"
+      },
+      "firstname": "Michał",
+      "image": "https://img.cuescore.com/image/1/4/15d291e83ead350107ae474e8623a6f5.png?t=1504629089",
+      "lastname": "Nowak",
+      "name": "Michał Nowak",
+      "playerId": 1620195,
+      "represents": [],
+      "url": "https://cuescore.com/player/Micha%C5%82+Nowak/1620195"
+    }
+  ],
   "deadline": "",
   "defaultRaceTo": 2,
   "description": "Turniej rankingowy WPT | Poniedziałki 19:00 | klub 147 Break Nowogrodzka | odmiana 8 bil | wpisowe 40 zł | system grupowy\r\nZapraszamy do nowego sklepu bilardowego Shooters - sklep dla graczy! www.sklepbilardowy.eu\r\nUżyj kodu SHOOTERS i zrób zakupy ze zniżką 5% (minimalna wartość zamówienia - 100 zł) Promocja trwa do 16.01.2024 r.",
   "discipline": "8-Ball",
+  "disciplineId": 2,
   "displayDate": "January 8, 2024",
   "dresscode": "",
+  "entrystart": "",
   "format": 2,
+  "handicap": [],
   "matches": [
     {
+      "bestOfSets": 0,
+      "branch": 1,
+      "challengeId": 0,
+      "comment": "",
+      "curVersion": 123,
+      "discipline": "8-Ball",
+      "disciplineId": 2,
+      "frames": [],
+      "groupNo": 0,
+      "highBreaksA": "",
+      "highBreaksB": "",
+      "inningsPlayerA": 0,
+      "inningsPlayerB": 0,
+      "lagWinner": "",
+      "loserNext": 13,
       "matchId": 36672997,
+      "matchType": 0,
+      "matchno": 1,
+      "matchstatus": "finished",
+      "matchstatusCode": 2,
+      "notes": [],
+      "penalty": 0,
       "playerA": {
+        "country": {
+          "alpha3": "POL",
+          "continent": "Europe",
+          "image": "https://cuescore.com/img/flags/png-country-4x2-none/res-640x480/pl.png",
+          "name": "Poland"
+        },
+        "firstname": "Mariusz",
+        "image": "https://img.cuescore.com/image/4/4/41a22983b748885a3049158a9dd1d122.png?t=1632821262",
+        "lastname": "Kowalik",
         "name": "Mariusz Kowalik",
-        "playerId": 8507940
+        "playerId": 8507940,
+        "represents": [],
+        "url": "https://cuescore.com/player/Mariusz+Kowalik/8507940"
       },
       "playerB": {
+        "country": {
+          "alpha3": "POL",
+          "continent": "Europe",
+          "image": "https://cuescore.com/img/flags/png-country-4x2-none/res-640x480/pl.png",
+          "name": "Poland"
+        },
+        "firstname": "Maciej",
+        "image": "https://img.cuescore.com/image/8/4/8bd3578c19ef8201ca1330519e82df1c.png?t=1707758826",
+        "lastname": "Pislewski",
         "name": "Maciej Pislewski",
-        "playerId": 7789003
+        "playerId": 7789003,
+        "represents": [],
+        "url": "https://cuescore.com/player/Maciej+Pislewski/7789003"
       },
+      "properties": [],
+      "raceTo": 3,
+      "round": 1,
+      "roundName": "Round 1",
+      "runoutsA": 0,
+      "runoutsB": 0,
       "scoreA": 1,
       "scoreB": 3,
+      "sets": [],
       "starttime": "2024-01-08T18:58:00",
-      "stoptime": "2024-01-08T19:40:46"
+      "stoptime": "2024-01-08T19:40:46",
+      "table": {
+        "branch": "American pool",
+        "branchId": 1,
+        "cloth": "",
+        "description": "",
+        "manufacturer": "WIK",
+        "model": "Olimpic",
+        "name": "14",
+        "pockets": "",
+        "size": 0,
+        "slate": "",
+        "tableId": 21264094,
+        "venue": {
+          "image": "https://img.cuescore.com/image/d/3/d93a0f12945263a55729e1f3b6a15aaa.png?t=1546596159",
+          "name": "147 Break Nowogrodzka",
+          "owner": {
+            "logo": "//img.cuescore.com/image/7/2/71487152007d737c2f5de4f7821f7c9e.png?t=1555512394",
+            "name": "MGL Cue Sports",
+            "organizationId": 5133719,
+            "profileColor": "58a5fc",
+            "stub": "mglcuesports",
+            "url": "https://cuescore.com/mglcuesports"
+          },
+          "url": "https://cuescore.com/venue/147+Break+Nowogrodzka/1698108",
+          "venueId": 1698108
+        }
+      },
+      "tournamentId": 36666499,
+      "useInnings": false,
+      "videoLink": "",
+      "winnerNext": 9
     },
     {
+      "bestOfSets": 0,
+      "branch": 1,
+      "challengeId": 0,
+      "comment": "",
+      "curVersion": 123,
+      "discipline": "8-Ball",
+      "disciplineId": 2,
+      "frames": [],
+      "groupNo": 0,
+      "highBreaksA": "",
+      "highBreaksB": "",
+      "inningsPlayerA": 0,
+      "inningsPlayerB": 0,
+      "lagWinner": "",
+      "loserNext": 13,
       "matchId": 36673000,
+      "matchType": 0,
+      "matchno": 2,
+      "matchstatus": "finished",
+      "matchstatusCode": 2,
+      "notes": [],
+      "penalty": 0,
       "playerA": {
+        "country": {
+          "alpha3": "POL",
+          "continent": "Europe",
+          "image": "https://cuescore.com/img/flags/png-country-4x2-none/res-640x480/pl.png",
+          "name": "Poland"
+        },
+        "firstname": "Mateusz",
+        "image": "https://img.cuescore.com/image/e/4/ebaf760d5bb299a77440d08eaa490e1e.png?t=1633112808",
+        "lastname": "Karwowski",
         "name": "Mateusz Karwowski",
-        "playerId": 9336598
+        "playerId": 9336598,
+        "represents": [],
+        "url": "https://cuescore.com/player/Mateusz+Karwowski/9336598"
       },
       "playerB": {
+        "country": {
+          "alpha3": "POL",
+          "continent": "Europe",
+          "image": "https://cuescore.com/img/flags/png-country-4x2-none/res-640x480/pl.png",
+          "name": "Poland"
+        },
+        "firstname": "Serdar",
+        "image": "https://img.cuescore.com/image/4/4/4b1240e8d84069afd6c7b8ed4c92ce1b.png?t=1747654316",
+        "lastname": "Sahet",
         "name": "Serdar Sahet",
-        "playerId": 24875071
+        "playerId": 24875071,
+        "represents": [],
+        "url": "https://cuescore.com/player/Serdar+Sahet/24875071"
       },
+      "properties": [],
+      "raceTo": 3,
+      "round": 1,
+      "roundName": "Round 1",
+      "runoutsA": 0,
+      "runoutsB": 0,
       "scoreA": 2,
       "scoreB": 3,
+      "sets": [],
       "starttime": "2024-01-08T18:58:00",
-      "stoptime": "2024-01-08T20:08:13"
+      "stoptime": "2024-01-08T20:08:13",
+      "table": {
+        "branch": "American pool",
+        "branchId": 1,
+        "cloth": "",
+        "description": "",
+        "manufacturer": "WIK",
+        "model": "Kanclerz",
+        "name": "15",
+        "pockets": "",
+        "size": 0,
+        "slate": "",
+        "tableId": 21264088,
+        "venue": {
+          "image": "https://img.cuescore.com/image/d/3/d93a0f12945263a55729e1f3b6a15aaa.png?t=1546596159",
+          "name": "147 Break Nowogrodzka",
+          "owner": {
+            "logo": "//img.cuescore.com/image/7/2/71487152007d737c2f5de4f7821f7c9e.png?t=1555512394",
+            "name": "MGL Cue Sports",
+            "organizationId": 5133719,
+            "profileColor": "58a5fc",
+            "stub": "mglcuesports",
+            "url": "https://cuescore.com/mglcuesports"
+          },
+          "url": "https://cuescore.com/venue/147+Break+Nowogrodzka/1698108",
+          "venueId": 1698108
+        }
+      },
+      "tournamentId": 36666499,
+      "useInnings": false,
+      "videoLink": "",
+      "winnerNext": 9
     },
     {
+      "bestOfSets": 0,
+      "branch": 1,
+      "challengeId": 0,
+      "comment": "",
+      "curVersion": 123,
+      "discipline": "8-Ball",
+      "disciplineId": 2,
+      "frames": [],
+      "groupNo": 0,
+      "highBreaksA": "",
+      "highBreaksB": "",
+      "inningsPlayerA": 0,
+      "inningsPlayerB": 0,
+      "lagWinner": "",
+      "loserNext": 14,
       "matchId": 36673003,
+      "matchType": 0,
+      "matchno": 3,
+      "matchstatus": "finished",
+      "matchstatusCode": 2,
+      "notes": [],
+      "penalty": 0,
       "playerA": {
+        "country": {
+          "alpha3": "POL",
+          "continent": "Europe",
+          "image": "https://cuescore.com/img/flags/png-country-4x2-none/res-640x480/pl.png",
+          "name": "Poland"
+        },
+        "firstname": "Maciej",
+        "image": "https://img.cuescore.com/image/c/4/c4c5052a847a6ec9caf66b22c535ddf0.png?t=1681374327",
+        "lastname": "Skorupiński",
         "name": "Maciej Skorupiński",
-        "playerId": 21541765
+        "playerId": 21541765,
+        "represents": [],
+        "url": "https://cuescore.com/player/Maciej+Skorupi%C5%84ski/21541765"
       },
       "playerB": {
+        "country": {
+          "alpha3": "POL",
+          "continent": "Europe",
+          "image": "https://cuescore.com/img/flags/png-country-4x2-none/res-640x480/pl.png",
+          "name": "Poland"
+        },
+        "firstname": "Ksawery",
+        "image": "https://img.cuescore.com/image/8/4/862c792ba8eb7f97e626fbe6cbcc59f6.png",
+        "lastname": "Bajon",
         "name": "Ksawery Bajon",
-        "playerId": 1664281
+        "playerId": 1664281,
+        "represents": [],
+        "url": "https://cuescore.com/player/Ksawery+Bajon/1664281"
       },
+      "properties": [],
+      "raceTo": 3,
+      "round": 1,
+      "roundName": "Round 1",
+      "runoutsA": 0,
+      "runoutsB": 0,
       "scoreA": 2,
       "scoreB": 3,
+      "sets": [],
       "starttime": "2024-01-08T18:58:00",
-      "stoptime": "2024-01-08T19:49:23"
+      "stoptime": "2024-01-08T19:49:23",
+      "table": {
+        "branch": "American pool",
+        "branchId": 1,
+        "cloth": "",
+        "description": "",
+        "manufacturer": "WIK",
+        "model": "Kanclerz",
+        "name": "17",
+        "pockets": "",
+        "size": 0,
+        "slate": "",
+        "tableId": 21264076,
+        "venue": {
+          "image": "https://img.cuescore.com/image/d/3/d93a0f12945263a55729e1f3b6a15aaa.png?t=1546596159",
+          "name": "147 Break Nowogrodzka",
+          "owner": {
+            "logo": "//img.cuescore.com/image/7/2/71487152007d737c2f5de4f7821f7c9e.png?t=1555512394",
+            "name": "MGL Cue Sports",
+            "organizationId": 5133719,
+            "profileColor": "58a5fc",
+            "stub": "mglcuesports",
+            "url": "https://cuescore.com/mglcuesports"
+          },
+          "url": "https://cuescore.com/venue/147+Break+Nowogrodzka/1698108",
+          "venueId": 1698108
+        }
+      },
+      "tournamentId": 36666499,
+      "useInnings": false,
+      "videoLink": "",
+      "winnerNext": 10
     },
     {
+      "bestOfSets": 0,
+      "branch": 1,
+      "challengeId": 0,
+      "comment": "",
+      "curVersion": 123,
+      "discipline": "8-Ball",
+      "disciplineId": 2,
+      "frames": [],
+      "groupNo": 0,
+      "highBreaksA": "",
+      "highBreaksB": "",
+      "inningsPlayerA": 0,
+      "inningsPlayerB": 0,
+      "lagWinner": "",
+      "loserNext": 14,
       "matchId": 36673006,
+      "matchType": 0,
+      "matchno": 4,
+      "matchstatus": "finished",
+      "matchstatusCode": 2,
+      "notes": [],
+      "penalty": 0,
       "playerA": {
+        "country": {
+          "alpha3": "POL",
+          "continent": "Europe",
+          "image": "https://cuescore.com/img/flags/png-country-4x2-none/res-640x480/pl.png",
+          "name": "Poland"
+        },
+        "firstname": "Kuba",
+        "image": "https://img.cuescore.com/image/4/4/48866a1d5edc5d0e71c90c3a1cd01e8e.png?t=1714640859",
+        "lastname": "Dąbrowski",
         "name": "Kuba Dąbrowski",
-        "playerId": 25794352
+        "playerId": 25794352,
+        "represents": [],
+        "url": "https://cuescore.com/player/Kuba+D%C4%85browski/25794352"
       },
       "playerB": {
+        "country": {
+          "alpha3": "POL",
+          "continent": "Europe",
+          "image": "https://cuescore.com/img/flags/png-country-4x2-none/res-640x480/pl.png",
+          "name": "Poland"
+        },
+        "firstname": "Władysław",
+        "image": "https://img.cuescore.com/image/2/4/23bdb1b627dd9c36eff48f7e1a9d3020.png?t=1724370654",
+        "lastname": "Machynia",
         "name": "Władysław Machynia",
-        "playerId": 15653797
+        "playerId": 15653797,
+        "represents": [],
+        "url": "https://cuescore.com/player/W%C5%82adys%C5%82aw+Machynia/15653797"
       },
+      "properties": [],
+      "raceTo": 3,
+      "round": 1,
+      "roundName": "Round 1",
+      "runoutsA": 0,
+      "runoutsB": 0,
       "scoreA": 1,
       "scoreB": 3,
+      "sets": [],
       "starttime": "2024-01-08T18:58:00",
-      "stoptime": "2024-01-08T19:26:35"
+      "stoptime": "2024-01-08T19:26:35",
+      "table": {
+        "branch": "American pool",
+        "branchId": 1,
+        "cloth": "",
+        "description": "",
+        "manufacturer": "WIK",
+        "model": "Kanclerz",
+        "name": "18",
+        "pockets": "",
+        "size": 0,
+        "slate": "",
+        "tableId": 21264073,
+        "venue": {
+          "image": "https://img.cuescore.com/image/d/3/d93a0f12945263a55729e1f3b6a15aaa.png?t=1546596159",
+          "name": "147 Break Nowogrodzka",
+          "owner": {
+            "logo": "//img.cuescore.com/image/7/2/71487152007d737c2f5de4f7821f7c9e.png?t=1555512394",
+            "name": "MGL Cue Sports",
+            "organizationId": 5133719,
+            "profileColor": "58a5fc",
+            "stub": "mglcuesports",
+            "url": "https://cuescore.com/mglcuesports"
+          },
+          "url": "https://cuescore.com/venue/147+Break+Nowogrodzka/1698108",
+          "venueId": 1698108
+        }
+      },
+      "tournamentId": 36666499,
+      "useInnings": false,
+      "videoLink": "",
+      "winnerNext": 10
     },
     {
+      "bestOfSets": 0,
+      "branch": 1,
+      "challengeId": 0,
+      "comment": "",
+      "curVersion": 123,
+      "discipline": "8-Ball",
+      "disciplineId": 2,
+      "frames": [],
+      "groupNo": 0,
+      "highBreaksA": "",
+      "highBreaksB": "",
+      "inningsPlayerA": 0,
+      "inningsPlayerB": 0,
+      "lagWinner": "",
+      "loserNext": 15,
       "matchId": 36673009,
+      "matchType": 0,
+      "matchno": 5,
+      "matchstatus": "finished",
+      "matchstatusCode": 2,
+      "notes": [],
+      "penalty": 0,
       "playerA": {
+        "country": {
+          "alpha3": "POL",
+          "continent": "Europe",
+          "image": "https://cuescore.com/img/flags/png-country-4x2-none/res-640x480/pl.png",
+          "name": "Poland"
+        },
+        "firstname": "Piotr",
+        "image": "https://img.cuescore.com/image/2/4/2465b793d6eecc80cd8e2164b32133f9.png?t=1580324523",
+        "lastname": "Kędzierski",
         "name": "Piotr Kędzierski",
-        "playerId": 4858951
+        "playerId": 4858951,
+        "represents": [],
+        "url": "https://cuescore.com/player/Piotr+K%C4%99dzierski/4858951"
       },
       "playerB": {
+        "country": {
+          "alpha3": "POL",
+          "continent": "Europe",
+          "image": "https://cuescore.com/img/flags/png-country-4x2-none/res-640x480/pl.png",
+          "name": "Poland"
+        },
+        "firstname": "Jakub",
+        "image": "https://img.cuescore.com/image/0/4/0387471a7ec668b972cfd07eb5da5a91.png?t=1745409523",
+        "lastname": "Stryj",
         "name": "Jakub Stryj",
-        "playerId": 16338394
+        "playerId": 16338394,
+        "represents": [],
+        "url": "https://cuescore.com/player/Jakub+Stryj/16338394"
       },
+      "properties": [],
+      "raceTo": 3,
+      "round": 1,
+      "roundName": "Round 1",
+      "runoutsA": 0,
+      "runoutsB": 0,
       "scoreA": 3,
       "scoreB": 0,
+      "sets": [],
       "starttime": "2024-01-08T18:58:00",
-      "stoptime": "2024-01-08T19:24:33"
+      "stoptime": "2024-01-08T19:24:33",
+      "table": {
+        "branch": "American pool",
+        "branchId": 1,
+        "cloth": "",
+        "description": "",
+        "manufacturer": "WIK",
+        "model": "Kanclerz",
+        "name": "19",
+        "pockets": "",
+        "size": 0,
+        "slate": "",
+        "tableId": 11840572,
+        "venue": {
+          "image": "https://img.cuescore.com/image/d/3/d93a0f12945263a55729e1f3b6a15aaa.png?t=1546596159",
+          "name": "147 Break Nowogrodzka",
+          "owner": {
+            "logo": "//img.cuescore.com/image/7/2/71487152007d737c2f5de4f7821f7c9e.png?t=1555512394",
+            "name": "MGL Cue Sports",
+            "organizationId": 5133719,
+            "profileColor": "58a5fc",
+            "stub": "mglcuesports",
+            "url": "https://cuescore.com/mglcuesports"
+          },
+          "url": "https://cuescore.com/venue/147+Break+Nowogrodzka/1698108",
+          "venueId": 1698108
+        }
+      },
+      "tournamentId": 36666499,
+      "useInnings": false,
+      "videoLink": "",
+      "winnerNext": 11
     },
     {
+      "bestOfSets": 0,
+      "branch": 1,
+      "challengeId": 0,
+      "comment": "",
+      "curVersion": 123,
+      "discipline": "8-Ball",
+      "disciplineId": 2,
+      "frames": [],
+      "groupNo": 0,
+      "highBreaksA": "",
+      "highBreaksB": "",
+      "inningsPlayerA": 0,
+      "inningsPlayerB": 0,
+      "lagWinner": "",
+      "loserNext": 15,
       "matchId": 36673012,
+      "matchType": 0,
+      "matchno": 6,
+      "matchstatus": "finished",
+      "matchstatusCode": 2,
+      "notes": [],
+      "penalty": 0,
       "playerA": {
+        "country": {
+          "alpha3": "POL",
+          "continent": "Europe",
+          "image": "https://cuescore.com/img/flags/png-country-4x2-none/res-640x480/pl.png",
+          "name": "Poland"
+        },
+        "firstname": "Alina",
+        "image": "https://img.cuescore.com/image/5/4/5aa6aa48f7d5ffe854d5266ac08db7ef.png",
+        "lastname": "Buryma",
         "name": "Alina Buryma",
-        "playerId": 3183586
+        "playerId": 3183586,
+        "represents": [],
+        "url": "https://cuescore.com/player/Alina+Buryma/3183586"
       },
       "playerB": {
+        "country": {
+          "alpha3": "POL",
+          "continent": "Europe",
+          "image": "https://cuescore.com/img/flags/png-country-4x2-none/res-640x480/pl.png",
+          "name": "Poland"
+        },
+        "firstname": "Maciej",
+        "image": "https://img.cuescore.com/image/7/4/7a12d544331cdfdc823932d06f3cee47.png?t=1664835346",
+        "lastname": "Pęśko",
         "name": "Maciej Pęśko",
-        "playerId": 16245310
+        "playerId": 16245310,
+        "represents": [],
+        "url": "https://cuescore.com/player/Maciej+P%C4%99%C5%9Bko/16245310"
       },
+      "properties": {
+        "lagWinsA": 0,
+        "lagWinsB": 0,
+        "penalty": [],
+        "runoutsA": 0,
+        "runoutsB": 1
+      },
+      "raceTo": 3,
+      "round": 1,
+      "roundName": "Round 1",
+      "runoutsA": 0,
+      "runoutsB": 1,
       "scoreA": 0,
       "scoreB": 3,
+      "sets": [],
       "starttime": "2024-01-08T18:58:00",
-      "stoptime": "2024-01-08T19:29:23"
+      "stoptime": "2024-01-08T19:29:23",
+      "table": {
+        "branch": "American pool",
+        "branchId": 1,
+        "cloth": "",
+        "description": "",
+        "manufacturer": "WIK",
+        "model": "Kanclerz",
+        "name": "20",
+        "pockets": "",
+        "size": 0,
+        "slate": "",
+        "tableId": 21264013,
+        "venue": {
+          "image": "https://img.cuescore.com/image/d/3/d93a0f12945263a55729e1f3b6a15aaa.png?t=1546596159",
+          "name": "147 Break Nowogrodzka",
+          "owner": {
+            "logo": "//img.cuescore.com/image/7/2/71487152007d737c2f5de4f7821f7c9e.png?t=1555512394",
+            "name": "MGL Cue Sports",
+            "organizationId": 5133719,
+            "profileColor": "58a5fc",
+            "stub": "mglcuesports",
+            "url": "https://cuescore.com/mglcuesports"
+          },
+          "url": "https://cuescore.com/venue/147+Break+Nowogrodzka/1698108",
+          "venueId": 1698108
+        }
+      },
+      "tournamentId": 36666499,
+      "useInnings": false,
+      "videoLink": "",
+      "winnerNext": 11
     },
     {
+      "bestOfSets": 0,
+      "branch": 1,
+      "challengeId": 0,
+      "comment": "",
+      "curVersion": 123,
+      "discipline": "8-Ball",
+      "disciplineId": 2,
+      "frames": [],
+      "groupNo": 0,
+      "highBreaksA": "",
+      "highBreaksB": "",
+      "inningsPlayerA": 0,
+      "inningsPlayerB": 0,
+      "lagWinner": "",
+      "loserNext": 16,
       "matchId": 36673015,
+      "matchType": 0,
+      "matchno": 7,
+      "matchstatus": "finished",
+      "matchstatusCode": 2,
+      "notes": [],
+      "penalty": 0,
       "playerA": {
+        "country": {
+          "alpha3": "POL",
+          "continent": "Europe",
+          "image": "https://cuescore.com/img/flags/png-country-4x2-none/res-640x480/pl.png",
+          "name": "Poland"
+        },
+        "firstname": "Piotr",
+        "image": "https://img.cuescore.com/image/b/4/b323f68ea60dfeff6372d8eccc56e5f3.png?t=1695217187",
+        "lastname": "Buraczewski",
         "name": "Piotr Buraczewski",
-        "playerId": 27677563
+        "playerId": 27677563,
+        "represents": [],
+        "url": "https://cuescore.com/player/Piotr+Buraczewski/27677563"
       },
       "playerB": {
+        "country": {
+          "alpha3": "POL",
+          "continent": "Europe",
+          "image": "https://cuescore.com/img/flags/png-country-4x2-none/res-640x480/pl.png",
+          "name": "Poland"
+        },
+        "firstname": "Przemysław",
+        "image": "https://img.cuescore.com/image/f/4/fa32b40586fc316d72f83c7ef097659c.png?t=1696278463",
+        "lastname": "Zasowski",
         "name": "Przemysław Zasowski",
-        "playerId": 27989371
+        "playerId": 27989371,
+        "represents": [],
+        "url": "https://cuescore.com/player/Przemys%C5%82aw+Zasowski/27989371"
       },
+      "properties": [],
+      "raceTo": 3,
+      "round": 1,
+      "roundName": "Round 1",
+      "runoutsA": 0,
+      "runoutsB": 0,
       "scoreA": 1,
       "scoreB": 3,
+      "sets": [],
       "starttime": "2024-01-08T19:24:00",
-      "stoptime": "2024-01-08T19:52:35"
+      "stoptime": "2024-01-08T19:52:35",
+      "table": {
+        "branch": "American pool",
+        "branchId": 1,
+        "cloth": "",
+        "description": "",
+        "manufacturer": "WIK",
+        "model": "Kanclerz",
+        "name": "19",
+        "pockets": "",
+        "size": 0,
+        "slate": "",
+        "tableId": 11840572,
+        "venue": {
+          "image": "https://img.cuescore.com/image/d/3/d93a0f12945263a55729e1f3b6a15aaa.png?t=1546596159",
+          "name": "147 Break Nowogrodzka",
+          "owner": {
+            "logo": "//img.cuescore.com/image/7/2/71487152007d737c2f5de4f7821f7c9e.png?t=1555512394",
+            "name": "MGL Cue Sports",
+            "organizationId": 5133719,
+            "profileColor": "58a5fc",
+            "stub": "mglcuesports",
+            "url": "https://cuescore.com/mglcuesports"
+          },
+          "url": "https://cuescore.com/venue/147+Break+Nowogrodzka/1698108",
+          "venueId": 1698108
+        }
+      },
+      "tournamentId": 36666499,
+      "useInnings": false,
+      "videoLink": "",
+      "winnerNext": 12
     },
     {
+      "bestOfSets": 0,
+      "branch": 1,
+      "challengeId": 0,
+      "comment": "",
+      "curVersion": 123,
+      "discipline": "8-Ball",
+      "disciplineId": 2,
+      "frames": [],
+      "groupNo": 0,
+      "highBreaksA": "",
+      "highBreaksB": "",
+      "inningsPlayerA": 0,
+      "inningsPlayerB": 0,
+      "lagWinner": "",
+      "loserNext": 16,
       "matchId": 36673018,
+      "matchType": 0,
+      "matchno": 8,
+      "matchstatus": "finished",
+      "matchstatusCode": 2,
+      "notes": [],
+      "penalty": 0,
       "playerA": {
+        "country": {
+          "alpha3": "UKR",
+          "continent": "Europe",
+          "image": "https://cuescore.com/img/flags/png-country-4x2-none/res-640x480/ua.png",
+          "name": "Ukraine"
+        },
+        "firstname": "Kateryna",
+        "image": "https://img.cuescore.com/image/5/4/5aa6aa48f7d5ffe854d5266ac08db7ef.png",
+        "lastname": "Brusova",
         "name": "Kateryna Brusova",
-        "playerId": 20385130
+        "playerId": 20385130,
+        "represents": [],
+        "url": "https://cuescore.com/player/Kateryna+Brusova/20385130"
       },
       "playerB": {
+        "country": {
+          "alpha3": "POL",
+          "continent": "Europe",
+          "image": "https://cuescore.com/img/flags/png-country-4x2-none/res-640x480/pl.png",
+          "name": "Poland"
+        },
+        "firstname": "Krzysztof",
+        "image": "https://img.cuescore.com/image/8/4/862c792ba8eb7f97e626fbe6cbcc59f6.png",
+        "lastname": "Doroszkiewicz",
         "name": "Krzysztof Doroszkiewicz",
-        "playerId": 19794961
+        "playerId": 19794961,
+        "represents": [],
+        "url": "https://cuescore.com/player/Krzysztof+Doroszkiewicz/19794961"
       },
+      "properties": [],
+      "raceTo": 3,
+      "round": 1,
+      "roundName": "Round 1",
+      "runoutsA": 0,
+      "runoutsB": 0,
       "scoreA": 0,
       "scoreB": 3,
+      "sets": [],
       "starttime": "2024-01-08T18:58:00",
-      "stoptime": "2024-01-08T19:29:01"
+      "stoptime": "2024-01-08T19:29:01",
+      "table": {
+        "branch": "American pool",
+        "branchId": 1,
+        "cloth": "",
+        "description": "",
+        "manufacturer": "WIK",
+        "model": "Kanclerz",
+        "name": "21",
+        "pockets": "",
+        "size": 0,
+        "slate": "",
+        "tableId": 21264040,
+        "venue": {
+          "image": "https://img.cuescore.com/image/d/3/d93a0f12945263a55729e1f3b6a15aaa.png?t=1546596159",
+          "name": "147 Break Nowogrodzka",
+          "owner": {
+            "logo": "//img.cuescore.com/image/7/2/71487152007d737c2f5de4f7821f7c9e.png?t=1555512394",
+            "name": "MGL Cue Sports",
+            "organizationId": 5133719,
+            "profileColor": "58a5fc",
+            "stub": "mglcuesports",
+            "url": "https://cuescore.com/mglcuesports"
+          },
+          "url": "https://cuescore.com/venue/147+Break+Nowogrodzka/1698108",
+          "venueId": 1698108
+        }
+      },
+      "tournamentId": 36666499,
+      "useInnings": false,
+      "videoLink": "",
+      "winnerNext": 12
     },
     {
+      "bestOfSets": 0,
+      "branch": 1,
+      "challengeId": 0,
+      "comment": "",
+      "curVersion": 123,
+      "discipline": "8-Ball",
+      "disciplineId": 2,
+      "frames": [],
+      "groupNo": 0,
+      "highBreaksA": "",
+      "highBreaksB": "",
+      "inningsPlayerA": 0,
+      "inningsPlayerB": 0,
+      "lagWinner": "",
+      "loserNext": 20,
       "matchId": 36673021,
+      "matchType": 0,
+      "matchno": 9,
+      "matchstatus": "finished",
+      "matchstatusCode": 2,
+      "notes": [],
+      "penalty": 0,
       "playerA": {
+        "country": {
+          "alpha3": "POL",
+          "continent": "Europe",
+          "image": "https://cuescore.com/img/flags/png-country-4x2-none/res-640x480/pl.png",
+          "name": "Poland"
+        },
+        "firstname": "Maciej",
+        "image": "https://img.cuescore.com/image/8/4/8bd3578c19ef8201ca1330519e82df1c.png?t=1707758826",
+        "lastname": "Pislewski",
         "name": "Maciej Pislewski",
-        "playerId": 7789003
+        "playerId": 7789003,
+        "represents": [],
+        "url": "https://cuescore.com/player/Maciej+Pislewski/7789003"
       },
       "playerB": {
+        "country": {
+          "alpha3": "POL",
+          "continent": "Europe",
+          "image": "https://cuescore.com/img/flags/png-country-4x2-none/res-640x480/pl.png",
+          "name": "Poland"
+        },
+        "firstname": "Serdar",
+        "image": "https://img.cuescore.com/image/4/4/4b1240e8d84069afd6c7b8ed4c92ce1b.png?t=1747654316",
+        "lastname": "Sahet",
         "name": "Serdar Sahet",
-        "playerId": 24875071
+        "playerId": 24875071,
+        "represents": [],
+        "url": "https://cuescore.com/player/Serdar+Sahet/24875071"
       },
+      "properties": {
+        "penalty": []
+      },
+      "raceTo": 2,
+      "round": 2,
+      "roundName": "Winners qualification",
+      "runoutsA": 0,
+      "runoutsB": 0,
       "scoreA": 3,
       "scoreB": 2,
+      "sets": [],
       "starttime": "2024-01-08T20:08:00",
-      "stoptime": "2024-01-08T21:22:25"
+      "stoptime": "2024-01-08T21:22:25",
+      "table": {
+        "branch": "American pool",
+        "branchId": 1,
+        "cloth": "",
+        "description": "",
+        "manufacturer": "WIK",
+        "model": "Kanclerz",
+        "name": "21",
+        "pockets": "",
+        "size": 0,
+        "slate": "",
+        "tableId": 21264040,
+        "venue": {
+          "image": "https://img.cuescore.com/image/d/3/d93a0f12945263a55729e1f3b6a15aaa.png?t=1546596159",
+          "name": "147 Break Nowogrodzka",
+          "owner": {
+            "logo": "//img.cuescore.com/image/7/2/71487152007d737c2f5de4f7821f7c9e.png?t=1555512394",
+            "name": "MGL Cue Sports",
+            "organizationId": 5133719,
+            "profileColor": "58a5fc",
+            "stub": "mglcuesports",
+            "url": "https://cuescore.com/mglcuesports"
+          },
+          "url": "https://cuescore.com/venue/147+Break+Nowogrodzka/1698108",
+          "venueId": 1698108
+        }
+      },
+      "tournamentId": 36666499,
+      "useInnings": false,
+      "videoLink": "",
+      "winnerNext": 21
     },
     {
+      "bestOfSets": 0,
+      "branch": 1,
+      "challengeId": 0,
+      "comment": "",
+      "curVersion": 123,
+      "discipline": "8-Ball",
+      "disciplineId": 2,
+      "frames": [],
+      "groupNo": 0,
+      "highBreaksA": "",
+      "highBreaksB": "",
+      "inningsPlayerA": 0,
+      "inningsPlayerB": 0,
+      "lagWinner": "",
+      "loserNext": 19,
       "matchId": 36673024,
+      "matchType": 0,
+      "matchno": 10,
+      "matchstatus": "finished",
+      "matchstatusCode": 2,
+      "notes": [],
+      "penalty": 0,
       "playerA": {
+        "country": {
+          "alpha3": "POL",
+          "continent": "Europe",
+          "image": "https://cuescore.com/img/flags/png-country-4x2-none/res-640x480/pl.png",
+          "name": "Poland"
+        },
+        "firstname": "Ksawery",
+        "image": "https://img.cuescore.com/image/8/4/862c792ba8eb7f97e626fbe6cbcc59f6.png",
+        "lastname": "Bajon",
         "name": "Ksawery Bajon",
-        "playerId": 1664281
+        "playerId": 1664281,
+        "represents": [],
+        "url": "https://cuescore.com/player/Ksawery+Bajon/1664281"
       },
       "playerB": {
+        "country": {
+          "alpha3": "POL",
+          "continent": "Europe",
+          "image": "https://cuescore.com/img/flags/png-country-4x2-none/res-640x480/pl.png",
+          "name": "Poland"
+        },
+        "firstname": "Władysław",
+        "image": "https://img.cuescore.com/image/2/4/23bdb1b627dd9c36eff48f7e1a9d3020.png?t=1724370654",
+        "lastname": "Machynia",
         "name": "Władysław Machynia",
-        "playerId": 15653797
+        "playerId": 15653797,
+        "represents": [],
+        "url": "https://cuescore.com/player/W%C5%82adys%C5%82aw+Machynia/15653797"
       },
+      "properties": {
+        "penalty": []
+      },
+      "raceTo": 2,
+      "round": 2,
+      "roundName": "Winners qualification",
+      "runoutsA": 0,
+      "runoutsB": 0,
       "scoreA": 0,
       "scoreB": 3,
+      "sets": [],
       "starttime": "2024-01-08T19:49:00",
-      "stoptime": "2024-01-08T20:22:15"
+      "stoptime": "2024-01-08T20:22:15",
+      "table": {
+        "branch": "American pool",
+        "branchId": 1,
+        "cloth": "",
+        "description": "",
+        "manufacturer": "WIK",
+        "model": "Kanclerz",
+        "name": "17",
+        "pockets": "",
+        "size": 0,
+        "slate": "",
+        "tableId": 21264076,
+        "venue": {
+          "image": "https://img.cuescore.com/image/d/3/d93a0f12945263a55729e1f3b6a15aaa.png?t=1546596159",
+          "name": "147 Break Nowogrodzka",
+          "owner": {
+            "logo": "//img.cuescore.com/image/7/2/71487152007d737c2f5de4f7821f7c9e.png?t=1555512394",
+            "name": "MGL Cue Sports",
+            "organizationId": 5133719,
+            "profileColor": "58a5fc",
+            "stub": "mglcuesports",
+            "url": "https://cuescore.com/mglcuesports"
+          },
+          "url": "https://cuescore.com/venue/147+Break+Nowogrodzka/1698108",
+          "venueId": 1698108
+        }
+      },
+      "tournamentId": 36666499,
+      "useInnings": false,
+      "videoLink": "",
+      "winnerNext": 22
     },
     {
+      "bestOfSets": 0,
+      "branch": 1,
+      "challengeId": 0,
+      "comment": "",
+      "curVersion": 123,
+      "discipline": "8-Ball",
+      "disciplineId": 2,
+      "frames": [],
+      "groupNo": 0,
+      "highBreaksA": "",
+      "highBreaksB": "",
+      "inningsPlayerA": 0,
+      "inningsPlayerB": 0,
+      "lagWinner": "",
+      "loserNext": 18,
       "matchId": 36673027,
+      "matchType": 0,
+      "matchno": 11,
+      "matchstatus": "finished",
+      "matchstatusCode": 2,
+      "notes": [],
+      "penalty": 0,
       "playerA": {
+        "country": {
+          "alpha3": "POL",
+          "continent": "Europe",
+          "image": "https://cuescore.com/img/flags/png-country-4x2-none/res-640x480/pl.png",
+          "name": "Poland"
+        },
+        "firstname": "Piotr",
+        "image": "https://img.cuescore.com/image/2/4/2465b793d6eecc80cd8e2164b32133f9.png?t=1580324523",
+        "lastname": "Kędzierski",
         "name": "Piotr Kędzierski",
-        "playerId": 4858951
+        "playerId": 4858951,
+        "represents": [],
+        "url": "https://cuescore.com/player/Piotr+K%C4%99dzierski/4858951"
       },
       "playerB": {
+        "country": {
+          "alpha3": "POL",
+          "continent": "Europe",
+          "image": "https://cuescore.com/img/flags/png-country-4x2-none/res-640x480/pl.png",
+          "name": "Poland"
+        },
+        "firstname": "Maciej",
+        "image": "https://img.cuescore.com/image/7/4/7a12d544331cdfdc823932d06f3cee47.png?t=1664835346",
+        "lastname": "Pęśko",
         "name": "Maciej Pęśko",
-        "playerId": 16245310
+        "playerId": 16245310,
+        "represents": [],
+        "url": "https://cuescore.com/player/Maciej+P%C4%99%C5%9Bko/16245310"
       },
+      "properties": {
+        "penalty": []
+      },
+      "raceTo": 2,
+      "round": 2,
+      "roundName": "Winners qualification",
+      "runoutsA": 0,
+      "runoutsB": 0,
       "scoreA": 1,
       "scoreB": 3,
+      "sets": [],
       "starttime": "2024-01-08T19:29:00",
-      "stoptime": "2024-01-08T20:22:25"
+      "stoptime": "2024-01-08T20:22:25",
+      "table": {
+        "branch": "American pool",
+        "branchId": 1,
+        "cloth": "",
+        "description": "",
+        "manufacturer": "WIK",
+        "model": "Kanclerz",
+        "name": "20",
+        "pockets": "",
+        "size": 0,
+        "slate": "",
+        "tableId": 21264013,
+        "venue": {
+          "image": "https://img.cuescore.com/image/d/3/d93a0f12945263a55729e1f3b6a15aaa.png?t=1546596159",
+          "name": "147 Break Nowogrodzka",
+          "owner": {
+            "logo": "//img.cuescore.com/image/7/2/71487152007d737c2f5de4f7821f7c9e.png?t=1555512394",
+            "name": "MGL Cue Sports",
+            "organizationId": 5133719,
+            "profileColor": "58a5fc",
+            "stub": "mglcuesports",
+            "url": "https://cuescore.com/mglcuesports"
+          },
+          "url": "https://cuescore.com/venue/147+Break+Nowogrodzka/1698108",
+          "venueId": 1698108
+        }
+      },
+      "tournamentId": 36666499,
+      "useInnings": false,
+      "videoLink": "",
+      "winnerNext": 23
     },
     {
+      "bestOfSets": 0,
+      "branch": 1,
+      "challengeId": 0,
+      "comment": "",
+      "curVersion": 123,
+      "discipline": "8-Ball",
+      "disciplineId": 2,
+      "frames": [],
+      "groupNo": 0,
+      "highBreaksA": "",
+      "highBreaksB": "",
+      "inningsPlayerA": 0,
+      "inningsPlayerB": 0,
+      "lagWinner": "",
+      "loserNext": 17,
       "matchId": 36673030,
+      "matchType": 0,
+      "matchno": 12,
+      "matchstatus": "finished",
+      "matchstatusCode": 2,
+      "notes": [],
+      "penalty": 0,
       "playerA": {
+        "country": {
+          "alpha3": "POL",
+          "continent": "Europe",
+          "image": "https://cuescore.com/img/flags/png-country-4x2-none/res-640x480/pl.png",
+          "name": "Poland"
+        },
+        "firstname": "Przemysław",
+        "image": "https://img.cuescore.com/image/f/4/fa32b40586fc316d72f83c7ef097659c.png?t=1696278463",
+        "lastname": "Zasowski",
         "name": "Przemysław Zasowski",
-        "playerId": 27989371
+        "playerId": 27989371,
+        "represents": [],
+        "url": "https://cuescore.com/player/Przemys%C5%82aw+Zasowski/27989371"
       },
       "playerB": {
+        "country": {
+          "alpha3": "POL",
+          "continent": "Europe",
+          "image": "https://cuescore.com/img/flags/png-country-4x2-none/res-640x480/pl.png",
+          "name": "Poland"
+        },
+        "firstname": "Krzysztof",
+        "image": "https://img.cuescore.com/image/8/4/862c792ba8eb7f97e626fbe6cbcc59f6.png",
+        "lastname": "Doroszkiewicz",
         "name": "Krzysztof Doroszkiewicz",
-        "playerId": 19794961
+        "playerId": 19794961,
+        "represents": [],
+        "url": "https://cuescore.com/player/Krzysztof+Doroszkiewicz/19794961"
       },
+      "properties": {
+        "penalty": []
+      },
+      "raceTo": 2,
+      "round": 2,
+      "roundName": "Winners qualification",
+      "runoutsA": 0,
+      "runoutsB": 0,
       "scoreA": 3,
       "scoreB": 1,
+      "sets": [],
       "starttime": "2024-01-08T19:52:00",
-      "stoptime": "2024-01-08T20:22:15"
+      "stoptime": "2024-01-08T20:22:15",
+      "table": {
+        "branch": "American pool",
+        "branchId": 1,
+        "cloth": "",
+        "description": "",
+        "manufacturer": "WIK",
+        "model": "Kanclerz",
+        "name": "19",
+        "pockets": "",
+        "size": 0,
+        "slate": "",
+        "tableId": 11840572,
+        "venue": {
+          "image": "https://img.cuescore.com/image/d/3/d93a0f12945263a55729e1f3b6a15aaa.png?t=1546596159",
+          "name": "147 Break Nowogrodzka",
+          "owner": {
+            "logo": "//img.cuescore.com/image/7/2/71487152007d737c2f5de4f7821f7c9e.png?t=1555512394",
+            "name": "MGL Cue Sports",
+            "organizationId": 5133719,
+            "profileColor": "58a5fc",
+            "stub": "mglcuesports",
+            "url": "https://cuescore.com/mglcuesports"
+          },
+          "url": "https://cuescore.com/venue/147+Break+Nowogrodzka/1698108",
+          "venueId": 1698108
+        }
+      },
+      "tournamentId": 36666499,
+      "useInnings": false,
+      "videoLink": "",
+      "winnerNext": 24
     },
     {
+      "bestOfSets": 0,
+      "branch": 1,
+      "challengeId": 0,
+      "comment": "",
+      "curVersion": 123,
+      "discipline": "8-Ball",
+      "disciplineId": 2,
+      "frames": [],
+      "groupNo": 0,
+      "highBreaksA": "",
+      "highBreaksB": "",
+      "inningsPlayerA": 0,
+      "inningsPlayerB": 0,
+      "lagWinner": "",
+      "loserNext": "",
       "matchId": 36673033,
+      "matchType": 0,
+      "matchno": 13,
+      "matchstatus": "finished",
+      "matchstatusCode": 2,
+      "notes": [],
+      "penalty": 0,
       "playerA": {
+        "country": {
+          "alpha3": "POL",
+          "continent": "Europe",
+          "image": "https://cuescore.com/img/flags/png-country-4x2-none/res-640x480/pl.png",
+          "name": "Poland"
+        },
+        "firstname": "Mariusz",
+        "image": "https://img.cuescore.com/image/4/4/41a22983b748885a3049158a9dd1d122.png?t=1632821262",
+        "lastname": "Kowalik",
         "name": "Mariusz Kowalik",
-        "playerId": 8507940
+        "playerId": 8507940,
+        "represents": [],
+        "url": "https://cuescore.com/player/Mariusz+Kowalik/8507940"
       },
       "playerB": {
+        "country": {
+          "alpha3": "POL",
+          "continent": "Europe",
+          "image": "https://cuescore.com/img/flags/png-country-4x2-none/res-640x480/pl.png",
+          "name": "Poland"
+        },
+        "firstname": "Mateusz",
+        "image": "https://img.cuescore.com/image/e/4/ebaf760d5bb299a77440d08eaa490e1e.png?t=1633112808",
+        "lastname": "Karwowski",
         "name": "Mateusz Karwowski",
-        "playerId": 9336598
+        "playerId": 9336598,
+        "represents": [],
+        "url": "https://cuescore.com/player/Mateusz+Karwowski/9336598"
       },
+      "properties": {
+        "penalty": []
+      },
+      "raceTo": 2,
+      "round": -1,
+      "roundName": "Loser round 1",
+      "runoutsA": 0,
+      "runoutsB": 0,
       "scoreA": 2,
       "scoreB": 0,
+      "sets": [],
       "starttime": "2024-01-08T20:08:00",
-      "stoptime": "2024-01-08T20:29:12"
+      "stoptime": "2024-01-08T20:29:12",
+      "table": {
+        "branch": "American pool",
+        "branchId": 1,
+        "cloth": "",
+        "description": "",
+        "manufacturer": "WIK",
+        "model": "Kanclerz",
+        "name": "15",
+        "pockets": "",
+        "size": 0,
+        "slate": "",
+        "tableId": 21264088,
+        "venue": {
+          "image": "https://img.cuescore.com/image/d/3/d93a0f12945263a55729e1f3b6a15aaa.png?t=1546596159",
+          "name": "147 Break Nowogrodzka",
+          "owner": {
+            "logo": "//img.cuescore.com/image/7/2/71487152007d737c2f5de4f7821f7c9e.png?t=1555512394",
+            "name": "MGL Cue Sports",
+            "organizationId": 5133719,
+            "profileColor": "58a5fc",
+            "stub": "mglcuesports",
+            "url": "https://cuescore.com/mglcuesports"
+          },
+          "url": "https://cuescore.com/venue/147+Break+Nowogrodzka/1698108",
+          "venueId": 1698108
+        }
+      },
+      "tournamentId": 36666499,
+      "useInnings": false,
+      "videoLink": "",
+      "winnerNext": 17
     },
     {
+      "bestOfSets": 0,
+      "branch": 1,
+      "challengeId": 0,
+      "comment": "",
+      "curVersion": 123,
+      "discipline": "8-Ball",
+      "disciplineId": 2,
+      "frames": [],
+      "groupNo": 0,
+      "highBreaksA": "",
+      "highBreaksB": "",
+      "inningsPlayerA": 0,
+      "inningsPlayerB": 0,
+      "lagWinner": "",
+      "loserNext": "",
       "matchId": 36673036,
+      "matchType": 0,
+      "matchno": 14,
+      "matchstatus": "finished",
+      "matchstatusCode": 2,
+      "notes": [],
+      "penalty": 0,
       "playerA": {
+        "country": {
+          "alpha3": "POL",
+          "continent": "Europe",
+          "image": "https://cuescore.com/img/flags/png-country-4x2-none/res-640x480/pl.png",
+          "name": "Poland"
+        },
+        "firstname": "Maciej",
+        "image": "https://img.cuescore.com/image/c/4/c4c5052a847a6ec9caf66b22c535ddf0.png?t=1681374327",
+        "lastname": "Skorupiński",
         "name": "Maciej Skorupiński",
-        "playerId": 21541765
+        "playerId": 21541765,
+        "represents": [],
+        "url": "https://cuescore.com/player/Maciej+Skorupi%C5%84ski/21541765"
       },
       "playerB": {
+        "country": {
+          "alpha3": "POL",
+          "continent": "Europe",
+          "image": "https://cuescore.com/img/flags/png-country-4x2-none/res-640x480/pl.png",
+          "name": "Poland"
+        },
+        "firstname": "Kuba",
+        "image": "https://img.cuescore.com/image/4/4/48866a1d5edc5d0e71c90c3a1cd01e8e.png?t=1714640859",
+        "lastname": "Dąbrowski",
         "name": "Kuba Dąbrowski",
-        "playerId": 25794352
+        "playerId": 25794352,
+        "represents": [],
+        "url": "https://cuescore.com/player/Kuba+D%C4%85browski/25794352"
       },
+      "properties": {
+        "penalty": []
+      },
+      "raceTo": 2,
+      "round": -1,
+      "roundName": "Loser round 1",
+      "runoutsA": 0,
+      "runoutsB": 0,
       "scoreA": 1,
       "scoreB": 2,
+      "sets": [],
       "starttime": "2024-01-08T19:49:00",
-      "stoptime": "2024-01-08T20:22:28"
+      "stoptime": "2024-01-08T20:22:28",
+      "table": {
+        "branch": "American pool",
+        "branchId": 1,
+        "cloth": "",
+        "description": "",
+        "manufacturer": "WIK",
+        "model": "Olimpic",
+        "name": "14",
+        "pockets": "",
+        "size": 0,
+        "slate": "",
+        "tableId": 21264094,
+        "venue": {
+          "image": "https://img.cuescore.com/image/d/3/d93a0f12945263a55729e1f3b6a15aaa.png?t=1546596159",
+          "name": "147 Break Nowogrodzka",
+          "owner": {
+            "logo": "//img.cuescore.com/image/7/2/71487152007d737c2f5de4f7821f7c9e.png?t=1555512394",
+            "name": "MGL Cue Sports",
+            "organizationId": 5133719,
+            "profileColor": "58a5fc",
+            "stub": "mglcuesports",
+            "url": "https://cuescore.com/mglcuesports"
+          },
+          "url": "https://cuescore.com/venue/147+Break+Nowogrodzka/1698108",
+          "venueId": 1698108
+        }
+      },
+      "tournamentId": 36666499,
+      "useInnings": false,
+      "videoLink": "",
+      "winnerNext": 18
     },
     {
+      "bestOfSets": 0,
+      "branch": 1,
+      "challengeId": 0,
+      "comment": "",
+      "curVersion": 123,
+      "discipline": "8-Ball",
+      "disciplineId": 2,
+      "frames": [],
+      "groupNo": 0,
+      "highBreaksA": "",
+      "highBreaksB": "",
+      "inningsPlayerA": 0,
+      "inningsPlayerB": 0,
+      "lagWinner": "",
+      "loserNext": "",
       "matchId": 36673039,
+      "matchType": 0,
+      "matchno": 15,
+      "matchstatus": "finished",
+      "matchstatusCode": 2,
+      "notes": [],
+      "penalty": 0,
       "playerA": {
+        "country": {
+          "alpha3": "POL",
+          "continent": "Europe",
+          "image": "https://cuescore.com/img/flags/png-country-4x2-none/res-640x480/pl.png",
+          "name": "Poland"
+        },
+        "firstname": "Jakub",
+        "image": "https://img.cuescore.com/image/0/4/0387471a7ec668b972cfd07eb5da5a91.png?t=1745409523",
+        "lastname": "Stryj",
         "name": "Jakub Stryj",
-        "playerId": 16338394
+        "playerId": 16338394,
+        "represents": [],
+        "url": "https://cuescore.com/player/Jakub+Stryj/16338394"
       },
       "playerB": {
+        "country": {
+          "alpha3": "POL",
+          "continent": "Europe",
+          "image": "https://cuescore.com/img/flags/png-country-4x2-none/res-640x480/pl.png",
+          "name": "Poland"
+        },
+        "firstname": "Alina",
+        "image": "https://img.cuescore.com/image/5/4/5aa6aa48f7d5ffe854d5266ac08db7ef.png",
+        "lastname": "Buryma",
         "name": "Alina Buryma",
-        "playerId": 3183586
+        "playerId": 3183586,
+        "represents": [],
+        "url": "https://cuescore.com/player/Alina+Buryma/3183586"
       },
+      "properties": {
+        "penalty": []
+      },
+      "raceTo": 2,
+      "round": -1,
+      "roundName": "Loser round 1",
+      "runoutsA": 0,
+      "runoutsB": 0,
       "scoreA": 2,
       "scoreB": 1,
+      "sets": [],
       "starttime": "2024-01-08T19:29:00",
-      "stoptime": "2024-01-08T20:03:04"
+      "stoptime": "2024-01-08T20:03:04",
+      "table": {
+        "branch": "American pool",
+        "branchId": 1,
+        "cloth": "",
+        "description": "",
+        "manufacturer": "WIK",
+        "model": "Kanclerz",
+        "name": "21",
+        "pockets": "",
+        "size": 0,
+        "slate": "",
+        "tableId": 21264040,
+        "venue": {
+          "image": "https://img.cuescore.com/image/d/3/d93a0f12945263a55729e1f3b6a15aaa.png?t=1546596159",
+          "name": "147 Break Nowogrodzka",
+          "owner": {
+            "logo": "//img.cuescore.com/image/7/2/71487152007d737c2f5de4f7821f7c9e.png?t=1555512394",
+            "name": "MGL Cue Sports",
+            "organizationId": 5133719,
+            "profileColor": "58a5fc",
+            "stub": "mglcuesports",
+            "url": "https://cuescore.com/mglcuesports"
+          },
+          "url": "https://cuescore.com/venue/147+Break+Nowogrodzka/1698108",
+          "venueId": 1698108
+        }
+      },
+      "tournamentId": 36666499,
+      "useInnings": false,
+      "videoLink": "",
+      "winnerNext": 19
     },
     {
+      "bestOfSets": 0,
+      "branch": 1,
+      "challengeId": 0,
+      "comment": "",
+      "curVersion": 123,
+      "discipline": "8-Ball",
+      "disciplineId": 2,
+      "frames": [],
+      "groupNo": 0,
+      "highBreaksA": "",
+      "highBreaksB": "",
+      "inningsPlayerA": 0,
+      "inningsPlayerB": 0,
+      "lagWinner": "",
+      "loserNext": "",
       "matchId": 36673042,
+      "matchType": 0,
+      "matchno": 16,
+      "matchstatus": "finished",
+      "matchstatusCode": 2,
+      "notes": [],
+      "penalty": 0,
       "playerA": {
+        "country": {
+          "alpha3": "POL",
+          "continent": "Europe",
+          "image": "https://cuescore.com/img/flags/png-country-4x2-none/res-640x480/pl.png",
+          "name": "Poland"
+        },
+        "firstname": "Piotr",
+        "image": "https://img.cuescore.com/image/b/4/b323f68ea60dfeff6372d8eccc56e5f3.png?t=1695217187",
+        "lastname": "Buraczewski",
         "name": "Piotr Buraczewski",
-        "playerId": 27677563
+        "playerId": 27677563,
+        "represents": [],
+        "url": "https://cuescore.com/player/Piotr+Buraczewski/27677563"
       },
       "playerB": {
+        "country": {
+          "alpha3": "UKR",
+          "continent": "Europe",
+          "image": "https://cuescore.com/img/flags/png-country-4x2-none/res-640x480/ua.png",
+          "name": "Ukraine"
+        },
+        "firstname": "Kateryna",
+        "image": "https://img.cuescore.com/image/5/4/5aa6aa48f7d5ffe854d5266ac08db7ef.png",
+        "lastname": "Brusova",
         "name": "Kateryna Brusova",
-        "playerId": 20385130
+        "playerId": 20385130,
+        "represents": [],
+        "url": "https://cuescore.com/player/Kateryna+Brusova/20385130"
       },
+      "properties": {
+        "penalty": []
+      },
+      "raceTo": 2,
+      "round": -1,
+      "roundName": "Loser round 1",
+      "runoutsA": 0,
+      "runoutsB": 0,
       "scoreA": 2,
       "scoreB": 0,
+      "sets": [],
       "starttime": "2024-01-08T19:53:00",
-      "stoptime": "2024-01-08T20:09:28"
+      "stoptime": "2024-01-08T20:09:28",
+      "table": {
+        "branch": "American pool",
+        "branchId": 1,
+        "cloth": "",
+        "description": "",
+        "manufacturer": "WIK",
+        "model": "Kanclerz",
+        "name": "18",
+        "pockets": "",
+        "size": 0,
+        "slate": "",
+        "tableId": 21264073,
+        "venue": {
+          "image": "https://img.cuescore.com/image/d/3/d93a0f12945263a55729e1f3b6a15aaa.png?t=1546596159",
+          "name": "147 Break Nowogrodzka",
+          "owner": {
+            "logo": "//img.cuescore.com/image/7/2/71487152007d737c2f5de4f7821f7c9e.png?t=1555512394",
+            "name": "MGL Cue Sports",
+            "organizationId": 5133719,
+            "profileColor": "58a5fc",
+            "stub": "mglcuesports",
+            "url": "https://cuescore.com/mglcuesports"
+          },
+          "url": "https://cuescore.com/venue/147+Break+Nowogrodzka/1698108",
+          "venueId": 1698108
+        }
+      },
+      "tournamentId": 36666499,
+      "useInnings": false,
+      "videoLink": "",
+      "winnerNext": 20
     },
     {
+      "bestOfSets": 0,
+      "branch": 1,
+      "challengeId": 0,
+      "comment": "",
+      "curVersion": 123,
+      "discipline": "8-Ball",
+      "disciplineId": 2,
+      "frames": [],
+      "groupNo": 0,
+      "highBreaksA": "",
+      "highBreaksB": "",
+      "inningsPlayerA": 0,
+      "inningsPlayerB": 0,
+      "lagWinner": "",
+      "loserNext": "",
       "matchId": 36673045,
+      "matchType": 0,
+      "matchno": 17,
+      "matchstatus": "finished",
+      "matchstatusCode": 2,
+      "notes": [],
+      "penalty": 0,
       "playerA": {
+        "country": {
+          "alpha3": "POL",
+          "continent": "Europe",
+          "image": "https://cuescore.com/img/flags/png-country-4x2-none/res-640x480/pl.png",
+          "name": "Poland"
+        },
+        "firstname": "Mariusz",
+        "image": "https://img.cuescore.com/image/4/4/41a22983b748885a3049158a9dd1d122.png?t=1632821262",
+        "lastname": "Kowalik",
         "name": "Mariusz Kowalik",
-        "playerId": 8507940
+        "playerId": 8507940,
+        "represents": [],
+        "url": "https://cuescore.com/player/Mariusz+Kowalik/8507940"
       },
       "playerB": {
+        "country": {
+          "alpha3": "POL",
+          "continent": "Europe",
+          "image": "https://cuescore.com/img/flags/png-country-4x2-none/res-640x480/pl.png",
+          "name": "Poland"
+        },
+        "firstname": "Krzysztof",
+        "image": "https://img.cuescore.com/image/8/4/862c792ba8eb7f97e626fbe6cbcc59f6.png",
+        "lastname": "Doroszkiewicz",
         "name": "Krzysztof Doroszkiewicz",
-        "playerId": 19794961
+        "playerId": 19794961,
+        "represents": [],
+        "url": "https://cuescore.com/player/Krzysztof+Doroszkiewicz/19794961"
       },
+      "properties": {
+        "penalty": []
+      },
+      "raceTo": 2,
+      "round": -2,
+      "roundName": "Losers qualification",
+      "runoutsA": 0,
+      "runoutsB": 0,
       "scoreA": 2,
       "scoreB": 1,
+      "sets": [],
       "starttime": "2024-01-08T20:29:00",
-      "stoptime": "2024-01-08T21:03:04"
+      "stoptime": "2024-01-08T21:03:04",
+      "table": {
+        "branch": "American pool",
+        "branchId": 1,
+        "cloth": "",
+        "description": "",
+        "manufacturer": "WIK",
+        "model": "Kanclerz",
+        "name": "19",
+        "pockets": "",
+        "size": 0,
+        "slate": "",
+        "tableId": 11840572,
+        "venue": {
+          "image": "https://img.cuescore.com/image/d/3/d93a0f12945263a55729e1f3b6a15aaa.png?t=1546596159",
+          "name": "147 Break Nowogrodzka",
+          "owner": {
+            "logo": "//img.cuescore.com/image/7/2/71487152007d737c2f5de4f7821f7c9e.png?t=1555512394",
+            "name": "MGL Cue Sports",
+            "organizationId": 5133719,
+            "profileColor": "58a5fc",
+            "stub": "mglcuesports",
+            "url": "https://cuescore.com/mglcuesports"
+          },
+          "url": "https://cuescore.com/venue/147+Break+Nowogrodzka/1698108",
+          "venueId": 1698108
+        }
+      },
+      "tournamentId": 36666499,
+      "useInnings": false,
+      "videoLink": "",
+      "winnerNext": ""
     },
     {
+      "bestOfSets": 0,
+      "branch": 1,
+      "challengeId": 0,
+      "comment": "",
+      "curVersion": 123,
+      "discipline": "8-Ball",
+      "disciplineId": 2,
+      "frames": [],
+      "groupNo": 0,
+      "highBreaksA": "",
+      "highBreaksB": "",
+      "inningsPlayerA": 0,
+      "inningsPlayerB": 0,
+      "lagWinner": "",
+      "loserNext": "",
       "matchId": 36673048,
+      "matchType": 0,
+      "matchno": 18,
+      "matchstatus": "finished",
+      "matchstatusCode": 2,
+      "notes": [],
+      "penalty": 0,
       "playerA": {
+        "country": {
+          "alpha3": "POL",
+          "continent": "Europe",
+          "image": "https://cuescore.com/img/flags/png-country-4x2-none/res-640x480/pl.png",
+          "name": "Poland"
+        },
+        "firstname": "Kuba",
+        "image": "https://img.cuescore.com/image/4/4/48866a1d5edc5d0e71c90c3a1cd01e8e.png?t=1714640859",
+        "lastname": "Dąbrowski",
         "name": "Kuba Dąbrowski",
-        "playerId": 25794352
+        "playerId": 25794352,
+        "represents": [],
+        "url": "https://cuescore.com/player/Kuba+D%C4%85browski/25794352"
       },
       "playerB": {
+        "country": {
+          "alpha3": "POL",
+          "continent": "Europe",
+          "image": "https://cuescore.com/img/flags/png-country-4x2-none/res-640x480/pl.png",
+          "name": "Poland"
+        },
+        "firstname": "Piotr",
+        "image": "https://img.cuescore.com/image/2/4/2465b793d6eecc80cd8e2164b32133f9.png?t=1580324523",
+        "lastname": "Kędzierski",
         "name": "Piotr Kędzierski",
-        "playerId": 4858951
+        "playerId": 4858951,
+        "represents": [],
+        "url": "https://cuescore.com/player/Piotr+K%C4%99dzierski/4858951"
       },
+      "properties": {
+        "penalty": []
+      },
+      "raceTo": 2,
+      "round": -2,
+      "roundName": "Losers qualification",
+      "runoutsA": 0,
+      "runoutsB": 0,
       "scoreA": 0,
       "scoreB": 2,
+      "sets": [],
       "starttime": "2024-01-08T20:22:00",
-      "stoptime": "2024-01-08T20:39:20"
+      "stoptime": "2024-01-08T20:39:20",
+      "table": {
+        "branch": "American pool",
+        "branchId": 1,
+        "cloth": "",
+        "description": "",
+        "manufacturer": "WIK",
+        "model": "Kanclerz",
+        "name": "17",
+        "pockets": "",
+        "size": 0,
+        "slate": "",
+        "tableId": 21264076,
+        "venue": {
+          "image": "https://img.cuescore.com/image/d/3/d93a0f12945263a55729e1f3b6a15aaa.png?t=1546596159",
+          "name": "147 Break Nowogrodzka",
+          "owner": {
+            "logo": "//img.cuescore.com/image/7/2/71487152007d737c2f5de4f7821f7c9e.png?t=1555512394",
+            "name": "MGL Cue Sports",
+            "organizationId": 5133719,
+            "profileColor": "58a5fc",
+            "stub": "mglcuesports",
+            "url": "https://cuescore.com/mglcuesports"
+          },
+          "url": "https://cuescore.com/venue/147+Break+Nowogrodzka/1698108",
+          "venueId": 1698108
+        }
+      },
+      "tournamentId": 36666499,
+      "useInnings": false,
+      "videoLink": "",
+      "winnerNext": ""
     },
     {
+      "bestOfSets": 0,
+      "branch": 1,
+      "challengeId": 0,
+      "comment": "",
+      "curVersion": 123,
+      "discipline": "8-Ball",
+      "disciplineId": 2,
+      "frames": [],
+      "groupNo": 0,
+      "highBreaksA": "",
+      "highBreaksB": "",
+      "inningsPlayerA": 0,
+      "inningsPlayerB": 0,
+      "lagWinner": "",
+      "loserNext": "",
       "matchId": 36673051,
+      "matchType": 0,
+      "matchno": 19,
+      "matchstatus": "finished",
+      "matchstatusCode": 2,
+      "notes": [],
+      "penalty": 0,
       "playerA": {
+        "country": {
+          "alpha3": "POL",
+          "continent": "Europe",
+          "image": "https://cuescore.com/img/flags/png-country-4x2-none/res-640x480/pl.png",
+          "name": "Poland"
+        },
+        "firstname": "Jakub",
+        "image": "https://img.cuescore.com/image/0/4/0387471a7ec668b972cfd07eb5da5a91.png?t=1745409523",
+        "lastname": "Stryj",
         "name": "Jakub Stryj",
-        "playerId": 16338394
+        "playerId": 16338394,
+        "represents": [],
+        "url": "https://cuescore.com/player/Jakub+Stryj/16338394"
       },
       "playerB": {
+        "country": {
+          "alpha3": "POL",
+          "continent": "Europe",
+          "image": "https://cuescore.com/img/flags/png-country-4x2-none/res-640x480/pl.png",
+          "name": "Poland"
+        },
+        "firstname": "Ksawery",
+        "image": "https://img.cuescore.com/image/8/4/862c792ba8eb7f97e626fbe6cbcc59f6.png",
+        "lastname": "Bajon",
         "name": "Ksawery Bajon",
-        "playerId": 1664281
+        "playerId": 1664281,
+        "represents": [],
+        "url": "https://cuescore.com/player/Ksawery+Bajon/1664281"
       },
+      "properties": {
+        "penalty": []
+      },
+      "raceTo": 2,
+      "round": -2,
+      "roundName": "Losers qualification",
+      "runoutsA": 0,
+      "runoutsB": 0,
       "scoreA": 0,
       "scoreB": 2,
+      "sets": [],
       "starttime": "2024-01-08T20:22:00",
-      "stoptime": "2024-01-08T20:32:43"
+      "stoptime": "2024-01-08T20:32:43",
+      "table": {
+        "branch": "American pool",
+        "branchId": 1,
+        "cloth": "",
+        "description": "",
+        "manufacturer": "WIK",
+        "model": "Olimpic",
+        "name": "14",
+        "pockets": "",
+        "size": 0,
+        "slate": "",
+        "tableId": 21264094,
+        "venue": {
+          "image": "https://img.cuescore.com/image/d/3/d93a0f12945263a55729e1f3b6a15aaa.png?t=1546596159",
+          "name": "147 Break Nowogrodzka",
+          "owner": {
+            "logo": "//img.cuescore.com/image/7/2/71487152007d737c2f5de4f7821f7c9e.png?t=1555512394",
+            "name": "MGL Cue Sports",
+            "organizationId": 5133719,
+            "profileColor": "58a5fc",
+            "stub": "mglcuesports",
+            "url": "https://cuescore.com/mglcuesports"
+          },
+          "url": "https://cuescore.com/venue/147+Break+Nowogrodzka/1698108",
+          "venueId": 1698108
+        }
+      },
+      "tournamentId": 36666499,
+      "useInnings": false,
+      "videoLink": "",
+      "winnerNext": ""
     },
     {
+      "bestOfSets": 0,
+      "branch": 1,
+      "challengeId": 0,
+      "comment": "",
+      "curVersion": 123,
+      "discipline": "8-Ball",
+      "disciplineId": 2,
+      "frames": [],
+      "groupNo": 0,
+      "highBreaksA": "",
+      "highBreaksB": "",
+      "inningsPlayerA": 0,
+      "inningsPlayerB": 0,
+      "lagWinner": "",
+      "loserNext": "",
       "matchId": 36673054,
+      "matchType": 0,
+      "matchno": 20,
+      "matchstatus": "finished",
+      "matchstatusCode": 2,
+      "notes": [],
+      "penalty": 0,
       "playerA": {
+        "country": {
+          "alpha3": "POL",
+          "continent": "Europe",
+          "image": "https://cuescore.com/img/flags/png-country-4x2-none/res-640x480/pl.png",
+          "name": "Poland"
+        },
+        "firstname": "Piotr",
+        "image": "https://img.cuescore.com/image/b/4/b323f68ea60dfeff6372d8eccc56e5f3.png?t=1695217187",
+        "lastname": "Buraczewski",
         "name": "Piotr Buraczewski",
-        "playerId": 27677563
+        "playerId": 27677563,
+        "represents": [],
+        "url": "https://cuescore.com/player/Piotr+Buraczewski/27677563"
       },
       "playerB": {
+        "country": {
+          "alpha3": "POL",
+          "continent": "Europe",
+          "image": "https://cuescore.com/img/flags/png-country-4x2-none/res-640x480/pl.png",
+          "name": "Poland"
+        },
+        "firstname": "Serdar",
+        "image": "https://img.cuescore.com/image/4/4/4b1240e8d84069afd6c7b8ed4c92ce1b.png?t=1747654316",
+        "lastname": "Sahet",
         "name": "Serdar Sahet",
-        "playerId": 24875071
+        "playerId": 24875071,
+        "represents": [],
+        "url": "https://cuescore.com/player/Serdar+Sahet/24875071"
       },
+      "properties": {
+        "penalty": []
+      },
+      "raceTo": 2,
+      "round": -2,
+      "roundName": "Losers qualification",
+      "runoutsA": 0,
+      "runoutsB": 0,
       "scoreA": 2,
       "scoreB": 0,
+      "sets": [],
       "starttime": "2024-01-08T21:22:00",
-      "stoptime": "2024-01-08T21:39:25"
+      "stoptime": "2024-01-08T21:39:25",
+      "table": {
+        "branch": "American pool",
+        "branchId": 1,
+        "cloth": "",
+        "description": "",
+        "manufacturer": "WIK",
+        "model": "Kanclerz",
+        "name": "21",
+        "pockets": "",
+        "size": 0,
+        "slate": "",
+        "tableId": 21264040,
+        "venue": {
+          "image": "https://img.cuescore.com/image/d/3/d93a0f12945263a55729e1f3b6a15aaa.png?t=1546596159",
+          "name": "147 Break Nowogrodzka",
+          "owner": {
+            "logo": "//img.cuescore.com/image/7/2/71487152007d737c2f5de4f7821f7c9e.png?t=1555512394",
+            "name": "MGL Cue Sports",
+            "organizationId": 5133719,
+            "profileColor": "58a5fc",
+            "stub": "mglcuesports",
+            "url": "https://cuescore.com/mglcuesports"
+          },
+          "url": "https://cuescore.com/venue/147+Break+Nowogrodzka/1698108",
+          "venueId": 1698108
+        }
+      },
+      "tournamentId": 36666499,
+      "useInnings": false,
+      "videoLink": "",
+      "winnerNext": ""
     },
     {
+      "bestOfSets": 0,
+      "branch": 1,
+      "challengeId": 0,
+      "comment": "",
+      "curVersion": 123,
+      "discipline": "8-Ball",
+      "disciplineId": 2,
+      "frames": [],
+      "groupNo": 0,
+      "highBreaksA": "",
+      "highBreaksB": "",
+      "inningsPlayerA": 0,
+      "inningsPlayerB": 0,
+      "lagWinner": "",
+      "loserNext": "",
       "matchId": 36673057,
+      "matchType": 0,
+      "matchno": 21,
+      "matchstatus": "finished",
+      "matchstatusCode": 2,
+      "notes": [],
+      "penalty": 0,
       "playerA": {
+        "country": {
+          "alpha3": "POL",
+          "continent": "Europe",
+          "image": "https://cuescore.com/img/flags/png-country-4x2-none/res-640x480/pl.png",
+          "name": "Poland"
+        },
+        "firstname": "Maciej",
+        "image": "https://img.cuescore.com/image/8/4/8bd3578c19ef8201ca1330519e82df1c.png?t=1707758826",
+        "lastname": "Pislewski",
         "name": "Maciej Pislewski",
-        "playerId": 7789003
+        "playerId": 7789003,
+        "represents": [],
+        "url": "https://cuescore.com/player/Maciej+Pislewski/7789003"
       },
       "playerB": {
+        "country": {
+          "alpha3": "POL",
+          "continent": "Europe",
+          "image": "https://cuescore.com/img/flags/png-country-4x2-none/res-640x480/pl.png",
+          "name": "Poland"
+        },
+        "firstname": "Ksawery",
+        "image": "https://img.cuescore.com/image/8/4/862c792ba8eb7f97e626fbe6cbcc59f6.png",
+        "lastname": "Bajon",
         "name": "Ksawery Bajon",
-        "playerId": 1664281
+        "playerId": 1664281,
+        "represents": [],
+        "url": "https://cuescore.com/player/Ksawery+Bajon/1664281"
       },
+      "properties": {
+        "penalty": []
+      },
+      "raceTo": 3,
+      "round": 3,
+      "roundName": "Quarter final",
+      "runoutsA": 0,
+      "runoutsB": 0,
       "scoreA": 1,
       "scoreB": 3,
+      "sets": [],
       "starttime": "2024-01-08T21:23:00",
-      "stoptime": "2024-01-08T21:58:05"
+      "stoptime": "2024-01-08T21:58:05",
+      "table": {
+        "branch": "American pool",
+        "branchId": 1,
+        "cloth": "",
+        "description": "",
+        "manufacturer": "WIK",
+        "model": "Kanclerz",
+        "name": "17",
+        "pockets": "",
+        "size": 0,
+        "slate": "",
+        "tableId": 21264076,
+        "venue": {
+          "image": "https://img.cuescore.com/image/d/3/d93a0f12945263a55729e1f3b6a15aaa.png?t=1546596159",
+          "name": "147 Break Nowogrodzka",
+          "owner": {
+            "logo": "//img.cuescore.com/image/7/2/71487152007d737c2f5de4f7821f7c9e.png?t=1555512394",
+            "name": "MGL Cue Sports",
+            "organizationId": 5133719,
+            "profileColor": "58a5fc",
+            "stub": "mglcuesports",
+            "url": "https://cuescore.com/mglcuesports"
+          },
+          "url": "https://cuescore.com/venue/147+Break+Nowogrodzka/1698108",
+          "venueId": 1698108
+        }
+      },
+      "tournamentId": 36666499,
+      "useInnings": false,
+      "videoLink": "",
+      "winnerNext": 25
     },
     {
+      "bestOfSets": 0,
+      "branch": 1,
+      "challengeId": 0,
+      "comment": "",
+      "curVersion": 123,
+      "discipline": "8-Ball",
+      "disciplineId": 2,
+      "frames": [],
+      "groupNo": 0,
+      "highBreaksA": "",
+      "highBreaksB": "",
+      "inningsPlayerA": 0,
+      "inningsPlayerB": 0,
+      "lagWinner": "",
+      "loserNext": "",
       "matchId": 36673060,
+      "matchType": 0,
+      "matchno": 22,
+      "matchstatus": "finished",
+      "matchstatusCode": 2,
+      "notes": [],
+      "penalty": 0,
       "playerA": {
+        "country": {
+          "alpha3": "POL",
+          "continent": "Europe",
+          "image": "https://cuescore.com/img/flags/png-country-4x2-none/res-640x480/pl.png",
+          "name": "Poland"
+        },
+        "firstname": "Władysław",
+        "image": "https://img.cuescore.com/image/2/4/23bdb1b627dd9c36eff48f7e1a9d3020.png?t=1724370654",
+        "lastname": "Machynia",
         "name": "Władysław Machynia",
-        "playerId": 15653797
+        "playerId": 15653797,
+        "represents": [],
+        "url": "https://cuescore.com/player/W%C5%82adys%C5%82aw+Machynia/15653797"
       },
       "playerB": {
+        "country": {
+          "alpha3": "POL",
+          "continent": "Europe",
+          "image": "https://cuescore.com/img/flags/png-country-4x2-none/res-640x480/pl.png",
+          "name": "Poland"
+        },
+        "firstname": "Piotr",
+        "image": "https://img.cuescore.com/image/b/4/b323f68ea60dfeff6372d8eccc56e5f3.png?t=1695217187",
+        "lastname": "Buraczewski",
         "name": "Piotr Buraczewski",
-        "playerId": 27677563
+        "playerId": 27677563,
+        "represents": [],
+        "url": "https://cuescore.com/player/Piotr+Buraczewski/27677563"
       },
+      "properties": {
+        "penalty": []
+      },
+      "raceTo": 3,
+      "round": 3,
+      "roundName": "Quarter final",
+      "runoutsA": 0,
+      "runoutsB": 0,
       "scoreA": 0,
       "scoreB": 3,
+      "sets": [],
       "starttime": "2024-01-08T21:39:00",
-      "stoptime": "2024-01-08T22:03:45"
+      "stoptime": "2024-01-08T22:03:45",
+      "table": {
+        "branch": "American pool",
+        "branchId": 1,
+        "cloth": "",
+        "description": "",
+        "manufacturer": "WIK",
+        "model": "Kanclerz",
+        "name": "21",
+        "pockets": "",
+        "size": 0,
+        "slate": "",
+        "tableId": 21264040,
+        "venue": {
+          "image": "https://img.cuescore.com/image/d/3/d93a0f12945263a55729e1f3b6a15aaa.png?t=1546596159",
+          "name": "147 Break Nowogrodzka",
+          "owner": {
+            "logo": "//img.cuescore.com/image/7/2/71487152007d737c2f5de4f7821f7c9e.png?t=1555512394",
+            "name": "MGL Cue Sports",
+            "organizationId": 5133719,
+            "profileColor": "58a5fc",
+            "stub": "mglcuesports",
+            "url": "https://cuescore.com/mglcuesports"
+          },
+          "url": "https://cuescore.com/venue/147+Break+Nowogrodzka/1698108",
+          "venueId": 1698108
+        }
+      },
+      "tournamentId": 36666499,
+      "useInnings": false,
+      "videoLink": "",
+      "winnerNext": 25
     },
     {
+      "bestOfSets": 0,
+      "branch": 1,
+      "challengeId": 0,
+      "comment": "",
+      "curVersion": 123,
+      "discipline": "8-Ball",
+      "disciplineId": 2,
+      "frames": [],
+      "groupNo": 0,
+      "highBreaksA": "",
+      "highBreaksB": "",
+      "inningsPlayerA": 0,
+      "inningsPlayerB": 0,
+      "lagWinner": "",
+      "loserNext": "",
       "matchId": 36673063,
+      "matchType": 0,
+      "matchno": 23,
+      "matchstatus": "finished",
+      "matchstatusCode": 2,
+      "notes": [],
+      "penalty": 0,
       "playerA": {
+        "country": {
+          "alpha3": "POL",
+          "continent": "Europe",
+          "image": "https://cuescore.com/img/flags/png-country-4x2-none/res-640x480/pl.png",
+          "name": "Poland"
+        },
+        "firstname": "Maciej",
+        "image": "https://img.cuescore.com/image/7/4/7a12d544331cdfdc823932d06f3cee47.png?t=1664835346",
+        "lastname": "Pęśko",
         "name": "Maciej Pęśko",
-        "playerId": 16245310
+        "playerId": 16245310,
+        "represents": [],
+        "url": "https://cuescore.com/player/Maciej+P%C4%99%C5%9Bko/16245310"
       },
       "playerB": {
+        "country": {
+          "alpha3": "POL",
+          "continent": "Europe",
+          "image": "https://cuescore.com/img/flags/png-country-4x2-none/res-640x480/pl.png",
+          "name": "Poland"
+        },
+        "firstname": "Mariusz",
+        "image": "https://img.cuescore.com/image/4/4/41a22983b748885a3049158a9dd1d122.png?t=1632821262",
+        "lastname": "Kowalik",
         "name": "Mariusz Kowalik",
-        "playerId": 8507940
+        "playerId": 8507940,
+        "represents": [],
+        "url": "https://cuescore.com/player/Mariusz+Kowalik/8507940"
       },
+      "properties": {
+        "penalty": []
+      },
+      "raceTo": 3,
+      "round": 3,
+      "roundName": "Quarter final",
+      "runoutsA": 0,
+      "runoutsB": 0,
       "scoreA": 3,
       "scoreB": 2,
+      "sets": [],
       "starttime": "2024-01-08T21:21:00",
-      "stoptime": "2024-01-08T22:32:49"
+      "stoptime": "2024-01-08T22:32:49",
+      "table": {
+        "branch": "American pool",
+        "branchId": 1,
+        "cloth": "",
+        "description": "",
+        "manufacturer": "WIK",
+        "model": "Kanclerz",
+        "name": "19",
+        "pockets": "",
+        "size": 0,
+        "slate": "",
+        "tableId": 11840572,
+        "venue": {
+          "image": "https://img.cuescore.com/image/d/3/d93a0f12945263a55729e1f3b6a15aaa.png?t=1546596159",
+          "name": "147 Break Nowogrodzka",
+          "owner": {
+            "logo": "//img.cuescore.com/image/7/2/71487152007d737c2f5de4f7821f7c9e.png?t=1555512394",
+            "name": "MGL Cue Sports",
+            "organizationId": 5133719,
+            "profileColor": "58a5fc",
+            "stub": "mglcuesports",
+            "url": "https://cuescore.com/mglcuesports"
+          },
+          "url": "https://cuescore.com/venue/147+Break+Nowogrodzka/1698108",
+          "venueId": 1698108
+        }
+      },
+      "tournamentId": 36666499,
+      "useInnings": false,
+      "videoLink": "",
+      "winnerNext": 26
     },
     {
+      "bestOfSets": 0,
+      "branch": 1,
+      "challengeId": 0,
+      "comment": "",
+      "curVersion": 123,
+      "discipline": "8-Ball",
+      "disciplineId": 2,
+      "frames": [],
+      "groupNo": 0,
+      "highBreaksA": "",
+      "highBreaksB": "",
+      "inningsPlayerA": 0,
+      "inningsPlayerB": 0,
+      "lagWinner": "",
+      "loserNext": "",
       "matchId": 36673066,
+      "matchType": 0,
+      "matchno": 24,
+      "matchstatus": "finished",
+      "matchstatusCode": 2,
+      "notes": [],
+      "penalty": 0,
       "playerA": {
+        "country": {
+          "alpha3": "POL",
+          "continent": "Europe",
+          "image": "https://cuescore.com/img/flags/png-country-4x2-none/res-640x480/pl.png",
+          "name": "Poland"
+        },
+        "firstname": "Przemysław",
+        "image": "https://img.cuescore.com/image/f/4/fa32b40586fc316d72f83c7ef097659c.png?t=1696278463",
+        "lastname": "Zasowski",
         "name": "Przemysław Zasowski",
-        "playerId": 27989371
+        "playerId": 27989371,
+        "represents": [],
+        "url": "https://cuescore.com/player/Przemys%C5%82aw+Zasowski/27989371"
       },
       "playerB": {
+        "country": {
+          "alpha3": "POL",
+          "continent": "Europe",
+          "image": "https://cuescore.com/img/flags/png-country-4x2-none/res-640x480/pl.png",
+          "name": "Poland"
+        },
+        "firstname": "Piotr",
+        "image": "https://img.cuescore.com/image/2/4/2465b793d6eecc80cd8e2164b32133f9.png?t=1580324523",
+        "lastname": "Kędzierski",
         "name": "Piotr Kędzierski",
-        "playerId": 4858951
+        "playerId": 4858951,
+        "represents": [],
+        "url": "https://cuescore.com/player/Piotr+K%C4%99dzierski/4858951"
       },
+      "properties": {
+        "penalty": []
+      },
+      "raceTo": 3,
+      "round": 3,
+      "roundName": "Quarter final",
+      "runoutsA": 0,
+      "runoutsB": 0,
       "scoreA": 3,
       "scoreB": 2,
+      "sets": [],
       "starttime": "2024-01-08T21:21:00",
-      "stoptime": "2024-01-08T22:06:43"
+      "stoptime": "2024-01-08T22:06:43",
+      "table": {
+        "branch": "American pool",
+        "branchId": 1,
+        "cloth": "",
+        "description": "",
+        "manufacturer": "WIK",
+        "model": "Kanclerz",
+        "name": "20",
+        "pockets": "",
+        "size": 0,
+        "slate": "",
+        "tableId": 21264013,
+        "venue": {
+          "image": "https://img.cuescore.com/image/d/3/d93a0f12945263a55729e1f3b6a15aaa.png?t=1546596159",
+          "name": "147 Break Nowogrodzka",
+          "owner": {
+            "logo": "//img.cuescore.com/image/7/2/71487152007d737c2f5de4f7821f7c9e.png?t=1555512394",
+            "name": "MGL Cue Sports",
+            "organizationId": 5133719,
+            "profileColor": "58a5fc",
+            "stub": "mglcuesports",
+            "url": "https://cuescore.com/mglcuesports"
+          },
+          "url": "https://cuescore.com/venue/147+Break+Nowogrodzka/1698108",
+          "venueId": 1698108
+        }
+      },
+      "tournamentId": 36666499,
+      "useInnings": false,
+      "videoLink": "",
+      "winnerNext": 26
     },
     {
+      "bestOfSets": 0,
+      "branch": 1,
+      "challengeId": 0,
+      "comment": "",
+      "curVersion": 123,
+      "discipline": "8-Ball",
+      "disciplineId": 2,
+      "frames": [],
+      "groupNo": 0,
+      "highBreaksA": "",
+      "highBreaksB": "",
+      "inningsPlayerA": 0,
+      "inningsPlayerB": 0,
+      "lagWinner": "",
+      "loserNext": "",
       "matchId": 36673069,
+      "matchType": 0,
+      "matchno": 25,
+      "matchstatus": "finished",
+      "matchstatusCode": 2,
+      "notes": [],
+      "penalty": 0,
       "playerA": {
+        "country": {
+          "alpha3": "POL",
+          "continent": "Europe",
+          "image": "https://cuescore.com/img/flags/png-country-4x2-none/res-640x480/pl.png",
+          "name": "Poland"
+        },
+        "firstname": "Ksawery",
+        "image": "https://img.cuescore.com/image/8/4/862c792ba8eb7f97e626fbe6cbcc59f6.png",
+        "lastname": "Bajon",
         "name": "Ksawery Bajon",
-        "playerId": 1664281
+        "playerId": 1664281,
+        "represents": [],
+        "url": "https://cuescore.com/player/Ksawery+Bajon/1664281"
       },
       "playerB": {
+        "country": {
+          "alpha3": "POL",
+          "continent": "Europe",
+          "image": "https://cuescore.com/img/flags/png-country-4x2-none/res-640x480/pl.png",
+          "name": "Poland"
+        },
+        "firstname": "Piotr",
+        "image": "https://img.cuescore.com/image/b/4/b323f68ea60dfeff6372d8eccc56e5f3.png?t=1695217187",
+        "lastname": "Buraczewski",
         "name": "Piotr Buraczewski",
-        "playerId": 27677563
+        "playerId": 27677563,
+        "represents": [],
+        "url": "https://cuescore.com/player/Piotr+Buraczewski/27677563"
       },
+      "properties": {
+        "penalty": []
+      },
+      "raceTo": 3,
+      "round": 4,
+      "roundName": "Semi final",
+      "runoutsA": 0,
+      "runoutsB": 0,
       "scoreA": 3,
       "scoreB": 1,
+      "sets": [],
       "starttime": "2024-01-08T22:07:00",
-      "stoptime": "2024-01-08T22:38:01"
+      "stoptime": "2024-01-08T22:38:01",
+      "table": [],
+      "tournamentId": 36666499,
+      "useInnings": false,
+      "videoLink": "",
+      "winnerNext": 27
     },
     {
+      "bestOfSets": 0,
+      "branch": 1,
+      "challengeId": 0,
+      "comment": "",
+      "curVersion": 123,
+      "discipline": "8-Ball",
+      "disciplineId": 2,
+      "frames": [],
+      "groupNo": 0,
+      "highBreaksA": "",
+      "highBreaksB": "",
+      "inningsPlayerA": 0,
+      "inningsPlayerB": 0,
+      "lagWinner": "",
+      "loserNext": "",
       "matchId": 36673072,
+      "matchType": 0,
+      "matchno": 26,
+      "matchstatus": "finished",
+      "matchstatusCode": 2,
+      "notes": [],
+      "penalty": 0,
       "playerA": {
+        "country": {
+          "alpha3": "POL",
+          "continent": "Europe",
+          "image": "https://cuescore.com/img/flags/png-country-4x2-none/res-640x480/pl.png",
+          "name": "Poland"
+        },
+        "firstname": "Maciej",
+        "image": "https://img.cuescore.com/image/7/4/7a12d544331cdfdc823932d06f3cee47.png?t=1664835346",
+        "lastname": "Pęśko",
         "name": "Maciej Pęśko",
-        "playerId": 16245310
+        "playerId": 16245310,
+        "represents": [],
+        "url": "https://cuescore.com/player/Maciej+P%C4%99%C5%9Bko/16245310"
       },
       "playerB": {
+        "country": {
+          "alpha3": "POL",
+          "continent": "Europe",
+          "image": "https://cuescore.com/img/flags/png-country-4x2-none/res-640x480/pl.png",
+          "name": "Poland"
+        },
+        "firstname": "Przemysław",
+        "image": "https://img.cuescore.com/image/f/4/fa32b40586fc316d72f83c7ef097659c.png?t=1696278463",
+        "lastname": "Zasowski",
         "name": "Przemysław Zasowski",
-        "playerId": 27989371
+        "playerId": 27989371,
+        "represents": [],
+        "url": "https://cuescore.com/player/Przemys%C5%82aw+Zasowski/27989371"
       },
+      "properties": {
+        "penalty": []
+      },
+      "raceTo": 3,
+      "round": 4,
+      "roundName": "Semi final",
+      "runoutsA": 0,
+      "runoutsB": 0,
       "scoreA": 1,
       "scoreB": 3,
+      "sets": [],
       "starttime": "2024-01-08T22:32:00",
-      "stoptime": "2024-01-08T23:12:45"
+      "stoptime": "2024-01-08T23:12:45",
+      "table": [],
+      "tournamentId": 36666499,
+      "useInnings": false,
+      "videoLink": "",
+      "winnerNext": 27
     },
     {
+      "bestOfSets": 0,
+      "branch": 1,
+      "challengeId": 0,
+      "comment": "",
+      "curVersion": 123,
+      "discipline": "8-Ball",
+      "disciplineId": 2,
+      "frames": [],
+      "groupNo": 0,
+      "highBreaksA": "",
+      "highBreaksB": "",
+      "inningsPlayerA": 0,
+      "inningsPlayerB": 0,
+      "lagWinner": "",
+      "loserNext": "",
       "matchId": 36673075,
+      "matchType": 0,
+      "matchno": 27,
+      "matchstatus": "finished",
+      "matchstatusCode": 2,
+      "notes": [],
+      "penalty": 0,
       "playerA": {
+        "country": {
+          "alpha3": "POL",
+          "continent": "Europe",
+          "image": "https://cuescore.com/img/flags/png-country-4x2-none/res-640x480/pl.png",
+          "name": "Poland"
+        },
+        "firstname": "Ksawery",
+        "image": "https://img.cuescore.com/image/8/4/862c792ba8eb7f97e626fbe6cbcc59f6.png",
+        "lastname": "Bajon",
         "name": "Ksawery Bajon",
-        "playerId": 1664281
+        "playerId": 1664281,
+        "represents": [],
+        "url": "https://cuescore.com/player/Ksawery+Bajon/1664281"
       },
       "playerB": {
+        "country": {
+          "alpha3": "POL",
+          "continent": "Europe",
+          "image": "https://cuescore.com/img/flags/png-country-4x2-none/res-640x480/pl.png",
+          "name": "Poland"
+        },
+        "firstname": "Przemysław",
+        "image": "https://img.cuescore.com/image/f/4/fa32b40586fc316d72f83c7ef097659c.png?t=1696278463",
+        "lastname": "Zasowski",
         "name": "Przemysław Zasowski",
-        "playerId": 27989371
+        "playerId": 27989371,
+        "represents": [],
+        "url": "https://cuescore.com/player/Przemys%C5%82aw+Zasowski/27989371"
       },
+      "properties": {
+        "penalty": []
+      },
+      "raceTo": 3,
+      "round": 5,
+      "roundName": "Final",
+      "runoutsA": 0,
+      "runoutsB": 0,
       "scoreA": 2,
       "scoreB": 3,
+      "sets": [],
       "starttime": "2024-01-08T23:12:00",
-      "stoptime": "2024-01-08T23:45:26"
+      "stoptime": "2024-01-08T23:45:26",
+      "table": {
+        "branch": "American pool",
+        "branchId": 1,
+        "cloth": "",
+        "description": "",
+        "manufacturer": "WIK",
+        "model": "Kanclerz",
+        "name": "19",
+        "pockets": "",
+        "size": 0,
+        "slate": "",
+        "tableId": 11840572,
+        "venue": {
+          "image": "https://img.cuescore.com/image/d/3/d93a0f12945263a55729e1f3b6a15aaa.png?t=1546596159",
+          "name": "147 Break Nowogrodzka",
+          "owner": {
+            "logo": "//img.cuescore.com/image/7/2/71487152007d737c2f5de4f7821f7c9e.png?t=1555512394",
+            "name": "MGL Cue Sports",
+            "organizationId": 5133719,
+            "profileColor": "58a5fc",
+            "stub": "mglcuesports",
+            "url": "https://cuescore.com/mglcuesports"
+          },
+          "url": "https://cuescore.com/venue/147+Break+Nowogrodzka/1698108",
+          "venueId": 1698108
+        }
+      },
+      "tournamentId": 36666499,
+      "useInnings": false,
+      "videoLink": "",
+      "winnerNext": ""
     }
   ],
   "name": "Beginner Cup XXIV - Masters",
+  "organizers": [
+    {
+      "logo": "//img.cuescore.com/image/9/2/9b59b70e156f2f8d0f1a879411c6ffd1.png?t=1576160578",
+      "name": "Black Ball Events",
+      "organizationId": 7011764,
+      "profileColor": "000000",
+      "stub": "blackballevents",
+      "url": "https://cuescore.com/blackballevents"
+    }
+  ],
+  "owner": {
+    "logo": "//img.cuescore.com/image/9/2/9b59b70e156f2f8d0f1a879411c6ffd1.png?t=1576160578",
+    "name": "Black Ball Events",
+    "organizationId": 7011764,
+    "profileColor": "000000",
+    "stub": "blackballevents",
+    "url": "https://cuescore.com/blackballevents"
+  },
+  "preseeds": {
+    "15653797": 4,
+    "16245310": 6,
+    "16338394": 14,
+    "1664281": 12,
+    "19794961": 2,
+    "20385130": 15,
+    "21541765": 5,
+    "24875071": 8,
+    "25794352": 13,
+    "27677563": 7,
+    "27989371": 10,
+    "3183586": 11,
+    "4858951": 3,
+    "7789003": 16,
+    "8507940": 1,
+    "9336598": 9
+  },
+  "rankings": [],
+  "sequence": 0,
+  "standings": [],
   "starttime": "2024-01-08T19:00:00+01:00",
+  "status": "Finished",
+  "statusCode": 2,
   "stoptime": "2024-01-08T23:00:00+01:00",
   "timezone": "Europe/Warsaw",
   "tournamentId": 36666499,
@@ -424,7 +2668,17 @@
   "url": "https://cuescore.com/tournament/Beginner+Cup+XXIV+-+Masters/36666499",
   "venues": [
     {
+      "image": "https://img.cuescore.com/image/d/3/d93a0f12945263a55729e1f3b6a15aaa.png?t=1546596159",
       "name": "147 Break Nowogrodzka",
+      "owner": {
+        "logo": "//img.cuescore.com/image/7/2/71487152007d737c2f5de4f7821f7c9e.png?t=1555512394",
+        "name": "MGL Cue Sports",
+        "organizationId": 5133719,
+        "profileColor": "58a5fc",
+        "stub": "mglcuesports",
+        "url": "https://cuescore.com/mglcuesports"
+      },
+      "url": "https://cuescore.com/venue/147+Break+Nowogrodzka/1698108",
       "venueId": 1698108
     }
   ]

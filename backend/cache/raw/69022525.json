@@ -1,455 +1,4329 @@
 {
+  "access": [],
   "banner": {
     "original": "//img.cuescore.com/image/8/1/836f30e4fdea6cd02f20208832f09e76.png?t=1758813921",
     "thumbnail": "//img.cuescore.com/image/8/7/836f30e4fdea6cd02f20208832f09e76.png?t=1758813921"
   },
+  "branch": 1,
   "breakrule": "winner",
+  "contacts": [
+    {
+      "country": {
+        "alpha3": "POL",
+        "continent": "Europe",
+        "image": "https://cuescore.com/img/flags/png-country-4x2-none/res-640x480/pl.png",
+        "name": "Poland"
+      },
+      "firstname": "Michał",
+      "image": "https://img.cuescore.com/image/1/4/15d291e83ead350107ae474e8623a6f5.png?t=1504629089",
+      "lastname": "Nowak",
+      "name": "Michał Nowak",
+      "playerId": 1620195,
+      "represents": [],
+      "url": "https://cuescore.com/player/Micha%C5%82+Nowak/1620195"
+    },
+    {
+      "country": {
+        "alpha3": "POL",
+        "continent": "Europe",
+        "image": "https://cuescore.com/img/flags/png-country-4x2-none/res-640x480/pl.png",
+        "name": "Poland"
+      },
+      "firstname": "Kacper",
+      "image": "https://img.cuescore.com/image/8/4/862c792ba8eb7f97e626fbe6cbcc59f6.png",
+      "lastname": "Kutra",
+      "name": "Kacper Kutra",
+      "playerId": 59183473,
+      "represents": [],
+      "url": "https://cuescore.com/player/Kacper+Kutra/59183473"
+    }
+  ],
   "deadline": "",
   "defaultRaceTo": 4,
   "description": "Turniej rankingowy WPT | Czwartki 19:00 | klub 147 Break Zamieniecka | odmiana multiball | wpisowe 60 zł | system grupowy\r\nZapraszamy do nowego sklepu bilardowego Shooters - sklep dla graczy! www.sklepbilardowy.eu",
   "discipline": "Multiball",
+  "disciplineId": 10,
   "displayDate": "September 25, 2025",
   "dresscode": "",
+  "entrystart": "",
   "format": 4,
+  "handicap": [],
   "matches": [
     {
+      "bestOfSets": 0,
+      "branch": 1,
+      "challengeId": 0,
+      "comment": "",
+      "curVersion": 160,
+      "discipline": "Multiball",
+      "disciplineId": 10,
+      "frames": [],
+      "groupNo": 1,
+      "highBreaksA": "",
+      "highBreaksB": "",
+      "inningsPlayerA": 0,
+      "inningsPlayerB": 0,
+      "lagWinner": "",
+      "loserNext": "",
       "matchId": 69051916,
+      "matchType": 0,
+      "matchno": 1,
+      "matchstatus": "finished",
+      "matchstatusCode": 2,
+      "notes": [],
+      "penalty": 0,
       "playerA": {
+        "country": {
+          "alpha3": "POL",
+          "continent": "Europe",
+          "image": "https://cuescore.com/img/flags/png-country-4x2-none/res-640x480/pl.png",
+          "name": "Poland"
+        },
+        "firstname": "Wojtek",
+        "image": "https://img.cuescore.com/image/8/4/862c792ba8eb7f97e626fbe6cbcc59f6.png",
+        "lastname": "Trajdos",
         "name": "Wojtek Trajdos",
-        "playerId": 57205030
+        "playerId": 57205030,
+        "represents": [],
+        "url": "https://cuescore.com/player/Wojtek+Trajdos/57205030"
       },
       "playerB": {
+        "country": {
+          "alpha3": "POL",
+          "continent": "Europe",
+          "image": "https://cuescore.com/img/flags/png-country-4x2-none/res-640x480/pl.png",
+          "name": "Poland"
+        },
+        "firstname": "Sebastian",
+        "image": "https://img.cuescore.com/image/8/4/862c792ba8eb7f97e626fbe6cbcc59f6.png",
+        "lastname": "Matura",
         "name": "Sebastian Matura",
-        "playerId": 36897787
+        "playerId": 36897787,
+        "represents": [],
+        "url": "https://cuescore.com/player/Sebastian+Matura/36897787"
       },
+      "properties": [],
+      "raceTo": 4,
+      "round": 1,
+      "roundName": "Round 1",
+      "runoutsA": 0,
+      "runoutsB": 0,
       "scoreA": 4,
       "scoreB": 2,
+      "sets": [],
       "starttime": "2025-09-25T19:07:00",
-      "stoptime": "2025-09-25T19:36:19"
+      "stoptime": "2025-09-25T19:36:19",
+      "table": {
+        "branch": "American pool",
+        "branchId": 1,
+        "cloth": "",
+        "description": "",
+        "manufacturer": "",
+        "model": "Tournament Champion Sport",
+        "name": "13",
+        "pockets": "",
+        "size": 9,
+        "slate": "",
+        "tableId": 2842371,
+        "venue": {
+          "image": "https://img.cuescore.com/image/e/3/ea714c9bb52caa765f7707d5dcbe7f3a.png?t=1533571231",
+          "name": "147 Break Zamieniecka",
+          "owner": {
+            "logo": "//img.cuescore.com/image/7/2/71487152007d737c2f5de4f7821f7c9e.png?t=1555512394",
+            "name": "MGL Cue Sports",
+            "organizationId": 5133719,
+            "profileColor": "58a5fc",
+            "stub": "mglcuesports",
+            "url": "https://cuescore.com/mglcuesports"
+          },
+          "url": "https://cuescore.com/venue/147+Break+Zamieniecka/2842336",
+          "venueId": 2842336
+        }
+      },
+      "tournamentId": 69022525,
+      "useInnings": false,
+      "videoLink": "",
+      "winnerNext": ""
     },
     {
+      "bestOfSets": 0,
+      "branch": 1,
+      "challengeId": 0,
+      "comment": "",
+      "curVersion": 160,
+      "discipline": "Multiball",
+      "disciplineId": 10,
+      "frames": [],
+      "groupNo": 1,
+      "highBreaksA": "",
+      "highBreaksB": "",
+      "inningsPlayerA": 0,
+      "inningsPlayerB": 0,
+      "lagWinner": "A",
+      "loserNext": "",
       "matchId": 69051919,
+      "matchType": 0,
+      "matchno": 2,
+      "matchstatus": "finished",
+      "matchstatusCode": 2,
+      "notes": [
+        {
+          "note": "frame start",
+          "time": "2025-09-25T19:40:24.195Z"
+        },
+        {
+          "note": "A breaking",
+          "time": "2025-09-25T19:40:24.195Z"
+        },
+        {
+          "note": "A frame win",
+          "time": "2025-09-25T19:50:36.366Z"
+        },
+        {
+          "note": "frame end",
+          "time": "2025-09-25T19:50:36.366Z"
+        },
+        {
+          "note": "frame start",
+          "time": "2025-09-25T19:50:36.366Z"
+        },
+        {
+          "note": "A breaking",
+          "time": "2025-09-25T19:50:36.366Z"
+        },
+        {
+          "note": "A frame win",
+          "time": "2025-09-25T19:59:18.044Z"
+        },
+        {
+          "note": "frame end",
+          "time": "2025-09-25T19:59:18.044Z"
+        },
+        {
+          "note": "frame start",
+          "time": "2025-09-25T19:59:18.044Z"
+        },
+        {
+          "note": "A breaking",
+          "time": "2025-09-25T19:59:18.044Z"
+        },
+        {
+          "note": "A frame win",
+          "time": "2025-09-25T20:04:17.424Z"
+        },
+        {
+          "note": "frame end",
+          "time": "2025-09-25T20:04:17.424Z"
+        },
+        {
+          "note": "frame start",
+          "time": "2025-09-25T20:04:17.424Z"
+        },
+        {
+          "note": "A breaking",
+          "time": "2025-09-25T20:04:17.424Z"
+        },
+        {
+          "note": "A frame win",
+          "time": "2025-09-25T20:13:44.396Z"
+        },
+        {
+          "note": "frame end",
+          "time": "2025-09-25T20:13:44.396Z"
+        },
+        {
+          "note": "match end",
+          "time": "2025-09-25T20:13:45.624Z"
+        }
+      ],
+      "penalty": 0,
       "playerA": {
+        "country": {
+          "alpha3": "POL",
+          "continent": "Europe",
+          "image": "https://cuescore.com/img/flags/png-country-4x2-none/res-640x480/pl.png",
+          "name": "Poland"
+        },
+        "firstname": "Tomasz",
+        "image": "https://img.cuescore.com/image/f/4/f6c3ed0575983da290988136b5759945.png?t=1756990200",
+        "lastname": "Deszczyński",
         "name": "Tomasz Deszczyński",
-        "playerId": 40365082
+        "playerId": 40365082,
+        "represents": [],
+        "url": "https://cuescore.com/player/Tomasz+Deszczy%C5%84ski/40365082"
       },
       "playerB": {
+        "country": {
+          "alpha3": "UKR",
+          "continent": "Europe",
+          "image": "https://cuescore.com/img/flags/png-country-4x2-none/res-640x480/ua.png",
+          "name": "Ukraine"
+        },
+        "firstname": "Ivan",
+        "image": "https://img.cuescore.com/image/2/4/2c93db15d52d17b300ed3d362a7ff6d1.png?t=1708679266",
+        "lastname": "Kuzmych",
         "name": "Ivan Kuzmych",
-        "playerId": 39854860
+        "playerId": 39854860,
+        "represents": [],
+        "url": "https://cuescore.com/player/Ivan+Kuzmych/39854860"
       },
+      "properties": {
+        "lagWinsA": 1,
+        "lagWinsB": 0,
+        "runoutsA": 0,
+        "runoutsB": 0
+      },
+      "raceTo": 4,
+      "round": 1,
+      "roundName": "Round 1",
+      "runoutsA": 0,
+      "runoutsB": 0,
       "scoreA": 4,
       "scoreB": 0,
+      "sets": [],
       "starttime": "2025-09-25T21:34:51",
-      "stoptime": "2025-09-25T22:13:48"
+      "stoptime": "2025-09-25T22:13:48",
+      "table": {
+        "branch": "American pool",
+        "branchId": 1,
+        "cloth": "",
+        "description": "",
+        "manufacturer": "",
+        "model": "Tournament Champion Sport",
+        "name": "17",
+        "pockets": "",
+        "size": 9,
+        "slate": "",
+        "tableId": 2842375,
+        "venue": {
+          "image": "https://img.cuescore.com/image/e/3/ea714c9bb52caa765f7707d5dcbe7f3a.png?t=1533571231",
+          "name": "147 Break Zamieniecka",
+          "owner": {
+            "logo": "//img.cuescore.com/image/7/2/71487152007d737c2f5de4f7821f7c9e.png?t=1555512394",
+            "name": "MGL Cue Sports",
+            "organizationId": 5133719,
+            "profileColor": "58a5fc",
+            "stub": "mglcuesports",
+            "url": "https://cuescore.com/mglcuesports"
+          },
+          "url": "https://cuescore.com/venue/147+Break+Zamieniecka/2842336",
+          "venueId": 2842336
+        }
+      },
+      "tournamentId": 69022525,
+      "useInnings": false,
+      "videoLink": "",
+      "winnerNext": ""
     },
     {
+      "bestOfSets": 0,
+      "branch": 1,
+      "challengeId": 0,
+      "comment": "",
+      "curVersion": 160,
+      "discipline": "Multiball",
+      "disciplineId": 10,
+      "frames": [],
+      "groupNo": 2,
+      "highBreaksA": "",
+      "highBreaksB": "",
+      "inningsPlayerA": 0,
+      "inningsPlayerB": 0,
+      "lagWinner": "A",
+      "loserNext": "",
       "matchId": 69051922,
+      "matchType": 0,
+      "matchno": 3,
+      "matchstatus": "finished",
+      "matchstatusCode": 2,
+      "notes": [
+        {
+          "note": "frame start",
+          "time": "2025-09-25T17:15:01.992Z"
+        },
+        {
+          "note": "A breaking",
+          "time": "2025-09-25T17:15:01.992Z"
+        },
+        {
+          "note": "B frame win",
+          "time": "2025-09-25T17:19:39.455Z"
+        },
+        {
+          "note": "frame end",
+          "time": "2025-09-25T17:19:39.455Z"
+        },
+        {
+          "note": "frame start",
+          "time": "2025-09-25T17:19:39.455Z"
+        },
+        {
+          "note": "B breaking",
+          "time": "2025-09-25T17:19:39.455Z"
+        },
+        {
+          "note": "B frame win",
+          "time": "2025-09-25T17:30:29.213Z"
+        },
+        {
+          "note": "frame end",
+          "time": "2025-09-25T17:30:29.213Z"
+        },
+        {
+          "note": "frame start",
+          "time": "2025-09-25T17:30:29.213Z"
+        },
+        {
+          "note": "B breaking",
+          "time": "2025-09-25T17:30:29.213Z"
+        },
+        {
+          "note": "A frame win",
+          "time": "2025-09-25T17:38:04.509Z"
+        },
+        {
+          "note": "frame end",
+          "time": "2025-09-25T17:38:04.509Z"
+        },
+        {
+          "note": "frame start",
+          "time": "2025-09-25T17:38:04.509Z"
+        },
+        {
+          "note": "A breaking",
+          "time": "2025-09-25T17:38:04.509Z"
+        },
+        {
+          "note": "A frame win",
+          "time": "2025-09-25T17:45:43.817Z"
+        },
+        {
+          "note": "frame end",
+          "time": "2025-09-25T17:45:43.817Z"
+        },
+        {
+          "note": "frame start",
+          "time": "2025-09-25T17:45:43.817Z"
+        },
+        {
+          "note": "A breaking",
+          "time": "2025-09-25T17:45:43.817Z"
+        },
+        {
+          "note": "A frame win",
+          "time": "2025-09-25T17:53:26.693Z"
+        },
+        {
+          "note": "frame end",
+          "time": "2025-09-25T17:53:26.693Z"
+        },
+        {
+          "note": "frame start",
+          "time": "2025-09-25T17:53:26.693Z"
+        },
+        {
+          "note": "A breaking",
+          "time": "2025-09-25T17:53:26.693Z"
+        },
+        {
+          "note": "A frame win",
+          "time": "2025-09-25T18:01:27.290Z"
+        },
+        {
+          "note": "frame end",
+          "time": "2025-09-25T18:01:27.290Z"
+        },
+        {
+          "note": "match end",
+          "time": "2025-09-25T18:01:28.266Z"
+        }
+      ],
+      "penalty": 0,
       "playerA": {
+        "country": {
+          "alpha3": "POL",
+          "continent": "Europe",
+          "image": "https://cuescore.com/img/flags/png-country-4x2-none/res-640x480/pl.png",
+          "name": "Poland"
+        },
+        "firstname": "Marcin",
+        "image": "https://img.cuescore.com/image/6/4/634670d25cfb0b8494e08327b2bb74b4.png?t=1736761259",
+        "lastname": "Kubalski",
         "name": "Marcin Kubalski",
-        "playerId": 1634586
+        "playerId": 1634586,
+        "represents": {
+          "logo": "//img.cuescore.com/image/2/2/2c18635ebc6f2e574949d524d3026197.png?t=1551972415",
+          "name": "Snooker.Zone",
+          "organizationId": 4991658,
+          "profileColor": "",
+          "stub": "snookerzone",
+          "url": "https://cuescore.com/snookerzone"
+        },
+        "url": "https://cuescore.com/player/Marcin+Kubalski/1634586"
       },
       "playerB": {
+        "country": {
+          "alpha3": "POL",
+          "continent": "Europe",
+          "image": "https://cuescore.com/img/flags/png-country-4x2-none/res-640x480/pl.png",
+          "name": "Poland"
+        },
+        "firstname": "Maciej",
+        "image": "https://img.cuescore.com/image/8/4/8bd3578c19ef8201ca1330519e82df1c.png?t=1707758826",
+        "lastname": "Pislewski",
         "name": "Maciej Pislewski",
-        "playerId": 7789003
+        "playerId": 7789003,
+        "represents": [],
+        "url": "https://cuescore.com/player/Maciej+Pislewski/7789003"
       },
+      "properties": {
+        "lagWinsA": 1,
+        "lagWinsB": 0,
+        "runoutsA": 0,
+        "runoutsB": 0
+      },
+      "raceTo": 4,
+      "round": 1,
+      "roundName": "Round 1",
+      "runoutsA": 0,
+      "runoutsB": 0,
       "scoreA": 4,
       "scoreB": 2,
+      "sets": [],
       "starttime": "2025-09-25T19:08:27",
-      "stoptime": "2025-09-25T20:01:30"
+      "stoptime": "2025-09-25T20:01:30",
+      "table": {
+        "branch": "American pool",
+        "branchId": 1,
+        "cloth": "",
+        "description": "",
+        "manufacturer": "",
+        "model": "Tournament Champion Sport",
+        "name": "15",
+        "pockets": "",
+        "size": 9,
+        "slate": "",
+        "tableId": 2842373,
+        "venue": {
+          "image": "https://img.cuescore.com/image/e/3/ea714c9bb52caa765f7707d5dcbe7f3a.png?t=1533571231",
+          "name": "147 Break Zamieniecka",
+          "owner": {
+            "logo": "//img.cuescore.com/image/7/2/71487152007d737c2f5de4f7821f7c9e.png?t=1555512394",
+            "name": "MGL Cue Sports",
+            "organizationId": 5133719,
+            "profileColor": "58a5fc",
+            "stub": "mglcuesports",
+            "url": "https://cuescore.com/mglcuesports"
+          },
+          "url": "https://cuescore.com/venue/147+Break+Zamieniecka/2842336",
+          "venueId": 2842336
+        }
+      },
+      "tournamentId": 69022525,
+      "useInnings": false,
+      "videoLink": "",
+      "winnerNext": ""
     },
     {
+      "bestOfSets": 0,
+      "branch": 1,
+      "challengeId": 0,
+      "comment": "",
+      "curVersion": 160,
+      "discipline": "Multiball",
+      "disciplineId": 10,
+      "frames": [],
+      "groupNo": 2,
+      "highBreaksA": "",
+      "highBreaksB": "",
+      "inningsPlayerA": 0,
+      "inningsPlayerB": 0,
+      "lagWinner": "",
+      "loserNext": "",
       "matchId": 69051925,
+      "matchType": 0,
+      "matchno": 4,
+      "matchstatus": "finished",
+      "matchstatusCode": 2,
+      "notes": [],
+      "penalty": 0,
       "playerA": {
+        "country": {
+          "alpha3": "POL",
+          "continent": "Europe",
+          "image": "https://cuescore.com/img/flags/png-country-4x2-none/res-640x480/pl.png",
+          "name": "Poland"
+        },
+        "firstname": "Adam",
+        "image": "https://img.cuescore.com/image/8/4/87fddf2df143364361c026d04ff77349.png?t=1736636400",
+        "lastname": "Kuryłek",
         "name": "Adam Kuryłek",
-        "playerId": 53167912
+        "playerId": 53167912,
+        "represents": [],
+        "url": "https://cuescore.com/player/Adam+Kury%C5%82ek/53167912"
       },
       "playerB": {
+        "country": {
+          "alpha3": "POL",
+          "continent": "Europe",
+          "image": "https://cuescore.com/img/flags/png-country-4x2-none/res-640x480/pl.png",
+          "name": "Poland"
+        },
+        "firstname": "Michał",
+        "image": "https://img.cuescore.com/image/8/4/862c792ba8eb7f97e626fbe6cbcc59f6.png",
+        "lastname": "Kozłowski",
         "name": "Michał Kozłowski",
-        "playerId": 6480431
+        "playerId": 6480431,
+        "represents": [],
+        "url": "https://cuescore.com/player/Micha%C5%82+Koz%C5%82owski/6480431"
       },
+      "properties": [],
+      "raceTo": 4,
+      "round": 1,
+      "roundName": "Round 1",
+      "runoutsA": 0,
+      "runoutsB": 0,
       "scoreA": 4,
       "scoreB": 2,
+      "sets": [],
       "starttime": "2025-09-25T19:08:00",
-      "stoptime": "2025-09-25T19:51:26"
+      "stoptime": "2025-09-25T19:51:26",
+      "table": {
+        "branch": "American pool",
+        "branchId": 1,
+        "cloth": "",
+        "description": "",
+        "manufacturer": "",
+        "model": "Tournament Champion Sport",
+        "name": "16",
+        "pockets": "",
+        "size": 9,
+        "slate": "",
+        "tableId": 2842374,
+        "venue": {
+          "image": "https://img.cuescore.com/image/e/3/ea714c9bb52caa765f7707d5dcbe7f3a.png?t=1533571231",
+          "name": "147 Break Zamieniecka",
+          "owner": {
+            "logo": "//img.cuescore.com/image/7/2/71487152007d737c2f5de4f7821f7c9e.png?t=1555512394",
+            "name": "MGL Cue Sports",
+            "organizationId": 5133719,
+            "profileColor": "58a5fc",
+            "stub": "mglcuesports",
+            "url": "https://cuescore.com/mglcuesports"
+          },
+          "url": "https://cuescore.com/venue/147+Break+Zamieniecka/2842336",
+          "venueId": 2842336
+        }
+      },
+      "tournamentId": 69022525,
+      "useInnings": false,
+      "videoLink": "",
+      "winnerNext": ""
     },
     {
+      "bestOfSets": 0,
+      "branch": 1,
+      "challengeId": 0,
+      "comment": "",
+      "curVersion": 160,
+      "discipline": "Multiball",
+      "disciplineId": 10,
+      "frames": [],
+      "groupNo": 3,
+      "highBreaksA": "",
+      "highBreaksB": "",
+      "inningsPlayerA": 0,
+      "inningsPlayerB": 0,
+      "lagWinner": "",
+      "loserNext": "",
       "matchId": 69051928,
+      "matchType": 0,
+      "matchno": 5,
+      "matchstatus": "finished",
+      "matchstatusCode": 2,
+      "notes": [],
+      "penalty": 0,
       "playerA": {
+        "country": {
+          "alpha3": "POL",
+          "continent": "Europe",
+          "image": "https://cuescore.com/img/flags/png-country-4x2-none/res-640x480/pl.png",
+          "name": "Poland"
+        },
+        "firstname": "Sebastian",
+        "image": "https://img.cuescore.com/image/8/4/8e25b60ff30ecb15ccb65e9c5875c024.png?t=1758874499",
+        "lastname": "Szymkowski",
         "name": "Sebastian Szymkowski",
-        "playerId": 1660831
+        "playerId": 1660831,
+        "represents": [],
+        "url": "https://cuescore.com/player/Sebastian+Szymkowski/1660831"
       },
       "playerB": {
+        "country": {
+          "alpha3": "POL",
+          "continent": "Europe",
+          "image": "https://cuescore.com/img/flags/png-country-4x2-none/res-640x480/pl.png",
+          "name": "Poland"
+        },
+        "firstname": "Kamil",
+        "image": "https://img.cuescore.com/image/b/4/b08ca302c82e5908139795cfcd114cb7.png?t=1709887390",
+        "lastname": "Pietruszewski",
         "name": "Kamil Pietruszewski",
-        "playerId": 40313560
+        "playerId": 40313560,
+        "represents": [],
+        "url": "https://cuescore.com/player/Kamil+Pietruszewski/40313560"
       },
+      "properties": [],
+      "raceTo": 4,
+      "round": 1,
+      "roundName": "Round 1",
+      "runoutsA": 0,
+      "runoutsB": 0,
       "scoreA": 3,
       "scoreB": 4,
+      "sets": [],
       "starttime": "2025-09-25T19:55:00",
-      "stoptime": "2025-09-25T20:36:11"
+      "stoptime": "2025-09-25T20:36:11",
+      "table": {
+        "branch": "American pool",
+        "branchId": 1,
+        "cloth": "",
+        "description": "",
+        "manufacturer": "",
+        "model": "Tournament Champion Sport",
+        "name": "18",
+        "pockets": "",
+        "size": 9,
+        "slate": "",
+        "tableId": 2842376,
+        "venue": {
+          "image": "https://img.cuescore.com/image/e/3/ea714c9bb52caa765f7707d5dcbe7f3a.png?t=1533571231",
+          "name": "147 Break Zamieniecka",
+          "owner": {
+            "logo": "//img.cuescore.com/image/7/2/71487152007d737c2f5de4f7821f7c9e.png?t=1555512394",
+            "name": "MGL Cue Sports",
+            "organizationId": 5133719,
+            "profileColor": "58a5fc",
+            "stub": "mglcuesports",
+            "url": "https://cuescore.com/mglcuesports"
+          },
+          "url": "https://cuescore.com/venue/147+Break+Zamieniecka/2842336",
+          "venueId": 2842336
+        }
+      },
+      "tournamentId": 69022525,
+      "useInnings": false,
+      "videoLink": "",
+      "winnerNext": ""
     },
     {
+      "bestOfSets": 0,
+      "branch": 1,
+      "challengeId": 0,
+      "comment": "",
+      "curVersion": 160,
+      "discipline": "Multiball",
+      "disciplineId": 10,
+      "frames": [],
+      "groupNo": 3,
+      "highBreaksA": "",
+      "highBreaksB": "",
+      "inningsPlayerA": 0,
+      "inningsPlayerB": 0,
+      "lagWinner": "",
+      "loserNext": "",
       "matchId": 69051931,
+      "matchType": 0,
+      "matchno": 6,
+      "matchstatus": "finished",
+      "matchstatusCode": 2,
+      "notes": [],
+      "penalty": 0,
       "playerA": {
+        "country": {
+          "alpha3": "POL",
+          "continent": "Europe",
+          "image": "https://cuescore.com/img/flags/png-country-4x2-none/res-640x480/pl.png",
+          "name": "Poland"
+        },
+        "firstname": "Tomek",
+        "image": "https://img.cuescore.com/image/7/4/74061c1f247d25c1c2939a2f33efb340.png?t=1677415392",
+        "lastname": "Kielmans",
         "name": "Tomek Kielmans",
-        "playerId": 2264676
+        "playerId": 2264676,
+        "represents": [],
+        "url": "https://cuescore.com/player/Tomek+Kielmans/2264676"
       },
       "playerB": {
+        "country": {
+          "alpha3": "POL",
+          "continent": "Europe",
+          "image": "https://cuescore.com/img/flags/png-country-4x2-none/res-640x480/pl.png",
+          "name": "Poland"
+        },
+        "firstname": "Konrad",
+        "image": "https://img.cuescore.com/image/3/4/3938c823ac80f29ca4f77ae8160c9cd2.png?t=1710606254",
+        "lastname": "Kowalski",
         "name": "Konrad Kowalski",
-        "playerId": 1620822
+        "playerId": 1620822,
+        "represents": [],
+        "url": "https://cuescore.com/player/Konrad+Kowalski/1620822"
       },
+      "properties": [],
+      "raceTo": 4,
+      "round": 1,
+      "roundName": "Round 1",
+      "runoutsA": 0,
+      "runoutsB": 0,
       "scoreA": 1,
       "scoreB": 4,
+      "sets": [],
       "starttime": "2025-09-25T19:41:00",
-      "stoptime": "2025-09-25T20:11:53"
+      "stoptime": "2025-09-25T20:11:53",
+      "table": {
+        "branch": "American pool",
+        "branchId": 1,
+        "cloth": "",
+        "description": "",
+        "manufacturer": "",
+        "model": "Tournament Champion Sport",
+        "name": "14",
+        "pockets": "",
+        "size": 9,
+        "slate": "",
+        "tableId": 2842372,
+        "venue": {
+          "image": "https://img.cuescore.com/image/e/3/ea714c9bb52caa765f7707d5dcbe7f3a.png?t=1533571231",
+          "name": "147 Break Zamieniecka",
+          "owner": {
+            "logo": "//img.cuescore.com/image/7/2/71487152007d737c2f5de4f7821f7c9e.png?t=1555512394",
+            "name": "MGL Cue Sports",
+            "organizationId": 5133719,
+            "profileColor": "58a5fc",
+            "stub": "mglcuesports",
+            "url": "https://cuescore.com/mglcuesports"
+          },
+          "url": "https://cuescore.com/venue/147+Break+Zamieniecka/2842336",
+          "venueId": 2842336
+        }
+      },
+      "tournamentId": 69022525,
+      "useInnings": false,
+      "videoLink": "",
+      "winnerNext": ""
     },
     {
+      "bestOfSets": 0,
+      "branch": 1,
+      "challengeId": 0,
+      "comment": "",
+      "curVersion": 160,
+      "discipline": "Multiball",
+      "disciplineId": 10,
+      "frames": [],
+      "groupNo": 1,
+      "highBreaksA": "",
+      "highBreaksB": "",
+      "inningsPlayerA": 0,
+      "inningsPlayerB": 0,
+      "lagWinner": "",
+      "loserNext": "",
       "matchId": 69051934,
+      "matchType": 0,
+      "matchno": 7,
+      "matchstatus": "finished",
+      "matchstatusCode": 2,
+      "notes": [],
+      "penalty": 0,
       "playerA": {
+        "country": {
+          "alpha3": "POL",
+          "continent": "Europe",
+          "image": "https://cuescore.com/img/flags/png-country-4x2-none/res-640x480/pl.png",
+          "name": "Poland"
+        },
+        "firstname": "Sebastian",
+        "image": "https://img.cuescore.com/image/8/4/862c792ba8eb7f97e626fbe6cbcc59f6.png",
+        "lastname": "Matura",
         "name": "Sebastian Matura",
-        "playerId": 36897787
+        "playerId": 36897787,
+        "represents": [],
+        "url": "https://cuescore.com/player/Sebastian+Matura/36897787"
       },
       "playerB": {
+        "country": {
+          "alpha3": "UKR",
+          "continent": "Europe",
+          "image": "https://cuescore.com/img/flags/png-country-4x2-none/res-640x480/ua.png",
+          "name": "Ukraine"
+        },
+        "firstname": "Ivan",
+        "image": "https://img.cuescore.com/image/2/4/2c93db15d52d17b300ed3d362a7ff6d1.png?t=1708679266",
+        "lastname": "Kuzmych",
         "name": "Ivan Kuzmych",
-        "playerId": 39854860
+        "playerId": 39854860,
+        "represents": [],
+        "url": "https://cuescore.com/player/Ivan+Kuzmych/39854860"
       },
+      "properties": [],
+      "raceTo": 4,
+      "round": 2,
+      "roundName": "Round 2",
+      "runoutsA": 0,
+      "runoutsB": 0,
       "scoreA": 2,
       "scoreB": 4,
+      "sets": [],
       "starttime": "2025-09-25T20:11:00",
-      "stoptime": "2025-09-25T20:49:11"
+      "stoptime": "2025-09-25T20:49:11",
+      "table": {
+        "branch": "American pool",
+        "branchId": 1,
+        "cloth": "",
+        "description": "",
+        "manufacturer": "",
+        "model": "Tournament Champion Sport",
+        "name": "17",
+        "pockets": "",
+        "size": 9,
+        "slate": "",
+        "tableId": 2842375,
+        "venue": {
+          "image": "https://img.cuescore.com/image/e/3/ea714c9bb52caa765f7707d5dcbe7f3a.png?t=1533571231",
+          "name": "147 Break Zamieniecka",
+          "owner": {
+            "logo": "//img.cuescore.com/image/7/2/71487152007d737c2f5de4f7821f7c9e.png?t=1555512394",
+            "name": "MGL Cue Sports",
+            "organizationId": 5133719,
+            "profileColor": "58a5fc",
+            "stub": "mglcuesports",
+            "url": "https://cuescore.com/mglcuesports"
+          },
+          "url": "https://cuescore.com/venue/147+Break+Zamieniecka/2842336",
+          "venueId": 2842336
+        }
+      },
+      "tournamentId": 69022525,
+      "useInnings": false,
+      "videoLink": "",
+      "winnerNext": ""
     },
     {
+      "bestOfSets": 0,
+      "branch": 1,
+      "challengeId": 0,
+      "comment": "",
+      "curVersion": 160,
+      "discipline": "Multiball",
+      "disciplineId": 10,
+      "frames": [],
+      "groupNo": 1,
+      "highBreaksA": "",
+      "highBreaksB": "",
+      "inningsPlayerA": 0,
+      "inningsPlayerB": 0,
+      "lagWinner": "A",
+      "loserNext": "",
       "matchId": 69051937,
+      "matchType": 0,
+      "matchno": 8,
+      "matchstatus": "finished",
+      "matchstatusCode": 2,
+      "notes": [
+        {
+          "note": "frame start",
+          "time": "2025-09-25T19:23:15.503Z"
+        },
+        {
+          "note": "A breaking",
+          "time": "2025-09-25T19:23:15.503Z"
+        },
+        {
+          "note": "B frame win",
+          "time": "2025-09-25T19:33:42.523Z"
+        },
+        {
+          "note": "frame end",
+          "time": "2025-09-25T19:33:42.523Z"
+        },
+        {
+          "note": "frame start",
+          "time": "2025-09-25T19:33:42.523Z"
+        },
+        {
+          "note": "B breaking",
+          "time": "2025-09-25T19:33:42.523Z"
+        },
+        {
+          "note": "A frame win",
+          "time": "2025-09-25T19:33:43.055Z"
+        },
+        {
+          "note": "frame end",
+          "time": "2025-09-25T19:33:43.055Z"
+        },
+        {
+          "note": "frame start",
+          "time": "2025-09-25T19:33:43.055Z"
+        },
+        {
+          "note": "A breaking",
+          "time": "2025-09-25T19:33:43.055Z"
+        },
+        {
+          "note": "A frame win runout",
+          "time": "2025-09-25T19:34:58.092Z"
+        },
+        {
+          "note": "frame end",
+          "time": "2025-09-25T19:34:58.092Z"
+        },
+        {
+          "note": "frame start",
+          "time": "2025-09-25T19:34:58.092Z"
+        },
+        {
+          "note": "A breaking",
+          "time": "2025-09-25T19:34:58.092Z"
+        },
+        {
+          "note": "A frame win",
+          "time": "2025-09-25T19:38:30.183Z"
+        },
+        {
+          "note": "frame end",
+          "time": "2025-09-25T19:38:30.183Z"
+        },
+        {
+          "note": "frame start",
+          "time": "2025-09-25T19:38:30.183Z"
+        },
+        {
+          "note": "A breaking",
+          "time": "2025-09-25T19:38:30.183Z"
+        }
+      ],
+      "penalty": 0,
       "playerA": {
+        "country": {
+          "alpha3": "POL",
+          "continent": "Europe",
+          "image": "https://cuescore.com/img/flags/png-country-4x2-none/res-640x480/pl.png",
+          "name": "Poland"
+        },
+        "firstname": "Wojtek",
+        "image": "https://img.cuescore.com/image/8/4/862c792ba8eb7f97e626fbe6cbcc59f6.png",
+        "lastname": "Trajdos",
         "name": "Wojtek Trajdos",
-        "playerId": 57205030
+        "playerId": 57205030,
+        "represents": [],
+        "url": "https://cuescore.com/player/Wojtek+Trajdos/57205030"
       },
       "playerB": {
+        "country": {
+          "alpha3": "POL",
+          "continent": "Europe",
+          "image": "https://cuescore.com/img/flags/png-country-4x2-none/res-640x480/pl.png",
+          "name": "Poland"
+        },
+        "firstname": "Kacper",
+        "image": "https://img.cuescore.com/image/c/4/c658d91cd903768c1f47248b22ca49c7.png?t=1649403803",
+        "lastname": "Kielmans",
         "name": "Kacper Kielmans",
-        "playerId": 1734129
+        "playerId": 1734129,
+        "represents": [],
+        "url": "https://cuescore.com/player/Kacper+Kielmans/1734129"
       },
+      "properties": {
+        "lagWinsA": 1,
+        "lagWinsB": 0,
+        "runoutsA": 1,
+        "runoutsB": 0
+      },
+      "raceTo": 4,
+      "round": 2,
+      "roundName": "Round 2",
+      "runoutsA": 1,
+      "runoutsB": 0,
       "scoreA": 4,
       "scoreB": 1,
+      "sets": [],
       "starttime": "2025-09-25T21:17:00",
-      "stoptime": "2025-09-25T21:41:16"
+      "stoptime": "2025-09-25T21:41:16",
+      "table": {
+        "branch": "American pool",
+        "branchId": 1,
+        "cloth": "",
+        "description": "",
+        "manufacturer": "",
+        "model": "Tournament Champion Sport",
+        "name": "11",
+        "pockets": "",
+        "size": 9,
+        "slate": "",
+        "tableId": 2842369,
+        "venue": {
+          "image": "https://img.cuescore.com/image/e/3/ea714c9bb52caa765f7707d5dcbe7f3a.png?t=1533571231",
+          "name": "147 Break Zamieniecka",
+          "owner": {
+            "logo": "//img.cuescore.com/image/7/2/71487152007d737c2f5de4f7821f7c9e.png?t=1555512394",
+            "name": "MGL Cue Sports",
+            "organizationId": 5133719,
+            "profileColor": "58a5fc",
+            "stub": "mglcuesports",
+            "url": "https://cuescore.com/mglcuesports"
+          },
+          "url": "https://cuescore.com/venue/147+Break+Zamieniecka/2842336",
+          "venueId": 2842336
+        }
+      },
+      "tournamentId": 69022525,
+      "useInnings": false,
+      "videoLink": "",
+      "winnerNext": ""
     },
     {
+      "bestOfSets": 0,
+      "branch": 1,
+      "challengeId": 0,
+      "comment": "",
+      "curVersion": 160,
+      "discipline": "Multiball",
+      "disciplineId": 10,
+      "frames": [],
+      "groupNo": 2,
+      "highBreaksA": "",
+      "highBreaksB": "",
+      "inningsPlayerA": 0,
+      "inningsPlayerB": 0,
+      "lagWinner": "",
+      "loserNext": "",
       "matchId": 69051940,
+      "matchType": 0,
+      "matchno": 9,
+      "matchstatus": "finished",
+      "matchstatusCode": 2,
+      "notes": [],
+      "penalty": 0,
       "playerA": {
+        "country": {
+          "alpha3": "POL",
+          "continent": "Europe",
+          "image": "https://cuescore.com/img/flags/png-country-4x2-none/res-640x480/pl.png",
+          "name": "Poland"
+        },
+        "firstname": "Marcin",
+        "image": "https://img.cuescore.com/image/6/4/634670d25cfb0b8494e08327b2bb74b4.png?t=1736761259",
+        "lastname": "Kubalski",
         "name": "Marcin Kubalski",
-        "playerId": 1634586
+        "playerId": 1634586,
+        "represents": {
+          "logo": "//img.cuescore.com/image/2/2/2c18635ebc6f2e574949d524d3026197.png?t=1551972415",
+          "name": "Snooker.Zone",
+          "organizationId": 4991658,
+          "profileColor": "",
+          "stub": "snookerzone",
+          "url": "https://cuescore.com/snookerzone"
+        },
+        "url": "https://cuescore.com/player/Marcin+Kubalski/1634586"
       },
       "playerB": {
+        "country": {
+          "alpha3": "POL",
+          "continent": "Europe",
+          "image": "https://cuescore.com/img/flags/png-country-4x2-none/res-640x480/pl.png",
+          "name": "Poland"
+        },
+        "firstname": "Michał",
+        "image": "https://img.cuescore.com/image/8/4/862c792ba8eb7f97e626fbe6cbcc59f6.png",
+        "lastname": "Kozłowski",
         "name": "Michał Kozłowski",
-        "playerId": 6480431
+        "playerId": 6480431,
+        "represents": [],
+        "url": "https://cuescore.com/player/Micha%C5%82+Koz%C5%82owski/6480431"
       },
+      "properties": [],
+      "raceTo": 4,
+      "round": 2,
+      "roundName": "Round 2",
+      "runoutsA": 0,
+      "runoutsB": 0,
       "scoreA": 4,
       "scoreB": 0,
+      "sets": [],
       "starttime": "2025-09-25T20:02:00",
-      "stoptime": "2025-09-25T20:31:22"
+      "stoptime": "2025-09-25T20:31:22",
+      "table": {
+        "branch": "American pool",
+        "branchId": 1,
+        "cloth": "",
+        "description": "",
+        "manufacturer": "",
+        "model": "Tournament Champion Sport",
+        "name": "15",
+        "pockets": "",
+        "size": 9,
+        "slate": "",
+        "tableId": 2842373,
+        "venue": {
+          "image": "https://img.cuescore.com/image/e/3/ea714c9bb52caa765f7707d5dcbe7f3a.png?t=1533571231",
+          "name": "147 Break Zamieniecka",
+          "owner": {
+            "logo": "//img.cuescore.com/image/7/2/71487152007d737c2f5de4f7821f7c9e.png?t=1555512394",
+            "name": "MGL Cue Sports",
+            "organizationId": 5133719,
+            "profileColor": "58a5fc",
+            "stub": "mglcuesports",
+            "url": "https://cuescore.com/mglcuesports"
+          },
+          "url": "https://cuescore.com/venue/147+Break+Zamieniecka/2842336",
+          "venueId": 2842336
+        }
+      },
+      "tournamentId": 69022525,
+      "useInnings": false,
+      "videoLink": "",
+      "winnerNext": ""
     },
     {
+      "bestOfSets": 0,
+      "branch": 1,
+      "challengeId": 0,
+      "comment": "",
+      "curVersion": 160,
+      "discipline": "Multiball",
+      "disciplineId": 10,
+      "frames": [],
+      "groupNo": 2,
+      "highBreaksA": "",
+      "highBreaksB": "",
+      "inningsPlayerA": 0,
+      "inningsPlayerB": 0,
+      "lagWinner": "A",
+      "loserNext": "",
       "matchId": 69051943,
+      "matchType": 0,
+      "matchno": 10,
+      "matchstatus": "finished",
+      "matchstatusCode": 2,
+      "notes": [
+        {
+          "note": "frame start",
+          "time": "2025-09-25T18:10:48.067Z"
+        },
+        {
+          "note": "A breaking",
+          "time": "2025-09-25T18:10:48.067Z"
+        },
+        {
+          "note": "B frame win",
+          "time": "2025-09-25T18:10:51.113Z"
+        },
+        {
+          "note": "frame end",
+          "time": "2025-09-25T18:10:51.113Z"
+        },
+        {
+          "note": "frame start",
+          "time": "2025-09-25T18:10:51.113Z"
+        },
+        {
+          "note": "B breaking",
+          "time": "2025-09-25T18:10:51.113Z"
+        },
+        {
+          "note": "B frame win",
+          "time": "2025-09-25T18:16:29.236Z"
+        },
+        {
+          "note": "frame end",
+          "time": "2025-09-25T18:16:29.236Z"
+        },
+        {
+          "note": "frame start",
+          "time": "2025-09-25T18:16:29.236Z"
+        },
+        {
+          "note": "B breaking",
+          "time": "2025-09-25T18:16:29.236Z"
+        }
+      ],
+      "penalty": 0,
       "playerA": {
+        "country": {
+          "alpha3": "POL",
+          "continent": "Europe",
+          "image": "https://cuescore.com/img/flags/png-country-4x2-none/res-640x480/pl.png",
+          "name": "Poland"
+        },
+        "firstname": "Maciej",
+        "image": "https://img.cuescore.com/image/8/4/8bd3578c19ef8201ca1330519e82df1c.png?t=1707758826",
+        "lastname": "Pislewski",
         "name": "Maciej Pislewski",
-        "playerId": 7789003
+        "playerId": 7789003,
+        "represents": [],
+        "url": "https://cuescore.com/player/Maciej+Pislewski/7789003"
       },
       "playerB": {
+        "country": {
+          "alpha3": "POL",
+          "continent": "Europe",
+          "image": "https://cuescore.com/img/flags/png-country-4x2-none/res-640x480/pl.png",
+          "name": "Poland"
+        },
+        "firstname": "Adam",
+        "image": "https://img.cuescore.com/image/8/4/87fddf2df143364361c026d04ff77349.png?t=1736636400",
+        "lastname": "Kuryłek",
         "name": "Adam Kuryłek",
-        "playerId": 53167912
+        "playerId": 53167912,
+        "represents": [],
+        "url": "https://cuescore.com/player/Adam+Kury%C5%82ek/53167912"
       },
+      "properties": {
+        "lagWinsA": 1,
+        "lagWinsB": 0,
+        "runoutsA": 0,
+        "runoutsB": 0
+      },
+      "raceTo": 4,
+      "round": 2,
+      "roundName": "Round 2",
+      "runoutsA": 0,
+      "runoutsB": 0,
       "scoreA": 0,
       "scoreB": 4,
+      "sets": [],
       "starttime": "2025-09-25T20:02:00",
-      "stoptime": "2025-09-25T20:32:24"
+      "stoptime": "2025-09-25T20:32:24",
+      "table": {
+        "branch": "American pool",
+        "branchId": 1,
+        "cloth": "",
+        "description": "",
+        "manufacturer": "",
+        "model": "Tournament Champion Sport",
+        "name": "16",
+        "pockets": "",
+        "size": 9,
+        "slate": "",
+        "tableId": 2842374,
+        "venue": {
+          "image": "https://img.cuescore.com/image/e/3/ea714c9bb52caa765f7707d5dcbe7f3a.png?t=1533571231",
+          "name": "147 Break Zamieniecka",
+          "owner": {
+            "logo": "//img.cuescore.com/image/7/2/71487152007d737c2f5de4f7821f7c9e.png?t=1555512394",
+            "name": "MGL Cue Sports",
+            "organizationId": 5133719,
+            "profileColor": "58a5fc",
+            "stub": "mglcuesports",
+            "url": "https://cuescore.com/mglcuesports"
+          },
+          "url": "https://cuescore.com/venue/147+Break+Zamieniecka/2842336",
+          "venueId": 2842336
+        }
+      },
+      "tournamentId": 69022525,
+      "useInnings": false,
+      "videoLink": "",
+      "winnerNext": ""
     },
     {
+      "bestOfSets": 0,
+      "branch": 1,
+      "challengeId": 0,
+      "comment": "",
+      "curVersion": 160,
+      "discipline": "Multiball",
+      "disciplineId": 10,
+      "frames": [],
+      "groupNo": 3,
+      "highBreaksA": "",
+      "highBreaksB": "",
+      "inningsPlayerA": 0,
+      "inningsPlayerB": 0,
+      "lagWinner": "",
+      "loserNext": "",
       "matchId": 69051946,
+      "matchType": 0,
+      "matchno": 11,
+      "matchstatus": "finished",
+      "matchstatusCode": 2,
+      "notes": [],
+      "penalty": 0,
       "playerA": {
+        "country": {
+          "alpha3": "POL",
+          "continent": "Europe",
+          "image": "https://cuescore.com/img/flags/png-country-4x2-none/res-640x480/pl.png",
+          "name": "Poland"
+        },
+        "firstname": "Sebastian",
+        "image": "https://img.cuescore.com/image/8/4/8e25b60ff30ecb15ccb65e9c5875c024.png?t=1758874499",
+        "lastname": "Szymkowski",
         "name": "Sebastian Szymkowski",
-        "playerId": 1660831
+        "playerId": 1660831,
+        "represents": [],
+        "url": "https://cuescore.com/player/Sebastian+Szymkowski/1660831"
       },
       "playerB": {
+        "country": {
+          "alpha3": "POL",
+          "continent": "Europe",
+          "image": "https://cuescore.com/img/flags/png-country-4x2-none/res-640x480/pl.png",
+          "name": "Poland"
+        },
+        "firstname": "Konrad",
+        "image": "https://img.cuescore.com/image/3/4/3938c823ac80f29ca4f77ae8160c9cd2.png?t=1710606254",
+        "lastname": "Kowalski",
         "name": "Konrad Kowalski",
-        "playerId": 1620822
+        "playerId": 1620822,
+        "represents": [],
+        "url": "https://cuescore.com/player/Konrad+Kowalski/1620822"
       },
+      "properties": {
+        "penalty": []
+      },
+      "raceTo": 4,
+      "round": 2,
+      "roundName": "Round 2",
+      "runoutsA": 0,
+      "runoutsB": 0,
       "scoreA": 4,
       "scoreB": 1,
+      "sets": [],
       "starttime": "2025-09-25T20:36:00",
-      "stoptime": "2025-09-25T20:57:12"
+      "stoptime": "2025-09-25T20:57:12",
+      "table": {
+        "branch": "American pool",
+        "branchId": 1,
+        "cloth": "",
+        "description": "",
+        "manufacturer": "",
+        "model": "Tournament Champion Sport",
+        "name": "14",
+        "pockets": "",
+        "size": 9,
+        "slate": "",
+        "tableId": 2842372,
+        "venue": {
+          "image": "https://img.cuescore.com/image/e/3/ea714c9bb52caa765f7707d5dcbe7f3a.png?t=1533571231",
+          "name": "147 Break Zamieniecka",
+          "owner": {
+            "logo": "//img.cuescore.com/image/7/2/71487152007d737c2f5de4f7821f7c9e.png?t=1555512394",
+            "name": "MGL Cue Sports",
+            "organizationId": 5133719,
+            "profileColor": "58a5fc",
+            "stub": "mglcuesports",
+            "url": "https://cuescore.com/mglcuesports"
+          },
+          "url": "https://cuescore.com/venue/147+Break+Zamieniecka/2842336",
+          "venueId": 2842336
+        }
+      },
+      "tournamentId": 69022525,
+      "useInnings": false,
+      "videoLink": "",
+      "winnerNext": ""
     },
     {
+      "bestOfSets": 0,
+      "branch": 1,
+      "challengeId": 0,
+      "comment": "",
+      "curVersion": 160,
+      "discipline": "Multiball",
+      "disciplineId": 10,
+      "frames": [],
+      "groupNo": 3,
+      "highBreaksA": "",
+      "highBreaksB": "",
+      "inningsPlayerA": 0,
+      "inningsPlayerB": 0,
+      "lagWinner": "",
+      "loserNext": "",
       "matchId": 69051949,
+      "matchType": 0,
+      "matchno": 12,
+      "matchstatus": "finished",
+      "matchstatusCode": 2,
+      "notes": [],
+      "penalty": 0,
       "playerA": {
+        "country": {
+          "alpha3": "POL",
+          "continent": "Europe",
+          "image": "https://cuescore.com/img/flags/png-country-4x2-none/res-640x480/pl.png",
+          "name": "Poland"
+        },
+        "firstname": "Kamil",
+        "image": "https://img.cuescore.com/image/b/4/b08ca302c82e5908139795cfcd114cb7.png?t=1709887390",
+        "lastname": "Pietruszewski",
         "name": "Kamil Pietruszewski",
-        "playerId": 40313560
+        "playerId": 40313560,
+        "represents": [],
+        "url": "https://cuescore.com/player/Kamil+Pietruszewski/40313560"
       },
       "playerB": {
+        "country": {
+          "alpha3": "POL",
+          "continent": "Europe",
+          "image": "https://cuescore.com/img/flags/png-country-4x2-none/res-640x480/pl.png",
+          "name": "Poland"
+        },
+        "firstname": "Tomek",
+        "image": "https://img.cuescore.com/image/7/4/74061c1f247d25c1c2939a2f33efb340.png?t=1677415392",
+        "lastname": "Kielmans",
         "name": "Tomek Kielmans",
-        "playerId": 2264676
+        "playerId": 2264676,
+        "represents": [],
+        "url": "https://cuescore.com/player/Tomek+Kielmans/2264676"
       },
+      "properties": [],
+      "raceTo": 4,
+      "round": 2,
+      "roundName": "Round 2",
+      "runoutsA": 0,
+      "runoutsB": 0,
       "scoreA": 0,
       "scoreB": 4,
+      "sets": [],
       "starttime": "2025-09-25T20:36:00",
-      "stoptime": "2025-09-25T21:11:57"
+      "stoptime": "2025-09-25T21:11:57",
+      "table": {
+        "branch": "American pool",
+        "branchId": 1,
+        "cloth": "",
+        "description": "",
+        "manufacturer": "",
+        "model": "Tournament Champion Sport",
+        "name": "18",
+        "pockets": "",
+        "size": 9,
+        "slate": "",
+        "tableId": 2842376,
+        "venue": {
+          "image": "https://img.cuescore.com/image/e/3/ea714c9bb52caa765f7707d5dcbe7f3a.png?t=1533571231",
+          "name": "147 Break Zamieniecka",
+          "owner": {
+            "logo": "//img.cuescore.com/image/7/2/71487152007d737c2f5de4f7821f7c9e.png?t=1555512394",
+            "name": "MGL Cue Sports",
+            "organizationId": 5133719,
+            "profileColor": "58a5fc",
+            "stub": "mglcuesports",
+            "url": "https://cuescore.com/mglcuesports"
+          },
+          "url": "https://cuescore.com/venue/147+Break+Zamieniecka/2842336",
+          "venueId": 2842336
+        }
+      },
+      "tournamentId": 69022525,
+      "useInnings": false,
+      "videoLink": "",
+      "winnerNext": ""
     },
     {
+      "bestOfSets": 0,
+      "branch": 1,
+      "challengeId": 0,
+      "comment": "",
+      "curVersion": 160,
+      "discipline": "Multiball",
+      "disciplineId": 10,
+      "frames": [],
+      "groupNo": 1,
+      "highBreaksA": "",
+      "highBreaksB": "",
+      "inningsPlayerA": 0,
+      "inningsPlayerB": 0,
+      "lagWinner": "B",
+      "loserNext": "",
       "matchId": 69051952,
+      "matchType": 0,
+      "matchno": 13,
+      "matchstatus": "finished",
+      "matchstatusCode": 2,
+      "notes": [
+        {
+          "note": "frame start",
+          "time": "2025-09-25T17:41:58.896Z"
+        },
+        {
+          "note": "B breaking",
+          "time": "2025-09-25T17:41:58.896Z"
+        },
+        {
+          "note": "B frame win",
+          "time": "2025-09-25T17:42:01.108Z"
+        },
+        {
+          "note": "frame end",
+          "time": "2025-09-25T17:42:01.108Z"
+        },
+        {
+          "note": "frame start",
+          "time": "2025-09-25T17:42:01.108Z"
+        },
+        {
+          "note": "B breaking",
+          "time": "2025-09-25T17:42:01.108Z"
+        },
+        {
+          "note": "A frame win",
+          "time": "2025-09-25T17:47:19.754Z"
+        },
+        {
+          "note": "frame end",
+          "time": "2025-09-25T17:47:19.754Z"
+        },
+        {
+          "note": "frame start",
+          "time": "2025-09-25T17:47:19.754Z"
+        },
+        {
+          "note": "A breaking",
+          "time": "2025-09-25T17:47:19.754Z"
+        },
+        {
+          "note": "A frame win",
+          "time": "2025-09-25T17:52:44.449Z"
+        },
+        {
+          "note": "frame end",
+          "time": "2025-09-25T17:52:44.449Z"
+        },
+        {
+          "note": "frame start",
+          "time": "2025-09-25T17:52:44.449Z"
+        },
+        {
+          "note": "A breaking",
+          "time": "2025-09-25T17:52:44.449Z"
+        },
+        {
+          "note": "A frame win",
+          "time": "2025-09-25T18:01:46.546Z"
+        },
+        {
+          "note": "frame end",
+          "time": "2025-09-25T18:01:46.546Z"
+        },
+        {
+          "note": "frame start",
+          "time": "2025-09-25T18:01:46.546Z"
+        },
+        {
+          "note": "A breaking",
+          "time": "2025-09-25T18:01:46.546Z"
+        }
+      ],
+      "penalty": 0,
       "playerA": {
+        "country": {
+          "alpha3": "UKR",
+          "continent": "Europe",
+          "image": "https://cuescore.com/img/flags/png-country-4x2-none/res-640x480/ua.png",
+          "name": "Ukraine"
+        },
+        "firstname": "Ivan",
+        "image": "https://img.cuescore.com/image/2/4/2c93db15d52d17b300ed3d362a7ff6d1.png?t=1708679266",
+        "lastname": "Kuzmych",
         "name": "Ivan Kuzmych",
-        "playerId": 39854860
+        "playerId": 39854860,
+        "represents": [],
+        "url": "https://cuescore.com/player/Ivan+Kuzmych/39854860"
       },
       "playerB": {
+        "country": {
+          "alpha3": "POL",
+          "continent": "Europe",
+          "image": "https://cuescore.com/img/flags/png-country-4x2-none/res-640x480/pl.png",
+          "name": "Poland"
+        },
+        "firstname": "Kacper",
+        "image": "https://img.cuescore.com/image/c/4/c658d91cd903768c1f47248b22ca49c7.png?t=1649403803",
+        "lastname": "Kielmans",
         "name": "Kacper Kielmans",
-        "playerId": 1734129
+        "playerId": 1734129,
+        "represents": [],
+        "url": "https://cuescore.com/player/Kacper+Kielmans/1734129"
       },
+      "properties": {
+        "lagWinsA": 0,
+        "lagWinsB": 1,
+        "runoutsA": 0,
+        "runoutsB": 0
+      },
+      "raceTo": 4,
+      "round": 3,
+      "roundName": "Round 3",
+      "runoutsA": 0,
+      "runoutsB": 0,
       "scoreA": 4,
       "scoreB": 1,
+      "sets": [],
       "starttime": "2025-09-25T19:26:00",
-      "stoptime": "2025-09-25T20:11:01"
+      "stoptime": "2025-09-25T20:11:01",
+      "table": {
+        "branch": "American pool",
+        "branchId": 1,
+        "cloth": "",
+        "description": "",
+        "manufacturer": "",
+        "model": "Tournament Champion Sport",
+        "name": "17",
+        "pockets": "",
+        "size": 9,
+        "slate": "",
+        "tableId": 2842375,
+        "venue": {
+          "image": "https://img.cuescore.com/image/e/3/ea714c9bb52caa765f7707d5dcbe7f3a.png?t=1533571231",
+          "name": "147 Break Zamieniecka",
+          "owner": {
+            "logo": "//img.cuescore.com/image/7/2/71487152007d737c2f5de4f7821f7c9e.png?t=1555512394",
+            "name": "MGL Cue Sports",
+            "organizationId": 5133719,
+            "profileColor": "58a5fc",
+            "stub": "mglcuesports",
+            "url": "https://cuescore.com/mglcuesports"
+          },
+          "url": "https://cuescore.com/venue/147+Break+Zamieniecka/2842336",
+          "venueId": 2842336
+        }
+      },
+      "tournamentId": 69022525,
+      "useInnings": false,
+      "videoLink": "",
+      "winnerNext": ""
     },
     {
+      "bestOfSets": 0,
+      "branch": 1,
+      "challengeId": 0,
+      "comment": "",
+      "curVersion": 160,
+      "discipline": "Multiball",
+      "disciplineId": 10,
+      "frames": [],
+      "groupNo": 1,
+      "highBreaksA": "",
+      "highBreaksB": "",
+      "inningsPlayerA": 0,
+      "inningsPlayerB": 0,
+      "lagWinner": "A",
+      "loserNext": "",
       "matchId": 69051955,
+      "matchType": 0,
+      "matchno": 14,
+      "matchstatus": "finished",
+      "matchstatusCode": 2,
+      "notes": [
+        {
+          "note": "frame start",
+          "time": "2025-09-25T18:59:44.455Z"
+        },
+        {
+          "note": "A breaking",
+          "time": "2025-09-25T18:59:44.455Z"
+        },
+        {
+          "note": "A frame win",
+          "time": "2025-09-25T19:07:03.126Z"
+        },
+        {
+          "note": "frame end",
+          "time": "2025-09-25T19:07:03.126Z"
+        },
+        {
+          "note": "frame start",
+          "time": "2025-09-25T19:07:03.126Z"
+        },
+        {
+          "note": "A breaking",
+          "time": "2025-09-25T19:07:03.126Z"
+        },
+        {
+          "note": "B frame win",
+          "time": "2025-09-25T19:14:12.521Z"
+        },
+        {
+          "note": "frame end",
+          "time": "2025-09-25T19:14:12.521Z"
+        },
+        {
+          "note": "frame start",
+          "time": "2025-09-25T19:14:12.521Z"
+        },
+        {
+          "note": "B breaking",
+          "time": "2025-09-25T19:14:12.521Z"
+        },
+        {
+          "note": "B frame win",
+          "time": "2025-09-25T19:20:57.910Z"
+        },
+        {
+          "note": "frame end",
+          "time": "2025-09-25T19:20:57.910Z"
+        },
+        {
+          "note": "frame start",
+          "time": "2025-09-25T19:20:57.910Z"
+        },
+        {
+          "note": "B breaking",
+          "time": "2025-09-25T19:20:57.910Z"
+        },
+        {
+          "note": "B frame win",
+          "time": "2025-09-25T19:26:36.028Z"
+        },
+        {
+          "note": "frame end",
+          "time": "2025-09-25T19:26:36.028Z"
+        },
+        {
+          "note": "frame start",
+          "time": "2025-09-25T19:26:36.028Z"
+        },
+        {
+          "note": "B breaking",
+          "time": "2025-09-25T19:26:36.028Z"
+        },
+        {
+          "note": "B frame win",
+          "time": "2025-09-25T19:33:37.724Z"
+        },
+        {
+          "note": "frame end",
+          "time": "2025-09-25T19:33:37.724Z"
+        },
+        {
+          "note": "match end",
+          "time": "2025-09-25T19:33:39.880Z"
+        }
+      ],
+      "penalty": 0,
       "playerA": {
+        "country": {
+          "alpha3": "POL",
+          "continent": "Europe",
+          "image": "https://cuescore.com/img/flags/png-country-4x2-none/res-640x480/pl.png",
+          "name": "Poland"
+        },
+        "firstname": "Sebastian",
+        "image": "https://img.cuescore.com/image/8/4/862c792ba8eb7f97e626fbe6cbcc59f6.png",
+        "lastname": "Matura",
         "name": "Sebastian Matura",
-        "playerId": 36897787
+        "playerId": 36897787,
+        "represents": [],
+        "url": "https://cuescore.com/player/Sebastian+Matura/36897787"
       },
       "playerB": {
+        "country": {
+          "alpha3": "POL",
+          "continent": "Europe",
+          "image": "https://cuescore.com/img/flags/png-country-4x2-none/res-640x480/pl.png",
+          "name": "Poland"
+        },
+        "firstname": "Tomasz",
+        "image": "https://img.cuescore.com/image/f/4/f6c3ed0575983da290988136b5759945.png?t=1756990200",
+        "lastname": "Deszczyński",
         "name": "Tomasz Deszczyński",
-        "playerId": 40365082
+        "playerId": 40365082,
+        "represents": [],
+        "url": "https://cuescore.com/player/Tomasz+Deszczy%C5%84ski/40365082"
       },
+      "properties": {
+        "lagWinsA": 1,
+        "lagWinsB": 0,
+        "runoutsA": 0,
+        "runoutsB": 0
+      },
+      "raceTo": 4,
+      "round": 3,
+      "roundName": "Round 3",
+      "runoutsA": 0,
+      "runoutsB": 0,
       "scoreA": 1,
       "scoreB": 4,
+      "sets": [],
       "starttime": "2025-09-25T20:53:19",
-      "stoptime": "2025-09-25T21:33:43"
+      "stoptime": "2025-09-25T21:33:43",
+      "table": {
+        "branch": "American pool",
+        "branchId": 1,
+        "cloth": "",
+        "description": "",
+        "manufacturer": "",
+        "model": "Tournament Champion Sport",
+        "name": "13",
+        "pockets": "",
+        "size": 9,
+        "slate": "",
+        "tableId": 2842371,
+        "venue": {
+          "image": "https://img.cuescore.com/image/e/3/ea714c9bb52caa765f7707d5dcbe7f3a.png?t=1533571231",
+          "name": "147 Break Zamieniecka",
+          "owner": {
+            "logo": "//img.cuescore.com/image/7/2/71487152007d737c2f5de4f7821f7c9e.png?t=1555512394",
+            "name": "MGL Cue Sports",
+            "organizationId": 5133719,
+            "profileColor": "58a5fc",
+            "stub": "mglcuesports",
+            "url": "https://cuescore.com/mglcuesports"
+          },
+          "url": "https://cuescore.com/venue/147+Break+Zamieniecka/2842336",
+          "venueId": 2842336
+        }
+      },
+      "tournamentId": 69022525,
+      "useInnings": false,
+      "videoLink": "",
+      "winnerNext": ""
     },
     {
+      "bestOfSets": 0,
+      "branch": 1,
+      "challengeId": 0,
+      "comment": "",
+      "curVersion": 160,
+      "discipline": "Multiball",
+      "disciplineId": 10,
+      "frames": [],
+      "groupNo": 2,
+      "highBreaksA": "",
+      "highBreaksB": "",
+      "inningsPlayerA": 0,
+      "inningsPlayerB": 0,
+      "lagWinner": "",
+      "loserNext": "",
       "matchId": 69051958,
+      "matchType": 0,
+      "matchno": 15,
+      "matchstatus": "finished",
+      "matchstatusCode": 2,
+      "notes": [],
+      "penalty": 0,
       "playerA": {
+        "country": {
+          "alpha3": "POL",
+          "continent": "Europe",
+          "image": "https://cuescore.com/img/flags/png-country-4x2-none/res-640x480/pl.png",
+          "name": "Poland"
+        },
+        "firstname": "Marcin",
+        "image": "https://img.cuescore.com/image/6/4/634670d25cfb0b8494e08327b2bb74b4.png?t=1736761259",
+        "lastname": "Kubalski",
         "name": "Marcin Kubalski",
-        "playerId": 1634586
+        "playerId": 1634586,
+        "represents": {
+          "logo": "//img.cuescore.com/image/2/2/2c18635ebc6f2e574949d524d3026197.png?t=1551972415",
+          "name": "Snooker.Zone",
+          "organizationId": 4991658,
+          "profileColor": "",
+          "stub": "snookerzone",
+          "url": "https://cuescore.com/snookerzone"
+        },
+        "url": "https://cuescore.com/player/Marcin+Kubalski/1634586"
       },
       "playerB": {
+        "country": {
+          "alpha3": "POL",
+          "continent": "Europe",
+          "image": "https://cuescore.com/img/flags/png-country-4x2-none/res-640x480/pl.png",
+          "name": "Poland"
+        },
+        "firstname": "Adam",
+        "image": "https://img.cuescore.com/image/8/4/87fddf2df143364361c026d04ff77349.png?t=1736636400",
+        "lastname": "Kuryłek",
         "name": "Adam Kuryłek",
-        "playerId": 53167912
+        "playerId": 53167912,
+        "represents": [],
+        "url": "https://cuescore.com/player/Adam+Kury%C5%82ek/53167912"
       },
+      "properties": [],
+      "raceTo": 4,
+      "round": 3,
+      "roundName": "Round 3",
+      "runoutsA": 0,
+      "runoutsB": 0,
       "scoreA": 4,
       "scoreB": 0,
+      "sets": [],
       "starttime": "2025-09-25T20:32:00",
-      "stoptime": "2025-09-25T20:59:42"
+      "stoptime": "2025-09-25T20:59:42",
+      "table": {
+        "branch": "American pool",
+        "branchId": 1,
+        "cloth": "",
+        "description": "",
+        "manufacturer": "",
+        "model": "Tournament Champion Sport",
+        "name": "15",
+        "pockets": "",
+        "size": 9,
+        "slate": "",
+        "tableId": 2842373,
+        "venue": {
+          "image": "https://img.cuescore.com/image/e/3/ea714c9bb52caa765f7707d5dcbe7f3a.png?t=1533571231",
+          "name": "147 Break Zamieniecka",
+          "owner": {
+            "logo": "//img.cuescore.com/image/7/2/71487152007d737c2f5de4f7821f7c9e.png?t=1555512394",
+            "name": "MGL Cue Sports",
+            "organizationId": 5133719,
+            "profileColor": "58a5fc",
+            "stub": "mglcuesports",
+            "url": "https://cuescore.com/mglcuesports"
+          },
+          "url": "https://cuescore.com/venue/147+Break+Zamieniecka/2842336",
+          "venueId": 2842336
+        }
+      },
+      "tournamentId": 69022525,
+      "useInnings": false,
+      "videoLink": "",
+      "winnerNext": ""
     },
     {
+      "bestOfSets": 0,
+      "branch": 1,
+      "challengeId": 0,
+      "comment": "",
+      "curVersion": 160,
+      "discipline": "Multiball",
+      "disciplineId": 10,
+      "frames": [],
+      "groupNo": 2,
+      "highBreaksA": "",
+      "highBreaksB": "",
+      "inningsPlayerA": 0,
+      "inningsPlayerB": 0,
+      "lagWinner": "",
+      "loserNext": "",
       "matchId": 69051961,
+      "matchType": 0,
+      "matchno": 16,
+      "matchstatus": "finished",
+      "matchstatusCode": 2,
+      "notes": [],
+      "penalty": 0,
       "playerA": {
+        "country": {
+          "alpha3": "POL",
+          "continent": "Europe",
+          "image": "https://cuescore.com/img/flags/png-country-4x2-none/res-640x480/pl.png",
+          "name": "Poland"
+        },
+        "firstname": "Michał",
+        "image": "https://img.cuescore.com/image/8/4/862c792ba8eb7f97e626fbe6cbcc59f6.png",
+        "lastname": "Kozłowski",
         "name": "Michał Kozłowski",
-        "playerId": 6480431
+        "playerId": 6480431,
+        "represents": [],
+        "url": "https://cuescore.com/player/Micha%C5%82+Koz%C5%82owski/6480431"
       },
       "playerB": {
+        "country": {
+          "alpha3": "POL",
+          "continent": "Europe",
+          "image": "https://cuescore.com/img/flags/png-country-4x2-none/res-640x480/pl.png",
+          "name": "Poland"
+        },
+        "firstname": "Maciej",
+        "image": "https://img.cuescore.com/image/8/4/8bd3578c19ef8201ca1330519e82df1c.png?t=1707758826",
+        "lastname": "Pislewski",
         "name": "Maciej Pislewski",
-        "playerId": 7789003
+        "playerId": 7789003,
+        "represents": [],
+        "url": "https://cuescore.com/player/Maciej+Pislewski/7789003"
       },
+      "properties": [],
+      "raceTo": 4,
+      "round": 3,
+      "roundName": "Round 3",
+      "runoutsA": 0,
+      "runoutsB": 0,
       "scoreA": 3,
       "scoreB": 4,
+      "sets": [],
       "starttime": "2025-09-25T20:32:00",
-      "stoptime": "2025-09-25T21:15:28"
+      "stoptime": "2025-09-25T21:15:28",
+      "table": {
+        "branch": "American pool",
+        "branchId": 1,
+        "cloth": "",
+        "description": "",
+        "manufacturer": "",
+        "model": "Tournament Champion Sport",
+        "name": "16",
+        "pockets": "",
+        "size": 9,
+        "slate": "",
+        "tableId": 2842374,
+        "venue": {
+          "image": "https://img.cuescore.com/image/e/3/ea714c9bb52caa765f7707d5dcbe7f3a.png?t=1533571231",
+          "name": "147 Break Zamieniecka",
+          "owner": {
+            "logo": "//img.cuescore.com/image/7/2/71487152007d737c2f5de4f7821f7c9e.png?t=1555512394",
+            "name": "MGL Cue Sports",
+            "organizationId": 5133719,
+            "profileColor": "58a5fc",
+            "stub": "mglcuesports",
+            "url": "https://cuescore.com/mglcuesports"
+          },
+          "url": "https://cuescore.com/venue/147+Break+Zamieniecka/2842336",
+          "venueId": 2842336
+        }
+      },
+      "tournamentId": 69022525,
+      "useInnings": false,
+      "videoLink": "",
+      "winnerNext": ""
     },
     {
+      "bestOfSets": 0,
+      "branch": 1,
+      "challengeId": 0,
+      "comment": "",
+      "curVersion": 160,
+      "discipline": "Multiball",
+      "disciplineId": 10,
+      "frames": [],
+      "groupNo": 3,
+      "highBreaksA": "",
+      "highBreaksB": "",
+      "inningsPlayerA": 0,
+      "inningsPlayerB": 0,
+      "lagWinner": "",
+      "loserNext": "",
       "matchId": 69051964,
+      "matchType": 0,
+      "matchno": 17,
+      "matchstatus": "finished",
+      "matchstatusCode": 2,
+      "notes": [],
+      "penalty": 0,
       "playerA": {
+        "country": {
+          "alpha3": "POL",
+          "continent": "Europe",
+          "image": "https://cuescore.com/img/flags/png-country-4x2-none/res-640x480/pl.png",
+          "name": "Poland"
+        },
+        "firstname": "Sebastian",
+        "image": "https://img.cuescore.com/image/8/4/8e25b60ff30ecb15ccb65e9c5875c024.png?t=1758874499",
+        "lastname": "Szymkowski",
         "name": "Sebastian Szymkowski",
-        "playerId": 1660831
+        "playerId": 1660831,
+        "represents": [],
+        "url": "https://cuescore.com/player/Sebastian+Szymkowski/1660831"
       },
       "playerB": {
+        "country": {
+          "alpha3": "POL",
+          "continent": "Europe",
+          "image": "https://cuescore.com/img/flags/png-country-4x2-none/res-640x480/pl.png",
+          "name": "Poland"
+        },
+        "firstname": "Tomek",
+        "image": "https://img.cuescore.com/image/7/4/74061c1f247d25c1c2939a2f33efb340.png?t=1677415392",
+        "lastname": "Kielmans",
         "name": "Tomek Kielmans",
-        "playerId": 2264676
+        "playerId": 2264676,
+        "represents": [],
+        "url": "https://cuescore.com/player/Tomek+Kielmans/2264676"
       },
+      "properties": [],
+      "raceTo": 4,
+      "round": 3,
+      "roundName": "Round 3",
+      "runoutsA": 0,
+      "runoutsB": 0,
       "scoreA": 4,
       "scoreB": 3,
+      "sets": [],
       "starttime": "2025-09-25T21:12:00",
-      "stoptime": "2025-09-25T21:49:27"
+      "stoptime": "2025-09-25T21:49:27",
+      "table": {
+        "branch": "American pool",
+        "branchId": 1,
+        "cloth": "",
+        "description": "",
+        "manufacturer": "",
+        "model": "Tournament Champion Sport",
+        "name": "14",
+        "pockets": "",
+        "size": 9,
+        "slate": "",
+        "tableId": 2842372,
+        "venue": {
+          "image": "https://img.cuescore.com/image/e/3/ea714c9bb52caa765f7707d5dcbe7f3a.png?t=1533571231",
+          "name": "147 Break Zamieniecka",
+          "owner": {
+            "logo": "//img.cuescore.com/image/7/2/71487152007d737c2f5de4f7821f7c9e.png?t=1555512394",
+            "name": "MGL Cue Sports",
+            "organizationId": 5133719,
+            "profileColor": "58a5fc",
+            "stub": "mglcuesports",
+            "url": "https://cuescore.com/mglcuesports"
+          },
+          "url": "https://cuescore.com/venue/147+Break+Zamieniecka/2842336",
+          "venueId": 2842336
+        }
+      },
+      "tournamentId": 69022525,
+      "useInnings": false,
+      "videoLink": "",
+      "winnerNext": ""
     },
     {
+      "bestOfSets": 0,
+      "branch": 1,
+      "challengeId": 0,
+      "comment": "",
+      "curVersion": 160,
+      "discipline": "Multiball",
+      "disciplineId": 10,
+      "frames": [],
+      "groupNo": 3,
+      "highBreaksA": "",
+      "highBreaksB": "",
+      "inningsPlayerA": 0,
+      "inningsPlayerB": 0,
+      "lagWinner": "",
+      "loserNext": "",
       "matchId": 69051967,
+      "matchType": 0,
+      "matchno": 18,
+      "matchstatus": "finished",
+      "matchstatusCode": 2,
+      "notes": [],
+      "penalty": 0,
       "playerA": {
+        "country": {
+          "alpha3": "POL",
+          "continent": "Europe",
+          "image": "https://cuescore.com/img/flags/png-country-4x2-none/res-640x480/pl.png",
+          "name": "Poland"
+        },
+        "firstname": "Konrad",
+        "image": "https://img.cuescore.com/image/3/4/3938c823ac80f29ca4f77ae8160c9cd2.png?t=1710606254",
+        "lastname": "Kowalski",
         "name": "Konrad Kowalski",
-        "playerId": 1620822
+        "playerId": 1620822,
+        "represents": [],
+        "url": "https://cuescore.com/player/Konrad+Kowalski/1620822"
       },
       "playerB": {
+        "country": {
+          "alpha3": "POL",
+          "continent": "Europe",
+          "image": "https://cuescore.com/img/flags/png-country-4x2-none/res-640x480/pl.png",
+          "name": "Poland"
+        },
+        "firstname": "Kamil",
+        "image": "https://img.cuescore.com/image/b/4/b08ca302c82e5908139795cfcd114cb7.png?t=1709887390",
+        "lastname": "Pietruszewski",
         "name": "Kamil Pietruszewski",
-        "playerId": 40313560
+        "playerId": 40313560,
+        "represents": [],
+        "url": "https://cuescore.com/player/Kamil+Pietruszewski/40313560"
       },
+      "properties": [],
+      "raceTo": 4,
+      "round": 3,
+      "roundName": "Round 3",
+      "runoutsA": 0,
+      "runoutsB": 0,
       "scoreA": 4,
       "scoreB": 0,
+      "sets": [],
       "starttime": "2025-09-25T19:08:00",
-      "stoptime": "2025-09-25T19:41:14"
+      "stoptime": "2025-09-25T19:41:14",
+      "table": {
+        "branch": "American pool",
+        "branchId": 1,
+        "cloth": "",
+        "description": "",
+        "manufacturer": "",
+        "model": "Tournament Champion Sport",
+        "name": "17",
+        "pockets": "",
+        "size": 9,
+        "slate": "",
+        "tableId": 2842375,
+        "venue": {
+          "image": "https://img.cuescore.com/image/e/3/ea714c9bb52caa765f7707d5dcbe7f3a.png?t=1533571231",
+          "name": "147 Break Zamieniecka",
+          "owner": {
+            "logo": "//img.cuescore.com/image/7/2/71487152007d737c2f5de4f7821f7c9e.png?t=1555512394",
+            "name": "MGL Cue Sports",
+            "organizationId": 5133719,
+            "profileColor": "58a5fc",
+            "stub": "mglcuesports",
+            "url": "https://cuescore.com/mglcuesports"
+          },
+          "url": "https://cuescore.com/venue/147+Break+Zamieniecka/2842336",
+          "venueId": 2842336
+        }
+      },
+      "tournamentId": 69022525,
+      "useInnings": false,
+      "videoLink": "",
+      "winnerNext": ""
     },
     {
+      "bestOfSets": 0,
+      "branch": 1,
+      "challengeId": 0,
+      "comment": "",
+      "curVersion": 160,
+      "discipline": "Multiball",
+      "disciplineId": 10,
+      "frames": [],
+      "groupNo": 1,
+      "highBreaksA": "",
+      "highBreaksB": "",
+      "inningsPlayerA": 0,
+      "inningsPlayerB": 0,
+      "lagWinner": "B",
+      "loserNext": "",
       "matchId": 69051970,
+      "matchType": 0,
+      "matchno": 19,
+      "matchstatus": "finished",
+      "matchstatusCode": 2,
+      "notes": [
+        {
+          "note": "frame start",
+          "time": "2025-09-25T18:19:22.688Z"
+        },
+        {
+          "note": "B breaking",
+          "time": "2025-09-25T18:19:22.688Z"
+        },
+        {
+          "note": "B frame win",
+          "time": "2025-09-25T18:22:46.640Z"
+        },
+        {
+          "note": "frame end",
+          "time": "2025-09-25T18:22:46.640Z"
+        },
+        {
+          "note": "frame start",
+          "time": "2025-09-25T18:22:46.640Z"
+        },
+        {
+          "note": "B breaking",
+          "time": "2025-09-25T18:22:46.640Z"
+        },
+        {
+          "note": "B frame win",
+          "time": "2025-09-25T18:27:05.265Z"
+        },
+        {
+          "note": "frame end",
+          "time": "2025-09-25T18:27:05.265Z"
+        },
+        {
+          "note": "frame start",
+          "time": "2025-09-25T18:27:05.265Z"
+        },
+        {
+          "note": "B breaking",
+          "time": "2025-09-25T18:27:05.265Z"
+        },
+        {
+          "note": "A frame win",
+          "time": "2025-09-25T18:31:59.982Z"
+        },
+        {
+          "note": "frame end",
+          "time": "2025-09-25T18:31:59.982Z"
+        },
+        {
+          "note": "frame start",
+          "time": "2025-09-25T18:31:59.982Z"
+        },
+        {
+          "note": "A breaking",
+          "time": "2025-09-25T18:31:59.982Z"
+        },
+        {
+          "note": "A frame win",
+          "time": "2025-09-25T18:39:55.457Z"
+        },
+        {
+          "note": "frame end",
+          "time": "2025-09-25T18:39:55.457Z"
+        },
+        {
+          "note": "frame start",
+          "time": "2025-09-25T18:39:55.457Z"
+        },
+        {
+          "note": "A breaking",
+          "time": "2025-09-25T18:39:55.457Z"
+        },
+        {
+          "note": "A frame win",
+          "time": "2025-09-25T18:46:58.120Z"
+        },
+        {
+          "note": "frame end",
+          "time": "2025-09-25T18:46:58.120Z"
+        },
+        {
+          "note": "frame start",
+          "time": "2025-09-25T18:46:58.120Z"
+        },
+        {
+          "note": "A breaking",
+          "time": "2025-09-25T18:46:58.120Z"
+        },
+        {
+          "note": "A frame win",
+          "time": "2025-09-25T18:52:25.371Z"
+        },
+        {
+          "note": "frame end",
+          "time": "2025-09-25T18:52:25.371Z"
+        }
+      ],
+      "penalty": 0,
       "playerA": {
+        "country": {
+          "alpha3": "POL",
+          "continent": "Europe",
+          "image": "https://cuescore.com/img/flags/png-country-4x2-none/res-640x480/pl.png",
+          "name": "Poland"
+        },
+        "firstname": "Kacper",
+        "image": "https://img.cuescore.com/image/c/4/c658d91cd903768c1f47248b22ca49c7.png?t=1649403803",
+        "lastname": "Kielmans",
         "name": "Kacper Kielmans",
-        "playerId": 1734129
+        "playerId": 1734129,
+        "represents": [],
+        "url": "https://cuescore.com/player/Kacper+Kielmans/1734129"
       },
       "playerB": {
+        "country": {
+          "alpha3": "POL",
+          "continent": "Europe",
+          "image": "https://cuescore.com/img/flags/png-country-4x2-none/res-640x480/pl.png",
+          "name": "Poland"
+        },
+        "firstname": "Tomasz",
+        "image": "https://img.cuescore.com/image/f/4/f6c3ed0575983da290988136b5759945.png?t=1756990200",
+        "lastname": "Deszczyński",
         "name": "Tomasz Deszczyński",
-        "playerId": 40365082
+        "playerId": 40365082,
+        "represents": [],
+        "url": "https://cuescore.com/player/Tomasz+Deszczy%C5%84ski/40365082"
       },
+      "properties": {
+        "lagWinsA": 0,
+        "lagWinsB": 1,
+        "runoutsA": 0,
+        "runoutsB": 0
+      },
+      "raceTo": 4,
+      "round": 4,
+      "roundName": "Round 4",
+      "runoutsA": 0,
+      "runoutsB": 0,
       "scoreA": 4,
       "scoreB": 2,
+      "sets": [],
       "starttime": "2025-09-25T20:11:00",
-      "stoptime": "2025-09-25T20:53:23"
+      "stoptime": "2025-09-25T20:53:23",
+      "table": {
+        "branch": "American pool",
+        "branchId": 1,
+        "cloth": "",
+        "description": "",
+        "manufacturer": "",
+        "model": "Tournament Champion Sport",
+        "name": "13",
+        "pockets": "",
+        "size": 9,
+        "slate": "",
+        "tableId": 2842371,
+        "venue": {
+          "image": "https://img.cuescore.com/image/e/3/ea714c9bb52caa765f7707d5dcbe7f3a.png?t=1533571231",
+          "name": "147 Break Zamieniecka",
+          "owner": {
+            "logo": "//img.cuescore.com/image/7/2/71487152007d737c2f5de4f7821f7c9e.png?t=1555512394",
+            "name": "MGL Cue Sports",
+            "organizationId": 5133719,
+            "profileColor": "58a5fc",
+            "stub": "mglcuesports",
+            "url": "https://cuescore.com/mglcuesports"
+          },
+          "url": "https://cuescore.com/venue/147+Break+Zamieniecka/2842336",
+          "venueId": 2842336
+        }
+      },
+      "tournamentId": 69022525,
+      "useInnings": false,
+      "videoLink": "",
+      "winnerNext": ""
     },
     {
+      "bestOfSets": 0,
+      "branch": 1,
+      "challengeId": 0,
+      "comment": "",
+      "curVersion": 160,
+      "discipline": "Multiball",
+      "disciplineId": 10,
+      "frames": [],
+      "groupNo": 1,
+      "highBreaksA": "",
+      "highBreaksB": "",
+      "inningsPlayerA": 0,
+      "inningsPlayerB": 0,
+      "lagWinner": "",
+      "loserNext": "",
       "matchId": 69051973,
+      "matchType": 0,
+      "matchno": 20,
+      "matchstatus": "finished",
+      "matchstatusCode": 2,
+      "notes": [],
+      "penalty": 0,
       "playerA": {
+        "country": {
+          "alpha3": "UKR",
+          "continent": "Europe",
+          "image": "https://cuescore.com/img/flags/png-country-4x2-none/res-640x480/ua.png",
+          "name": "Ukraine"
+        },
+        "firstname": "Ivan",
+        "image": "https://img.cuescore.com/image/2/4/2c93db15d52d17b300ed3d362a7ff6d1.png?t=1708679266",
+        "lastname": "Kuzmych",
         "name": "Ivan Kuzmych",
-        "playerId": 39854860
+        "playerId": 39854860,
+        "represents": [],
+        "url": "https://cuescore.com/player/Ivan+Kuzmych/39854860"
       },
       "playerB": {
+        "country": {
+          "alpha3": "POL",
+          "continent": "Europe",
+          "image": "https://cuescore.com/img/flags/png-country-4x2-none/res-640x480/pl.png",
+          "name": "Poland"
+        },
+        "firstname": "Wojtek",
+        "image": "https://img.cuescore.com/image/8/4/862c792ba8eb7f97e626fbe6cbcc59f6.png",
+        "lastname": "Trajdos",
         "name": "Wojtek Trajdos",
-        "playerId": 57205030
+        "playerId": 57205030,
+        "represents": [],
+        "url": "https://cuescore.com/player/Wojtek+Trajdos/57205030"
       },
+      "properties": [],
+      "raceTo": 4,
+      "round": 4,
+      "roundName": "Round 4",
+      "runoutsA": 0,
+      "runoutsB": 0,
       "scoreA": 2,
       "scoreB": 4,
+      "sets": [],
       "starttime": "2025-09-25T20:48:00",
-      "stoptime": "2025-09-25T21:16:41"
+      "stoptime": "2025-09-25T21:16:41",
+      "table": {
+        "branch": "American pool",
+        "branchId": 1,
+        "cloth": "",
+        "description": "",
+        "manufacturer": "",
+        "model": "Tournament Champion Sport",
+        "name": "19",
+        "pockets": "",
+        "size": 9,
+        "slate": "",
+        "tableId": 2842377,
+        "venue": {
+          "image": "https://img.cuescore.com/image/e/3/ea714c9bb52caa765f7707d5dcbe7f3a.png?t=1533571231",
+          "name": "147 Break Zamieniecka",
+          "owner": {
+            "logo": "//img.cuescore.com/image/7/2/71487152007d737c2f5de4f7821f7c9e.png?t=1555512394",
+            "name": "MGL Cue Sports",
+            "organizationId": 5133719,
+            "profileColor": "58a5fc",
+            "stub": "mglcuesports",
+            "url": "https://cuescore.com/mglcuesports"
+          },
+          "url": "https://cuescore.com/venue/147+Break+Zamieniecka/2842336",
+          "venueId": 2842336
+        }
+      },
+      "tournamentId": 69022525,
+      "useInnings": false,
+      "videoLink": "",
+      "winnerNext": ""
     },
     {
+      "bestOfSets": 0,
+      "branch": 1,
+      "challengeId": 0,
+      "comment": "",
+      "curVersion": 160,
+      "discipline": "Multiball",
+      "disciplineId": 10,
+      "frames": [],
+      "groupNo": 1,
+      "highBreaksA": "",
+      "highBreaksB": "",
+      "inningsPlayerA": 0,
+      "inningsPlayerB": 0,
+      "lagWinner": "B",
+      "loserNext": "",
       "matchId": 69051976,
+      "matchType": 0,
+      "matchno": 21,
+      "matchstatus": "finished",
+      "matchstatusCode": 2,
+      "notes": [
+        {
+          "note": "frame start",
+          "time": "2025-09-25T17:48:14.123Z"
+        },
+        {
+          "note": "A breaking",
+          "time": "2025-09-25T17:48:14.123Z"
+        },
+        {
+          "note": "A frame win",
+          "time": "2025-09-25T17:54:48.089Z"
+        },
+        {
+          "note": "frame end",
+          "time": "2025-09-25T17:54:48.089Z"
+        },
+        {
+          "note": "frame start",
+          "time": "2025-09-25T17:54:48.089Z"
+        },
+        {
+          "note": "A breaking",
+          "time": "2025-09-25T17:54:48.089Z"
+        },
+        {
+          "note": "A frame win runout",
+          "time": "2025-09-25T17:56:43.764Z"
+        },
+        {
+          "note": "frame end",
+          "time": "2025-09-25T17:56:43.764Z"
+        },
+        {
+          "note": "frame start",
+          "time": "2025-09-25T17:56:43.764Z"
+        },
+        {
+          "note": "A breaking",
+          "time": "2025-09-25T17:56:43.764Z"
+        },
+        {
+          "note": "A frame win",
+          "time": "2025-09-25T18:01:07.852Z"
+        },
+        {
+          "note": "frame end",
+          "time": "2025-09-25T18:01:07.852Z"
+        },
+        {
+          "note": "frame start",
+          "time": "2025-09-25T18:01:07.852Z"
+        },
+        {
+          "note": "A breaking",
+          "time": "2025-09-25T18:01:07.852Z"
+        },
+        {
+          "note": "A frame win",
+          "time": "2025-09-25T18:06:31.961Z"
+        },
+        {
+          "note": "frame end",
+          "time": "2025-09-25T18:06:31.961Z"
+        }
+      ],
+      "penalty": 0,
       "playerA": {
+        "country": {
+          "alpha3": "POL",
+          "continent": "Europe",
+          "image": "https://cuescore.com/img/flags/png-country-4x2-none/res-640x480/pl.png",
+          "name": "Poland"
+        },
+        "firstname": "Tomasz",
+        "image": "https://img.cuescore.com/image/f/4/f6c3ed0575983da290988136b5759945.png?t=1756990200",
+        "lastname": "Deszczyński",
         "name": "Tomasz Deszczyński",
-        "playerId": 40365082
+        "playerId": 40365082,
+        "represents": [],
+        "url": "https://cuescore.com/player/Tomasz+Deszczy%C5%84ski/40365082"
       },
       "playerB": {
+        "country": {
+          "alpha3": "POL",
+          "continent": "Europe",
+          "image": "https://cuescore.com/img/flags/png-country-4x2-none/res-640x480/pl.png",
+          "name": "Poland"
+        },
+        "firstname": "Wojtek",
+        "image": "https://img.cuescore.com/image/8/4/862c792ba8eb7f97e626fbe6cbcc59f6.png",
+        "lastname": "Trajdos",
         "name": "Wojtek Trajdos",
-        "playerId": 57205030
+        "playerId": 57205030,
+        "represents": [],
+        "url": "https://cuescore.com/player/Wojtek+Trajdos/57205030"
       },
+      "properties": {
+        "lagWinsA": 0,
+        "lagWinsB": 1,
+        "penalty": [],
+        "runoutsA": 0,
+        "runoutsB": 1
+      },
+      "raceTo": 4,
+      "round": 5,
+      "roundName": "Round 5",
+      "runoutsA": 0,
+      "runoutsB": 1,
       "scoreA": 0,
       "scoreB": 4,
+      "sets": [],
       "starttime": "2025-09-25T19:40:00",
-      "stoptime": "2025-09-25T20:06:38"
+      "stoptime": "2025-09-25T20:06:38",
+      "table": {
+        "branch": "American pool",
+        "branchId": 1,
+        "cloth": "",
+        "description": "",
+        "manufacturer": "",
+        "model": "Tournament Champion Sport",
+        "name": "13",
+        "pockets": "",
+        "size": 9,
+        "slate": "",
+        "tableId": 2842371,
+        "venue": {
+          "image": "https://img.cuescore.com/image/e/3/ea714c9bb52caa765f7707d5dcbe7f3a.png?t=1533571231",
+          "name": "147 Break Zamieniecka",
+          "owner": {
+            "logo": "//img.cuescore.com/image/7/2/71487152007d737c2f5de4f7821f7c9e.png?t=1555512394",
+            "name": "MGL Cue Sports",
+            "organizationId": 5133719,
+            "profileColor": "58a5fc",
+            "stub": "mglcuesports",
+            "url": "https://cuescore.com/mglcuesports"
+          },
+          "url": "https://cuescore.com/venue/147+Break+Zamieniecka/2842336",
+          "venueId": 2842336
+        }
+      },
+      "tournamentId": 69022525,
+      "useInnings": false,
+      "videoLink": "",
+      "winnerNext": ""
     },
     {
+      "bestOfSets": 0,
+      "branch": 1,
+      "challengeId": 0,
+      "comment": "",
+      "curVersion": 160,
+      "discipline": "Multiball",
+      "disciplineId": 10,
+      "frames": [],
+      "groupNo": 1,
+      "highBreaksA": "",
+      "highBreaksB": "",
+      "inningsPlayerA": 0,
+      "inningsPlayerB": 0,
+      "lagWinner": "B",
+      "loserNext": "",
       "matchId": 69051979,
+      "matchType": 0,
+      "matchno": 22,
+      "matchstatus": "finished",
+      "matchstatusCode": 2,
+      "notes": [
+        {
+          "note": "frame start",
+          "time": "2025-09-25T19:42:39.828Z"
+        },
+        {
+          "note": "B breaking",
+          "time": "2025-09-25T19:42:39.828Z"
+        },
+        {
+          "note": "B frame win",
+          "time": "2025-09-25T19:47:00.036Z"
+        },
+        {
+          "note": "frame end",
+          "time": "2025-09-25T19:47:00.036Z"
+        },
+        {
+          "note": "frame start",
+          "time": "2025-09-25T19:47:00.036Z"
+        },
+        {
+          "note": "B breaking",
+          "time": "2025-09-25T19:47:00.036Z"
+        },
+        {
+          "note": "B frame win",
+          "time": "2025-09-25T19:51:30.068Z"
+        },
+        {
+          "note": "frame end",
+          "time": "2025-09-25T19:51:30.068Z"
+        },
+        {
+          "note": "frame start",
+          "time": "2025-09-25T19:51:30.068Z"
+        },
+        {
+          "note": "B breaking",
+          "time": "2025-09-25T19:51:30.068Z"
+        },
+        {
+          "note": "A frame win",
+          "time": "2025-09-25T19:56:51.970Z"
+        },
+        {
+          "note": "frame end",
+          "time": "2025-09-25T19:56:51.970Z"
+        },
+        {
+          "note": "frame start",
+          "time": "2025-09-25T19:56:51.970Z"
+        },
+        {
+          "note": "A breaking",
+          "time": "2025-09-25T19:56:51.970Z"
+        },
+        {
+          "note": "A frame win",
+          "time": "2025-09-25T20:06:06.022Z"
+        },
+        {
+          "note": "frame end",
+          "time": "2025-09-25T20:06:06.022Z"
+        },
+        {
+          "note": "frame start",
+          "time": "2025-09-25T20:06:06.022Z"
+        },
+        {
+          "note": "A breaking",
+          "time": "2025-09-25T20:06:06.022Z"
+        },
+        {
+          "note": "A frame win runout",
+          "time": "2025-09-25T20:06:06.539Z"
+        },
+        {
+          "note": "frame end",
+          "time": "2025-09-25T20:06:06.539Z"
+        },
+        {
+          "note": "frame start",
+          "time": "2025-09-25T20:06:06.539Z"
+        },
+        {
+          "note": "A breaking",
+          "time": "2025-09-25T20:06:06.539Z"
+        },
+        {
+          "note": "A frame win",
+          "time": "2025-09-25T20:10:01.369Z"
+        },
+        {
+          "note": "frame end",
+          "time": "2025-09-25T20:10:01.369Z"
+        },
+        {
+          "note": "match end",
+          "time": "2025-09-25T20:10:02.258Z"
+        }
+      ],
+      "penalty": 0,
       "playerA": {
+        "country": {
+          "alpha3": "POL",
+          "continent": "Europe",
+          "image": "https://cuescore.com/img/flags/png-country-4x2-none/res-640x480/pl.png",
+          "name": "Poland"
+        },
+        "firstname": "Kacper",
+        "image": "https://img.cuescore.com/image/c/4/c658d91cd903768c1f47248b22ca49c7.png?t=1649403803",
+        "lastname": "Kielmans",
         "name": "Kacper Kielmans",
-        "playerId": 1734129
+        "playerId": 1734129,
+        "represents": [],
+        "url": "https://cuescore.com/player/Kacper+Kielmans/1734129"
       },
       "playerB": {
+        "country": {
+          "alpha3": "POL",
+          "continent": "Europe",
+          "image": "https://cuescore.com/img/flags/png-country-4x2-none/res-640x480/pl.png",
+          "name": "Poland"
+        },
+        "firstname": "Sebastian",
+        "image": "https://img.cuescore.com/image/8/4/862c792ba8eb7f97e626fbe6cbcc59f6.png",
+        "lastname": "Matura",
         "name": "Sebastian Matura",
-        "playerId": 36897787
+        "playerId": 36897787,
+        "represents": [],
+        "url": "https://cuescore.com/player/Sebastian+Matura/36897787"
       },
+      "properties": {
+        "lagWinsA": 0,
+        "lagWinsB": 1,
+        "runoutsA": 1,
+        "runoutsB": 0
+      },
+      "raceTo": 4,
+      "round": 5,
+      "roundName": "Round 5",
+      "runoutsA": 1,
+      "runoutsB": 0,
       "scoreA": 4,
       "scoreB": 2,
+      "sets": [],
       "starttime": "2025-09-25T21:41:24",
-      "stoptime": "2025-09-25T22:10:04"
+      "stoptime": "2025-09-25T22:10:04",
+      "table": {
+        "branch": "American pool",
+        "branchId": 1,
+        "cloth": "",
+        "description": "",
+        "manufacturer": "",
+        "model": "Tournament Champion Sport",
+        "name": "11",
+        "pockets": "",
+        "size": 9,
+        "slate": "",
+        "tableId": 2842369,
+        "venue": {
+          "image": "https://img.cuescore.com/image/e/3/ea714c9bb52caa765f7707d5dcbe7f3a.png?t=1533571231",
+          "name": "147 Break Zamieniecka",
+          "owner": {
+            "logo": "//img.cuescore.com/image/7/2/71487152007d737c2f5de4f7821f7c9e.png?t=1555512394",
+            "name": "MGL Cue Sports",
+            "organizationId": 5133719,
+            "profileColor": "58a5fc",
+            "stub": "mglcuesports",
+            "url": "https://cuescore.com/mglcuesports"
+          },
+          "url": "https://cuescore.com/venue/147+Break+Zamieniecka/2842336",
+          "venueId": 2842336
+        }
+      },
+      "tournamentId": 69022525,
+      "useInnings": false,
+      "videoLink": "",
+      "winnerNext": ""
     },
     {
+      "bestOfSets": 0,
+      "branch": 1,
+      "challengeId": 0,
+      "comment": "",
+      "curVersion": 160,
+      "discipline": "Multiball",
+      "disciplineId": 10,
+      "frames": [],
+      "groupNo": 0,
+      "highBreaksA": "",
+      "highBreaksB": "",
+      "inningsPlayerA": 0,
+      "inningsPlayerB": 0,
+      "lagWinner": "",
+      "loserNext": "",
       "matchId": 69051982,
+      "matchType": 0,
+      "matchno": 23,
+      "matchstatus": "finished",
+      "matchstatusCode": 2,
+      "notes": [],
+      "penalty": 0,
       "playerA": {
+        "country": {
+          "alpha3": "POL",
+          "continent": "Europe",
+          "image": "https://cuescore.com/img/flags/png-country-4x2-none/res-640x480/pl.png",
+          "name": "Poland"
+        },
+        "firstname": "Wojtek",
+        "image": "https://img.cuescore.com/image/8/4/862c792ba8eb7f97e626fbe6cbcc59f6.png",
+        "lastname": "Trajdos",
         "name": "Wojtek Trajdos",
-        "playerId": 57205030
+        "playerId": 57205030,
+        "represents": [],
+        "url": "https://cuescore.com/player/Wojtek+Trajdos/57205030"
       },
       "playerB": {
+        "country": {
+          "alpha3": "POL",
+          "continent": "Europe",
+          "image": "https://cuescore.com/img/flags/png-country-4x2-none/res-640x480/pl.png",
+          "name": "Poland"
+        },
+        "firstname": "Tomek",
+        "image": "https://img.cuescore.com/image/7/4/74061c1f247d25c1c2939a2f33efb340.png?t=1677415392",
+        "lastname": "Kielmans",
         "name": "Tomek Kielmans",
-        "playerId": 2264676
+        "playerId": 2264676,
+        "represents": [],
+        "url": "https://cuescore.com/player/Tomek+Kielmans/2264676"
       },
+      "properties": [],
+      "raceTo": 4,
+      "round": 6,
+      "roundName": "Quarter final",
+      "runoutsA": 0,
+      "runoutsB": 0,
       "scoreA": 4,
       "scoreB": 2,
+      "sets": [],
       "starttime": "2025-09-25T21:53:00",
-      "stoptime": "2025-09-25T22:18:38"
+      "stoptime": "2025-09-25T22:18:38",
+      "table": {
+        "branch": "American pool",
+        "branchId": 1,
+        "cloth": "",
+        "description": "",
+        "manufacturer": "",
+        "model": "Tournament Champion Sport",
+        "name": "13",
+        "pockets": "",
+        "size": 9,
+        "slate": "",
+        "tableId": 2842371,
+        "venue": {
+          "image": "https://img.cuescore.com/image/e/3/ea714c9bb52caa765f7707d5dcbe7f3a.png?t=1533571231",
+          "name": "147 Break Zamieniecka",
+          "owner": {
+            "logo": "//img.cuescore.com/image/7/2/71487152007d737c2f5de4f7821f7c9e.png?t=1555512394",
+            "name": "MGL Cue Sports",
+            "organizationId": 5133719,
+            "profileColor": "58a5fc",
+            "stub": "mglcuesports",
+            "url": "https://cuescore.com/mglcuesports"
+          },
+          "url": "https://cuescore.com/venue/147+Break+Zamieniecka/2842336",
+          "venueId": 2842336
+        }
+      },
+      "tournamentId": 69022525,
+      "useInnings": false,
+      "videoLink": "",
+      "winnerNext": 27
     },
     {
+      "bestOfSets": 0,
+      "branch": 1,
+      "challengeId": 0,
+      "comment": "",
+      "curVersion": 160,
+      "discipline": "Multiball",
+      "disciplineId": 10,
+      "frames": [],
+      "groupNo": 0,
+      "highBreaksA": "",
+      "highBreaksB": "",
+      "inningsPlayerA": 0,
+      "inningsPlayerB": 0,
+      "lagWinner": "",
+      "loserNext": "",
       "matchId": 69051985,
+      "matchType": 0,
+      "matchno": 24,
+      "matchstatus": "finished",
+      "matchstatusCode": 2,
+      "notes": [],
+      "penalty": 0,
       "playerA": {
+        "country": {
+          "alpha3": "POL",
+          "continent": "Europe",
+          "image": "https://cuescore.com/img/flags/png-country-4x2-none/res-640x480/pl.png",
+          "name": "Poland"
+        },
+        "firstname": "Marcin",
+        "image": "https://img.cuescore.com/image/6/4/634670d25cfb0b8494e08327b2bb74b4.png?t=1736761259",
+        "lastname": "Kubalski",
         "name": "Marcin Kubalski",
-        "playerId": 1634586
+        "playerId": 1634586,
+        "represents": {
+          "logo": "//img.cuescore.com/image/2/2/2c18635ebc6f2e574949d524d3026197.png?t=1551972415",
+          "name": "Snooker.Zone",
+          "organizationId": 4991658,
+          "profileColor": "",
+          "stub": "snookerzone",
+          "url": "https://cuescore.com/snookerzone"
+        },
+        "url": "https://cuescore.com/player/Marcin+Kubalski/1634586"
       },
       "playerB": {
+        "country": {
+          "alpha3": "POL",
+          "continent": "Europe",
+          "image": "https://cuescore.com/img/flags/png-country-4x2-none/res-640x480/pl.png",
+          "name": "Poland"
+        },
+        "firstname": "Sebastian",
+        "image": "https://img.cuescore.com/image/8/4/8e25b60ff30ecb15ccb65e9c5875c024.png?t=1758874499",
+        "lastname": "Szymkowski",
         "name": "Sebastian Szymkowski",
-        "playerId": 1660831
+        "playerId": 1660831,
+        "represents": [],
+        "url": "https://cuescore.com/player/Sebastian+Szymkowski/1660831"
       },
+      "properties": [],
+      "raceTo": 4,
+      "round": 6,
+      "roundName": "Quarter final",
+      "runoutsA": 0,
+      "runoutsB": 0,
       "scoreA": 3,
       "scoreB": 4,
+      "sets": [],
       "starttime": "2025-09-25T21:51:00",
-      "stoptime": "2025-09-25T22:49:48"
+      "stoptime": "2025-09-25T22:49:48",
+      "table": {
+        "branch": "American pool",
+        "branchId": 1,
+        "cloth": "",
+        "description": "",
+        "manufacturer": "",
+        "model": "Tournament Champion Sport",
+        "name": "14",
+        "pockets": "",
+        "size": 9,
+        "slate": "",
+        "tableId": 2842372,
+        "venue": {
+          "image": "https://img.cuescore.com/image/e/3/ea714c9bb52caa765f7707d5dcbe7f3a.png?t=1533571231",
+          "name": "147 Break Zamieniecka",
+          "owner": {
+            "logo": "//img.cuescore.com/image/7/2/71487152007d737c2f5de4f7821f7c9e.png?t=1555512394",
+            "name": "MGL Cue Sports",
+            "organizationId": 5133719,
+            "profileColor": "58a5fc",
+            "stub": "mglcuesports",
+            "url": "https://cuescore.com/mglcuesports"
+          },
+          "url": "https://cuescore.com/venue/147+Break+Zamieniecka/2842336",
+          "venueId": 2842336
+        }
+      },
+      "tournamentId": 69022525,
+      "useInnings": false,
+      "videoLink": "",
+      "winnerNext": 27
     },
     {
+      "bestOfSets": 0,
+      "branch": 1,
+      "challengeId": 0,
+      "comment": "",
+      "curVersion": 160,
+      "discipline": "Multiball",
+      "disciplineId": 10,
+      "frames": [],
+      "groupNo": 0,
+      "highBreaksA": "",
+      "highBreaksB": "",
+      "inningsPlayerA": 0,
+      "inningsPlayerB": 0,
+      "lagWinner": "",
+      "loserNext": "",
       "matchId": 69051988,
+      "matchType": 0,
+      "matchno": 25,
+      "matchstatus": "finished",
+      "matchstatusCode": 2,
+      "notes": [],
+      "penalty": 0,
       "playerA": {
+        "country": {
+          "alpha3": "POL",
+          "continent": "Europe",
+          "image": "https://cuescore.com/img/flags/png-country-4x2-none/res-640x480/pl.png",
+          "name": "Poland"
+        },
+        "firstname": "Konrad",
+        "image": "https://img.cuescore.com/image/3/4/3938c823ac80f29ca4f77ae8160c9cd2.png?t=1710606254",
+        "lastname": "Kowalski",
         "name": "Konrad Kowalski",
-        "playerId": 1620822
+        "playerId": 1620822,
+        "represents": [],
+        "url": "https://cuescore.com/player/Konrad+Kowalski/1620822"
       },
       "playerB": {
+        "country": {
+          "alpha3": "UKR",
+          "continent": "Europe",
+          "image": "https://cuescore.com/img/flags/png-country-4x2-none/res-640x480/ua.png",
+          "name": "Ukraine"
+        },
+        "firstname": "Ivan",
+        "image": "https://img.cuescore.com/image/2/4/2c93db15d52d17b300ed3d362a7ff6d1.png?t=1708679266",
+        "lastname": "Kuzmych",
         "name": "Ivan Kuzmych",
-        "playerId": 39854860
+        "playerId": 39854860,
+        "represents": [],
+        "url": "https://cuescore.com/player/Ivan+Kuzmych/39854860"
       },
+      "properties": [],
+      "raceTo": 4,
+      "round": 6,
+      "roundName": "Quarter final",
+      "runoutsA": 0,
+      "runoutsB": 0,
       "scoreA": 4,
       "scoreB": 2,
+      "sets": [],
       "starttime": "2025-09-25T22:15:00",
-      "stoptime": "2025-09-25T22:44:06"
+      "stoptime": "2025-09-25T22:44:06",
+      "table": {
+        "branch": "American pool",
+        "branchId": 1,
+        "cloth": "",
+        "description": "",
+        "manufacturer": "",
+        "model": "Tournament Champion Sport",
+        "name": "16",
+        "pockets": "",
+        "size": 9,
+        "slate": "",
+        "tableId": 2842374,
+        "venue": {
+          "image": "https://img.cuescore.com/image/e/3/ea714c9bb52caa765f7707d5dcbe7f3a.png?t=1533571231",
+          "name": "147 Break Zamieniecka",
+          "owner": {
+            "logo": "//img.cuescore.com/image/7/2/71487152007d737c2f5de4f7821f7c9e.png?t=1555512394",
+            "name": "MGL Cue Sports",
+            "organizationId": 5133719,
+            "profileColor": "58a5fc",
+            "stub": "mglcuesports",
+            "url": "https://cuescore.com/mglcuesports"
+          },
+          "url": "https://cuescore.com/venue/147+Break+Zamieniecka/2842336",
+          "venueId": 2842336
+        }
+      },
+      "tournamentId": 69022525,
+      "useInnings": false,
+      "videoLink": "",
+      "winnerNext": 28
     },
     {
+      "bestOfSets": 0,
+      "branch": 1,
+      "challengeId": 0,
+      "comment": "",
+      "curVersion": 160,
+      "discipline": "Multiball",
+      "disciplineId": 10,
+      "frames": [],
+      "groupNo": 0,
+      "highBreaksA": "",
+      "highBreaksB": "",
+      "inningsPlayerA": 0,
+      "inningsPlayerB": 0,
+      "lagWinner": "A",
+      "loserNext": "",
       "matchId": 69051991,
+      "matchType": 0,
+      "matchno": 26,
+      "matchstatus": "finished",
+      "matchstatusCode": 2,
+      "notes": [
+        {
+          "note": "frame start",
+          "time": "2025-09-25T20:21:16.793Z"
+        },
+        {
+          "note": "A breaking",
+          "time": "2025-09-25T20:21:16.793Z"
+        },
+        {
+          "note": "A frame win",
+          "time": "2025-09-25T20:30:10.489Z"
+        },
+        {
+          "note": "frame end",
+          "time": "2025-09-25T20:30:10.489Z"
+        },
+        {
+          "note": "frame start",
+          "time": "2025-09-25T20:30:10.489Z"
+        },
+        {
+          "note": "A breaking",
+          "time": "2025-09-25T20:30:10.489Z"
+        },
+        {
+          "note": "B frame win",
+          "time": "2025-09-25T20:36:00.766Z"
+        },
+        {
+          "note": "frame end",
+          "time": "2025-09-25T20:36:00.766Z"
+        },
+        {
+          "note": "frame start",
+          "time": "2025-09-25T20:36:00.766Z"
+        },
+        {
+          "note": "B breaking",
+          "time": "2025-09-25T20:36:00.766Z"
+        },
+        {
+          "note": "B frame win",
+          "time": "2025-09-25T20:41:16.050Z"
+        },
+        {
+          "note": "frame end",
+          "time": "2025-09-25T20:41:16.050Z"
+        },
+        {
+          "note": "frame start",
+          "time": "2025-09-25T20:41:16.050Z"
+        },
+        {
+          "note": "B breaking",
+          "time": "2025-09-25T20:41:16.050Z"
+        },
+        {
+          "note": "A frame win",
+          "time": "2025-09-25T20:47:32.416Z"
+        },
+        {
+          "note": "frame end",
+          "time": "2025-09-25T20:47:32.416Z"
+        },
+        {
+          "note": "frame start",
+          "time": "2025-09-25T20:47:32.416Z"
+        },
+        {
+          "note": "A breaking",
+          "time": "2025-09-25T20:47:32.416Z"
+        },
+        {
+          "note": "B frame win",
+          "time": "2025-09-25T20:53:57.036Z"
+        },
+        {
+          "note": "frame end",
+          "time": "2025-09-25T20:53:57.036Z"
+        },
+        {
+          "note": "frame start",
+          "time": "2025-09-25T20:53:57.036Z"
+        },
+        {
+          "note": "B breaking",
+          "time": "2025-09-25T20:53:57.036Z"
+        },
+        {
+          "note": "B frame win",
+          "time": "2025-09-25T21:00:49.229Z"
+        },
+        {
+          "note": "frame end",
+          "time": "2025-09-25T21:00:49.229Z"
+        },
+        {
+          "note": "match end",
+          "time": "2025-09-25T21:00:50.461Z"
+        }
+      ],
+      "penalty": 0,
       "playerA": {
+        "country": {
+          "alpha3": "POL",
+          "continent": "Europe",
+          "image": "https://cuescore.com/img/flags/png-country-4x2-none/res-640x480/pl.png",
+          "name": "Poland"
+        },
+        "firstname": "Tomasz",
+        "image": "https://img.cuescore.com/image/f/4/f6c3ed0575983da290988136b5759945.png?t=1756990200",
+        "lastname": "Deszczyński",
         "name": "Tomasz Deszczyński",
-        "playerId": 40365082
+        "playerId": 40365082,
+        "represents": [],
+        "url": "https://cuescore.com/player/Tomasz+Deszczy%C5%84ski/40365082"
       },
       "playerB": {
+        "country": {
+          "alpha3": "POL",
+          "continent": "Europe",
+          "image": "https://cuescore.com/img/flags/png-country-4x2-none/res-640x480/pl.png",
+          "name": "Poland"
+        },
+        "firstname": "Adam",
+        "image": "https://img.cuescore.com/image/8/4/87fddf2df143364361c026d04ff77349.png?t=1736636400",
+        "lastname": "Kuryłek",
         "name": "Adam Kuryłek",
-        "playerId": 53167912
+        "playerId": 53167912,
+        "represents": [],
+        "url": "https://cuescore.com/player/Adam+Kury%C5%82ek/53167912"
       },
+      "properties": {
+        "lagWinsA": 1,
+        "lagWinsB": 0,
+        "runoutsA": 0,
+        "runoutsB": 0
+      },
+      "raceTo": 4,
+      "round": 6,
+      "roundName": "Quarter final",
+      "runoutsA": 0,
+      "runoutsB": 0,
       "scoreA": 2,
       "scoreB": 4,
+      "sets": [],
       "starttime": "2025-09-25T22:14:59",
-      "stoptime": "2025-09-25T23:00:53"
+      "stoptime": "2025-09-25T23:00:53",
+      "table": {
+        "branch": "American pool",
+        "branchId": 1,
+        "cloth": "",
+        "description": "",
+        "manufacturer": "",
+        "model": "Tournament Champion Sport",
+        "name": "15",
+        "pockets": "",
+        "size": 9,
+        "slate": "",
+        "tableId": 2842373,
+        "venue": {
+          "image": "https://img.cuescore.com/image/e/3/ea714c9bb52caa765f7707d5dcbe7f3a.png?t=1533571231",
+          "name": "147 Break Zamieniecka",
+          "owner": {
+            "logo": "//img.cuescore.com/image/7/2/71487152007d737c2f5de4f7821f7c9e.png?t=1555512394",
+            "name": "MGL Cue Sports",
+            "organizationId": 5133719,
+            "profileColor": "58a5fc",
+            "stub": "mglcuesports",
+            "url": "https://cuescore.com/mglcuesports"
+          },
+          "url": "https://cuescore.com/venue/147+Break+Zamieniecka/2842336",
+          "venueId": 2842336
+        }
+      },
+      "tournamentId": 69022525,
+      "useInnings": false,
+      "videoLink": "",
+      "winnerNext": 28
     },
     {
+      "bestOfSets": 0,
+      "branch": 1,
+      "challengeId": 0,
+      "comment": "",
+      "curVersion": 160,
+      "discipline": "Multiball",
+      "disciplineId": 10,
+      "frames": [],
+      "groupNo": 0,
+      "highBreaksA": "",
+      "highBreaksB": "",
+      "inningsPlayerA": 0,
+      "inningsPlayerB": 0,
+      "lagWinner": "",
+      "loserNext": "",
       "matchId": 69051994,
+      "matchType": 0,
+      "matchno": 27,
+      "matchstatus": "finished",
+      "matchstatusCode": 2,
+      "notes": [],
+      "penalty": 0,
       "playerA": {
+        "country": {
+          "alpha3": "POL",
+          "continent": "Europe",
+          "image": "https://cuescore.com/img/flags/png-country-4x2-none/res-640x480/pl.png",
+          "name": "Poland"
+        },
+        "firstname": "Wojtek",
+        "image": "https://img.cuescore.com/image/8/4/862c792ba8eb7f97e626fbe6cbcc59f6.png",
+        "lastname": "Trajdos",
         "name": "Wojtek Trajdos",
-        "playerId": 57205030
+        "playerId": 57205030,
+        "represents": [],
+        "url": "https://cuescore.com/player/Wojtek+Trajdos/57205030"
       },
       "playerB": {
+        "country": {
+          "alpha3": "POL",
+          "continent": "Europe",
+          "image": "https://cuescore.com/img/flags/png-country-4x2-none/res-640x480/pl.png",
+          "name": "Poland"
+        },
+        "firstname": "Sebastian",
+        "image": "https://img.cuescore.com/image/8/4/8e25b60ff30ecb15ccb65e9c5875c024.png?t=1758874499",
+        "lastname": "Szymkowski",
         "name": "Sebastian Szymkowski",
-        "playerId": 1660831
+        "playerId": 1660831,
+        "represents": [],
+        "url": "https://cuescore.com/player/Sebastian+Szymkowski/1660831"
       },
+      "properties": {
+        "penalty": []
+      },
+      "raceTo": 4,
+      "round": 7,
+      "roundName": "Semi final",
+      "runoutsA": 0,
+      "runoutsB": 0,
       "scoreA": 4,
       "scoreB": 2,
+      "sets": [],
       "starttime": "2025-09-25T22:51:00",
-      "stoptime": "2025-09-25T23:25:11"
+      "stoptime": "2025-09-25T23:25:11",
+      "table": {
+        "branch": "American pool",
+        "branchId": 1,
+        "cloth": "",
+        "description": "",
+        "manufacturer": "",
+        "model": "Tournament Champion Sport",
+        "name": "14",
+        "pockets": "",
+        "size": 9,
+        "slate": "",
+        "tableId": 2842372,
+        "venue": {
+          "image": "https://img.cuescore.com/image/e/3/ea714c9bb52caa765f7707d5dcbe7f3a.png?t=1533571231",
+          "name": "147 Break Zamieniecka",
+          "owner": {
+            "logo": "//img.cuescore.com/image/7/2/71487152007d737c2f5de4f7821f7c9e.png?t=1555512394",
+            "name": "MGL Cue Sports",
+            "organizationId": 5133719,
+            "profileColor": "58a5fc",
+            "stub": "mglcuesports",
+            "url": "https://cuescore.com/mglcuesports"
+          },
+          "url": "https://cuescore.com/venue/147+Break+Zamieniecka/2842336",
+          "venueId": 2842336
+        }
+      },
+      "tournamentId": 69022525,
+      "useInnings": false,
+      "videoLink": "",
+      "winnerNext": 29
     },
     {
+      "bestOfSets": 0,
+      "branch": 1,
+      "challengeId": 0,
+      "comment": "",
+      "curVersion": 160,
+      "discipline": "Multiball",
+      "disciplineId": 10,
+      "frames": [],
+      "groupNo": 0,
+      "highBreaksA": "",
+      "highBreaksB": "",
+      "inningsPlayerA": 0,
+      "inningsPlayerB": 0,
+      "lagWinner": "",
+      "loserNext": "",
       "matchId": 69051997,
+      "matchType": 0,
+      "matchno": 28,
+      "matchstatus": "finished",
+      "matchstatusCode": 2,
+      "notes": [],
+      "penalty": 0,
       "playerA": {
+        "country": {
+          "alpha3": "POL",
+          "continent": "Europe",
+          "image": "https://cuescore.com/img/flags/png-country-4x2-none/res-640x480/pl.png",
+          "name": "Poland"
+        },
+        "firstname": "Konrad",
+        "image": "https://img.cuescore.com/image/3/4/3938c823ac80f29ca4f77ae8160c9cd2.png?t=1710606254",
+        "lastname": "Kowalski",
         "name": "Konrad Kowalski",
-        "playerId": 1620822
+        "playerId": 1620822,
+        "represents": [],
+        "url": "https://cuescore.com/player/Konrad+Kowalski/1620822"
       },
       "playerB": {
+        "country": {
+          "alpha3": "POL",
+          "continent": "Europe",
+          "image": "https://cuescore.com/img/flags/png-country-4x2-none/res-640x480/pl.png",
+          "name": "Poland"
+        },
+        "firstname": "Adam",
+        "image": "https://img.cuescore.com/image/8/4/87fddf2df143364361c026d04ff77349.png?t=1736636400",
+        "lastname": "Kuryłek",
         "name": "Adam Kuryłek",
-        "playerId": 53167912
+        "playerId": 53167912,
+        "represents": [],
+        "url": "https://cuescore.com/player/Adam+Kury%C5%82ek/53167912"
       },
+      "properties": {
+        "penalty": []
+      },
+      "raceTo": 4,
+      "round": 7,
+      "roundName": "Semi final",
+      "runoutsA": 0,
+      "runoutsB": 0,
       "scoreA": 1,
       "scoreB": 4,
+      "sets": [],
       "starttime": "2025-09-25T23:01:00",
-      "stoptime": "2025-09-25T23:22:08"
+      "stoptime": "2025-09-25T23:22:08",
+      "table": {
+        "branch": "American pool",
+        "branchId": 1,
+        "cloth": "",
+        "description": "",
+        "manufacturer": "",
+        "model": "Tournament Champion Sport",
+        "name": "16",
+        "pockets": "",
+        "size": 9,
+        "slate": "",
+        "tableId": 2842374,
+        "venue": {
+          "image": "https://img.cuescore.com/image/e/3/ea714c9bb52caa765f7707d5dcbe7f3a.png?t=1533571231",
+          "name": "147 Break Zamieniecka",
+          "owner": {
+            "logo": "//img.cuescore.com/image/7/2/71487152007d737c2f5de4f7821f7c9e.png?t=1555512394",
+            "name": "MGL Cue Sports",
+            "organizationId": 5133719,
+            "profileColor": "58a5fc",
+            "stub": "mglcuesports",
+            "url": "https://cuescore.com/mglcuesports"
+          },
+          "url": "https://cuescore.com/venue/147+Break+Zamieniecka/2842336",
+          "venueId": 2842336
+        }
+      },
+      "tournamentId": 69022525,
+      "useInnings": false,
+      "videoLink": "",
+      "winnerNext": 29
     },
     {
+      "bestOfSets": 0,
+      "branch": 1,
+      "challengeId": 0,
+      "comment": "",
+      "curVersion": 160,
+      "discipline": "Multiball",
+      "disciplineId": 10,
+      "frames": [],
+      "groupNo": 0,
+      "highBreaksA": "",
+      "highBreaksB": "",
+      "inningsPlayerA": 0,
+      "inningsPlayerB": 0,
+      "lagWinner": "",
+      "loserNext": "",
       "matchId": 69052000,
+      "matchType": 0,
+      "matchno": 29,
+      "matchstatus": "finished",
+      "matchstatusCode": 2,
+      "notes": [],
+      "penalty": 0,
       "playerA": {
+        "country": {
+          "alpha3": "POL",
+          "continent": "Europe",
+          "image": "https://cuescore.com/img/flags/png-country-4x2-none/res-640x480/pl.png",
+          "name": "Poland"
+        },
+        "firstname": "Wojtek",
+        "image": "https://img.cuescore.com/image/8/4/862c792ba8eb7f97e626fbe6cbcc59f6.png",
+        "lastname": "Trajdos",
         "name": "Wojtek Trajdos",
-        "playerId": 57205030
+        "playerId": 57205030,
+        "represents": [],
+        "url": "https://cuescore.com/player/Wojtek+Trajdos/57205030"
       },
       "playerB": {
+        "country": {
+          "alpha3": "POL",
+          "continent": "Europe",
+          "image": "https://cuescore.com/img/flags/png-country-4x2-none/res-640x480/pl.png",
+          "name": "Poland"
+        },
+        "firstname": "Adam",
+        "image": "https://img.cuescore.com/image/8/4/87fddf2df143364361c026d04ff77349.png?t=1736636400",
+        "lastname": "Kuryłek",
         "name": "Adam Kuryłek",
-        "playerId": 53167912
+        "playerId": 53167912,
+        "represents": [],
+        "url": "https://cuescore.com/player/Adam+Kury%C5%82ek/53167912"
       },
+      "properties": {
+        "penalty": []
+      },
+      "raceTo": 4,
+      "round": 8,
+      "roundName": "Final",
+      "runoutsA": 0,
+      "runoutsB": 0,
       "scoreA": 4,
       "scoreB": 3,
+      "sets": [],
       "starttime": "2025-09-25T23:26:00",
-      "stoptime": "2025-09-26T00:04:02"
+      "stoptime": "2025-09-26T00:04:02",
+      "table": {
+        "branch": "American pool",
+        "branchId": 1,
+        "cloth": "",
+        "description": "",
+        "manufacturer": "",
+        "model": "Tournament Champion Sport",
+        "name": "14",
+        "pockets": "",
+        "size": 9,
+        "slate": "",
+        "tableId": 2842372,
+        "venue": {
+          "image": "https://img.cuescore.com/image/e/3/ea714c9bb52caa765f7707d5dcbe7f3a.png?t=1533571231",
+          "name": "147 Break Zamieniecka",
+          "owner": {
+            "logo": "//img.cuescore.com/image/7/2/71487152007d737c2f5de4f7821f7c9e.png?t=1555512394",
+            "name": "MGL Cue Sports",
+            "organizationId": 5133719,
+            "profileColor": "58a5fc",
+            "stub": "mglcuesports",
+            "url": "https://cuescore.com/mglcuesports"
+          },
+          "url": "https://cuescore.com/venue/147+Break+Zamieniecka/2842336",
+          "venueId": 2842336
+        }
+      },
+      "tournamentId": 69022525,
+      "useInnings": false,
+      "videoLink": "",
+      "winnerNext": ""
     }
   ],
   "name": "147 Break Championship XXIII - turniej 3/15",
+  "organizers": [
+    {
+      "logo": "//img.cuescore.com/image/9/2/9b59b70e156f2f8d0f1a879411c6ffd1.png?t=1576160578",
+      "name": "Black Ball Events",
+      "organizationId": 7011764,
+      "profileColor": "000000",
+      "stub": "blackballevents",
+      "url": "https://cuescore.com/blackballevents"
+    }
+  ],
+  "owner": {
+    "logo": "//img.cuescore.com/image/9/2/9b59b70e156f2f8d0f1a879411c6ffd1.png?t=1576160578",
+    "name": "Black Ball Events",
+    "organizationId": 7011764,
+    "profileColor": "000000",
+    "stub": "blackballevents",
+    "url": "https://cuescore.com/blackballevents"
+  },
+  "preseeds": {
+    "1620822": 8,
+    "1634586": 3,
+    "1660831": 2,
+    "1734129": 7,
+    "2264676": 5,
+    "36897787": 13,
+    "39854860": 12,
+    "40313560": 11,
+    "40365082": 6,
+    "53167912": 4,
+    "57205030": 1,
+    "6480431": 9,
+    "7789003": 10
+  },
+  "rankings": [
+    {
+      "bestOf": 0,
+      "branch": 1,
+      "name": "147 Break Championship XXIII",
+      "pointsystem": 0,
+      "rankingId": 69425476,
+      "season": 2025,
+      "url": "https://cuescore.com/ranking/147+Break+Championship+XXIII/69425476"
+    }
+  ],
+  "sequence": 0,
+  "standings": {
+    "1": [
+      {
+        "frameAvg": 0.762,
+        "frameLosses": 5,
+        "frameScore": 11,
+        "frameWinAvg": 4,
+        "frameWins": 16,
+        "highBreak": 0,
+        "inningAvg": 0,
+        "innings": 0,
+        "lagWins": 2,
+        "losses": 0,
+        "played": 4,
+        "player": {
+          "country": {
+            "alpha3": "POL",
+            "continent": "Europe",
+            "image": "https://cuescore.com/img/flags/png-country-4x2-none/res-640x480/pl.png",
+            "name": "Poland"
+          },
+          "firstname": "Wojtek",
+          "image": "https://img.cuescore.com/image/8/4/862c792ba8eb7f97e626fbe6cbcc59f6.png",
+          "lastname": "Trajdos",
+          "name": "Wojtek Trajdos",
+          "playerId": 57205030,
+          "represents": [],
+          "url": "https://cuescore.com/player/Wojtek+Trajdos/57205030"
+        },
+        "points": 12,
+        "position": 1,
+        "runouts": 2,
+        "setLosses": 0,
+        "setScore": 0,
+        "setWins": 0,
+        "teamBestInningAvg": 0,
+        "teamIndividualPoints": 0,
+        "teamInningAvg": 0,
+        "teamInnings": 0,
+        "teamMatchPoints": 0,
+        "ties": 0,
+        "wins": 4
+      },
+      {
+        "frameAvg": 0.526,
+        "frameLosses": 9,
+        "frameScore": 1,
+        "frameWinAvg": 2.5,
+        "frameWins": 10,
+        "highBreak": 0,
+        "inningAvg": 0,
+        "innings": 0,
+        "lagWins": 2,
+        "losses": 2,
+        "played": 4,
+        "player": {
+          "country": {
+            "alpha3": "POL",
+            "continent": "Europe",
+            "image": "https://cuescore.com/img/flags/png-country-4x2-none/res-640x480/pl.png",
+            "name": "Poland"
+          },
+          "firstname": "Tomasz",
+          "image": "https://img.cuescore.com/image/f/4/f6c3ed0575983da290988136b5759945.png?t=1756990200",
+          "lastname": "Deszczyński",
+          "name": "Tomasz Deszczyński",
+          "playerId": 40365082,
+          "represents": [],
+          "url": "https://cuescore.com/player/Tomasz+Deszczy%C5%84ski/40365082"
+        },
+        "points": 8,
+        "position": 2,
+        "runouts": 0,
+        "setLosses": 0,
+        "setScore": 0,
+        "setWins": 0,
+        "teamBestInningAvg": 0,
+        "teamIndividualPoints": 0,
+        "teamInningAvg": 0,
+        "teamInnings": 0,
+        "teamMatchPoints": 0,
+        "ties": 0,
+        "wins": 2
+      },
+      {
+        "frameAvg": 0.476,
+        "frameLosses": 11,
+        "frameScore": -1,
+        "frameWinAvg": 2.5,
+        "frameWins": 10,
+        "highBreak": 0,
+        "inningAvg": 0,
+        "innings": 0,
+        "lagWins": 0,
+        "losses": 2,
+        "played": 4,
+        "player": {
+          "country": {
+            "alpha3": "UKR",
+            "continent": "Europe",
+            "image": "https://cuescore.com/img/flags/png-country-4x2-none/res-640x480/ua.png",
+            "name": "Ukraine"
+          },
+          "firstname": "Ivan",
+          "image": "https://img.cuescore.com/image/2/4/2c93db15d52d17b300ed3d362a7ff6d1.png?t=1708679266",
+          "lastname": "Kuzmych",
+          "name": "Ivan Kuzmych",
+          "playerId": 39854860,
+          "represents": [],
+          "url": "https://cuescore.com/player/Ivan+Kuzmych/39854860"
+        },
+        "points": 8,
+        "position": 3,
+        "runouts": 0,
+        "setLosses": 0,
+        "setScore": 0,
+        "setWins": 0,
+        "teamBestInningAvg": 0,
+        "teamIndividualPoints": 0,
+        "teamInningAvg": 0,
+        "teamInnings": 0,
+        "teamMatchPoints": 0,
+        "ties": 0,
+        "wins": 2
+      },
+      {
+        "frameAvg": 0.455,
+        "frameLosses": 12,
+        "frameScore": -2,
+        "frameWinAvg": 2.5,
+        "frameWins": 10,
+        "highBreak": 0,
+        "inningAvg": 0,
+        "innings": 0,
+        "lagWins": 1,
+        "losses": 2,
+        "played": 4,
+        "player": {
+          "country": {
+            "alpha3": "POL",
+            "continent": "Europe",
+            "image": "https://cuescore.com/img/flags/png-country-4x2-none/res-640x480/pl.png",
+            "name": "Poland"
+          },
+          "firstname": "Kacper",
+          "image": "https://img.cuescore.com/image/c/4/c658d91cd903768c1f47248b22ca49c7.png?t=1649403803",
+          "lastname": "Kielmans",
+          "name": "Kacper Kielmans",
+          "playerId": 1734129,
+          "represents": [],
+          "url": "https://cuescore.com/player/Kacper+Kielmans/1734129"
+        },
+        "points": 8,
+        "position": 4,
+        "runouts": 1,
+        "setLosses": 0,
+        "setScore": 0,
+        "setWins": 0,
+        "teamBestInningAvg": 0,
+        "teamIndividualPoints": 0,
+        "teamInningAvg": 0,
+        "teamInnings": 0,
+        "teamMatchPoints": 0,
+        "ties": 0,
+        "wins": 2
+      },
+      {
+        "frameAvg": 0.304,
+        "frameLosses": 16,
+        "frameScore": -9,
+        "frameWinAvg": 1.75,
+        "frameWins": 7,
+        "highBreak": 0,
+        "inningAvg": 0,
+        "innings": 0,
+        "lagWins": 2,
+        "losses": 4,
+        "played": 4,
+        "player": {
+          "country": {
+            "alpha3": "POL",
+            "continent": "Europe",
+            "image": "https://cuescore.com/img/flags/png-country-4x2-none/res-640x480/pl.png",
+            "name": "Poland"
+          },
+          "firstname": "Sebastian",
+          "image": "https://img.cuescore.com/image/8/4/862c792ba8eb7f97e626fbe6cbcc59f6.png",
+          "lastname": "Matura",
+          "name": "Sebastian Matura",
+          "playerId": 36897787,
+          "represents": [],
+          "url": "https://cuescore.com/player/Sebastian+Matura/36897787"
+        },
+        "points": 4,
+        "position": 5,
+        "runouts": 0,
+        "setLosses": 0,
+        "setScore": 0,
+        "setWins": 0,
+        "teamBestInningAvg": 0,
+        "teamIndividualPoints": 0,
+        "teamInningAvg": 0,
+        "teamInnings": 0,
+        "teamMatchPoints": 0,
+        "ties": 0,
+        "wins": 0
+      }
+    ],
+    "2": [
+      {
+        "frameAvg": 0.857,
+        "frameLosses": 2,
+        "frameScore": 10,
+        "frameWinAvg": 4,
+        "frameWins": 12,
+        "highBreak": 0,
+        "inningAvg": 0,
+        "innings": 0,
+        "lagWins": 1,
+        "losses": 0,
+        "played": 3,
+        "player": {
+          "country": {
+            "alpha3": "POL",
+            "continent": "Europe",
+            "image": "https://cuescore.com/img/flags/png-country-4x2-none/res-640x480/pl.png",
+            "name": "Poland"
+          },
+          "firstname": "Marcin",
+          "image": "https://img.cuescore.com/image/6/4/634670d25cfb0b8494e08327b2bb74b4.png?t=1736761259",
+          "lastname": "Kubalski",
+          "name": "Marcin Kubalski",
+          "playerId": 1634586,
+          "represents": {
+            "logo": "//img.cuescore.com/image/2/2/2c18635ebc6f2e574949d524d3026197.png?t=1551972415",
+            "name": "Snooker.Zone",
+            "organizationId": 4991658,
+            "profileColor": "",
+            "stub": "snookerzone",
+            "url": "https://cuescore.com/snookerzone"
+          },
+          "url": "https://cuescore.com/player/Marcin+Kubalski/1634586"
+        },
+        "points": 9,
+        "position": 1,
+        "runouts": 0,
+        "setLosses": 0,
+        "setScore": 0,
+        "setWins": 0,
+        "teamBestInningAvg": 0,
+        "teamIndividualPoints": 0,
+        "teamInningAvg": 0,
+        "teamInnings": 0,
+        "teamMatchPoints": 0,
+        "ties": 0,
+        "wins": 3
+      },
+      {
+        "frameAvg": 0.571,
+        "frameLosses": 6,
+        "frameScore": 2,
+        "frameWinAvg": 2.667,
+        "frameWins": 8,
+        "highBreak": 0,
+        "inningAvg": 0,
+        "innings": 0,
+        "lagWins": 0,
+        "losses": 1,
+        "played": 3,
+        "player": {
+          "country": {
+            "alpha3": "POL",
+            "continent": "Europe",
+            "image": "https://cuescore.com/img/flags/png-country-4x2-none/res-640x480/pl.png",
+            "name": "Poland"
+          },
+          "firstname": "Adam",
+          "image": "https://img.cuescore.com/image/8/4/87fddf2df143364361c026d04ff77349.png?t=1736636400",
+          "lastname": "Kuryłek",
+          "name": "Adam Kuryłek",
+          "playerId": 53167912,
+          "represents": [],
+          "url": "https://cuescore.com/player/Adam+Kury%C5%82ek/53167912"
+        },
+        "points": 7,
+        "position": 2,
+        "runouts": 0,
+        "setLosses": 0,
+        "setScore": 0,
+        "setWins": 0,
+        "teamBestInningAvg": 0,
+        "teamIndividualPoints": 0,
+        "teamInningAvg": 0,
+        "teamInnings": 0,
+        "teamMatchPoints": 0,
+        "ties": 0,
+        "wins": 2
+      },
+      {
+        "frameAvg": 0.353,
+        "frameLosses": 11,
+        "frameScore": -5,
+        "frameWinAvg": 2,
+        "frameWins": 6,
+        "highBreak": 0,
+        "inningAvg": 0,
+        "innings": 0,
+        "lagWins": 1,
+        "losses": 2,
+        "played": 3,
+        "player": {
+          "country": {
+            "alpha3": "POL",
+            "continent": "Europe",
+            "image": "https://cuescore.com/img/flags/png-country-4x2-none/res-640x480/pl.png",
+            "name": "Poland"
+          },
+          "firstname": "Maciej",
+          "image": "https://img.cuescore.com/image/8/4/8bd3578c19ef8201ca1330519e82df1c.png?t=1707758826",
+          "lastname": "Pislewski",
+          "name": "Maciej Pislewski",
+          "playerId": 7789003,
+          "represents": [],
+          "url": "https://cuescore.com/player/Maciej+Pislewski/7789003"
+        },
+        "points": 5,
+        "position": 3,
+        "runouts": 0,
+        "setLosses": 0,
+        "setScore": 0,
+        "setWins": 0,
+        "teamBestInningAvg": 0,
+        "teamIndividualPoints": 0,
+        "teamInningAvg": 0,
+        "teamInnings": 0,
+        "teamMatchPoints": 0,
+        "ties": 0,
+        "wins": 1
+      },
+      {
+        "frameAvg": 0.294,
+        "frameLosses": 12,
+        "frameScore": -7,
+        "frameWinAvg": 1.667,
+        "frameWins": 5,
+        "highBreak": 0,
+        "inningAvg": 0,
+        "innings": 0,
+        "lagWins": 0,
+        "losses": 3,
+        "played": 3,
+        "player": {
+          "country": {
+            "alpha3": "POL",
+            "continent": "Europe",
+            "image": "https://cuescore.com/img/flags/png-country-4x2-none/res-640x480/pl.png",
+            "name": "Poland"
+          },
+          "firstname": "Michał",
+          "image": "https://img.cuescore.com/image/8/4/862c792ba8eb7f97e626fbe6cbcc59f6.png",
+          "lastname": "Kozłowski",
+          "name": "Michał Kozłowski",
+          "playerId": 6480431,
+          "represents": [],
+          "url": "https://cuescore.com/player/Micha%C5%82+Koz%C5%82owski/6480431"
+        },
+        "points": 3,
+        "position": 4,
+        "runouts": 0,
+        "setLosses": 0,
+        "setScore": 0,
+        "setWins": 0,
+        "teamBestInningAvg": 0,
+        "teamIndividualPoints": 0,
+        "teamInningAvg": 0,
+        "teamInnings": 0,
+        "teamMatchPoints": 0,
+        "ties": 0,
+        "wins": 0
+      }
+    ],
+    "3": [
+      {
+        "frameAvg": 0.643,
+        "frameLosses": 5,
+        "frameScore": 4,
+        "frameWinAvg": 3,
+        "frameWins": 9,
+        "highBreak": 0,
+        "inningAvg": 0,
+        "innings": 0,
+        "lagWins": 0,
+        "losses": 1,
+        "played": 3,
+        "player": {
+          "country": {
+            "alpha3": "POL",
+            "continent": "Europe",
+            "image": "https://cuescore.com/img/flags/png-country-4x2-none/res-640x480/pl.png",
+            "name": "Poland"
+          },
+          "firstname": "Konrad",
+          "image": "https://img.cuescore.com/image/3/4/3938c823ac80f29ca4f77ae8160c9cd2.png?t=1710606254",
+          "lastname": "Kowalski",
+          "name": "Konrad Kowalski",
+          "playerId": 1620822,
+          "represents": [],
+          "url": "https://cuescore.com/player/Konrad+Kowalski/1620822"
+        },
+        "points": 7,
+        "position": 1,
+        "runouts": 0,
+        "setLosses": 0,
+        "setScore": 0,
+        "setWins": 0,
+        "teamBestInningAvg": 0,
+        "teamIndividualPoints": 0,
+        "teamInningAvg": 0,
+        "teamInnings": 0,
+        "teamMatchPoints": 0,
+        "ties": 0,
+        "wins": 2
+      },
+      {
+        "frameAvg": 0.579,
+        "frameLosses": 8,
+        "frameScore": 3,
+        "frameWinAvg": 3.667,
+        "frameWins": 11,
+        "highBreak": 0,
+        "inningAvg": 0,
+        "innings": 0,
+        "lagWins": 0,
+        "losses": 1,
+        "played": 3,
+        "player": {
+          "country": {
+            "alpha3": "POL",
+            "continent": "Europe",
+            "image": "https://cuescore.com/img/flags/png-country-4x2-none/res-640x480/pl.png",
+            "name": "Poland"
+          },
+          "firstname": "Sebastian",
+          "image": "https://img.cuescore.com/image/8/4/8e25b60ff30ecb15ccb65e9c5875c024.png?t=1758874499",
+          "lastname": "Szymkowski",
+          "name": "Sebastian Szymkowski",
+          "playerId": 1660831,
+          "represents": [],
+          "url": "https://cuescore.com/player/Sebastian+Szymkowski/1660831"
+        },
+        "points": 7,
+        "position": 2,
+        "runouts": 0,
+        "setLosses": 0,
+        "setScore": 0,
+        "setWins": 0,
+        "teamBestInningAvg": 0,
+        "teamIndividualPoints": 0,
+        "teamInningAvg": 0,
+        "teamInnings": 0,
+        "teamMatchPoints": 0,
+        "ties": 0,
+        "wins": 2
+      },
+      {
+        "frameAvg": 0.5,
+        "frameLosses": 8,
+        "frameScore": 0,
+        "frameWinAvg": 2.667,
+        "frameWins": 8,
+        "highBreak": 0,
+        "inningAvg": 0,
+        "innings": 0,
+        "lagWins": 0,
+        "losses": 2,
+        "played": 3,
+        "player": {
+          "country": {
+            "alpha3": "POL",
+            "continent": "Europe",
+            "image": "https://cuescore.com/img/flags/png-country-4x2-none/res-640x480/pl.png",
+            "name": "Poland"
+          },
+          "firstname": "Tomek",
+          "image": "https://img.cuescore.com/image/7/4/74061c1f247d25c1c2939a2f33efb340.png?t=1677415392",
+          "lastname": "Kielmans",
+          "name": "Tomek Kielmans",
+          "playerId": 2264676,
+          "represents": [],
+          "url": "https://cuescore.com/player/Tomek+Kielmans/2264676"
+        },
+        "points": 5,
+        "position": 3,
+        "runouts": 0,
+        "setLosses": 0,
+        "setScore": 0,
+        "setWins": 0,
+        "teamBestInningAvg": 0,
+        "teamIndividualPoints": 0,
+        "teamInningAvg": 0,
+        "teamInnings": 0,
+        "teamMatchPoints": 0,
+        "ties": 0,
+        "wins": 1
+      },
+      {
+        "frameAvg": 0.267,
+        "frameLosses": 11,
+        "frameScore": -7,
+        "frameWinAvg": 1.333,
+        "frameWins": 4,
+        "highBreak": 0,
+        "inningAvg": 0,
+        "innings": 0,
+        "lagWins": 0,
+        "losses": 2,
+        "played": 3,
+        "player": {
+          "country": {
+            "alpha3": "POL",
+            "continent": "Europe",
+            "image": "https://cuescore.com/img/flags/png-country-4x2-none/res-640x480/pl.png",
+            "name": "Poland"
+          },
+          "firstname": "Kamil",
+          "image": "https://img.cuescore.com/image/b/4/b08ca302c82e5908139795cfcd114cb7.png?t=1709887390",
+          "lastname": "Pietruszewski",
+          "name": "Kamil Pietruszewski",
+          "playerId": 40313560,
+          "represents": [],
+          "url": "https://cuescore.com/player/Kamil+Pietruszewski/40313560"
+        },
+        "points": 5,
+        "position": 4,
+        "runouts": 0,
+        "setLosses": 0,
+        "setScore": 0,
+        "setWins": 0,
+        "teamBestInningAvg": 0,
+        "teamIndividualPoints": 0,
+        "teamInningAvg": 0,
+        "teamInnings": 0,
+        "teamMatchPoints": 0,
+        "ties": 0,
+        "wins": 1
+      }
+    ]
+  },
   "starttime": "2025-09-25T19:00:00+02:00",
+  "status": "Finished",
+  "statusCode": 2,
   "stoptime": "2025-09-25T23:59:00+02:00",
   "timezone": "Europe/Warsaw",
   "tournamentId": 69022525,
@@ -457,7 +4331,17 @@
   "url": "https://cuescore.com/tournament/147+Break+Championship+XXIII+-+turniej+3%252F15/69022525",
   "venues": [
     {
+      "image": "https://img.cuescore.com/image/e/3/ea714c9bb52caa765f7707d5dcbe7f3a.png?t=1533571231",
       "name": "147 Break Zamieniecka",
+      "owner": {
+        "logo": "//img.cuescore.com/image/7/2/71487152007d737c2f5de4f7821f7c9e.png?t=1555512394",
+        "name": "MGL Cue Sports",
+        "organizationId": 5133719,
+        "profileColor": "58a5fc",
+        "stub": "mglcuesports",
+        "url": "https://cuescore.com/mglcuesports"
+      },
+      "url": "https://cuescore.com/venue/147+Break+Zamieniecka/2842336",
       "venueId": 2842336
     }
   ]

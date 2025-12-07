@@ -8,7 +8,7 @@ export type Language = 'en' | 'pl';
 })
 export class TranslationService {
   private currentLangSignal = signal<Language>('en');
-  
+
   // Public signal for the current language
   currentLang = this.currentLangSignal.asReadonly();
 
@@ -27,7 +27,7 @@ export class TranslationService {
   translate(key: string): string {
     const lang = this.currentLangSignal();
     const dict = DICTIONARY[lang];
-    const normalizedKey = key.toUpperCase(); 
+    const normalizedKey = key.toUpperCase();
     return (dict as any)[normalizedKey] || (dict as any)[key] || key;
   }
 }

@@ -1,178 +1,843 @@
 {
+  "access": [
+    1620195
+  ],
   "banner": [],
+  "branch": 1,
   "breakrule": "alternate",
+  "contacts": [
+    {
+      "country": {
+        "alpha3": "POL",
+        "continent": "Europe",
+        "image": "https://cuescore.com/img/flags/png-country-4x2-none/res-640x480/pl.png",
+        "name": "Poland"
+      },
+      "firstname": "Mariusz",
+      "image": "https://img.cuescore.com/image/3/4/350e9a57e10bb71b6819c3d07ea9f53e.png?t=1702664077",
+      "lastname": "Ptaszyński",
+      "name": "Mariusz Ptaszyński",
+      "playerId": 1664278,
+      "represents": [],
+      "url": "https://cuescore.com/player/Mariusz+Ptaszy%C5%84ski/1664278"
+    }
+  ],
   "deadline": "",
   "defaultRaceTo": 4,
   "description": "",
   "discipline": "9-Ball",
+  "disciplineId": 3,
   "displayDate": "August 28, 2024",
   "dresscode": "",
+  "entrystart": "",
   "format": 4,
+  "handicap": [],
   "matches": [
     {
+      "bestOfSets": 0,
+      "branch": 1,
+      "challengeId": 0,
+      "comment": "",
+      "curVersion": 57,
+      "discipline": "9-Ball",
+      "disciplineId": 3,
+      "frames": [],
+      "groupNo": 1,
+      "highBreaksA": "",
+      "highBreaksB": "",
+      "inningsPlayerA": 0,
+      "inningsPlayerB": 0,
+      "lagWinner": "",
+      "loserNext": "",
       "matchId": 47851699,
+      "matchType": 1,
+      "matchno": 1,
+      "matchstatus": "finished",
+      "matchstatusCode": 2,
+      "notes": [],
+      "penalty": 8,
       "playerA": {
+        "country": {
+          "alpha3": "POL",
+          "continent": "Europe",
+          "image": "https://cuescore.com/img/flags/png-country-4x2-none/res-640x480/pl.png",
+          "name": "Poland"
+        },
+        "image": "https://img.cuescore.com/image/b/4/b65e00f0076abd0055a71ffa703e5bff.png?t=1483705613",
         "name": "Marcin Gościmski Michał Kopczyński (4)",
-        "playerId": null,
-        "teamId": 3547026
+        "teamId": 3547026,
+        "url": "https://cuescore.com/team/Marcin+Go%C5%9Bcimski+Micha%C5%82+Kopczy%C5%84ski+%284%29/3547026",
+        "venueId": 0
       },
       "playerB": {
+        "country": [],
+        "image": "https://img.cuescore.com/image/b/4/b65e00f0076abd0055a71ffa703e5bff.png?t=1483705613",
         "name": "Walkover 2",
-        "playerId": null,
-        "teamId": 10138096
+        "teamId": 10138096,
+        "url": "https://cuescore.com/team/Walkover+2/10138096",
+        "venueId": 0
       },
+      "properties": {
+        "penalty": {
+          "description": "",
+          "invalid": false
+        }
+      },
+      "raceTo": 6,
+      "round": 1,
+      "roundName": "Round 1",
+      "runoutsA": 0,
+      "runoutsB": 0,
       "scoreA": 0,
       "scoreB": 0,
+      "sets": [],
       "starttime": "",
-      "stoptime": ""
+      "stoptime": "",
+      "table": [],
+      "teamComment": "",
+      "tournamentId": 47824975,
+      "useInnings": false,
+      "videoLink": "",
+      "winnerNext": ""
     },
     {
+      "bestOfSets": 0,
+      "branch": 1,
+      "challengeId": 0,
+      "comment": "",
+      "curVersion": 57,
+      "discipline": "9-Ball",
+      "disciplineId": 3,
+      "frames": [],
+      "groupNo": 1,
+      "highBreaksA": "",
+      "highBreaksB": "",
+      "inningsPlayerA": 0,
+      "inningsPlayerB": 0,
+      "lagWinner": "",
+      "loserNext": "",
       "matchId": 47851702,
+      "matchType": 1,
+      "matchno": 2,
+      "matchstatus": "finished",
+      "matchstatusCode": 2,
+      "notes": [],
+      "penalty": 0,
       "playerA": {
+        "country": {
+          "alpha3": "POL",
+          "continent": "Europe",
+          "image": "https://cuescore.com/img/flags/png-country-4x2-none/res-640x480/pl.png",
+          "name": "Poland"
+        },
+        "image": "https://img.cuescore.com/image/b/4/b65e00f0076abd0055a71ffa703e5bff.png?t=1483705613",
         "name": "Mariusz Ptaszyński Marek Głòd",
-        "playerId": null,
-        "teamId": 36344347
+        "teamId": 36344347,
+        "url": "https://cuescore.com/team/Mariusz+Ptaszy%C5%84ski+Marek+G%C5%82%C3%B2d/36344347",
+        "venueId": 0
       },
       "playerB": {
+        "country": {
+          "alpha3": "POL",
+          "continent": "Europe",
+          "image": "https://cuescore.com/img/flags/png-country-4x2-none/res-640x480/pl.png",
+          "name": "Poland"
+        },
+        "image": "https://img.cuescore.com/image/b/4/b65e00f0076abd0055a71ffa703e5bff.png?t=1483705613",
         "name": "Kuba Kozioł Władysław Machynia",
-        "playerId": null,
-        "teamId": 47829694
+        "teamId": 47829694,
+        "url": "https://cuescore.com/team/Kuba+Kozio%C5%82+W%C5%82adys%C5%82aw+Machynia/47829694",
+        "venueId": 0
       },
+      "properties": [],
+      "raceTo": 6,
+      "round": 1,
+      "roundName": "Round 1",
+      "runoutsA": 0,
+      "runoutsB": 0,
       "scoreA": 3,
       "scoreB": 6,
+      "sets": [],
       "starttime": "2024-08-28T21:40:00",
-      "stoptime": "2024-08-28T21:42:35"
+      "stoptime": "2024-08-28T21:42:35",
+      "table": [],
+      "teamComment": "",
+      "tournamentId": 47824975,
+      "useInnings": false,
+      "videoLink": "",
+      "winnerNext": ""
     },
     {
+      "bestOfSets": 0,
+      "branch": 1,
+      "challengeId": 0,
+      "comment": "",
+      "curVersion": 57,
+      "discipline": "9-Ball",
+      "disciplineId": 3,
+      "frames": [],
+      "groupNo": 1,
+      "highBreaksA": "",
+      "highBreaksB": "",
+      "inningsPlayerA": 0,
+      "inningsPlayerB": 0,
+      "lagWinner": "",
+      "loserNext": "",
       "matchId": 47851705,
+      "matchType": 1,
+      "matchno": 3,
+      "matchstatus": "finished",
+      "matchstatusCode": 2,
+      "notes": [],
+      "penalty": 0,
       "playerA": {
+        "country": {
+          "alpha3": "POL",
+          "continent": "Europe",
+          "image": "https://cuescore.com/img/flags/png-country-4x2-none/res-640x480/pl.png",
+          "name": "Poland"
+        },
+        "image": "https://img.cuescore.com/image/b/4/b65e00f0076abd0055a71ffa703e5bff.png?t=1483705613",
         "name": "Marcin Gościmski Michał Kopczyński (4)",
-        "playerId": null,
-        "teamId": 3547026
+        "teamId": 3547026,
+        "url": "https://cuescore.com/team/Marcin+Go%C5%9Bcimski+Micha%C5%82+Kopczy%C5%84ski+%284%29/3547026",
+        "venueId": 0
       },
       "playerB": {
+        "country": {
+          "alpha3": "POL",
+          "continent": "Europe",
+          "image": "https://cuescore.com/img/flags/png-country-4x2-none/res-640x480/pl.png",
+          "name": "Poland"
+        },
+        "image": "https://img.cuescore.com/image/b/4/b65e00f0076abd0055a71ffa703e5bff.png?t=1483705613",
         "name": "Kuba Kozioł Władysław Machynia",
-        "playerId": null,
-        "teamId": 47829694
+        "teamId": 47829694,
+        "url": "https://cuescore.com/team/Kuba+Kozio%C5%82+W%C5%82adys%C5%82aw+Machynia/47829694",
+        "venueId": 0
       },
+      "properties": [],
+      "raceTo": 6,
+      "round": 2,
+      "roundName": "Round 2",
+      "runoutsA": 0,
+      "runoutsB": 0,
       "scoreA": 4,
       "scoreB": 6,
+      "sets": [],
       "starttime": "2024-08-28T21:42:00",
-      "stoptime": "2024-08-28T21:43:32"
+      "stoptime": "2024-08-28T21:43:32",
+      "table": [],
+      "teamComment": "",
+      "tournamentId": 47824975,
+      "useInnings": false,
+      "videoLink": "",
+      "winnerNext": ""
     },
     {
+      "bestOfSets": 0,
+      "branch": 1,
+      "challengeId": 0,
+      "comment": "",
+      "curVersion": 57,
+      "discipline": "9-Ball",
+      "disciplineId": 3,
+      "frames": [],
+      "groupNo": 1,
+      "highBreaksA": "",
+      "highBreaksB": "",
+      "inningsPlayerA": 0,
+      "inningsPlayerB": 0,
+      "lagWinner": "",
+      "loserNext": "",
       "matchId": 47851708,
+      "matchType": 1,
+      "matchno": 4,
+      "matchstatus": "finished",
+      "matchstatusCode": 2,
+      "notes": [],
+      "penalty": 4,
       "playerA": {
+        "country": [],
+        "image": "https://img.cuescore.com/image/b/4/b65e00f0076abd0055a71ffa703e5bff.png?t=1483705613",
         "name": "Walkover 2",
-        "playerId": null,
-        "teamId": 10138096
+        "teamId": 10138096,
+        "url": "https://cuescore.com/team/Walkover+2/10138096",
+        "venueId": 0
       },
       "playerB": {
+        "country": {
+          "alpha3": "POL",
+          "continent": "Europe",
+          "image": "https://cuescore.com/img/flags/png-country-4x2-none/res-640x480/pl.png",
+          "name": "Poland"
+        },
+        "image": "https://img.cuescore.com/image/b/4/b65e00f0076abd0055a71ffa703e5bff.png?t=1483705613",
         "name": "Mariusz Ptaszyński Marek Głòd",
-        "playerId": null,
-        "teamId": 36344347
+        "teamId": 36344347,
+        "url": "https://cuescore.com/team/Mariusz+Ptaszy%C5%84ski+Marek+G%C5%82%C3%B2d/36344347",
+        "venueId": 0
       },
+      "properties": {
+        "penalty": {
+          "description": "",
+          "invalid": false
+        }
+      },
+      "raceTo": 6,
+      "round": 2,
+      "roundName": "Round 2",
+      "runoutsA": 0,
+      "runoutsB": 0,
       "scoreA": 0,
       "scoreB": 0,
+      "sets": [],
       "starttime": "",
-      "stoptime": ""
+      "stoptime": "",
+      "table": [],
+      "teamComment": "",
+      "tournamentId": 47824975,
+      "useInnings": false,
+      "videoLink": "",
+      "winnerNext": ""
     },
     {
+      "bestOfSets": 0,
+      "branch": 1,
+      "challengeId": 0,
+      "comment": "",
+      "curVersion": 57,
+      "discipline": "9-Ball",
+      "disciplineId": 3,
+      "frames": [],
+      "groupNo": 1,
+      "highBreaksA": "",
+      "highBreaksB": "",
+      "inningsPlayerA": 0,
+      "inningsPlayerB": 0,
+      "lagWinner": "",
+      "loserNext": "",
       "matchId": 47851711,
+      "matchType": 1,
+      "matchno": 5,
+      "matchstatus": "finished",
+      "matchstatusCode": 2,
+      "notes": [],
+      "penalty": 0,
       "playerA": {
+        "country": {
+          "alpha3": "POL",
+          "continent": "Europe",
+          "image": "https://cuescore.com/img/flags/png-country-4x2-none/res-640x480/pl.png",
+          "name": "Poland"
+        },
+        "image": "https://img.cuescore.com/image/b/4/b65e00f0076abd0055a71ffa703e5bff.png?t=1483705613",
         "name": "Marcin Gościmski Michał Kopczyński (4)",
-        "playerId": null,
-        "teamId": 3547026
+        "teamId": 3547026,
+        "url": "https://cuescore.com/team/Marcin+Go%C5%9Bcimski+Micha%C5%82+Kopczy%C5%84ski+%284%29/3547026",
+        "venueId": 0
       },
       "playerB": {
+        "country": {
+          "alpha3": "POL",
+          "continent": "Europe",
+          "image": "https://cuescore.com/img/flags/png-country-4x2-none/res-640x480/pl.png",
+          "name": "Poland"
+        },
+        "image": "https://img.cuescore.com/image/b/4/b65e00f0076abd0055a71ffa703e5bff.png?t=1483705613",
         "name": "Mariusz Ptaszyński Marek Głòd",
-        "playerId": null,
-        "teamId": 36344347
+        "teamId": 36344347,
+        "url": "https://cuescore.com/team/Mariusz+Ptaszy%C5%84ski+Marek+G%C5%82%C3%B2d/36344347",
+        "venueId": 0
       },
+      "properties": [],
+      "raceTo": 6,
+      "round": 3,
+      "roundName": "Round 3",
+      "runoutsA": 0,
+      "runoutsB": 0,
       "scoreA": 6,
       "scoreB": 2,
+      "sets": [],
       "starttime": "2024-08-28T21:42:00",
-      "stoptime": "2024-08-28T21:43:35"
+      "stoptime": "2024-08-28T21:43:35",
+      "table": [],
+      "teamComment": "",
+      "tournamentId": 47824975,
+      "useInnings": false,
+      "videoLink": "",
+      "winnerNext": ""
     },
     {
+      "bestOfSets": 0,
+      "branch": 1,
+      "challengeId": 0,
+      "comment": "",
+      "curVersion": 57,
+      "discipline": "9-Ball",
+      "disciplineId": 3,
+      "frames": [],
+      "groupNo": 1,
+      "highBreaksA": "",
+      "highBreaksB": "",
+      "inningsPlayerA": 0,
+      "inningsPlayerB": 0,
+      "lagWinner": "",
+      "loserNext": "",
       "matchId": 47851714,
+      "matchType": 1,
+      "matchno": 6,
+      "matchstatus": "finished",
+      "matchstatusCode": 2,
+      "notes": [],
+      "penalty": 8,
       "playerA": {
+        "country": {
+          "alpha3": "POL",
+          "continent": "Europe",
+          "image": "https://cuescore.com/img/flags/png-country-4x2-none/res-640x480/pl.png",
+          "name": "Poland"
+        },
+        "image": "https://img.cuescore.com/image/b/4/b65e00f0076abd0055a71ffa703e5bff.png?t=1483705613",
         "name": "Kuba Kozioł Władysław Machynia",
-        "playerId": null,
-        "teamId": 47829694
+        "teamId": 47829694,
+        "url": "https://cuescore.com/team/Kuba+Kozio%C5%82+W%C5%82adys%C5%82aw+Machynia/47829694",
+        "venueId": 0
       },
       "playerB": {
+        "country": [],
+        "image": "https://img.cuescore.com/image/b/4/b65e00f0076abd0055a71ffa703e5bff.png?t=1483705613",
         "name": "Walkover 2",
-        "playerId": null,
-        "teamId": 10138096
+        "teamId": 10138096,
+        "url": "https://cuescore.com/team/Walkover+2/10138096",
+        "venueId": 0
       },
+      "properties": {
+        "penalty": {
+          "description": "",
+          "invalid": false
+        }
+      },
+      "raceTo": 6,
+      "round": 3,
+      "roundName": "Round 3",
+      "runoutsA": 0,
+      "runoutsB": 0,
       "scoreA": 0,
       "scoreB": 0,
+      "sets": [],
       "starttime": "",
-      "stoptime": ""
+      "stoptime": "",
+      "table": [],
+      "teamComment": "",
+      "tournamentId": 47824975,
+      "useInnings": false,
+      "videoLink": "",
+      "winnerNext": ""
     },
     {
+      "bestOfSets": 0,
+      "branch": 1,
+      "challengeId": 0,
+      "comment": "",
+      "curVersion": 57,
+      "discipline": "9-Ball",
+      "disciplineId": 3,
+      "frames": [],
+      "groupNo": 0,
+      "highBreaksA": "",
+      "highBreaksB": "",
+      "inningsPlayerA": 0,
+      "inningsPlayerB": 0,
+      "lagWinner": "",
+      "loserNext": "",
       "matchId": 47851717,
+      "matchType": 1,
+      "matchno": 7,
+      "matchstatus": "finished",
+      "matchstatusCode": 2,
+      "notes": [],
+      "penalty": 8,
       "playerA": {
+        "country": {
+          "alpha3": "POL",
+          "continent": "Europe",
+          "image": "https://cuescore.com/img/flags/png-country-4x2-none/res-640x480/pl.png",
+          "name": "Poland"
+        },
+        "image": "https://img.cuescore.com/image/b/4/b65e00f0076abd0055a71ffa703e5bff.png?t=1483705613",
         "name": "Kuba Kozioł Władysław Machynia",
-        "playerId": null,
-        "teamId": 47829694
+        "teamId": 47829694,
+        "url": "https://cuescore.com/team/Kuba+Kozio%C5%82+W%C5%82adys%C5%82aw+Machynia/47829694",
+        "venueId": 0
       },
       "playerB": {
+        "country": [],
+        "image": "https://img.cuescore.com/image/b/4/b65e00f0076abd0055a71ffa703e5bff.png?t=1483705613",
         "name": "Walkover 2",
-        "playerId": null,
-        "teamId": 10138096
+        "teamId": 10138096,
+        "url": "https://cuescore.com/team/Walkover+2/10138096",
+        "venueId": 0
       },
+      "properties": {
+        "penalty": {
+          "description": "",
+          "invalid": false
+        }
+      },
+      "raceTo": 6,
+      "round": 4,
+      "roundName": "Semi final",
+      "runoutsA": 0,
+      "runoutsB": 0,
       "scoreA": 0,
       "scoreB": 0,
+      "sets": [],
       "starttime": "2024-08-28T21:44:38",
-      "stoptime": ""
+      "stoptime": "",
+      "table": [],
+      "teamComment": "",
+      "tournamentId": 47824975,
+      "useInnings": false,
+      "videoLink": "",
+      "winnerNext": 9
     },
     {
+      "bestOfSets": 0,
+      "branch": 1,
+      "challengeId": 0,
+      "comment": "",
+      "curVersion": 57,
+      "discipline": "9-Ball",
+      "disciplineId": 3,
+      "frames": [],
+      "groupNo": 0,
+      "highBreaksA": "",
+      "highBreaksB": "",
+      "inningsPlayerA": 0,
+      "inningsPlayerB": 0,
+      "lagWinner": "",
+      "loserNext": "",
       "matchId": 47851720,
+      "matchType": 1,
+      "matchno": 8,
+      "matchstatus": "finished",
+      "matchstatusCode": 2,
+      "notes": [],
+      "penalty": 0,
       "playerA": {
+        "country": {
+          "alpha3": "POL",
+          "continent": "Europe",
+          "image": "https://cuescore.com/img/flags/png-country-4x2-none/res-640x480/pl.png",
+          "name": "Poland"
+        },
+        "image": "https://img.cuescore.com/image/b/4/b65e00f0076abd0055a71ffa703e5bff.png?t=1483705613",
         "name": "Mariusz Ptaszyński Marek Głòd",
-        "playerId": null,
-        "teamId": 36344347
+        "teamId": 36344347,
+        "url": "https://cuescore.com/team/Mariusz+Ptaszy%C5%84ski+Marek+G%C5%82%C3%B2d/36344347",
+        "venueId": 0
       },
       "playerB": {
+        "country": {
+          "alpha3": "POL",
+          "continent": "Europe",
+          "image": "https://cuescore.com/img/flags/png-country-4x2-none/res-640x480/pl.png",
+          "name": "Poland"
+        },
+        "image": "https://img.cuescore.com/image/b/4/b65e00f0076abd0055a71ffa703e5bff.png?t=1483705613",
         "name": "Marcin Gościmski Michał Kopczyński (4)",
-        "playerId": null,
-        "teamId": 3547026
+        "teamId": 3547026,
+        "url": "https://cuescore.com/team/Marcin+Go%C5%9Bcimski+Micha%C5%82+Kopczy%C5%84ski+%284%29/3547026",
+        "venueId": 0
       },
+      "properties": [],
+      "raceTo": 6,
+      "round": 4,
+      "roundName": "Semi final",
+      "runoutsA": 0,
+      "runoutsB": 0,
       "scoreA": 6,
       "scoreB": 4,
+      "sets": [],
       "starttime": "2024-08-28T21:44:00",
-      "stoptime": "2024-08-28T22:42:18"
+      "stoptime": "2024-08-28T22:42:18",
+      "table": [],
+      "teamComment": "",
+      "tournamentId": 47824975,
+      "useInnings": false,
+      "videoLink": "",
+      "winnerNext": 9
     },
     {
+      "bestOfSets": 0,
+      "branch": 1,
+      "challengeId": 0,
+      "comment": "",
+      "curVersion": 57,
+      "discipline": "9-Ball",
+      "disciplineId": 3,
+      "frames": [],
+      "groupNo": 0,
+      "highBreaksA": "",
+      "highBreaksB": "",
+      "inningsPlayerA": 0,
+      "inningsPlayerB": 0,
+      "lagWinner": "",
+      "loserNext": "",
       "matchId": 47851723,
+      "matchType": 1,
+      "matchno": 9,
+      "matchstatus": "finished",
+      "matchstatusCode": 2,
+      "notes": [],
+      "penalty": 0,
       "playerA": {
+        "country": {
+          "alpha3": "POL",
+          "continent": "Europe",
+          "image": "https://cuescore.com/img/flags/png-country-4x2-none/res-640x480/pl.png",
+          "name": "Poland"
+        },
+        "image": "https://img.cuescore.com/image/b/4/b65e00f0076abd0055a71ffa703e5bff.png?t=1483705613",
         "name": "Kuba Kozioł Władysław Machynia",
-        "playerId": null,
-        "teamId": 47829694
+        "teamId": 47829694,
+        "url": "https://cuescore.com/team/Kuba+Kozio%C5%82+W%C5%82adys%C5%82aw+Machynia/47829694",
+        "venueId": 0
       },
       "playerB": {
+        "country": {
+          "alpha3": "POL",
+          "continent": "Europe",
+          "image": "https://cuescore.com/img/flags/png-country-4x2-none/res-640x480/pl.png",
+          "name": "Poland"
+        },
+        "image": "https://img.cuescore.com/image/b/4/b65e00f0076abd0055a71ffa703e5bff.png?t=1483705613",
         "name": "Mariusz Ptaszyński Marek Głòd",
-        "playerId": null,
-        "teamId": 36344347
+        "teamId": 36344347,
+        "url": "https://cuescore.com/team/Mariusz+Ptaszy%C5%84ski+Marek+G%C5%82%C3%B2d/36344347",
+        "venueId": 0
       },
+      "properties": {
+        "penalty": []
+      },
+      "raceTo": 6,
+      "round": 5,
+      "roundName": "Final",
+      "runoutsA": 0,
+      "runoutsB": 0,
       "scoreA": 6,
       "scoreB": 3,
+      "sets": [],
       "starttime": "2024-08-28T22:42:00",
-      "stoptime": "2024-08-28T23:29:57"
+      "stoptime": "2024-08-28T23:29:57",
+      "table": [],
+      "teamComment": "",
+      "tournamentId": 47824975,
+      "useInnings": false,
+      "videoLink": "",
+      "winnerNext": ""
     }
   ],
   "name": "Pictures Cup - turniej deblowy",
+  "organizers": [
+    {
+      "logo": "//img.cuescore.com/image/9/2/9b59b70e156f2f8d0f1a879411c6ffd1.png?t=1576160578",
+      "name": "Black Ball Events",
+      "organizationId": 7011764,
+      "profileColor": "000000",
+      "stub": "blackballevents",
+      "url": "https://cuescore.com/blackballevents"
+    }
+  ],
+  "owner": {
+    "logo": "//img.cuescore.com/image/9/2/9b59b70e156f2f8d0f1a879411c6ffd1.png?t=1576160578",
+    "name": "Black Ball Events",
+    "organizationId": 7011764,
+    "profileColor": "000000",
+    "stub": "blackballevents",
+    "url": "https://cuescore.com/blackballevents"
+  },
+  "preseeds": [],
+  "rankings": [],
+  "sequence": 0,
+  "standings": {
+    "1": [
+      {
+        "frameAvg": 0.632,
+        "frameLosses": 7,
+        "frameScore": 5,
+        "frameWinAvg": 6,
+        "frameWins": 12,
+        "highBreak": 0,
+        "inningAvg": 0,
+        "innings": 0,
+        "lagWins": 0,
+        "losses": 0,
+        "played": 2,
+        "player": {
+          "country": {
+            "alpha3": "POL",
+            "continent": "Europe",
+            "image": "https://cuescore.com/img/flags/png-country-4x2-none/res-640x480/pl.png",
+            "name": "Poland"
+          },
+          "image": "https://img.cuescore.com/image/b/4/b65e00f0076abd0055a71ffa703e5bff.png?t=1483705613",
+          "name": "Kuba Kozioł Władysław Machynia",
+          "teamId": 47829694,
+          "url": "https://cuescore.com/team/Kuba+Kozio%C5%82+W%C5%82adys%C5%82aw+Machynia/47829694",
+          "venueId": 0
+        },
+        "points": 6,
+        "position": 1,
+        "runouts": 0,
+        "setLosses": 0,
+        "setScore": 0,
+        "setWins": 0,
+        "teamBestInningAvg": 0,
+        "teamIndividualPoints": 0,
+        "teamInningAvg": 0,
+        "teamInnings": 0,
+        "teamMatchPoints": 12,
+        "ties": 0,
+        "wins": 2
+      },
+      {
+        "frameAvg": 0.556,
+        "frameLosses": 8,
+        "frameScore": 2,
+        "frameWinAvg": 5,
+        "frameWins": 10,
+        "highBreak": 0,
+        "inningAvg": 0,
+        "innings": 0,
+        "lagWins": 0,
+        "losses": 1,
+        "played": 2,
+        "player": {
+          "country": {
+            "alpha3": "POL",
+            "continent": "Europe",
+            "image": "https://cuescore.com/img/flags/png-country-4x2-none/res-640x480/pl.png",
+            "name": "Poland"
+          },
+          "image": "https://img.cuescore.com/image/b/4/b65e00f0076abd0055a71ffa703e5bff.png?t=1483705613",
+          "name": "Marcin Gościmski Michał Kopczyński (4)",
+          "teamId": 3547026,
+          "url": "https://cuescore.com/team/Marcin+Go%C5%9Bcimski+Micha%C5%82+Kopczy%C5%84ski+%284%29/3547026",
+          "venueId": 0
+        },
+        "points": 4,
+        "position": 2,
+        "runouts": 0,
+        "setLosses": 0,
+        "setScore": 0,
+        "setWins": 0,
+        "teamBestInningAvg": 0,
+        "teamIndividualPoints": 0,
+        "teamInningAvg": 0,
+        "teamInnings": 0,
+        "teamMatchPoints": 10,
+        "ties": 0,
+        "wins": 1
+      },
+      {
+        "frameAvg": 0.294,
+        "frameLosses": 12,
+        "frameScore": -7,
+        "frameWinAvg": 2.5,
+        "frameWins": 5,
+        "highBreak": 0,
+        "inningAvg": 0,
+        "innings": 0,
+        "lagWins": 0,
+        "losses": 2,
+        "played": 2,
+        "player": {
+          "country": {
+            "alpha3": "POL",
+            "continent": "Europe",
+            "image": "https://cuescore.com/img/flags/png-country-4x2-none/res-640x480/pl.png",
+            "name": "Poland"
+          },
+          "image": "https://img.cuescore.com/image/b/4/b65e00f0076abd0055a71ffa703e5bff.png?t=1483705613",
+          "name": "Mariusz Ptaszyński Marek Głòd",
+          "teamId": 36344347,
+          "url": "https://cuescore.com/team/Mariusz+Ptaszy%C5%84ski+Marek+G%C5%82%C3%B2d/36344347",
+          "venueId": 0
+        },
+        "points": 2,
+        "position": 3,
+        "runouts": 0,
+        "setLosses": 0,
+        "setScore": 0,
+        "setWins": 0,
+        "teamBestInningAvg": 0,
+        "teamIndividualPoints": 0,
+        "teamInningAvg": 0,
+        "teamInnings": 0,
+        "teamMatchPoints": 5,
+        "ties": 0,
+        "wins": 0
+      },
+      {
+        "frameAvg": 0,
+        "frameLosses": 0,
+        "frameScore": 0,
+        "frameWinAvg": 0,
+        "frameWins": 0,
+        "highBreak": 0,
+        "inningAvg": 0,
+        "innings": 0,
+        "lagWins": 0,
+        "losses": 0,
+        "played": 0,
+        "player": {
+          "country": [],
+          "image": "https://img.cuescore.com/image/b/4/b65e00f0076abd0055a71ffa703e5bff.png?t=1483705613",
+          "name": "Walkover 2",
+          "teamId": 10138096,
+          "url": "https://cuescore.com/team/Walkover+2/10138096",
+          "venueId": 0
+        },
+        "points": 0,
+        "position": 4,
+        "runouts": 0,
+        "setLosses": 0,
+        "setScore": 0,
+        "setWins": 0,
+        "teamBestInningAvg": 0,
+        "teamIndividualPoints": 0,
+        "teamInningAvg": 0,
+        "teamInnings": 0,
+        "teamMatchPoints": 0,
+        "ties": 0,
+        "wins": 0
+      }
+    ]
+  },
   "starttime": "2024-08-28T18:30:00+02:00",
+  "status": "Finished",
+  "statusCode": 2,
   "stoptime": "2024-08-28T23:00:00+02:00",
+  "teamEditIndividualAccess": "CAPTAIN",
   "timezone": "Europe/Warsaw",
   "tournamentId": 47824975,
   "type": 1,
   "url": "https://cuescore.com/tournament/Pictures+Cup+-+turniej+deblowy/47824975",
   "venues": [
     {
+      "image": "https://img.cuescore.com/image/a/3/a9bf9ca529b1dc6b227af0f5fc33fa54.png?t=1504738783",
       "name": "Klub Pictures",
+      "owner": {
+        "logo": "//img.cuescore.com/image/7/2/71487152007d737c2f5de4f7821f7c9e.png?t=1555512394",
+        "name": "MGL Cue Sports",
+        "organizationId": 5133719,
+        "profileColor": "58a5fc",
+        "stub": "mglcuesports",
+        "url": "https://cuescore.com/mglcuesports"
+      },
+      "url": "https://cuescore.com/venue/Klub+Pictures/1634568",
       "venueId": 1634568
     }
   ]

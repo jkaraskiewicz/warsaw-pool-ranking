@@ -1,5 +1,5 @@
-import { Component } from '@angular/core';
-import { CommonModule } from '@angular/common';
+import { Component, computed } from '@angular/core';
+import { CommonModule, DecimalPipe } from '@angular/common';
 import { FormsModule } from '@angular/forms';
 import { MatDialog } from '@angular/material/dialog';
 import { PageEvent, MatPaginatorModule } from '@angular/material/paginator';
@@ -39,7 +39,8 @@ import { TranslatePipe } from '../../pipes/translate.pipe';
     MatCheckboxModule,
     MatButtonModule,
     RatingTypeSelectorComponent,
-    TranslatePipe
+    TranslatePipe,
+    DecimalPipe
   ],
   templateUrl: './player-list.component.html',
   styleUrls: ['./player-list.component.scss']
@@ -48,8 +49,27 @@ export class PlayerListComponent {
   displayedColumns: string[] = ['select', 'rank', 'name', 'rating', 'games', 'matches', 'confidence'];
   pageSizeOptions: number[] = [10, 25, 50, 100];
   searchQuery = '';
-  
+
   selection = new Set<PlayerListItem>();
+
+  // Computed signals for stats of current page
+  averageRating = computed(() => {
+    const players = this.facade.players();
+    if (players.length === 0) return 0;
+    const totalRating = players.reduce((sum, p) => sum + p.rating, 0);
+    return totalRating / players.length;
+  });
+
+  highestRating = computed(() => {
+    const players = this.facade.players();
+    if (players.length === 0) return 0;
+    return Math.max(...players.map(p => p.rating));
+  });
+
+  totalGames = computed(() => {
+    const players = this.facade.players();
+    return players.reduce((sum, p) => sum + p.gamesPlayed, 0);
+  });
 
   constructor(
     public facade: PlayerListFacade,
@@ -71,7 +91,7 @@ export class PlayerListComponent {
   onRatingTypeChange(type: string): void {
     this.facade.setRatingType(type);
   }
-  
+
   toggleSelection(player: PlayerListItem) {
     if (this.selection.has(player)) {
       this.selection.delete(player);
@@ -84,21 +104,21 @@ export class PlayerListComponent {
       this.selection.add(player);
     }
   }
-  
+
   isSelected(player: PlayerListItem): boolean {
     return this.selection.has(player);
   }
-  
+
   comparePlayers() {
     if (this.selection.size !== 2) return;
     const players = Array.from(this.selection);
     this.dialog.open(ComparisonComponent, {
       width: '900px',
       maxWidth: '95vw',
-      data: { 
-        player1Id: players[0].playerId, 
-        player2Id: players[1].playerId, 
-        ratingType: this.facade.state().ratingType 
+      data: {
+        player1Id: players[0].playerId,
+        player2Id: players[1].playerId,
+        ratingType: this.facade.state().ratingType
       }
     });
   }

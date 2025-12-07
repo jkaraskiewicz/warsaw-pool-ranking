@@ -1,16 +1,46 @@
 {
+  "access": [],
   "banner": [],
+  "branch": 1,
   "breakrule": "alternate",
+  "contacts": [],
   "deadline": "",
   "defaultRaceTo": 4,
   "description": "Turniej dla zwycięzców cyklicznych turniejów w Złota Bila Centrum Bilardowe:\r\n\r\nTurniej o Pierwszy Puchar\r\nAmatorski Turniej Studencki (*)\r\nAmatorska Ósemka (*)\r\n(*) w przypadku wygranej eliminującej z ToPP",
   "discipline": "8-Ball",
+  "disciplineId": 2,
   "displayDate": "January 1, 2029",
   "dresscode": "",
+  "entrystart": "",
   "format": 0,
+  "handicap": [],
   "matches": [],
   "name": "Turniej Zdobywców Pucharów ;)",
+  "organizers": [
+    {
+      "logo": "//img.cuescore.com/image/7/2/71487152007d737c2f5de4f7821f7c9e.png?t=1555512394",
+      "name": "MGL Cue Sports",
+      "organizationId": 5133719,
+      "profileColor": "58a5fc",
+      "stub": "mglcuesports",
+      "url": "https://cuescore.com/mglcuesports"
+    }
+  ],
+  "owner": {
+    "logo": "//img.cuescore.com/image/7/2/71487152007d737c2f5de4f7821f7c9e.png?t=1555512394",
+    "name": "MGL Cue Sports",
+    "organizationId": 5133719,
+    "profileColor": "58a5fc",
+    "stub": "mglcuesports",
+    "url": "https://cuescore.com/mglcuesports"
+  },
+  "preseeds": [],
+  "rankings": [],
+  "sequence": 0,
+  "standings": [],
   "starttime": "2029-01-01T18:30:00+01:00",
+  "status": "Open",
+  "statusCode": 0,
   "stoptime": "2029-01-01T23:59:00+01:00",
   "timezone": "Europe/Warsaw",
   "tournamentId": 41951347,
@@ -18,7 +48,17 @@
   "url": "https://cuescore.com/tournament/Turniej+Zdobywc%C3%B3w+Puchar%C3%B3w+%3B%29/41951347",
   "venues": [
     {
+      "image": "https://img.cuescore.com/image/c/3/c3e5cabdb95fe2a3f6664b3c6d2f6e8f.png?t=1702215114",
       "name": "Złota Bila - Centrum Bilardowe",
+      "owner": {
+        "logo": "//img.cuescore.com/image/9/2/9b59b70e156f2f8d0f1a879411c6ffd1.png?t=1576160578",
+        "name": "Black Ball Events",
+        "organizationId": 7011764,
+        "profileColor": "000000",
+        "stub": "blackballevents",
+        "url": "https://cuescore.com/blackballevents"
+      },
+      "url": "https://cuescore.com/venue/Z%C5%82ota+Bila+-+Centrum+Bilardowe/36031138",
       "venueId": 36031138
     }
   ]

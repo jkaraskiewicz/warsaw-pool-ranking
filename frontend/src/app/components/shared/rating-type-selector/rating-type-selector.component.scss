@@ -1,5 +1,50 @@
+/* Override default Material toggle group styles */
 .rating-type-selector {
-  margin-bottom: 1rem;
-  display: flex;
+  border: none;
+  background: transparent;
+  gap: 8px; /* Spacing between pills */
+  display: flex; /* Ensure horizontal layout with wrap */
   flex-wrap: wrap;
+  margin-bottom: 1rem; /* Keep existing margin for spacing below the group */
+
+  ::ng-deep .mat-button-toggle {
+    background-color: transparent;
+    border: 1px solid var(--slate-700); /* Border for pill outline */
+    border-radius: 9999px !important; /* Pill shape */
+    color: var(--slate-400);
+    font-size: 0.875rem;
+    font-weight: 500;
+    transition: all 0.2s;
+    overflow: hidden;
+    height: 38px; /* Adjust height for better visual */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0 16px; /* Horizontal padding */
+    line-height: 1; /* Adjust line height to center text vertically */
+
+    // Remove Material's default border lines that separate toggles in a group
+    border-left: 1px solid var(--slate-700) !important;
+
+    &:first-of-type {
+      border-left: 1px solid var(--slate-700) !important;
+    }
+
+    &.mat-button-toggle-checked {
+      background-color: var(--indigo-500-20);
+      color: var(--indigo-400);
+      border-color: var(--indigo-500);
+      box-shadow: 0 0 0 1px var(--indigo-500); /* Subtle glowing effect */
+    }
+
+    &:hover:not(.mat-button-toggle-checked) {
+      background-color: var(--slate-800);
+      color: var(--slate-200);
+      border-color: var(--slate-600);
+    }
+
+    .mat-button-toggle-button {
+      padding: 0; /* Reset internal button padding */
+    }
+  }
 }

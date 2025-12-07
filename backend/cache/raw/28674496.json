@@ -1,16 +1,71 @@
 {
+  "access": [
+    1612287
+  ],
   "banner": [],
+  "branch": 4,
   "breakrule": "alternate",
+  "contacts": [
+    {
+      "country": {
+        "alpha3": "POL",
+        "continent": "Europe",
+        "image": "https://cuescore.com/img/flags/png-country-4x2-none/res-640x480/pl.png",
+        "name": "Poland"
+      },
+      "firstname": "Maciej Grzegorz",
+      "image": "https://img.cuescore.com/image/2/4/2cf115d1df0825752b34e0510547da26.png?t=1683467983",
+      "lastname": "Lesiak",
+      "name": "Maciej Grzegorz Lesiak",
+      "playerId": 1612287,
+      "represents": {
+        "logo": "//img.cuescore.com/image/7/2/71487152007d737c2f5de4f7821f7c9e.png?t=1555512394",
+        "name": "MGL Cue Sports",
+        "organizationId": 5133719,
+        "profileColor": "58a5fc",
+        "stub": "mglcuesports",
+        "url": "https://cuescore.com/mglcuesports"
+      },
+      "url": "https://cuescore.com/player/Maciej+Grzegorz+Lesiak/1612287"
+    }
+  ],
   "deadline": "2022-06-19T21:00:00+02:00",
   "defaultRaceTo": 3,
   "description": "TOP16 (3)\r\n1LS (3)",
   "discipline": "Snooker",
+  "disciplineId": 101,
   "displayDate": "June 23 - June 24, 2023",
   "dresscode": "",
+  "entrystart": "",
   "format": 4,
+  "handicap": [],
   "matches": [],
   "name": "PLS 2023-3 faza grupowa",
+  "organizers": [
+    {
+      "logo": "//img.cuescore.com/image/7/2/71487152007d737c2f5de4f7821f7c9e.png?t=1555512394",
+      "name": "MGL Cue Sports",
+      "organizationId": 5133719,
+      "profileColor": "58a5fc",
+      "stub": "mglcuesports",
+      "url": "https://cuescore.com/mglcuesports"
+    }
+  ],
+  "owner": {
+    "logo": "//img.cuescore.com/image/7/2/71487152007d737c2f5de4f7821f7c9e.png?t=1555512394",
+    "name": "MGL Cue Sports",
+    "organizationId": 5133719,
+    "profileColor": "58a5fc",
+    "stub": "mglcuesports",
+    "url": "https://cuescore.com/mglcuesports"
+  },
+  "preseeds": [],
+  "rankings": [],
+  "sequence": 0,
+  "standings": [],
   "starttime": "2023-06-23T16:00:00+02:00",
+  "status": "Open",
+  "statusCode": 0,
   "stoptime": "2023-06-24T23:59:00+02:00",
   "timezone": "Europe/Warsaw",
   "tournamentId": 28674496,
@@ -18,7 +73,17 @@
   "url": "https://cuescore.com/tournament/PLS+2023-3+faza+grupowa/28674496",
   "venues": [
     {
+      "image": "https://img.cuescore.com/image/e/3/ea714c9bb52caa765f7707d5dcbe7f3a.png?t=1533571231",
       "name": "147 Break Zamieniecka",
+      "owner": {
+        "logo": "//img.cuescore.com/image/7/2/71487152007d737c2f5de4f7821f7c9e.png?t=1555512394",
+        "name": "MGL Cue Sports",
+        "organizationId": 5133719,
+        "profileColor": "58a5fc",
+        "stub": "mglcuesports",
+        "url": "https://cuescore.com/mglcuesports"
+      },
+      "url": "https://cuescore.com/venue/147+Break+Zamieniecka/2842336",
       "venueId": 2842336
     }
   ]

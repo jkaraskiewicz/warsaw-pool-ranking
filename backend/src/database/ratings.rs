@@ -70,9 +70,9 @@ pub fn get_player_rating_detail(
     rating_type: &str,
 ) -> Result<Option<PlayerWithRating>> {
     let sql = "
-        SELECT p.id, p.cuescore_id, p.name, r.rating, r.games_played, r.confidence_level 
-        FROM players p 
-        JOIN ratings r ON p.id = r.player_id 
+        SELECT p.id, p.cuescore_id, p.name, p.avatar_url, r.rating, r.games_played, r.confidence_level
+        FROM players p
+        JOIN ratings r ON p.id = r.player_id
         WHERE p.id = ?1 AND r.rating_type = ?2
     ";
 
@@ -81,9 +81,10 @@ pub fn get_player_rating_detail(
             player_id: row.get(0)?,
             cuescore_id: row.get(1)?,
             name: row.get(2)?,
-            rating: row.get(3)?,
-            games_played: row.get(4)?,
-            confidence_level: row.get(5)?,
+            avatar_url: row.get(3)?,
+            rating: row.get(4)?,
+            games_played: row.get(5)?,
+            confidence_level: row.get(6)?,
         })
     }).optional().context("Failed to get player rating detail")
 }
@@ -134,11 +135,11 @@ pub fn list_ranked_players(
     };
 
     let sql = format!(
-        "SELECT p.id, p.cuescore_id, p.name, r.rating, r.games_played, r.confidence_level 
-         FROM players p 
-         JOIN ratings r ON p.id = r.player_id 
-         {} 
-         ORDER BY {} {} 
+        "SELECT p.id, p.cuescore_id, p.name, p.avatar_url, r.rating, r.games_played, r.confidence_level
+         FROM players p
+         JOIN ratings r ON p.id = r.player_id
+         {}
+         ORDER BY {} {}
          LIMIT ? OFFSET ?",
         where_sql, sort_col, sort_dir
     );
@@ -152,9 +153,10 @@ pub fn list_ranked_players(
             player_id: row.get(0)?,
             cuescore_id: row.get(1)?,
             name: row.get(2)?,
-            rating: row.get(3)?,
-            games_played: row.get(4)?,
-            confidence_level: row.get(5)?,
+            avatar_url: row.get(3)?,
+            rating: row.get(4)?,
+            games_played: row.get(5)?,
+            confidence_level: row.get(6)?,
         })
     })?.collect::<rusqlite::Result<Vec<_>>>()?;
 

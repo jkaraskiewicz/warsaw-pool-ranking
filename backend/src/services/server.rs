@@ -22,14 +22,14 @@ impl ServerService {
     pub async fn run(&self) -> Result<()> {
         let db_path = std::env::var("DATABASE_PATH")
             .unwrap_or_else(|_| "warsaw_pool_ranking.db".to_string());
-        
+
         let pool = database::create_pool(&db_path)?;
-        
+
         let state = Arc::new(AppState {
             pool,
             config: self.config.clone(), // AppConfig should be Clone or cheap
         });
-        
+
         // Config AppConfig needs Clone? Structs derive Clone usually.
         // I'll need to check if AppConfig derives Clone. If not, add it.
 

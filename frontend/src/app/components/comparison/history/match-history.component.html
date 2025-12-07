@@ -1,0 +1,27 @@
+<div class="history-section">
+  <h3>{{ 'MATCH_HISTORY' | translate }}</h3>
+  <table mat-table [dataSource]="matches" class="matches-table">
+    <ng-container matColumnDef="date">
+      <th mat-header-cell *matHeaderCellDef>{{ 'DATE' | translate }}</th>
+      <td mat-cell *matCellDef="let match">{{ formatDate(match.date) }}</td>
+    </ng-container>
+
+    <ng-container matColumnDef="tournament">
+      <th mat-header-cell *matHeaderCellDef>{{ 'TOURNAMENT' | translate }}</th>
+      <td mat-cell *matCellDef="let match">{{ match.tournamentName }}</td>
+    </ng-container>
+
+    <ng-container matColumnDef="score">
+      <th mat-header-cell *matHeaderCellDef>{{ 'SCORE' | translate }}</th>
+      <td mat-cell *matCellDef="let match">
+        {{ match.player1Wins }} - {{ match.player2Wins }}
+      </td>
+    </ng-container>
+
+    <tr mat-header-row *matHeaderRowDef="displayedColumns"></tr>
+    <tr mat-row *matRowDef="let row; columns: displayedColumns;"></tr>
+  </table>
+  <div *ngIf="matches.length === 0" class="no-matches">
+    No matches found between these players.
+  </div>
+</div>

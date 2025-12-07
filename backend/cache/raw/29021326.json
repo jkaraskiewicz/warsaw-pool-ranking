@@ -1,552 +1,2868 @@
 {
+  "access": [],
   "banner": [],
+  "branch": 1,
   "breakrule": "alternate",
+  "contacts": [
+    {
+      "country": {
+        "alpha3": "POL",
+        "continent": "Europe",
+        "image": "https://cuescore.com/img/flags/png-country-4x2-none/res-640x480/pl.png",
+        "name": "Poland"
+      },
+      "firstname": "Michał",
+      "image": "https://img.cuescore.com/image/1/4/15d291e83ead350107ae474e8623a6f5.png?t=1504629089",
+      "lastname": "Nowak",
+      "name": "Michał Nowak",
+      "playerId": 1620195,
+      "represents": [],
+      "url": "https://cuescore.com/player/Micha%C5%82+Nowak/1620195"
+    }
+  ],
   "deadline": "",
   "defaultRaceTo": 1,
   "description": "",
   "discipline": "8-Ball",
+  "disciplineId": 2,
   "displayDate": "June 18, 2023",
   "dresscode": "",
+  "entrystart": "",
   "format": 1,
+  "handicap": [],
   "matches": [
     {
+      "bestOfSets": 0,
+      "branch": 1,
+      "challengeId": 0,
+      "comment": "",
+      "curVersion": 101,
+      "discipline": "8-Ball",
+      "disciplineId": 2,
+      "frames": [],
+      "groupNo": 0,
+      "highBreaksA": "",
+      "highBreaksB": "",
+      "inningsPlayerA": 0,
+      "inningsPlayerB": 0,
+      "lagWinner": "",
+      "loserNext": "",
       "matchId": 29032615,
+      "matchType": 1,
+      "matchno": 1,
+      "matchstatus": "finished",
+      "matchstatusCode": 2,
+      "notes": [],
+      "penalty": 0,
       "playerA": {
+        "country": {
+          "alpha3": "POL",
+          "continent": "Europe",
+          "image": "https://cuescore.com/img/flags/png-country-4x2-none/res-640x480/pl.png",
+          "name": "Poland"
+        },
+        "image": "https://img.cuescore.com/image/b/4/b65e00f0076abd0055a71ffa703e5bff.png?t=1483705613",
         "name": "Mamy niezłe kule",
-        "playerId": null,
-        "teamId": 29024503
+        "teamId": 29024503,
+        "url": "https://cuescore.com/team/Mamy+niez%C5%82e+kule/29024503",
+        "venueId": 0
       },
       "playerB": {
+        "country": [],
+        "image": "https://img.cuescore.com/image/b/4/b65e00f0076abd0055a71ffa703e5bff.png?t=1483705613",
         "name": "Walk Over",
-        "playerId": null,
-        "teamId": 1104541
+        "teamId": 1104541,
+        "url": "https://cuescore.com/team/Walk+Over/1104541",
+        "venueId": 0
       },
+      "properties": [],
+      "raceTo": 1,
+      "round": 1,
+      "roundName": "Round 1",
+      "runoutsA": 0,
+      "runoutsB": 0,
       "scoreA": 0,
       "scoreB": 0,
+      "sets": [],
       "starttime": "",
-      "stoptime": ""
+      "stoptime": "",
+      "table": [],
+      "teamComment": "",
+      "tournamentId": 29021326,
+      "useInnings": false,
+      "videoLink": "",
+      "winnerNext": 17
     },
     {
+      "bestOfSets": 0,
+      "branch": 1,
+      "challengeId": 0,
+      "comment": "",
+      "curVersion": 101,
+      "discipline": "8-Ball",
+      "disciplineId": 2,
+      "frames": [],
+      "groupNo": 0,
+      "highBreaksA": "",
+      "highBreaksB": "",
+      "inningsPlayerA": 0,
+      "inningsPlayerB": 0,
+      "lagWinner": "",
+      "loserNext": "",
       "matchId": 29032618,
+      "matchType": 1,
+      "matchno": 2,
+      "matchstatus": "finished",
+      "matchstatusCode": 2,
+      "notes": [],
+      "penalty": 0,
       "playerA": {
+        "country": {
+          "alpha3": "POL",
+          "continent": "Europe",
+          "image": "https://cuescore.com/img/flags/png-country-4x2-none/res-640x480/pl.png",
+          "name": "Poland"
+        },
+        "image": "https://img.cuescore.com/image/b/4/b65e00f0076abd0055a71ffa703e5bff.png?t=1483705613",
         "name": "Dwa ruchy i kij suchy",
-        "playerId": null,
-        "teamId": 29024455
+        "teamId": 29024455,
+        "url": "https://cuescore.com/team/Dwa+ruchy+i+kij+suchy/29024455",
+        "venueId": 0
       },
       "playerB": {
+        "country": {
+          "alpha3": "POL",
+          "continent": "Europe",
+          "image": "https://cuescore.com/img/flags/png-country-4x2-none/res-640x480/pl.png",
+          "name": "Poland"
+        },
+        "image": "https://img.cuescore.com/image/b/4/b65e00f0076abd0055a71ffa703e5bff.png?t=1483705613",
         "name": "PAJONKI",
-        "playerId": null,
-        "teamId": 29024452
+        "teamId": 29024452,
+        "url": "https://cuescore.com/team/PAJONKI/29024452",
+        "venueId": 0
       },
+      "properties": [],
+      "raceTo": 1,
+      "round": 1,
+      "roundName": "Round 1",
+      "runoutsA": 0,
+      "runoutsB": 0,
       "scoreA": 0,
       "scoreB": 1,
+      "sets": [],
       "starttime": "2023-06-18T21:56:00",
-      "stoptime": "2023-06-18T22:19:28"
+      "stoptime": "2023-06-18T22:19:28",
+      "table": {
+        "branch": "American pool",
+        "branchId": 1,
+        "cloth": "",
+        "description": "",
+        "manufacturer": "",
+        "model": "Tournament Champion Sport",
+        "name": "1",
+        "pockets": "",
+        "size": 9,
+        "slate": "",
+        "tableId": 2842349,
+        "venue": {
+          "image": "https://img.cuescore.com/image/e/3/ea714c9bb52caa765f7707d5dcbe7f3a.png?t=1533571231",
+          "name": "147 Break Zamieniecka",
+          "owner": {
+            "logo": "//img.cuescore.com/image/7/2/71487152007d737c2f5de4f7821f7c9e.png?t=1555512394",
+            "name": "MGL Cue Sports",
+            "organizationId": 5133719,
+            "profileColor": "58a5fc",
+            "stub": "mglcuesports",
+            "url": "https://cuescore.com/mglcuesports"
+          },
+          "url": "https://cuescore.com/venue/147+Break+Zamieniecka/2842336",
+          "venueId": 2842336
+        }
+      },
+      "teamComment": "",
+      "tournamentId": 29021326,
+      "useInnings": false,
+      "videoLink": "",
+      "winnerNext": 17
     },
     {
+      "bestOfSets": 0,
+      "branch": 1,
+      "challengeId": 0,
+      "comment": "",
+      "curVersion": 101,
+      "discipline": "8-Ball",
+      "disciplineId": 2,
+      "frames": [],
+      "groupNo": 0,
+      "highBreaksA": "",
+      "highBreaksB": "",
+      "inningsPlayerA": 0,
+      "inningsPlayerB": 0,
+      "lagWinner": "",
+      "loserNext": "",
       "matchId": 29032621,
+      "matchType": 1,
+      "matchno": 3,
+      "matchstatus": "finished",
+      "matchstatusCode": 2,
+      "notes": [],
+      "penalty": 0,
       "playerA": {
+        "country": {
+          "alpha3": "POL",
+          "continent": "Europe",
+          "image": "https://cuescore.com/img/flags/png-country-4x2-none/res-640x480/pl.png",
+          "name": "Poland"
+        },
+        "image": "https://img.cuescore.com/image/b/4/b65e00f0076abd0055a71ffa703e5bff.png?t=1483705613",
         "name": "Cymbergaje",
-        "playerId": null,
-        "teamId": 29024476
+        "teamId": 29024476,
+        "url": "https://cuescore.com/team/Cymbergaje/29024476",
+        "venueId": 0
       },
       "playerB": {
+        "country": {
+          "alpha3": "POL",
+          "continent": "Europe",
+          "image": "https://cuescore.com/img/flags/png-country-4x2-none/res-640x480/pl.png",
+          "name": "Poland"
+        },
+        "image": "https://img.cuescore.com/image/b/4/b65e00f0076abd0055a71ffa703e5bff.png?t=1483705613",
         "name": "KIMKOLWIEK",
-        "playerId": null,
-        "teamId": 29024500
+        "teamId": 29024500,
+        "url": "https://cuescore.com/team/KIMKOLWIEK/29024500",
+        "venueId": 0
       },
+      "properties": [],
+      "raceTo": 1,
+      "round": 1,
+      "roundName": "Round 1",
+      "runoutsA": 0,
+      "runoutsB": 0,
       "scoreA": 1,
       "scoreB": 0,
+      "sets": [],
       "starttime": "2023-06-18T21:56:00",
-      "stoptime": "2023-06-18T22:17:06"
+      "stoptime": "2023-06-18T22:17:06",
+      "table": {
+        "branch": "American pool",
+        "branchId": 1,
+        "cloth": "",
+        "description": "",
+        "manufacturer": "",
+        "model": "Tournament Champion Sport",
+        "name": "2",
+        "pockets": "",
+        "size": 9,
+        "slate": "",
+        "tableId": 2842350,
+        "venue": {
+          "image": "https://img.cuescore.com/image/e/3/ea714c9bb52caa765f7707d5dcbe7f3a.png?t=1533571231",
+          "name": "147 Break Zamieniecka",
+          "owner": {
+            "logo": "//img.cuescore.com/image/7/2/71487152007d737c2f5de4f7821f7c9e.png?t=1555512394",
+            "name": "MGL Cue Sports",
+            "organizationId": 5133719,
+            "profileColor": "58a5fc",
+            "stub": "mglcuesports",
+            "url": "https://cuescore.com/mglcuesports"
+          },
+          "url": "https://cuescore.com/venue/147+Break+Zamieniecka/2842336",
+          "venueId": 2842336
+        }
+      },
+      "teamComment": "",
+      "tournamentId": 29021326,
+      "useInnings": false,
+      "videoLink": "",
+      "winnerNext": 18
     },
     {
+      "bestOfSets": 0,
+      "branch": 1,
+      "challengeId": 0,
+      "comment": "",
+      "curVersion": 101,
+      "discipline": "8-Ball",
+      "disciplineId": 2,
+      "frames": [],
+      "groupNo": 0,
+      "highBreaksA": "",
+      "highBreaksB": "",
+      "inningsPlayerA": 0,
+      "inningsPlayerB": 0,
+      "lagWinner": "",
+      "loserNext": "",
       "matchId": 29032624,
+      "matchType": 1,
+      "matchno": 4,
+      "matchstatus": "finished",
+      "matchstatusCode": 2,
+      "notes": [],
+      "penalty": 0,
       "playerA": {
+        "country": {
+          "alpha3": "POL",
+          "continent": "Europe",
+          "image": "https://cuescore.com/img/flags/png-country-4x2-none/res-640x480/pl.png",
+          "name": "Poland"
+        },
+        "image": "https://img.cuescore.com/image/b/4/b65e00f0076abd0055a71ffa703e5bff.png?t=1483705613",
         "name": "Chłopaki z baraków",
-        "playerId": null,
-        "teamId": 29030977
+        "teamId": 29030977,
+        "url": "https://cuescore.com/team/Ch%C5%82opaki+z+barak%C3%B3w/29030977",
+        "venueId": 0
       },
       "playerB": {
+        "country": {
+          "alpha3": "POL",
+          "continent": "Europe",
+          "image": "https://cuescore.com/img/flags/png-country-4x2-none/res-640x480/pl.png",
+          "name": "Poland"
+        },
+        "image": "https://img.cuescore.com/image/b/4/b65e00f0076abd0055a71ffa703e5bff.png?t=1483705613",
         "name": "DJki Mobilki",
-        "playerId": null,
-        "teamId": 29024470
+        "teamId": 29024470,
+        "url": "https://cuescore.com/team/DJki+Mobilki/29024470",
+        "venueId": 0
       },
+      "properties": [],
+      "raceTo": 1,
+      "round": 1,
+      "roundName": "Round 1",
+      "runoutsA": 0,
+      "runoutsB": 0,
       "scoreA": 1,
       "scoreB": 0,
+      "sets": [],
       "starttime": "2023-06-18T21:56:00",
-      "stoptime": "2023-06-18T22:11:14"
+      "stoptime": "2023-06-18T22:11:14",
+      "table": {
+        "branch": "American pool",
+        "branchId": 1,
+        "cloth": "",
+        "description": "",
+        "manufacturer": "",
+        "model": "Tournament Champion Sport",
+        "name": "3",
+        "pockets": "",
+        "size": 9,
+        "slate": "",
+        "tableId": 2842351,
+        "venue": {
+          "image": "https://img.cuescore.com/image/e/3/ea714c9bb52caa765f7707d5dcbe7f3a.png?t=1533571231",
+          "name": "147 Break Zamieniecka",
+          "owner": {
+            "logo": "//img.cuescore.com/image/7/2/71487152007d737c2f5de4f7821f7c9e.png?t=1555512394",
+            "name": "MGL Cue Sports",
+            "organizationId": 5133719,
+            "profileColor": "58a5fc",
+            "stub": "mglcuesports",
+            "url": "https://cuescore.com/mglcuesports"
+          },
+          "url": "https://cuescore.com/venue/147+Break+Zamieniecka/2842336",
+          "venueId": 2842336
+        }
+      },
+      "teamComment": "",
+      "tournamentId": 29021326,
+      "useInnings": false,
+      "videoLink": "",
+      "winnerNext": 18
     },
     {
+      "bestOfSets": 0,
+      "branch": 1,
+      "challengeId": 0,
+      "comment": "",
+      "curVersion": 101,
+      "discipline": "8-Ball",
+      "disciplineId": 2,
+      "frames": [],
+      "groupNo": 0,
+      "highBreaksA": "",
+      "highBreaksB": "",
+      "inningsPlayerA": 0,
+      "inningsPlayerB": 0,
+      "lagWinner": "",
+      "loserNext": "",
       "matchId": 29032627,
+      "matchType": 1,
+      "matchno": 5,
+      "matchstatus": "finished",
+      "matchstatusCode": 2,
+      "notes": [],
+      "penalty": 0,
       "playerA": {
+        "country": {
+          "alpha3": "POL",
+          "continent": "Europe",
+          "image": "https://cuescore.com/img/flags/png-country-4x2-none/res-640x480/pl.png",
+          "name": "Poland"
+        },
+        "image": "https://img.cuescore.com/image/b/4/b65e00f0076abd0055a71ffa703e5bff.png?t=1483705613",
         "name": "Chłopaki ze strefy",
-        "playerId": null,
-        "teamId": 29024437
+        "teamId": 29024437,
+        "url": "https://cuescore.com/team/Ch%C5%82opaki+ze+strefy/29024437",
+        "venueId": 0
       },
       "playerB": {
+        "country": [],
+        "image": "https://img.cuescore.com/image/b/4/b65e00f0076abd0055a71ffa703e5bff.png?t=1483705613",
         "name": "Walk Over",
-        "playerId": null,
-        "teamId": 1104541
+        "teamId": 1104541,
+        "url": "https://cuescore.com/team/Walk+Over/1104541",
+        "venueId": 0
       },
+      "properties": [],
+      "raceTo": 1,
+      "round": 1,
+      "roundName": "Round 1",
+      "runoutsA": 0,
+      "runoutsB": 0,
       "scoreA": 0,
       "scoreB": 0,
+      "sets": [],
       "starttime": "",
-      "stoptime": ""
+      "stoptime": "",
+      "table": [],
+      "teamComment": "",
+      "tournamentId": 29021326,
+      "useInnings": false,
+      "videoLink": "",
+      "winnerNext": 19
     },
     {
+      "bestOfSets": 0,
+      "branch": 1,
+      "challengeId": 0,
+      "comment": "",
+      "curVersion": 101,
+      "discipline": "8-Ball",
+      "disciplineId": 2,
+      "frames": [],
+      "groupNo": 0,
+      "highBreaksA": "",
+      "highBreaksB": "",
+      "inningsPlayerA": 0,
+      "inningsPlayerB": 0,
+      "lagWinner": "",
+      "loserNext": "",
       "matchId": 29032630,
+      "matchType": 1,
+      "matchno": 6,
+      "matchstatus": "finished",
+      "matchstatusCode": 2,
+      "notes": [],
+      "penalty": 0,
       "playerA": {
+        "country": {
+          "alpha3": "POL",
+          "continent": "Europe",
+          "image": "https://cuescore.com/img/flags/png-country-4x2-none/res-640x480/pl.png",
+          "name": "Poland"
+        },
+        "image": "https://img.cuescore.com/image/b/4/b65e00f0076abd0055a71ffa703e5bff.png?t=1483705613",
         "name": "A no to git",
-        "playerId": null,
-        "teamId": 29024485
+        "teamId": 29024485,
+        "url": "https://cuescore.com/team/A+no+to+git/29024485",
+        "venueId": 0
       },
       "playerB": {
+        "country": {
+          "alpha3": "POL",
+          "continent": "Europe",
+          "image": "https://cuescore.com/img/flags/png-country-4x2-none/res-640x480/pl.png",
+          "name": "Poland"
+        },
+        "image": "https://img.cuescore.com/image/b/4/b65e00f0076abd0055a71ffa703e5bff.png?t=1483705613",
         "name": "Szczęśliwa ósemka",
-        "playerId": null,
-        "teamId": 29024458
+        "teamId": 29024458,
+        "url": "https://cuescore.com/team/Szcz%C4%99%C5%9Bliwa+%C3%B3semka/29024458",
+        "venueId": 0
       },
+      "properties": [],
+      "raceTo": 1,
+      "round": 1,
+      "roundName": "Round 1",
+      "runoutsA": 0,
+      "runoutsB": 0,
       "scoreA": 0,
       "scoreB": 1,
+      "sets": [],
       "starttime": "2023-06-18T21:56:00",
-      "stoptime": "2023-06-18T22:13:48"
+      "stoptime": "2023-06-18T22:13:48",
+      "table": {
+        "branch": "American pool",
+        "branchId": 1,
+        "cloth": "",
+        "description": "",
+        "manufacturer": "",
+        "model": "Tournament Champion Sport",
+        "name": "4",
+        "pockets": "",
+        "size": 9,
+        "slate": "",
+        "tableId": 2842352,
+        "venue": {
+          "image": "https://img.cuescore.com/image/e/3/ea714c9bb52caa765f7707d5dcbe7f3a.png?t=1533571231",
+          "name": "147 Break Zamieniecka",
+          "owner": {
+            "logo": "//img.cuescore.com/image/7/2/71487152007d737c2f5de4f7821f7c9e.png?t=1555512394",
+            "name": "MGL Cue Sports",
+            "organizationId": 5133719,
+            "profileColor": "58a5fc",
+            "stub": "mglcuesports",
+            "url": "https://cuescore.com/mglcuesports"
+          },
+          "url": "https://cuescore.com/venue/147+Break+Zamieniecka/2842336",
+          "venueId": 2842336
+        }
+      },
+      "teamComment": "",
+      "tournamentId": 29021326,
+      "useInnings": false,
+      "videoLink": "",
+      "winnerNext": 19
     },
     {
+      "bestOfSets": 0,
+      "branch": 1,
+      "challengeId": 0,
+      "comment": "",
+      "curVersion": 101,
+      "discipline": "8-Ball",
+      "disciplineId": 2,
+      "frames": [],
+      "groupNo": 0,
+      "highBreaksA": "",
+      "highBreaksB": "",
+      "inningsPlayerA": 0,
+      "inningsPlayerB": 0,
+      "lagWinner": "",
+      "loserNext": "",
       "matchId": 29032633,
+      "matchType": 1,
+      "matchno": 7,
+      "matchstatus": "finished",
+      "matchstatusCode": 2,
+      "notes": [],
+      "penalty": 0,
       "playerA": {
+        "country": {
+          "alpha3": "POL",
+          "continent": "Europe",
+          "image": "https://cuescore.com/img/flags/png-country-4x2-none/res-640x480/pl.png",
+          "name": "Poland"
+        },
+        "image": "https://img.cuescore.com/image/b/4/b65e00f0076abd0055a71ffa703e5bff.png?t=1483705613",
         "name": "Delta Szwadron Super Cool Komando Wilków Alfa",
-        "playerId": null,
-        "teamId": 29024425
+        "teamId": 29024425,
+        "url": "https://cuescore.com/team/Delta+Szwadron+Super+Cool+Komando+Wilk%C3%B3w+Alfa/29024425",
+        "venueId": 0
       },
       "playerB": {
+        "country": {
+          "alpha3": "POL",
+          "continent": "Europe",
+          "image": "https://cuescore.com/img/flags/png-country-4x2-none/res-640x480/pl.png",
+          "name": "Poland"
+        },
+        "image": "https://img.cuescore.com/image/b/4/b65e00f0076abd0055a71ffa703e5bff.png?t=1483705613",
         "name": "Slay team",
-        "playerId": null,
-        "teamId": 29024482
+        "teamId": 29024482,
+        "url": "https://cuescore.com/team/Slay+team/29024482",
+        "venueId": 0
       },
+      "properties": [],
+      "raceTo": 1,
+      "round": 1,
+      "roundName": "Round 1",
+      "runoutsA": 0,
+      "runoutsB": 0,
       "scoreA": 0,
       "scoreB": 1,
+      "sets": [],
       "starttime": "2023-06-18T21:56:00",
-      "stoptime": "2023-06-18T22:20:39"
+      "stoptime": "2023-06-18T22:20:39",
+      "table": {
+        "branch": "American pool",
+        "branchId": 1,
+        "cloth": "",
+        "description": "",
+        "manufacturer": "",
+        "model": "Tournament Champion Sport",
+        "name": "5",
+        "pockets": "",
+        "size": 9,
+        "slate": "",
+        "tableId": 2842353,
+        "venue": {
+          "image": "https://img.cuescore.com/image/e/3/ea714c9bb52caa765f7707d5dcbe7f3a.png?t=1533571231",
+          "name": "147 Break Zamieniecka",
+          "owner": {
+            "logo": "//img.cuescore.com/image/7/2/71487152007d737c2f5de4f7821f7c9e.png?t=1555512394",
+            "name": "MGL Cue Sports",
+            "organizationId": 5133719,
+            "profileColor": "58a5fc",
+            "stub": "mglcuesports",
+            "url": "https://cuescore.com/mglcuesports"
+          },
+          "url": "https://cuescore.com/venue/147+Break+Zamieniecka/2842336",
+          "venueId": 2842336
+        }
+      },
+      "teamComment": "",
+      "tournamentId": 29021326,
+      "useInnings": false,
+      "videoLink": "",
+      "winnerNext": 20
     },
     {
+      "bestOfSets": 0,
+      "branch": 1,
+      "challengeId": 0,
+      "comment": "",
+      "curVersion": 101,
+      "discipline": "8-Ball",
+      "disciplineId": 2,
+      "frames": [],
+      "groupNo": 0,
+      "highBreaksA": "",
+      "highBreaksB": "",
+      "inningsPlayerA": 0,
+      "inningsPlayerB": 0,
+      "lagWinner": "",
+      "loserNext": "",
       "matchId": 29032636,
+      "matchType": 1,
+      "matchno": 8,
+      "matchstatus": "finished",
+      "matchstatusCode": 2,
+      "notes": [],
+      "penalty": 0,
       "playerA": {
+        "country": [],
+        "image": "https://img.cuescore.com/image/b/4/b65e00f0076abd0055a71ffa703e5bff.png?t=1483705613",
         "name": "Walk Over",
-        "playerId": null,
-        "teamId": 1104541
+        "teamId": 1104541,
+        "url": "https://cuescore.com/team/Walk+Over/1104541",
+        "venueId": 0
       },
       "playerB": {
+        "country": {
+          "alpha3": "POL",
+          "continent": "Europe",
+          "image": "https://cuescore.com/img/flags/png-country-4x2-none/res-640x480/pl.png",
+          "name": "Poland"
+        },
+        "image": "https://img.cuescore.com/image/b/4/b65e00f0076abd0055a71ffa703e5bff.png?t=1483705613",
         "name": "BERGAMO",
-        "playerId": null,
-        "teamId": 29024428
+        "teamId": 29024428,
+        "url": "https://cuescore.com/team/BERGAMO/29024428",
+        "venueId": 0
       },
+      "properties": [],
+      "raceTo": 1,
+      "round": 1,
+      "roundName": "Round 1",
+      "runoutsA": 0,
+      "runoutsB": 0,
       "scoreA": 0,
       "scoreB": 0,
+      "sets": [],
       "starttime": "",
-      "stoptime": ""
+      "stoptime": "",
+      "table": [],
+      "teamComment": "",
+      "tournamentId": 29021326,
+      "useInnings": false,
+      "videoLink": "",
+      "winnerNext": 20
     },
     {
+      "bestOfSets": 0,
+      "branch": 1,
+      "challengeId": 0,
+      "comment": "",
+      "curVersion": 101,
+      "discipline": "8-Ball",
+      "disciplineId": 2,
+      "frames": [],
+      "groupNo": 0,
+      "highBreaksA": "",
+      "highBreaksB": "",
+      "inningsPlayerA": 0,
+      "inningsPlayerB": 0,
+      "lagWinner": "",
+      "loserNext": "",
       "matchId": 29032639,
+      "matchType": 1,
+      "matchno": 9,
+      "matchstatus": "finished",
+      "matchstatusCode": 2,
+      "notes": [],
+      "penalty": 0,
       "playerA": {
+        "country": {
+          "alpha3": "POL",
+          "continent": "Europe",
+          "image": "https://cuescore.com/img/flags/png-country-4x2-none/res-640x480/pl.png",
+          "name": "Poland"
+        },
+        "image": "https://img.cuescore.com/image/b/4/b65e00f0076abd0055a71ffa703e5bff.png?t=1483705613",
         "name": "Turbo Dziki",
-        "playerId": null,
-        "teamId": 29024464
+        "teamId": 29024464,
+        "url": "https://cuescore.com/team/Turbo+Dziki/29024464",
+        "venueId": 0
       },
       "playerB": {
+        "country": [],
+        "image": "https://img.cuescore.com/image/b/4/b65e00f0076abd0055a71ffa703e5bff.png?t=1483705613",
         "name": "Walk Over",
-        "playerId": null,
-        "teamId": 1104541
+        "teamId": 1104541,
+        "url": "https://cuescore.com/team/Walk+Over/1104541",
+        "venueId": 0
       },
+      "properties": [],
+      "raceTo": 1,
+      "round": 1,
+      "roundName": "Round 1",
+      "runoutsA": 0,
+      "runoutsB": 0,
       "scoreA": 0,
       "scoreB": 0,
+      "sets": [],
       "starttime": "",
-      "stoptime": ""
+      "stoptime": "",
+      "table": [],
+      "teamComment": "",
+      "tournamentId": 29021326,
+      "useInnings": false,
+      "videoLink": "",
+      "winnerNext": 21
     },
     {
+      "bestOfSets": 0,
+      "branch": 1,
+      "challengeId": 0,
+      "comment": "",
+      "curVersion": 101,
+      "discipline": "8-Ball",
+      "disciplineId": 2,
+      "frames": [],
+      "groupNo": 0,
+      "highBreaksA": "",
+      "highBreaksB": "",
+      "inningsPlayerA": 0,
+      "inningsPlayerB": 0,
+      "lagWinner": "",
+      "loserNext": "",
       "matchId": 29032642,
+      "matchType": 1,
+      "matchno": 10,
+      "matchstatus": "finished",
+      "matchstatusCode": 2,
+      "notes": [],
+      "penalty": 0,
       "playerA": {
+        "country": {
+          "alpha3": "POL",
+          "continent": "Europe",
+          "image": "https://cuescore.com/img/flags/png-country-4x2-none/res-640x480/pl.png",
+          "name": "Poland"
+        },
+        "image": "https://img.cuescore.com/image/b/4/b65e00f0076abd0055a71ffa703e5bff.png?t=1483705613",
         "name": "Ace Team",
-        "playerId": null,
-        "teamId": 29024473
+        "teamId": 29024473,
+        "url": "https://cuescore.com/team/Ace+Team/29024473",
+        "venueId": 0
       },
       "playerB": {
+        "country": {
+          "alpha3": "POL",
+          "continent": "Europe",
+          "image": "https://cuescore.com/img/flags/png-country-4x2-none/res-640x480/pl.png",
+          "name": "Poland"
+        },
+        "image": "https://img.cuescore.com/image/b/4/b65e00f0076abd0055a71ffa703e5bff.png?t=1483705613",
         "name": "Tiktokerzy",
-        "playerId": null,
-        "teamId": 29024443
+        "teamId": 29024443,
+        "url": "https://cuescore.com/team/Tiktokerzy/29024443",
+        "venueId": 0
       },
+      "properties": [],
+      "raceTo": 1,
+      "round": 1,
+      "roundName": "Round 1",
+      "runoutsA": 0,
+      "runoutsB": 0,
       "scoreA": 0,
       "scoreB": 1,
+      "sets": [],
       "starttime": "2023-06-18T21:56:00",
-      "stoptime": "2023-06-18T22:10:27"
+      "stoptime": "2023-06-18T22:10:27",
+      "table": {
+        "branch": "American pool",
+        "branchId": 1,
+        "cloth": "",
+        "description": "",
+        "manufacturer": "",
+        "model": "Tournament Champion Sport",
+        "name": "6",
+        "pockets": "",
+        "size": 9,
+        "slate": "",
+        "tableId": 2842354,
+        "venue": {
+          "image": "https://img.cuescore.com/image/e/3/ea714c9bb52caa765f7707d5dcbe7f3a.png?t=1533571231",
+          "name": "147 Break Zamieniecka",
+          "owner": {
+            "logo": "//img.cuescore.com/image/7/2/71487152007d737c2f5de4f7821f7c9e.png?t=1555512394",
+            "name": "MGL Cue Sports",
+            "organizationId": 5133719,
+            "profileColor": "58a5fc",
+            "stub": "mglcuesports",
+            "url": "https://cuescore.com/mglcuesports"
+          },
+          "url": "https://cuescore.com/venue/147+Break+Zamieniecka/2842336",
+          "venueId": 2842336
+        }
+      },
+      "teamComment": "",
+      "tournamentId": 29021326,
+      "useInnings": false,
+      "videoLink": "",
+      "winnerNext": 21
     },
     {
+      "bestOfSets": 0,
+      "branch": 1,
+      "challengeId": 0,
+      "comment": "",
+      "curVersion": 101,
+      "discipline": "8-Ball",
+      "disciplineId": 2,
+      "frames": [],
+      "groupNo": 0,
+      "highBreaksA": "",
+      "highBreaksB": "",
+      "inningsPlayerA": 0,
+      "inningsPlayerB": 0,
+      "lagWinner": "",
+      "loserNext": "",
       "matchId": 29032645,
+      "matchType": 1,
+      "matchno": 11,
+      "matchstatus": "finished",
+      "matchstatusCode": 2,
+      "notes": [],
+      "penalty": 0,
       "playerA": {
+        "country": {
+          "alpha3": "POL",
+          "continent": "Europe",
+          "image": "https://cuescore.com/img/flags/png-country-4x2-none/res-640x480/pl.png",
+          "name": "Poland"
+        },
+        "image": "https://img.cuescore.com/image/b/4/b65e00f0076abd0055a71ffa703e5bff.png?t=1483705613",
         "name": "Piwo = Paliwo",
-        "playerId": null,
-        "teamId": 29024488
+        "teamId": 29024488,
+        "url": "https://cuescore.com/team/Piwo+%3D+Paliwo/29024488",
+        "venueId": 0
       },
       "playerB": {
+        "country": {
+          "alpha3": "POL",
+          "continent": "Europe",
+          "image": "https://cuescore.com/img/flags/png-country-4x2-none/res-640x480/pl.png",
+          "name": "Poland"
+        },
+        "image": "https://img.cuescore.com/image/b/4/b65e00f0076abd0055a71ffa703e5bff.png?t=1483705613",
         "name": "Moczy Gluty",
-        "playerId": null,
-        "teamId": 29024494
+        "teamId": 29024494,
+        "url": "https://cuescore.com/team/Moczy+Gluty/29024494",
+        "venueId": 0
       },
+      "properties": [],
+      "raceTo": 1,
+      "round": 1,
+      "roundName": "Round 1",
+      "runoutsA": 0,
+      "runoutsB": 0,
       "scoreA": 0,
       "scoreB": 1,
+      "sets": [],
       "starttime": "2023-06-18T21:56:00",
-      "stoptime": "2023-06-18T22:10:28"
+      "stoptime": "2023-06-18T22:10:28",
+      "table": {
+        "branch": "American pool",
+        "branchId": 1,
+        "cloth": "",
+        "description": "",
+        "manufacturer": "",
+        "model": "Tournament Champion Sport",
+        "name": "7",
+        "pockets": "",
+        "size": 9,
+        "slate": "",
+        "tableId": 2842355,
+        "venue": {
+          "image": "https://img.cuescore.com/image/e/3/ea714c9bb52caa765f7707d5dcbe7f3a.png?t=1533571231",
+          "name": "147 Break Zamieniecka",
+          "owner": {
+            "logo": "//img.cuescore.com/image/7/2/71487152007d737c2f5de4f7821f7c9e.png?t=1555512394",
+            "name": "MGL Cue Sports",
+            "organizationId": 5133719,
+            "profileColor": "58a5fc",
+            "stub": "mglcuesports",
+            "url": "https://cuescore.com/mglcuesports"
+          },
+          "url": "https://cuescore.com/venue/147+Break+Zamieniecka/2842336",
+          "venueId": 2842336
+        }
+      },
+      "teamComment": "",
+      "tournamentId": 29021326,
+      "useInnings": false,
+      "videoLink": "",
+      "winnerNext": 22
     },
     {
+      "bestOfSets": 0,
+      "branch": 1,
+      "challengeId": 0,
+      "comment": "",
+      "curVersion": 101,
+      "discipline": "8-Ball",
+      "disciplineId": 2,
+      "frames": [],
+      "groupNo": 0,
+      "highBreaksA": "",
+      "highBreaksB": "",
+      "inningsPlayerA": 0,
+      "inningsPlayerB": 0,
+      "lagWinner": "",
+      "loserNext": "",
       "matchId": 29032648,
+      "matchType": 1,
+      "matchno": 12,
+      "matchstatus": "finished",
+      "matchstatusCode": 2,
+      "notes": [],
+      "penalty": 0,
       "playerA": {
+        "country": {
+          "alpha3": "POL",
+          "continent": "Europe",
+          "image": "https://cuescore.com/img/flags/png-country-4x2-none/res-640x480/pl.png",
+          "name": "Poland"
+        },
+        "image": "https://img.cuescore.com/image/b/4/b65e00f0076abd0055a71ffa703e5bff.png?t=1483705613",
         "name": "Król Ewa",
-        "playerId": null,
-        "teamId": 29031550
+        "teamId": 29031550,
+        "url": "https://cuescore.com/team/Kr%C3%B3l+Ewa/29031550",
+        "venueId": 0
       },
       "playerB": {
+        "country": {
+          "alpha3": "POL",
+          "continent": "Europe",
+          "image": "https://cuescore.com/img/flags/png-country-4x2-none/res-640x480/pl.png",
+          "name": "Poland"
+        },
+        "image": "https://img.cuescore.com/image/b/4/b65e00f0076abd0055a71ffa703e5bff.png?t=1483705613",
         "name": "Girl power",
-        "playerId": null,
-        "teamId": 29024446
+        "teamId": 29024446,
+        "url": "https://cuescore.com/team/Girl+power/29024446",
+        "venueId": 0
       },
+      "properties": [],
+      "raceTo": 1,
+      "round": 1,
+      "roundName": "Round 1",
+      "runoutsA": 0,
+      "runoutsB": 0,
       "scoreA": 0,
       "scoreB": 1,
+      "sets": [],
       "starttime": "2023-06-18T21:56:00",
-      "stoptime": "2023-06-18T22:32:31"
+      "stoptime": "2023-06-18T22:32:31",
+      "table": {
+        "branch": "American pool",
+        "branchId": 1,
+        "cloth": "",
+        "description": "",
+        "manufacturer": "",
+        "model": "Tournament Champion Sport",
+        "name": "8",
+        "pockets": "",
+        "size": 9,
+        "slate": "",
+        "tableId": 2842356,
+        "venue": {
+          "image": "https://img.cuescore.com/image/e/3/ea714c9bb52caa765f7707d5dcbe7f3a.png?t=1533571231",
+          "name": "147 Break Zamieniecka",
+          "owner": {
+            "logo": "//img.cuescore.com/image/7/2/71487152007d737c2f5de4f7821f7c9e.png?t=1555512394",
+            "name": "MGL Cue Sports",
+            "organizationId": 5133719,
+            "profileColor": "58a5fc",
+            "stub": "mglcuesports",
+            "url": "https://cuescore.com/mglcuesports"
+          },
+          "url": "https://cuescore.com/venue/147+Break+Zamieniecka/2842336",
+          "venueId": 2842336
+        }
+      },
+      "teamComment": "",
+      "tournamentId": 29021326,
+      "useInnings": false,
+      "videoLink": "",
+      "winnerNext": 22
     },
     {
+      "bestOfSets": 0,
+      "branch": 1,
+      "challengeId": 0,
+      "comment": "",
+      "curVersion": 101,
+      "discipline": "8-Ball",
+      "disciplineId": 2,
+      "frames": [],
+      "groupNo": 0,
+      "highBreaksA": "",
+      "highBreaksB": "",
+      "inningsPlayerA": 0,
+      "inningsPlayerB": 0,
+      "lagWinner": "",
+      "loserNext": "",
       "matchId": 29032651,
+      "matchType": 1,
+      "matchno": 13,
+      "matchstatus": "finished",
+      "matchstatusCode": 2,
+      "notes": [],
+      "penalty": 0,
       "playerA": {
+        "country": {
+          "alpha3": "POL",
+          "continent": "Europe",
+          "image": "https://cuescore.com/img/flags/png-country-4x2-none/res-640x480/pl.png",
+          "name": "Poland"
+        },
+        "image": "https://img.cuescore.com/image/b/4/b65e00f0076abd0055a71ffa703e5bff.png?t=1483705613",
         "name": "Alkofanki",
-        "playerId": null,
-        "teamId": 29024461
+        "teamId": 29024461,
+        "url": "https://cuescore.com/team/Alkofanki/29024461",
+        "venueId": 0
       },
       "playerB": {
+        "country": {
+          "alpha3": "POL",
+          "continent": "Europe",
+          "image": "https://cuescore.com/img/flags/png-country-4x2-none/res-640x480/pl.png",
+          "name": "Poland"
+        },
+        "image": "https://img.cuescore.com/image/b/4/b65e00f0076abd0055a71ffa703e5bff.png?t=1483705613",
         "name": "Ghostbusters",
-        "playerId": null,
-        "teamId": 29030980
+        "teamId": 29030980,
+        "url": "https://cuescore.com/team/Ghostbusters/29030980",
+        "venueId": 0
       },
+      "properties": [],
+      "raceTo": 1,
+      "round": 1,
+      "roundName": "Round 1",
+      "runoutsA": 0,
+      "runoutsB": 0,
       "scoreA": 1,
       "scoreB": 0,
+      "sets": [],
       "starttime": "2023-06-18T21:56:00",
-      "stoptime": "2023-06-18T22:18:51"
+      "stoptime": "2023-06-18T22:18:51",
+      "table": {
+        "branch": "American pool",
+        "branchId": 1,
+        "cloth": "",
+        "description": "",
+        "manufacturer": "",
+        "model": "Tournament Champion Sport",
+        "name": "9",
+        "pockets": "",
+        "size": 9,
+        "slate": "",
+        "tableId": 2842357,
+        "venue": {
+          "image": "https://img.cuescore.com/image/e/3/ea714c9bb52caa765f7707d5dcbe7f3a.png?t=1533571231",
+          "name": "147 Break Zamieniecka",
+          "owner": {
+            "logo": "//img.cuescore.com/image/7/2/71487152007d737c2f5de4f7821f7c9e.png?t=1555512394",
+            "name": "MGL Cue Sports",
+            "organizationId": 5133719,
+            "profileColor": "58a5fc",
+            "stub": "mglcuesports",
+            "url": "https://cuescore.com/mglcuesports"
+          },
+          "url": "https://cuescore.com/venue/147+Break+Zamieniecka/2842336",
+          "venueId": 2842336
+        }
+      },
+      "teamComment": "",
+      "tournamentId": 29021326,
+      "useInnings": false,
+      "videoLink": "",
+      "winnerNext": 23
     },
     {
+      "bestOfSets": 0,
+      "branch": 1,
+      "challengeId": 0,
+      "comment": "",
+      "curVersion": 101,
+      "discipline": "8-Ball",
+      "disciplineId": 2,
+      "frames": [],
+      "groupNo": 0,
+      "highBreaksA": "",
+      "highBreaksB": "",
+      "inningsPlayerA": 0,
+      "inningsPlayerB": 0,
+      "lagWinner": "",
+      "loserNext": "",
       "matchId": 29032654,
+      "matchType": 1,
+      "matchno": 14,
+      "matchstatus": "finished",
+      "matchstatusCode": 2,
+      "notes": [],
+      "penalty": 0,
       "playerA": {
+        "country": {
+          "alpha3": "POL",
+          "continent": "Europe",
+          "image": "https://cuescore.com/img/flags/png-country-4x2-none/res-640x480/pl.png",
+          "name": "Poland"
+        },
+        "image": "https://img.cuescore.com/image/b/4/b65e00f0076abd0055a71ffa703e5bff.png?t=1483705613",
         "name": "Kejrol&Mejrol",
-        "playerId": null,
-        "teamId": 29024497
+        "teamId": 29024497,
+        "url": "https://cuescore.com/team/Kejrol%2526Mejrol/29024497",
+        "venueId": 0
       },
       "playerB": {
+        "country": {
+          "alpha3": "POL",
+          "continent": "Europe",
+          "image": "https://cuescore.com/img/flags/png-country-4x2-none/res-640x480/pl.png",
+          "name": "Poland"
+        },
+        "image": "https://img.cuescore.com/image/b/4/b65e00f0076abd0055a71ffa703e5bff.png?t=1483705613",
         "name": "British School of Wilanów",
-        "playerId": null,
-        "teamId": 29024422
+        "teamId": 29024422,
+        "url": "https://cuescore.com/team/British+School+of+Wilan%C3%B3w/29024422",
+        "venueId": 0
       },
+      "properties": [],
+      "raceTo": 1,
+      "round": 1,
+      "roundName": "Round 1",
+      "runoutsA": 0,
+      "runoutsB": 0,
       "scoreA": 1,
       "scoreB": 0,
+      "sets": [],
       "starttime": "2023-06-18T21:56:00",
-      "stoptime": "2023-06-18T22:15:52"
+      "stoptime": "2023-06-18T22:15:52",
+      "table": {
+        "branch": "American pool",
+        "branchId": 1,
+        "cloth": "",
+        "description": "",
+        "manufacturer": "",
+        "model": "Tournament Champion Sport",
+        "name": "10",
+        "pockets": "",
+        "size": 9,
+        "slate": "",
+        "tableId": 2842368,
+        "venue": {
+          "image": "https://img.cuescore.com/image/e/3/ea714c9bb52caa765f7707d5dcbe7f3a.png?t=1533571231",
+          "name": "147 Break Zamieniecka",
+          "owner": {
+            "logo": "//img.cuescore.com/image/7/2/71487152007d737c2f5de4f7821f7c9e.png?t=1555512394",
+            "name": "MGL Cue Sports",
+            "organizationId": 5133719,
+            "profileColor": "58a5fc",
+            "stub": "mglcuesports",
+            "url": "https://cuescore.com/mglcuesports"
+          },
+          "url": "https://cuescore.com/venue/147+Break+Zamieniecka/2842336",
+          "venueId": 2842336
+        }
+      },
+      "teamComment": "",
+      "tournamentId": 29021326,
+      "useInnings": false,
+      "videoLink": "",
+      "winnerNext": 23
     },
     {
+      "bestOfSets": 0,
+      "branch": 1,
+      "challengeId": 0,
+      "comment": "",
+      "curVersion": 101,
+      "discipline": "8-Ball",
+      "disciplineId": 2,
+      "frames": [],
+      "groupNo": 0,
+      "highBreaksA": "",
+      "highBreaksB": "",
+      "inningsPlayerA": 0,
+      "inningsPlayerB": 0,
+      "lagWinner": "",
+      "loserNext": "",
       "matchId": 29032657,
+      "matchType": 1,
+      "matchno": 15,
+      "matchstatus": "finished",
+      "matchstatusCode": 2,
+      "notes": [],
+      "penalty": 0,
       "playerA": {
+        "country": {
+          "alpha3": "POL",
+          "continent": "Europe",
+          "image": "https://cuescore.com/img/flags/png-country-4x2-none/res-640x480/pl.png",
+          "name": "Poland"
+        },
+        "image": "https://img.cuescore.com/image/b/4/b65e00f0076abd0055a71ffa703e5bff.png?t=1483705613",
         "name": "Drudzy w kulach",
-        "playerId": null,
-        "teamId": 29024449
+        "teamId": 29024449,
+        "url": "https://cuescore.com/team/Drudzy+w+kulach/29024449",
+        "venueId": 0
       },
       "playerB": {
+        "country": {
+          "alpha3": "POL",
+          "continent": "Europe",
+          "image": "https://cuescore.com/img/flags/png-country-4x2-none/res-640x480/pl.png",
+          "name": "Poland"
+        },
+        "image": "https://img.cuescore.com/image/b/4/b65e00f0076abd0055a71ffa703e5bff.png?t=1483705613",
         "name": "KAMIL ŚLIMAK ALE OD TYŁU",
-        "playerId": null,
-        "teamId": 29024467
+        "teamId": 29024467,
+        "url": "https://cuescore.com/team/KAMIL+%C5%9ALIMAK+ALE+OD+TY%C5%81U/29024467",
+        "venueId": 0
       },
+      "properties": [],
+      "raceTo": 1,
+      "round": 1,
+      "roundName": "Round 1",
+      "runoutsA": 0,
+      "runoutsB": 0,
       "scoreA": 0,
       "scoreB": 1,
+      "sets": [],
       "starttime": "2023-06-18T21:57:00",
-      "stoptime": "2023-06-18T22:12:23"
+      "stoptime": "2023-06-18T22:12:23",
+      "table": {
+        "branch": "American pool",
+        "branchId": 1,
+        "cloth": "",
+        "description": "",
+        "manufacturer": "",
+        "model": "Tournament Champion Sport",
+        "name": "15",
+        "pockets": "",
+        "size": 9,
+        "slate": "",
+        "tableId": 2842373,
+        "venue": {
+          "image": "https://img.cuescore.com/image/e/3/ea714c9bb52caa765f7707d5dcbe7f3a.png?t=1533571231",
+          "name": "147 Break Zamieniecka",
+          "owner": {
+            "logo": "//img.cuescore.com/image/7/2/71487152007d737c2f5de4f7821f7c9e.png?t=1555512394",
+            "name": "MGL Cue Sports",
+            "organizationId": 5133719,
+            "profileColor": "58a5fc",
+            "stub": "mglcuesports",
+            "url": "https://cuescore.com/mglcuesports"
+          },
+          "url": "https://cuescore.com/venue/147+Break+Zamieniecka/2842336",
+          "venueId": 2842336
+        }
+      },
+      "teamComment": "",
+      "tournamentId": 29021326,
+      "useInnings": false,
+      "videoLink": "",
+      "winnerNext": 24
     },
     {
+      "bestOfSets": 0,
+      "branch": 1,
+      "challengeId": 0,
+      "comment": "",
+      "curVersion": 101,
+      "discipline": "8-Ball",
+      "disciplineId": 2,
+      "frames": [],
+      "groupNo": 0,
+      "highBreaksA": "",
+      "highBreaksB": "",
+      "inningsPlayerA": 0,
+      "inningsPlayerB": 0,
+      "lagWinner": "",
+      "loserNext": "",
       "matchId": 29032660,
+      "matchType": 1,
+      "matchno": 16,
+      "matchstatus": "finished",
+      "matchstatusCode": 2,
+      "notes": [],
+      "penalty": 0,
       "playerA": {
+        "country": [],
+        "image": "https://img.cuescore.com/image/b/4/b65e00f0076abd0055a71ffa703e5bff.png?t=1483705613",
         "name": "Walk Over",
-        "playerId": null,
-        "teamId": 1104541
+        "teamId": 1104541,
+        "url": "https://cuescore.com/team/Walk+Over/1104541",
+        "venueId": 0
       },
       "playerB": {
+        "country": {
+          "alpha3": "POL",
+          "continent": "Europe",
+          "image": "https://cuescore.com/img/flags/png-country-4x2-none/res-640x480/pl.png",
+          "name": "Poland"
+        },
+        "image": "https://img.cuescore.com/image/b/4/b65e00f0076abd0055a71ffa703e5bff.png?t=1483705613",
         "name": "ProszęDajcieNamWygrać",
-        "playerId": null,
-        "teamId": 29024491
+        "teamId": 29024491,
+        "url": "https://cuescore.com/team/Prosz%C4%99DajcieNamWygra%C4%87/29024491",
+        "venueId": 0
       },
+      "properties": [],
+      "raceTo": 1,
+      "round": 1,
+      "roundName": "Round 1",
+      "runoutsA": 0,
+      "runoutsB": 0,
       "scoreA": 0,
       "scoreB": 0,
+      "sets": [],
       "starttime": "",
-      "stoptime": ""
+      "stoptime": "",
+      "table": [],
+      "teamComment": "",
+      "tournamentId": 29021326,
+      "useInnings": false,
+      "videoLink": "",
+      "winnerNext": 24
     },
     {
+      "bestOfSets": 0,
+      "branch": 1,
+      "challengeId": 0,
+      "comment": "",
+      "curVersion": 101,
+      "discipline": "8-Ball",
+      "disciplineId": 2,
+      "frames": [],
+      "groupNo": 0,
+      "highBreaksA": "",
+      "highBreaksB": "",
+      "inningsPlayerA": 0,
+      "inningsPlayerB": 0,
+      "lagWinner": "",
+      "loserNext": "",
       "matchId": 29032663,
+      "matchType": 1,
+      "matchno": 17,
+      "matchstatus": "finished",
+      "matchstatusCode": 2,
+      "notes": [],
+      "penalty": 0,
       "playerA": {
+        "country": {
+          "alpha3": "POL",
+          "continent": "Europe",
+          "image": "https://cuescore.com/img/flags/png-country-4x2-none/res-640x480/pl.png",
+          "name": "Poland"
+        },
+        "image": "https://img.cuescore.com/image/b/4/b65e00f0076abd0055a71ffa703e5bff.png?t=1483705613",
         "name": "Mamy niezłe kule",
-        "playerId": null,
-        "teamId": 29024503
+        "teamId": 29024503,
+        "url": "https://cuescore.com/team/Mamy+niez%C5%82e+kule/29024503",
+        "venueId": 0
       },
       "playerB": {
+        "country": {
+          "alpha3": "POL",
+          "continent": "Europe",
+          "image": "https://cuescore.com/img/flags/png-country-4x2-none/res-640x480/pl.png",
+          "name": "Poland"
+        },
+        "image": "https://img.cuescore.com/image/b/4/b65e00f0076abd0055a71ffa703e5bff.png?t=1483705613",
         "name": "PAJONKI",
-        "playerId": null,
-        "teamId": 29024452
+        "teamId": 29024452,
+        "url": "https://cuescore.com/team/PAJONKI/29024452",
+        "venueId": 0
       },
+      "properties": {
+        "penalty": []
+      },
+      "raceTo": 1,
+      "round": 2,
+      "roundName": "Last sixteen",
+      "runoutsA": 0,
+      "runoutsB": 0,
       "scoreA": 1,
       "scoreB": 0,
+      "sets": [],
       "starttime": "2023-06-18T22:19:00",
-      "stoptime": "2023-06-18T22:37:10"
+      "stoptime": "2023-06-18T22:37:10",
+      "table": {
+        "branch": "American pool",
+        "branchId": 1,
+        "cloth": "",
+        "description": "",
+        "manufacturer": "",
+        "model": "Tournament Champion Sport",
+        "name": "1",
+        "pockets": "",
+        "size": 9,
+        "slate": "",
+        "tableId": 2842349,
+        "venue": {
+          "image": "https://img.cuescore.com/image/e/3/ea714c9bb52caa765f7707d5dcbe7f3a.png?t=1533571231",
+          "name": "147 Break Zamieniecka",
+          "owner": {
+            "logo": "//img.cuescore.com/image/7/2/71487152007d737c2f5de4f7821f7c9e.png?t=1555512394",
+            "name": "MGL Cue Sports",
+            "organizationId": 5133719,
+            "profileColor": "58a5fc",
+            "stub": "mglcuesports",
+            "url": "https://cuescore.com/mglcuesports"
+          },
+          "url": "https://cuescore.com/venue/147+Break+Zamieniecka/2842336",
+          "venueId": 2842336
+        }
+      },
+      "teamComment": "",
+      "tournamentId": 29021326,
+      "useInnings": false,
+      "videoLink": "",
+      "winnerNext": 25
     },
     {
+      "bestOfSets": 0,
+      "branch": 1,
+      "challengeId": 0,
+      "comment": "",
+      "curVersion": 101,
+      "discipline": "8-Ball",
+      "disciplineId": 2,
+      "frames": [],
+      "groupNo": 0,
+      "highBreaksA": "",
+      "highBreaksB": "",
+      "inningsPlayerA": 0,
+      "inningsPlayerB": 0,
+      "lagWinner": "",
+      "loserNext": "",
       "matchId": 29032666,
+      "matchType": 1,
+      "matchno": 18,
+      "matchstatus": "finished",
+      "matchstatusCode": 2,
+      "notes": [],
+      "penalty": 0,
       "playerA": {
+        "country": {
+          "alpha3": "POL",
+          "continent": "Europe",
+          "image": "https://cuescore.com/img/flags/png-country-4x2-none/res-640x480/pl.png",
+          "name": "Poland"
+        },
+        "image": "https://img.cuescore.com/image/b/4/b65e00f0076abd0055a71ffa703e5bff.png?t=1483705613",
         "name": "Cymbergaje",
-        "playerId": null,
-        "teamId": 29024476
+        "teamId": 29024476,
+        "url": "https://cuescore.com/team/Cymbergaje/29024476",
+        "venueId": 0
       },
       "playerB": {
+        "country": {
+          "alpha3": "POL",
+          "continent": "Europe",
+          "image": "https://cuescore.com/img/flags/png-country-4x2-none/res-640x480/pl.png",
+          "name": "Poland"
+        },
+        "image": "https://img.cuescore.com/image/b/4/b65e00f0076abd0055a71ffa703e5bff.png?t=1483705613",
         "name": "Chłopaki z baraków",
-        "playerId": null,
-        "teamId": 29030977
+        "teamId": 29030977,
+        "url": "https://cuescore.com/team/Ch%C5%82opaki+z+barak%C3%B3w/29030977",
+        "venueId": 0
       },
+      "properties": {
+        "penalty": []
+      },
+      "raceTo": 1,
+      "round": 2,
+      "roundName": "Last sixteen",
+      "runoutsA": 0,
+      "runoutsB": 0,
       "scoreA": 0,
       "scoreB": 1,
+      "sets": [],
       "starttime": "2023-06-18T22:17:00",
-      "stoptime": "2023-06-18T22:34:23"
+      "stoptime": "2023-06-18T22:34:23",
+      "table": {
+        "branch": "American pool",
+        "branchId": 1,
+        "cloth": "",
+        "description": "",
+        "manufacturer": "",
+        "model": "Tournament Champion Sport",
+        "name": "2",
+        "pockets": "",
+        "size": 9,
+        "slate": "",
+        "tableId": 2842350,
+        "venue": {
+          "image": "https://img.cuescore.com/image/e/3/ea714c9bb52caa765f7707d5dcbe7f3a.png?t=1533571231",
+          "name": "147 Break Zamieniecka",
+          "owner": {
+            "logo": "//img.cuescore.com/image/7/2/71487152007d737c2f5de4f7821f7c9e.png?t=1555512394",
+            "name": "MGL Cue Sports",
+            "organizationId": 5133719,
+            "profileColor": "58a5fc",
+            "stub": "mglcuesports",
+            "url": "https://cuescore.com/mglcuesports"
+          },
+          "url": "https://cuescore.com/venue/147+Break+Zamieniecka/2842336",
+          "venueId": 2842336
+        }
+      },
+      "teamComment": "",
+      "tournamentId": 29021326,
+      "useInnings": false,
+      "videoLink": "",
+      "winnerNext": 25
     },
     {
+      "bestOfSets": 0,
+      "branch": 1,
+      "challengeId": 0,
+      "comment": "",
+      "curVersion": 101,
+      "discipline": "8-Ball",
+      "disciplineId": 2,
+      "frames": [],
+      "groupNo": 0,
+      "highBreaksA": "",
+      "highBreaksB": "",
+      "inningsPlayerA": 0,
+      "inningsPlayerB": 0,
+      "lagWinner": "",
+      "loserNext": "",
       "matchId": 29032669,
+      "matchType": 1,
+      "matchno": 19,
+      "matchstatus": "finished",
+      "matchstatusCode": 2,
+      "notes": [],
+      "penalty": 0,
       "playerA": {
+        "country": {
+          "alpha3": "POL",
+          "continent": "Europe",
+          "image": "https://cuescore.com/img/flags/png-country-4x2-none/res-640x480/pl.png",
+          "name": "Poland"
+        },
+        "image": "https://img.cuescore.com/image/b/4/b65e00f0076abd0055a71ffa703e5bff.png?t=1483705613",
         "name": "Chłopaki ze strefy",
-        "playerId": null,
-        "teamId": 29024437
+        "teamId": 29024437,
+        "url": "https://cuescore.com/team/Ch%C5%82opaki+ze+strefy/29024437",
+        "venueId": 0
       },
       "playerB": {
+        "country": {
+          "alpha3": "POL",
+          "continent": "Europe",
+          "image": "https://cuescore.com/img/flags/png-country-4x2-none/res-640x480/pl.png",
+          "name": "Poland"
+        },
+        "image": "https://img.cuescore.com/image/b/4/b65e00f0076abd0055a71ffa703e5bff.png?t=1483705613",
         "name": "Szczęśliwa ósemka",
-        "playerId": null,
-        "teamId": 29024458
+        "teamId": 29024458,
+        "url": "https://cuescore.com/team/Szcz%C4%99%C5%9Bliwa+%C3%B3semka/29024458",
+        "venueId": 0
       },
+      "properties": {
+        "penalty": []
+      },
+      "raceTo": 1,
+      "round": 2,
+      "roundName": "Last sixteen",
+      "runoutsA": 0,
+      "runoutsB": 0,
       "scoreA": 0,
       "scoreB": 1,
+      "sets": [],
       "starttime": "2023-06-18T22:16:00",
-      "stoptime": "2023-06-18T22:32:51"
+      "stoptime": "2023-06-18T22:32:51",
+      "table": {
+        "branch": "American pool",
+        "branchId": 1,
+        "cloth": "",
+        "description": "",
+        "manufacturer": "",
+        "model": "Tournament Champion Sport",
+        "name": "4",
+        "pockets": "",
+        "size": 9,
+        "slate": "",
+        "tableId": 2842352,
+        "venue": {
+          "image": "https://img.cuescore.com/image/e/3/ea714c9bb52caa765f7707d5dcbe7f3a.png?t=1533571231",
+          "name": "147 Break Zamieniecka",
+          "owner": {
+            "logo": "//img.cuescore.com/image/7/2/71487152007d737c2f5de4f7821f7c9e.png?t=1555512394",
+            "name": "MGL Cue Sports",
+            "organizationId": 5133719,
+            "profileColor": "58a5fc",
+            "stub": "mglcuesports",
+            "url": "https://cuescore.com/mglcuesports"
+          },
+          "url": "https://cuescore.com/venue/147+Break+Zamieniecka/2842336",
+          "venueId": 2842336
+        }
+      },
+      "teamComment": "",
+      "tournamentId": 29021326,
+      "useInnings": false,
+      "videoLink": "",
+      "winnerNext": 26
     },
     {
+      "bestOfSets": 0,
+      "branch": 1,
+      "challengeId": 0,
+      "comment": "",
+      "curVersion": 101,
+      "discipline": "8-Ball",
+      "disciplineId": 2,
+      "frames": [],
+      "groupNo": 0,
+      "highBreaksA": "",
+      "highBreaksB": "",
+      "inningsPlayerA": 0,
+      "inningsPlayerB": 0,
+      "lagWinner": "",
+      "loserNext": "",
       "matchId": 29032672,
+      "matchType": 1,
+      "matchno": 20,
+      "matchstatus": "finished",
+      "matchstatusCode": 2,
+      "notes": [],
+      "penalty": 0,
       "playerA": {
+        "country": {
+          "alpha3": "POL",
+          "continent": "Europe",
+          "image": "https://cuescore.com/img/flags/png-country-4x2-none/res-640x480/pl.png",
+          "name": "Poland"
+        },
+        "image": "https://img.cuescore.com/image/b/4/b65e00f0076abd0055a71ffa703e5bff.png?t=1483705613",
         "name": "Slay team",
-        "playerId": null,
-        "teamId": 29024482
+        "teamId": 29024482,
+        "url": "https://cuescore.com/team/Slay+team/29024482",
+        "venueId": 0
       },
       "playerB": {
+        "country": {
+          "alpha3": "POL",
+          "continent": "Europe",
+          "image": "https://cuescore.com/img/flags/png-country-4x2-none/res-640x480/pl.png",
+          "name": "Poland"
+        },
+        "image": "https://img.cuescore.com/image/b/4/b65e00f0076abd0055a71ffa703e5bff.png?t=1483705613",
         "name": "BERGAMO",
-        "playerId": null,
-        "teamId": 29024428
+        "teamId": 29024428,
+        "url": "https://cuescore.com/team/BERGAMO/29024428",
+        "venueId": 0
       },
+      "properties": {
+        "penalty": []
+      },
+      "raceTo": 1,
+      "round": 2,
+      "roundName": "Last sixteen",
+      "runoutsA": 0,
+      "runoutsB": 0,
       "scoreA": 0,
       "scoreB": 1,
+      "sets": [],
       "starttime": "2023-06-18T22:20:00",
-      "stoptime": "2023-06-18T22:38:01"
+      "stoptime": "2023-06-18T22:38:01",
+      "table": {
+        "branch": "American pool",
+        "branchId": 1,
+        "cloth": "",
+        "description": "",
+        "manufacturer": "",
+        "model": "Tournament Champion Sport",
+        "name": "5",
+        "pockets": "",
+        "size": 9,
+        "slate": "",
+        "tableId": 2842353,
+        "venue": {
+          "image": "https://img.cuescore.com/image/e/3/ea714c9bb52caa765f7707d5dcbe7f3a.png?t=1533571231",
+          "name": "147 Break Zamieniecka",
+          "owner": {
+            "logo": "//img.cuescore.com/image/7/2/71487152007d737c2f5de4f7821f7c9e.png?t=1555512394",
+            "name": "MGL Cue Sports",
+            "organizationId": 5133719,
+            "profileColor": "58a5fc",
+            "stub": "mglcuesports",
+            "url": "https://cuescore.com/mglcuesports"
+          },
+          "url": "https://cuescore.com/venue/147+Break+Zamieniecka/2842336",
+          "venueId": 2842336
+        }
+      },
+      "teamComment": "",
+      "tournamentId": 29021326,
+      "useInnings": false,
+      "videoLink": "",
+      "winnerNext": 26
     },
     {
+      "bestOfSets": 0,
+      "branch": 1,
+      "challengeId": 0,
+      "comment": "",
+      "curVersion": 101,
+      "discipline": "8-Ball",
+      "disciplineId": 2,
+      "frames": [],
+      "groupNo": 0,
+      "highBreaksA": "",
+      "highBreaksB": "",
+      "inningsPlayerA": 0,
+      "inningsPlayerB": 0,
+      "lagWinner": "",
+      "loserNext": "",
       "matchId": 29032675,
+      "matchType": 1,
+      "matchno": 21,
+      "matchstatus": "finished",
+      "matchstatusCode": 2,
+      "notes": [],
+      "penalty": 0,
       "playerA": {
+        "country": {
+          "alpha3": "POL",
+          "continent": "Europe",
+          "image": "https://cuescore.com/img/flags/png-country-4x2-none/res-640x480/pl.png",
+          "name": "Poland"
+        },
+        "image": "https://img.cuescore.com/image/b/4/b65e00f0076abd0055a71ffa703e5bff.png?t=1483705613",
         "name": "Turbo Dziki",
-        "playerId": null,
-        "teamId": 29024464
+        "teamId": 29024464,
+        "url": "https://cuescore.com/team/Turbo+Dziki/29024464",
+        "venueId": 0
       },
       "playerB": {
+        "country": {
+          "alpha3": "POL",
+          "continent": "Europe",
+          "image": "https://cuescore.com/img/flags/png-country-4x2-none/res-640x480/pl.png",
+          "name": "Poland"
+        },
+        "image": "https://img.cuescore.com/image/b/4/b65e00f0076abd0055a71ffa703e5bff.png?t=1483705613",
         "name": "Tiktokerzy",
-        "playerId": null,
-        "teamId": 29024443
+        "teamId": 29024443,
+        "url": "https://cuescore.com/team/Tiktokerzy/29024443",
+        "venueId": 0
       },
+      "properties": {
+        "penalty": []
+      },
+      "raceTo": 1,
+      "round": 2,
+      "roundName": "Last sixteen",
+      "runoutsA": 0,
+      "runoutsB": 0,
       "scoreA": 0,
       "scoreB": 1,
+      "sets": [],
       "starttime": "2023-06-18T22:11:00",
-      "stoptime": "2023-06-18T22:24:29"
+      "stoptime": "2023-06-18T22:24:29",
+      "table": {
+        "branch": "American pool",
+        "branchId": 1,
+        "cloth": "",
+        "description": "",
+        "manufacturer": "",
+        "model": "Tournament Champion Sport",
+        "name": "6",
+        "pockets": "",
+        "size": 9,
+        "slate": "",
+        "tableId": 2842354,
+        "venue": {
+          "image": "https://img.cuescore.com/image/e/3/ea714c9bb52caa765f7707d5dcbe7f3a.png?t=1533571231",
+          "name": "147 Break Zamieniecka",
+          "owner": {
+            "logo": "//img.cuescore.com/image/7/2/71487152007d737c2f5de4f7821f7c9e.png?t=1555512394",
+            "name": "MGL Cue Sports",
+            "organizationId": 5133719,
+            "profileColor": "58a5fc",
+            "stub": "mglcuesports",
+            "url": "https://cuescore.com/mglcuesports"
+          },
+          "url": "https://cuescore.com/venue/147+Break+Zamieniecka/2842336",
+          "venueId": 2842336
+        }
+      },
+      "teamComment": "",
+      "tournamentId": 29021326,
+      "useInnings": false,
+      "videoLink": "",
+      "winnerNext": 27
     },
     {
+      "bestOfSets": 0,
+      "branch": 1,
+      "challengeId": 0,
+      "comment": "",
+      "curVersion": 101,
+      "discipline": "8-Ball",
+      "disciplineId": 2,
+      "frames": [],
+      "groupNo": 0,
+      "highBreaksA": "",
+      "highBreaksB": "",
+      "inningsPlayerA": 0,
+      "inningsPlayerB": 0,
+      "lagWinner": "",
+      "loserNext": "",
       "matchId": 29032678,
+      "matchType": 1,
+      "matchno": 22,
+      "matchstatus": "finished",
+      "matchstatusCode": 2,
+      "notes": [],
+      "penalty": 0,
       "playerA": {
+        "country": {
+          "alpha3": "POL",
+          "continent": "Europe",
+          "image": "https://cuescore.com/img/flags/png-country-4x2-none/res-640x480/pl.png",
+          "name": "Poland"
+        },
+        "image": "https://img.cuescore.com/image/b/4/b65e00f0076abd0055a71ffa703e5bff.png?t=1483705613",
         "name": "Moczy Gluty",
-        "playerId": null,
-        "teamId": 29024494
+        "teamId": 29024494,
+        "url": "https://cuescore.com/team/Moczy+Gluty/29024494",
+        "venueId": 0
       },
       "playerB": {
+        "country": {
+          "alpha3": "POL",
+          "continent": "Europe",
+          "image": "https://cuescore.com/img/flags/png-country-4x2-none/res-640x480/pl.png",
+          "name": "Poland"
+        },
+        "image": "https://img.cuescore.com/image/b/4/b65e00f0076abd0055a71ffa703e5bff.png?t=1483705613",
         "name": "Girl power",
-        "playerId": null,
-        "teamId": 29024446
+        "teamId": 29024446,
+        "url": "https://cuescore.com/team/Girl+power/29024446",
+        "venueId": 0
       },
+      "properties": {
+        "penalty": []
+      },
+      "raceTo": 1,
+      "round": 2,
+      "roundName": "Last sixteen",
+      "runoutsA": 0,
+      "runoutsB": 0,
       "scoreA": 1,
       "scoreB": 0,
+      "sets": [],
       "starttime": "2023-06-18T22:32:00",
-      "stoptime": "2023-06-18T22:49:07"
+      "stoptime": "2023-06-18T22:49:07",
+      "table": {
+        "branch": "American pool",
+        "branchId": 1,
+        "cloth": "",
+        "description": "",
+        "manufacturer": "",
+        "model": "Tournament Champion Sport",
+        "name": "8",
+        "pockets": "",
+        "size": 9,
+        "slate": "",
+        "tableId": 2842356,
+        "venue": {
+          "image": "https://img.cuescore.com/image/e/3/ea714c9bb52caa765f7707d5dcbe7f3a.png?t=1533571231",
+          "name": "147 Break Zamieniecka",
+          "owner": {
+            "logo": "//img.cuescore.com/image/7/2/71487152007d737c2f5de4f7821f7c9e.png?t=1555512394",
+            "name": "MGL Cue Sports",
+            "organizationId": 5133719,
+            "profileColor": "58a5fc",
+            "stub": "mglcuesports",
+            "url": "https://cuescore.com/mglcuesports"
+          },
+          "url": "https://cuescore.com/venue/147+Break+Zamieniecka/2842336",
+          "venueId": 2842336
+        }
+      },
+      "teamComment": "",
+      "tournamentId": 29021326,
+      "useInnings": false,
+      "videoLink": "",
+      "winnerNext": 27
     },
     {
+      "bestOfSets": 0,
+      "branch": 1,
+      "challengeId": 0,
+      "comment": "",
+      "curVersion": 101,
+      "discipline": "8-Ball",
+      "disciplineId": 2,
+      "frames": [],
+      "groupNo": 0,
+      "highBreaksA": "",
+      "highBreaksB": "",
+      "inningsPlayerA": 0,
+      "inningsPlayerB": 0,
+      "lagWinner": "",
+      "loserNext": "",
       "matchId": 29032681,
+      "matchType": 1,
+      "matchno": 23,
+      "matchstatus": "finished",
+      "matchstatusCode": 2,
+      "notes": [],
+      "penalty": 0,
       "playerA": {
+        "country": {
+          "alpha3": "POL",
+          "continent": "Europe",
+          "image": "https://cuescore.com/img/flags/png-country-4x2-none/res-640x480/pl.png",
+          "name": "Poland"
+        },
+        "image": "https://img.cuescore.com/image/b/4/b65e00f0076abd0055a71ffa703e5bff.png?t=1483705613",
         "name": "Alkofanki",
-        "playerId": null,
-        "teamId": 29024461
+        "teamId": 29024461,
+        "url": "https://cuescore.com/team/Alkofanki/29024461",
+        "venueId": 0
       },
       "playerB": {
+        "country": {
+          "alpha3": "POL",
+          "continent": "Europe",
+          "image": "https://cuescore.com/img/flags/png-country-4x2-none/res-640x480/pl.png",
+          "name": "Poland"
+        },
+        "image": "https://img.cuescore.com/image/b/4/b65e00f0076abd0055a71ffa703e5bff.png?t=1483705613",
         "name": "Kejrol&Mejrol",
-        "playerId": null,
-        "teamId": 29024497
+        "teamId": 29024497,
+        "url": "https://cuescore.com/team/Kejrol%2526Mejrol/29024497",
+        "venueId": 0
       },
+      "properties": {
+        "penalty": []
+      },
+      "raceTo": 1,
+      "round": 2,
+      "roundName": "Last sixteen",
+      "runoutsA": 0,
+      "runoutsB": 0,
       "scoreA": 0,
       "scoreB": 1,
+      "sets": [],
       "starttime": "2023-06-18T22:19:00",
-      "stoptime": "2023-06-18T22:38:25"
+      "stoptime": "2023-06-18T22:38:25",
+      "table": {
+        "branch": "American pool",
+        "branchId": 1,
+        "cloth": "",
+        "description": "",
+        "manufacturer": "",
+        "model": "Tournament Champion Sport",
+        "name": "9",
+        "pockets": "",
+        "size": 9,
+        "slate": "",
+        "tableId": 2842357,
+        "venue": {
+          "image": "https://img.cuescore.com/image/e/3/ea714c9bb52caa765f7707d5dcbe7f3a.png?t=1533571231",
+          "name": "147 Break Zamieniecka",
+          "owner": {
+            "logo": "//img.cuescore.com/image/7/2/71487152007d737c2f5de4f7821f7c9e.png?t=1555512394",
+            "name": "MGL Cue Sports",
+            "organizationId": 5133719,
+            "profileColor": "58a5fc",
+            "stub": "mglcuesports",
+            "url": "https://cuescore.com/mglcuesports"
+          },
+          "url": "https://cuescore.com/venue/147+Break+Zamieniecka/2842336",
+          "venueId": 2842336
+        }
+      },
+      "teamComment": "",
+      "tournamentId": 29021326,
+      "useInnings": false,
+      "videoLink": "",
+      "winnerNext": 28
     },
     {
+      "bestOfSets": 0,
+      "branch": 1,
+      "challengeId": 0,
+      "comment": "",
+      "curVersion": 101,
+      "discipline": "8-Ball",
+      "disciplineId": 2,
+      "frames": [],
+      "groupNo": 0,
+      "highBreaksA": "",
+      "highBreaksB": "",
+      "inningsPlayerA": 0,
+      "inningsPlayerB": 0,
+      "lagWinner": "",
+      "loserNext": "",
       "matchId": 29032684,
+      "matchType": 1,
+      "matchno": 24,
+      "matchstatus": "finished",
+      "matchstatusCode": 2,
+      "notes": [],
+      "penalty": 0,
       "playerA": {
+        "country": {
+          "alpha3": "POL",
+          "continent": "Europe",
+          "image": "https://cuescore.com/img/flags/png-country-4x2-none/res-640x480/pl.png",
+          "name": "Poland"
+        },
+        "image": "https://img.cuescore.com/image/b/4/b65e00f0076abd0055a71ffa703e5bff.png?t=1483705613",
         "name": "KAMIL ŚLIMAK ALE OD TYŁU",
-        "playerId": null,
-        "teamId": 29024467
+        "teamId": 29024467,
+        "url": "https://cuescore.com/team/KAMIL+%C5%9ALIMAK+ALE+OD+TY%C5%81U/29024467",
+        "venueId": 0
       },
       "playerB": {
+        "country": {
+          "alpha3": "POL",
+          "continent": "Europe",
+          "image": "https://cuescore.com/img/flags/png-country-4x2-none/res-640x480/pl.png",
+          "name": "Poland"
+        },
+        "image": "https://img.cuescore.com/image/b/4/b65e00f0076abd0055a71ffa703e5bff.png?t=1483705613",
         "name": "ProszęDajcieNamWygrać",
-        "playerId": null,
-        "teamId": 29024491
+        "teamId": 29024491,
+        "url": "https://cuescore.com/team/Prosz%C4%99DajcieNamWygra%C4%87/29024491",
+        "venueId": 0
       },
+      "properties": {
+        "penalty": []
+      },
+      "raceTo": 1,
+      "round": 2,
+      "roundName": "Last sixteen",
+      "runoutsA": 0,
+      "runoutsB": 0,
       "scoreA": 0,
       "scoreB": 1,
+      "sets": [],
       "starttime": "2023-06-18T22:12:00",
-      "stoptime": "2023-06-18T22:40:44"
+      "stoptime": "2023-06-18T22:40:44",
+      "table": {
+        "branch": "American pool",
+        "branchId": 1,
+        "cloth": "",
+        "description": "",
+        "manufacturer": "",
+        "model": "Tournament Champion Sport",
+        "name": "13",
+        "pockets": "",
+        "size": 9,
+        "slate": "",
+        "tableId": 2842371,
+        "venue": {
+          "image": "https://img.cuescore.com/image/e/3/ea714c9bb52caa765f7707d5dcbe7f3a.png?t=1533571231",
+          "name": "147 Break Zamieniecka",
+          "owner": {
+            "logo": "//img.cuescore.com/image/7/2/71487152007d737c2f5de4f7821f7c9e.png?t=1555512394",
+            "name": "MGL Cue Sports",
+            "organizationId": 5133719,
+            "profileColor": "58a5fc",
+            "stub": "mglcuesports",
+            "url": "https://cuescore.com/mglcuesports"
+          },
+          "url": "https://cuescore.com/venue/147+Break+Zamieniecka/2842336",
+          "venueId": 2842336
+        }
+      },
+      "teamComment": "",
+      "tournamentId": 29021326,
+      "useInnings": false,
+      "videoLink": "",
+      "winnerNext": 28
     },
     {
+      "bestOfSets": 0,
+      "branch": 1,
+      "challengeId": 0,
+      "comment": "",
+      "curVersion": 101,
+      "discipline": "8-Ball",
+      "disciplineId": 2,
+      "frames": [],
+      "groupNo": 0,
+      "highBreaksA": "",
+      "highBreaksB": "",
+      "inningsPlayerA": 0,
+      "inningsPlayerB": 0,
+      "lagWinner": "",
+      "loserNext": "",
       "matchId": 29032687,
+      "matchType": 1,
+      "matchno": 25,
+      "matchstatus": "finished",
+      "matchstatusCode": 2,
+      "notes": [],
+      "penalty": 0,
       "playerA": {
+        "country": {
+          "alpha3": "POL",
+          "continent": "Europe",
+          "image": "https://cuescore.com/img/flags/png-country-4x2-none/res-640x480/pl.png",
+          "name": "Poland"
+        },
+        "image": "https://img.cuescore.com/image/b/4/b65e00f0076abd0055a71ffa703e5bff.png?t=1483705613",
         "name": "Mamy niezłe kule",
-        "playerId": null,
-        "teamId": 29024503
+        "teamId": 29024503,
+        "url": "https://cuescore.com/team/Mamy+niez%C5%82e+kule/29024503",
+        "venueId": 0
       },
       "playerB": {
+        "country": {
+          "alpha3": "POL",
+          "continent": "Europe",
+          "image": "https://cuescore.com/img/flags/png-country-4x2-none/res-640x480/pl.png",
+          "name": "Poland"
+        },
+        "image": "https://img.cuescore.com/image/b/4/b65e00f0076abd0055a71ffa703e5bff.png?t=1483705613",
         "name": "Chłopaki z baraków",
-        "playerId": null,
-        "teamId": 29030977
+        "teamId": 29030977,
+        "url": "https://cuescore.com/team/Ch%C5%82opaki+z+barak%C3%B3w/29030977",
+        "venueId": 0
       },
+      "properties": {
+        "penalty": []
+      },
+      "raceTo": 1,
+      "round": 3,
+      "roundName": "Quarter final",
+      "runoutsA": 0,
+      "runoutsB": 0,
       "scoreA": 0,
       "scoreB": 1,
+      "sets": [],
       "starttime": "2023-06-18T22:37:00",
-      "stoptime": "2023-06-18T22:49:22"
+      "stoptime": "2023-06-18T22:49:22",
+      "table": {
+        "branch": "American pool",
+        "branchId": 1,
+        "cloth": "",
+        "description": "",
+        "manufacturer": "",
+        "model": "Tournament Champion Sport",
+        "name": "2",
+        "pockets": "",
+        "size": 9,
+        "slate": "",
+        "tableId": 2842350,
+        "venue": {
+          "image": "https://img.cuescore.com/image/e/3/ea714c9bb52caa765f7707d5dcbe7f3a.png?t=1533571231",
+          "name": "147 Break Zamieniecka",
+          "owner": {
+            "logo": "//img.cuescore.com/image/7/2/71487152007d737c2f5de4f7821f7c9e.png?t=1555512394",
+            "name": "MGL Cue Sports",
+            "organizationId": 5133719,
+            "profileColor": "58a5fc",
+            "stub": "mglcuesports",
+            "url": "https://cuescore.com/mglcuesports"
+          },
+          "url": "https://cuescore.com/venue/147+Break+Zamieniecka/2842336",
+          "venueId": 2842336
+        }
+      },
+      "teamComment": "",
+      "tournamentId": 29021326,
+      "useInnings": false,
+      "videoLink": "",
+      "winnerNext": 29
     },
     {
+      "bestOfSets": 0,
+      "branch": 1,
+      "challengeId": 0,
+      "comment": "",
+      "curVersion": 101,
+      "discipline": "8-Ball",
+      "disciplineId": 2,
+      "frames": [],
+      "groupNo": 0,
+      "highBreaksA": "",
+      "highBreaksB": "",
+      "inningsPlayerA": 0,
+      "inningsPlayerB": 0,
+      "lagWinner": "",
+      "loserNext": "",
       "matchId": 29032690,
+      "matchType": 1,
+      "matchno": 26,
+      "matchstatus": "finished",
+      "matchstatusCode": 2,
+      "notes": [],
+      "penalty": 0,
       "playerA": {
+        "country": {
+          "alpha3": "POL",
+          "continent": "Europe",
+          "image": "https://cuescore.com/img/flags/png-country-4x2-none/res-640x480/pl.png",
+          "name": "Poland"
+        },
+        "image": "https://img.cuescore.com/image/b/4/b65e00f0076abd0055a71ffa703e5bff.png?t=1483705613",
         "name": "Szczęśliwa ósemka",
-        "playerId": null,
-        "teamId": 29024458
+        "teamId": 29024458,
+        "url": "https://cuescore.com/team/Szcz%C4%99%C5%9Bliwa+%C3%B3semka/29024458",
+        "venueId": 0
       },
       "playerB": {
+        "country": {
+          "alpha3": "POL",
+          "continent": "Europe",
+          "image": "https://cuescore.com/img/flags/png-country-4x2-none/res-640x480/pl.png",
+          "name": "Poland"
+        },
+        "image": "https://img.cuescore.com/image/b/4/b65e00f0076abd0055a71ffa703e5bff.png?t=1483705613",
         "name": "BERGAMO",
-        "playerId": null,
-        "teamId": 29024428
+        "teamId": 29024428,
+        "url": "https://cuescore.com/team/BERGAMO/29024428",
+        "venueId": 0
       },
+      "properties": {
+        "penalty": []
+      },
+      "raceTo": 1,
+      "round": 3,
+      "roundName": "Quarter final",
+      "runoutsA": 0,
+      "runoutsB": 0,
       "scoreA": 1,
       "scoreB": 0,
+      "sets": [],
       "starttime": "2023-06-18T22:38:00",
-      "stoptime": "2023-06-18T22:51:21"
+      "stoptime": "2023-06-18T22:51:21",
+      "table": {
+        "branch": "American pool",
+        "branchId": 1,
+        "cloth": "",
+        "description": "",
+        "manufacturer": "",
+        "model": "Tournament Champion Sport",
+        "name": "1",
+        "pockets": "",
+        "size": 9,
+        "slate": "",
+        "tableId": 2842349,
+        "venue": {
+          "image": "https://img.cuescore.com/image/e/3/ea714c9bb52caa765f7707d5dcbe7f3a.png?t=1533571231",
+          "name": "147 Break Zamieniecka",
+          "owner": {
+            "logo": "//img.cuescore.com/image/7/2/71487152007d737c2f5de4f7821f7c9e.png?t=1555512394",
+            "name": "MGL Cue Sports",
+            "organizationId": 5133719,
+            "profileColor": "58a5fc",
+            "stub": "mglcuesports",
+            "url": "https://cuescore.com/mglcuesports"
+          },
+          "url": "https://cuescore.com/venue/147+Break+Zamieniecka/2842336",
+          "venueId": 2842336
+        }
+      },
+      "teamComment": "",
+      "tournamentId": 29021326,
+      "useInnings": false,
+      "videoLink": "",
+      "winnerNext": 29
     },
     {
+      "bestOfSets": 0,
+      "branch": 1,
+      "challengeId": 0,
+      "comment": "",
+      "curVersion": 101,
+      "discipline": "8-Ball",
+      "disciplineId": 2,
+      "frames": [],
+      "groupNo": 0,
+      "highBreaksA": "",
+      "highBreaksB": "",
+      "inningsPlayerA": 0,
+      "inningsPlayerB": 0,
+      "lagWinner": "",
+      "loserNext": "",
       "matchId": 29032693,
+      "matchType": 1,
+      "matchno": 27,
+      "matchstatus": "finished",
+      "matchstatusCode": 2,
+      "notes": [],
+      "penalty": 0,
       "playerA": {
+        "country": {
+          "alpha3": "POL",
+          "continent": "Europe",
+          "image": "https://cuescore.com/img/flags/png-country-4x2-none/res-640x480/pl.png",
+          "name": "Poland"
+        },
+        "image": "https://img.cuescore.com/image/b/4/b65e00f0076abd0055a71ffa703e5bff.png?t=1483705613",
         "name": "Tiktokerzy",
-        "playerId": null,
-        "teamId": 29024443
+        "teamId": 29024443,
+        "url": "https://cuescore.com/team/Tiktokerzy/29024443",
+        "venueId": 0
       },
       "playerB": {
+        "country": {
+          "alpha3": "POL",
+          "continent": "Europe",
+          "image": "https://cuescore.com/img/flags/png-country-4x2-none/res-640x480/pl.png",
+          "name": "Poland"
+        },
+        "image": "https://img.cuescore.com/image/b/4/b65e00f0076abd0055a71ffa703e5bff.png?t=1483705613",
         "name": "Moczy Gluty",
-        "playerId": null,
-        "teamId": 29024494
+        "teamId": 29024494,
+        "url": "https://cuescore.com/team/Moczy+Gluty/29024494",
+        "venueId": 0
       },
+      "properties": {
+        "penalty": []
+      },
+      "raceTo": 1,
+      "round": 3,
+      "roundName": "Quarter final",
+      "runoutsA": 0,
+      "runoutsB": 0,
       "scoreA": 1,
       "scoreB": 0,
+      "sets": [],
       "starttime": "2023-06-18T22:49:00",
-      "stoptime": "2023-06-18T22:58:43"
+      "stoptime": "2023-06-18T22:58:43",
+      "table": {
+        "branch": "American pool",
+        "branchId": 1,
+        "cloth": "",
+        "description": "",
+        "manufacturer": "",
+        "model": "Tournament Champion Sport",
+        "name": "6",
+        "pockets": "",
+        "size": 9,
+        "slate": "",
+        "tableId": 2842354,
+        "venue": {
+          "image": "https://img.cuescore.com/image/e/3/ea714c9bb52caa765f7707d5dcbe7f3a.png?t=1533571231",
+          "name": "147 Break Zamieniecka",
+          "owner": {
+            "logo": "//img.cuescore.com/image/7/2/71487152007d737c2f5de4f7821f7c9e.png?t=1555512394",
+            "name": "MGL Cue Sports",
+            "organizationId": 5133719,
+            "profileColor": "58a5fc",
+            "stub": "mglcuesports",
+            "url": "https://cuescore.com/mglcuesports"
+          },
+          "url": "https://cuescore.com/venue/147+Break+Zamieniecka/2842336",
+          "venueId": 2842336
+        }
+      },
+      "teamComment": "",
+      "tournamentId": 29021326,
+      "useInnings": false,
+      "videoLink": "",
+      "winnerNext": 30
     },
     {
+      "bestOfSets": 0,
+      "branch": 1,
+      "challengeId": 0,
+      "comment": "",
+      "curVersion": 101,
+      "discipline": "8-Ball",
+      "disciplineId": 2,
+      "frames": [],
+      "groupNo": 0,
+      "highBreaksA": "",
+      "highBreaksB": "",
+      "inningsPlayerA": 0,
+      "inningsPlayerB": 0,
+      "lagWinner": "",
+      "loserNext": "",
       "matchId": 29032696,
+      "matchType": 1,
+      "matchno": 28,
+      "matchstatus": "finished",
+      "matchstatusCode": 2,
+      "notes": [],
+      "penalty": 0,
       "playerA": {
+        "country": {
+          "alpha3": "POL",
+          "continent": "Europe",
+          "image": "https://cuescore.com/img/flags/png-country-4x2-none/res-640x480/pl.png",
+          "name": "Poland"
+        },
+        "image": "https://img.cuescore.com/image/b/4/b65e00f0076abd0055a71ffa703e5bff.png?t=1483705613",
         "name": "Kejrol&Mejrol",
-        "playerId": null,
-        "teamId": 29024497
+        "teamId": 29024497,
+        "url": "https://cuescore.com/team/Kejrol%2526Mejrol/29024497",
+        "venueId": 0
       },
       "playerB": {
+        "country": {
+          "alpha3": "POL",
+          "continent": "Europe",
+          "image": "https://cuescore.com/img/flags/png-country-4x2-none/res-640x480/pl.png",
+          "name": "Poland"
+        },
+        "image": "https://img.cuescore.com/image/b/4/b65e00f0076abd0055a71ffa703e5bff.png?t=1483705613",
         "name": "ProszęDajcieNamWygrać",
-        "playerId": null,
-        "teamId": 29024491
+        "teamId": 29024491,
+        "url": "https://cuescore.com/team/Prosz%C4%99DajcieNamWygra%C4%87/29024491",
+        "venueId": 0
       },
+      "properties": {
+        "penalty": []
+      },
+      "raceTo": 1,
+      "round": 3,
+      "roundName": "Quarter final",
+      "runoutsA": 0,
+      "runoutsB": 0,
       "scoreA": 1,
       "scoreB": 0,
+      "sets": [],
       "starttime": "2023-06-18T22:41:00",
-      "stoptime": "2023-06-18T22:58:53"
+      "stoptime": "2023-06-18T22:58:53",
+      "table": {
+        "branch": "American pool",
+        "branchId": 1,
+        "cloth": "",
+        "description": "",
+        "manufacturer": "",
+        "model": "Tournament Champion Sport",
+        "name": "5",
+        "pockets": "",
+        "size": 9,
+        "slate": "",
+        "tableId": 2842353,
+        "venue": {
+          "image": "https://img.cuescore.com/image/e/3/ea714c9bb52caa765f7707d5dcbe7f3a.png?t=1533571231",
+          "name": "147 Break Zamieniecka",
+          "owner": {
+            "logo": "//img.cuescore.com/image/7/2/71487152007d737c2f5de4f7821f7c9e.png?t=1555512394",
+            "name": "MGL Cue Sports",
+            "organizationId": 5133719,
+            "profileColor": "58a5fc",
+            "stub": "mglcuesports",
+            "url": "https://cuescore.com/mglcuesports"
+          },
+          "url": "https://cuescore.com/venue/147+Break+Zamieniecka/2842336",
+          "venueId": 2842336
+        }
+      },
+      "teamComment": "",
+      "tournamentId": 29021326,
+      "useInnings": false,
+      "videoLink": "",
+      "winnerNext": 30
     },
     {
+      "bestOfSets": 0,
+      "branch": 1,
+      "challengeId": 0,
+      "comment": "",
+      "curVersion": 101,
+      "discipline": "8-Ball",
+      "disciplineId": 2,
+      "frames": [],
+      "groupNo": 0,
+      "highBreaksA": "",
+      "highBreaksB": "",
+      "inningsPlayerA": 0,
+      "inningsPlayerB": 0,
+      "lagWinner": "",
+      "loserNext": "",
       "matchId": 29032699,
+      "matchType": 1,
+      "matchno": 29,
+      "matchstatus": "finished",
+      "matchstatusCode": 2,
+      "notes": [],
+      "penalty": 0,
       "playerA": {
+        "country": {
+          "alpha3": "POL",
+          "continent": "Europe",
+          "image": "https://cuescore.com/img/flags/png-country-4x2-none/res-640x480/pl.png",
+          "name": "Poland"
+        },
+        "image": "https://img.cuescore.com/image/b/4/b65e00f0076abd0055a71ffa703e5bff.png?t=1483705613",
         "name": "Chłopaki z baraków",
-        "playerId": null,
-        "teamId": 29030977
+        "teamId": 29030977,
+        "url": "https://cuescore.com/team/Ch%C5%82opaki+z+barak%C3%B3w/29030977",
+        "venueId": 0
       },
       "playerB": {
+        "country": {
+          "alpha3": "POL",
+          "continent": "Europe",
+          "image": "https://cuescore.com/img/flags/png-country-4x2-none/res-640x480/pl.png",
+          "name": "Poland"
+        },
+        "image": "https://img.cuescore.com/image/b/4/b65e00f0076abd0055a71ffa703e5bff.png?t=1483705613",
         "name": "Szczęśliwa ósemka",
-        "playerId": null,
-        "teamId": 29024458
+        "teamId": 29024458,
+        "url": "https://cuescore.com/team/Szcz%C4%99%C5%9Bliwa+%C3%B3semka/29024458",
+        "venueId": 0
       },
+      "properties": {
+        "penalty": []
+      },
+      "raceTo": 1,
+      "round": 4,
+      "roundName": "Semi final",
+      "runoutsA": 0,
+      "runoutsB": 0,
       "scoreA": 1,
       "scoreB": 0,
+      "sets": [],
       "starttime": "2023-06-18T22:51:00",
-      "stoptime": "2023-06-18T22:59:11"
+      "stoptime": "2023-06-18T22:59:11",
+      "table": {
+        "branch": "American pool",
+        "branchId": 1,
+        "cloth": "",
+        "description": "",
+        "manufacturer": "",
+        "model": "Tournament Champion Sport",
+        "name": "2",
+        "pockets": "",
+        "size": 9,
+        "slate": "",
+        "tableId": 2842350,
+        "venue": {
+          "image": "https://img.cuescore.com/image/e/3/ea714c9bb52caa765f7707d5dcbe7f3a.png?t=1533571231",
+          "name": "147 Break Zamieniecka",
+          "owner": {
+            "logo": "//img.cuescore.com/image/7/2/71487152007d737c2f5de4f7821f7c9e.png?t=1555512394",
+            "name": "MGL Cue Sports",
+            "organizationId": 5133719,
+            "profileColor": "58a5fc",
+            "stub": "mglcuesports",
+            "url": "https://cuescore.com/mglcuesports"
+          },
+          "url": "https://cuescore.com/venue/147+Break+Zamieniecka/2842336",
+          "venueId": 2842336
+        }
+      },
+      "teamComment": "",
+      "tournamentId": 29021326,
+      "useInnings": false,
+      "videoLink": "",
+      "winnerNext": 31
     },
     {
+      "bestOfSets": 0,
+      "branch": 1,
+      "challengeId": 0,
+      "comment": "",
+      "curVersion": 101,
+      "discipline": "8-Ball",
+      "disciplineId": 2,
+      "frames": [],
+      "groupNo": 0,
+      "highBreaksA": "",
+      "highBreaksB": "",
+      "inningsPlayerA": 0,
+      "inningsPlayerB": 0,
+      "lagWinner": "",
+      "loserNext": "",
       "matchId": 29032702,
+      "matchType": 1,
+      "matchno": 30,
+      "matchstatus": "finished",
+      "matchstatusCode": 2,
+      "notes": [],
+      "penalty": 0,
       "playerA": {
+        "country": {
+          "alpha3": "POL",
+          "continent": "Europe",
+          "image": "https://cuescore.com/img/flags/png-country-4x2-none/res-640x480/pl.png",
+          "name": "Poland"
+        },
+        "image": "https://img.cuescore.com/image/b/4/b65e00f0076abd0055a71ffa703e5bff.png?t=1483705613",
         "name": "Tiktokerzy",
-        "playerId": null,
-        "teamId": 29024443
+        "teamId": 29024443,
+        "url": "https://cuescore.com/team/Tiktokerzy/29024443",
+        "venueId": 0
       },
       "playerB": {
+        "country": {
+          "alpha3": "POL",
+          "continent": "Europe",
+          "image": "https://cuescore.com/img/flags/png-country-4x2-none/res-640x480/pl.png",
+          "name": "Poland"
+        },
+        "image": "https://img.cuescore.com/image/b/4/b65e00f0076abd0055a71ffa703e5bff.png?t=1483705613",
         "name": "Kejrol&Mejrol",
-        "playerId": null,
-        "teamId": 29024497
+        "teamId": 29024497,
+        "url": "https://cuescore.com/team/Kejrol%2526Mejrol/29024497",
+        "venueId": 0
       },
+      "properties": {
+        "penalty": []
+      },
+      "raceTo": 1,
+      "round": 4,
+      "roundName": "Semi final",
+      "runoutsA": 0,
+      "runoutsB": 0,
       "scoreA": 0,
       "scoreB": 1,
+      "sets": [],
       "starttime": "2023-06-18T23:01:00",
-      "stoptime": "2023-06-18T23:15:59"
+      "stoptime": "2023-06-18T23:15:59",
+      "table": {
+        "branch": "American pool",
+        "branchId": 1,
+        "cloth": "",
+        "description": "",
+        "manufacturer": "",
+        "model": "Tournament Champion Sport",
+        "name": "2",
+        "pockets": "",
+        "size": 9,
+        "slate": "",
+        "tableId": 2842350,
+        "venue": {
+          "image": "https://img.cuescore.com/image/e/3/ea714c9bb52caa765f7707d5dcbe7f3a.png?t=1533571231",
+          "name": "147 Break Zamieniecka",
+          "owner": {
+            "logo": "//img.cuescore.com/image/7/2/71487152007d737c2f5de4f7821f7c9e.png?t=1555512394",
+            "name": "MGL Cue Sports",
+            "organizationId": 5133719,
+            "profileColor": "58a5fc",
+            "stub": "mglcuesports",
+            "url": "https://cuescore.com/mglcuesports"
+          },
+          "url": "https://cuescore.com/venue/147+Break+Zamieniecka/2842336",
+          "venueId": 2842336
+        }
+      },
+      "teamComment": "",
+      "tournamentId": 29021326,
+      "useInnings": false,
+      "videoLink": "",
+      "winnerNext": 31
     },
     {
+      "bestOfSets": 0,
+      "branch": 1,
+      "challengeId": 0,
+      "comment": "",
+      "curVersion": 101,
+      "discipline": "8-Ball",
+      "disciplineId": 2,
+      "frames": [],
+      "groupNo": 0,
+      "highBreaksA": "",
+      "highBreaksB": "",
+      "inningsPlayerA": 0,
+      "inningsPlayerB": 0,
+      "lagWinner": "",
+      "loserNext": "",
       "matchId": 29032705,
+      "matchType": 1,
+      "matchno": 31,
+      "matchstatus": "finished",
+      "matchstatusCode": 2,
+      "notes": [],
+      "penalty": 0,
       "playerA": {
+        "country": {
+          "alpha3": "POL",
+          "continent": "Europe",
+          "image": "https://cuescore.com/img/flags/png-country-4x2-none/res-640x480/pl.png",
+          "name": "Poland"
+        },
+        "image": "https://img.cuescore.com/image/b/4/b65e00f0076abd0055a71ffa703e5bff.png?t=1483705613",
         "name": "Chłopaki z baraków",
-        "playerId": null,
-        "teamId": 29030977
+        "teamId": 29030977,
+        "url": "https://cuescore.com/team/Ch%C5%82opaki+z+barak%C3%B3w/29030977",
+        "venueId": 0
       },
       "playerB": {
+        "country": {
+          "alpha3": "POL",
+          "continent": "Europe",
+          "image": "https://cuescore.com/img/flags/png-country-4x2-none/res-640x480/pl.png",
+          "name": "Poland"
+        },
+        "image": "https://img.cuescore.com/image/b/4/b65e00f0076abd0055a71ffa703e5bff.png?t=1483705613",
         "name": "Kejrol&Mejrol",
-        "playerId": null,
-        "teamId": 29024497
+        "teamId": 29024497,
+        "url": "https://cuescore.com/team/Kejrol%2526Mejrol/29024497",
+        "venueId": 0
       },
+      "properties": {
+        "penalty": []
+      },
+      "raceTo": 1,
+      "round": 5,
+      "roundName": "Final",
+      "runoutsA": 0,
+      "runoutsB": 0,
       "scoreA": 0,
       "scoreB": 1,
+      "sets": [],
       "starttime": "2023-06-18T23:16:00",
-      "stoptime": "2023-06-18T23:35:20"
+      "stoptime": "2023-06-18T23:35:20",
+      "table": {
+        "branch": "American pool",
+        "branchId": 1,
+        "cloth": "",
+        "description": "",
+        "manufacturer": "",
+        "model": "Tournament Champion Sport",
+        "name": "1",
+        "pockets": "",
+        "size": 9,
+        "slate": "",
+        "tableId": 2842349,
+        "venue": {
+          "image": "https://img.cuescore.com/image/e/3/ea714c9bb52caa765f7707d5dcbe7f3a.png?t=1533571231",
+          "name": "147 Break Zamieniecka",
+          "owner": {
+            "logo": "//img.cuescore.com/image/7/2/71487152007d737c2f5de4f7821f7c9e.png?t=1555512394",
+            "name": "MGL Cue Sports",
+            "organizationId": 5133719,
+            "profileColor": "58a5fc",
+            "stub": "mglcuesports",
+            "url": "https://cuescore.com/mglcuesports"
+          },
+          "url": "https://cuescore.com/venue/147+Break+Zamieniecka/2842336",
+          "venueId": 2842336
+        }
+      },
+      "teamComment": "",
+      "tournamentId": 29021326,
+      "useInnings": false,
+      "videoLink": "",
+      "winnerNext": ""
     }
   ],
   "name": "Turniej drużynowy",
+  "organizers": [
+    {
+      "logo": "//img.cuescore.com/image/9/2/9b59b70e156f2f8d0f1a879411c6ffd1.png?t=1576160578",
+      "name": "Black Ball Events",
+      "organizationId": 7011764,
+      "profileColor": "000000",
+      "stub": "blackballevents",
+      "url": "https://cuescore.com/blackballevents"
+    }
+  ],
+  "owner": {
+    "logo": "//img.cuescore.com/image/9/2/9b59b70e156f2f8d0f1a879411c6ffd1.png?t=1576160578",
+    "name": "Black Ball Events",
+    "organizationId": 7011764,
+    "profileColor": "000000",
+    "stub": "blackballevents",
+    "url": "https://cuescore.com/blackballevents"
+  },
+  "preseeds": {
+    "29024422": 10,
+    "29024425": 13,
+    "29024428": 4,
+    "29024437": 5,
+    "29024443": 14,
+    "29024446": 6,
+    "29024449": 15,
+    "29024452": 16,
+    "29024455": 17,
+    "29024458": 12,
+    "29024461": 7,
+    "29024464": 3,
+    "29024467": 18,
+    "29024470": 8,
+    "29024473": 19,
+    "29024476": 9,
+    "29024482": 20,
+    "29024485": 21,
+    "29024488": 11,
+    "29024491": 2,
+    "29024494": 22,
+    "29024497": 23,
+    "29024500": 24,
+    "29024503": 1,
+    "29030977": 25,
+    "29030980": 26,
+    "29031550": 27
+  },
+  "rankings": [],
+  "sequence": 0,
+  "standings": [],
   "starttime": "2023-06-18T21:00:00+02:00",
+  "status": "Finished",
+  "statusCode": 2,
   "stoptime": "2023-06-18T23:00:00+02:00",
+  "teamEditIndividualAccess": "CAPTAIN",
   "timezone": "Europe/Warsaw",
   "tournamentId": 29021326,
   "type": 1,
   "url": "https://cuescore.com/tournament/Turniej+dru%C5%BCynowy/29021326",
   "venues": [
     {
+      "image": "https://img.cuescore.com/image/e/3/ea714c9bb52caa765f7707d5dcbe7f3a.png?t=1533571231",
       "name": "147 Break Zamieniecka",
+      "owner": {
+        "logo": "//img.cuescore.com/image/7/2/71487152007d737c2f5de4f7821f7c9e.png?t=1555512394",
+        "name": "MGL Cue Sports",
+        "organizationId": 5133719,
+        "profileColor": "58a5fc",
+        "stub": "mglcuesports",
+        "url": "https://cuescore.com/mglcuesports"
+      },
+      "url": "https://cuescore.com/venue/147+Break+Zamieniecka/2842336",
       "venueId": 2842336
     }
   ]

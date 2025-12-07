@@ -1,0 +1,27 @@
+<div *ngIf="comparison.stats as stats" class="stats-overview">
+  <h3>{{ 'TOTAL_STATS' | translate }}</h3>
+  <div class="stat-row">
+    <span class="label">{{ 'TOTAL_MATCHES' | translate }}:</span>
+    <span class="value">{{ stats.totalMatches }}</span>
+  </div>
+  <div class="stat-row">
+    <span class="label">{{ 'MATCH_WINS' | translate }} ({{comparison.player1?.name}}):</span>
+    <span class="value">{{ stats.player1MatchWins }}</span>
+  </div>
+  <div class="stat-row">
+    <span class="label">{{ 'MATCH_WINS' | translate }} ({{comparison.player2?.name}}):</span>
+    <span class="value">{{ stats.player2MatchWins }}</span>
+  </div>
+  <div class="stat-row">
+    <span class="label">{{ 'TOTAL_FRAMES' | translate }}:</span>
+    <span class="value">{{ stats.totalFrames }}</span>
+  </div>
+  <div class="stat-row">
+    <span class="label">{{ 'FRAME_WINS' | translate }} ({{comparison.player1?.name}}):</span>
+    <span class="value">{{ stats.player1FrameWins }}</span>
+  </div>
+  <div class="stat-row">
+    <span class="label">{{ 'FRAME_WINS' | translate }} ({{comparison.player2?.name}}):</span>
+    <span class="value">{{ stats.player2FrameWins }}</span>
+  </div>
+</div>

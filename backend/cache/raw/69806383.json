@@ -1,62 +1,1166 @@
 {
+  "access": [],
   "banner": [],
+  "branch": 1,
   "breakrule": "alternate",
+  "contacts": [
+    {
+      "country": {
+        "alpha3": "POL",
+        "continent": "Europe",
+        "image": "https://cuescore.com/img/flags/png-country-4x2-none/res-640x480/pl.png",
+        "name": "Poland"
+      },
+      "firstname": "Michał",
+      "image": "https://img.cuescore.com/image/1/4/15d291e83ead350107ae474e8623a6f5.png?t=1504629089",
+      "lastname": "Nowak",
+      "name": "Michał Nowak",
+      "playerId": 1620195,
+      "represents": [],
+      "url": "https://cuescore.com/player/Micha%C5%82+Nowak/1620195"
+    }
+  ],
   "deadline": "",
   "defaultRaceTo": 5,
   "description": "",
   "discipline": "Multiball",
+  "disciplineId": 10,
   "displayDate": "October 5, 2025",
   "dresscode": "",
+  "entrystart": "",
   "format": 1,
+  "handicap": [],
   "matches": [
     {
+      "bestOfSets": 3,
+      "branch": 1,
+      "challengeId": 0,
+      "comment": "",
+      "curVersion": 25,
+      "discipline": "Multiball",
+      "disciplineId": 10,
+      "frames": [],
+      "groupNo": 0,
+      "highBreaksA": "",
+      "highBreaksB": "",
+      "inningsPlayerA": 0,
+      "inningsPlayerB": 0,
+      "lagWinner": "B",
+      "loserNext": "",
       "matchId": 69807481,
+      "matchType": 0,
+      "matchno": 1,
+      "matchstatus": "finished",
+      "matchstatusCode": 2,
+      "notes": [
+        {
+          "note": "set start",
+          "time": "2025-10-05T13:56:32.903Z"
+        },
+        {
+          "note": "frame start",
+          "time": "2025-10-05T13:56:32.903Z"
+        },
+        {
+          "note": "B breaking",
+          "time": "2025-10-05T13:56:32.903Z"
+        },
+        {
+          "note": "B frame win runout",
+          "time": "2025-10-05T14:00:53.880Z"
+        },
+        {
+          "note": "frame end",
+          "time": "2025-10-05T14:00:53.880Z"
+        },
+        {
+          "note": "frame start",
+          "time": "2025-10-05T14:00:53.880Z"
+        },
+        {
+          "note": "A breaking",
+          "time": "2025-10-05T14:00:53.880Z"
+        },
+        {
+          "note": "B frame win",
+          "time": "2025-10-05T14:10:40.540Z"
+        },
+        {
+          "note": "frame end",
+          "time": "2025-10-05T14:10:40.540Z"
+        },
+        {
+          "note": "frame start",
+          "time": "2025-10-05T14:10:40.540Z"
+        },
+        {
+          "note": "B breaking",
+          "time": "2025-10-05T14:10:40.540Z"
+        },
+        {
+          "note": "B frame win",
+          "time": "2025-10-05T14:24:25.209Z"
+        },
+        {
+          "note": "frame end",
+          "time": "2025-10-05T14:24:25.209Z"
+        },
+        {
+          "note": "frame start",
+          "time": "2025-10-05T14:24:25.209Z"
+        },
+        {
+          "note": "A breaking",
+          "time": "2025-10-05T14:24:25.209Z"
+        },
+        {
+          "note": "B frame win",
+          "time": "2025-10-05T14:25:04.038Z"
+        },
+        {
+          "note": "frame end",
+          "time": "2025-10-05T14:25:04.038Z"
+        },
+        {
+          "note": "set end",
+          "time": "2025-10-05T14:26:50.375Z"
+        },
+        {
+          "note": "set start",
+          "time": "2025-10-05T14:26:50.375Z"
+        },
+        {
+          "note": "A frame win",
+          "time": "2025-10-05T14:32:25.179Z"
+        },
+        {
+          "note": "frame end",
+          "time": "2025-10-05T14:32:25.179Z"
+        },
+        {
+          "note": "frame start",
+          "time": "2025-10-05T14:32:25.179Z"
+        },
+        {
+          "note": "A breaking",
+          "time": "2025-10-05T14:32:25.179Z"
+        },
+        {
+          "note": "B frame win",
+          "time": "2025-10-05T14:36:54.369Z"
+        },
+        {
+          "note": "frame end",
+          "time": "2025-10-05T14:36:54.369Z"
+        },
+        {
+          "note": "frame start",
+          "time": "2025-10-05T14:36:54.369Z"
+        },
+        {
+          "note": "B breaking",
+          "time": "2025-10-05T14:36:54.369Z"
+        },
+        {
+          "note": "B frame win",
+          "time": "2025-10-05T14:41:24.106Z"
+        },
+        {
+          "note": "frame end",
+          "time": "2025-10-05T14:41:24.106Z"
+        },
+        {
+          "note": "frame start",
+          "time": "2025-10-05T14:41:24.106Z"
+        },
+        {
+          "note": "A breaking",
+          "time": "2025-10-05T14:41:24.106Z"
+        },
+        {
+          "note": "A frame win",
+          "time": "2025-10-05T14:46:01.236Z"
+        },
+        {
+          "note": "frame end",
+          "time": "2025-10-05T14:46:01.236Z"
+        },
+        {
+          "note": "frame start",
+          "time": "2025-10-05T14:46:01.236Z"
+        },
+        {
+          "note": "B breaking",
+          "time": "2025-10-05T14:46:01.236Z"
+        },
+        {
+          "note": "A frame win",
+          "time": "2025-10-05T14:51:01.037Z"
+        },
+        {
+          "note": "frame end",
+          "time": "2025-10-05T14:51:01.037Z"
+        },
+        {
+          "note": "frame start",
+          "time": "2025-10-05T14:51:01.037Z"
+        },
+        {
+          "note": "A breaking",
+          "time": "2025-10-05T14:51:01.037Z"
+        },
+        {
+          "note": "B frame win",
+          "time": "2025-10-05T14:55:29.607Z"
+        },
+        {
+          "note": "frame end",
+          "time": "2025-10-05T14:55:29.607Z"
+        },
+        {
+          "note": "frame start",
+          "time": "2025-10-05T14:55:29.607Z"
+        },
+        {
+          "note": "B breaking",
+          "time": "2025-10-05T14:55:29.607Z"
+        },
+        {
+          "note": "B frame win",
+          "time": "2025-10-05T15:00:59.246Z"
+        },
+        {
+          "note": "frame end",
+          "time": "2025-10-05T15:00:59.246Z"
+        },
+        {
+          "note": "frame start",
+          "time": "2025-10-05T15:00:59.246Z"
+        },
+        {
+          "note": "A breaking",
+          "time": "2025-10-05T15:00:59.246Z"
+        },
+        {
+          "note": "A frame win",
+          "time": "2025-10-05T15:08:28.447Z"
+        },
+        {
+          "note": "frame end",
+          "time": "2025-10-05T15:08:28.447Z"
+        },
+        {
+          "note": "frame start",
+          "time": "2025-10-05T15:08:28.447Z"
+        },
+        {
+          "note": "B breaking",
+          "time": "2025-10-05T15:08:28.447Z"
+        },
+        {
+          "note": "B frame win",
+          "time": "2025-10-05T15:16:11.818Z"
+        },
+        {
+          "note": "frame end",
+          "time": "2025-10-05T15:16:11.818Z"
+        },
+        {
+          "note": "set end",
+          "time": "2025-10-05T15:16:11.818Z"
+        },
+        {
+          "note": "match end",
+          "time": "2025-10-05T15:16:13.270Z"
+        }
+      ],
+      "penalty": 0,
       "playerA": {
+        "country": {
+          "alpha3": "POL",
+          "continent": "Europe",
+          "image": "https://cuescore.com/img/flags/png-country-4x2-none/res-640x480/pl.png",
+          "name": "Poland"
+        },
+        "firstname": "Marcin",
+        "image": "https://img.cuescore.com/image/6/4/634670d25cfb0b8494e08327b2bb74b4.png?t=1736761259",
+        "lastname": "Kubalski",
         "name": "Marcin Kubalski",
-        "playerId": 1634586
+        "playerId": 1634586,
+        "represents": {
+          "logo": "//img.cuescore.com/image/2/2/2c18635ebc6f2e574949d524d3026197.png?t=1551972415",
+          "name": "Snooker.Zone",
+          "organizationId": 4991658,
+          "profileColor": "",
+          "stub": "snookerzone",
+          "url": "https://cuescore.com/snookerzone"
+        },
+        "url": "https://cuescore.com/player/Marcin+Kubalski/1634586"
       },
       "playerB": {
+        "country": {
+          "alpha3": "POL",
+          "continent": "Europe",
+          "image": "https://cuescore.com/img/flags/png-country-4x2-none/res-640x480/pl.png",
+          "name": "Poland"
+        },
+        "firstname": "Paweł",
+        "image": "https://img.cuescore.com/image/1/4/1bd5e64f8d229ac9e41ac7724939c231.png?t=1705257345",
+        "lastname": "Kaczmarek",
         "name": "Paweł Kaczmarek",
-        "playerId": 15075100
+        "playerId": 15075100,
+        "represents": [],
+        "url": "https://cuescore.com/player/Pawe%C5%82+Kaczmarek/15075100"
       },
+      "properties": {
+        "lagWinsA": 0,
+        "lagWinsB": 1,
+        "runoutsA": 0,
+        "runoutsB": 1
+      },
+      "raceTo": 5,
+      "round": 1,
+      "roundName": "Semi final",
+      "runoutsA": 0,
+      "runoutsB": 1,
       "scoreA": 0,
       "scoreB": 2,
+      "sets": [
+        {
+          "frames": [
+            {
+              "break": 0,
+              "frameNo": 1,
+              "highBreaksA": "",
+              "highBreaksB": "",
+              "inningsA": 0,
+              "inningsB": 0,
+              "pointsA": 0,
+              "pointsB": 0,
+              "runoutA": 0,
+              "runoutB": 0,
+              "scoreA": 0,
+              "scoreB": 4,
+              "starttime": "2025-10-05T13:49:00+00:00",
+              "stoptime": "2025-10-05T15:16:29+00:00"
+            }
+          ],
+          "scoreA": 0,
+          "scoreB": 4,
+          "setNo": 1
+        },
+        {
+          "frames": [
+            {
+              "break": 0,
+              "frameNo": 1,
+              "highBreaksA": "",
+              "highBreaksB": "",
+              "inningsA": 0,
+              "inningsB": 0,
+              "pointsA": 0,
+              "pointsB": 0,
+              "runoutA": 0,
+              "runoutB": 0,
+              "scoreA": 4,
+              "scoreB": 5,
+              "starttime": "2025-10-05T13:49:00+00:00",
+              "stoptime": "2025-10-05T15:16:29+00:00"
+            }
+          ],
+          "scoreA": 4,
+          "scoreB": 5,
+          "setNo": 2
+        }
+      ],
       "starttime": "2025-10-05T15:49:00",
-      "stoptime": "2025-10-05T17:16:15"
+      "stoptime": "2025-10-05T17:16:15",
+      "table": {
+        "branch": "American pool",
+        "branchId": 1,
+        "cloth": "",
+        "description": "",
+        "manufacturer": "Euro-tech",
+        "model": "Tournament Champion",
+        "name": "3",
+        "pockets": "",
+        "size": 9,
+        "slate": "",
+        "tableId": 57053251,
+        "venue": {
+          "image": "https://img.cuescore.com/image/7/3/7afb0a44c256a53b5e27b584e3c27e2f.png?t=1742222226",
+          "name": "Shooters",
+          "owner": {
+            "logo": "//img.cuescore.com/image/9/2/9b59b70e156f2f8d0f1a879411c6ffd1.png?t=1576160578",
+            "name": "Black Ball Events",
+            "organizationId": 7011764,
+            "profileColor": "000000",
+            "stub": "blackballevents",
+            "url": "https://cuescore.com/blackballevents"
+          },
+          "url": "https://cuescore.com/venue/Shooters/57050170",
+          "venueId": 57050170
+        }
+      },
+      "tournamentId": 69806383,
+      "useInnings": false,
+      "videoLink": "",
+      "winnerNext": 3
     },
     {
+      "bestOfSets": 3,
+      "branch": 1,
+      "challengeId": 0,
+      "comment": "",
+      "curVersion": 25,
+      "discipline": "Multiball",
+      "disciplineId": 10,
+      "frames": [],
+      "groupNo": 0,
+      "highBreaksA": "",
+      "highBreaksB": "",
+      "inningsPlayerA": 0,
+      "inningsPlayerB": 0,
+      "lagWinner": "A",
+      "loserNext": "",
       "matchId": 69807484,
+      "matchType": 0,
+      "matchno": 2,
+      "matchstatus": "finished",
+      "matchstatusCode": 2,
+      "notes": [
+        {
+          "note": "set start",
+          "time": "2025-10-05T13:56:35.162Z"
+        },
+        {
+          "note": "frame start",
+          "time": "2025-10-05T13:56:35.162Z"
+        },
+        {
+          "note": "A breaking",
+          "time": "2025-10-05T13:56:35.162Z"
+        },
+        {
+          "note": "B frame win",
+          "time": "2025-10-05T14:02:09.602Z"
+        },
+        {
+          "note": "frame end",
+          "time": "2025-10-05T14:02:09.602Z"
+        },
+        {
+          "note": "frame start",
+          "time": "2025-10-05T14:02:09.602Z"
+        },
+        {
+          "note": "B breaking",
+          "time": "2025-10-05T14:02:09.602Z"
+        },
+        {
+          "note": "B frame win",
+          "time": "2025-10-05T14:07:29.089Z"
+        },
+        {
+          "note": "frame end",
+          "time": "2025-10-05T14:07:29.089Z"
+        },
+        {
+          "note": "frame start",
+          "time": "2025-10-05T14:07:29.089Z"
+        },
+        {
+          "note": "A breaking",
+          "time": "2025-10-05T14:07:29.089Z"
+        },
+        {
+          "note": "A frame win runout",
+          "time": "2025-10-05T14:10:04.810Z"
+        },
+        {
+          "note": "frame end",
+          "time": "2025-10-05T14:10:04.810Z"
+        },
+        {
+          "note": "frame start",
+          "time": "2025-10-05T14:10:04.810Z"
+        },
+        {
+          "note": "B breaking",
+          "time": "2025-10-05T14:10:04.810Z"
+        },
+        {
+          "note": "A frame win",
+          "time": "2025-10-05T14:16:52.077Z"
+        },
+        {
+          "note": "frame end",
+          "time": "2025-10-05T14:16:52.077Z"
+        },
+        {
+          "note": "frame start",
+          "time": "2025-10-05T14:16:52.077Z"
+        },
+        {
+          "note": "A breaking",
+          "time": "2025-10-05T14:16:52.077Z"
+        },
+        {
+          "note": "A frame win",
+          "time": "2025-10-05T14:23:58.100Z"
+        },
+        {
+          "note": "frame end",
+          "time": "2025-10-05T14:23:58.100Z"
+        },
+        {
+          "note": "frame start",
+          "time": "2025-10-05T14:23:58.100Z"
+        },
+        {
+          "note": "B breaking",
+          "time": "2025-10-05T14:23:58.100Z"
+        },
+        {
+          "note": "A frame win",
+          "time": "2025-10-05T14:28:36.485Z"
+        },
+        {
+          "note": "frame end",
+          "time": "2025-10-05T14:28:36.485Z"
+        },
+        {
+          "note": "set end",
+          "time": "2025-10-05T14:28:53.950Z"
+        },
+        {
+          "note": "set start",
+          "time": "2025-10-05T14:28:53.950Z"
+        },
+        {
+          "note": "B frame win",
+          "time": "2025-10-05T14:35:29.886Z"
+        },
+        {
+          "note": "frame end",
+          "time": "2025-10-05T14:35:29.886Z"
+        },
+        {
+          "note": "frame start",
+          "time": "2025-10-05T14:35:29.886Z"
+        },
+        {
+          "note": "B breaking",
+          "time": "2025-10-05T14:35:29.886Z"
+        },
+        {
+          "note": "B frame win",
+          "time": "2025-10-05T14:39:52.698Z"
+        },
+        {
+          "note": "frame end",
+          "time": "2025-10-05T14:39:52.698Z"
+        },
+        {
+          "note": "frame start",
+          "time": "2025-10-05T14:39:52.698Z"
+        },
+        {
+          "note": "A breaking",
+          "time": "2025-10-05T14:39:52.698Z"
+        },
+        {
+          "note": "A frame win",
+          "time": "2025-10-05T14:42:32.126Z"
+        },
+        {
+          "note": "frame end",
+          "time": "2025-10-05T14:42:32.126Z"
+        },
+        {
+          "note": "frame start",
+          "time": "2025-10-05T14:42:32.126Z"
+        },
+        {
+          "note": "B breaking",
+          "time": "2025-10-05T14:42:32.126Z"
+        },
+        {
+          "note": "A frame win",
+          "time": "2025-10-05T14:48:20.760Z"
+        },
+        {
+          "note": "frame end",
+          "time": "2025-10-05T14:48:20.760Z"
+        },
+        {
+          "note": "frame start",
+          "time": "2025-10-05T14:48:20.760Z"
+        },
+        {
+          "note": "A breaking",
+          "time": "2025-10-05T14:48:20.760Z"
+        },
+        {
+          "note": "A frame win",
+          "time": "2025-10-05T14:51:42.486Z"
+        },
+        {
+          "note": "frame end",
+          "time": "2025-10-05T14:51:42.486Z"
+        },
+        {
+          "note": "frame start",
+          "time": "2025-10-05T14:51:42.486Z"
+        },
+        {
+          "note": "B breaking",
+          "time": "2025-10-05T14:51:42.486Z"
+        },
+        {
+          "note": "A frame win",
+          "time": "2025-10-05T14:55:43.207Z"
+        },
+        {
+          "note": "frame end",
+          "time": "2025-10-05T14:55:43.207Z"
+        },
+        {
+          "note": "frame start",
+          "time": "2025-10-05T14:55:43.207Z"
+        },
+        {
+          "note": "A breaking",
+          "time": "2025-10-05T14:55:43.207Z"
+        },
+        {
+          "note": "B frame win",
+          "time": "2025-10-05T15:00:09.391Z"
+        },
+        {
+          "note": "frame end",
+          "time": "2025-10-05T15:00:09.391Z"
+        },
+        {
+          "note": "frame start",
+          "time": "2025-10-05T15:00:09.391Z"
+        },
+        {
+          "note": "B breaking",
+          "time": "2025-10-05T15:00:09.391Z"
+        },
+        {
+          "note": "B frame win",
+          "time": "2025-10-05T15:03:37.403Z"
+        },
+        {
+          "note": "frame end",
+          "time": "2025-10-05T15:03:37.403Z"
+        },
+        {
+          "note": "frame start",
+          "time": "2025-10-05T15:03:37.403Z"
+        },
+        {
+          "note": "A breaking",
+          "time": "2025-10-05T15:03:37.403Z"
+        },
+        {
+          "note": "A frame win",
+          "time": "2025-10-05T15:11:48.604Z"
+        },
+        {
+          "note": "frame end",
+          "time": "2025-10-05T15:11:48.604Z"
+        },
+        {
+          "note": "set end",
+          "time": "2025-10-05T15:11:48.604Z"
+        },
+        {
+          "note": "match end",
+          "time": "2025-10-05T15:11:49.958Z"
+        }
+      ],
+      "penalty": 0,
       "playerA": {
+        "country": {
+          "alpha3": "POL",
+          "continent": "Europe",
+          "image": "https://cuescore.com/img/flags/png-country-4x2-none/res-640x480/pl.png",
+          "name": "Poland"
+        },
+        "firstname": "Wojtek",
+        "image": "https://img.cuescore.com/image/8/4/862c792ba8eb7f97e626fbe6cbcc59f6.png",
+        "lastname": "Trajdos",
         "name": "Wojtek Trajdos",
-        "playerId": 57205030
+        "playerId": 57205030,
+        "represents": [],
+        "url": "https://cuescore.com/player/Wojtek+Trajdos/57205030"
       },
       "playerB": {
+        "country": {
+          "alpha3": "POL",
+          "continent": "Europe",
+          "image": "https://cuescore.com/img/flags/png-country-4x2-none/res-640x480/pl.png",
+          "name": "Poland"
+        },
+        "firstname": "Brajan",
+        "image": "https://img.cuescore.com/image/7/4/7d0eac9908743891ca13c3d70d315319.png?t=1744044465",
+        "lastname": "Sawicki",
         "name": "Brajan Sawicki",
-        "playerId": 1718455
+        "playerId": 1718455,
+        "represents": [],
+        "url": "https://cuescore.com/player/Brajan+Sawicki/1718455"
       },
+      "properties": {
+        "lagWinsA": 1,
+        "lagWinsB": 0,
+        "runoutsA": 1,
+        "runoutsB": 0
+      },
+      "raceTo": 5,
+      "round": 1,
+      "roundName": "Semi final",
+      "runoutsA": 1,
+      "runoutsB": 0,
       "scoreA": 2,
       "scoreB": 0,
+      "sets": [
+        {
+          "frames": [
+            {
+              "break": 0,
+              "frameNo": 1,
+              "highBreaksA": "",
+              "highBreaksB": "",
+              "inningsA": 0,
+              "inningsB": 0,
+              "pointsA": 0,
+              "pointsB": 0,
+              "runoutA": 0,
+              "runoutB": 0,
+              "scoreA": 4,
+              "scoreB": 2,
+              "starttime": "2025-10-05T13:49:00+00:00",
+              "stoptime": "2025-10-05T15:13:44+00:00"
+            }
+          ],
+          "scoreA": 4,
+          "scoreB": 2,
+          "setNo": 1
+        },
+        {
+          "frames": [
+            {
+              "break": 0,
+              "frameNo": 1,
+              "highBreaksA": "",
+              "highBreaksB": "",
+              "inningsA": 0,
+              "inningsB": 0,
+              "pointsA": 0,
+              "pointsB": 0,
+              "runoutA": 0,
+              "runoutB": 0,
+              "scoreA": 5,
+              "scoreB": 4,
+              "starttime": "2025-10-05T13:49:00+00:00",
+              "stoptime": "2025-10-05T15:13:44+00:00"
+            }
+          ],
+          "scoreA": 5,
+          "scoreB": 4,
+          "setNo": 2
+        }
+      ],
       "starttime": "2025-10-05T15:49:00",
-      "stoptime": "2025-10-05T17:11:52"
+      "stoptime": "2025-10-05T17:11:52",
+      "table": {
+        "branch": "American pool",
+        "branchId": 1,
+        "cloth": "",
+        "description": "",
+        "manufacturer": "Euro-tech",
+        "model": "Tournament Champion",
+        "name": "4",
+        "pockets": "",
+        "size": 9,
+        "slate": "",
+        "tableId": 57053266,
+        "venue": {
+          "image": "https://img.cuescore.com/image/7/3/7afb0a44c256a53b5e27b584e3c27e2f.png?t=1742222226",
+          "name": "Shooters",
+          "owner": {
+            "logo": "//img.cuescore.com/image/9/2/9b59b70e156f2f8d0f1a879411c6ffd1.png?t=1576160578",
+            "name": "Black Ball Events",
+            "organizationId": 7011764,
+            "profileColor": "000000",
+            "stub": "blackballevents",
+            "url": "https://cuescore.com/blackballevents"
+          },
+          "url": "https://cuescore.com/venue/Shooters/57050170",
+          "venueId": 57050170
+        }
+      },
+      "tournamentId": 69806383,
+      "useInnings": false,
+      "videoLink": "",
+      "winnerNext": 3
     },
     {
+      "bestOfSets": 3,
+      "branch": 1,
+      "challengeId": 0,
+      "comment": "",
+      "curVersion": 25,
+      "discipline": "Multiball",
+      "disciplineId": 10,
+      "frames": [],
+      "groupNo": 0,
+      "highBreaksA": "",
+      "highBreaksB": "",
+      "inningsPlayerA": 0,
+      "inningsPlayerB": 0,
+      "lagWinner": "B",
+      "loserNext": "",
       "matchId": 69807487,
+      "matchType": 0,
+      "matchno": 3,
+      "matchstatus": "finished",
+      "matchstatusCode": 2,
+      "notes": [
+        {
+          "note": "set start",
+          "time": "2025-10-05T15:31:21.355Z"
+        },
+        {
+          "note": "frame start",
+          "time": "2025-10-05T15:31:21.355Z"
+        },
+        {
+          "note": "B breaking",
+          "time": "2025-10-05T15:31:21.355Z"
+        },
+        {
+          "note": "A frame win",
+          "time": "2025-10-05T15:39:42.329Z"
+        },
+        {
+          "note": "frame end",
+          "time": "2025-10-05T15:39:42.329Z"
+        },
+        {
+          "note": "frame start",
+          "time": "2025-10-05T15:39:42.329Z"
+        },
+        {
+          "note": "A breaking",
+          "time": "2025-10-05T15:39:42.329Z"
+        },
+        {
+          "note": "A frame win",
+          "time": "2025-10-05T15:44:42.780Z"
+        },
+        {
+          "note": "frame end",
+          "time": "2025-10-05T15:44:42.780Z"
+        },
+        {
+          "note": "frame start",
+          "time": "2025-10-05T15:44:42.780Z"
+        },
+        {
+          "note": "B breaking",
+          "time": "2025-10-05T15:44:42.780Z"
+        },
+        {
+          "note": "B frame win",
+          "time": "2025-10-05T15:55:06.638Z"
+        },
+        {
+          "note": "frame end",
+          "time": "2025-10-05T15:55:06.638Z"
+        },
+        {
+          "note": "frame start",
+          "time": "2025-10-05T15:55:06.638Z"
+        },
+        {
+          "note": "A breaking",
+          "time": "2025-10-05T15:55:06.638Z"
+        },
+        {
+          "note": "B frame win",
+          "time": "2025-10-05T15:55:10.571Z"
+        },
+        {
+          "note": "frame end",
+          "time": "2025-10-05T15:55:10.571Z"
+        },
+        {
+          "note": "frame start",
+          "time": "2025-10-05T15:55:10.571Z"
+        },
+        {
+          "note": "B breaking",
+          "time": "2025-10-05T15:55:10.571Z"
+        },
+        {
+          "note": "B frame win",
+          "time": "2025-10-05T16:03:20.717Z"
+        },
+        {
+          "note": "frame end",
+          "time": "2025-10-05T16:03:20.717Z"
+        },
+        {
+          "note": "frame start",
+          "time": "2025-10-05T16:03:20.717Z"
+        },
+        {
+          "note": "A breaking",
+          "time": "2025-10-05T16:03:20.717Z"
+        },
+        {
+          "note": "A frame win",
+          "time": "2025-10-05T16:05:13.026Z"
+        },
+        {
+          "note": "frame end",
+          "time": "2025-10-05T16:05:13.026Z"
+        },
+        {
+          "note": "frame start",
+          "time": "2025-10-05T16:05:13.026Z"
+        },
+        {
+          "note": "B breaking",
+          "time": "2025-10-05T16:05:13.026Z"
+        },
+        {
+          "note": "B frame win runout",
+          "time": "2025-10-05T16:07:21.802Z"
+        },
+        {
+          "note": "frame end",
+          "time": "2025-10-05T16:07:21.802Z"
+        },
+        {
+          "note": "set end",
+          "time": "2025-10-05T16:07:42.238Z"
+        },
+        {
+          "note": "set start",
+          "time": "2025-10-05T16:07:42.238Z"
+        },
+        {
+          "note": "B frame win",
+          "time": "2025-10-05T16:16:34.514Z"
+        },
+        {
+          "note": "frame end",
+          "time": "2025-10-05T16:16:34.514Z"
+        },
+        {
+          "note": "frame start",
+          "time": "2025-10-05T16:16:34.514Z"
+        },
+        {
+          "note": "A breaking",
+          "time": "2025-10-05T16:16:34.514Z"
+        },
+        {
+          "note": "A frame win",
+          "time": "2025-10-05T16:19:53.875Z"
+        },
+        {
+          "note": "frame end",
+          "time": "2025-10-05T16:19:53.875Z"
+        },
+        {
+          "note": "frame start",
+          "time": "2025-10-05T16:19:53.875Z"
+        },
+        {
+          "note": "B breaking",
+          "time": "2025-10-05T16:19:53.875Z"
+        },
+        {
+          "note": "B frame win",
+          "time": "2025-10-05T16:23:13.457Z"
+        },
+        {
+          "note": "frame end",
+          "time": "2025-10-05T16:23:13.457Z"
+        },
+        {
+          "note": "frame start",
+          "time": "2025-10-05T16:23:13.457Z"
+        },
+        {
+          "note": "A breaking",
+          "time": "2025-10-05T16:23:13.457Z"
+        },
+        {
+          "note": "B frame win",
+          "time": "2025-10-05T16:27:18.739Z"
+        },
+        {
+          "note": "frame end",
+          "time": "2025-10-05T16:27:18.739Z"
+        },
+        {
+          "note": "frame start",
+          "time": "2025-10-05T16:27:18.739Z"
+        },
+        {
+          "note": "B breaking",
+          "time": "2025-10-05T16:27:18.739Z"
+        },
+        {
+          "note": "B frame win",
+          "time": "2025-10-05T16:33:40.405Z"
+        },
+        {
+          "note": "frame end",
+          "time": "2025-10-05T16:33:40.405Z"
+        },
+        {
+          "note": "frame start",
+          "time": "2025-10-05T16:33:40.405Z"
+        },
+        {
+          "note": "A breaking",
+          "time": "2025-10-05T16:33:40.405Z"
+        },
+        {
+          "note": "B frame win",
+          "time": "2025-10-05T16:36:22.498Z"
+        },
+        {
+          "note": "frame end",
+          "time": "2025-10-05T16:36:22.498Z"
+        },
+        {
+          "note": "set end",
+          "time": "2025-10-05T16:36:22.498Z"
+        },
+        {
+          "note": "match end",
+          "time": "2025-10-05T16:36:23.452Z"
+        }
+      ],
+      "penalty": 0,
       "playerA": {
+        "country": {
+          "alpha3": "POL",
+          "continent": "Europe",
+          "image": "https://cuescore.com/img/flags/png-country-4x2-none/res-640x480/pl.png",
+          "name": "Poland"
+        },
+        "firstname": "Paweł",
+        "image": "https://img.cuescore.com/image/1/4/1bd5e64f8d229ac9e41ac7724939c231.png?t=1705257345",
+        "lastname": "Kaczmarek",
         "name": "Paweł Kaczmarek",
-        "playerId": 15075100
+        "playerId": 15075100,
+        "represents": [],
+        "url": "https://cuescore.com/player/Pawe%C5%82+Kaczmarek/15075100"
       },
       "playerB": {
+        "country": {
+          "alpha3": "POL",
+          "continent": "Europe",
+          "image": "https://cuescore.com/img/flags/png-country-4x2-none/res-640x480/pl.png",
+          "name": "Poland"
+        },
+        "firstname": "Wojtek",
+        "image": "https://img.cuescore.com/image/8/4/862c792ba8eb7f97e626fbe6cbcc59f6.png",
+        "lastname": "Trajdos",
         "name": "Wojtek Trajdos",
-        "playerId": 57205030
+        "playerId": 57205030,
+        "represents": [],
+        "url": "https://cuescore.com/player/Wojtek+Trajdos/57205030"
       },
+      "properties": {
+        "lagWinsA": 0,
+        "lagWinsB": 1,
+        "penalty": [],
+        "runoutsA": 0,
+        "runoutsB": 1
+      },
+      "raceTo": 5,
+      "round": 2,
+      "roundName": "Final",
+      "runoutsA": 0,
+      "runoutsB": 1,
       "scoreA": 0,
       "scoreB": 2,
+      "sets": [
+        {
+          "frames": [
+            {
+              "break": 0,
+              "frameNo": 1,
+              "highBreaksA": "",
+              "highBreaksB": "",
+              "inningsA": 0,
+              "inningsB": 0,
+              "pointsA": 0,
+              "pointsB": 0,
+              "runoutA": 0,
+              "runoutB": 0,
+              "scoreA": 3,
+              "scoreB": 4,
+              "starttime": "2025-10-05T15:22:36+00:00",
+              "stoptime": "2025-10-05T16:08:09+00:00"
+            }
+          ],
+          "scoreA": 3,
+          "scoreB": 4,
+          "setNo": 1
+        }
+      ],
       "starttime": "2025-10-05T17:22:00",
-      "stoptime": "2025-10-05T18:36:25"
+      "stoptime": "2025-10-05T18:36:25",
+      "table": [],
+      "tournamentId": 69806383,
+      "useInnings": false,
+      "videoLink": "",
+      "winnerNext": ""
     }
   ],
   "name": "Warszawska Liga Bilardowa - play off",
+  "organizers": [
+    {
+      "logo": "//img.cuescore.com/image/9/2/9b59b70e156f2f8d0f1a879411c6ffd1.png?t=1576160578",
+      "name": "Black Ball Events",
+      "organizationId": 7011764,
+      "profileColor": "000000",
+      "stub": "blackballevents",
+      "url": "https://cuescore.com/blackballevents"
+    }
+  ],
+  "owner": {
+    "logo": "//img.cuescore.com/image/9/2/9b59b70e156f2f8d0f1a879411c6ffd1.png?t=1576160578",
+    "name": "Black Ball Events",
+    "organizationId": 7011764,
+    "profileColor": "000000",
+    "stub": "blackballevents",
+    "url": "https://cuescore.com/blackballevents"
+  },
+  "preseeds": {
+    "15075100": 4,
+    "1634586": 1,
+    "1718455": 2,
+    "57205030": 3
+  },
+  "rankings": [],
+  "sequence": 0,
+  "standings": [],
   "starttime": "2025-10-05T18:00:00+02:00",
+  "status": "Finished",
+  "statusCode": 2,
   "stoptime": "2025-10-05T23:59:00+02:00",
   "timezone": "Europe/Warsaw",
   "tournamentId": 69806383,
@@ -64,7 +1168,17 @@
   "url": "https://cuescore.com/tournament/Warszawska+Liga+Bilardowa+-+play+off/69806383",
   "venues": [
     {
+      "image": "https://img.cuescore.com/image/7/3/7afb0a44c256a53b5e27b584e3c27e2f.png?t=1742222226",
       "name": "Shooters",
+      "owner": {
+        "logo": "//img.cuescore.com/image/9/2/9b59b70e156f2f8d0f1a879411c6ffd1.png?t=1576160578",
+        "name": "Black Ball Events",
+        "organizationId": 7011764,
+        "profileColor": "000000",
+        "stub": "blackballevents",
+        "url": "https://cuescore.com/blackballevents"
+      },
+      "url": "https://cuescore.com/venue/Shooters/57050170",
       "venueId": 57050170
     }
   ]

@@ -3,7 +3,7 @@ use axum::{
     Router,
 };
 use std::sync::Arc;
-use crate::api::handlers::{get_players, get_player_detail, get_head_to_head_comparison, admin_refresh, AppState};
+use crate::api::handlers::{players::{get_players, get_player_detail, get_head_to_head_comparison}, admin::admin_refresh, AppState};
 
 pub fn create_router(state: Arc<AppState>) -> Router {
     Router::new()

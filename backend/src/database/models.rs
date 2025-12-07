@@ -5,6 +5,7 @@ pub struct Player {
     pub id: i32,
     pub cuescore_id: Option<i64>,
     pub name: String,
+    pub avatar_url: Option<String>,
     pub created_at: Option<NaiveDateTime>,
 }
 
@@ -51,6 +52,7 @@ pub struct PlayerWithRating {
     pub player_id: i32,
     pub cuescore_id: Option<i64>,
     pub name: String,
+    pub avatar_url: Option<String>,
     pub rating: f64,
     pub games_played: i32,
     pub confidence_level: String,

@@ -1,16 +1,71 @@
 {
+  "access": [
+    1612287
+  ],
   "banner": [],
+  "branch": 1,
   "breakrule": "alternate",
+  "contacts": [
+    {
+      "country": {
+        "alpha3": "POL",
+        "continent": "Europe",
+        "image": "https://cuescore.com/img/flags/png-country-4x2-none/res-640x480/pl.png",
+        "name": "Poland"
+      },
+      "firstname": "Maciej Grzegorz",
+      "image": "https://img.cuescore.com/image/2/4/2cf115d1df0825752b34e0510547da26.png?t=1683467983",
+      "lastname": "Lesiak",
+      "name": "Maciej Grzegorz Lesiak",
+      "playerId": 1612287,
+      "represents": {
+        "logo": "//img.cuescore.com/image/7/2/71487152007d737c2f5de4f7821f7c9e.png?t=1555512394",
+        "name": "MGL Cue Sports",
+        "organizationId": 5133719,
+        "profileColor": "58a5fc",
+        "stub": "mglcuesports",
+        "url": "https://cuescore.com/mglcuesports"
+      },
+      "url": "https://cuescore.com/player/Maciej+Grzegorz+Lesiak/1612287"
+    }
+  ],
   "deadline": "2024-05-06T19:30:00+02:00",
   "defaultRaceTo": 0,
   "description": "Turniej w 9-bil, w systemie szwajcarskim dla zawodniczek i zawodników rocznika 1984 i starszych.\r\nWpisowe: 50zł\r\nRozgrzewka: 18:30\r\nLosowanie pierwszej rundy i start turnieju: 19:00\r\nSystem szwajcarski: każdy gra co rundę (w przypadku nieparzystej liczby zawodników jeden otrzymuje wygraną walkowerem), rundy są ograniczone czasowo, a kolejne pary losowane na podstawie dotychczasowych wyników w turnieju.\r\nLimit miejsc: 40. Zapisy: https://forms.gle/DSoPDgw4gYQSnnMd7",
   "discipline": "9-Ball",
+  "disciplineId": 3,
   "displayDate": "May 6, 2024",
   "dresscode": "WYNIKI: https://challonge.com/pl/ZBO4",
+  "entrystart": "2024-05-06T18:30:00+02:00",
   "format": 2,
+  "handicap": [],
   "matches": [],
   "name": "Oldboyowy poniedziałek po szwajcarsku (4)",
+  "organizers": [
+    {
+      "logo": "//img.cuescore.com/image/7/2/71487152007d737c2f5de4f7821f7c9e.png?t=1555512394",
+      "name": "MGL Cue Sports",
+      "organizationId": 5133719,
+      "profileColor": "58a5fc",
+      "stub": "mglcuesports",
+      "url": "https://cuescore.com/mglcuesports"
+    }
+  ],
+  "owner": {
+    "logo": "//img.cuescore.com/image/7/2/71487152007d737c2f5de4f7821f7c9e.png?t=1555512394",
+    "name": "MGL Cue Sports",
+    "organizationId": 5133719,
+    "profileColor": "58a5fc",
+    "stub": "mglcuesports",
+    "url": "https://cuescore.com/mglcuesports"
+  },
+  "preseeds": [],
+  "rankings": [],
+  "sequence": 0,
+  "standings": [],
   "starttime": "2024-05-06T19:00:00+02:00",
+  "status": "Open",
+  "statusCode": 0,
   "stoptime": "2024-05-06T23:59:00+02:00",
   "timezone": "Europe/Warsaw",
   "tournamentId": 41034622,
@@ -18,7 +73,17 @@
   "url": "https://cuescore.com/tournament/Oldboyowy+poniedzia%C5%82ek+po+szwajcarsku+%284%29/41034622",
   "venues": [
     {
+      "image": "https://img.cuescore.com/image/c/3/c3e5cabdb95fe2a3f6664b3c6d2f6e8f.png?t=1702215114",
       "name": "Złota Bila - Centrum Bilardowe",
+      "owner": {
+        "logo": "//img.cuescore.com/image/9/2/9b59b70e156f2f8d0f1a879411c6ffd1.png?t=1576160578",
+        "name": "Black Ball Events",
+        "organizationId": 7011764,
+        "profileColor": "000000",
+        "stub": "blackballevents",
+        "url": "https://cuescore.com/blackballevents"
+      },
+      "url": "https://cuescore.com/venue/Z%C5%82ota+Bila+-+Centrum+Bilardowe/36031138",
       "venueId": 36031138
     }
   ]

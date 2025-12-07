@@ -79,7 +79,7 @@ pub fn get_head_to_head_matches(
     player2_id: i32,
 ) -> Result<Vec<super::models::HeadToHeadMatchRow>> {
     let sql = "
-        SELECT 
+        SELECT
             g.date,
             t.name as tournament_name,
             SUM(CASE WHEN (g.first_player_id = ?1 AND g.first_player_score > g.second_player_score) OR (g.second_player_id = ?1 AND g.second_player_score > g.first_player_score) THEN 1 ELSE 0 END) as p1_wins,

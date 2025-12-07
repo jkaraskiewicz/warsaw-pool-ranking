@@ -39,7 +39,7 @@ fn extract_player_ids(games: &[GameResult]) -> Vec<PlayerId> {
         .iter()
         .flat_map(|g| vec![g.winner_id, g.loser_id])
         .collect();
-    
+
     ids.sort_unstable();
     ids.dedup();
     ids
@@ -105,12 +105,12 @@ fn mm_algorithm(
                     let comparisons = comparison_matrix[[i, j]];
                     if comparisons > 0.0 {
                         let gamma_j = log_gamma[j].exp();
-                        
+
                         denominator += comparisons / (gamma_i + gamma_j);
                     }
                 }
             }
-            
+
             // Add virtual games against "average player" (gamma=1.0)
             // We simulate VIRTUAL_GAMES_WEIGHT games where we drew (0.5 win).
             // This anchors everyone to the mean (500).
@@ -166,7 +166,7 @@ fn build_player_ratings(
             // log(2) difference corresponds to 100 points
             // rating = base + (log_rating * 100 / ln(2))
             rating_value = config.starter_rating + (log_rating * 100.0 / std::f64::consts::LN_2);
-            
+
             // Blending logic: Pull ratings towards 500 for players with < 200 games
             if games_played < config.established_games {
                 let starter_weight = (config.established_games - games_played) as f64 / config.established_games as f64;

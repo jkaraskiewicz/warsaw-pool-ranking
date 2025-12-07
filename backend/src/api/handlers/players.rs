@@ -1,34 +1,14 @@
 use axum::{
     extract::{Path, Query, State},
-    http::{StatusCode, HeaderMap},
+    http::StatusCode,
     response::{IntoResponse, Json},
 };
-use r2d2::Pool;
-use r2d2_sqlite::SqliteConnectionManager;
-use serde::Deserialize;
 use std::sync::Arc;
 use urlencoding::encode;
 
 use crate::api::models::{PlayerListItem, PlayerListResponse, PlayerDetail, HeadToHeadMatch, HeadToHeadResponse, HeadToHeadStats};
-use crate::services::ingestion::IngestionService;
-use crate::services::processing::ProcessingService;
-use crate::config::settings::AppConfig;
 use crate::database::{self, models::{PlayerFilter, SortColumn, SortOrder}};
-
-pub struct AppState {
-    pub pool: Pool<SqliteConnectionManager>,
-    pub config: AppConfig,
-}
-
-#[derive(Deserialize)]
-pub struct PlayerParams {
-    page: Option<usize>,
-    page_size: Option<usize>,
-    sort_by: Option<String>,
-    order: Option<String>,
-    filter: Option<String>,
-    rating_type: Option<String>,
-}
+use super::{AppState, PlayerParams};
 
 pub async fn get_players(
     State(state): State<Arc<AppState>>,
@@ -79,6 +59,7 @@ pub async fn get_players(
             player_id: row.player_id as i64,
             cuescore_id: row.cuescore_id,
             name: row.name,
+            avatar_url: row.avatar_url,
             rating: row.rating,
             games_played: row.games_played,
             confidence_level: row.confidence_level,
@@ -115,14 +96,14 @@ pub async fn get_player_detail(
         Some(row) => {
             let established_games = state.config.rating.established_games;
             let starter_rating = state.config.rating.starter_rating;
-            
+
             let starter_weight = if row.games_played >= established_games {
                 0.0
             } else {
                 (established_games - row.games_played) as f64 / established_games as f64
             };
             let ml_weight = 1.0 - starter_weight;
-            
+
             let ml_rating = if ml_weight > 0.0001 {
                 (row.rating - (starter_weight * starter_rating)) / ml_weight
             } else {
@@ -135,7 +116,6 @@ pub async fn get_player_detail(
                 |r| r.get(0)
             ).ok();
 
-            // Approximate match count by counting distinct timestamps where the player played
             let matches_played: i32 = conn.query_row(
                 "SELECT COUNT(DISTINCT date) FROM games WHERE first_player_id = ?1 OR second_player_id = ?1",
                 rusqlite::params![row.player_id],
@@ -154,6 +134,7 @@ pub async fn get_player_detail(
                 cuescore_id: row.cuescore_id,
                 name: row.name,
                 cuescore_profile_url,
+                avatar_url: row.avatar_url,
                 rating: row.rating,
                 games_played: row.games_played,
                 confidence_level: row.confidence_level,
@@ -230,10 +211,10 @@ pub async fn get_head_to_head_comparison(
     let get_full_player_detail = |p: database::models::PlayerWithRating| -> PlayerDetail {
         let established_games = state.config.rating.established_games;
         let starter_rating = state.config.rating.starter_rating;
-        
+
         let starter_weight = if p.games_played >= established_games { 0.0 } else { (established_games - p.games_played) as f64 / established_games as f64 };
         let ml_weight = 1.0 - starter_weight;
-        
+
         let ml_rating = if ml_weight > 0.0001 { (p.rating - (starter_weight * starter_rating)) / ml_weight } else { p.rating };
 
         let last_played: Option<String> = conn.query_row(
@@ -247,7 +228,7 @@ pub async fn get_head_to_head_comparison(
             rusqlite::params![p.player_id],
             |r| r.get(0)
         ).unwrap_or(0);
-        
+
         let encoded_name = encode(&p.name).replace(' ', "+");
         let cuescore_profile_url = format!("https://cuescore.com/player/{}/{}", encoded_name, p.cuescore_id.unwrap_or(0));
 
@@ -256,6 +237,7 @@ pub async fn get_head_to_head_comparison(
             cuescore_id: p.cuescore_id,
             name: p.name,
             cuescore_profile_url,
+            avatar_url: p.avatar_url,
             rating: p.rating,
             games_played: p.games_played,
             confidence_level: p.confidence_level,
@@ -278,37 +260,4 @@ pub async fn get_head_to_head_comparison(
         matches: h2h_matches,
         stats: Some(stats),
     }).into_response()
-}
-
-pub async fn admin_refresh(
-    State(state): State<Arc<AppState>>,
-    headers: HeaderMap,
-) -> impl IntoResponse {
-    let auth_header = headers.get("Authorization").and_then(|h| h.to_str().ok());
-    if auth_header != Some("Bearer secret") {
-        return StatusCode::UNAUTHORIZED.into_response();
-    }
-    
-    tokio::spawn(async move {
-        log::info!("Admin triggered refresh started");
-        let ingest_result = async {
-            let mut ingest_service = IngestionService::new()?;
-            ingest_service.run().await
-        }.await;
-        if let Err(e) = ingest_result {
-            log::error!("Refresh failed at ingestion: {:?}", e);
-            return;
-        }
-        let process_result = async {
-            let process_service = ProcessingService::new(state.config.clone())?;
-            process_service.run()
-        }.await;
-        if let Err(e) = process_result {
-            log::error!("Refresh failed at processing: {:?}", e);
-            return;
-        }
-        log::info!("Admin triggered refresh completed successfully");
-    });
-
-    (StatusCode::ACCEPTED, "Refresh triggered").into_response()
 }

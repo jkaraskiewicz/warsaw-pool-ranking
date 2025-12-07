@@ -1,19 +1,91 @@
 {
+  "access": [],
   "banner": {
     "original": "//img.cuescore.com/image/0/1/0c46c6aaa0cb6772e5bf50ab9e0a7d02.png?t=1763983979",
     "thumbnail": "//img.cuescore.com/image/0/7/0c46c6aaa0cb6772e5bf50ab9e0a7d02.png?t=1763983979"
   },
+  "branch": 1,
   "breakrule": "alternate",
-  "deadline": "2025-12-05T13:00:00+01:00",
+  "contacts": [
+    {
+      "country": {
+        "alpha3": "POL",
+        "continent": "Europe",
+        "image": "https://cuescore.com/img/flags/png-country-4x2-none/res-640x480/pl.png",
+        "name": "Poland"
+      },
+      "firstname": "Maciej Grzegorz",
+      "image": "https://img.cuescore.com/image/2/4/2cf115d1df0825752b34e0510547da26.png?t=1683467983",
+      "lastname": "Lesiak",
+      "name": "Maciej Grzegorz Lesiak",
+      "playerId": 1612287,
+      "represents": {
+        "logo": "//img.cuescore.com/image/7/2/71487152007d737c2f5de4f7821f7c9e.png?t=1555512394",
+        "name": "MGL Cue Sports",
+        "organizationId": 5133719,
+        "profileColor": "58a5fc",
+        "stub": "mglcuesports",
+        "url": "https://cuescore.com/mglcuesports"
+      },
+      "url": "https://cuescore.com/player/Maciej+Grzegorz+Lesiak/1612287"
+    }
+  ],
+  "deadline": "2025-12-07T23:30:00+01:00",
   "defaultRaceTo": 4,
-  "description": "REGULAMIN(Y) TURNIEJÓW MASTERS 2025 W ZŁOTEJ BILI\r\n\r\n1.XII Oldboy'owy poniedziałek po szwajcarsku 24/25 Masters\r\n8.XII Amatorska Ósemka 2025 Masters\r\n15.XII Triathlon Bilardowy 24/25 Masters\r\n\r\nZłota Bila Centrum Bilardowe oraz MGL Cue Sports zapraszają na grudniowe turnieje kończące sezon naszych cyklów bilardowych.\r\n\r\nW turnieju Masters pierwszeństwo udziału ma najlepsza 35 rankingu danego cyklu.\r\n\r\nZapisy do turniejów/potwierdzenie udziału w turniejach przyjmujemy wyłącznie przez dedykowane formularze zapisów.\r\nPoczątek zapisów do każdego z turniejów rozpoczyna się 10 dni przed turniejem, od godz. 13:00.\r\nKoniec zapisów nastąpi tydzień po ich rozpoczęciu, czyli w piątek przed danym turniejem, o godz. 13:00.\r\nOldboys: od 21.11 do 28.11\r\nÓsemka: od 28.11 do 5.12\r\nTriathlon: od 5.12 do 12.12\r\n\r\nOsoby spoza najlepszej 35 rankingu, które dokonają zgłoszenia, będą umieszczane na liście rezerwowych, w kolejności zależnej od zajmowanych miejsc w rankingu końcowym danego cyklu.\r\n\r\nW przypadku wolnych miejsc, osoby zapisane po zakończeniu zapisów będą umieszczane na liście startowej zgodnie z kolejnością zapisów, bez względu na miejsce w czy poza Top35.\r\nPrawo do udziału w turniejach Masters mają wyłącznie osoby sklasyfikowane w rankingu, które wzięły udział w minimum dwóch turniejach danego cyklu.\r\n\r\nWpisowe: 70zł\r\nNagrody:\r\nfinansowe - pula nagród: 1200zł (*)\r\npuchary dla najlepszej trójki turnieju\r\nnagrody niespodzianki\r\n\r\nTurnieje Masters będą rozgrywane, podobnie jak cykle rozgrywek, w systemie szwajcarskim.\r\nTurniej Oldboy'owy będzie rozgrywany w odmianę 10-bil do 4 wygranych partii.\r\nAmatorska Ósemka będzie rozgrywana w odmianę 8-bil do 4 wygranych partii.\r\nTriathlon Bilardowy będzie rozgrywany do 4 wygranych partii w:\r\n- 1 i 4 runda w 9-bil\r\n- 2 i 5 runda w 8-bil\r\n- 3 i 6 runda w 10-bil\r\n\r\nPostanowienia końcowe:\r\n\r\nDecyzje podjęte przez Organizatorów są nieodwołalne.\r\nNiesportowe zachowanie, utrudnianie uczestnikom uczestnictwa w rywalizacji sportowej i/lub organizatorom prowadzenia turnieju może wiązać się z karami sportowymi, z dyskwalifikacją (na turniej/na sezon/na kolejny sezon) włącznie.\r\nUczestnicy sami pokrywają koszt ubezpieczenia, dojazdu, etc.\r\nUczestnicy zawodów oraz kibice wyrażają zgodę na wykorzystanie zdjęć z turnieju z ich wizerunkiem w materiałach promocyjnych, relacji, etc.\r\nZgłoszenie do turnieju i opłacenie wpisowego przez uczestnika turnieju oznacza akceptację powyższego regulaminu.",
+  "description": "REGULAMIN(Y) TURNIEJÓW MASTERS 2025 W ZŁOTEJ BILI\r\n\r\n1.XII Oldboy'owy poniedziałek po szwajcarsku 24/25 Masters\r\n8.XII Amatorska Ósemka 2025 Masters\r\n15.XII Triathlon Bilardowy 24/25 Masters\r\n\r\nZłota Bila Centrum Bilardowe oraz MGL Cue Sports zapraszają na grudniowe turnieje kończące sezon naszych cyklów bilardowych.\r\n\r\nW turnieju Masters pierwszeństwo udziału ma najlepsza 35 rankingu danego cyklu.\r\n\r\nZapisy do turniejów/potwierdzenie udziału w turniejach przyjmujemy wyłącznie przez dedykowane formularze zapisów.\r\nPoczątek zapisów do każdego z turniejów rozpoczyna się 10 dni przed turniejem, od godz. 13:00.\r\nKoniec zapisów nastąpi tydzień po ich rozpoczęciu, czyli w piątek przed danym turniejem, o godz. 13:00.\r\nOldboys: od 21.11 do 28.11\r\nÓsemka: od 28.11 do 5.12\r\nTriathlon: od 5.12 do 12.12\r\n\r\nOsoby spoza najlepszej 35 rankingu, które dokonają zgłoszenia, będą umieszczane na liście rezerwowych, w kolejności zależnej od zajmowanych miejsc w rankingu końcowym danego cyklu.\r\n\r\nW przypadku wolnych miejsc, osoby zapisane po zakończeniu zapisów będą umieszczane na liście startowej zgodnie z kolejnością zapisów, bez względu na miejsce w czy poza Top35.\r\n\r\n\r\nWpisowe: 70zł\r\nNagrody:\r\nfinansowe - pula nagród: 1200zł (*)\r\npuchary dla najlepszej trójki turnieju\r\nnagrody niespodzianki\r\n\r\nTurnieje Masters będą rozgrywane, podobnie jak cykle rozgrywek, w systemie szwajcarskim.\r\nTurniej Oldboy'owy będzie rozgrywany w odmianę 10-bil do 4 wygranych partii.\r\nAmatorska Ósemka będzie rozgrywana w odmianę 8-bil do 4 wygranych partii.\r\nTriathlon Bilardowy będzie rozgrywany do 4 wygranych partii w:\r\n- 1 i 4 runda w 9-bil\r\n- 2 i 5 runda w 8-bil\r\n- 3 i 6 runda w 10-bil\r\n\r\nPostanowienia końcowe:\r\n\r\nDecyzje podjęte przez Organizatorów są nieodwołalne.\r\nNiesportowe zachowanie, utrudnianie uczestnikom uczestnictwa w rywalizacji sportowej i/lub organizatorom prowadzenia turnieju może wiązać się z karami sportowymi, z dyskwalifikacją (na turniej/na sezon/na kolejny sezon) włącznie.\r\nUczestnicy sami pokrywają koszt ubezpieczenia, dojazdu, etc.\r\nUczestnicy zawodów oraz kibice wyrażają zgodę na wykorzystanie zdjęć z turnieju z ich wizerunkiem w materiałach promocyjnych, relacji, etc.\r\nZgłoszenie do turnieju i opłacenie wpisowego przez uczestnika turnieju oznacza akceptację powyższego regulaminu.",
   "discipline": "8-Ball",
+  "disciplineId": 2,
   "displayDate": "December 8, 2025",
-  "dresscode": "ZAPISY (od 28.11.2025, godz. 13:00) przez formularz: https://shorturl.at/qlSqT\r\n\r\nWAITING LIST:\r\nKarolina Markos\r\nKrzysztof Krzemiński",
+  "dresscode": "ZAPISY (od 28.11.2025, godz. 13:00) przez formularz: https://shorturl.at/qlSqT\r\n",
+  "entrystart": "2025-11-28T13:00:00+01:00",
   "format": 256,
+  "handicap": [],
   "matches": [],
   "name": "Amatorska Ósemka w Złotej Bili 2025 (MASTERS) **",
+  "organizers": [
+    {
+      "logo": "//img.cuescore.com/image/7/2/71487152007d737c2f5de4f7821f7c9e.png?t=1555512394",
+      "name": "MGL Cue Sports",
+      "organizationId": 5133719,
+      "profileColor": "58a5fc",
+      "stub": "mglcuesports",
+      "url": "https://cuescore.com/mglcuesports"
+    }
+  ],
+  "owner": {
+    "logo": "//img.cuescore.com/image/7/2/71487152007d737c2f5de4f7821f7c9e.png?t=1555512394",
+    "name": "MGL Cue Sports",
+    "organizationId": 5133719,
+    "profileColor": "58a5fc",
+    "stub": "mglcuesports",
+    "url": "https://cuescore.com/mglcuesports"
+  },
+  "preseeds": [],
+  "rankings": [
+    {
+      "bestOf": 7,
+      "branch": 1,
+      "name": "Złota Bila (2025) Amatorska Ósemka",
+      "pointsystem": 0,
+      "rankingId": 56287483,
+      "season": 2025,
+      "url": "https://cuescore.com/ranking/Z%C5%82ota+Bila+%282025%29+Amatorska+%C3%93semka/56287483"
+    },
+    {
+      "bestOf": 11,
+      "branch": 1,
+      "name": "Złota Bila (Mondays 2025) MGL",
+      "pointsystem": 0,
+      "rankingId": 67095964,
+      "season": 2025,
+      "url": "https://cuescore.com/ranking/Z%C5%82ota+Bila+%28Mondays+2025%29+MGL/67095964"
+    }
+  ],
+  "sequence": 0,
+  "standings": [],
   "starttime": "2025-12-08T19:00:00+01:00",
+  "status": "Open",
+  "statusCode": 0,
   "stoptime": "2025-12-08T23:59:00+01:00",
   "timezone": "Europe/Warsaw",
   "tournamentId": 58786888,
@@ -21,7 +93,17 @@
   "url": "https://cuescore.com/tournament/Amatorska+%C3%93semka+w+Z%C5%82otej+Bili+2025+%28MASTERS%29+%2A%2A/58786888",
   "venues": [
     {
+      "image": "https://img.cuescore.com/image/c/3/c3e5cabdb95fe2a3f6664b3c6d2f6e8f.png?t=1702215114",
       "name": "Złota Bila - Centrum Bilardowe",
+      "owner": {
+        "logo": "//img.cuescore.com/image/9/2/9b59b70e156f2f8d0f1a879411c6ffd1.png?t=1576160578",
+        "name": "Black Ball Events",
+        "organizationId": 7011764,
+        "profileColor": "000000",
+        "stub": "blackballevents",
+        "url": "https://cuescore.com/blackballevents"
+      },
+      "url": "https://cuescore.com/venue/Z%C5%82ota+Bila+-+Centrum+Bilardowe/36031138",
       "venueId": 36031138
     }
   ]

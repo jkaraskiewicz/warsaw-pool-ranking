@@ -1,122 +1,774 @@
 {
+  "access": [],
   "banner": [],
+  "branch": 4,
   "breakrule": "alternate",
+  "contacts": [
+    {
+      "country": {
+        "alpha3": "POL",
+        "continent": "Europe",
+        "image": "https://cuescore.com/img/flags/png-country-4x2-none/res-640x480/pl.png",
+        "name": "Poland"
+      },
+      "firstname": "Maciej Grzegorz",
+      "image": "https://img.cuescore.com/image/2/4/2cf115d1df0825752b34e0510547da26.png?t=1683467983",
+      "lastname": "Lesiak",
+      "name": "Maciej Grzegorz Lesiak",
+      "playerId": 1612287,
+      "represents": {
+        "logo": "//img.cuescore.com/image/7/2/71487152007d737c2f5de4f7821f7c9e.png?t=1555512394",
+        "name": "MGL Cue Sports",
+        "organizationId": 5133719,
+        "profileColor": "58a5fc",
+        "stub": "mglcuesports",
+        "url": "https://cuescore.com/mglcuesports"
+      },
+      "url": "https://cuescore.com/player/Maciej+Grzegorz+Lesiak/1612287"
+    }
+  ],
   "deadline": "",
   "defaultRaceTo": 4,
   "description": "",
   "discipline": "Snooker",
+  "disciplineId": 101,
   "displayDate": "October 10 - October 11, 2020",
   "dresscode": "",
+  "entrystart": "",
   "format": 1,
+  "handicap": [],
   "matches": [
     {
+      "bestOfSets": 0,
+      "branch": 4,
+      "challengeId": 0,
+      "comment": "",
+      "curVersion": 49,
+      "discipline": "Snooker",
+      "disciplineId": 101,
+      "frames": [],
+      "groupNo": 0,
+      "highBreaksA": "",
+      "highBreaksB": "",
+      "inningsPlayerA": 0,
+      "inningsPlayerB": 0,
+      "lagWinner": "",
+      "loserNext": "",
       "matchId": 8356945,
+      "matchType": 0,
+      "matchno": 1,
+      "matchstatus": "finished",
+      "matchstatusCode": 2,
+      "notes": [],
+      "penalty": 0,
       "playerA": {
+        "country": {
+          "alpha3": "POL",
+          "continent": "Europe",
+          "image": "https://cuescore.com/img/flags/png-country-4x2-none/res-640x480/pl.png",
+          "name": "Poland"
+        },
+        "firstname": "Paweł",
+        "image": "https://img.cuescore.com/image/8/4/862c792ba8eb7f97e626fbe6cbcc59f6.png",
+        "lastname": "Rogoza",
         "name": "Paweł Rogoza",
-        "playerId": 8263724
+        "playerId": 8263724,
+        "represents": [],
+        "url": "https://cuescore.com/player/Pawe%C5%82+Rogoza/8263724"
       },
       "playerB": {
+        "country": {
+          "alpha3": "NLD",
+          "continent": "Europe",
+          "image": "https://cuescore.com/img/flags/png-country-4x2-none/res-640x480/nl.png",
+          "name": "Netherlands"
+        },
+        "firstname": "Felix",
+        "image": "https://img.cuescore.com/image/8/4/862c792ba8eb7f97e626fbe6cbcc59f6.png",
+        "lastname": "Vidler",
         "name": "Felix Vidler",
-        "playerId": 7289345
+        "playerId": 7289345,
+        "represents": [],
+        "url": "https://cuescore.com/player/Felix+Vidler/7289345"
       },
+      "properties": [],
+      "raceTo": 4,
+      "round": 1,
+      "roundName": "Quarter final",
+      "runoutsA": 0,
+      "runoutsB": 0,
       "scoreA": 4,
       "scoreB": 2,
+      "sets": [],
       "starttime": "2020-10-11T10:12:00",
-      "stoptime": "2020-10-11T12:29:37"
+      "stoptime": "2020-10-11T12:29:37",
+      "table": {
+        "branch": "Snooker",
+        "branchId": 4,
+        "cloth": "",
+        "description": "",
+        "manufacturer": "",
+        "model": "Rasson Magnum",
+        "name": "29",
+        "pockets": "",
+        "size": 12,
+        "slate": "",
+        "tableId": 2842388,
+        "venue": {
+          "image": "https://img.cuescore.com/image/e/3/ea714c9bb52caa765f7707d5dcbe7f3a.png?t=1533571231",
+          "name": "147 Break Zamieniecka",
+          "owner": {
+            "logo": "//img.cuescore.com/image/7/2/71487152007d737c2f5de4f7821f7c9e.png?t=1555512394",
+            "name": "MGL Cue Sports",
+            "organizationId": 5133719,
+            "profileColor": "58a5fc",
+            "stub": "mglcuesports",
+            "url": "https://cuescore.com/mglcuesports"
+          },
+          "url": "https://cuescore.com/venue/147+Break+Zamieniecka/2842336",
+          "venueId": 2842336
+        }
+      },
+      "tournamentId": 8356938,
+      "useInnings": false,
+      "videoLink": "",
+      "winnerNext": 5
     },
     {
+      "bestOfSets": 0,
+      "branch": 4,
+      "challengeId": 0,
+      "comment": "",
+      "curVersion": 49,
+      "discipline": "Snooker",
+      "disciplineId": 101,
+      "frames": [],
+      "groupNo": 0,
+      "highBreaksA": "",
+      "highBreaksB": "",
+      "inningsPlayerA": 0,
+      "inningsPlayerB": 0,
+      "lagWinner": "",
+      "loserNext": "",
       "matchId": 8356946,
+      "matchType": 0,
+      "matchno": 2,
+      "matchstatus": "finished",
+      "matchstatusCode": 2,
+      "notes": [],
+      "penalty": 0,
       "playerA": {
+        "country": {
+          "alpha3": "POL",
+          "continent": "Europe",
+          "image": "https://cuescore.com/img/flags/png-country-4x2-none/res-640x480/pl.png",
+          "name": "Poland"
+        },
+        "firstname": "Ariel",
+        "image": "https://img.cuescore.com/image/8/4/862c792ba8eb7f97e626fbe6cbcc59f6.png",
+        "lastname": "Trębocha",
         "name": "Ariel Trębocha",
-        "playerId": 8356942
+        "playerId": 8356942,
+        "represents": [],
+        "url": "https://cuescore.com/player/Ariel+Tr%C4%99bocha/8356942"
       },
       "playerB": {
+        "country": {
+          "alpha3": "POL",
+          "continent": "Europe",
+          "image": "https://cuescore.com/img/flags/png-country-4x2-none/res-640x480/pl.png",
+          "name": "Poland"
+        },
+        "firstname": "Marcin",
+        "image": "https://img.cuescore.com/image/8/4/862c792ba8eb7f97e626fbe6cbcc59f6.png",
+        "lastname": "Nitschke",
         "name": "Marcin Nitschke",
-        "playerId": 8273219
+        "playerId": 8273219,
+        "represents": [],
+        "url": "https://cuescore.com/player/Marcin+Nitschke/8273219"
       },
+      "properties": [],
+      "raceTo": 4,
+      "round": 1,
+      "roundName": "Quarter final",
+      "runoutsA": 0,
+      "runoutsB": 0,
       "scoreA": 3,
       "scoreB": 4,
+      "sets": [],
       "starttime": "2020-10-11T10:12:00",
-      "stoptime": "2020-10-11T12:41:10"
+      "stoptime": "2020-10-11T12:41:10",
+      "table": {
+        "branch": "Snooker",
+        "branchId": 4,
+        "cloth": "",
+        "description": "TV table (snooker)",
+        "manufacturer": "",
+        "model": "Rasson Magnum",
+        "name": "32",
+        "pockets": "",
+        "size": 12,
+        "slate": "",
+        "tableId": 2842391,
+        "venue": {
+          "image": "https://img.cuescore.com/image/e/3/ea714c9bb52caa765f7707d5dcbe7f3a.png?t=1533571231",
+          "name": "147 Break Zamieniecka",
+          "owner": {
+            "logo": "//img.cuescore.com/image/7/2/71487152007d737c2f5de4f7821f7c9e.png?t=1555512394",
+            "name": "MGL Cue Sports",
+            "organizationId": 5133719,
+            "profileColor": "58a5fc",
+            "stub": "mglcuesports",
+            "url": "https://cuescore.com/mglcuesports"
+          },
+          "url": "https://cuescore.com/venue/147+Break+Zamieniecka/2842336",
+          "venueId": 2842336
+        }
+      },
+      "tournamentId": 8356938,
+      "useInnings": false,
+      "videoLink": "",
+      "winnerNext": 5
     },
     {
+      "bestOfSets": 0,
+      "branch": 4,
+      "challengeId": 0,
+      "comment": "",
+      "curVersion": 49,
+      "discipline": "Snooker",
+      "disciplineId": 101,
+      "frames": [],
+      "groupNo": 0,
+      "highBreaksA": "",
+      "highBreaksB": "",
+      "inningsPlayerA": 0,
+      "inningsPlayerB": 0,
+      "lagWinner": "",
+      "loserNext": "",
       "matchId": 8356947,
+      "matchType": 0,
+      "matchno": 3,
+      "matchstatus": "finished",
+      "matchstatusCode": 2,
+      "notes": [],
+      "penalty": 0,
       "playerA": {
+        "country": {
+          "alpha3": "POL",
+          "continent": "Europe",
+          "image": "https://cuescore.com/img/flags/png-country-4x2-none/res-640x480/pl.png",
+          "name": "Poland"
+        },
+        "firstname": "Grzegorz",
+        "image": "https://img.cuescore.com/image/8/4/862c792ba8eb7f97e626fbe6cbcc59f6.png",
+        "lastname": "Biernadski",
         "name": "Grzegorz Biernadski",
-        "playerId": 16135441
+        "playerId": 16135441,
+        "represents": [],
+        "url": "https://cuescore.com/player/Grzegorz+Biernadski/16135441"
       },
       "playerB": {
+        "country": {
+          "alpha3": "POL",
+          "continent": "Europe",
+          "image": "https://cuescore.com/img/flags/png-country-4x2-none/res-640x480/pl.png",
+          "name": "Poland"
+        },
+        "firstname": "Antoni",
+        "image": "https://img.cuescore.com/image/0/4/0ebc5cd0098d6becf04e487fc0ed393b.png?t=1747728690",
+        "lastname": "Kowalski",
         "name": "Antoni Kowalski",
-        "playerId": 61124692
+        "playerId": 61124692,
+        "represents": [],
+        "url": "https://cuescore.com/player/Antoni+Kowalski/61124692"
       },
+      "properties": [],
+      "raceTo": 4,
+      "round": 1,
+      "roundName": "Quarter final",
+      "runoutsA": 0,
+      "runoutsB": 0,
       "scoreA": 0,
       "scoreB": 4,
+      "sets": [],
       "starttime": "2020-10-10T22:48:00",
-      "stoptime": "2020-10-10T22:48:29"
+      "stoptime": "2020-10-10T22:48:29",
+      "table": [],
+      "tournamentId": 8356938,
+      "useInnings": false,
+      "videoLink": "",
+      "winnerNext": 6
     },
     {
+      "bestOfSets": 0,
+      "branch": 4,
+      "challengeId": 0,
+      "comment": "",
+      "curVersion": 49,
+      "discipline": "Snooker",
+      "disciplineId": 101,
+      "frames": [],
+      "groupNo": 0,
+      "highBreaksA": "",
+      "highBreaksB": "",
+      "inningsPlayerA": 0,
+      "inningsPlayerB": 0,
+      "lagWinner": "",
+      "loserNext": "",
       "matchId": 8356948,
+      "matchType": 0,
+      "matchno": 4,
+      "matchstatus": "finished",
+      "matchstatusCode": 2,
+      "notes": [],
+      "penalty": 0,
       "playerA": {
+        "country": {
+          "alpha3": "POL",
+          "continent": "Europe",
+          "image": "https://cuescore.com/img/flags/png-country-4x2-none/res-640x480/pl.png",
+          "name": "Poland"
+        },
+        "firstname": "Michał",
+        "image": "https://img.cuescore.com/image/3/4/326cbdf5b901c3666b1bdfb9edf41a26.png?t=1570034226",
+        "lastname": "Ebert",
         "name": "Michał Ebert",
-        "playerId": 5146197
+        "playerId": 5146197,
+        "represents": [],
+        "url": "https://cuescore.com/player/Micha%C5%82+Ebert/5146197"
       },
       "playerB": {
+        "country": {
+          "alpha3": "POL",
+          "continent": "Europe",
+          "image": "https://cuescore.com/img/flags/png-country-4x2-none/res-640x480/pl.png",
+          "name": "Poland"
+        },
+        "firstname": "Michał",
+        "image": "https://img.cuescore.com/image/8/4/862c792ba8eb7f97e626fbe6cbcc59f6.png",
+        "lastname": "Kotiuk",
         "name": "Michał Kotiuk",
-        "playerId": 5563458
+        "playerId": 5563458,
+        "represents": [],
+        "url": "https://cuescore.com/player/Micha%C5%82+Kotiuk/5563458"
       },
+      "properties": [],
+      "raceTo": 4,
+      "round": 1,
+      "roundName": "Quarter final",
+      "runoutsA": 0,
+      "runoutsB": 0,
       "scoreA": 1,
       "scoreB": 4,
+      "sets": [],
       "starttime": "2020-10-11T10:12:00",
-      "stoptime": "2020-10-11T12:18:17"
+      "stoptime": "2020-10-11T12:18:17",
+      "table": {
+        "branch": "Snooker",
+        "branchId": 4,
+        "cloth": "",
+        "description": "",
+        "manufacturer": "",
+        "model": "Rasson Magnum",
+        "name": "31",
+        "pockets": "",
+        "size": 12,
+        "slate": "",
+        "tableId": 2842390,
+        "venue": {
+          "image": "https://img.cuescore.com/image/e/3/ea714c9bb52caa765f7707d5dcbe7f3a.png?t=1533571231",
+          "name": "147 Break Zamieniecka",
+          "owner": {
+            "logo": "//img.cuescore.com/image/7/2/71487152007d737c2f5de4f7821f7c9e.png?t=1555512394",
+            "name": "MGL Cue Sports",
+            "organizationId": 5133719,
+            "profileColor": "58a5fc",
+            "stub": "mglcuesports",
+            "url": "https://cuescore.com/mglcuesports"
+          },
+          "url": "https://cuescore.com/venue/147+Break+Zamieniecka/2842336",
+          "venueId": 2842336
+        }
+      },
+      "tournamentId": 8356938,
+      "useInnings": false,
+      "videoLink": "",
+      "winnerNext": 6
     },
     {
+      "bestOfSets": 0,
+      "branch": 4,
+      "challengeId": 0,
+      "comment": "",
+      "curVersion": 49,
+      "discipline": "Snooker",
+      "disciplineId": 101,
+      "frames": [],
+      "groupNo": 0,
+      "highBreaksA": "",
+      "highBreaksB": "",
+      "inningsPlayerA": 0,
+      "inningsPlayerB": 0,
+      "lagWinner": "",
+      "loserNext": "",
       "matchId": 8356949,
+      "matchType": 0,
+      "matchno": 5,
+      "matchstatus": "finished",
+      "matchstatusCode": 2,
+      "notes": [],
+      "penalty": 0,
       "playerA": {
+        "country": {
+          "alpha3": "POL",
+          "continent": "Europe",
+          "image": "https://cuescore.com/img/flags/png-country-4x2-none/res-640x480/pl.png",
+          "name": "Poland"
+        },
+        "firstname": "Paweł",
+        "image": "https://img.cuescore.com/image/8/4/862c792ba8eb7f97e626fbe6cbcc59f6.png",
+        "lastname": "Rogoza",
         "name": "Paweł Rogoza",
-        "playerId": 8263724
+        "playerId": 8263724,
+        "represents": [],
+        "url": "https://cuescore.com/player/Pawe%C5%82+Rogoza/8263724"
       },
       "playerB": {
+        "country": {
+          "alpha3": "POL",
+          "continent": "Europe",
+          "image": "https://cuescore.com/img/flags/png-country-4x2-none/res-640x480/pl.png",
+          "name": "Poland"
+        },
+        "firstname": "Marcin",
+        "image": "https://img.cuescore.com/image/8/4/862c792ba8eb7f97e626fbe6cbcc59f6.png",
+        "lastname": "Nitschke",
         "name": "Marcin Nitschke",
-        "playerId": 8273219
+        "playerId": 8273219,
+        "represents": [],
+        "url": "https://cuescore.com/player/Marcin+Nitschke/8273219"
       },
+      "properties": [],
+      "raceTo": 4,
+      "round": 2,
+      "roundName": "Semi final",
+      "runoutsA": 0,
+      "runoutsB": 0,
       "scoreA": 1,
       "scoreB": 4,
+      "sets": [],
       "starttime": "2020-10-11T13:39:00",
-      "stoptime": "2020-10-11T15:23:20"
+      "stoptime": "2020-10-11T15:23:20",
+      "table": {
+        "branch": "Snooker",
+        "branchId": 4,
+        "cloth": "",
+        "description": "",
+        "manufacturer": "",
+        "model": "Rasson Magnum",
+        "name": "29",
+        "pockets": "",
+        "size": 12,
+        "slate": "",
+        "tableId": 2842388,
+        "venue": {
+          "image": "https://img.cuescore.com/image/e/3/ea714c9bb52caa765f7707d5dcbe7f3a.png?t=1533571231",
+          "name": "147 Break Zamieniecka",
+          "owner": {
+            "logo": "//img.cuescore.com/image/7/2/71487152007d737c2f5de4f7821f7c9e.png?t=1555512394",
+            "name": "MGL Cue Sports",
+            "organizationId": 5133719,
+            "profileColor": "58a5fc",
+            "stub": "mglcuesports",
+            "url": "https://cuescore.com/mglcuesports"
+          },
+          "url": "https://cuescore.com/venue/147+Break+Zamieniecka/2842336",
+          "venueId": 2842336
+        }
+      },
+      "tournamentId": 8356938,
+      "useInnings": false,
+      "videoLink": "",
+      "winnerNext": 7
     },
     {
+      "bestOfSets": 0,
+      "branch": 4,
+      "challengeId": 0,
+      "comment": "",
+      "curVersion": 49,
+      "discipline": "Snooker",
+      "disciplineId": 101,
+      "frames": [],
+      "groupNo": 0,
+      "highBreaksA": "56,44,40,76,64",
+      "highBreaksB": "40",
+      "inningsPlayerA": 0,
+      "inningsPlayerB": 0,
+      "lagWinner": "",
+      "loserNext": "",
       "matchId": 8356950,
+      "matchType": 0,
+      "matchno": 6,
+      "matchstatus": "finished",
+      "matchstatusCode": 2,
+      "notes": [],
+      "penalty": 0,
       "playerA": {
+        "country": {
+          "alpha3": "POL",
+          "continent": "Europe",
+          "image": "https://cuescore.com/img/flags/png-country-4x2-none/res-640x480/pl.png",
+          "name": "Poland"
+        },
+        "firstname": "Antoni",
+        "image": "https://img.cuescore.com/image/0/4/0ebc5cd0098d6becf04e487fc0ed393b.png?t=1747728690",
+        "lastname": "Kowalski",
         "name": "Antoni Kowalski",
-        "playerId": 61124692
+        "playerId": 61124692,
+        "represents": [],
+        "url": "https://cuescore.com/player/Antoni+Kowalski/61124692"
       },
       "playerB": {
+        "country": {
+          "alpha3": "POL",
+          "continent": "Europe",
+          "image": "https://cuescore.com/img/flags/png-country-4x2-none/res-640x480/pl.png",
+          "name": "Poland"
+        },
+        "firstname": "Michał",
+        "image": "https://img.cuescore.com/image/8/4/862c792ba8eb7f97e626fbe6cbcc59f6.png",
+        "lastname": "Kotiuk",
         "name": "Michał Kotiuk",
-        "playerId": 5563458
+        "playerId": 5563458,
+        "represents": [],
+        "url": "https://cuescore.com/player/Micha%C5%82+Kotiuk/5563458"
       },
+      "properties": [],
+      "raceTo": 4,
+      "round": 2,
+      "roundName": "Semi final",
+      "runoutsA": 0,
+      "runoutsB": 0,
       "scoreA": 4,
       "scoreB": 1,
+      "sets": [],
       "starttime": "2020-10-11T13:39:00",
-      "stoptime": "2020-10-11T15:05:59"
+      "stoptime": "2020-10-11T15:05:59",
+      "table": {
+        "branch": "Snooker",
+        "branchId": 4,
+        "cloth": "",
+        "description": "",
+        "manufacturer": "",
+        "model": "Rasson Magnum",
+        "name": "28",
+        "pockets": "",
+        "size": 12,
+        "slate": "",
+        "tableId": 2842387,
+        "venue": {
+          "image": "https://img.cuescore.com/image/e/3/ea714c9bb52caa765f7707d5dcbe7f3a.png?t=1533571231",
+          "name": "147 Break Zamieniecka",
+          "owner": {
+            "logo": "//img.cuescore.com/image/7/2/71487152007d737c2f5de4f7821f7c9e.png?t=1555512394",
+            "name": "MGL Cue Sports",
+            "organizationId": 5133719,
+            "profileColor": "58a5fc",
+            "stub": "mglcuesports",
+            "url": "https://cuescore.com/mglcuesports"
+          },
+          "url": "https://cuescore.com/venue/147+Break+Zamieniecka/2842336",
+          "venueId": 2842336
+        }
+      },
+      "tournamentId": 8356938,
+      "useInnings": false,
+      "videoLink": "",
+      "winnerNext": 7
     },
     {
+      "bestOfSets": 0,
+      "branch": 4,
+      "challengeId": 0,
+      "comment": "",
+      "curVersion": 49,
+      "discipline": "Snooker",
+      "disciplineId": 101,
+      "frames": [
+        {
+          "break": 0,
+          "frameNo": 1,
+          "highBreaksA": "",
+          "highBreaksB": "",
+          "inningsA": 0,
+          "inningsB": 0,
+          "pointsA": 0,
+          "pointsB": 0,
+          "runoutA": 0,
+          "runoutB": 0,
+          "scoreA": 2,
+          "scoreB": 0,
+          "starttime": "2020-10-11T13:24:00+00:00",
+          "stoptime": "2020-10-11T14:30:38+00:00"
+        },
+        {
+          "break": 0,
+          "frameNo": 2,
+          "highBreaksA": "",
+          "highBreaksB": "",
+          "inningsA": 0,
+          "inningsB": 0,
+          "pointsA": 0,
+          "pointsB": 0,
+          "runoutA": 0,
+          "runoutB": 0,
+          "scoreA": 3,
+          "scoreB": 0,
+          "starttime": "2020-10-11T14:30:38+00:00",
+          "stoptime": "2020-10-11T15:01:52+00:00"
+        },
+        {
+          "break": 0,
+          "frameNo": 3,
+          "highBreaksA": "",
+          "highBreaksB": "",
+          "inningsA": 0,
+          "inningsB": 0,
+          "pointsA": 0,
+          "pointsB": 0,
+          "runoutA": 0,
+          "runoutB": 0,
+          "scoreA": 3,
+          "scoreB": 1,
+          "starttime": "2020-10-11T15:01:52+00:00",
+          "stoptime": "2020-10-11T15:23:12+00:00"
+        }
+      ],
+      "groupNo": 0,
+      "highBreaksA": "",
+      "highBreaksB": "",
+      "inningsPlayerA": 0,
+      "inningsPlayerB": 0,
+      "lagWinner": "",
+      "loserNext": "",
       "matchId": 8356951,
+      "matchType": 0,
+      "matchno": 7,
+      "matchstatus": "finished",
+      "matchstatusCode": 2,
+      "notes": [],
+      "penalty": 0,
       "playerA": {
+        "country": {
+          "alpha3": "POL",
+          "continent": "Europe",
+          "image": "https://cuescore.com/img/flags/png-country-4x2-none/res-640x480/pl.png",
+          "name": "Poland"
+        },
+        "firstname": "Marcin",
+        "image": "https://img.cuescore.com/image/8/4/862c792ba8eb7f97e626fbe6cbcc59f6.png",
+        "lastname": "Nitschke",
         "name": "Marcin Nitschke",
-        "playerId": 8273219
+        "playerId": 8273219,
+        "represents": [],
+        "url": "https://cuescore.com/player/Marcin+Nitschke/8273219"
       },
       "playerB": {
+        "country": {
+          "alpha3": "POL",
+          "continent": "Europe",
+          "image": "https://cuescore.com/img/flags/png-country-4x2-none/res-640x480/pl.png",
+          "name": "Poland"
+        },
+        "firstname": "Antoni",
+        "image": "https://img.cuescore.com/image/0/4/0ebc5cd0098d6becf04e487fc0ed393b.png?t=1747728690",
+        "lastname": "Kowalski",
         "name": "Antoni Kowalski",
-        "playerId": 61124692
+        "playerId": 61124692,
+        "represents": [],
+        "url": "https://cuescore.com/player/Antoni+Kowalski/61124692"
       },
+      "properties": [],
+      "raceTo": 4,
+      "round": 3,
+      "roundName": "Final",
+      "runoutsA": 0,
+      "runoutsB": 0,
       "scoreA": 4,
       "scoreB": 1,
+      "sets": [],
       "starttime": "2020-10-11T15:24:00",
-      "stoptime": "2020-10-11T17:52:20"
+      "stoptime": "2020-10-11T17:52:20",
+      "table": {
+        "branch": "Snooker",
+        "branchId": 4,
+        "cloth": "",
+        "description": "TV table (snooker)",
+        "manufacturer": "",
+        "model": "Rasson Magnum",
+        "name": "32",
+        "pockets": "",
+        "size": 12,
+        "slate": "",
+        "tableId": 2842391,
+        "venue": {
+          "image": "https://img.cuescore.com/image/e/3/ea714c9bb52caa765f7707d5dcbe7f3a.png?t=1533571231",
+          "name": "147 Break Zamieniecka",
+          "owner": {
+            "logo": "//img.cuescore.com/image/7/2/71487152007d737c2f5de4f7821f7c9e.png?t=1555512394",
+            "name": "MGL Cue Sports",
+            "organizationId": 5133719,
+            "profileColor": "58a5fc",
+            "stub": "mglcuesports",
+            "url": "https://cuescore.com/mglcuesports"
+          },
+          "url": "https://cuescore.com/venue/147+Break+Zamieniecka/2842336",
+          "venueId": 2842336
+        }
+      },
+      "tournamentId": 8356938,
+      "useInnings": false,
+      "videoLink": "",
+      "winnerNext": ""
     }
   ],
   "name": "Faza pucharowa TOP16/2",
+  "organizers": [
+    {
+      "logo": "//img.cuescore.com/image/7/2/71487152007d737c2f5de4f7821f7c9e.png?t=1555512394",
+      "name": "MGL Cue Sports",
+      "organizationId": 5133719,
+      "profileColor": "58a5fc",
+      "stub": "mglcuesports",
+      "url": "https://cuescore.com/mglcuesports"
+    }
+  ],
+  "owner": {
+    "logo": "//img.cuescore.com/image/7/2/71487152007d737c2f5de4f7821f7c9e.png?t=1555512394",
+    "name": "MGL Cue Sports",
+    "organizationId": 5133719,
+    "profileColor": "58a5fc",
+    "stub": "mglcuesports",
+    "url": "https://cuescore.com/mglcuesports"
+  },
+  "preseeds": {
+    "16135441": 3,
+    "5146197": 7,
+    "5563458": 2,
+    "61124692": 6,
+    "7289345": 8,
+    "8263724": 1,
+    "8273219": 4,
+    "8356942": 5
+  },
+  "rankings": [],
+  "sequence": 0,
+  "standings": [],
   "starttime": "2020-10-10T18:00:00+02:00",
+  "status": "Finished",
+  "statusCode": 2,
   "stoptime": "2020-10-11T20:00:00+02:00",
   "timezone": "Europe/Warsaw",
   "tournamentId": 8356938,
@@ -124,7 +776,17 @@
   "url": "https://cuescore.com/tournament/Faza+pucharowa+TOP16%252F2/8356938",
   "venues": [
     {
+      "image": "https://img.cuescore.com/image/e/3/ea714c9bb52caa765f7707d5dcbe7f3a.png?t=1533571231",
       "name": "147 Break Zamieniecka",
+      "owner": {
+        "logo": "//img.cuescore.com/image/7/2/71487152007d737c2f5de4f7821f7c9e.png?t=1555512394",
+        "name": "MGL Cue Sports",
+        "organizationId": 5133719,
+        "profileColor": "58a5fc",
+        "stub": "mglcuesports",
+        "url": "https://cuescore.com/mglcuesports"
+      },
+      "url": "https://cuescore.com/venue/147+Break+Zamieniecka/2842336",
       "venueId": 2842336
     }
   ]

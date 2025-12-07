@@ -1,62 +1,344 @@
 {
+  "access": [],
   "banner": [],
+  "branch": 4,
   "breakrule": "alternate",
+  "contacts": [
+    {
+      "country": {
+        "alpha3": "POL",
+        "continent": "Europe",
+        "image": "https://cuescore.com/img/flags/png-country-4x2-none/res-640x480/pl.png",
+        "name": "Poland"
+      },
+      "firstname": "Maciej Grzegorz",
+      "image": "https://img.cuescore.com/image/2/4/2cf115d1df0825752b34e0510547da26.png?t=1683467983",
+      "lastname": "Lesiak",
+      "name": "Maciej Grzegorz Lesiak",
+      "playerId": 1612287,
+      "represents": {
+        "logo": "//img.cuescore.com/image/7/2/71487152007d737c2f5de4f7821f7c9e.png?t=1555512394",
+        "name": "MGL Cue Sports",
+        "organizationId": 5133719,
+        "profileColor": "58a5fc",
+        "stub": "mglcuesports",
+        "url": "https://cuescore.com/mglcuesports"
+      },
+      "url": "https://cuescore.com/player/Maciej+Grzegorz+Lesiak/1612287"
+    }
+  ],
   "deadline": "",
   "defaultRaceTo": 3,
   "description": "",
   "discipline": "Snooker",
+  "disciplineId": 101,
   "displayDate": "September 22, 2018",
   "dresscode": "",
+  "entrystart": "",
   "format": 1,
+  "handicap": [],
   "matches": [
     {
+      "bestOfSets": 0,
+      "branch": 4,
+      "challengeId": 0,
+      "comment": "",
+      "curVersion": 21,
+      "discipline": "Snooker",
+      "disciplineId": 101,
+      "frames": [],
+      "groupNo": 0,
+      "highBreaksA": "",
+      "highBreaksB": "",
+      "inningsPlayerA": 0,
+      "inningsPlayerB": 0,
+      "lagWinner": "",
+      "loserNext": "",
       "matchId": 3110194,
+      "matchType": 0,
+      "matchno": 1,
+      "matchstatus": "finished",
+      "matchstatusCode": 2,
+      "notes": [],
+      "penalty": 0,
       "playerA": {
+        "country": {
+          "alpha3": "JOR",
+          "continent": "Asia",
+          "image": "https://cuescore.com/img/flags/png-country-4x2-none/res-640x480/jo.png",
+          "name": "Jordan"
+        },
+        "firstname": "Essam",
+        "image": "https://img.cuescore.com/image/8/4/862c792ba8eb7f97e626fbe6cbcc59f6.png",
+        "lastname": "Saadeh",
         "name": "Essam Saadeh",
-        "playerId": 5160229
+        "playerId": 5160229,
+        "represents": [],
+        "url": "https://cuescore.com/player/Essam+Saadeh/5160229"
       },
       "playerB": {
+        "country": {
+          "alpha3": "POL",
+          "continent": "Europe",
+          "image": "https://cuescore.com/img/flags/png-country-4x2-none/res-640x480/pl.png",
+          "name": "Poland"
+        },
+        "firstname": "Paweł",
+        "image": "https://img.cuescore.com/image/1/4/116667642ef4f7ff22e59393304cd8a6.png?t=1536965441",
+        "lastname": "Szewczak",
         "name": "Paweł Szewczak",
-        "playerId": 3073444
+        "playerId": 3073444,
+        "represents": [],
+        "url": "https://cuescore.com/player/Pawe%C5%82+Szewczak/3073444"
       },
+      "properties": [],
+      "raceTo": 3,
+      "round": 1,
+      "roundName": "Semi final",
+      "runoutsA": 0,
+      "runoutsB": 0,
       "scoreA": 2,
       "scoreB": 3,
+      "sets": [],
       "starttime": "2018-09-22T16:26:00",
-      "stoptime": "2018-09-22T19:27:21"
+      "stoptime": "2018-09-22T19:27:21",
+      "table": {
+        "branch": "Snooker",
+        "branchId": 4,
+        "cloth": "",
+        "description": "",
+        "manufacturer": "",
+        "model": "Rasson Magnum",
+        "name": "31",
+        "pockets": "",
+        "size": 12,
+        "slate": "",
+        "tableId": 2842390,
+        "venue": {
+          "image": "https://img.cuescore.com/image/e/3/ea714c9bb52caa765f7707d5dcbe7f3a.png?t=1533571231",
+          "name": "147 Break Zamieniecka",
+          "owner": {
+            "logo": "//img.cuescore.com/image/7/2/71487152007d737c2f5de4f7821f7c9e.png?t=1555512394",
+            "name": "MGL Cue Sports",
+            "organizationId": 5133719,
+            "profileColor": "58a5fc",
+            "stub": "mglcuesports",
+            "url": "https://cuescore.com/mglcuesports"
+          },
+          "url": "https://cuescore.com/venue/147+Break+Zamieniecka/2842336",
+          "venueId": 2842336
+        }
+      },
+      "tournamentId": 3109936,
+      "useInnings": false,
+      "videoLink": "",
+      "winnerNext": 3
     },
     {
+      "bestOfSets": 0,
+      "branch": 4,
+      "challengeId": 0,
+      "comment": "",
+      "curVersion": 21,
+      "discipline": "Snooker",
+      "disciplineId": 101,
+      "frames": [],
+      "groupNo": 0,
+      "highBreaksA": "",
+      "highBreaksB": "",
+      "inningsPlayerA": 0,
+      "inningsPlayerB": 0,
+      "lagWinner": "",
+      "loserNext": "",
       "matchId": 3110195,
+      "matchType": 0,
+      "matchno": 2,
+      "matchstatus": "finished",
+      "matchstatusCode": 2,
+      "notes": [],
+      "penalty": 0,
       "playerA": {
+        "country": {
+          "alpha3": "POL",
+          "continent": "Europe",
+          "image": "https://cuescore.com/img/flags/png-country-4x2-none/res-640x480/pl.png",
+          "name": "Poland"
+        },
+        "firstname": "Paweł",
+        "image": "https://img.cuescore.com/image/8/4/862c792ba8eb7f97e626fbe6cbcc59f6.png",
+        "lastname": "Farynowski",
         "name": "Paweł Farynowski",
-        "playerId": 3088258
+        "playerId": 3088258,
+        "represents": [],
+        "url": "https://cuescore.com/player/Pawe%C5%82+Farynowski/3088258"
       },
       "playerB": {
+        "country": {
+          "alpha3": "POL",
+          "continent": "Europe",
+          "image": "https://cuescore.com/img/flags/png-country-4x2-none/res-640x480/pl.png",
+          "name": "Poland"
+        },
+        "firstname": "Adrian",
+        "image": "https://img.cuescore.com/image/6/4/67cb164897c41c8c9598d23c4ce53578.png?t=1536739767",
+        "lastname": "Dmochowski",
         "name": "Adrian Dmochowski",
-        "playerId": 3055271
+        "playerId": 3055271,
+        "represents": [],
+        "url": "https://cuescore.com/player/Adrian+Dmochowski/3055271"
       },
+      "properties": [],
+      "raceTo": 3,
+      "round": 1,
+      "roundName": "Semi final",
+      "runoutsA": 0,
+      "runoutsB": 0,
       "scoreA": 3,
       "scoreB": 2,
+      "sets": [],
       "starttime": "2018-09-22T16:48:00",
-      "stoptime": "2018-09-22T18:52:45"
+      "stoptime": "2018-09-22T18:52:45",
+      "table": {
+        "branch": "Snooker",
+        "branchId": 4,
+        "cloth": "",
+        "description": "",
+        "manufacturer": "",
+        "model": "Rasson Magnum",
+        "name": "30",
+        "pockets": "",
+        "size": 12,
+        "slate": "",
+        "tableId": 2842389,
+        "venue": {
+          "image": "https://img.cuescore.com/image/e/3/ea714c9bb52caa765f7707d5dcbe7f3a.png?t=1533571231",
+          "name": "147 Break Zamieniecka",
+          "owner": {
+            "logo": "//img.cuescore.com/image/7/2/71487152007d737c2f5de4f7821f7c9e.png?t=1555512394",
+            "name": "MGL Cue Sports",
+            "organizationId": 5133719,
+            "profileColor": "58a5fc",
+            "stub": "mglcuesports",
+            "url": "https://cuescore.com/mglcuesports"
+          },
+          "url": "https://cuescore.com/venue/147+Break+Zamieniecka/2842336",
+          "venueId": 2842336
+        }
+      },
+      "tournamentId": 3109936,
+      "useInnings": false,
+      "videoLink": "",
+      "winnerNext": 3
     },
     {
+      "bestOfSets": 0,
+      "branch": 4,
+      "challengeId": 0,
+      "comment": "",
+      "curVersion": 21,
+      "discipline": "Snooker",
+      "disciplineId": 101,
+      "frames": [],
+      "groupNo": 0,
+      "highBreaksA": "",
+      "highBreaksB": "",
+      "inningsPlayerA": 0,
+      "inningsPlayerB": 0,
+      "lagWinner": "",
+      "loserNext": "",
       "matchId": 3110196,
+      "matchType": 0,
+      "matchno": 3,
+      "matchstatus": "finished",
+      "matchstatusCode": 2,
+      "notes": [],
+      "penalty": 0,
       "playerA": {
+        "country": {
+          "alpha3": "POL",
+          "continent": "Europe",
+          "image": "https://cuescore.com/img/flags/png-country-4x2-none/res-640x480/pl.png",
+          "name": "Poland"
+        },
+        "firstname": "Paweł",
+        "image": "https://img.cuescore.com/image/1/4/116667642ef4f7ff22e59393304cd8a6.png?t=1536965441",
+        "lastname": "Szewczak",
         "name": "Paweł Szewczak",
-        "playerId": 3073444
+        "playerId": 3073444,
+        "represents": [],
+        "url": "https://cuescore.com/player/Pawe%C5%82+Szewczak/3073444"
       },
       "playerB": {
+        "country": {
+          "alpha3": "POL",
+          "continent": "Europe",
+          "image": "https://cuescore.com/img/flags/png-country-4x2-none/res-640x480/pl.png",
+          "name": "Poland"
+        },
+        "firstname": "Paweł",
+        "image": "https://img.cuescore.com/image/8/4/862c792ba8eb7f97e626fbe6cbcc59f6.png",
+        "lastname": "Farynowski",
         "name": "Paweł Farynowski",
-        "playerId": 3088258
+        "playerId": 3088258,
+        "represents": [],
+        "url": "https://cuescore.com/player/Pawe%C5%82+Farynowski/3088258"
       },
+      "properties": [],
+      "raceTo": 3,
+      "round": 2,
+      "roundName": "Final",
+      "runoutsA": 0,
+      "runoutsB": 0,
       "scoreA": 3,
       "scoreB": 2,
+      "sets": [],
       "starttime": "2018-09-22T19:27:00",
-      "stoptime": "2018-09-22T20:48:49"
+      "stoptime": "2018-09-22T20:48:49",
+      "table": {
+        "branch": "Snooker",
+        "branchId": 4,
+        "cloth": "",
+        "description": "",
+        "manufacturer": "",
+        "model": "Rasson Magnum",
+        "name": "31",
+        "pockets": "",
+        "size": 12,
+        "slate": "",
+        "tableId": 2842390,
+        "venue": {
+          "image": "https://img.cuescore.com/image/e/3/ea714c9bb52caa765f7707d5dcbe7f3a.png?t=1533571231",
+          "name": "147 Break Zamieniecka",
+          "owner": {
+            "logo": "//img.cuescore.com/image/7/2/71487152007d737c2f5de4f7821f7c9e.png?t=1555512394",
+            "name": "MGL Cue Sports",
+            "organizationId": 5133719,
+            "profileColor": "58a5fc",
+            "stub": "mglcuesports",
+            "url": "https://cuescore.com/mglcuesports"
+          },
+          "url": "https://cuescore.com/venue/147+Break+Zamieniecka/2842336",
+          "venueId": 2842336
+        }
+      },
+      "tournamentId": 3109936,
+      "useInnings": false,
+      "videoLink": "",
+      "winnerNext": ""
     }
   ],
   "name": "147 Break Zamieniecka Amateur Snooker Cup (I) Turniej Pocieszenia",
+  "organizers": [],
+  "owner": [],
+  "preseeds": {
+    "3055271": 2
+  },
+  "rankings": [],
+  "sequence": 0,
+  "standings": [],
   "starttime": "2018-09-22T15:30:00+02:00",
+  "status": "Finished",
+  "statusCode": 2,
   "stoptime": "2018-09-22T22:30:00+02:00",
   "timezone": "Europe/Warsaw",
   "tournamentId": 3109936,
@@ -64,7 +346,17 @@
   "url": "https://cuescore.com/tournament/147+Break+Zamieniecka+Amateur+Snooker+Cup+%28I%29+Turniej+Pocieszenia/3109936",
   "venues": [
     {
+      "image": "https://img.cuescore.com/image/e/3/ea714c9bb52caa765f7707d5dcbe7f3a.png?t=1533571231",
       "name": "147 Break Zamieniecka",
+      "owner": {
+        "logo": "//img.cuescore.com/image/7/2/71487152007d737c2f5de4f7821f7c9e.png?t=1555512394",
+        "name": "MGL Cue Sports",
+        "organizationId": 5133719,
+        "profileColor": "58a5fc",
+        "stub": "mglcuesports",
+        "url": "https://cuescore.com/mglcuesports"
+      },
+      "url": "https://cuescore.com/venue/147+Break+Zamieniecka/2842336",
       "venueId": 2842336
     }
   ]

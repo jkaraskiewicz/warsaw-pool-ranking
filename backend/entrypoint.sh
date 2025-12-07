@@ -18,13 +18,13 @@ fi
 
 if [ "$DB_VALID" = false ]; then
     echo "Initializing database..."
-    
+
     # Ensure directory exists (e.g., if using /app/data/...)
     mkdir -p "$(dirname "$DB_FILE")"
-    
-    # Check if we have cached data (to skip full ingest if possible, though unlikely on fresh install)
-    if [ ! -d "cache/parsed" ]; then
-        echo "Cache not found. Running full data ingestion (this may take a while)..."
+
+    # Check if we have cached data (to skip full ingest if possible)
+    if [ ! -f "cache/parsed/tournaments.json" ]; then
+        echo "Parsed cache file not found. Running full data ingestion..."
         ./warsaw_pool_ranking ingest
     else
         echo "Cache found. Skipping ingestion."

@@ -1,19 +1,80 @@
 {
+  "access": [
+    1612287
+  ],
   "banner": {
     "original": "//img.cuescore.com/image/f/1/f9c53a448cafd0353faad8ac701c2570.png?t=1578959961",
     "thumbnail": "//img.cuescore.com/image/f/7/f9c53a448cafd0353faad8ac701c2570.png?t=1578959961"
   },
+  "branch": 1,
   "breakrule": "alternate",
+  "contacts": [
+    {
+      "country": {
+        "alpha3": "POL",
+        "continent": "Europe",
+        "image": "https://cuescore.com/img/flags/png-country-4x2-none/res-640x480/pl.png",
+        "name": "Poland"
+      },
+      "firstname": "Maciej Grzegorz",
+      "image": "https://img.cuescore.com/image/2/4/2cf115d1df0825752b34e0510547da26.png?t=1683467983",
+      "lastname": "Lesiak",
+      "name": "Maciej Grzegorz Lesiak",
+      "playerId": 1612287,
+      "represents": {
+        "logo": "//img.cuescore.com/image/7/2/71487152007d737c2f5de4f7821f7c9e.png?t=1555512394",
+        "name": "MGL Cue Sports",
+        "organizationId": 5133719,
+        "profileColor": "58a5fc",
+        "stub": "mglcuesports",
+        "url": "https://cuescore.com/mglcuesports"
+      },
+      "url": "https://cuescore.com/player/Maciej+Grzegorz+Lesiak/1612287"
+    }
+  ],
   "deadline": "2019-03-26T23:59:00+01:00",
   "defaultRaceTo": 7,
   "description": "13.03.2020 UWAGA - TURNIEJ ODWOŁANY\r\n\r\nKlub bilardowo-snookerowy 147 Break Zamieniecka serdecznie zaprasza na trzeci turniej handicapowy w 9 bil w sezonie 2020.\r\n\r\nZapisy będą przyjmowane WYŁĄCZNIE w formie mailowej na adres MGLCueSports@gmail.com.\r\n\r\nStart zapisów: 9 marca 2020r.\r\nKoniec zapisów: 26 marca 2020r. godz. 23:59\r\nLimit miejsc: 100\r\n\r\nhttps://www.facebook.com/events/632306174219110/",
   "discipline": "9-Ball",
+  "disciplineId": 3,
   "displayDate": "March 28, 2020",
   "dresscode": "",
+  "entrystart": "",
   "format": 4,
+  "handicap": {
+    "created": "2019-12-31T13:33:54+00:00",
+    "handicapAsInitialScore": false,
+    "handicapId": 7083803,
+    "modified": "2025-09-18T22:11:49+00:00",
+    "name": "147Zamieniecka9ballOpen2020"
+  },
   "matches": [],
   "name": "147 Break Zamieniecka 9ball Open 2020 (3) TURNIEJ ODWOŁANY",
+  "organizers": [
+    {
+      "logo": "//img.cuescore.com/image/7/2/71487152007d737c2f5de4f7821f7c9e.png?t=1555512394",
+      "name": "MGL Cue Sports",
+      "organizationId": 5133719,
+      "profileColor": "58a5fc",
+      "stub": "mglcuesports",
+      "url": "https://cuescore.com/mglcuesports"
+    }
+  ],
+  "owner": {
+    "logo": "//img.cuescore.com/image/7/2/71487152007d737c2f5de4f7821f7c9e.png?t=1555512394",
+    "name": "MGL Cue Sports",
+    "organizationId": 5133719,
+    "profileColor": "58a5fc",
+    "stub": "mglcuesports",
+    "url": "https://cuescore.com/mglcuesports"
+  },
+  "preseeds": [],
+  "rankings": [],
+  "sequence": 0,
+  "standings": [],
   "starttime": "2020-03-28T10:00:00+01:00",
+  "status": "Open",
+  "statusCode": 0,
   "stoptime": "2020-03-28T23:59:00+01:00",
   "timezone": "Europe/Warsaw",
   "tournamentId": 7121521,
@@ -21,7 +82,17 @@
   "url": "https://cuescore.com/tournament/147+Break+Zamieniecka+9ball+Open+2020+%283%29+TURNIEJ+ODWO%C5%81ANY/7121521",
   "venues": [
     {
+      "image": "https://img.cuescore.com/image/e/3/ea714c9bb52caa765f7707d5dcbe7f3a.png?t=1533571231",
       "name": "147 Break Zamieniecka",
+      "owner": {
+        "logo": "//img.cuescore.com/image/7/2/71487152007d737c2f5de4f7821f7c9e.png?t=1555512394",
+        "name": "MGL Cue Sports",
+        "organizationId": 5133719,
+        "profileColor": "58a5fc",
+        "stub": "mglcuesports",
+        "url": "https://cuescore.com/mglcuesports"
+      },
+      "url": "https://cuescore.com/venue/147+Break+Zamieniecka/2842336",
       "venueId": 2842336
     }
   ]

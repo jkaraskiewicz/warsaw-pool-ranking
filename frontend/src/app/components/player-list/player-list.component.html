@@ -1,104 +1,172 @@
-<mat-card *ngIf="facade.state() as state">
-  <mat-card-header>
-    <mat-card-title>{{ 'PLAYER_RANKINGS' | translate }}</mat-card-title>
-  </mat-card-header>
+<!-- Stats Grid -->
+<div class="stats-grid">
+  <div class="stat-card">
+    <div class="stat-header">
+      <div class="stat-icon-wrapper">
+        <mat-icon>group</mat-icon>
+      </div>
+    </div>
+    <h3 class="stat-title">{{ 'TOTAL_PLAYERS' | translate }}</h3>
+    <p class="stat-value">{{ facade.total() }}</p>
+  </div>
 
-  <mat-card-content>
-    <mat-form-field appearance="outline" class="search-field">
-      <mat-label>{{ 'SEARCH_PLAYERS' | translate }}</mat-label>
-      <input
-        matInput
-        [(ngModel)]="searchQuery"
-        (ngModelChange)="onSearchChange()"
-        [placeholder]="'SEARCH_PLACEHOLDER' | translate"
-      />
-      <mat-icon matPrefix>search</mat-icon>
-    </mat-form-field>
+  <div class="stat-card">
+    <div class="stat-header">
+      <div class="stat-icon-wrapper">
+        <mat-icon>trending_up</mat-icon>
+      </div>
+    </div>
+    <h3 class="stat-title">{{ 'AVG_RATING' | translate }} ({{'CURRENT_PAGE' | translate}})</h3>
+    <p class="stat-value">{{ averageRating() | number:'1.0-0' }}</p>
+  </div>
 
-    <app-rating-type-selector 
-      [selectedType]="state.ratingType" 
-      (typeChange)="onRatingTypeChange($event)">
-    </app-rating-type-selector>
+  <div class="stat-card">
+    <div class="stat-header">
+      <div class="stat-icon-wrapper">
+        <mat-icon>emoji_events</mat-icon>
+      </div>
+    </div>
+    <h3 class="stat-title">{{ 'HIGHEST_RATING' | translate }} ({{'CURRENT_PAGE' | translate}})</h3>
+    <p class="stat-value">{{ highestRating() | number:'1.0-0' }}</p>
+  </div>
 
-    <button mat-fab color="accent" class="compare-fab" 
-            *ngIf="selection.size === 2" 
-            (click)="comparePlayers()"
-            [attr.aria-label]="'COMPARISON' | translate">
-      <mat-icon>compare_arrows</mat-icon>
-    </button>
+  <div class="stat-card">
+    <div class="stat-header">
+      <div class="stat-icon-wrapper">
+        <mat-icon>tag</mat-icon>
+      </div>
+    </div>
+    <h3 class="stat-title">{{ 'TOTAL_GAMES' | translate }} ({{'CURRENT_PAGE' | translate}})</h3>
+    <p class="stat-value">{{ totalGames() }}</p>
+  </div>
+</div>
 
-    <div class="table-container">
-      <div *ngIf="facade.loading()" class="loading-shade">
-        <mat-spinner></mat-spinner>
+<!-- Main Content Card -->
+<div class="main-card">
+
+  <!-- Toolbar -->
+  <div class="card-toolbar">
+    <h2 class="card-title">{{ 'PLAYER_RANKINGS' | translate }}</h2>
+
+    <div class="toolbar-actions">
+      <!-- Search -->
+      <div class="search-wrapper">
+        <input
+          type="text"
+          [placeholder]="'SEARCH_PLACEHOLDER' | translate"
+          class="search-input"
+          [(ngModel)]="searchQuery"
+          (ngModelChange)="onSearchChange()"
+        />
+        <mat-icon class="search-icon">search</mat-icon>
       </div>
 
-      <table mat-table [dataSource]="facade.players()" 
-             matSort 
-             [matSortActive]="state.sortActive"
-             [matSortDirection]="state.sortDirection"
-             (matSortChange)="onSortChange($event)"
-             class="players-table">
-        <ng-container matColumnDef="select">
-          <th mat-header-cell *matHeaderCellDef></th>
-          <td mat-cell *matCellDef="let player">
-            <mat-checkbox (click)="$event.stopPropagation()"
-                          (change)="$event ? toggleSelection(player) : null"
-                          [checked]="isSelected(player)">
-            </mat-checkbox>
-          </td>
-        </ng-container>
-
-        <ng-container matColumnDef="rank">
-          <th mat-header-cell *matHeaderCellDef>{{ 'RANK' | translate }}</th>
-          <td mat-cell *matCellDef="let player">{{ player.rank }}</td>
-        </ng-container>
-
-        <ng-container matColumnDef="name">
-          <th mat-header-cell *matHeaderCellDef mat-sort-header="name">{{ 'NAME' | translate }}</th>
-          <td mat-cell *matCellDef="let player" class="player-name">
-            <a (click)="openPlayerOverlay(player)">{{ player.name }}</a>
-          </td>
-        </ng-container>
-
-        <ng-container matColumnDef="rating">
-          <th mat-header-cell *matHeaderCellDef mat-sort-header="rating">{{ 'RATING' | translate }}</th>
-          <td mat-cell *matCellDef="let player">{{ player.rating.toFixed(0) }}</td>
-        </ng-container>
-
-        <ng-container matColumnDef="games">
-          <th mat-header-cell *matHeaderCellDef mat-sort-header="games_played">{{ 'GAMES' | translate }}</th>
-          <td mat-cell *matCellDef="let player">{{ player.gamesPlayed }}</td>
-        </ng-container>
-
-        <ng-container matColumnDef="matches">
-          <th mat-header-cell *matHeaderCellDef>{{ 'MATCHES' | translate }}</th>
-          <td mat-cell *matCellDef="let player">{{ player.matchesPlayed }}</td>
-        </ng-container>
-
-        <ng-container matColumnDef="confidence">
-          <th mat-header-cell *matHeaderCellDef>{{ 'CONFIDENCE' | translate }}</th>
-          <td mat-cell *matCellDef="let player">
-            <mat-chip [color]="getConfidenceColor(player.confidenceLevel)" selected>
-              {{ player.confidenceLevel | translate }}
-            </mat-chip>
-          </td>
-        </ng-container>
-
-        <tr mat-header-row *matHeaderRowDef="displayedColumns"></tr>
-        <tr mat-row *matRowDef="let row; columns: displayedColumns;" class="player-row"></tr>
-      </table>
+      <!-- Comparison FAB (Contextual) -->
+      <button class="btn-primary"
+              *ngIf="selection.size === 2"
+              (click)="comparePlayers()">
+        <mat-icon>compare_arrows</mat-icon>
+        {{ 'COMPARISON' | translate }}
+      </button>
     </div>
+  </div>
 
-    <mat-paginator [length]="facade.total()"
-                   [pageSize]="state.pageSize"
-                   [pageSizeOptions]="pageSizeOptions"
-                   [pageIndex]="state.pageIndex"
-                   (page)="onPageChange($event)"
-                   showFirstLastButtons>
-    </mat-paginator>
+  <!-- Rating Type Selector (Tabs style) -->
+  <div class="tabs-container">
+    <app-rating-type-selector
+      [selectedType]="facade.state().ratingType"
+      (typeChange)="onRatingTypeChange($event)">
+    </app-rating-type-selector>
+  </div>
 
-    <div *ngIf="!facade.loading() && facade.players().length === 0" class="no-results">
-      <p>{{ 'NO_PLAYERS_FOUND' | translate }} "{{ searchQuery }}"</p>
-    </div>
-  </mat-card-content>
-</mat-card>
+  <!-- Table -->
+  <div class="table-responsive">
+    <table mat-table [dataSource]="facade.players()" matSort
+           (matSortChange)="onSortChange($event)"
+           class="custom-table">
+
+      <!-- Select -->
+      <ng-container matColumnDef="select">
+        <th mat-header-cell *matHeaderCellDef></th>
+        <td mat-cell *matCellDef="let player">
+          <mat-checkbox (click)="$event.stopPropagation()"
+                        (change)="$event ? toggleSelection(player) : null"
+                        [checked]="isSelected(player)">
+          </mat-checkbox>
+        </td>
+      </ng-container>
+
+      <!-- Rank -->
+      <ng-container matColumnDef="rank">
+        <th mat-header-cell *matHeaderCellDef>{{ 'RANK' | translate }}</th>
+        <td mat-cell *matCellDef="let player">
+          <div class="rank-badge" [ngClass]="'rank-' + player.rank">
+            {{ player.rank }}
+          </div>
+        </td>
+      </ng-container>
+
+      <!-- Name -->
+      <ng-container matColumnDef="name">
+        <th mat-header-cell *matHeaderCellDef mat-sort-header="name">{{ 'NAME' | translate }}</th>
+        <td mat-cell *matCellDef="let player">
+          <div class="player-cell">
+            <div class="avatar" [ngStyle]="{'background-image': player.avatarUrl ? 'url(' + player.avatarUrl + ')' : 'none'}">
+              <ng-container *ngIf="!player.avatarUrl">{{ player.name.charAt(0) }}</ng-container>
+            </div>
+            <div class="player-info">
+              <span class="player-name-text" (click)="openPlayerOverlay(player)">{{ player.name }}</span>
+              <span class="player-id">ID: #{{ player.playerId.toString().padStart(4, '0') }}</span>
+            </div>
+          </div>
+        </td>
+      </ng-container>
+
+      <!-- Rating -->
+      <ng-container matColumnDef="rating">
+        <th mat-header-cell *matHeaderCellDef mat-sort-header="rating" class="text-right">{{ 'RATING' | translate }}</th>
+        <td mat-cell *matCellDef="let player" class="text-right font-bold text-white">
+          {{ player.rating.toFixed(0) }}
+        </td>
+      </ng-container>
+
+      <!-- Games -->
+      <ng-container matColumnDef="games">
+        <th mat-header-cell *matHeaderCellDef mat-sort-header="games_played" class="text-right">{{ 'GAMES' | translate }}</th>
+        <td mat-cell *matCellDef="let player" class="text-right text-slate-400">
+          {{ player.gamesPlayed }}
+        </td>
+      </ng-container>
+
+      <!-- Matches -->
+      <ng-container matColumnDef="matches">
+        <th mat-header-cell *matHeaderCellDef class="text-right">{{ 'MATCHES' | translate }}</th>
+        <td mat-cell *matCellDef="let player" class="text-right text-slate-400">
+          {{ player.matchesPlayed }}
+        </td>
+      </ng-container>
+
+      <!-- Confidence -->
+      <ng-container matColumnDef="confidence">
+        <th mat-header-cell *matHeaderCellDef>{{ 'CONFIDENCE' | translate }}</th>
+        <td mat-cell *matCellDef="let player">
+          <span class="confidence-badge" [ngClass]="player.confidenceLevel">
+            {{ player.confidenceLevel | translate }}
+          </span>
+        </td>
+      </ng-container>
+
+      <tr mat-header-row *matHeaderRowDef="displayedColumns"></tr>
+      <tr mat-row *matRowDef="let row; columns: displayedColumns;" class="table-row"></tr>
+    </table>
+  </div>
+
+  <!-- Paginator -->
+  <mat-paginator [length]="facade.total()"
+                 [pageSize]="facade.state().pageSize"
+                 [pageSizeOptions]="pageSizeOptions"
+                 [pageIndex]="facade.state().pageIndex"
+                 (page)="onPageChange($event)"
+                 class="custom-paginator">
+  </mat-paginator>
+</div>

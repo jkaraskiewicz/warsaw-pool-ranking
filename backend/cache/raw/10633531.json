@@ -1,242 +1,1375 @@
 {
+  "access": [
+    1612287,
+    2380135,
+    6075656
+  ],
   "banner": [],
+  "branch": 4,
   "breakrule": "alternate",
+  "contacts": [
+    {
+      "country": {
+        "alpha3": "POL",
+        "continent": "Europe",
+        "image": "https://cuescore.com/img/flags/png-country-4x2-none/res-640x480/pl.png",
+        "name": "Poland"
+      },
+      "firstname": "Maciej Grzegorz",
+      "image": "https://img.cuescore.com/image/2/4/2cf115d1df0825752b34e0510547da26.png?t=1683467983",
+      "lastname": "Lesiak",
+      "name": "Maciej Grzegorz Lesiak",
+      "playerId": 1612287,
+      "represents": {
+        "logo": "//img.cuescore.com/image/7/2/71487152007d737c2f5de4f7821f7c9e.png?t=1555512394",
+        "name": "MGL Cue Sports",
+        "organizationId": 5133719,
+        "profileColor": "58a5fc",
+        "stub": "mglcuesports",
+        "url": "https://cuescore.com/mglcuesports"
+      },
+      "url": "https://cuescore.com/player/Maciej+Grzegorz+Lesiak/1612287"
+    }
+  ],
   "deadline": "",
   "defaultRaceTo": 1,
   "description": "",
   "discipline": "Snooker 6-reds",
+  "disciplineId": 102,
   "displayDate": "November 13, 2021",
   "dresscode": "•\tObowiązuje strój casualowy (dres, koszulki bez rękawów, krótkie spodnie oraz odkryte obuwie nie będą akceptowane).\r\n•\tZawodnicy w strojach według regulaminów PZBil czy PZSiBA będą dopuszczeni do gry 😉\r\n•\tO dopuszczeniu do gry decydują organizatorzy.\r\n",
+  "entrystart": "",
   "format": 1,
+  "handicap": [],
   "matches": [
     {
+      "bestOfSets": 0,
+      "branch": 4,
+      "challengeId": 0,
+      "comment": "",
+      "curVersion": 44,
+      "discipline": "Snooker 6-reds",
+      "disciplineId": 102,
+      "frames": [],
+      "groupNo": 0,
+      "highBreaksA": "",
+      "highBreaksB": "",
+      "inningsPlayerA": 0,
+      "inningsPlayerB": 0,
+      "lagWinner": "",
+      "loserNext": "",
       "matchId": 10634368,
+      "matchType": 0,
+      "matchno": 1,
+      "matchstatus": "finished",
+      "matchstatusCode": 2,
+      "notes": [],
+      "penalty": 0,
       "playerA": {
+        "country": {
+          "alpha3": "POL",
+          "continent": "Europe",
+          "image": "https://cuescore.com/img/flags/png-country-4x2-none/res-640x480/pl.png",
+          "name": "Poland"
+        },
+        "firstname": "Maciek",
+        "image": "https://img.cuescore.com/image/f/4/f8d4481e5856d03ef3e467bb4c363d10.png?t=1567352056",
+        "lastname": "Pawlik",
         "name": "Maciek Pawlik",
-        "playerId": 2252452
+        "playerId": 2252452,
+        "represents": [],
+        "url": "https://cuescore.com/player/Maciek+Pawlik/2252452"
       },
       "playerB": {
+        "country": [],
+        "firstname": "Walk",
+        "image": "https://img.cuescore.com/image/8/4/862c792ba8eb7f97e626fbe6cbcc59f6.png",
+        "lastname": "Over",
         "name": "Walk Over",
-        "playerId": 1000615
+        "playerId": 1000615,
+        "represents": [],
+        "url": "https://cuescore.com/player/Walk+Over/1000615"
       },
+      "properties": [],
+      "raceTo": 1,
+      "round": 1,
+      "roundName": "Round 1",
+      "runoutsA": 0,
+      "runoutsB": 0,
       "scoreA": 0,
       "scoreB": 0,
+      "sets": [],
       "starttime": "",
-      "stoptime": ""
+      "stoptime": "",
+      "table": [],
+      "tournamentId": 10633531,
+      "useInnings": false,
+      "videoLink": "",
+      "winnerNext": 9
     },
     {
+      "bestOfSets": 0,
+      "branch": 4,
+      "challengeId": 0,
+      "comment": "",
+      "curVersion": 44,
+      "discipline": "Snooker 6-reds",
+      "disciplineId": 102,
+      "frames": [],
+      "groupNo": 0,
+      "highBreaksA": "",
+      "highBreaksB": "",
+      "inningsPlayerA": 0,
+      "inningsPlayerB": 0,
+      "lagWinner": "",
+      "loserNext": "",
       "matchId": 10634371,
+      "matchType": 0,
+      "matchno": 2,
+      "matchstatus": "finished",
+      "matchstatusCode": 2,
+      "notes": [],
+      "penalty": 0,
       "playerA": {
+        "country": {
+          "alpha3": "POL",
+          "continent": "Europe",
+          "image": "https://cuescore.com/img/flags/png-country-4x2-none/res-640x480/pl.png",
+          "name": "Poland"
+        },
+        "firstname": "Dawid",
+        "image": "https://img.cuescore.com/image/e/4/e4d0e4040b0319d597794e85ea6c0823.png?t=1692028297",
+        "lastname": "Brzeziński",
         "name": "Dawid Brzeziński",
-        "playerId": 3630602
+        "playerId": 3630602,
+        "represents": [],
+        "url": "https://cuescore.com/player/Dawid+Brzezi%C5%84ski/3630602"
       },
       "playerB": {
+        "country": {
+          "alpha3": "POL",
+          "continent": "Europe",
+          "image": "https://cuescore.com/img/flags/png-country-4x2-none/res-640x480/pl.png",
+          "name": "Poland"
+        },
+        "firstname": "Paweł",
+        "image": "https://img.cuescore.com/image/f/4/f2f78115ac18e67c05b8183870953588.png?t=1554798742",
+        "lastname": "Seremak",
         "name": "Paweł Seremak",
-        "playerId": 3602085
+        "playerId": 3602085,
+        "represents": [],
+        "url": "https://cuescore.com/player/Pawe%C5%82+Seremak/3602085"
       },
+      "properties": [],
+      "raceTo": 1,
+      "round": 1,
+      "roundName": "Round 1",
+      "runoutsA": 0,
+      "runoutsB": 0,
       "scoreA": 0,
       "scoreB": 1,
+      "sets": [],
       "starttime": "2021-11-13T19:11:00",
-      "stoptime": "2021-11-13T20:03:11"
+      "stoptime": "2021-11-13T20:03:11",
+      "table": {
+        "branch": "Snooker",
+        "branchId": 4,
+        "cloth": "",
+        "description": "",
+        "manufacturer": "",
+        "model": "Rasson Magnum",
+        "name": "30",
+        "pockets": "",
+        "size": 12,
+        "slate": "",
+        "tableId": 2842389,
+        "venue": {
+          "image": "https://img.cuescore.com/image/e/3/ea714c9bb52caa765f7707d5dcbe7f3a.png?t=1533571231",
+          "name": "147 Break Zamieniecka",
+          "owner": {
+            "logo": "//img.cuescore.com/image/7/2/71487152007d737c2f5de4f7821f7c9e.png?t=1555512394",
+            "name": "MGL Cue Sports",
+            "organizationId": 5133719,
+            "profileColor": "58a5fc",
+            "stub": "mglcuesports",
+            "url": "https://cuescore.com/mglcuesports"
+          },
+          "url": "https://cuescore.com/venue/147+Break+Zamieniecka/2842336",
+          "venueId": 2842336
+        }
+      },
+      "tournamentId": 10633531,
+      "useInnings": false,
+      "videoLink": "",
+      "winnerNext": 9
     },
     {
+      "bestOfSets": 0,
+      "branch": 4,
+      "challengeId": 0,
+      "comment": "",
+      "curVersion": 44,
+      "discipline": "Snooker 6-reds",
+      "disciplineId": 102,
+      "frames": [],
+      "groupNo": 0,
+      "highBreaksA": "",
+      "highBreaksB": "",
+      "inningsPlayerA": 0,
+      "inningsPlayerB": 0,
+      "lagWinner": "",
+      "loserNext": "",
       "matchId": 10634374,
+      "matchType": 0,
+      "matchno": 3,
+      "matchstatus": "finished",
+      "matchstatusCode": 2,
+      "notes": [],
+      "penalty": 0,
       "playerA": {
+        "country": {
+          "alpha3": "POL",
+          "continent": "Europe",
+          "image": "https://cuescore.com/img/flags/png-country-4x2-none/res-640x480/pl.png",
+          "name": "Poland"
+        },
+        "firstname": "Karol Wiktor",
+        "image": "https://img.cuescore.com/image/e/4/ed6659327cf04574e94b567cebaf4db5.png?t=1667822471",
+        "lastname": "Pahulak",
         "name": "Karol Wiktor Pahulak",
-        "playerId": 3669628
+        "playerId": 3669628,
+        "represents": [],
+        "url": "https://cuescore.com/player/Karol+Wiktor+Pahulak/3669628"
       },
       "playerB": {
+        "country": [],
+        "firstname": "Walk",
+        "image": "https://img.cuescore.com/image/8/4/862c792ba8eb7f97e626fbe6cbcc59f6.png",
+        "lastname": "Over",
         "name": "Walk Over",
-        "playerId": 1000615
+        "playerId": 1000615,
+        "represents": [],
+        "url": "https://cuescore.com/player/Walk+Over/1000615"
       },
+      "properties": [],
+      "raceTo": 1,
+      "round": 1,
+      "roundName": "Round 1",
+      "runoutsA": 0,
+      "runoutsB": 0,
       "scoreA": 0,
       "scoreB": 0,
+      "sets": [],
       "starttime": "",
-      "stoptime": ""
+      "stoptime": "",
+      "table": [],
+      "tournamentId": 10633531,
+      "useInnings": false,
+      "videoLink": "",
+      "winnerNext": 10
     },
     {
+      "bestOfSets": 0,
+      "branch": 4,
+      "challengeId": 0,
+      "comment": "",
+      "curVersion": 44,
+      "discipline": "Snooker 6-reds",
+      "disciplineId": 102,
+      "frames": [],
+      "groupNo": 0,
+      "highBreaksA": "",
+      "highBreaksB": "",
+      "inningsPlayerA": 0,
+      "inningsPlayerB": 0,
+      "lagWinner": "",
+      "loserNext": "",
       "matchId": 10634377,
+      "matchType": 0,
+      "matchno": 4,
+      "matchstatus": "finished",
+      "matchstatusCode": 2,
+      "notes": [],
+      "penalty": 0,
       "playerA": {
+        "country": [],
+        "firstname": "Walk",
+        "image": "https://img.cuescore.com/image/8/4/862c792ba8eb7f97e626fbe6cbcc59f6.png",
+        "lastname": "Over",
         "name": "Walk Over",
-        "playerId": 1000615
+        "playerId": 1000615,
+        "represents": [],
+        "url": "https://cuescore.com/player/Walk+Over/1000615"
       },
       "playerB": {
+        "country": {
+          "alpha3": "POL",
+          "continent": "Europe",
+          "image": "https://cuescore.com/img/flags/png-country-4x2-none/res-640x480/pl.png",
+          "name": "Poland"
+        },
+        "firstname": "Wojtek",
+        "image": "https://img.cuescore.com/image/0/4/01804c5bd02dda143dcf7515fe41e2c6.png?t=1698014627",
+        "lastname": "Zagdan",
         "name": "Wojtek Zagdan",
-        "playerId": 8357717
+        "playerId": 8357717,
+        "represents": [],
+        "url": "https://cuescore.com/player/Wojtek+Zagdan/8357717"
       },
+      "properties": [],
+      "raceTo": 1,
+      "round": 1,
+      "roundName": "Round 1",
+      "runoutsA": 0,
+      "runoutsB": 0,
       "scoreA": 0,
       "scoreB": 0,
+      "sets": [],
       "starttime": "",
-      "stoptime": ""
+      "stoptime": "",
+      "table": [],
+      "tournamentId": 10633531,
+      "useInnings": false,
+      "videoLink": "",
+      "winnerNext": 10
     },
     {
+      "bestOfSets": 0,
+      "branch": 4,
+      "challengeId": 0,
+      "comment": "",
+      "curVersion": 44,
+      "discipline": "Snooker 6-reds",
+      "disciplineId": 102,
+      "frames": [],
+      "groupNo": 0,
+      "highBreaksA": "",
+      "highBreaksB": "",
+      "inningsPlayerA": 0,
+      "inningsPlayerB": 0,
+      "lagWinner": "",
+      "loserNext": "",
       "matchId": 10634380,
+      "matchType": 0,
+      "matchno": 5,
+      "matchstatus": "finished",
+      "matchstatusCode": 2,
+      "notes": [],
+      "penalty": 0,
       "playerA": {
+        "country": {
+          "alpha3": "POL",
+          "continent": "Europe",
+          "image": "https://cuescore.com/img/flags/png-country-4x2-none/res-640x480/pl.png",
+          "name": "Poland"
+        },
+        "firstname": "Tomasz",
+        "image": "https://img.cuescore.com/image/6/4/6f08f3b8298221d8dc1f19cf7e5b1e93.png?t=1687249101",
+        "lastname": "Kozieł",
         "name": "Tomasz Kozieł",
-        "playerId": 8493519
+        "playerId": 8493519,
+        "represents": [],
+        "url": "https://cuescore.com/player/Tomasz+Kozie%C5%82/8493519"
       },
       "playerB": {
+        "country": [],
+        "firstname": "Walk",
+        "image": "https://img.cuescore.com/image/8/4/862c792ba8eb7f97e626fbe6cbcc59f6.png",
+        "lastname": "Over",
         "name": "Walk Over",
-        "playerId": 1000615
+        "playerId": 1000615,
+        "represents": [],
+        "url": "https://cuescore.com/player/Walk+Over/1000615"
       },
+      "properties": [],
+      "raceTo": 1,
+      "round": 1,
+      "roundName": "Round 1",
+      "runoutsA": 0,
+      "runoutsB": 0,
       "scoreA": 0,
       "scoreB": 0,
+      "sets": [],
       "starttime": "",
-      "stoptime": ""
+      "stoptime": "",
+      "table": [],
+      "tournamentId": 10633531,
+      "useInnings": false,
+      "videoLink": "",
+      "winnerNext": 11
     },
     {
+      "bestOfSets": 0,
+      "branch": 4,
+      "challengeId": 0,
+      "comment": "",
+      "curVersion": 44,
+      "discipline": "Snooker 6-reds",
+      "disciplineId": 102,
+      "frames": [],
+      "groupNo": 0,
+      "highBreaksA": "",
+      "highBreaksB": "",
+      "inningsPlayerA": 0,
+      "inningsPlayerB": 0,
+      "lagWinner": "",
+      "loserNext": "",
       "matchId": 10634383,
+      "matchType": 0,
+      "matchno": 6,
+      "matchstatus": "finished",
+      "matchstatusCode": 2,
+      "notes": [],
+      "penalty": 0,
       "playerA": {
+        "country": {
+          "alpha3": "POL",
+          "continent": "Europe",
+          "image": "https://cuescore.com/img/flags/png-country-4x2-none/res-640x480/pl.png",
+          "name": "Poland"
+        },
+        "firstname": "Adam",
+        "image": "https://img.cuescore.com/image/8/4/862c792ba8eb7f97e626fbe6cbcc59f6.png",
+        "lastname": "Adamczyk",
         "name": "Adam Adamczyk",
-        "playerId": 3505949
+        "playerId": 3505949,
+        "represents": [],
+        "url": "https://cuescore.com/player/Adam+Adamczyk/3505949"
       },
       "playerB": {
+        "country": {
+          "alpha3": "POL",
+          "continent": "Europe",
+          "image": "https://cuescore.com/img/flags/png-country-4x2-none/res-640x480/pl.png",
+          "name": "Poland"
+        },
+        "firstname": "Rafał",
+        "image": "https://img.cuescore.com/image/4/4/47793cfc46cd0214c129bf741f1b409b.png?t=1596627671",
+        "lastname": "Wróblewski",
         "name": "Rafał Wróblewski",
-        "playerId": 7094314
+        "playerId": 7094314,
+        "represents": [],
+        "url": "https://cuescore.com/player/Rafa%C5%82+Wr%C3%B3blewski/7094314"
       },
+      "properties": {
+        "penalty": []
+      },
+      "raceTo": 1,
+      "round": 1,
+      "roundName": "Round 1",
+      "runoutsA": 0,
+      "runoutsB": 0,
       "scoreA": 1,
       "scoreB": 0,
+      "sets": [],
       "starttime": "2021-11-13T19:37:00",
-      "stoptime": "2021-11-13T20:14:39"
+      "stoptime": "2021-11-13T20:14:39",
+      "table": {
+        "branch": "Snooker",
+        "branchId": 4,
+        "cloth": "",
+        "description": "",
+        "manufacturer": "",
+        "model": "Rasson Magnum",
+        "name": "31",
+        "pockets": "",
+        "size": 12,
+        "slate": "",
+        "tableId": 2842390,
+        "venue": {
+          "image": "https://img.cuescore.com/image/e/3/ea714c9bb52caa765f7707d5dcbe7f3a.png?t=1533571231",
+          "name": "147 Break Zamieniecka",
+          "owner": {
+            "logo": "//img.cuescore.com/image/7/2/71487152007d737c2f5de4f7821f7c9e.png?t=1555512394",
+            "name": "MGL Cue Sports",
+            "organizationId": 5133719,
+            "profileColor": "58a5fc",
+            "stub": "mglcuesports",
+            "url": "https://cuescore.com/mglcuesports"
+          },
+          "url": "https://cuescore.com/venue/147+Break+Zamieniecka/2842336",
+          "venueId": 2842336
+        }
+      },
+      "tournamentId": 10633531,
+      "useInnings": false,
+      "videoLink": "",
+      "winnerNext": 11
     },
     {
+      "bestOfSets": 0,
+      "branch": 4,
+      "challengeId": 0,
+      "comment": "",
+      "curVersion": 44,
+      "discipline": "Snooker 6-reds",
+      "disciplineId": 102,
+      "frames": [],
+      "groupNo": 0,
+      "highBreaksA": "",
+      "highBreaksB": "",
+      "inningsPlayerA": 0,
+      "inningsPlayerB": 0,
+      "lagWinner": "",
+      "loserNext": "",
       "matchId": 10634386,
+      "matchType": 0,
+      "matchno": 7,
+      "matchstatus": "finished",
+      "matchstatusCode": 2,
+      "notes": [],
+      "penalty": 0,
       "playerA": {
+        "country": {
+          "alpha3": "POL",
+          "continent": "Europe",
+          "image": "https://cuescore.com/img/flags/png-country-4x2-none/res-640x480/pl.png",
+          "name": "Poland"
+        },
+        "firstname": "Andrzej",
+        "image": "https://img.cuescore.com/image/9/4/97e29068e779dcb7f2402fd8ab828e35.png?t=1554794952",
+        "lastname": "Heród",
         "name": "Andrzej Heród",
-        "playerId": 2745377
+        "playerId": 2745377,
+        "represents": [],
+        "url": "https://cuescore.com/player/Andrzej+Her%C3%B3d/2745377"
       },
       "playerB": {
+        "country": {
+          "alpha3": "POL",
+          "continent": "Europe",
+          "image": "https://cuescore.com/img/flags/png-country-4x2-none/res-640x480/pl.png",
+          "name": "Poland"
+        },
+        "firstname": "Żaneta",
+        "image": "https://img.cuescore.com/image/8/4/862c792ba8eb7f97e626fbe6cbcc59f6.png",
+        "lastname": "Foniok",
         "name": "Żaneta Foniok",
-        "playerId": 5052786
+        "playerId": 5052786,
+        "represents": [],
+        "url": "https://cuescore.com/player/%C5%BBaneta+Foniok/5052786"
       },
+      "properties": [],
+      "raceTo": 1,
+      "round": 1,
+      "roundName": "Round 1",
+      "runoutsA": 0,
+      "runoutsB": 0,
       "scoreA": 0,
       "scoreB": 1,
+      "sets": [],
       "starttime": "2021-11-13T19:11:00",
-      "stoptime": "2021-11-13T19:38:12"
+      "stoptime": "2021-11-13T19:38:12",
+      "table": {
+        "branch": "Snooker",
+        "branchId": 4,
+        "cloth": "",
+        "description": "",
+        "manufacturer": "",
+        "model": "Rasson Magnum",
+        "name": "31",
+        "pockets": "",
+        "size": 12,
+        "slate": "",
+        "tableId": 2842390,
+        "venue": {
+          "image": "https://img.cuescore.com/image/e/3/ea714c9bb52caa765f7707d5dcbe7f3a.png?t=1533571231",
+          "name": "147 Break Zamieniecka",
+          "owner": {
+            "logo": "//img.cuescore.com/image/7/2/71487152007d737c2f5de4f7821f7c9e.png?t=1555512394",
+            "name": "MGL Cue Sports",
+            "organizationId": 5133719,
+            "profileColor": "58a5fc",
+            "stub": "mglcuesports",
+            "url": "https://cuescore.com/mglcuesports"
+          },
+          "url": "https://cuescore.com/venue/147+Break+Zamieniecka/2842336",
+          "venueId": 2842336
+        }
+      },
+      "tournamentId": 10633531,
+      "useInnings": false,
+      "videoLink": "",
+      "winnerNext": 12
     },
     {
+      "bestOfSets": 0,
+      "branch": 4,
+      "challengeId": 0,
+      "comment": "",
+      "curVersion": 44,
+      "discipline": "Snooker 6-reds",
+      "disciplineId": 102,
+      "frames": [],
+      "groupNo": 0,
+      "highBreaksA": "",
+      "highBreaksB": "",
+      "inningsPlayerA": 0,
+      "inningsPlayerB": 0,
+      "lagWinner": "",
+      "loserNext": "",
       "matchId": 10634389,
+      "matchType": 0,
+      "matchno": 8,
+      "matchstatus": "finished",
+      "matchstatusCode": 2,
+      "notes": [],
+      "penalty": 0,
       "playerA": {
+        "country": [],
+        "firstname": "Walk",
+        "image": "https://img.cuescore.com/image/8/4/862c792ba8eb7f97e626fbe6cbcc59f6.png",
+        "lastname": "Over",
         "name": "Walk Over",
-        "playerId": 1000615
+        "playerId": 1000615,
+        "represents": [],
+        "url": "https://cuescore.com/player/Walk+Over/1000615"
       },
       "playerB": {
+        "country": {
+          "alpha3": "POL",
+          "continent": "Europe",
+          "image": "https://cuescore.com/img/flags/png-country-4x2-none/res-640x480/pl.png",
+          "name": "Poland"
+        },
+        "firstname": "Łukasz",
+        "image": "https://img.cuescore.com/image/e/4/e86296a6c001a4bfd8e7561efe4be53d.png?t=1636882173",
+        "lastname": "Kowalski",
         "name": "Łukasz Kowalski",
-        "playerId": 2357839
+        "playerId": 2357839,
+        "represents": [],
+        "url": "https://cuescore.com/player/%C5%81ukasz+Kowalski/2357839"
       },
+      "properties": [],
+      "raceTo": 1,
+      "round": 1,
+      "roundName": "Round 1",
+      "runoutsA": 0,
+      "runoutsB": 0,
       "scoreA": 0,
       "scoreB": 0,
+      "sets": [],
       "starttime": "",
-      "stoptime": ""
+      "stoptime": "",
+      "table": [],
+      "tournamentId": 10633531,
+      "useInnings": false,
+      "videoLink": "",
+      "winnerNext": 12
     },
     {
+      "bestOfSets": 0,
+      "branch": 4,
+      "challengeId": 0,
+      "comment": "",
+      "curVersion": 44,
+      "discipline": "Snooker 6-reds",
+      "disciplineId": 102,
+      "frames": [],
+      "groupNo": 0,
+      "highBreaksA": "",
+      "highBreaksB": "",
+      "inningsPlayerA": 0,
+      "inningsPlayerB": 0,
+      "lagWinner": "",
+      "loserNext": "",
       "matchId": 10634392,
+      "matchType": 0,
+      "matchno": 9,
+      "matchstatus": "finished",
+      "matchstatusCode": 2,
+      "notes": [],
+      "penalty": 0,
       "playerA": {
+        "country": {
+          "alpha3": "POL",
+          "continent": "Europe",
+          "image": "https://cuescore.com/img/flags/png-country-4x2-none/res-640x480/pl.png",
+          "name": "Poland"
+        },
+        "firstname": "Maciek",
+        "image": "https://img.cuescore.com/image/f/4/f8d4481e5856d03ef3e467bb4c363d10.png?t=1567352056",
+        "lastname": "Pawlik",
         "name": "Maciek Pawlik",
-        "playerId": 2252452
+        "playerId": 2252452,
+        "represents": [],
+        "url": "https://cuescore.com/player/Maciek+Pawlik/2252452"
       },
       "playerB": {
+        "country": {
+          "alpha3": "POL",
+          "continent": "Europe",
+          "image": "https://cuescore.com/img/flags/png-country-4x2-none/res-640x480/pl.png",
+          "name": "Poland"
+        },
+        "firstname": "Paweł",
+        "image": "https://img.cuescore.com/image/f/4/f2f78115ac18e67c05b8183870953588.png?t=1554798742",
+        "lastname": "Seremak",
         "name": "Paweł Seremak",
-        "playerId": 3602085
+        "playerId": 3602085,
+        "represents": [],
+        "url": "https://cuescore.com/player/Pawe%C5%82+Seremak/3602085"
       },
+      "properties": {
+        "penalty": []
+      },
+      "raceTo": 1,
+      "round": 2,
+      "roundName": "Quarter final",
+      "runoutsA": 0,
+      "runoutsB": 0,
       "scoreA": 0,
       "scoreB": 1,
+      "sets": [],
       "starttime": "2021-11-13T20:15:00",
-      "stoptime": "2021-11-13T20:54:08"
+      "stoptime": "2021-11-13T20:54:08",
+      "table": {
+        "branch": "Snooker",
+        "branchId": 4,
+        "cloth": "",
+        "description": "",
+        "manufacturer": "",
+        "model": "Rasson Magnum",
+        "name": "31",
+        "pockets": "",
+        "size": 12,
+        "slate": "",
+        "tableId": 2842390,
+        "venue": {
+          "image": "https://img.cuescore.com/image/e/3/ea714c9bb52caa765f7707d5dcbe7f3a.png?t=1533571231",
+          "name": "147 Break Zamieniecka",
+          "owner": {
+            "logo": "//img.cuescore.com/image/7/2/71487152007d737c2f5de4f7821f7c9e.png?t=1555512394",
+            "name": "MGL Cue Sports",
+            "organizationId": 5133719,
+            "profileColor": "58a5fc",
+            "stub": "mglcuesports",
+            "url": "https://cuescore.com/mglcuesports"
+          },
+          "url": "https://cuescore.com/venue/147+Break+Zamieniecka/2842336",
+          "venueId": 2842336
+        }
+      },
+      "tournamentId": 10633531,
+      "useInnings": false,
+      "videoLink": "",
+      "winnerNext": 13
     },
     {
+      "bestOfSets": 0,
+      "branch": 4,
+      "challengeId": 0,
+      "comment": "",
+      "curVersion": 44,
+      "discipline": "Snooker 6-reds",
+      "disciplineId": 102,
+      "frames": [],
+      "groupNo": 0,
+      "highBreaksA": "",
+      "highBreaksB": "",
+      "inningsPlayerA": 0,
+      "inningsPlayerB": 0,
+      "lagWinner": "",
+      "loserNext": "",
       "matchId": 10634395,
+      "matchType": 0,
+      "matchno": 10,
+      "matchstatus": "finished",
+      "matchstatusCode": 2,
+      "notes": [],
+      "penalty": 0,
       "playerA": {
+        "country": {
+          "alpha3": "POL",
+          "continent": "Europe",
+          "image": "https://cuescore.com/img/flags/png-country-4x2-none/res-640x480/pl.png",
+          "name": "Poland"
+        },
+        "firstname": "Karol Wiktor",
+        "image": "https://img.cuescore.com/image/e/4/ed6659327cf04574e94b567cebaf4db5.png?t=1667822471",
+        "lastname": "Pahulak",
         "name": "Karol Wiktor Pahulak",
-        "playerId": 3669628
+        "playerId": 3669628,
+        "represents": [],
+        "url": "https://cuescore.com/player/Karol+Wiktor+Pahulak/3669628"
       },
       "playerB": {
+        "country": {
+          "alpha3": "POL",
+          "continent": "Europe",
+          "image": "https://cuescore.com/img/flags/png-country-4x2-none/res-640x480/pl.png",
+          "name": "Poland"
+        },
+        "firstname": "Wojtek",
+        "image": "https://img.cuescore.com/image/0/4/01804c5bd02dda143dcf7515fe41e2c6.png?t=1698014627",
+        "lastname": "Zagdan",
         "name": "Wojtek Zagdan",
-        "playerId": 8357717
+        "playerId": 8357717,
+        "represents": [],
+        "url": "https://cuescore.com/player/Wojtek+Zagdan/8357717"
       },
+      "properties": {
+        "penalty": []
+      },
+      "raceTo": 1,
+      "round": 2,
+      "roundName": "Quarter final",
+      "runoutsA": 0,
+      "runoutsB": 0,
       "scoreA": 0,
       "scoreB": 1,
+      "sets": [],
       "starttime": "2021-11-13T20:03:00",
-      "stoptime": "2021-11-13T20:16:54"
+      "stoptime": "2021-11-13T20:16:54",
+      "table": {
+        "branch": "Snooker",
+        "branchId": 4,
+        "cloth": "",
+        "description": "",
+        "manufacturer": "",
+        "model": "Rasson Magnum",
+        "name": "30",
+        "pockets": "",
+        "size": 12,
+        "slate": "",
+        "tableId": 2842389,
+        "venue": {
+          "image": "https://img.cuescore.com/image/e/3/ea714c9bb52caa765f7707d5dcbe7f3a.png?t=1533571231",
+          "name": "147 Break Zamieniecka",
+          "owner": {
+            "logo": "//img.cuescore.com/image/7/2/71487152007d737c2f5de4f7821f7c9e.png?t=1555512394",
+            "name": "MGL Cue Sports",
+            "organizationId": 5133719,
+            "profileColor": "58a5fc",
+            "stub": "mglcuesports",
+            "url": "https://cuescore.com/mglcuesports"
+          },
+          "url": "https://cuescore.com/venue/147+Break+Zamieniecka/2842336",
+          "venueId": 2842336
+        }
+      },
+      "tournamentId": 10633531,
+      "useInnings": false,
+      "videoLink": "",
+      "winnerNext": 13
     },
     {
+      "bestOfSets": 0,
+      "branch": 4,
+      "challengeId": 0,
+      "comment": "",
+      "curVersion": 44,
+      "discipline": "Snooker 6-reds",
+      "disciplineId": 102,
+      "frames": [],
+      "groupNo": 0,
+      "highBreaksA": "",
+      "highBreaksB": "",
+      "inningsPlayerA": 0,
+      "inningsPlayerB": 0,
+      "lagWinner": "",
+      "loserNext": "",
       "matchId": 10634398,
+      "matchType": 0,
+      "matchno": 11,
+      "matchstatus": "finished",
+      "matchstatusCode": 2,
+      "notes": [],
+      "penalty": 0,
       "playerA": {
+        "country": {
+          "alpha3": "POL",
+          "continent": "Europe",
+          "image": "https://cuescore.com/img/flags/png-country-4x2-none/res-640x480/pl.png",
+          "name": "Poland"
+        },
+        "firstname": "Tomasz",
+        "image": "https://img.cuescore.com/image/6/4/6f08f3b8298221d8dc1f19cf7e5b1e93.png?t=1687249101",
+        "lastname": "Kozieł",
         "name": "Tomasz Kozieł",
-        "playerId": 8493519
+        "playerId": 8493519,
+        "represents": [],
+        "url": "https://cuescore.com/player/Tomasz+Kozie%C5%82/8493519"
       },
       "playerB": {
+        "country": {
+          "alpha3": "POL",
+          "continent": "Europe",
+          "image": "https://cuescore.com/img/flags/png-country-4x2-none/res-640x480/pl.png",
+          "name": "Poland"
+        },
+        "firstname": "Adam",
+        "image": "https://img.cuescore.com/image/8/4/862c792ba8eb7f97e626fbe6cbcc59f6.png",
+        "lastname": "Adamczyk",
         "name": "Adam Adamczyk",
-        "playerId": 3505949
+        "playerId": 3505949,
+        "represents": [],
+        "url": "https://cuescore.com/player/Adam+Adamczyk/3505949"
       },
+      "properties": {
+        "penalty": []
+      },
+      "raceTo": 1,
+      "round": 2,
+      "roundName": "Quarter final",
+      "runoutsA": 0,
+      "runoutsB": 0,
       "scoreA": 1,
       "scoreB": 0,
+      "sets": [],
       "starttime": "2021-11-13T20:17:00",
-      "stoptime": "2021-11-13T20:17:22"
+      "stoptime": "2021-11-13T20:17:22",
+      "table": {
+        "branch": "Snooker",
+        "branchId": 4,
+        "cloth": "",
+        "description": "",
+        "manufacturer": "",
+        "model": "Rasson Magnum",
+        "name": "30",
+        "pockets": "",
+        "size": 12,
+        "slate": "",
+        "tableId": 2842389,
+        "venue": {
+          "image": "https://img.cuescore.com/image/e/3/ea714c9bb52caa765f7707d5dcbe7f3a.png?t=1533571231",
+          "name": "147 Break Zamieniecka",
+          "owner": {
+            "logo": "//img.cuescore.com/image/7/2/71487152007d737c2f5de4f7821f7c9e.png?t=1555512394",
+            "name": "MGL Cue Sports",
+            "organizationId": 5133719,
+            "profileColor": "58a5fc",
+            "stub": "mglcuesports",
+            "url": "https://cuescore.com/mglcuesports"
+          },
+          "url": "https://cuescore.com/venue/147+Break+Zamieniecka/2842336",
+          "venueId": 2842336
+        }
+      },
+      "tournamentId": 10633531,
+      "useInnings": false,
+      "videoLink": "",
+      "winnerNext": 14
     },
     {
+      "bestOfSets": 0,
+      "branch": 4,
+      "challengeId": 0,
+      "comment": "",
+      "curVersion": 44,
+      "discipline": "Snooker 6-reds",
+      "disciplineId": 102,
+      "frames": [],
+      "groupNo": 0,
+      "highBreaksA": "",
+      "highBreaksB": "",
+      "inningsPlayerA": 0,
+      "inningsPlayerB": 0,
+      "lagWinner": "",
+      "loserNext": "",
       "matchId": 10634401,
+      "matchType": 0,
+      "matchno": 12,
+      "matchstatus": "finished",
+      "matchstatusCode": 2,
+      "notes": [],
+      "penalty": 0,
       "playerA": {
+        "country": {
+          "alpha3": "POL",
+          "continent": "Europe",
+          "image": "https://cuescore.com/img/flags/png-country-4x2-none/res-640x480/pl.png",
+          "name": "Poland"
+        },
+        "firstname": "Żaneta",
+        "image": "https://img.cuescore.com/image/8/4/862c792ba8eb7f97e626fbe6cbcc59f6.png",
+        "lastname": "Foniok",
         "name": "Żaneta Foniok",
-        "playerId": 5052786
+        "playerId": 5052786,
+        "represents": [],
+        "url": "https://cuescore.com/player/%C5%BBaneta+Foniok/5052786"
       },
       "playerB": {
+        "country": {
+          "alpha3": "POL",
+          "continent": "Europe",
+          "image": "https://cuescore.com/img/flags/png-country-4x2-none/res-640x480/pl.png",
+          "name": "Poland"
+        },
+        "firstname": "Łukasz",
+        "image": "https://img.cuescore.com/image/e/4/e86296a6c001a4bfd8e7561efe4be53d.png?t=1636882173",
+        "lastname": "Kowalski",
         "name": "Łukasz Kowalski",
-        "playerId": 2357839
+        "playerId": 2357839,
+        "represents": [],
+        "url": "https://cuescore.com/player/%C5%81ukasz+Kowalski/2357839"
       },
+      "properties": {
+        "penalty": []
+      },
+      "raceTo": 1,
+      "round": 2,
+      "roundName": "Quarter final",
+      "runoutsA": 0,
+      "runoutsB": 0,
       "scoreA": 0,
       "scoreB": 1,
+      "sets": [],
       "starttime": "2021-11-13T20:17:00",
-      "stoptime": "2021-11-13T20:46:46"
+      "stoptime": "2021-11-13T20:46:46",
+      "table": {
+        "branch": "Snooker",
+        "branchId": 4,
+        "cloth": "",
+        "description": "",
+        "manufacturer": "",
+        "model": "Rasson Magnum",
+        "name": "30",
+        "pockets": "",
+        "size": 12,
+        "slate": "",
+        "tableId": 2842389,
+        "venue": {
+          "image": "https://img.cuescore.com/image/e/3/ea714c9bb52caa765f7707d5dcbe7f3a.png?t=1533571231",
+          "name": "147 Break Zamieniecka",
+          "owner": {
+            "logo": "//img.cuescore.com/image/7/2/71487152007d737c2f5de4f7821f7c9e.png?t=1555512394",
+            "name": "MGL Cue Sports",
+            "organizationId": 5133719,
+            "profileColor": "58a5fc",
+            "stub": "mglcuesports",
+            "url": "https://cuescore.com/mglcuesports"
+          },
+          "url": "https://cuescore.com/venue/147+Break+Zamieniecka/2842336",
+          "venueId": 2842336
+        }
+      },
+      "tournamentId": 10633531,
+      "useInnings": false,
+      "videoLink": "",
+      "winnerNext": 14
     },
     {
+      "bestOfSets": 0,
+      "branch": 4,
+      "challengeId": 0,
+      "comment": "",
+      "curVersion": 44,
+      "discipline": "Snooker 6-reds",
+      "disciplineId": 102,
+      "frames": [],
+      "groupNo": 0,
+      "highBreaksA": "",
+      "highBreaksB": "",
+      "inningsPlayerA": 0,
+      "inningsPlayerB": 0,
+      "lagWinner": "",
+      "loserNext": "",
       "matchId": 10634404,
+      "matchType": 0,
+      "matchno": 13,
+      "matchstatus": "finished",
+      "matchstatusCode": 2,
+      "notes": [],
+      "penalty": 0,
       "playerA": {
+        "country": {
+          "alpha3": "POL",
+          "continent": "Europe",
+          "image": "https://cuescore.com/img/flags/png-country-4x2-none/res-640x480/pl.png",
+          "name": "Poland"
+        },
+        "firstname": "Paweł",
+        "image": "https://img.cuescore.com/image/f/4/f2f78115ac18e67c05b8183870953588.png?t=1554798742",
+        "lastname": "Seremak",
         "name": "Paweł Seremak",
-        "playerId": 3602085
+        "playerId": 3602085,
+        "represents": [],
+        "url": "https://cuescore.com/player/Pawe%C5%82+Seremak/3602085"
       },
       "playerB": {
+        "country": {
+          "alpha3": "POL",
+          "continent": "Europe",
+          "image": "https://cuescore.com/img/flags/png-country-4x2-none/res-640x480/pl.png",
+          "name": "Poland"
+        },
+        "firstname": "Wojtek",
+        "image": "https://img.cuescore.com/image/0/4/01804c5bd02dda143dcf7515fe41e2c6.png?t=1698014627",
+        "lastname": "Zagdan",
         "name": "Wojtek Zagdan",
-        "playerId": 8357717
+        "playerId": 8357717,
+        "represents": [],
+        "url": "https://cuescore.com/player/Wojtek+Zagdan/8357717"
       },
+      "properties": {
+        "penalty": []
+      },
+      "raceTo": 1,
+      "round": 3,
+      "roundName": "Semi final",
+      "runoutsA": 0,
+      "runoutsB": 0,
       "scoreA": 0,
       "scoreB": 1,
+      "sets": [],
       "starttime": "2021-11-13T20:54:00",
-      "stoptime": "2021-11-13T21:22:58"
+      "stoptime": "2021-11-13T21:22:58",
+      "table": {
+        "branch": "Snooker",
+        "branchId": 4,
+        "cloth": "",
+        "description": "",
+        "manufacturer": "",
+        "model": "Rasson Magnum",
+        "name": "31",
+        "pockets": "",
+        "size": 12,
+        "slate": "",
+        "tableId": 2842390,
+        "venue": {
+          "image": "https://img.cuescore.com/image/e/3/ea714c9bb52caa765f7707d5dcbe7f3a.png?t=1533571231",
+          "name": "147 Break Zamieniecka",
+          "owner": {
+            "logo": "//img.cuescore.com/image/7/2/71487152007d737c2f5de4f7821f7c9e.png?t=1555512394",
+            "name": "MGL Cue Sports",
+            "organizationId": 5133719,
+            "profileColor": "58a5fc",
+            "stub": "mglcuesports",
+            "url": "https://cuescore.com/mglcuesports"
+          },
+          "url": "https://cuescore.com/venue/147+Break+Zamieniecka/2842336",
+          "venueId": 2842336
+        }
+      },
+      "tournamentId": 10633531,
+      "useInnings": false,
+      "videoLink": "",
+      "winnerNext": 15
     },
     {
+      "bestOfSets": 0,
+      "branch": 4,
+      "challengeId": 0,
+      "comment": "",
+      "curVersion": 44,
+      "discipline": "Snooker 6-reds",
+      "disciplineId": 102,
+      "frames": [],
+      "groupNo": 0,
+      "highBreaksA": "",
+      "highBreaksB": "",
+      "inningsPlayerA": 0,
+      "inningsPlayerB": 0,
+      "lagWinner": "",
+      "loserNext": "",
       "matchId": 10634407,
+      "matchType": 0,
+      "matchno": 14,
+      "matchstatus": "finished",
+      "matchstatusCode": 2,
+      "notes": [],
+      "penalty": 0,
       "playerA": {
+        "country": {
+          "alpha3": "POL",
+          "continent": "Europe",
+          "image": "https://cuescore.com/img/flags/png-country-4x2-none/res-640x480/pl.png",
+          "name": "Poland"
+        },
+        "firstname": "Tomasz",
+        "image": "https://img.cuescore.com/image/6/4/6f08f3b8298221d8dc1f19cf7e5b1e93.png?t=1687249101",
+        "lastname": "Kozieł",
         "name": "Tomasz Kozieł",
-        "playerId": 8493519
+        "playerId": 8493519,
+        "represents": [],
+        "url": "https://cuescore.com/player/Tomasz+Kozie%C5%82/8493519"
       },
       "playerB": {
+        "country": {
+          "alpha3": "POL",
+          "continent": "Europe",
+          "image": "https://cuescore.com/img/flags/png-country-4x2-none/res-640x480/pl.png",
+          "name": "Poland"
+        },
+        "firstname": "Łukasz",
+        "image": "https://img.cuescore.com/image/e/4/e86296a6c001a4bfd8e7561efe4be53d.png?t=1636882173",
+        "lastname": "Kowalski",
         "name": "Łukasz Kowalski",
-        "playerId": 2357839
+        "playerId": 2357839,
+        "represents": [],
+        "url": "https://cuescore.com/player/%C5%81ukasz+Kowalski/2357839"
       },
+      "properties": {
+        "penalty": []
+      },
+      "raceTo": 1,
+      "round": 3,
+      "roundName": "Semi final",
+      "runoutsA": 0,
+      "runoutsB": 0,
       "scoreA": 0,
       "scoreB": 1,
+      "sets": [],
       "starttime": "2021-11-13T20:47:00",
-      "stoptime": "2021-11-13T21:19:43"
+      "stoptime": "2021-11-13T21:19:43",
+      "table": {
+        "branch": "Snooker",
+        "branchId": 4,
+        "cloth": "",
+        "description": "",
+        "manufacturer": "",
+        "model": "Rasson Magnum",
+        "name": "30",
+        "pockets": "",
+        "size": 12,
+        "slate": "",
+        "tableId": 2842389,
+        "venue": {
+          "image": "https://img.cuescore.com/image/e/3/ea714c9bb52caa765f7707d5dcbe7f3a.png?t=1533571231",
+          "name": "147 Break Zamieniecka",
+          "owner": {
+            "logo": "//img.cuescore.com/image/7/2/71487152007d737c2f5de4f7821f7c9e.png?t=1555512394",
+            "name": "MGL Cue Sports",
+            "organizationId": 5133719,
+            "profileColor": "58a5fc",
+            "stub": "mglcuesports",
+            "url": "https://cuescore.com/mglcuesports"
+          },
+          "url": "https://cuescore.com/venue/147+Break+Zamieniecka/2842336",
+          "venueId": 2842336
+        }
+      },
+      "tournamentId": 10633531,
+      "useInnings": false,
+      "videoLink": "",
+      "winnerNext": 15
     },
     {
+      "bestOfSets": 0,
+      "branch": 4,
+      "challengeId": 0,
+      "comment": "",
+      "curVersion": 44,
+      "discipline": "Snooker 6-reds",
+      "disciplineId": 102,
+      "frames": [],
+      "groupNo": 0,
+      "highBreaksA": "",
+      "highBreaksB": "",
+      "inningsPlayerA": 0,
+      "inningsPlayerB": 0,
+      "lagWinner": "",
+      "loserNext": "",
       "matchId": 10634410,
+      "matchType": 0,
+      "matchno": 15,
+      "matchstatus": "finished",
+      "matchstatusCode": 2,
+      "notes": [],
+      "penalty": 0,
       "playerA": {
+        "country": {
+          "alpha3": "POL",
+          "continent": "Europe",
+          "image": "https://cuescore.com/img/flags/png-country-4x2-none/res-640x480/pl.png",
+          "name": "Poland"
+        },
+        "firstname": "Wojtek",
+        "image": "https://img.cuescore.com/image/0/4/01804c5bd02dda143dcf7515fe41e2c6.png?t=1698014627",
+        "lastname": "Zagdan",
         "name": "Wojtek Zagdan",
-        "playerId": 8357717
+        "playerId": 8357717,
+        "represents": [],
+        "url": "https://cuescore.com/player/Wojtek+Zagdan/8357717"
       },
       "playerB": {
+        "country": {
+          "alpha3": "POL",
+          "continent": "Europe",
+          "image": "https://cuescore.com/img/flags/png-country-4x2-none/res-640x480/pl.png",
+          "name": "Poland"
+        },
+        "firstname": "Łukasz",
+        "image": "https://img.cuescore.com/image/e/4/e86296a6c001a4bfd8e7561efe4be53d.png?t=1636882173",
+        "lastname": "Kowalski",
         "name": "Łukasz Kowalski",
-        "playerId": 2357839
+        "playerId": 2357839,
+        "represents": [],
+        "url": "https://cuescore.com/player/%C5%81ukasz+Kowalski/2357839"
       },
+      "properties": {
+        "penalty": []
+      },
+      "raceTo": 1,
+      "round": 4,
+      "roundName": "Final",
+      "runoutsA": 0,
+      "runoutsB": 0,
       "scoreA": 0,
       "scoreB": 1,
+      "sets": [],
       "starttime": "2021-11-13T21:28:00",
-      "stoptime": "2021-11-13T22:16:49"
+      "stoptime": "2021-11-13T22:16:49",
+      "table": {
+        "branch": "Snooker",
+        "branchId": 4,
+        "cloth": "",
+        "description": "",
+        "manufacturer": "",
+        "model": "Rasson Magnum",
+        "name": "31",
+        "pockets": "",
+        "size": 12,
+        "slate": "",
+        "tableId": 2842390,
+        "venue": {
+          "image": "https://img.cuescore.com/image/e/3/ea714c9bb52caa765f7707d5dcbe7f3a.png?t=1533571231",
+          "name": "147 Break Zamieniecka",
+          "owner": {
+            "logo": "//img.cuescore.com/image/7/2/71487152007d737c2f5de4f7821f7c9e.png?t=1555512394",
+            "name": "MGL Cue Sports",
+            "organizationId": 5133719,
+            "profileColor": "58a5fc",
+            "stub": "mglcuesports",
+            "url": "https://cuescore.com/mglcuesports"
+          },
+          "url": "https://cuescore.com/venue/147+Break+Zamieniecka/2842336",
+          "venueId": 2842336
+        }
+      },
+      "tournamentId": 10633531,
+      "useInnings": false,
+      "videoLink": "",
+      "winnerNext": ""
     }
   ],
   "name": "147 Break Zamieniecka MGL 2021/22 (2) Turniej Pocieszenia",
+  "organizers": [
+    {
+      "logo": "//img.cuescore.com/image/7/2/71487152007d737c2f5de4f7821f7c9e.png?t=1555512394",
+      "name": "MGL Cue Sports",
+      "organizationId": 5133719,
+      "profileColor": "58a5fc",
+      "stub": "mglcuesports",
+      "url": "https://cuescore.com/mglcuesports"
+    }
+  ],
+  "owner": {
+    "logo": "//img.cuescore.com/image/7/2/71487152007d737c2f5de4f7821f7c9e.png?t=1555512394",
+    "name": "MGL Cue Sports",
+    "organizationId": 5133719,
+    "profileColor": "58a5fc",
+    "stub": "mglcuesports",
+    "url": "https://cuescore.com/mglcuesports"
+  },
+  "preseeds": [],
+  "rankings": [],
+  "sequence": 0,
+  "standings": [],
   "starttime": "2021-11-13T17:30:00+01:00",
+  "status": "Finished",
+  "statusCode": 2,
   "stoptime": "2021-11-13T23:59:00+01:00",
   "timezone": "Europe/Warsaw",
   "tournamentId": 10633531,
@@ -244,7 +1377,17 @@
   "url": "https://cuescore.com/tournament/147+Break+Zamieniecka+MGL+2021%252F22+%282%29+Turniej+Pocieszenia/10633531",
   "venues": [
     {
+      "image": "https://img.cuescore.com/image/e/3/ea714c9bb52caa765f7707d5dcbe7f3a.png?t=1533571231",
       "name": "147 Break Zamieniecka",
+      "owner": {
+        "logo": "//img.cuescore.com/image/7/2/71487152007d737c2f5de4f7821f7c9e.png?t=1555512394",
+        "name": "MGL Cue Sports",
+        "organizationId": 5133719,
+        "profileColor": "58a5fc",
+        "stub": "mglcuesports",
+        "url": "https://cuescore.com/mglcuesports"
+      },
+      "url": "https://cuescore.com/venue/147+Break+Zamieniecka/2842336",
       "venueId": 2842336
     }
   ]

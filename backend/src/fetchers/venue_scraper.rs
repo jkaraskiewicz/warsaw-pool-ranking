@@ -64,7 +64,7 @@ impl VenueScraper {
             if page_ids.is_empty() {
                 // Debugging: Log why we didn't find anything
                 warn!("No tournaments found on page {}. URL: {}", pages.current_page(), url);
-                
+
                 // Check if we hit a known "No tournaments" state or something else
                 let body_selector = Selector::parse("body").unwrap();
                 let body_text = html.select(&body_selector).next().map(|e| e.inner_html()).unwrap_or_default();
@@ -109,7 +109,7 @@ impl VenueScraper {
         let base = format!("{}/venue/{}/{}/tournaments", BASE_URL, venue_name, venue_id);
         crate::pagination::build_paginated_url_with_params(&base, page)
     }
-    
+
     fn encode_venue_name_for_url(name: &str) -> String {
         // Use urlencoding to handle most cases, then replace %20 with + for spaces
         // This mimics Python's quote_plus behavior for standard spaces
@@ -170,7 +170,7 @@ impl VenueScraper {
                 if !href_str.contains("/tournament/") {
                     continue;
                 }
-                
+
                 let parsed_id = self.parse_tournament_id(Some(href_str));
                 match parsed_id {
                     Some(id) => {

@@ -47,9 +47,6 @@ impl CueScoreClient {
 
             let data: Value = response.json().await?;
 
-            // TODO: Parse tournament data from response
-            // This is scaffolding - implement actual parsing based on API structure
-
             if !Self::has_more_pages(&data) {
                 break;
             }
@@ -65,8 +62,8 @@ impl CueScoreClient {
         Ok(tournaments)
     }
 
-    /// Fetch tournament details including games
-    pub async fn fetch_tournament_details(&mut self, tournament_id: i64) -> Result<TournamentResponse> {
+    /// Fetch tournament raw text
+    pub async fn fetch_tournament_raw(&mut self, tournament_id: i64) -> Result<String> {
         let url = Self::build_tournament_url(tournament_id);
         info!("Fetching tournament {} from {}", tournament_id, url);
 
@@ -76,49 +73,53 @@ impl CueScoreClient {
             anyhow::bail!("API returned status: {}", response.status());
         }
 
-        // First get the raw JSON to debug
         let text = response.text().await?;
-        let preview: String = text.chars().take(500).collect();
-        info!("Response preview: {}", preview);
-
-        // Try to parse it
-        let data: TournamentResponse = serde_json::from_str(&text)
-            .with_context(|| {
-                let error_preview: String = text.chars().take(200).collect();
-                format!("Failed to parse tournament response. Raw: {}", error_preview)
-            })?;
-
-        Ok(data)
+        Ok(text)
     }
 
     /// Fetch tournament with cache integration
+    /// Saves FULL raw JSON to cache, then parses it.
     pub async fn fetch_and_cache_tournament(
         &mut self,
         tournament_id: i64,
         cache: &Cache,
     ) -> Result<Option<TournamentResponse>> {
-        // Check cache first
-        if let Some(cached) = self.load_from_cache(tournament_id, cache)? {
-            return Ok(Some(cached));
-        }
+        // 1. Try load from cache
+        let cached_value = cache.load_raw(&tournament_id.to_string())?;
 
-        // Fetch from API
-        match self.fetch_tournament_details(tournament_id).await {
-            Ok(tournament) => {
-                // Save to cache
-                if let Err(e) = self.save_to_cache(tournament_id, &tournament, cache) {
-                    warn!("Failed to save tournament {} to cache: {:?}", tournament_id, e);
+        let json_value = if let Some(val) = cached_value {
+            val
+        } else {
+            // 2. Fetch raw text
+            let text = match self.fetch_tournament_raw(tournament_id).await {
+                Ok(t) => t,
+                Err(e) => {
+                    log::error!("Failed to fetch tournament {}: {:?}", tournament_id, e);
+                    return Ok(None);
                 }
-                Ok(Some(tournament))
+            };
+
+            // 3. Parse to Value to ensure valid JSON and save FULL structure
+            let value: Value = serde_json::from_str(&text)
+                .with_context(|| format!("Failed to parse JSON for tournament {}", tournament_id))?;
+
+            // 4. Save Value to cache
+            if let Err(e) = cache.save_raw(&tournament_id.to_string(), &value) {
+                warn!("Failed to save tournament {} to cache: {:?}", tournament_id, e);
             }
-            Err(e) => {
-                log::error!("Failed to fetch/parse tournament {}: {:?}", tournament_id, e);
-                Ok(None)
-            }
-        }
+
+            value
+        };
+
+        // 5. Parse into domain struct (TournamentResponse)
+        // Even if the struct changes later, the cached Value has all fields.
+        let tournament: TournamentResponse = serde_json::from_value(json_value)
+            .with_context(|| format!("Failed to map JSON to TournamentResponse for {}", tournament_id))?;
+
+        Ok(Some(tournament))
     }
 
-    // --- Helper Methods (Short Functions) ---
+    // --- Helper Methods ---
 
     fn build_tournament_url(tournament_id: i64) -> String {
         format!("{}/tournament/?id={}", API_BASE_URL, tournament_id)
@@ -133,25 +134,6 @@ impl CueScoreClient {
         response.status().is_success()
     }
 
-    fn load_from_cache(&self, tournament_id: i64, cache: &Cache) -> Result<Option<TournamentResponse>> {
-        let raw = cache.load_raw(&tournament_id.to_string())?;
-
-        match raw {
-            Some(json) => {
-                let tournament = serde_json::from_value(json)?;
-                Ok(Some(tournament))
-            }
-            None => Ok(None),
-        }
-    }
-
-    fn save_to_cache(&self, tournament_id: i64, tournament: &TournamentResponse, cache: &Cache) -> Result<()> {
-        let raw_json = serde_json::to_value(tournament)?;
-        cache.save_raw(&tournament_id.to_string(), &raw_json)?;
-        Ok(())
-    }
-
-    /// Check if there are more pages in the response
     fn has_more_pages(data: &Value) -> bool {
         parsers::has_more_pages(data)
     }

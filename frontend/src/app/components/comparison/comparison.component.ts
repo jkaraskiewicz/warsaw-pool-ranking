@@ -5,10 +5,11 @@ import { MatIconModule } from '@angular/material/icon';
 import { MatButtonModule } from '@angular/material/button';
 import { MatProgressSpinnerModule } from '@angular/material/progress-spinner';
 import { MatChipsModule } from '@angular/material/chips';
-import { MatTableModule } from '@angular/material/table';
 import { PlayerService } from '../../services/player.service';
 import { HeadToHeadResponse } from '../../models/api';
 import { TranslatePipe } from '../../pipes/translate.pipe';
+import { HeadToHeadStatsComponent } from './stats/head-to-head-stats.component';
+import { MatchHistoryComponent } from './history/match-history.component';
 
 @Component({
   selector: 'app-comparison',
@@ -20,8 +21,9 @@ import { TranslatePipe } from '../../pipes/translate.pipe';
     MatButtonModule,
     MatProgressSpinnerModule,
     MatChipsModule,
-    MatTableModule,
-    TranslatePipe
+    TranslatePipe,
+    HeadToHeadStatsComponent,
+    MatchHistoryComponent
   ],
   templateUrl: './comparison.component.html',
   styleUrls: ['./comparison.component.scss']
@@ -29,7 +31,6 @@ import { TranslatePipe } from '../../pipes/translate.pipe';
 export class ComparisonComponent implements OnInit {
   comparison = signal<HeadToHeadResponse | null>(null);
   loading = signal<boolean>(true);
-  displayedColumns: string[] = ['date', 'tournament', 'score'];
 
   constructor(
     private playerService: PlayerService,
@@ -55,11 +56,11 @@ export class ComparisonComponent implements OnInit {
         }
       });
   }
-  
+
   close() {
     this.dialogRef.close();
   }
-  
+
   getConfidenceColor(level: string): string {
     switch (level) {
       case 'established': return 'primary';
@@ -71,9 +72,5 @@ export class ComparisonComponent implements OnInit {
 
   formatProb(prob: number): string {
     return (prob * 100).toFixed(1) + '%';
-  }
-  
-  formatDate(dateStr: string): string {
-    return new Date(dateStr).toLocaleDateString();
   }
 }

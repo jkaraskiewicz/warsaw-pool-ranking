@@ -1,0 +1,81 @@
+{
+  "access": [],
+  "banner": [],
+  "branch": 1,
+  "breakrule": "alternate",
+  "contacts": [
+    {
+      "country": {
+        "alpha3": "POL",
+        "continent": "Europe",
+        "image": "https://cuescore.com/img/flags/png-country-4x2-none/res-640x480/pl.png",
+        "name": "Poland"
+      },
+      "firstname": "Michał",
+      "image": "https://img.cuescore.com/image/1/4/15d291e83ead350107ae474e8623a6f5.png?t=1504629089",
+      "lastname": "Nowak",
+      "name": "Michał Nowak",
+      "playerId": 1620195,
+      "represents": [],
+      "url": "https://cuescore.com/player/Micha%C5%82+Nowak/1620195"
+    }
+  ],
+  "deadline": "",
+  "defaultRaceTo": 4,
+  "description": "Czwartki 19:00 | klub 147 Break Zamieniecka | odmiana Mutliball (9 i 10 bil) | wpisowe 60 zł | system szwajcarski | limit zawodników: 21, decyduje kolejność zgłoszeń\r\n\r\nZAPISY: wiadomość SMS pod numer 517 648 279 do 18:45 w dniu turnieju lub na stronie cuescore \r\n\r\nZapraszamy do sklepu bilardowego Shooters - sklep dla graczy! www.sklepbilardowy.eu",
+  "discipline": "Multiball",
+  "disciplineId": 10,
+  "displayDate": "January 15, 2026",
+  "dresscode": "",
+  "entrystart": "",
+  "format": 4,
+  "handicap": [],
+  "matches": [],
+  "name": "Warsaw Open VI - turniej 2/15",
+  "organizers": [
+    {
+      "logo": "//img.cuescore.com/image/9/2/9b59b70e156f2f8d0f1a879411c6ffd1.png?t=1576160578",
+      "name": "Black Ball Events",
+      "organizationId": 7011764,
+      "profileColor": "000000",
+      "stub": "blackballevents",
+      "url": "https://cuescore.com/blackballevents"
+    }
+  ],
+  "owner": {
+    "logo": "//img.cuescore.com/image/9/2/9b59b70e156f2f8d0f1a879411c6ffd1.png?t=1576160578",
+    "name": "Black Ball Events",
+    "organizationId": 7011764,
+    "profileColor": "000000",
+    "stub": "blackballevents",
+    "url": "https://cuescore.com/blackballevents"
+  },
+  "preseeds": [],
+  "rankings": [],
+  "sequence": 0,
+  "standings": [],
+  "starttime": "2026-01-15T19:00:00+01:00",
+  "status": "Open",
+  "statusCode": 0,
+  "stoptime": "2026-01-15T23:00:00+01:00",
+  "timezone": "Europe/Warsaw",
+  "tournamentId": 73285150,
+  "type": 0,
+  "url": "https://cuescore.com/tournament/Warsaw+Open+VI+-+turniej+2%252F15/73285150",
+  "venues": [
+    {
+      "image": "https://img.cuescore.com/image/e/3/ea714c9bb52caa765f7707d5dcbe7f3a.png?t=1533571231",
+      "name": "147 Break Zamieniecka",
+      "owner": {
+        "logo": "//img.cuescore.com/image/7/2/71487152007d737c2f5de4f7821f7c9e.png?t=1555512394",
+        "name": "MGL Cue Sports",
+        "organizationId": 5133719,
+        "profileColor": "58a5fc",
+        "stub": "mglcuesports",
+        "url": "https://cuescore.com/mglcuesports"
+      },
+      "url": "https://cuescore.com/venue/147+Break+Zamieniecka/2842336",
+      "venueId": 2842336
+    }
+  ]
+}

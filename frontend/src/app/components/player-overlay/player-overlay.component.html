@@ -1,6 +1,11 @@
 <div class="overlay-container">
   <div class="overlay-header">
-    <h2 mat-dialog-title *ngIf="player">{{ player.name }}</h2>
+    <div class="player-header-info">
+      <div class="avatar large" [ngStyle]="{'background-image': player?.avatarUrl ? 'url(' + player?.avatarUrl + ')' : 'none'}">
+        <ng-container *ngIf="!player?.avatarUrl">{{ player?.name?.charAt(0) }}</ng-container>
+      </div>
+      <h2 mat-dialog-title *ngIf="player">{{ player.name }}</h2>
+    </div>
     <button mat-icon-button (click)="close()">
       <mat-icon>close</mat-icon>
     </button>

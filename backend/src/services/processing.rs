@@ -41,7 +41,7 @@ impl ProcessingService {
         // Atomic swap
         std::fs::rename(&temp_db_path, &db_path)?;
         info!("Successfully swapped database to {}", db_path);
-        
+
         info!("=== Processing Complete ===");
         Ok(())
     }
@@ -65,7 +65,7 @@ impl ProcessingService {
         // Step 4: Calculate and save ratings for each period
         for period in &self.config.rating.periods {
             info!("  Calculating ratings for period: {}", period.name);
-            
+
             let filtered_games = if let Some(years) = period.years {
                 let cutoff_date = Utc::now().naive_utc() - Duration::days((years * 365) as i64);
                 all_expanded_games.iter()
@@ -112,18 +112,18 @@ impl ProcessingService {
                 continue;
             }
 
-            let player_names = self.extract_player_names(tournament);
+            let player_info_map = self.extract_player_info(tournament);
 
             let tournament_db = self.insert_tournament_to_db(conn, tournament)?;
             let mut games = self.expand_tournament_games(tournament)?;
 
             games.retain(|g| {
-                let w_name = player_names.get(&g.winner_id).map(|s| s.as_str()).unwrap_or("");
-                let l_name = player_names.get(&g.loser_id).map(|s| s.as_str()).unwrap_or("");
+                let w_name = player_info_map.get(&g.winner_id).map(|p| p.name.as_str()).unwrap_or("");
+                let l_name = player_info_map.get(&g.loser_id).map(|p| p.name.as_str()).unwrap_or("");
                 !self.is_team_player(w_name) && !self.is_team_player(l_name)
             });
 
-            self.insert_games_to_db(conn, &games, tournament_db.id, &player_names)?;
+            self.insert_games_to_db(conn, &games, tournament_db.id, &player_info_map)?;
             all_games.append(&mut games);
         }
 
@@ -138,10 +138,10 @@ impl ProcessingService {
 
     fn is_doubles_tournament(&self, name: &str) -> bool {
         let lower = name.to_lowercase();
-        lower.contains("debel") || 
-        lower.contains("deblowy") || 
-        lower.contains("double") || 
-        lower.contains(" par") || 
+        lower.contains("debel") ||
+        lower.contains("deblowy") ||
+        lower.contains("double") ||
+        lower.contains(" par") ||
         lower.contains("pary") ||
         lower.contains("team")
     }
@@ -204,20 +204,24 @@ impl ProcessingService {
         domain::games_expansion::expand_tournament_to_games(tournament)
     }
 
-    fn extract_player_names(
+    fn extract_player_info(
         &self,
         tournament: &crate::domain::TournamentResponse,
-    ) -> HashMap<i64, String> {
-        let mut names = HashMap::new();
+    ) -> HashMap<i64, domain::PlayerInfo> {
+        let mut players = HashMap::new();
 
         for match_data in &tournament.matches {
             if match_data.is_played() {
-                names.insert(match_data.player_a_id(), match_data.player_a_name());
-                names.insert(match_data.player_b_id(), match_data.player_b_name());
+                // Clone to store independent PlayerInfo structs
+                if let Some(player_id) = match_data.player_a.player_id {
+                    players.entry(player_id).or_insert_with(|| match_data.player_a.clone());
+                }
+                if let Some(player_id) = match_data.player_b.player_id {
+                    players.entry(player_id).or_insert_with(|| match_data.player_b.clone());
+                }
             }
         }
-
-        names
+        players
     }
 
     fn insert_games_to_db(
@@ -225,19 +229,24 @@ impl ProcessingService {
         conn: &mut DbConn,
         games: &[ExpandedGame],
         tournament_db_id: i32,
-        player_names: &HashMap<i64, String>,
+        player_info_map: &HashMap<i64, domain::PlayerInfo>,
     ) -> Result<()> {
         for game in games {
-            let first_player = self.upsert_player(conn, game.winner_id, player_names)?;
-            let second_player = self.upsert_player(conn, game.loser_id, player_names)?;
+            let first_player_info = player_info_map.get(&game.winner_id)
+                .ok_or_else(|| anyhow::anyhow!("Winner not found in player_info_map"))?;
+            let second_player_info = player_info_map.get(&game.loser_id)
+                .ok_or_else(|| anyhow::anyhow!("Loser not found in player_info_map"))?;
+
+            let first_player_db = self.upsert_player(conn, first_player_info)?;
+            let second_player_db = self.upsert_player(conn, second_player_info)?;
 
             database::games::insert_game(
                 conn,
                 tournament_db_id,
-                first_player.id,
-                second_player.id,
-                1, 
-                0, 
+                first_player_db.id,
+                second_player_db.id,
+                1,
+                0,
                 game.date,
                 game.weight,
             )?;
@@ -249,14 +258,12 @@ impl ProcessingService {
     fn upsert_player(
         &self,
         conn: &mut DbConn,
-        cuescore_id: i64,
-        player_names: &HashMap<i64, String>,
+        player_info: &crate::domain::PlayerInfo,
     ) -> Result<database::Player> {
-        let name = player_names
-            .get(&cuescore_id)
-            .map(|s| s.as_str())
-            .unwrap_or("Unknown Player");
-        database::players::upsert_player(conn, cuescore_id, name)
+        let cuescore_id = player_info.player_id.unwrap_or(0);
+        let name = &player_info.name;
+        let avatar_url = player_info.image.as_deref();
+        database::players::upsert_player(conn, cuescore_id, name, avatar_url)
     }
 
     fn apply_time_decay_weights(&self, games: &mut [ExpandedGame]) {
@@ -301,7 +308,11 @@ impl ProcessingService {
 
         for player_rating in ratings {
             let cuescore_id = player_rating.player_id as i64;
-            let player = database::players::upsert_player(conn, cuescore_id, "Unknown Player")?;
+            // When saving ratings, we don't have direct access to avatar_url here from PlayerInfo
+            // So, for existing players, this upsert will just update rating-related fields if needed,
+            // but won't overwrite avatar_url if it's already set.
+            // For new players inserted here, avatar_url will be None, to be updated later by game insertion path.
+            let player = database::players::upsert_player(conn, cuescore_id, "Unknown Player", None)?;
 
             if let Err(e) = database::ratings::insert_rating(
                 conn,

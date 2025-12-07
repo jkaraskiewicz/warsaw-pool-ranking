@@ -1,29 +1,36 @@
-<mat-toolbar color="primary">
-  <span class="brand" [routerLink]="['/']">
-    <mat-icon>poll</mat-icon>
-    {{ title | translate }}
-  </span>
+<div class="bg-blobs">
+  <div class="blob-1"></div>
+  <div class="blob-2"></div>
+</div>
 
-  <span class="spacer"></span>
+<div class="main-container">
+  <!-- Header Section -->
+  <header class="app-header">
+    <div class="header-content">
+      <h1 class="app-title">
+        {{ 'WARSAW_POOL_RANKINGS' | translate }}
+      </h1>
+      <p class="app-subtitle">Global leaderboard and player statistics</p>
+    </div>
 
-  <button mat-button [matMenuTriggerFor]="langMenu">
-    {{ currentLang() | uppercase }}
-    <mat-icon iconPositionEnd>arrow_drop_down</mat-icon>
-  </button>
-  <mat-menu #langMenu="matMenu">
-    <button mat-menu-item (click)="setLanguage('en')">English (EN)</button>
-    <button mat-menu-item (click)="setLanguage('pl')">Polski (PL)</button>
-  </mat-menu>
+    <div class="header-actions">
+      <!-- Language Dropdown -->
+      <button class="btn-glass" [matMenuTriggerFor]="langMenu">
+        {{ currentLang() | uppercase }}
+        <mat-icon iconPositionEnd>arrow_drop_down</mat-icon>
+      </button>
+      <mat-menu #langMenu="matMenu" class="custom-menu">
+        <button mat-menu-item (click)="setLanguage('en')">English (EN)</button>
+        <button mat-menu-item (click)="setLanguage('pl')">Polski (PL)</button>
+      </mat-menu>
 
-  <button mat-icon-button (click)="toggleTheme()">
-    <mat-icon>{{ isDarkMode() ? 'light_mode' : 'dark_mode' }}</mat-icon>
-  </button>
+      <!-- Admin Button -->
+      <button class="btn-primary" [routerLink]="['/admin']">
+        {{ 'ADMIN_PANEL' | translate }}
+      </button>
+    </div>
+  </header>
 
-  <button mat-icon-button [routerLink]="['/admin']" [attr.aria-label]="'ADMIN_PANEL' | translate">
-    <mat-icon>admin_panel_settings</mat-icon>
-  </button>
-</mat-toolbar>
-
-<div class="container main-content">
+  <!-- Router Outlet -->
   <router-outlet></router-outlet>
 </div>

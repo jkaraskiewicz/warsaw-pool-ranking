@@ -1,121 +1,115 @@
-@use '@angular/material' as mat;
-
-// Define a modern custom typography config using Inter
-$custom-typography: mat.define-typography-config(
-  $font-family: 'Figtree, sans-serif',
-  $headline-1: mat.define-typography-level(96px, 112px, 300, $letter-spacing: -1.5px),
-  $headline-2: mat.define-typography-level(60px, 72px, 300, $letter-spacing: -0.5px),
-  $headline-3: mat.define-typography-level(48px, 56px, 400, $letter-spacing: 0px),
-  $headline-4: mat.define-typography-level(34px, 40px, 600, $letter-spacing: 0.25px), // Slightly bolder
-  $headline-5: mat.define-typography-level(24px, 32px, 600, $letter-spacing: 0px),
-  $headline-6: mat.define-typography-level(20px, 32px, 600, $letter-spacing: 0.15px),
-  $subtitle-1: mat.define-typography-level(16px, 28px, 500, $letter-spacing: 0.15px),
-  $subtitle-2: mat.define-typography-level(14px, 22px, 600, $letter-spacing: 0.1px),
-  $body-1:     mat.define-typography-level(16px, 24px, 400, $letter-spacing: 0.5px),
-  $body-2:     mat.define-typography-level(14px, 20px, 400, $letter-spacing: 0.25px),
-  $button:     mat.define-typography-level(14px, 14px, 600, $letter-spacing: 1.25px),
-  $caption:    mat.define-typography-level(12px, 20px, 400, $letter-spacing: 0.4px),
-  $overline:   mat.define-typography-level(10px, 32px, 400, $letter-spacing: 1.5px)
-);
-
-@include mat.core();
-
-// Modern Blue Palette (inspired by Tailwind Blue/Slate)
-$modern-primary: mat.define-palette(mat.$blue-palette, 600, 400, 800);
-$modern-accent:  mat.define-palette(mat.$cyan-palette, 500, 300, 900);
-$modern-warn:    mat.define-palette(mat.$red-palette);
-
-// Light Theme
-$light-theme: mat.define-light-theme((
-  color: (
-    primary: $modern-primary,
-    accent: $modern-accent,
-    warn: $modern-warn,
-  ),
-  typography: $custom-typography,
-  density: 0,
-));
-
-// Dark Theme
-$dark-theme: mat.define-dark-theme((
-  color: (
-    primary: mat.define-palette(mat.$blue-palette, 300), // Lighter blue for dark mode
-    accent: mat.define-palette(mat.$cyan-palette, 300),
-    warn: $modern-warn,
-  ),
-  typography: $custom-typography,
-  density: 0,
-));
-
-// Apply the light theme by default
-@include mat.all-component-themes($light-theme);
-
-// Global Styles & Variables
+/* Global Tailwind-like Variables */
 :root {
-  --bg-color: #f8fafc; /* Slate 50 */
-  --surface-color: #ffffff;
-  --text-primary: #0f172a; /* Slate 900 */
-  --text-secondary: #64748b; /* Slate 500 */
-  --border-color: #e2e8f0; /* Slate 200 */
-  --card-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
-  --header-height: 64px;
-  --container-max-width: 1200px;
+  /* Slate Palette */
+  --slate-50: #f8fafc;
+  --slate-100: #f1f5f9;
+  --slate-200: #e2e8f0;
+  --slate-300: #cbd5e1;
+  --slate-400: #94a3b8;
+  --slate-500: #64748b;
+  --slate-600: #475569;
+  --slate-700: #334155;
+  --slate-800: #1e293b;
+  --slate-900: #0f172a;
+  --slate-950: #020617;
+
+  /* Indigo Palette */
+  --indigo-400: #818cf8;
+  --indigo-500: #6366f1;
+  --indigo-600: #4f46e5;
+  --indigo-500-10: rgba(99, 102, 241, 0.1);
+  --indigo-500-20: rgba(99, 102, 241, 0.2);
+  --indigo-500-50: rgba(99, 102, 241, 0.5);
+
+  /* Emerald Palette */
+  --emerald-400: #34d399;
+  --emerald-500: #10b981;
+  --emerald-500-10: rgba(16, 185, 129, 0.1);
+  --emerald-500-20: rgba(16, 185, 129, 0.2);
+
+  /* Amber Palette */
+  --amber-400: #fbbf24;
+  --amber-500: #f59e0b;
+  --amber-500-10: rgba(245, 158, 11, 0.1);
+  --amber-500-20: rgba(245, 158, 11, 0.2);
+
+  /* Rose Palette */
+  --rose-400: #fb7185;
+  --rose-500: #f43f5e;
+
+  /* Global Settings */
+  --bg-color: var(--slate-950);
+  --text-primary: var(--slate-200);
+  --text-secondary: var(--slate-400);
+  --border-color: rgba(30, 41, 59, 0.5); /* Slate 800 / 50% */
+  --glass-bg: rgba(15, 23, 42, 0.5); /* Slate 900 / 50% */
+  --glass-border: rgba(30, 41, 59, 1);
 }
 
 body {
-  background-color: var(--bg-color);
+  background-color: var(--slate-950);
   color: var(--text-primary);
-  font-family: 'Figtree', sans-serif;
+  font-family: 'Inter', sans-serif;
   margin: 0;
   min-height: 100vh;
-  transition: background-color 0.3s ease, color 0.3s ease;
+  -webkit-font-smoothing: antialiased;
 }
 
-// Dark Mode Class
-.dark-theme {
-  @include mat.all-component-colors($dark-theme);
-
-  --bg-color: #0f172a; /* Slate 900 */
-  --surface-color: #1e293b; /* Slate 800 */
-  --text-primary: #f1f5f9; /* Slate 100 */
-  --text-secondary: #94a3b8; /* Slate 400 */
-  --border-color: #334155; /* Slate 700 */
-  --card-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.5), 0 2px 4px -1px rgba(0, 0, 0, 0.3);
-
-  background-color: var(--bg-color);
-  color: var(--text-primary);
+/* Material Overrides to fit the theme */
+.mat-mdc-dialog-container {
+  --mdc-dialog-container-color: var(--slate-900) !important;
+  --mdc-dialog-subhead-color: var(--slate-200) !important;
+  --mdc-dialog-supporting-text-color: var(--slate-400) !important;
+  border: 1px solid var(--slate-800);
+  border-radius: 1.5rem !important; /* rounded-3xl */
 }
 
-// Utility Classes
-.container {
-  max-width: var(--container-max-width);
-  margin: 0 auto;
-  padding: 24px 16px;
-}
-
-// Overrides for Material Components to look cleaner
-.mat-mdc-card {
-  border-radius: 12px !important;
-  box-shadow: var(--card-shadow) !important;
-  background-color: var(--surface-color) !important;
-  border: 1px solid var(--border-color);
-}
-
-// Custom Scrollbar
+/* Scrollbar */
 ::-webkit-scrollbar {
   width: 8px;
   height: 8px;
 }
 ::-webkit-scrollbar-track {
-  background: transparent;
+  background: var(--slate-950);
 }
 ::-webkit-scrollbar-thumb {
-  background: #cbd5e1;
+  background: var(--slate-800);
   border-radius: 4px;
 }
-.dark-theme ::-webkit-scrollbar-thumb {
-  background: #475569;
-}
 ::-webkit-scrollbar-thumb:hover {
-  background: #94a3b8;
+  background: var(--slate-700);
+}
+
+/* Gradient Background Blobs */
+.bg-blobs {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  pointer-events: none;
+  z-index: -1;
+}
+
+.blob-1 {
+  position: absolute;
+  top: -10%;
+  left: -10%;
+  width: 40%;
+  height: 40%;
+  background: var(--indigo-500-10);
+  border-radius: 50%;
+  filter: blur(120px);
+}
+
+.blob-2 {
+  position: absolute;
+  bottom: -10%;
+  right: -10%;
+  width: 40%;
+  height: 40%;
+  background: rgba(37, 99, 235, 0.1); /* Blue 600 / 10% */
+  border-radius: 50%;
+  filter: blur(120px);
 }

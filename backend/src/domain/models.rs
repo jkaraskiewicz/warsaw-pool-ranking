@@ -119,13 +119,17 @@ pub struct VenueInfo {
     pub name: String,
 }
 
-#[derive(Debug, Deserialize, Serialize)]
+#[derive(Debug, Clone, Deserialize, Serialize)]
 pub struct PlayerInfo {
     #[serde(rename = "playerId")]
     pub player_id: Option<i64>,
     #[serde(rename = "teamId")]
     pub team_id: Option<i64>,
     pub name: String,
+    pub url: Option<String>,
+    pub image: Option<String>,
+    pub firstname: Option<String>,
+    pub lastname: Option<String>,
 }
 
 /// Raw match API response from CueScore
