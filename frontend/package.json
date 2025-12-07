@@ -6,6 +6,7 @@
     "start": "ng serve",
     "build": "ng build",
     "proto:generate": "protoc --plugin=./node_modules/.bin/protoc-gen-ts_proto --ts_proto_out=./src/app/models --ts_proto_opt=esModuleInterop=true,outputEncodeMethods=false,outputJsonMethods=false,outputClientImpl=false --proto_path=/proto /proto/api.proto",
+    "proto:generate:local": "protoc --plugin=./node_modules/.bin/protoc-gen-ts_proto --ts_proto_out=./src/app/models --ts_proto_opt=esModuleInterop=true,outputEncodeMethods=false,outputJsonMethods=false,outputClientImpl=false --proto_path=../proto ../proto/api.proto",
     "watch": "ng build --watch --configuration development",
     "test": "ng test",
     "lint": "ng lint"
@@ -18,6 +19,7 @@
     "@angular/compiler": "^17.0.0",
     "@angular/core": "^17.0.0",
     "@angular/forms": "^17.0.0",
+    "@angular/language-service": "^21.0.3",
     "@angular/material": "^17.0.0",
     "@angular/platform-browser": "^17.0.0",
     "@angular/platform-browser-dynamic": "^17.0.0",
