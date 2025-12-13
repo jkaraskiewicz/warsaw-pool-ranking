@@ -33,6 +33,16 @@ message PlayerDetail {
   optional string last_played = 12; // Date string
   int32 matches_played = 13;
   optional string avatar_url = 14;
+  repeated MatchResult last_matches = 15;
+}
+
+message MatchResult {
+  string date = 1;
+  string tournament_name = 2;
+  string opponent_name = 3;
+  int64 opponent_id = 4;
+  int32 player_total_score = 5;
+  int32 opponent_total_score = 6;
 }
 
 // Paginated list response

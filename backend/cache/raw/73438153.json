@@ -48,7 +48,4405 @@
   "entrystart": "",
   "format": 4,
   "handicap": [],
-  "matches": [],
+  "matches": [
+    {
+      "bestOfSets": 0,
+      "branch": 1,
+      "challengeId": 0,
+      "comment": "",
+      "curVersion": 199,
+      "discipline": "8-Ball",
+      "disciplineId": 2,
+      "frames": [],
+      "groupNo": 1,
+      "highBreaksA": "",
+      "highBreaksB": "",
+      "inningsPlayerA": 0,
+      "inningsPlayerB": 0,
+      "lagWinner": "B",
+      "loserNext": "",
+      "matchId": 73517314,
+      "matchType": 0,
+      "matchno": 1,
+      "matchstatus": "finished",
+      "matchstatusCode": 2,
+      "notes": [
+        {
+          "note": "frame start",
+          "time": "2025-12-10T18:49:30.193Z"
+        },
+        {
+          "note": "B breaking",
+          "time": "2025-12-10T18:49:30.193Z"
+        },
+        {
+          "note": "A frame win",
+          "time": "2025-12-10T19:04:11.159Z"
+        },
+        {
+          "note": "frame end",
+          "time": "2025-12-10T19:04:11.159Z"
+        },
+        {
+          "note": "frame start",
+          "time": "2025-12-10T19:04:11.159Z"
+        },
+        {
+          "note": "A breaking",
+          "time": "2025-12-10T19:04:11.159Z"
+        }
+      ],
+      "penalty": 0,
+      "playerA": {
+        "country": {
+          "alpha3": "POL",
+          "continent": "Europe",
+          "image": "https://cuescore.com/img/flags/png-country-4x2-none/res-640x480/pl.png",
+          "name": "Poland"
+        },
+        "firstname": "Marcin",
+        "image": "https://img.cuescore.com/image/8/4/8a2e1b8f93694be91ae1601c088c0064.png?t=1504868227",
+        "lastname": "Warmiński",
+        "name": "Marcin Warmiński",
+        "playerId": 1653458,
+        "represents": [],
+        "url": "https://cuescore.com/player/Marcin+Warmi%C5%84ski/1653458"
+      },
+      "playerB": {
+        "country": {
+          "alpha3": "POL",
+          "continent": "Europe",
+          "image": "https://cuescore.com/img/flags/png-country-4x2-none/res-640x480/pl.png",
+          "name": "Poland"
+        },
+        "firstname": "Adam",
+        "image": "https://img.cuescore.com/image/8/4/862c792ba8eb7f97e626fbe6cbcc59f6.png",
+        "lastname": "Toruński",
+        "name": "Adam Toruński",
+        "playerId": 52723792,
+        "represents": [],
+        "url": "https://cuescore.com/player/Adam+Toru%C5%84ski/52723792"
+      },
+      "properties": {
+        "lagWinsA": 0,
+        "lagWinsB": 1,
+        "penalty": [],
+        "runoutsA": 0,
+        "runoutsB": 0
+      },
+      "raceTo": 3,
+      "round": 1,
+      "roundName": "Round 1",
+      "runoutsA": 0,
+      "runoutsB": 0,
+      "scoreA": 3,
+      "scoreB": 0,
+      "sets": [],
+      "starttime": "2025-12-10T19:45:00",
+      "stoptime": "2025-12-10T20:19:56",
+      "table": {
+        "branch": "American pool",
+        "branchId": 1,
+        "cloth": "",
+        "description": "",
+        "manufacturer": "Euro-tech",
+        "model": "Tournament Champion",
+        "name": "4",
+        "pockets": "",
+        "size": 9,
+        "slate": "",
+        "tableId": 57053266,
+        "venue": {
+          "image": "https://img.cuescore.com/image/7/3/7afb0a44c256a53b5e27b584e3c27e2f.png?t=1742222226",
+          "name": "Shooters",
+          "owner": {
+            "logo": "//img.cuescore.com/image/9/2/9b59b70e156f2f8d0f1a879411c6ffd1.png?t=1576160578",
+            "name": "Black Ball Events",
+            "organizationId": 7011764,
+            "profileColor": "000000",
+            "stub": "blackballevents",
+            "url": "https://cuescore.com/blackballevents"
+          },
+          "url": "https://cuescore.com/venue/Shooters/57050170",
+          "venueId": 57050170
+        }
+      },
+      "tournamentId": 73438153,
+      "useInnings": false,
+      "videoLink": "",
+      "winnerNext": ""
+    },
+    {
+      "bestOfSets": 0,
+      "branch": 1,
+      "challengeId": 0,
+      "comment": "",
+      "curVersion": 199,
+      "discipline": "8-Ball",
+      "disciplineId": 2,
+      "frames": [],
+      "groupNo": 1,
+      "highBreaksA": "",
+      "highBreaksB": "",
+      "inningsPlayerA": 0,
+      "inningsPlayerB": 0,
+      "lagWinner": "",
+      "loserNext": "",
+      "matchId": 73517317,
+      "matchType": 0,
+      "matchno": 2,
+      "matchstatus": "finished",
+      "matchstatusCode": 2,
+      "notes": [],
+      "penalty": 0,
+      "playerA": {
+        "country": {
+          "alpha3": "POL",
+          "continent": "Europe",
+          "image": "https://cuescore.com/img/flags/png-country-4x2-none/res-640x480/pl.png",
+          "name": "Poland"
+        },
+        "firstname": "Artur",
+        "image": "https://img.cuescore.com/image/0/4/02e36c8b4e56614a07108a70cb37e024.png?t=1554816983",
+        "lastname": "Dziechciarski",
+        "name": "Artur Dziechciarski",
+        "playerId": 2950881,
+        "represents": [],
+        "url": "https://cuescore.com/player/Artur+Dziechciarski/2950881"
+      },
+      "playerB": {
+        "country": {
+          "alpha3": "POL",
+          "continent": "Europe",
+          "image": "https://cuescore.com/img/flags/png-country-4x2-none/res-640x480/pl.png",
+          "name": "Poland"
+        },
+        "firstname": "Michał",
+        "image": "https://img.cuescore.com/image/8/4/862c792ba8eb7f97e626fbe6cbcc59f6.png",
+        "lastname": "Daszczuk",
+        "name": "Michał Daszczuk",
+        "playerId": 29067826,
+        "represents": [],
+        "url": "https://cuescore.com/player/Micha%C5%82+Daszczuk/29067826"
+      },
+      "properties": [],
+      "raceTo": 3,
+      "round": 1,
+      "roundName": "Round 1",
+      "runoutsA": 0,
+      "runoutsB": 0,
+      "scoreA": 3,
+      "scoreB": 1,
+      "sets": [],
+      "starttime": "2025-12-10T19:04:00",
+      "stoptime": "2025-12-10T19:47:42",
+      "table": {
+        "branch": "American pool",
+        "branchId": 1,
+        "cloth": "",
+        "description": "",
+        "manufacturer": "Euro-tech",
+        "model": "Tournament Champion",
+        "name": "1",
+        "pockets": "",
+        "size": 9,
+        "slate": "",
+        "tableId": 57050173,
+        "venue": {
+          "image": "https://img.cuescore.com/image/7/3/7afb0a44c256a53b5e27b584e3c27e2f.png?t=1742222226",
+          "name": "Shooters",
+          "owner": {
+            "logo": "//img.cuescore.com/image/9/2/9b59b70e156f2f8d0f1a879411c6ffd1.png?t=1576160578",
+            "name": "Black Ball Events",
+            "organizationId": 7011764,
+            "profileColor": "000000",
+            "stub": "blackballevents",
+            "url": "https://cuescore.com/blackballevents"
+          },
+          "url": "https://cuescore.com/venue/Shooters/57050170",
+          "venueId": 57050170
+        }
+      },
+      "tournamentId": 73438153,
+      "useInnings": false,
+      "videoLink": "",
+      "winnerNext": ""
+    },
+    {
+      "bestOfSets": 0,
+      "branch": 1,
+      "challengeId": 0,
+      "comment": "",
+      "curVersion": 199,
+      "discipline": "8-Ball",
+      "disciplineId": 2,
+      "frames": [],
+      "groupNo": 2,
+      "highBreaksA": "",
+      "highBreaksB": "",
+      "inningsPlayerA": 0,
+      "inningsPlayerB": 0,
+      "lagWinner": "B",
+      "loserNext": "",
+      "matchId": 73517320,
+      "matchType": 0,
+      "matchno": 3,
+      "matchstatus": "finished",
+      "matchstatusCode": 2,
+      "notes": [
+        {
+          "note": "frame start",
+          "time": "2025-12-10T21:24:04.861Z"
+        },
+        {
+          "note": "B breaking",
+          "time": "2025-12-10T21:24:04.861Z"
+        },
+        {
+          "note": "B frame win",
+          "time": "2025-12-10T21:34:18.053Z"
+        },
+        {
+          "note": "frame end",
+          "time": "2025-12-10T21:34:18.053Z"
+        },
+        {
+          "note": "frame start",
+          "time": "2025-12-10T21:34:18.053Z"
+        },
+        {
+          "note": "A breaking",
+          "time": "2025-12-10T21:34:18.053Z"
+        },
+        {
+          "note": "A frame win",
+          "time": "2025-12-10T22:10:42.825Z"
+        },
+        {
+          "note": "frame end",
+          "time": "2025-12-10T22:10:42.825Z"
+        },
+        {
+          "note": "frame start",
+          "time": "2025-12-10T22:10:42.825Z"
+        },
+        {
+          "note": "B breaking",
+          "time": "2025-12-10T22:10:42.825Z"
+        },
+        {
+          "note": "A frame win",
+          "time": "2025-12-10T22:10:43.594Z"
+        },
+        {
+          "note": "frame end",
+          "time": "2025-12-10T22:10:43.594Z"
+        },
+        {
+          "note": "frame start",
+          "time": "2025-12-10T22:10:43.594Z"
+        },
+        {
+          "note": "A breaking",
+          "time": "2025-12-10T22:10:43.594Z"
+        },
+        {
+          "note": "B frame win",
+          "time": "2025-12-10T22:10:48.809Z"
+        },
+        {
+          "note": "frame end",
+          "time": "2025-12-10T22:10:48.809Z"
+        },
+        {
+          "note": "frame start",
+          "time": "2025-12-10T22:10:48.809Z"
+        },
+        {
+          "note": "B breaking",
+          "time": "2025-12-10T22:10:48.809Z"
+        }
+      ],
+      "penalty": 0,
+      "playerA": {
+        "country": {
+          "alpha3": "POL",
+          "continent": "Europe",
+          "image": "https://cuescore.com/img/flags/png-country-4x2-none/res-640x480/pl.png",
+          "name": "Poland"
+        },
+        "firstname": "Piotr",
+        "image": "https://img.cuescore.com/image/5/4/5859c1d9450d0be5004521cfdb2938c9.png?t=1551456237",
+        "lastname": "Niewczas",
+        "name": "Piotr Niewczas",
+        "playerId": 2383646,
+        "represents": [],
+        "url": "https://cuescore.com/player/Piotr+Niewczas/2383646"
+      },
+      "playerB": {
+        "country": {
+          "alpha3": "POL",
+          "continent": "Europe",
+          "image": "https://cuescore.com/img/flags/png-country-4x2-none/res-640x480/pl.png",
+          "name": "Poland"
+        },
+        "firstname": "Jakub",
+        "image": "https://img.cuescore.com/image/9/4/9aa1b4cafcfb6122667fad43a5036790.png?t=1756883433",
+        "lastname": "Tomasik",
+        "name": "Jakub Tomasik",
+        "playerId": 65042038,
+        "represents": [],
+        "url": "https://cuescore.com/player/Jakub+Tomasik/65042038"
+      },
+      "properties": {
+        "lagWinsA": 0,
+        "lagWinsB": 1,
+        "runoutsA": 0,
+        "runoutsB": 0
+      },
+      "raceTo": 3,
+      "round": 1,
+      "roundName": "Round 1",
+      "runoutsA": 0,
+      "runoutsB": 0,
+      "scoreA": 2,
+      "scoreB": 3,
+      "sets": [],
+      "starttime": "2025-12-10T22:22:00",
+      "stoptime": "2025-12-10T23:25:46",
+      "table": {
+        "branch": "American pool",
+        "branchId": 1,
+        "cloth": "",
+        "description": "",
+        "manufacturer": "Euro-tech",
+        "model": "Tournament Champion",
+        "name": "2",
+        "pockets": "",
+        "size": 9,
+        "slate": "",
+        "tableId": 57053245,
+        "venue": {
+          "image": "https://img.cuescore.com/image/7/3/7afb0a44c256a53b5e27b584e3c27e2f.png?t=1742222226",
+          "name": "Shooters",
+          "owner": {
+            "logo": "//img.cuescore.com/image/9/2/9b59b70e156f2f8d0f1a879411c6ffd1.png?t=1576160578",
+            "name": "Black Ball Events",
+            "organizationId": 7011764,
+            "profileColor": "000000",
+            "stub": "blackballevents",
+            "url": "https://cuescore.com/blackballevents"
+          },
+          "url": "https://cuescore.com/venue/Shooters/57050170",
+          "venueId": 57050170
+        }
+      },
+      "tournamentId": 73438153,
+      "useInnings": false,
+      "videoLink": "",
+      "winnerNext": ""
+    },
+    {
+      "bestOfSets": 0,
+      "branch": 1,
+      "challengeId": 0,
+      "comment": "",
+      "curVersion": 199,
+      "discipline": "8-Ball",
+      "disciplineId": 2,
+      "frames": [],
+      "groupNo": 2,
+      "highBreaksA": "",
+      "highBreaksB": "",
+      "inningsPlayerA": 0,
+      "inningsPlayerB": 0,
+      "lagWinner": "A",
+      "loserNext": "",
+      "matchId": 73517323,
+      "matchType": 0,
+      "matchno": 4,
+      "matchstatus": "finished",
+      "matchstatusCode": 2,
+      "notes": [
+        {
+          "note": "frame start",
+          "time": "2025-12-10T21:36:35.476Z"
+        },
+        {
+          "note": "A breaking",
+          "time": "2025-12-10T21:36:35.476Z"
+        },
+        {
+          "note": "B frame win",
+          "time": "2025-12-10T21:37:05.857Z"
+        },
+        {
+          "note": "frame end",
+          "time": "2025-12-10T21:37:05.857Z"
+        },
+        {
+          "note": "frame start",
+          "time": "2025-12-10T21:37:05.857Z"
+        },
+        {
+          "note": "B breaking",
+          "time": "2025-12-10T21:37:05.857Z"
+        },
+        {
+          "note": "B frame win",
+          "time": "2025-12-10T21:48:43.476Z"
+        },
+        {
+          "note": "frame end",
+          "time": "2025-12-10T21:48:43.476Z"
+        },
+        {
+          "note": "frame start",
+          "time": "2025-12-10T21:48:43.476Z"
+        },
+        {
+          "note": "A breaking",
+          "time": "2025-12-10T21:48:43.476Z"
+        },
+        {
+          "note": "A frame win",
+          "time": "2025-12-10T22:00:03.571Z"
+        },
+        {
+          "note": "frame end",
+          "time": "2025-12-10T22:00:03.571Z"
+        },
+        {
+          "note": "frame start",
+          "time": "2025-12-10T22:00:03.571Z"
+        },
+        {
+          "note": "B breaking",
+          "time": "2025-12-10T22:00:03.571Z"
+        },
+        {
+          "note": "B frame win",
+          "time": "2025-12-10T22:10:54.607Z"
+        },
+        {
+          "note": "frame end",
+          "time": "2025-12-10T22:10:54.607Z"
+        },
+        {
+          "note": "match end",
+          "time": "2025-12-10T22:10:55.817Z"
+        }
+      ],
+      "penalty": 0,
+      "playerA": {
+        "country": {
+          "alpha3": "POL",
+          "continent": "Europe",
+          "image": "https://cuescore.com/img/flags/png-country-4x2-none/res-640x480/pl.png",
+          "name": "Poland"
+        },
+        "firstname": "Paweł",
+        "image": "https://img.cuescore.com/image/b/4/b2cbbdaad9b0f9c0a2a063a869e3b54f.png?t=1717415877",
+        "lastname": "Florecki",
+        "name": "Paweł Florecki",
+        "playerId": 3506000,
+        "represents": [],
+        "url": "https://cuescore.com/player/Pawe%C5%82+Florecki/3506000"
+      },
+      "playerB": {
+        "country": {
+          "alpha3": "POL",
+          "continent": "Europe",
+          "image": "https://cuescore.com/img/flags/png-country-4x2-none/res-640x480/pl.png",
+          "name": "Poland"
+        },
+        "firstname": "Marcin",
+        "image": "https://img.cuescore.com/image/5/4/53d138da49b844a9d55e079704cfcb97.png?t=1524559982",
+        "lastname": "Gościmski",
+        "name": "Marcin Gościmski",
+        "playerId": 2014191,
+        "represents": [],
+        "url": "https://cuescore.com/player/Marcin+Go%C5%9Bcimski/2014191"
+      },
+      "properties": {
+        "lagWinsA": 1,
+        "lagWinsB": 0,
+        "runoutsA": 0,
+        "runoutsB": 0
+      },
+      "raceTo": 3,
+      "round": 1,
+      "roundName": "Round 1",
+      "runoutsA": 0,
+      "runoutsB": 0,
+      "scoreA": 1,
+      "scoreB": 3,
+      "sets": [],
+      "starttime": "2025-12-10T22:22:00",
+      "stoptime": "2025-12-10T23:10:59",
+      "table": {
+        "branch": "American pool",
+        "branchId": 1,
+        "cloth": "",
+        "description": "",
+        "manufacturer": "Euro-tech",
+        "model": "Tournament Champion",
+        "name": "6",
+        "pockets": "",
+        "size": 9,
+        "slate": "",
+        "tableId": 57053455,
+        "venue": {
+          "image": "https://img.cuescore.com/image/7/3/7afb0a44c256a53b5e27b584e3c27e2f.png?t=1742222226",
+          "name": "Shooters",
+          "owner": {
+            "logo": "//img.cuescore.com/image/9/2/9b59b70e156f2f8d0f1a879411c6ffd1.png?t=1576160578",
+            "name": "Black Ball Events",
+            "organizationId": 7011764,
+            "profileColor": "000000",
+            "stub": "blackballevents",
+            "url": "https://cuescore.com/blackballevents"
+          },
+          "url": "https://cuescore.com/venue/Shooters/57050170",
+          "venueId": 57050170
+        }
+      },
+      "tournamentId": 73438153,
+      "useInnings": false,
+      "videoLink": "",
+      "winnerNext": ""
+    },
+    {
+      "bestOfSets": 0,
+      "branch": 1,
+      "challengeId": 0,
+      "comment": "",
+      "curVersion": 199,
+      "discipline": "8-Ball",
+      "disciplineId": 2,
+      "frames": [],
+      "groupNo": 3,
+      "highBreaksA": "",
+      "highBreaksB": "",
+      "inningsPlayerA": 0,
+      "inningsPlayerB": 0,
+      "lagWinner": "",
+      "loserNext": "",
+      "matchId": 73517326,
+      "matchType": 0,
+      "matchno": 5,
+      "matchstatus": "finished",
+      "matchstatusCode": 2,
+      "notes": [],
+      "penalty": 0,
+      "playerA": {
+        "country": {
+          "alpha3": "UKR",
+          "continent": "Europe",
+          "image": "https://cuescore.com/img/flags/png-country-4x2-none/res-640x480/ua.png",
+          "name": "Ukraine"
+        },
+        "firstname": "Ivan",
+        "image": "https://img.cuescore.com/image/2/4/2c93db15d52d17b300ed3d362a7ff6d1.png?t=1708679266",
+        "lastname": "Kuzmych",
+        "name": "Ivan Kuzmych",
+        "playerId": 39854860,
+        "represents": [],
+        "url": "https://cuescore.com/player/Ivan+Kuzmych/39854860"
+      },
+      "playerB": {
+        "country": {
+          "alpha3": "POL",
+          "continent": "Europe",
+          "image": "https://cuescore.com/img/flags/png-country-4x2-none/res-640x480/pl.png",
+          "name": "Poland"
+        },
+        "firstname": "Tomek",
+        "image": "https://img.cuescore.com/image/7/4/74061c1f247d25c1c2939a2f33efb340.png?t=1677415392",
+        "lastname": "Kielmans",
+        "name": "Tomek Kielmans",
+        "playerId": 2264676,
+        "represents": [],
+        "url": "https://cuescore.com/player/Tomek+Kielmans/2264676"
+      },
+      "properties": [],
+      "raceTo": 3,
+      "round": 1,
+      "roundName": "Round 1",
+      "runoutsA": 0,
+      "runoutsB": 0,
+      "scoreA": 3,
+      "scoreB": 2,
+      "sets": [],
+      "starttime": "2025-12-10T19:26:00",
+      "stoptime": "2025-12-10T20:23:19",
+      "table": {
+        "branch": "American pool",
+        "branchId": 1,
+        "cloth": "",
+        "description": "",
+        "manufacturer": "Euro-tech",
+        "model": "Tournament Champion",
+        "name": "6",
+        "pockets": "",
+        "size": 9,
+        "slate": "",
+        "tableId": 57053455,
+        "venue": {
+          "image": "https://img.cuescore.com/image/7/3/7afb0a44c256a53b5e27b584e3c27e2f.png?t=1742222226",
+          "name": "Shooters",
+          "owner": {
+            "logo": "//img.cuescore.com/image/9/2/9b59b70e156f2f8d0f1a879411c6ffd1.png?t=1576160578",
+            "name": "Black Ball Events",
+            "organizationId": 7011764,
+            "profileColor": "000000",
+            "stub": "blackballevents",
+            "url": "https://cuescore.com/blackballevents"
+          },
+          "url": "https://cuescore.com/venue/Shooters/57050170",
+          "venueId": 57050170
+        }
+      },
+      "tournamentId": 73438153,
+      "useInnings": false,
+      "videoLink": "",
+      "winnerNext": ""
+    },
+    {
+      "bestOfSets": 0,
+      "branch": 1,
+      "challengeId": 0,
+      "comment": "",
+      "curVersion": 199,
+      "discipline": "8-Ball",
+      "disciplineId": 2,
+      "frames": [],
+      "groupNo": 3,
+      "highBreaksA": "",
+      "highBreaksB": "",
+      "inningsPlayerA": 0,
+      "inningsPlayerB": 0,
+      "lagWinner": "",
+      "loserNext": "",
+      "matchId": 73517329,
+      "matchType": 0,
+      "matchno": 6,
+      "matchstatus": "finished",
+      "matchstatusCode": 2,
+      "notes": [],
+      "penalty": 0,
+      "playerA": {
+        "country": {
+          "alpha3": "POL",
+          "continent": "Europe",
+          "image": "https://cuescore.com/img/flags/png-country-4x2-none/res-640x480/pl.png",
+          "name": "Poland"
+        },
+        "firstname": "Marcin",
+        "image": "https://img.cuescore.com/image/6/4/608eb650feec311f59b628b56a77213d.png?t=1653917150",
+        "lastname": "Cieślak",
+        "name": "Marcin Cieślak",
+        "playerId": 16067179,
+        "represents": [],
+        "url": "https://cuescore.com/player/Marcin+Cie%C5%9Blak/16067179"
+      },
+      "playerB": {
+        "country": {
+          "alpha3": "POL",
+          "continent": "Europe",
+          "image": "https://cuescore.com/img/flags/png-country-4x2-none/res-640x480/pl.png",
+          "name": "Poland"
+        },
+        "firstname": "Marta",
+        "image": "https://img.cuescore.com/image/e/4/eff8001937f0a627a1c033854110bbe7.png?t=1737981612",
+        "lastname": "Wawrzyn",
+        "name": "Marta Wawrzyn",
+        "playerId": 2180579,
+        "represents": [],
+        "url": "https://cuescore.com/player/Marta+Wawrzyn/2180579"
+      },
+      "properties": [],
+      "raceTo": 3,
+      "round": 1,
+      "roundName": "Round 1",
+      "runoutsA": 0,
+      "runoutsB": 0,
+      "scoreA": 2,
+      "scoreB": 3,
+      "sets": [],
+      "starttime": "2025-12-10T19:04:00",
+      "stoptime": "2025-12-10T19:52:31",
+      "table": {
+        "branch": "American pool",
+        "branchId": 1,
+        "cloth": "",
+        "description": "",
+        "manufacturer": "Euro-tech",
+        "model": "Tournament Champion",
+        "name": "3",
+        "pockets": "",
+        "size": 9,
+        "slate": "",
+        "tableId": 57053251,
+        "venue": {
+          "image": "https://img.cuescore.com/image/7/3/7afb0a44c256a53b5e27b584e3c27e2f.png?t=1742222226",
+          "name": "Shooters",
+          "owner": {
+            "logo": "//img.cuescore.com/image/9/2/9b59b70e156f2f8d0f1a879411c6ffd1.png?t=1576160578",
+            "name": "Black Ball Events",
+            "organizationId": 7011764,
+            "profileColor": "000000",
+            "stub": "blackballevents",
+            "url": "https://cuescore.com/blackballevents"
+          },
+          "url": "https://cuescore.com/venue/Shooters/57050170",
+          "venueId": 57050170
+        }
+      },
+      "tournamentId": 73438153,
+      "useInnings": false,
+      "videoLink": "",
+      "winnerNext": ""
+    },
+    {
+      "bestOfSets": 0,
+      "branch": 1,
+      "challengeId": 0,
+      "comment": "",
+      "curVersion": 199,
+      "discipline": "8-Ball",
+      "disciplineId": 2,
+      "frames": [],
+      "groupNo": 4,
+      "highBreaksA": "",
+      "highBreaksB": "",
+      "inningsPlayerA": 0,
+      "inningsPlayerB": 0,
+      "lagWinner": "A",
+      "loserNext": "",
+      "matchId": 73517332,
+      "matchType": 0,
+      "matchno": 7,
+      "matchstatus": "finished",
+      "matchstatusCode": 2,
+      "notes": [
+        {
+          "note": "frame start",
+          "time": "2025-12-10T18:44:26.005Z"
+        },
+        {
+          "note": "A breaking",
+          "time": "2025-12-10T18:44:26.005Z"
+        },
+        {
+          "note": "A frame win",
+          "time": "2025-12-10T18:44:28.226Z"
+        },
+        {
+          "note": "frame end",
+          "time": "2025-12-10T18:44:28.226Z"
+        },
+        {
+          "note": "frame start",
+          "time": "2025-12-10T18:44:28.226Z"
+        },
+        {
+          "note": "B breaking",
+          "time": "2025-12-10T18:44:28.226Z"
+        },
+        {
+          "note": "A frame win",
+          "time": "2025-12-10T18:44:28.524Z"
+        },
+        {
+          "note": "frame end",
+          "time": "2025-12-10T18:44:28.524Z"
+        },
+        {
+          "note": "frame start",
+          "time": "2025-12-10T18:44:28.524Z"
+        },
+        {
+          "note": "A breaking",
+          "time": "2025-12-10T18:44:28.524Z"
+        },
+        {
+          "note": "A frame win",
+          "time": "2025-12-10T18:44:30.090Z"
+        },
+        {
+          "note": "frame end",
+          "time": "2025-12-10T18:44:30.090Z"
+        },
+        {
+          "note": "match end",
+          "time": "2025-12-10T18:44:32.621Z"
+        }
+      ],
+      "penalty": 0,
+      "playerA": {
+        "country": {
+          "alpha3": "POL",
+          "continent": "Europe",
+          "image": "https://cuescore.com/img/flags/png-country-4x2-none/res-640x480/pl.png",
+          "name": "Poland"
+        },
+        "firstname": "Mirosław",
+        "image": "https://img.cuescore.com/image/5/4/50ac46cb29361bb7417fe99e9ceaf5a6.png?t=1721041648",
+        "lastname": "Galas",
+        "name": "Mirosław Galas",
+        "playerId": 32939776,
+        "represents": [],
+        "url": "https://cuescore.com/player/Miros%C5%82aw+Galas/32939776"
+      },
+      "playerB": {
+        "country": {
+          "alpha3": "POL",
+          "continent": "Europe",
+          "image": "https://cuescore.com/img/flags/png-country-4x2-none/res-640x480/pl.png",
+          "name": "Poland"
+        },
+        "firstname": "Cezary",
+        "image": "https://img.cuescore.com/image/8/4/862c792ba8eb7f97e626fbe6cbcc59f6.png",
+        "lastname": "Wołek",
+        "name": "Cezary Wołek",
+        "playerId": 72593158,
+        "represents": [],
+        "url": "https://cuescore.com/player/Cezary+Wo%C5%82ek/72593158"
+      },
+      "properties": {
+        "lagWinsA": 1,
+        "lagWinsB": 0,
+        "runoutsA": 0,
+        "runoutsB": 0
+      },
+      "raceTo": 3,
+      "round": 1,
+      "roundName": "Round 1",
+      "runoutsA": 0,
+      "runoutsB": 0,
+      "scoreA": 3,
+      "scoreB": 0,
+      "sets": [],
+      "starttime": "2025-12-10T19:04:50",
+      "stoptime": "2025-12-10T19:44:34",
+      "table": {
+        "branch": "American pool",
+        "branchId": 1,
+        "cloth": "",
+        "description": "",
+        "manufacturer": "Euro-tech",
+        "model": "Tournament Champion",
+        "name": "4",
+        "pockets": "",
+        "size": 9,
+        "slate": "",
+        "tableId": 57053266,
+        "venue": {
+          "image": "https://img.cuescore.com/image/7/3/7afb0a44c256a53b5e27b584e3c27e2f.png?t=1742222226",
+          "name": "Shooters",
+          "owner": {
+            "logo": "//img.cuescore.com/image/9/2/9b59b70e156f2f8d0f1a879411c6ffd1.png?t=1576160578",
+            "name": "Black Ball Events",
+            "organizationId": 7011764,
+            "profileColor": "000000",
+            "stub": "blackballevents",
+            "url": "https://cuescore.com/blackballevents"
+          },
+          "url": "https://cuescore.com/venue/Shooters/57050170",
+          "venueId": 57050170
+        }
+      },
+      "tournamentId": 73438153,
+      "useInnings": false,
+      "videoLink": "",
+      "winnerNext": ""
+    },
+    {
+      "bestOfSets": 0,
+      "branch": 1,
+      "challengeId": 0,
+      "comment": "",
+      "curVersion": 199,
+      "discipline": "8-Ball",
+      "disciplineId": 2,
+      "frames": [],
+      "groupNo": 4,
+      "highBreaksA": "",
+      "highBreaksB": "",
+      "inningsPlayerA": 0,
+      "inningsPlayerB": 0,
+      "lagWinner": "",
+      "loserNext": "",
+      "matchId": 73517335,
+      "matchType": 0,
+      "matchno": 8,
+      "matchstatus": "finished",
+      "matchstatusCode": 2,
+      "notes": [],
+      "penalty": 0,
+      "playerA": {
+        "country": {
+          "alpha3": "POL",
+          "continent": "Europe",
+          "image": "https://cuescore.com/img/flags/png-country-4x2-none/res-640x480/pl.png",
+          "name": "Poland"
+        },
+        "firstname": "Krzysztof",
+        "image": "https://img.cuescore.com/image/8/4/862c792ba8eb7f97e626fbe6cbcc59f6.png",
+        "lastname": "Doroszkiewicz",
+        "name": "Krzysztof Doroszkiewicz",
+        "playerId": 19794961,
+        "represents": [],
+        "url": "https://cuescore.com/player/Krzysztof+Doroszkiewicz/19794961"
+      },
+      "playerB": {
+        "country": {
+          "alpha3": "POL",
+          "continent": "Europe",
+          "image": "https://cuescore.com/img/flags/png-country-4x2-none/res-640x480/pl.png",
+          "name": "Poland"
+        },
+        "firstname": "Aleksandra",
+        "image": "https://img.cuescore.com/image/5/4/5aa6aa48f7d5ffe854d5266ac08db7ef.png",
+        "lastname": "Wołek",
+        "name": "Aleksandra Wołek",
+        "playerId": 58572718,
+        "represents": [],
+        "url": "https://cuescore.com/player/Aleksandra+Wo%C5%82ek/58572718"
+      },
+      "properties": [],
+      "raceTo": 3,
+      "round": 1,
+      "roundName": "Round 1",
+      "runoutsA": 0,
+      "runoutsB": 0,
+      "scoreA": 1,
+      "scoreB": 3,
+      "sets": [],
+      "starttime": "2025-12-10T19:04:00",
+      "stoptime": "2025-12-10T20:12:29",
+      "table": {
+        "branch": "American pool",
+        "branchId": 1,
+        "cloth": "",
+        "description": "",
+        "manufacturer": "Euro-tech",
+        "model": "Tournament Champion",
+        "name": "5",
+        "pockets": "",
+        "size": 9,
+        "slate": "",
+        "tableId": 57053452,
+        "venue": {
+          "image": "https://img.cuescore.com/image/7/3/7afb0a44c256a53b5e27b584e3c27e2f.png?t=1742222226",
+          "name": "Shooters",
+          "owner": {
+            "logo": "//img.cuescore.com/image/9/2/9b59b70e156f2f8d0f1a879411c6ffd1.png?t=1576160578",
+            "name": "Black Ball Events",
+            "organizationId": 7011764,
+            "profileColor": "000000",
+            "stub": "blackballevents",
+            "url": "https://cuescore.com/blackballevents"
+          },
+          "url": "https://cuescore.com/venue/Shooters/57050170",
+          "venueId": 57050170
+        }
+      },
+      "tournamentId": 73438153,
+      "useInnings": false,
+      "videoLink": "",
+      "winnerNext": ""
+    },
+    {
+      "bestOfSets": 0,
+      "branch": 1,
+      "challengeId": 0,
+      "comment": "",
+      "curVersion": 199,
+      "discipline": "8-Ball",
+      "disciplineId": 2,
+      "frames": [],
+      "groupNo": 1,
+      "highBreaksA": "",
+      "highBreaksB": "",
+      "inningsPlayerA": 0,
+      "inningsPlayerB": 0,
+      "lagWinner": "B",
+      "loserNext": "",
+      "matchId": 73517338,
+      "matchType": 0,
+      "matchno": 9,
+      "matchstatus": "finished",
+      "matchstatusCode": 2,
+      "notes": [
+        {
+          "note": "frame start",
+          "time": "2025-12-10T21:17:11.778Z"
+        },
+        {
+          "note": "B breaking",
+          "time": "2025-12-10T21:17:11.778Z"
+        },
+        {
+          "note": "B frame win",
+          "time": "2025-12-10T21:23:25.836Z"
+        },
+        {
+          "note": "frame end",
+          "time": "2025-12-10T21:23:25.836Z"
+        },
+        {
+          "note": "frame start",
+          "time": "2025-12-10T21:23:25.836Z"
+        },
+        {
+          "note": "A breaking",
+          "time": "2025-12-10T21:23:25.836Z"
+        },
+        {
+          "note": "A frame win",
+          "time": "2025-12-10T21:32:43.553Z"
+        },
+        {
+          "note": "frame end",
+          "time": "2025-12-10T21:32:43.553Z"
+        },
+        {
+          "note": "frame start",
+          "time": "2025-12-10T21:32:43.553Z"
+        },
+        {
+          "note": "B breaking",
+          "time": "2025-12-10T21:32:43.553Z"
+        },
+        {
+          "note": "B frame win",
+          "time": "2025-12-10T21:45:29.374Z"
+        },
+        {
+          "note": "frame end",
+          "time": "2025-12-10T21:45:29.374Z"
+        },
+        {
+          "note": "frame start",
+          "time": "2025-12-10T21:45:29.374Z"
+        },
+        {
+          "note": "A breaking",
+          "time": "2025-12-10T21:45:29.374Z"
+        },
+        {
+          "note": "A frame win",
+          "time": "2025-12-10T21:56:28.919Z"
+        },
+        {
+          "note": "frame end",
+          "time": "2025-12-10T21:56:28.919Z"
+        },
+        {
+          "note": "frame start",
+          "time": "2025-12-10T21:56:28.919Z"
+        },
+        {
+          "note": "B breaking",
+          "time": "2025-12-10T21:56:28.919Z"
+        },
+        {
+          "note": "B frame win",
+          "time": "2025-12-10T22:06:54.399Z"
+        },
+        {
+          "note": "frame end",
+          "time": "2025-12-10T22:06:54.399Z"
+        },
+        {
+          "note": "match end",
+          "time": "2025-12-10T22:06:56.134Z"
+        }
+      ],
+      "penalty": 0,
+      "playerA": {
+        "country": {
+          "alpha3": "POL",
+          "continent": "Europe",
+          "image": "https://cuescore.com/img/flags/png-country-4x2-none/res-640x480/pl.png",
+          "name": "Poland"
+        },
+        "firstname": "Adam",
+        "image": "https://img.cuescore.com/image/8/4/862c792ba8eb7f97e626fbe6cbcc59f6.png",
+        "lastname": "Toruński",
+        "name": "Adam Toruński",
+        "playerId": 52723792,
+        "represents": [],
+        "url": "https://cuescore.com/player/Adam+Toru%C5%84ski/52723792"
+      },
+      "playerB": {
+        "country": {
+          "alpha3": "POL",
+          "continent": "Europe",
+          "image": "https://cuescore.com/img/flags/png-country-4x2-none/res-640x480/pl.png",
+          "name": "Poland"
+        },
+        "firstname": "Michał",
+        "image": "https://img.cuescore.com/image/8/4/862c792ba8eb7f97e626fbe6cbcc59f6.png",
+        "lastname": "Daszczuk",
+        "name": "Michał Daszczuk",
+        "playerId": 29067826,
+        "represents": [],
+        "url": "https://cuescore.com/player/Micha%C5%82+Daszczuk/29067826"
+      },
+      "properties": {
+        "lagWinsA": 0,
+        "lagWinsB": 1,
+        "runoutsA": 0,
+        "runoutsB": 0
+      },
+      "raceTo": 3,
+      "round": 2,
+      "roundName": "Round 2",
+      "runoutsA": 0,
+      "runoutsB": 0,
+      "scoreA": 2,
+      "scoreB": 3,
+      "sets": [],
+      "starttime": "2025-12-10T22:12:08",
+      "stoptime": "2025-12-10T23:06:57",
+      "table": {
+        "branch": "American pool",
+        "branchId": 1,
+        "cloth": "",
+        "description": "",
+        "manufacturer": "Euro-tech",
+        "model": "Tournament Champion",
+        "name": "4",
+        "pockets": "",
+        "size": 9,
+        "slate": "",
+        "tableId": 57053266,
+        "venue": {
+          "image": "https://img.cuescore.com/image/7/3/7afb0a44c256a53b5e27b584e3c27e2f.png?t=1742222226",
+          "name": "Shooters",
+          "owner": {
+            "logo": "//img.cuescore.com/image/9/2/9b59b70e156f2f8d0f1a879411c6ffd1.png?t=1576160578",
+            "name": "Black Ball Events",
+            "organizationId": 7011764,
+            "profileColor": "000000",
+            "stub": "blackballevents",
+            "url": "https://cuescore.com/blackballevents"
+          },
+          "url": "https://cuescore.com/venue/Shooters/57050170",
+          "venueId": 57050170
+        }
+      },
+      "tournamentId": 73438153,
+      "useInnings": false,
+      "videoLink": "",
+      "winnerNext": ""
+    },
+    {
+      "bestOfSets": 0,
+      "branch": 1,
+      "challengeId": 0,
+      "comment": "",
+      "curVersion": 199,
+      "discipline": "8-Ball",
+      "disciplineId": 2,
+      "frames": [],
+      "groupNo": 1,
+      "highBreaksA": "",
+      "highBreaksB": "",
+      "inningsPlayerA": 0,
+      "inningsPlayerB": 0,
+      "lagWinner": "B",
+      "loserNext": "",
+      "matchId": 73517341,
+      "matchType": 0,
+      "matchno": 10,
+      "matchstatus": "finished",
+      "matchstatusCode": 2,
+      "notes": [
+        {
+          "note": "frame start",
+          "time": "2025-12-10T18:08:53.893Z"
+        },
+        {
+          "note": "B breaking",
+          "time": "2025-12-10T18:08:53.893Z"
+        },
+        {
+          "note": "A frame win",
+          "time": "2025-12-10T18:11:37.189Z"
+        },
+        {
+          "note": "frame end",
+          "time": "2025-12-10T18:11:37.189Z"
+        },
+        {
+          "note": "frame start",
+          "time": "2025-12-10T18:11:37.189Z"
+        },
+        {
+          "note": "A breaking",
+          "time": "2025-12-10T18:11:37.189Z"
+        },
+        {
+          "note": "A frame win",
+          "time": "2025-12-10T18:19:03.922Z"
+        },
+        {
+          "note": "frame end",
+          "time": "2025-12-10T18:19:03.922Z"
+        },
+        {
+          "note": "frame start",
+          "time": "2025-12-10T18:19:03.922Z"
+        },
+        {
+          "note": "B breaking",
+          "time": "2025-12-10T18:19:03.922Z"
+        },
+        {
+          "note": "A frame win",
+          "time": "2025-12-10T18:25:48.579Z"
+        },
+        {
+          "note": "frame end",
+          "time": "2025-12-10T18:25:48.579Z"
+        },
+        {
+          "note": "match end",
+          "time": "2025-12-10T18:25:49.519Z"
+        }
+      ],
+      "penalty": 0,
+      "playerA": {
+        "country": {
+          "alpha3": "POL",
+          "continent": "Europe",
+          "image": "https://cuescore.com/img/flags/png-country-4x2-none/res-640x480/pl.png",
+          "name": "Poland"
+        },
+        "firstname": "Marcin",
+        "image": "https://img.cuescore.com/image/8/4/8a2e1b8f93694be91ae1601c088c0064.png?t=1504868227",
+        "lastname": "Warmiński",
+        "name": "Marcin Warmiński",
+        "playerId": 1653458,
+        "represents": [],
+        "url": "https://cuescore.com/player/Marcin+Warmi%C5%84ski/1653458"
+      },
+      "playerB": {
+        "country": {
+          "alpha3": "POL",
+          "continent": "Europe",
+          "image": "https://cuescore.com/img/flags/png-country-4x2-none/res-640x480/pl.png",
+          "name": "Poland"
+        },
+        "firstname": "Tomasz",
+        "image": "https://img.cuescore.com/image/a/4/a851e3dcd3a4dcbe547d02868af6b2dc.png?t=1756110828",
+        "lastname": "Sosnowski",
+        "name": "Tomasz Sosnowski",
+        "playerId": 37359511,
+        "represents": [],
+        "url": "https://cuescore.com/player/Tomasz+Sosnowski/37359511"
+      },
+      "properties": {
+        "lagWinsA": 0,
+        "lagWinsB": 1,
+        "runoutsA": 0,
+        "runoutsB": 0
+      },
+      "raceTo": 3,
+      "round": 2,
+      "roundName": "Round 2",
+      "runoutsA": 0,
+      "runoutsB": 0,
+      "scoreA": 3,
+      "scoreB": 0,
+      "sets": [],
+      "starttime": "2025-12-10T19:06:45",
+      "stoptime": "2025-12-10T19:25:51",
+      "table": {
+        "branch": "American pool",
+        "branchId": 1,
+        "cloth": "",
+        "description": "",
+        "manufacturer": "Euro-tech",
+        "model": "Tournament Champion",
+        "name": "6",
+        "pockets": "",
+        "size": 9,
+        "slate": "",
+        "tableId": 57053455,
+        "venue": {
+          "image": "https://img.cuescore.com/image/7/3/7afb0a44c256a53b5e27b584e3c27e2f.png?t=1742222226",
+          "name": "Shooters",
+          "owner": {
+            "logo": "//img.cuescore.com/image/9/2/9b59b70e156f2f8d0f1a879411c6ffd1.png?t=1576160578",
+            "name": "Black Ball Events",
+            "organizationId": 7011764,
+            "profileColor": "000000",
+            "stub": "blackballevents",
+            "url": "https://cuescore.com/blackballevents"
+          },
+          "url": "https://cuescore.com/venue/Shooters/57050170",
+          "venueId": 57050170
+        }
+      },
+      "tournamentId": 73438153,
+      "useInnings": false,
+      "videoLink": "",
+      "winnerNext": ""
+    },
+    {
+      "bestOfSets": 0,
+      "branch": 1,
+      "challengeId": 0,
+      "comment": "",
+      "curVersion": 199,
+      "discipline": "8-Ball",
+      "disciplineId": 2,
+      "frames": [],
+      "groupNo": 2,
+      "highBreaksA": "",
+      "highBreaksB": "",
+      "inningsPlayerA": 0,
+      "inningsPlayerB": 0,
+      "lagWinner": "A",
+      "loserNext": "",
+      "matchId": 73517344,
+      "matchType": 0,
+      "matchno": 11,
+      "matchstatus": "finished",
+      "matchstatusCode": 2,
+      "notes": [
+        {
+          "note": "frame start",
+          "time": "2025-12-10T18:56:08.606Z"
+        },
+        {
+          "note": "A breaking",
+          "time": "2025-12-10T18:56:08.606Z"
+        },
+        {
+          "note": "A frame win",
+          "time": "2025-12-10T18:56:10.647Z"
+        },
+        {
+          "note": "frame end",
+          "time": "2025-12-10T18:56:10.647Z"
+        },
+        {
+          "note": "frame start",
+          "time": "2025-12-10T18:56:10.647Z"
+        },
+        {
+          "note": "B breaking",
+          "time": "2025-12-10T18:56:10.647Z"
+        },
+        {
+          "note": "A frame win",
+          "time": "2025-12-10T19:06:15.947Z"
+        },
+        {
+          "note": "frame end",
+          "time": "2025-12-10T19:06:15.947Z"
+        },
+        {
+          "note": "frame start",
+          "time": "2025-12-10T19:06:15.947Z"
+        },
+        {
+          "note": "A breaking",
+          "time": "2025-12-10T19:06:15.947Z"
+        },
+        {
+          "note": "B frame win",
+          "time": "2025-12-10T19:14:14.097Z"
+        },
+        {
+          "note": "frame end",
+          "time": "2025-12-10T19:14:14.097Z"
+        },
+        {
+          "note": "frame start",
+          "time": "2025-12-10T19:14:14.097Z"
+        },
+        {
+          "note": "B breaking",
+          "time": "2025-12-10T19:14:14.097Z"
+        },
+        {
+          "note": "A frame win",
+          "time": "2025-12-10T19:24:02.663Z"
+        },
+        {
+          "note": "frame end",
+          "time": "2025-12-10T19:24:02.663Z"
+        },
+        {
+          "note": "match end",
+          "time": "2025-12-10T19:24:10.001Z"
+        }
+      ],
+      "penalty": 0,
+      "playerA": {
+        "country": {
+          "alpha3": "POL",
+          "continent": "Europe",
+          "image": "https://cuescore.com/img/flags/png-country-4x2-none/res-640x480/pl.png",
+          "name": "Poland"
+        },
+        "firstname": "Piotr",
+        "image": "https://img.cuescore.com/image/5/4/5859c1d9450d0be5004521cfdb2938c9.png?t=1551456237",
+        "lastname": "Niewczas",
+        "name": "Piotr Niewczas",
+        "playerId": 2383646,
+        "represents": [],
+        "url": "https://cuescore.com/player/Piotr+Niewczas/2383646"
+      },
+      "playerB": {
+        "country": {
+          "alpha3": "POL",
+          "continent": "Europe",
+          "image": "https://cuescore.com/img/flags/png-country-4x2-none/res-640x480/pl.png",
+          "name": "Poland"
+        },
+        "firstname": "Marcin",
+        "image": "https://img.cuescore.com/image/5/4/53d138da49b844a9d55e079704cfcb97.png?t=1524559982",
+        "lastname": "Gościmski",
+        "name": "Marcin Gościmski",
+        "playerId": 2014191,
+        "represents": [],
+        "url": "https://cuescore.com/player/Marcin+Go%C5%9Bcimski/2014191"
+      },
+      "properties": {
+        "lagWinsA": 1,
+        "lagWinsB": 0,
+        "runoutsA": 0,
+        "runoutsB": 0
+      },
+      "raceTo": 3,
+      "round": 2,
+      "roundName": "Round 2",
+      "runoutsA": 0,
+      "runoutsB": 0,
+      "scoreA": 3,
+      "scoreB": 1,
+      "sets": [],
+      "starttime": "2025-12-10T19:45:48",
+      "stoptime": "2025-12-10T20:24:12",
+      "table": {
+        "branch": "American pool",
+        "branchId": 1,
+        "cloth": "",
+        "description": "",
+        "manufacturer": "Euro-tech",
+        "model": "Tournament Champion",
+        "name": "2",
+        "pockets": "",
+        "size": 9,
+        "slate": "",
+        "tableId": 57053245,
+        "venue": {
+          "image": "https://img.cuescore.com/image/7/3/7afb0a44c256a53b5e27b584e3c27e2f.png?t=1742222226",
+          "name": "Shooters",
+          "owner": {
+            "logo": "//img.cuescore.com/image/9/2/9b59b70e156f2f8d0f1a879411c6ffd1.png?t=1576160578",
+            "name": "Black Ball Events",
+            "organizationId": 7011764,
+            "profileColor": "000000",
+            "stub": "blackballevents",
+            "url": "https://cuescore.com/blackballevents"
+          },
+          "url": "https://cuescore.com/venue/Shooters/57050170",
+          "venueId": 57050170
+        }
+      },
+      "tournamentId": 73438153,
+      "useInnings": false,
+      "videoLink": "",
+      "winnerNext": ""
+    },
+    {
+      "bestOfSets": 0,
+      "branch": 1,
+      "challengeId": 0,
+      "comment": "",
+      "curVersion": 199,
+      "discipline": "8-Ball",
+      "disciplineId": 2,
+      "frames": [],
+      "groupNo": 2,
+      "highBreaksA": "",
+      "highBreaksB": "",
+      "inningsPlayerA": 0,
+      "inningsPlayerB": 0,
+      "lagWinner": "",
+      "loserNext": "",
+      "matchId": 73517347,
+      "matchType": 0,
+      "matchno": 12,
+      "matchstatus": "finished",
+      "matchstatusCode": 2,
+      "notes": [],
+      "penalty": 0,
+      "playerA": {
+        "country": {
+          "alpha3": "POL",
+          "continent": "Europe",
+          "image": "https://cuescore.com/img/flags/png-country-4x2-none/res-640x480/pl.png",
+          "name": "Poland"
+        },
+        "firstname": "Jakub",
+        "image": "https://img.cuescore.com/image/9/4/9aa1b4cafcfb6122667fad43a5036790.png?t=1756883433",
+        "lastname": "Tomasik",
+        "name": "Jakub Tomasik",
+        "playerId": 65042038,
+        "represents": [],
+        "url": "https://cuescore.com/player/Jakub+Tomasik/65042038"
+      },
+      "playerB": {
+        "country": {
+          "alpha3": "POL",
+          "continent": "Europe",
+          "image": "https://cuescore.com/img/flags/png-country-4x2-none/res-640x480/pl.png",
+          "name": "Poland"
+        },
+        "firstname": "Paweł",
+        "image": "https://img.cuescore.com/image/b/4/b2cbbdaad9b0f9c0a2a063a869e3b54f.png?t=1717415877",
+        "lastname": "Florecki",
+        "name": "Paweł Florecki",
+        "playerId": 3506000,
+        "represents": [],
+        "url": "https://cuescore.com/player/Pawe%C5%82+Florecki/3506000"
+      },
+      "properties": [],
+      "raceTo": 3,
+      "round": 2,
+      "roundName": "Round 2",
+      "runoutsA": 0,
+      "runoutsB": 0,
+      "scoreA": 3,
+      "scoreB": 0,
+      "sets": [],
+      "starttime": "2025-12-10T19:04:00",
+      "stoptime": "2025-12-10T19:45:32",
+      "table": {
+        "branch": "American pool",
+        "branchId": 1,
+        "cloth": "",
+        "description": "",
+        "manufacturer": "Euro-tech",
+        "model": "Tournament Champion",
+        "name": "2",
+        "pockets": "",
+        "size": 9,
+        "slate": "",
+        "tableId": 57053245,
+        "venue": {
+          "image": "https://img.cuescore.com/image/7/3/7afb0a44c256a53b5e27b584e3c27e2f.png?t=1742222226",
+          "name": "Shooters",
+          "owner": {
+            "logo": "//img.cuescore.com/image/9/2/9b59b70e156f2f8d0f1a879411c6ffd1.png?t=1576160578",
+            "name": "Black Ball Events",
+            "organizationId": 7011764,
+            "profileColor": "000000",
+            "stub": "blackballevents",
+            "url": "https://cuescore.com/blackballevents"
+          },
+          "url": "https://cuescore.com/venue/Shooters/57050170",
+          "venueId": 57050170
+        }
+      },
+      "tournamentId": 73438153,
+      "useInnings": false,
+      "videoLink": "",
+      "winnerNext": ""
+    },
+    {
+      "bestOfSets": 0,
+      "branch": 1,
+      "challengeId": 0,
+      "comment": "",
+      "curVersion": 199,
+      "discipline": "8-Ball",
+      "disciplineId": 2,
+      "frames": [],
+      "groupNo": 3,
+      "highBreaksA": "",
+      "highBreaksB": "",
+      "inningsPlayerA": 0,
+      "inningsPlayerB": 0,
+      "lagWinner": "",
+      "loserNext": "",
+      "matchId": 73517350,
+      "matchType": 0,
+      "matchno": 13,
+      "matchstatus": "finished",
+      "matchstatusCode": 2,
+      "notes": [],
+      "penalty": 0,
+      "playerA": {
+        "country": {
+          "alpha3": "UKR",
+          "continent": "Europe",
+          "image": "https://cuescore.com/img/flags/png-country-4x2-none/res-640x480/ua.png",
+          "name": "Ukraine"
+        },
+        "firstname": "Ivan",
+        "image": "https://img.cuescore.com/image/2/4/2c93db15d52d17b300ed3d362a7ff6d1.png?t=1708679266",
+        "lastname": "Kuzmych",
+        "name": "Ivan Kuzmych",
+        "playerId": 39854860,
+        "represents": [],
+        "url": "https://cuescore.com/player/Ivan+Kuzmych/39854860"
+      },
+      "playerB": {
+        "country": {
+          "alpha3": "POL",
+          "continent": "Europe",
+          "image": "https://cuescore.com/img/flags/png-country-4x2-none/res-640x480/pl.png",
+          "name": "Poland"
+        },
+        "firstname": "Marta",
+        "image": "https://img.cuescore.com/image/e/4/eff8001937f0a627a1c033854110bbe7.png?t=1737981612",
+        "lastname": "Wawrzyn",
+        "name": "Marta Wawrzyn",
+        "playerId": 2180579,
+        "represents": [],
+        "url": "https://cuescore.com/player/Marta+Wawrzyn/2180579"
+      },
+      "properties": [],
+      "raceTo": 3,
+      "round": 2,
+      "roundName": "Round 2",
+      "runoutsA": 0,
+      "runoutsB": 0,
+      "scoreA": 3,
+      "scoreB": 1,
+      "sets": [],
+      "starttime": "2025-12-10T21:15:00",
+      "stoptime": "2025-12-10T21:54:10",
+      "table": {
+        "branch": "American pool",
+        "branchId": 1,
+        "cloth": "",
+        "description": "",
+        "manufacturer": "Euro-tech",
+        "model": "Tournament Champion",
+        "name": "6",
+        "pockets": "",
+        "size": 9,
+        "slate": "",
+        "tableId": 57053455,
+        "venue": {
+          "image": "https://img.cuescore.com/image/7/3/7afb0a44c256a53b5e27b584e3c27e2f.png?t=1742222226",
+          "name": "Shooters",
+          "owner": {
+            "logo": "//img.cuescore.com/image/9/2/9b59b70e156f2f8d0f1a879411c6ffd1.png?t=1576160578",
+            "name": "Black Ball Events",
+            "organizationId": 7011764,
+            "profileColor": "000000",
+            "stub": "blackballevents",
+            "url": "https://cuescore.com/blackballevents"
+          },
+          "url": "https://cuescore.com/venue/Shooters/57050170",
+          "venueId": 57050170
+        }
+      },
+      "tournamentId": 73438153,
+      "useInnings": false,
+      "videoLink": "",
+      "winnerNext": ""
+    },
+    {
+      "bestOfSets": 0,
+      "branch": 1,
+      "challengeId": 0,
+      "comment": "",
+      "curVersion": 199,
+      "discipline": "8-Ball",
+      "disciplineId": 2,
+      "frames": [],
+      "groupNo": 3,
+      "highBreaksA": "",
+      "highBreaksB": "",
+      "inningsPlayerA": 0,
+      "inningsPlayerB": 0,
+      "lagWinner": "",
+      "loserNext": "",
+      "matchId": 73517353,
+      "matchType": 0,
+      "matchno": 14,
+      "matchstatus": "finished",
+      "matchstatusCode": 2,
+      "notes": [],
+      "penalty": 0,
+      "playerA": {
+        "country": {
+          "alpha3": "POL",
+          "continent": "Europe",
+          "image": "https://cuescore.com/img/flags/png-country-4x2-none/res-640x480/pl.png",
+          "name": "Poland"
+        },
+        "firstname": "Tomek",
+        "image": "https://img.cuescore.com/image/7/4/74061c1f247d25c1c2939a2f33efb340.png?t=1677415392",
+        "lastname": "Kielmans",
+        "name": "Tomek Kielmans",
+        "playerId": 2264676,
+        "represents": [],
+        "url": "https://cuescore.com/player/Tomek+Kielmans/2264676"
+      },
+      "playerB": {
+        "country": {
+          "alpha3": "POL",
+          "continent": "Europe",
+          "image": "https://cuescore.com/img/flags/png-country-4x2-none/res-640x480/pl.png",
+          "name": "Poland"
+        },
+        "firstname": "Marcin",
+        "image": "https://img.cuescore.com/image/6/4/608eb650feec311f59b628b56a77213d.png?t=1653917150",
+        "lastname": "Cieślak",
+        "name": "Marcin Cieślak",
+        "playerId": 16067179,
+        "represents": [],
+        "url": "https://cuescore.com/player/Marcin+Cie%C5%9Blak/16067179"
+      },
+      "properties": [],
+      "raceTo": 3,
+      "round": 2,
+      "roundName": "Round 2",
+      "runoutsA": 0,
+      "runoutsB": 0,
+      "scoreA": 3,
+      "scoreB": 0,
+      "sets": [],
+      "starttime": "2025-12-10T21:16:00",
+      "stoptime": "2025-12-10T21:47:05",
+      "table": {
+        "branch": "American pool",
+        "branchId": 1,
+        "cloth": "",
+        "description": "",
+        "manufacturer": "Euro-tech",
+        "model": "Tournament Champion",
+        "name": "3",
+        "pockets": "",
+        "size": 9,
+        "slate": "",
+        "tableId": 57053251,
+        "venue": {
+          "image": "https://img.cuescore.com/image/7/3/7afb0a44c256a53b5e27b584e3c27e2f.png?t=1742222226",
+          "name": "Shooters",
+          "owner": {
+            "logo": "//img.cuescore.com/image/9/2/9b59b70e156f2f8d0f1a879411c6ffd1.png?t=1576160578",
+            "name": "Black Ball Events",
+            "organizationId": 7011764,
+            "profileColor": "000000",
+            "stub": "blackballevents",
+            "url": "https://cuescore.com/blackballevents"
+          },
+          "url": "https://cuescore.com/venue/Shooters/57050170",
+          "venueId": 57050170
+        }
+      },
+      "tournamentId": 73438153,
+      "useInnings": false,
+      "videoLink": "",
+      "winnerNext": ""
+    },
+    {
+      "bestOfSets": 0,
+      "branch": 1,
+      "challengeId": 0,
+      "comment": "",
+      "curVersion": 199,
+      "discipline": "8-Ball",
+      "disciplineId": 2,
+      "frames": [],
+      "groupNo": 4,
+      "highBreaksA": "",
+      "highBreaksB": "",
+      "inningsPlayerA": 0,
+      "inningsPlayerB": 0,
+      "lagWinner": "",
+      "loserNext": "",
+      "matchId": 73517356,
+      "matchType": 0,
+      "matchno": 15,
+      "matchstatus": "finished",
+      "matchstatusCode": 2,
+      "notes": [],
+      "penalty": 0,
+      "playerA": {
+        "country": {
+          "alpha3": "POL",
+          "continent": "Europe",
+          "image": "https://cuescore.com/img/flags/png-country-4x2-none/res-640x480/pl.png",
+          "name": "Poland"
+        },
+        "firstname": "Mirosław",
+        "image": "https://img.cuescore.com/image/5/4/50ac46cb29361bb7417fe99e9ceaf5a6.png?t=1721041648",
+        "lastname": "Galas",
+        "name": "Mirosław Galas",
+        "playerId": 32939776,
+        "represents": [],
+        "url": "https://cuescore.com/player/Miros%C5%82aw+Galas/32939776"
+      },
+      "playerB": {
+        "country": {
+          "alpha3": "POL",
+          "continent": "Europe",
+          "image": "https://cuescore.com/img/flags/png-country-4x2-none/res-640x480/pl.png",
+          "name": "Poland"
+        },
+        "firstname": "Aleksandra",
+        "image": "https://img.cuescore.com/image/5/4/5aa6aa48f7d5ffe854d5266ac08db7ef.png",
+        "lastname": "Wołek",
+        "name": "Aleksandra Wołek",
+        "playerId": 58572718,
+        "represents": [],
+        "url": "https://cuescore.com/player/Aleksandra+Wo%C5%82ek/58572718"
+      },
+      "properties": [],
+      "raceTo": 3,
+      "round": 2,
+      "roundName": "Round 2",
+      "runoutsA": 0,
+      "runoutsB": 0,
+      "scoreA": 3,
+      "scoreB": 1,
+      "sets": [],
+      "starttime": "2025-12-10T21:48:00",
+      "stoptime": "2025-12-10T22:32:42",
+      "table": {
+        "branch": "American pool",
+        "branchId": 1,
+        "cloth": "",
+        "description": "",
+        "manufacturer": "Euro-tech",
+        "model": "Tournament Champion",
+        "name": "3",
+        "pockets": "",
+        "size": 9,
+        "slate": "",
+        "tableId": 57053251,
+        "venue": {
+          "image": "https://img.cuescore.com/image/7/3/7afb0a44c256a53b5e27b584e3c27e2f.png?t=1742222226",
+          "name": "Shooters",
+          "owner": {
+            "logo": "//img.cuescore.com/image/9/2/9b59b70e156f2f8d0f1a879411c6ffd1.png?t=1576160578",
+            "name": "Black Ball Events",
+            "organizationId": 7011764,
+            "profileColor": "000000",
+            "stub": "blackballevents",
+            "url": "https://cuescore.com/blackballevents"
+          },
+          "url": "https://cuescore.com/venue/Shooters/57050170",
+          "venueId": 57050170
+        }
+      },
+      "tournamentId": 73438153,
+      "useInnings": false,
+      "videoLink": "",
+      "winnerNext": ""
+    },
+    {
+      "bestOfSets": 0,
+      "branch": 1,
+      "challengeId": 0,
+      "comment": "",
+      "curVersion": 199,
+      "discipline": "8-Ball",
+      "disciplineId": 2,
+      "frames": [],
+      "groupNo": 4,
+      "highBreaksA": "",
+      "highBreaksB": "",
+      "inningsPlayerA": 0,
+      "inningsPlayerB": 0,
+      "lagWinner": "",
+      "loserNext": "",
+      "matchId": 73517359,
+      "matchType": 0,
+      "matchno": 16,
+      "matchstatus": "finished",
+      "matchstatusCode": 2,
+      "notes": [],
+      "penalty": 0,
+      "playerA": {
+        "country": {
+          "alpha3": "POL",
+          "continent": "Europe",
+          "image": "https://cuescore.com/img/flags/png-country-4x2-none/res-640x480/pl.png",
+          "name": "Poland"
+        },
+        "firstname": "Cezary",
+        "image": "https://img.cuescore.com/image/8/4/862c792ba8eb7f97e626fbe6cbcc59f6.png",
+        "lastname": "Wołek",
+        "name": "Cezary Wołek",
+        "playerId": 72593158,
+        "represents": [],
+        "url": "https://cuescore.com/player/Cezary+Wo%C5%82ek/72593158"
+      },
+      "playerB": {
+        "country": {
+          "alpha3": "POL",
+          "continent": "Europe",
+          "image": "https://cuescore.com/img/flags/png-country-4x2-none/res-640x480/pl.png",
+          "name": "Poland"
+        },
+        "firstname": "Krzysztof",
+        "image": "https://img.cuescore.com/image/8/4/862c792ba8eb7f97e626fbe6cbcc59f6.png",
+        "lastname": "Doroszkiewicz",
+        "name": "Krzysztof Doroszkiewicz",
+        "playerId": 19794961,
+        "represents": [],
+        "url": "https://cuescore.com/player/Krzysztof+Doroszkiewicz/19794961"
+      },
+      "properties": [],
+      "raceTo": 3,
+      "round": 2,
+      "roundName": "Round 2",
+      "runoutsA": 0,
+      "runoutsB": 0,
+      "scoreA": 0,
+      "scoreB": 3,
+      "sets": [],
+      "starttime": "2025-12-10T21:48:00",
+      "stoptime": "2025-12-10T22:31:03",
+      "table": {
+        "branch": "American pool",
+        "branchId": 1,
+        "cloth": "",
+        "description": "",
+        "manufacturer": "Euro-tech",
+        "model": "Tournament Champion",
+        "name": "5",
+        "pockets": "",
+        "size": 9,
+        "slate": "",
+        "tableId": 57053452,
+        "venue": {
+          "image": "https://img.cuescore.com/image/7/3/7afb0a44c256a53b5e27b584e3c27e2f.png?t=1742222226",
+          "name": "Shooters",
+          "owner": {
+            "logo": "//img.cuescore.com/image/9/2/9b59b70e156f2f8d0f1a879411c6ffd1.png?t=1576160578",
+            "name": "Black Ball Events",
+            "organizationId": 7011764,
+            "profileColor": "000000",
+            "stub": "blackballevents",
+            "url": "https://cuescore.com/blackballevents"
+          },
+          "url": "https://cuescore.com/venue/Shooters/57050170",
+          "venueId": 57050170
+        }
+      },
+      "tournamentId": 73438153,
+      "useInnings": false,
+      "videoLink": "",
+      "winnerNext": ""
+    },
+    {
+      "bestOfSets": 0,
+      "branch": 1,
+      "challengeId": 0,
+      "comment": "",
+      "curVersion": 199,
+      "discipline": "8-Ball",
+      "disciplineId": 2,
+      "frames": [],
+      "groupNo": 1,
+      "highBreaksA": "",
+      "highBreaksB": "",
+      "inningsPlayerA": 0,
+      "inningsPlayerB": 0,
+      "lagWinner": "B",
+      "loserNext": "",
+      "matchId": 73517362,
+      "matchType": 0,
+      "matchno": 17,
+      "matchstatus": "finished",
+      "matchstatusCode": 2,
+      "notes": [
+        {
+          "note": "frame start",
+          "time": "2025-12-10T19:56:33.039Z"
+        },
+        {
+          "note": "B breaking",
+          "time": "2025-12-10T19:56:33.039Z"
+        },
+        {
+          "note": "A frame win",
+          "time": "2025-12-10T19:56:34.842Z"
+        },
+        {
+          "note": "frame end",
+          "time": "2025-12-10T19:56:34.842Z"
+        },
+        {
+          "note": "frame start",
+          "time": "2025-12-10T19:56:34.842Z"
+        },
+        {
+          "note": "A breaking",
+          "time": "2025-12-10T19:56:34.842Z"
+        },
+        {
+          "note": "B frame win",
+          "time": "2025-12-10T19:56:36.394Z"
+        },
+        {
+          "note": "frame end",
+          "time": "2025-12-10T19:56:36.394Z"
+        },
+        {
+          "note": "frame start",
+          "time": "2025-12-10T19:56:36.394Z"
+        },
+        {
+          "note": "B breaking",
+          "time": "2025-12-10T19:56:36.394Z"
+        },
+        {
+          "note": "A frame win",
+          "time": "2025-12-10T20:10:17.279Z"
+        },
+        {
+          "note": "frame end",
+          "time": "2025-12-10T20:10:17.279Z"
+        },
+        {
+          "note": "frame start",
+          "time": "2025-12-10T20:10:17.279Z"
+        },
+        {
+          "note": "A breaking",
+          "time": "2025-12-10T20:10:17.279Z"
+        },
+        {
+          "note": "A frame win",
+          "time": "2025-12-10T20:20:51.748Z"
+        },
+        {
+          "note": "frame end",
+          "time": "2025-12-10T20:20:51.748Z"
+        },
+        {
+          "note": "match end",
+          "time": "2025-12-10T20:20:52.637Z"
+        }
+      ],
+      "penalty": 0,
+      "playerA": {
+        "country": {
+          "alpha3": "POL",
+          "continent": "Europe",
+          "image": "https://cuescore.com/img/flags/png-country-4x2-none/res-640x480/pl.png",
+          "name": "Poland"
+        },
+        "firstname": "Michał",
+        "image": "https://img.cuescore.com/image/8/4/862c792ba8eb7f97e626fbe6cbcc59f6.png",
+        "lastname": "Daszczuk",
+        "name": "Michał Daszczuk",
+        "playerId": 29067826,
+        "represents": [],
+        "url": "https://cuescore.com/player/Micha%C5%82+Daszczuk/29067826"
+      },
+      "playerB": {
+        "country": {
+          "alpha3": "POL",
+          "continent": "Europe",
+          "image": "https://cuescore.com/img/flags/png-country-4x2-none/res-640x480/pl.png",
+          "name": "Poland"
+        },
+        "firstname": "Tomasz",
+        "image": "https://img.cuescore.com/image/a/4/a851e3dcd3a4dcbe547d02868af6b2dc.png?t=1756110828",
+        "lastname": "Sosnowski",
+        "name": "Tomasz Sosnowski",
+        "playerId": 37359511,
+        "represents": [],
+        "url": "https://cuescore.com/player/Tomasz+Sosnowski/37359511"
+      },
+      "properties": {
+        "lagWinsA": 0,
+        "lagWinsB": 1,
+        "runoutsA": 0,
+        "runoutsB": 0
+      },
+      "raceTo": 3,
+      "round": 3,
+      "roundName": "Round 3",
+      "runoutsA": 0,
+      "runoutsB": 0,
+      "scoreA": 3,
+      "scoreB": 1,
+      "sets": [],
+      "starttime": "2025-12-10T20:38:31",
+      "stoptime": "2025-12-10T21:20:54",
+      "table": {
+        "branch": "American pool",
+        "branchId": 1,
+        "cloth": "",
+        "description": "",
+        "manufacturer": "Euro-tech",
+        "model": "Tournament Champion",
+        "name": "4",
+        "pockets": "",
+        "size": 9,
+        "slate": "",
+        "tableId": 57053266,
+        "venue": {
+          "image": "https://img.cuescore.com/image/7/3/7afb0a44c256a53b5e27b584e3c27e2f.png?t=1742222226",
+          "name": "Shooters",
+          "owner": {
+            "logo": "//img.cuescore.com/image/9/2/9b59b70e156f2f8d0f1a879411c6ffd1.png?t=1576160578",
+            "name": "Black Ball Events",
+            "organizationId": 7011764,
+            "profileColor": "000000",
+            "stub": "blackballevents",
+            "url": "https://cuescore.com/blackballevents"
+          },
+          "url": "https://cuescore.com/venue/Shooters/57050170",
+          "venueId": 57050170
+        }
+      },
+      "tournamentId": 73438153,
+      "useInnings": false,
+      "videoLink": "",
+      "winnerNext": ""
+    },
+    {
+      "bestOfSets": 0,
+      "branch": 1,
+      "challengeId": 0,
+      "comment": "",
+      "curVersion": 199,
+      "discipline": "8-Ball",
+      "disciplineId": 2,
+      "frames": [],
+      "groupNo": 1,
+      "highBreaksA": "",
+      "highBreaksB": "",
+      "inningsPlayerA": 0,
+      "inningsPlayerB": 0,
+      "lagWinner": "",
+      "loserNext": "",
+      "matchId": 73517365,
+      "matchType": 0,
+      "matchno": 18,
+      "matchstatus": "finished",
+      "matchstatusCode": 2,
+      "notes": [],
+      "penalty": 0,
+      "playerA": {
+        "country": {
+          "alpha3": "POL",
+          "continent": "Europe",
+          "image": "https://cuescore.com/img/flags/png-country-4x2-none/res-640x480/pl.png",
+          "name": "Poland"
+        },
+        "firstname": "Adam",
+        "image": "https://img.cuescore.com/image/8/4/862c792ba8eb7f97e626fbe6cbcc59f6.png",
+        "lastname": "Toruński",
+        "name": "Adam Toruński",
+        "playerId": 52723792,
+        "represents": [],
+        "url": "https://cuescore.com/player/Adam+Toru%C5%84ski/52723792"
+      },
+      "playerB": {
+        "country": {
+          "alpha3": "POL",
+          "continent": "Europe",
+          "image": "https://cuescore.com/img/flags/png-country-4x2-none/res-640x480/pl.png",
+          "name": "Poland"
+        },
+        "firstname": "Artur",
+        "image": "https://img.cuescore.com/image/0/4/02e36c8b4e56614a07108a70cb37e024.png?t=1554816983",
+        "lastname": "Dziechciarski",
+        "name": "Artur Dziechciarski",
+        "playerId": 2950881,
+        "represents": [],
+        "url": "https://cuescore.com/player/Artur+Dziechciarski/2950881"
+      },
+      "properties": [],
+      "raceTo": 3,
+      "round": 3,
+      "roundName": "Round 3",
+      "runoutsA": 0,
+      "runoutsB": 0,
+      "scoreA": 0,
+      "scoreB": 3,
+      "sets": [],
+      "starttime": "2025-12-10T20:33:00",
+      "stoptime": "2025-12-10T21:17:46",
+      "table": {
+        "branch": "American pool",
+        "branchId": 1,
+        "cloth": "",
+        "description": "",
+        "manufacturer": "Euro-tech",
+        "model": "Tournament Champion",
+        "name": "1",
+        "pockets": "",
+        "size": 9,
+        "slate": "",
+        "tableId": 57050173,
+        "venue": {
+          "image": "https://img.cuescore.com/image/7/3/7afb0a44c256a53b5e27b584e3c27e2f.png?t=1742222226",
+          "name": "Shooters",
+          "owner": {
+            "logo": "//img.cuescore.com/image/9/2/9b59b70e156f2f8d0f1a879411c6ffd1.png?t=1576160578",
+            "name": "Black Ball Events",
+            "organizationId": 7011764,
+            "profileColor": "000000",
+            "stub": "blackballevents",
+            "url": "https://cuescore.com/blackballevents"
+          },
+          "url": "https://cuescore.com/venue/Shooters/57050170",
+          "venueId": 57050170
+        }
+      },
+      "tournamentId": 73438153,
+      "useInnings": false,
+      "videoLink": "",
+      "winnerNext": ""
+    },
+    {
+      "bestOfSets": 0,
+      "branch": 1,
+      "challengeId": 0,
+      "comment": "",
+      "curVersion": 199,
+      "discipline": "8-Ball",
+      "disciplineId": 2,
+      "frames": [],
+      "groupNo": 2,
+      "highBreaksA": "",
+      "highBreaksB": "",
+      "inningsPlayerA": 0,
+      "inningsPlayerB": 0,
+      "lagWinner": "B",
+      "loserNext": "",
+      "matchId": 73517368,
+      "matchType": 0,
+      "matchno": 19,
+      "matchstatus": "finished",
+      "matchstatusCode": 2,
+      "notes": [
+        {
+          "note": "frame start",
+          "time": "2025-12-10T20:25:02.815Z"
+        },
+        {
+          "note": "B breaking",
+          "time": "2025-12-10T20:25:02.815Z"
+        },
+        {
+          "note": "A frame win",
+          "time": "2025-12-10T20:33:25.786Z"
+        },
+        {
+          "note": "frame end",
+          "time": "2025-12-10T20:33:25.786Z"
+        },
+        {
+          "note": "frame start",
+          "time": "2025-12-10T20:33:25.786Z"
+        },
+        {
+          "note": "A breaking",
+          "time": "2025-12-10T20:33:25.786Z"
+        },
+        {
+          "note": "A frame win",
+          "time": "2025-12-10T20:39:30.842Z"
+        },
+        {
+          "note": "frame end",
+          "time": "2025-12-10T20:39:30.842Z"
+        },
+        {
+          "note": "frame start",
+          "time": "2025-12-10T20:39:30.842Z"
+        },
+        {
+          "note": "B breaking",
+          "time": "2025-12-10T20:39:30.842Z"
+        },
+        {
+          "note": "B frame win",
+          "time": "2025-12-10T20:55:12.361Z"
+        },
+        {
+          "note": "frame end",
+          "time": "2025-12-10T20:55:12.361Z"
+        },
+        {
+          "note": "frame start",
+          "time": "2025-12-10T20:55:12.361Z"
+        },
+        {
+          "note": "A breaking",
+          "time": "2025-12-10T20:55:12.361Z"
+        },
+        {
+          "note": "B frame win",
+          "time": "2025-12-10T21:06:54.901Z"
+        },
+        {
+          "note": "frame end",
+          "time": "2025-12-10T21:06:54.901Z"
+        },
+        {
+          "note": "frame start",
+          "time": "2025-12-10T21:06:54.901Z"
+        },
+        {
+          "note": "B breaking",
+          "time": "2025-12-10T21:06:54.901Z"
+        }
+      ],
+      "penalty": 0,
+      "playerA": {
+        "country": {
+          "alpha3": "POL",
+          "continent": "Europe",
+          "image": "https://cuescore.com/img/flags/png-country-4x2-none/res-640x480/pl.png",
+          "name": "Poland"
+        },
+        "firstname": "Piotr",
+        "image": "https://img.cuescore.com/image/5/4/5859c1d9450d0be5004521cfdb2938c9.png?t=1551456237",
+        "lastname": "Niewczas",
+        "name": "Piotr Niewczas",
+        "playerId": 2383646,
+        "represents": [],
+        "url": "https://cuescore.com/player/Piotr+Niewczas/2383646"
+      },
+      "playerB": {
+        "country": {
+          "alpha3": "POL",
+          "continent": "Europe",
+          "image": "https://cuescore.com/img/flags/png-country-4x2-none/res-640x480/pl.png",
+          "name": "Poland"
+        },
+        "firstname": "Paweł",
+        "image": "https://img.cuescore.com/image/b/4/b2cbbdaad9b0f9c0a2a063a869e3b54f.png?t=1717415877",
+        "lastname": "Florecki",
+        "name": "Paweł Florecki",
+        "playerId": 3506000,
+        "represents": [],
+        "url": "https://cuescore.com/player/Pawe%C5%82+Florecki/3506000"
+      },
+      "properties": {
+        "lagWinsA": 0,
+        "lagWinsB": 1,
+        "runoutsA": 0,
+        "runoutsB": 0
+      },
+      "raceTo": 3,
+      "round": 3,
+      "roundName": "Round 3",
+      "runoutsA": 0,
+      "runoutsB": 0,
+      "scoreA": 3,
+      "scoreB": 2,
+      "sets": [],
+      "starttime": "2025-12-10T21:23:00",
+      "stoptime": "2025-12-10T22:26:32",
+      "table": {
+        "branch": "American pool",
+        "branchId": 1,
+        "cloth": "",
+        "description": "",
+        "manufacturer": "Euro-tech",
+        "model": "Tournament Champion",
+        "name": "2",
+        "pockets": "",
+        "size": 9,
+        "slate": "",
+        "tableId": 57053245,
+        "venue": {
+          "image": "https://img.cuescore.com/image/7/3/7afb0a44c256a53b5e27b584e3c27e2f.png?t=1742222226",
+          "name": "Shooters",
+          "owner": {
+            "logo": "//img.cuescore.com/image/9/2/9b59b70e156f2f8d0f1a879411c6ffd1.png?t=1576160578",
+            "name": "Black Ball Events",
+            "organizationId": 7011764,
+            "profileColor": "000000",
+            "stub": "blackballevents",
+            "url": "https://cuescore.com/blackballevents"
+          },
+          "url": "https://cuescore.com/venue/Shooters/57050170",
+          "venueId": 57050170
+        }
+      },
+      "tournamentId": 73438153,
+      "useInnings": false,
+      "videoLink": "",
+      "winnerNext": ""
+    },
+    {
+      "bestOfSets": 0,
+      "branch": 1,
+      "challengeId": 0,
+      "comment": "",
+      "curVersion": 199,
+      "discipline": "8-Ball",
+      "disciplineId": 2,
+      "frames": [],
+      "groupNo": 2,
+      "highBreaksA": "",
+      "highBreaksB": "",
+      "inningsPlayerA": 0,
+      "inningsPlayerB": 0,
+      "lagWinner": "B",
+      "loserNext": "",
+      "matchId": 73517371,
+      "matchType": 0,
+      "matchno": 20,
+      "matchstatus": "finished",
+      "matchstatusCode": 2,
+      "notes": [
+        {
+          "note": "frame start",
+          "time": "2025-12-10T19:40:58.110Z"
+        },
+        {
+          "note": "B breaking",
+          "time": "2025-12-10T19:40:58.110Z"
+        },
+        {
+          "note": "A frame win",
+          "time": "2025-12-10T19:41:00.669Z"
+        },
+        {
+          "note": "frame end",
+          "time": "2025-12-10T19:41:00.669Z"
+        },
+        {
+          "note": "frame start",
+          "time": "2025-12-10T19:41:00.669Z"
+        },
+        {
+          "note": "A breaking",
+          "time": "2025-12-10T19:41:00.669Z"
+        },
+        {
+          "note": "B frame win",
+          "time": "2025-12-10T19:53:44.120Z"
+        },
+        {
+          "note": "frame end",
+          "time": "2025-12-10T19:53:44.120Z"
+        },
+        {
+          "note": "frame start",
+          "time": "2025-12-10T19:53:44.120Z"
+        },
+        {
+          "note": "B breaking",
+          "time": "2025-12-10T19:53:44.120Z"
+        },
+        {
+          "note": "A frame win",
+          "time": "2025-12-10T20:04:58.885Z"
+        },
+        {
+          "note": "frame end",
+          "time": "2025-12-10T20:04:58.885Z"
+        },
+        {
+          "note": "frame start",
+          "time": "2025-12-10T20:04:58.885Z"
+        },
+        {
+          "note": "A breaking",
+          "time": "2025-12-10T20:04:58.885Z"
+        },
+        {
+          "note": "B frame win",
+          "time": "2025-12-10T20:15:41.325Z"
+        },
+        {
+          "note": "frame end",
+          "time": "2025-12-10T20:15:41.325Z"
+        },
+        {
+          "note": "frame start",
+          "time": "2025-12-10T20:15:41.325Z"
+        },
+        {
+          "note": "B breaking",
+          "time": "2025-12-10T20:15:41.325Z"
+        },
+        {
+          "note": "A frame win",
+          "time": "2025-12-10T20:21:56.297Z"
+        },
+        {
+          "note": "frame end",
+          "time": "2025-12-10T20:21:56.297Z"
+        },
+        {
+          "note": "match end",
+          "time": "2025-12-10T20:21:57.958Z"
+        }
+      ],
+      "penalty": 0,
+      "playerA": {
+        "country": {
+          "alpha3": "POL",
+          "continent": "Europe",
+          "image": "https://cuescore.com/img/flags/png-country-4x2-none/res-640x480/pl.png",
+          "name": "Poland"
+        },
+        "firstname": "Marcin",
+        "image": "https://img.cuescore.com/image/5/4/53d138da49b844a9d55e079704cfcb97.png?t=1524559982",
+        "lastname": "Gościmski",
+        "name": "Marcin Gościmski",
+        "playerId": 2014191,
+        "represents": [],
+        "url": "https://cuescore.com/player/Marcin+Go%C5%9Bcimski/2014191"
+      },
+      "playerB": {
+        "country": {
+          "alpha3": "POL",
+          "continent": "Europe",
+          "image": "https://cuescore.com/img/flags/png-country-4x2-none/res-640x480/pl.png",
+          "name": "Poland"
+        },
+        "firstname": "Jakub",
+        "image": "https://img.cuescore.com/image/9/4/9aa1b4cafcfb6122667fad43a5036790.png?t=1756883433",
+        "lastname": "Tomasik",
+        "name": "Jakub Tomasik",
+        "playerId": 65042038,
+        "represents": [],
+        "url": "https://cuescore.com/player/Jakub+Tomasik/65042038"
+      },
+      "properties": {
+        "lagWinsA": 0,
+        "lagWinsB": 1,
+        "runoutsA": 0,
+        "runoutsB": 0
+      },
+      "raceTo": 3,
+      "round": 3,
+      "roundName": "Round 3",
+      "runoutsA": 0,
+      "runoutsB": 0,
+      "scoreA": 3,
+      "scoreB": 2,
+      "sets": [],
+      "starttime": "2025-12-10T20:24:35",
+      "stoptime": "2025-12-10T21:22:01",
+      "table": {
+        "branch": "American pool",
+        "branchId": 1,
+        "cloth": "",
+        "description": "",
+        "manufacturer": "Euro-tech",
+        "model": "Tournament Champion",
+        "name": "2",
+        "pockets": "",
+        "size": 9,
+        "slate": "",
+        "tableId": 57053245,
+        "venue": {
+          "image": "https://img.cuescore.com/image/7/3/7afb0a44c256a53b5e27b584e3c27e2f.png?t=1742222226",
+          "name": "Shooters",
+          "owner": {
+            "logo": "//img.cuescore.com/image/9/2/9b59b70e156f2f8d0f1a879411c6ffd1.png?t=1576160578",
+            "name": "Black Ball Events",
+            "organizationId": 7011764,
+            "profileColor": "000000",
+            "stub": "blackballevents",
+            "url": "https://cuescore.com/blackballevents"
+          },
+          "url": "https://cuescore.com/venue/Shooters/57050170",
+          "venueId": 57050170
+        }
+      },
+      "tournamentId": 73438153,
+      "useInnings": false,
+      "videoLink": "",
+      "winnerNext": ""
+    },
+    {
+      "bestOfSets": 0,
+      "branch": 1,
+      "challengeId": 0,
+      "comment": "",
+      "curVersion": 199,
+      "discipline": "8-Ball",
+      "disciplineId": 2,
+      "frames": [],
+      "groupNo": 3,
+      "highBreaksA": "",
+      "highBreaksB": "",
+      "inningsPlayerA": 0,
+      "inningsPlayerB": 0,
+      "lagWinner": "",
+      "loserNext": "",
+      "matchId": 73517374,
+      "matchType": 0,
+      "matchno": 21,
+      "matchstatus": "finished",
+      "matchstatusCode": 2,
+      "notes": [],
+      "penalty": 0,
+      "playerA": {
+        "country": {
+          "alpha3": "UKR",
+          "continent": "Europe",
+          "image": "https://cuescore.com/img/flags/png-country-4x2-none/res-640x480/ua.png",
+          "name": "Ukraine"
+        },
+        "firstname": "Ivan",
+        "image": "https://img.cuescore.com/image/2/4/2c93db15d52d17b300ed3d362a7ff6d1.png?t=1708679266",
+        "lastname": "Kuzmych",
+        "name": "Ivan Kuzmych",
+        "playerId": 39854860,
+        "represents": [],
+        "url": "https://cuescore.com/player/Ivan+Kuzmych/39854860"
+      },
+      "playerB": {
+        "country": {
+          "alpha3": "POL",
+          "continent": "Europe",
+          "image": "https://cuescore.com/img/flags/png-country-4x2-none/res-640x480/pl.png",
+          "name": "Poland"
+        },
+        "firstname": "Marcin",
+        "image": "https://img.cuescore.com/image/6/4/608eb650feec311f59b628b56a77213d.png?t=1653917150",
+        "lastname": "Cieślak",
+        "name": "Marcin Cieślak",
+        "playerId": 16067179,
+        "represents": [],
+        "url": "https://cuescore.com/player/Marcin+Cie%C5%9Blak/16067179"
+      },
+      "properties": [],
+      "raceTo": 3,
+      "round": 3,
+      "roundName": "Round 3",
+      "runoutsA": 0,
+      "runoutsB": 0,
+      "scoreA": 3,
+      "scoreB": 0,
+      "sets": [],
+      "starttime": "2025-12-10T21:54:00",
+      "stoptime": "2025-12-10T22:16:57",
+      "table": [],
+      "tournamentId": 73438153,
+      "useInnings": false,
+      "videoLink": "",
+      "winnerNext": ""
+    },
+    {
+      "bestOfSets": 0,
+      "branch": 1,
+      "challengeId": 0,
+      "comment": "",
+      "curVersion": 199,
+      "discipline": "8-Ball",
+      "disciplineId": 2,
+      "frames": [],
+      "groupNo": 3,
+      "highBreaksA": "",
+      "highBreaksB": "",
+      "inningsPlayerA": 0,
+      "inningsPlayerB": 0,
+      "lagWinner": "",
+      "loserNext": "",
+      "matchId": 73517377,
+      "matchType": 0,
+      "matchno": 22,
+      "matchstatus": "finished",
+      "matchstatusCode": 2,
+      "notes": [],
+      "penalty": 0,
+      "playerA": {
+        "country": {
+          "alpha3": "POL",
+          "continent": "Europe",
+          "image": "https://cuescore.com/img/flags/png-country-4x2-none/res-640x480/pl.png",
+          "name": "Poland"
+        },
+        "firstname": "Marta",
+        "image": "https://img.cuescore.com/image/e/4/eff8001937f0a627a1c033854110bbe7.png?t=1737981612",
+        "lastname": "Wawrzyn",
+        "name": "Marta Wawrzyn",
+        "playerId": 2180579,
+        "represents": [],
+        "url": "https://cuescore.com/player/Marta+Wawrzyn/2180579"
+      },
+      "playerB": {
+        "country": {
+          "alpha3": "POL",
+          "continent": "Europe",
+          "image": "https://cuescore.com/img/flags/png-country-4x2-none/res-640x480/pl.png",
+          "name": "Poland"
+        },
+        "firstname": "Tomek",
+        "image": "https://img.cuescore.com/image/7/4/74061c1f247d25c1c2939a2f33efb340.png?t=1677415392",
+        "lastname": "Kielmans",
+        "name": "Tomek Kielmans",
+        "playerId": 2264676,
+        "represents": [],
+        "url": "https://cuescore.com/player/Tomek+Kielmans/2264676"
+      },
+      "properties": [],
+      "raceTo": 3,
+      "round": 3,
+      "roundName": "Round 3",
+      "runoutsA": 0,
+      "runoutsB": 0,
+      "scoreA": 2,
+      "scoreB": 3,
+      "sets": [],
+      "starttime": "2025-12-10T20:24:00",
+      "stoptime": "2025-12-10T21:15:11",
+      "table": {
+        "branch": "American pool",
+        "branchId": 1,
+        "cloth": "",
+        "description": "",
+        "manufacturer": "Euro-tech",
+        "model": "Tournament Champion",
+        "name": "6",
+        "pockets": "",
+        "size": 9,
+        "slate": "",
+        "tableId": 57053455,
+        "venue": {
+          "image": "https://img.cuescore.com/image/7/3/7afb0a44c256a53b5e27b584e3c27e2f.png?t=1742222226",
+          "name": "Shooters",
+          "owner": {
+            "logo": "//img.cuescore.com/image/9/2/9b59b70e156f2f8d0f1a879411c6ffd1.png?t=1576160578",
+            "name": "Black Ball Events",
+            "organizationId": 7011764,
+            "profileColor": "000000",
+            "stub": "blackballevents",
+            "url": "https://cuescore.com/blackballevents"
+          },
+          "url": "https://cuescore.com/venue/Shooters/57050170",
+          "venueId": 57050170
+        }
+      },
+      "tournamentId": 73438153,
+      "useInnings": false,
+      "videoLink": "",
+      "winnerNext": ""
+    },
+    {
+      "bestOfSets": 0,
+      "branch": 1,
+      "challengeId": 0,
+      "comment": "",
+      "curVersion": 199,
+      "discipline": "8-Ball",
+      "disciplineId": 2,
+      "frames": [],
+      "groupNo": 4,
+      "highBreaksA": "",
+      "highBreaksB": "",
+      "inningsPlayerA": 0,
+      "inningsPlayerB": 0,
+      "lagWinner": "",
+      "loserNext": "",
+      "matchId": 73517380,
+      "matchType": 0,
+      "matchno": 23,
+      "matchstatus": "finished",
+      "matchstatusCode": 2,
+      "notes": [],
+      "penalty": 0,
+      "playerA": {
+        "country": {
+          "alpha3": "POL",
+          "continent": "Europe",
+          "image": "https://cuescore.com/img/flags/png-country-4x2-none/res-640x480/pl.png",
+          "name": "Poland"
+        },
+        "firstname": "Mirosław",
+        "image": "https://img.cuescore.com/image/5/4/50ac46cb29361bb7417fe99e9ceaf5a6.png?t=1721041648",
+        "lastname": "Galas",
+        "name": "Mirosław Galas",
+        "playerId": 32939776,
+        "represents": [],
+        "url": "https://cuescore.com/player/Miros%C5%82aw+Galas/32939776"
+      },
+      "playerB": {
+        "country": {
+          "alpha3": "POL",
+          "continent": "Europe",
+          "image": "https://cuescore.com/img/flags/png-country-4x2-none/res-640x480/pl.png",
+          "name": "Poland"
+        },
+        "firstname": "Krzysztof",
+        "image": "https://img.cuescore.com/image/8/4/862c792ba8eb7f97e626fbe6cbcc59f6.png",
+        "lastname": "Doroszkiewicz",
+        "name": "Krzysztof Doroszkiewicz",
+        "playerId": 19794961,
+        "represents": [],
+        "url": "https://cuescore.com/player/Krzysztof+Doroszkiewicz/19794961"
+      },
+      "properties": [],
+      "raceTo": 3,
+      "round": 3,
+      "roundName": "Round 3",
+      "runoutsA": 0,
+      "runoutsB": 0,
+      "scoreA": 3,
+      "scoreB": 1,
+      "sets": [],
+      "starttime": "2025-12-10T20:12:00",
+      "stoptime": "2025-12-10T20:43:13",
+      "table": {
+        "branch": "American pool",
+        "branchId": 1,
+        "cloth": "",
+        "description": "",
+        "manufacturer": "Euro-tech",
+        "model": "Tournament Champion",
+        "name": "5",
+        "pockets": "",
+        "size": 9,
+        "slate": "",
+        "tableId": 57053452,
+        "venue": {
+          "image": "https://img.cuescore.com/image/7/3/7afb0a44c256a53b5e27b584e3c27e2f.png?t=1742222226",
+          "name": "Shooters",
+          "owner": {
+            "logo": "//img.cuescore.com/image/9/2/9b59b70e156f2f8d0f1a879411c6ffd1.png?t=1576160578",
+            "name": "Black Ball Events",
+            "organizationId": 7011764,
+            "profileColor": "000000",
+            "stub": "blackballevents",
+            "url": "https://cuescore.com/blackballevents"
+          },
+          "url": "https://cuescore.com/venue/Shooters/57050170",
+          "venueId": 57050170
+        }
+      },
+      "tournamentId": 73438153,
+      "useInnings": false,
+      "videoLink": "",
+      "winnerNext": ""
+    },
+    {
+      "bestOfSets": 0,
+      "branch": 1,
+      "challengeId": 0,
+      "comment": "",
+      "curVersion": 199,
+      "discipline": "8-Ball",
+      "disciplineId": 2,
+      "frames": [],
+      "groupNo": 4,
+      "highBreaksA": "",
+      "highBreaksB": "",
+      "inningsPlayerA": 0,
+      "inningsPlayerB": 0,
+      "lagWinner": "",
+      "loserNext": "",
+      "matchId": 73517383,
+      "matchType": 0,
+      "matchno": 24,
+      "matchstatus": "finished",
+      "matchstatusCode": 2,
+      "notes": [],
+      "penalty": 0,
+      "playerA": {
+        "country": {
+          "alpha3": "POL",
+          "continent": "Europe",
+          "image": "https://cuescore.com/img/flags/png-country-4x2-none/res-640x480/pl.png",
+          "name": "Poland"
+        },
+        "firstname": "Aleksandra",
+        "image": "https://img.cuescore.com/image/5/4/5aa6aa48f7d5ffe854d5266ac08db7ef.png",
+        "lastname": "Wołek",
+        "name": "Aleksandra Wołek",
+        "playerId": 58572718,
+        "represents": [],
+        "url": "https://cuescore.com/player/Aleksandra+Wo%C5%82ek/58572718"
+      },
+      "playerB": {
+        "country": {
+          "alpha3": "POL",
+          "continent": "Europe",
+          "image": "https://cuescore.com/img/flags/png-country-4x2-none/res-640x480/pl.png",
+          "name": "Poland"
+        },
+        "firstname": "Cezary",
+        "image": "https://img.cuescore.com/image/8/4/862c792ba8eb7f97e626fbe6cbcc59f6.png",
+        "lastname": "Wołek",
+        "name": "Cezary Wołek",
+        "playerId": 72593158,
+        "represents": [],
+        "url": "https://cuescore.com/player/Cezary+Wo%C5%82ek/72593158"
+      },
+      "properties": [],
+      "raceTo": 3,
+      "round": 3,
+      "roundName": "Round 3",
+      "runoutsA": 0,
+      "runoutsB": 0,
+      "scoreA": 3,
+      "scoreB": 0,
+      "sets": [],
+      "starttime": "2025-12-10T20:43:00",
+      "stoptime": "2025-12-10T21:48:23",
+      "table": {
+        "branch": "American pool",
+        "branchId": 1,
+        "cloth": "",
+        "description": "",
+        "manufacturer": "Euro-tech",
+        "model": "Tournament Champion",
+        "name": "5",
+        "pockets": "",
+        "size": 9,
+        "slate": "",
+        "tableId": 57053452,
+        "venue": {
+          "image": "https://img.cuescore.com/image/7/3/7afb0a44c256a53b5e27b584e3c27e2f.png?t=1742222226",
+          "name": "Shooters",
+          "owner": {
+            "logo": "//img.cuescore.com/image/9/2/9b59b70e156f2f8d0f1a879411c6ffd1.png?t=1576160578",
+            "name": "Black Ball Events",
+            "organizationId": 7011764,
+            "profileColor": "000000",
+            "stub": "blackballevents",
+            "url": "https://cuescore.com/blackballevents"
+          },
+          "url": "https://cuescore.com/venue/Shooters/57050170",
+          "venueId": 57050170
+        }
+      },
+      "tournamentId": 73438153,
+      "useInnings": false,
+      "videoLink": "",
+      "winnerNext": ""
+    },
+    {
+      "bestOfSets": 0,
+      "branch": 1,
+      "challengeId": 0,
+      "comment": "",
+      "curVersion": 199,
+      "discipline": "8-Ball",
+      "disciplineId": 2,
+      "frames": [],
+      "groupNo": 1,
+      "highBreaksA": "",
+      "highBreaksB": "",
+      "inningsPlayerA": 0,
+      "inningsPlayerB": 0,
+      "lagWinner": "",
+      "loserNext": "",
+      "matchId": 73517386,
+      "matchType": 0,
+      "matchno": 25,
+      "matchstatus": "finished",
+      "matchstatusCode": 2,
+      "notes": [],
+      "penalty": 0,
+      "playerA": {
+        "country": {
+          "alpha3": "POL",
+          "continent": "Europe",
+          "image": "https://cuescore.com/img/flags/png-country-4x2-none/res-640x480/pl.png",
+          "name": "Poland"
+        },
+        "firstname": "Tomasz",
+        "image": "https://img.cuescore.com/image/a/4/a851e3dcd3a4dcbe547d02868af6b2dc.png?t=1756110828",
+        "lastname": "Sosnowski",
+        "name": "Tomasz Sosnowski",
+        "playerId": 37359511,
+        "represents": [],
+        "url": "https://cuescore.com/player/Tomasz+Sosnowski/37359511"
+      },
+      "playerB": {
+        "country": {
+          "alpha3": "POL",
+          "continent": "Europe",
+          "image": "https://cuescore.com/img/flags/png-country-4x2-none/res-640x480/pl.png",
+          "name": "Poland"
+        },
+        "firstname": "Artur",
+        "image": "https://img.cuescore.com/image/0/4/02e36c8b4e56614a07108a70cb37e024.png?t=1554816983",
+        "lastname": "Dziechciarski",
+        "name": "Artur Dziechciarski",
+        "playerId": 2950881,
+        "represents": [],
+        "url": "https://cuescore.com/player/Artur+Dziechciarski/2950881"
+      },
+      "properties": [],
+      "raceTo": 3,
+      "round": 4,
+      "roundName": "Round 4",
+      "runoutsA": 0,
+      "runoutsB": 0,
+      "scoreA": 1,
+      "scoreB": 3,
+      "sets": [],
+      "starttime": "2025-12-10T19:47:00",
+      "stoptime": "2025-12-10T20:31:56",
+      "table": {
+        "branch": "American pool",
+        "branchId": 1,
+        "cloth": "",
+        "description": "",
+        "manufacturer": "Euro-tech",
+        "model": "Tournament Champion",
+        "name": "1",
+        "pockets": "",
+        "size": 9,
+        "slate": "",
+        "tableId": 57050173,
+        "venue": {
+          "image": "https://img.cuescore.com/image/7/3/7afb0a44c256a53b5e27b584e3c27e2f.png?t=1742222226",
+          "name": "Shooters",
+          "owner": {
+            "logo": "//img.cuescore.com/image/9/2/9b59b70e156f2f8d0f1a879411c6ffd1.png?t=1576160578",
+            "name": "Black Ball Events",
+            "organizationId": 7011764,
+            "profileColor": "000000",
+            "stub": "blackballevents",
+            "url": "https://cuescore.com/blackballevents"
+          },
+          "url": "https://cuescore.com/venue/Shooters/57050170",
+          "venueId": 57050170
+        }
+      },
+      "tournamentId": 73438153,
+      "useInnings": false,
+      "videoLink": "",
+      "winnerNext": ""
+    },
+    {
+      "bestOfSets": 0,
+      "branch": 1,
+      "challengeId": 0,
+      "comment": "",
+      "curVersion": 199,
+      "discipline": "8-Ball",
+      "disciplineId": 2,
+      "frames": [],
+      "groupNo": 1,
+      "highBreaksA": "",
+      "highBreaksB": "",
+      "inningsPlayerA": 0,
+      "inningsPlayerB": 0,
+      "lagWinner": "B",
+      "loserNext": "",
+      "matchId": 73517389,
+      "matchType": 0,
+      "matchno": 26,
+      "matchstatus": "finished",
+      "matchstatusCode": 2,
+      "notes": [
+        {
+          "note": "frame start",
+          "time": "2025-12-10T19:24:08.412Z"
+        },
+        {
+          "note": "B breaking",
+          "time": "2025-12-10T19:24:08.412Z"
+        },
+        {
+          "note": "A frame win",
+          "time": "2025-12-10T19:27:49.550Z"
+        },
+        {
+          "note": "frame end",
+          "time": "2025-12-10T19:27:49.550Z"
+        },
+        {
+          "note": "frame start",
+          "time": "2025-12-10T19:27:49.550Z"
+        },
+        {
+          "note": "A breaking",
+          "time": "2025-12-10T19:27:49.550Z"
+        },
+        {
+          "note": "A frame win",
+          "time": "2025-12-10T19:33:39.212Z"
+        },
+        {
+          "note": "frame end",
+          "time": "2025-12-10T19:33:39.212Z"
+        },
+        {
+          "note": "frame start",
+          "time": "2025-12-10T19:33:39.212Z"
+        },
+        {
+          "note": "B breaking",
+          "time": "2025-12-10T19:33:39.212Z"
+        },
+        {
+          "note": "A frame win",
+          "time": "2025-12-10T19:37:52.610Z"
+        },
+        {
+          "note": "frame end",
+          "time": "2025-12-10T19:37:52.610Z"
+        },
+        {
+          "note": "match end",
+          "time": "2025-12-10T19:37:53.551Z"
+        }
+      ],
+      "penalty": 0,
+      "playerA": {
+        "country": {
+          "alpha3": "POL",
+          "continent": "Europe",
+          "image": "https://cuescore.com/img/flags/png-country-4x2-none/res-640x480/pl.png",
+          "name": "Poland"
+        },
+        "firstname": "Michał",
+        "image": "https://img.cuescore.com/image/8/4/862c792ba8eb7f97e626fbe6cbcc59f6.png",
+        "lastname": "Daszczuk",
+        "name": "Michał Daszczuk",
+        "playerId": 29067826,
+        "represents": [],
+        "url": "https://cuescore.com/player/Micha%C5%82+Daszczuk/29067826"
+      },
+      "playerB": {
+        "country": {
+          "alpha3": "POL",
+          "continent": "Europe",
+          "image": "https://cuescore.com/img/flags/png-country-4x2-none/res-640x480/pl.png",
+          "name": "Poland"
+        },
+        "firstname": "Marcin",
+        "image": "https://img.cuescore.com/image/8/4/8a2e1b8f93694be91ae1601c088c0064.png?t=1504868227",
+        "lastname": "Warmiński",
+        "name": "Marcin Warmiński",
+        "playerId": 1653458,
+        "represents": [],
+        "url": "https://cuescore.com/player/Marcin+Warmi%C5%84ski/1653458"
+      },
+      "properties": {
+        "lagWinsA": 0,
+        "lagWinsB": 1,
+        "runoutsA": 0,
+        "runoutsB": 0
+      },
+      "raceTo": 3,
+      "round": 4,
+      "roundName": "Round 4",
+      "runoutsA": 0,
+      "runoutsB": 0,
+      "scoreA": 3,
+      "scoreB": 0,
+      "sets": [],
+      "starttime": "2025-12-10T20:21:58",
+      "stoptime": "2025-12-10T20:37:55",
+      "table": {
+        "branch": "American pool",
+        "branchId": 1,
+        "cloth": "",
+        "description": "",
+        "manufacturer": "Euro-tech",
+        "model": "Tournament Champion",
+        "name": "4",
+        "pockets": "",
+        "size": 9,
+        "slate": "",
+        "tableId": 57053266,
+        "venue": {
+          "image": "https://img.cuescore.com/image/7/3/7afb0a44c256a53b5e27b584e3c27e2f.png?t=1742222226",
+          "name": "Shooters",
+          "owner": {
+            "logo": "//img.cuescore.com/image/9/2/9b59b70e156f2f8d0f1a879411c6ffd1.png?t=1576160578",
+            "name": "Black Ball Events",
+            "organizationId": 7011764,
+            "profileColor": "000000",
+            "stub": "blackballevents",
+            "url": "https://cuescore.com/blackballevents"
+          },
+          "url": "https://cuescore.com/venue/Shooters/57050170",
+          "venueId": 57050170
+        }
+      },
+      "tournamentId": 73438153,
+      "useInnings": false,
+      "videoLink": "",
+      "winnerNext": ""
+    },
+    {
+      "bestOfSets": 0,
+      "branch": 1,
+      "challengeId": 0,
+      "comment": "",
+      "curVersion": 199,
+      "discipline": "8-Ball",
+      "disciplineId": 2,
+      "frames": [],
+      "groupNo": 1,
+      "highBreaksA": "",
+      "highBreaksB": "",
+      "inningsPlayerA": 0,
+      "inningsPlayerB": 0,
+      "lagWinner": "B",
+      "loserNext": "",
+      "matchId": 73517392,
+      "matchType": 0,
+      "matchno": 27,
+      "matchstatus": "finished",
+      "matchstatusCode": 2,
+      "notes": [
+        {
+          "note": "frame start",
+          "time": "2025-12-10T20:19:22.977Z"
+        },
+        {
+          "note": "B breaking",
+          "time": "2025-12-10T20:19:22.977Z"
+        },
+        {
+          "note": "B frame win runout",
+          "time": "2025-12-10T20:21:39.765Z"
+        },
+        {
+          "note": "frame end",
+          "time": "2025-12-10T20:21:39.765Z"
+        },
+        {
+          "note": "frame start",
+          "time": "2025-12-10T20:21:39.765Z"
+        },
+        {
+          "note": "A breaking",
+          "time": "2025-12-10T20:21:39.765Z"
+        },
+        {
+          "note": "A frame win",
+          "time": "2025-12-10T20:31:44.261Z"
+        },
+        {
+          "note": "frame end",
+          "time": "2025-12-10T20:31:44.261Z"
+        },
+        {
+          "note": "frame start",
+          "time": "2025-12-10T20:31:44.261Z"
+        },
+        {
+          "note": "B breaking",
+          "time": "2025-12-10T20:31:44.261Z"
+        },
+        {
+          "note": "B frame win runout",
+          "time": "2025-12-10T20:34:52.436Z"
+        },
+        {
+          "note": "frame end",
+          "time": "2025-12-10T20:34:52.436Z"
+        },
+        {
+          "note": "frame start",
+          "time": "2025-12-10T20:34:52.436Z"
+        },
+        {
+          "note": "A breaking",
+          "time": "2025-12-10T20:34:52.436Z"
+        },
+        {
+          "note": "B frame win",
+          "time": "2025-12-10T20:45:04.287Z"
+        },
+        {
+          "note": "frame end",
+          "time": "2025-12-10T20:45:04.287Z"
+        },
+        {
+          "note": "match end",
+          "time": "2025-12-10T20:45:05.503Z"
+        }
+      ],
+      "penalty": 0,
+      "playerA": {
+        "country": {
+          "alpha3": "POL",
+          "continent": "Europe",
+          "image": "https://cuescore.com/img/flags/png-country-4x2-none/res-640x480/pl.png",
+          "name": "Poland"
+        },
+        "firstname": "Artur",
+        "image": "https://img.cuescore.com/image/0/4/02e36c8b4e56614a07108a70cb37e024.png?t=1554816983",
+        "lastname": "Dziechciarski",
+        "name": "Artur Dziechciarski",
+        "playerId": 2950881,
+        "represents": [],
+        "url": "https://cuescore.com/player/Artur+Dziechciarski/2950881"
+      },
+      "playerB": {
+        "country": {
+          "alpha3": "POL",
+          "continent": "Europe",
+          "image": "https://cuescore.com/img/flags/png-country-4x2-none/res-640x480/pl.png",
+          "name": "Poland"
+        },
+        "firstname": "Marcin",
+        "image": "https://img.cuescore.com/image/8/4/8a2e1b8f93694be91ae1601c088c0064.png?t=1504868227",
+        "lastname": "Warmiński",
+        "name": "Marcin Warmiński",
+        "playerId": 1653458,
+        "represents": [],
+        "url": "https://cuescore.com/player/Marcin+Warmi%C5%84ski/1653458"
+      },
+      "properties": {
+        "lagWinsA": 0,
+        "lagWinsB": 1,
+        "runoutsA": 0,
+        "runoutsB": 2
+      },
+      "raceTo": 3,
+      "round": 5,
+      "roundName": "Round 5",
+      "runoutsA": 0,
+      "runoutsB": 2,
+      "scoreA": 1,
+      "scoreB": 3,
+      "sets": [],
+      "starttime": "2025-12-10T21:18:03",
+      "stoptime": "2025-12-10T21:45:07",
+      "table": {
+        "branch": "American pool",
+        "branchId": 1,
+        "cloth": "",
+        "description": "",
+        "manufacturer": "Euro-tech",
+        "model": "Tournament Champion",
+        "name": "1",
+        "pockets": "",
+        "size": 9,
+        "slate": "",
+        "tableId": 57050173,
+        "venue": {
+          "image": "https://img.cuescore.com/image/7/3/7afb0a44c256a53b5e27b584e3c27e2f.png?t=1742222226",
+          "name": "Shooters",
+          "owner": {
+            "logo": "//img.cuescore.com/image/9/2/9b59b70e156f2f8d0f1a879411c6ffd1.png?t=1576160578",
+            "name": "Black Ball Events",
+            "organizationId": 7011764,
+            "profileColor": "000000",
+            "stub": "blackballevents",
+            "url": "https://cuescore.com/blackballevents"
+          },
+          "url": "https://cuescore.com/venue/Shooters/57050170",
+          "venueId": 57050170
+        }
+      },
+      "tournamentId": 73438153,
+      "useInnings": false,
+      "videoLink": "",
+      "winnerNext": ""
+    },
+    {
+      "bestOfSets": 0,
+      "branch": 1,
+      "challengeId": 0,
+      "comment": "",
+      "curVersion": 199,
+      "discipline": "8-Ball",
+      "disciplineId": 2,
+      "frames": [],
+      "groupNo": 1,
+      "highBreaksA": "",
+      "highBreaksB": "",
+      "inningsPlayerA": 0,
+      "inningsPlayerB": 0,
+      "lagWinner": "",
+      "loserNext": "",
+      "matchId": 73517395,
+      "matchType": 0,
+      "matchno": 28,
+      "matchstatus": "finished",
+      "matchstatusCode": 2,
+      "notes": [],
+      "penalty": 0,
+      "playerA": {
+        "country": {
+          "alpha3": "POL",
+          "continent": "Europe",
+          "image": "https://cuescore.com/img/flags/png-country-4x2-none/res-640x480/pl.png",
+          "name": "Poland"
+        },
+        "firstname": "Tomasz",
+        "image": "https://img.cuescore.com/image/a/4/a851e3dcd3a4dcbe547d02868af6b2dc.png?t=1756110828",
+        "lastname": "Sosnowski",
+        "name": "Tomasz Sosnowski",
+        "playerId": 37359511,
+        "represents": [],
+        "url": "https://cuescore.com/player/Tomasz+Sosnowski/37359511"
+      },
+      "playerB": {
+        "country": {
+          "alpha3": "POL",
+          "continent": "Europe",
+          "image": "https://cuescore.com/img/flags/png-country-4x2-none/res-640x480/pl.png",
+          "name": "Poland"
+        },
+        "firstname": "Adam",
+        "image": "https://img.cuescore.com/image/8/4/862c792ba8eb7f97e626fbe6cbcc59f6.png",
+        "lastname": "Toruński",
+        "name": "Adam Toruński",
+        "playerId": 52723792,
+        "represents": [],
+        "url": "https://cuescore.com/player/Adam+Toru%C5%84ski/52723792"
+      },
+      "properties": [],
+      "raceTo": 3,
+      "round": 5,
+      "roundName": "Round 5",
+      "runoutsA": 0,
+      "runoutsB": 0,
+      "scoreA": 1,
+      "scoreB": 3,
+      "sets": [],
+      "starttime": "2025-12-10T21:24:00",
+      "stoptime": "2025-12-10T22:12:03",
+      "table": {
+        "branch": "American pool",
+        "branchId": 1,
+        "cloth": "",
+        "description": "",
+        "manufacturer": "Euro-tech",
+        "model": "Tournament Champion",
+        "name": "4",
+        "pockets": "",
+        "size": 9,
+        "slate": "",
+        "tableId": 57053266,
+        "venue": {
+          "image": "https://img.cuescore.com/image/7/3/7afb0a44c256a53b5e27b584e3c27e2f.png?t=1742222226",
+          "name": "Shooters",
+          "owner": {
+            "logo": "//img.cuescore.com/image/9/2/9b59b70e156f2f8d0f1a879411c6ffd1.png?t=1576160578",
+            "name": "Black Ball Events",
+            "organizationId": 7011764,
+            "profileColor": "000000",
+            "stub": "blackballevents",
+            "url": "https://cuescore.com/blackballevents"
+          },
+          "url": "https://cuescore.com/venue/Shooters/57050170",
+          "venueId": 57050170
+        }
+      },
+      "tournamentId": 73438153,
+      "useInnings": false,
+      "videoLink": "",
+      "winnerNext": ""
+    },
+    {
+      "bestOfSets": 0,
+      "branch": 1,
+      "challengeId": 0,
+      "comment": "",
+      "curVersion": 199,
+      "discipline": "8-Ball",
+      "disciplineId": 2,
+      "frames": [],
+      "groupNo": 0,
+      "highBreaksA": "",
+      "highBreaksB": "",
+      "inningsPlayerA": 0,
+      "inningsPlayerB": 0,
+      "lagWinner": "A",
+      "loserNext": "",
+      "matchId": 73517398,
+      "matchType": 0,
+      "matchno": 29,
+      "matchstatus": "finished",
+      "matchstatusCode": 2,
+      "notes": [
+        {
+          "note": "frame start",
+          "time": "2025-12-10T22:04:33.324Z"
+        },
+        {
+          "note": "A breaking",
+          "time": "2025-12-10T22:04:33.324Z"
+        },
+        {
+          "note": "A frame win",
+          "time": "2025-12-10T22:04:35.346Z"
+        },
+        {
+          "note": "frame end",
+          "time": "2025-12-10T22:04:35.346Z"
+        },
+        {
+          "note": "frame start",
+          "time": "2025-12-10T22:04:35.346Z"
+        },
+        {
+          "note": "B breaking",
+          "time": "2025-12-10T22:04:35.346Z"
+        },
+        {
+          "note": "A frame win",
+          "time": "2025-12-10T22:12:55.884Z"
+        },
+        {
+          "note": "frame end",
+          "time": "2025-12-10T22:12:55.884Z"
+        },
+        {
+          "note": "frame start",
+          "time": "2025-12-10T22:12:55.884Z"
+        },
+        {
+          "note": "A breaking",
+          "time": "2025-12-10T22:12:55.884Z"
+        },
+        {
+          "note": "A frame win",
+          "time": "2025-12-10T22:24:30.475Z"
+        },
+        {
+          "note": "frame end",
+          "time": "2025-12-10T22:24:30.475Z"
+        },
+        {
+          "note": "match end",
+          "time": "2025-12-10T22:24:36.854Z"
+        }
+      ],
+      "penalty": 0,
+      "playerA": {
+        "country": {
+          "alpha3": "POL",
+          "continent": "Europe",
+          "image": "https://cuescore.com/img/flags/png-country-4x2-none/res-640x480/pl.png",
+          "name": "Poland"
+        },
+        "firstname": "Marcin",
+        "image": "https://img.cuescore.com/image/8/4/8a2e1b8f93694be91ae1601c088c0064.png?t=1504868227",
+        "lastname": "Warmiński",
+        "name": "Marcin Warmiński",
+        "playerId": 1653458,
+        "represents": [],
+        "url": "https://cuescore.com/player/Marcin+Warmi%C5%84ski/1653458"
+      },
+      "playerB": {
+        "country": {
+          "alpha3": "POL",
+          "continent": "Europe",
+          "image": "https://cuescore.com/img/flags/png-country-4x2-none/res-640x480/pl.png",
+          "name": "Poland"
+        },
+        "firstname": "Tomek",
+        "image": "https://img.cuescore.com/image/7/4/74061c1f247d25c1c2939a2f33efb340.png?t=1677415392",
+        "lastname": "Kielmans",
+        "name": "Tomek Kielmans",
+        "playerId": 2264676,
+        "represents": [],
+        "url": "https://cuescore.com/player/Tomek+Kielmans/2264676"
+      },
+      "properties": {
+        "lagWinsA": 1,
+        "lagWinsB": 0,
+        "runoutsA": 0,
+        "runoutsB": 0
+      },
+      "raceTo": 3,
+      "round": 6,
+      "roundName": "Quarter final",
+      "runoutsA": 0,
+      "runoutsB": 0,
+      "scoreA": 3,
+      "scoreB": 0,
+      "sets": [],
+      "starttime": "2025-12-10T22:57:00",
+      "stoptime": "2025-12-10T23:24:39",
+      "table": {
+        "branch": "American pool",
+        "branchId": 1,
+        "cloth": "",
+        "description": "",
+        "manufacturer": "Euro-tech",
+        "model": "Tournament Champion",
+        "name": "1",
+        "pockets": "",
+        "size": 9,
+        "slate": "",
+        "tableId": 57050173,
+        "venue": {
+          "image": "https://img.cuescore.com/image/7/3/7afb0a44c256a53b5e27b584e3c27e2f.png?t=1742222226",
+          "name": "Shooters",
+          "owner": {
+            "logo": "//img.cuescore.com/image/9/2/9b59b70e156f2f8d0f1a879411c6ffd1.png?t=1576160578",
+            "name": "Black Ball Events",
+            "organizationId": 7011764,
+            "profileColor": "000000",
+            "stub": "blackballevents",
+            "url": "https://cuescore.com/blackballevents"
+          },
+          "url": "https://cuescore.com/venue/Shooters/57050170",
+          "venueId": 57050170
+        }
+      },
+      "tournamentId": 73438153,
+      "useInnings": false,
+      "videoLink": "",
+      "winnerNext": 33
+    },
+    {
+      "bestOfSets": 0,
+      "branch": 1,
+      "challengeId": 0,
+      "comment": "",
+      "curVersion": 199,
+      "discipline": "8-Ball",
+      "disciplineId": 2,
+      "frames": [],
+      "groupNo": 0,
+      "highBreaksA": "",
+      "highBreaksB": "",
+      "inningsPlayerA": 0,
+      "inningsPlayerB": 0,
+      "lagWinner": "",
+      "loserNext": "",
+      "matchId": 73517401,
+      "matchType": 0,
+      "matchno": 30,
+      "matchstatus": "finished",
+      "matchstatusCode": 2,
+      "notes": [],
+      "penalty": 0,
+      "playerA": {
+        "country": {
+          "alpha3": "POL",
+          "continent": "Europe",
+          "image": "https://cuescore.com/img/flags/png-country-4x2-none/res-640x480/pl.png",
+          "name": "Poland"
+        },
+        "firstname": "Aleksandra",
+        "image": "https://img.cuescore.com/image/5/4/5aa6aa48f7d5ffe854d5266ac08db7ef.png",
+        "lastname": "Wołek",
+        "name": "Aleksandra Wołek",
+        "playerId": 58572718,
+        "represents": [],
+        "url": "https://cuescore.com/player/Aleksandra+Wo%C5%82ek/58572718"
+      },
+      "playerB": {
+        "country": {
+          "alpha3": "POL",
+          "continent": "Europe",
+          "image": "https://cuescore.com/img/flags/png-country-4x2-none/res-640x480/pl.png",
+          "name": "Poland"
+        },
+        "firstname": "Jakub",
+        "image": "https://img.cuescore.com/image/9/4/9aa1b4cafcfb6122667fad43a5036790.png?t=1756883433",
+        "lastname": "Tomasik",
+        "name": "Jakub Tomasik",
+        "playerId": 65042038,
+        "represents": [],
+        "url": "https://cuescore.com/player/Jakub+Tomasik/65042038"
+      },
+      "properties": [],
+      "raceTo": 3,
+      "round": 6,
+      "roundName": "Quarter final",
+      "runoutsA": 0,
+      "runoutsB": 0,
+      "scoreA": 3,
+      "scoreB": 1,
+      "sets": [],
+      "starttime": "2025-12-10T23:26:00",
+      "stoptime": "2025-12-11T00:31:30",
+      "table": {
+        "branch": "American pool",
+        "branchId": 1,
+        "cloth": "",
+        "description": "",
+        "manufacturer": "Euro-tech",
+        "model": "Tournament Champion",
+        "name": "6",
+        "pockets": "",
+        "size": 9,
+        "slate": "",
+        "tableId": 57053455,
+        "venue": {
+          "image": "https://img.cuescore.com/image/7/3/7afb0a44c256a53b5e27b584e3c27e2f.png?t=1742222226",
+          "name": "Shooters",
+          "owner": {
+            "logo": "//img.cuescore.com/image/9/2/9b59b70e156f2f8d0f1a879411c6ffd1.png?t=1576160578",
+            "name": "Black Ball Events",
+            "organizationId": 7011764,
+            "profileColor": "000000",
+            "stub": "blackballevents",
+            "url": "https://cuescore.com/blackballevents"
+          },
+          "url": "https://cuescore.com/venue/Shooters/57050170",
+          "venueId": 57050170
+        }
+      },
+      "tournamentId": 73438153,
+      "useInnings": false,
+      "videoLink": "",
+      "winnerNext": 33
+    },
+    {
+      "bestOfSets": 0,
+      "branch": 1,
+      "challengeId": 0,
+      "comment": "",
+      "curVersion": 199,
+      "discipline": "8-Ball",
+      "disciplineId": 2,
+      "frames": [],
+      "groupNo": 0,
+      "highBreaksA": "",
+      "highBreaksB": "",
+      "inningsPlayerA": 0,
+      "inningsPlayerB": 0,
+      "lagWinner": "",
+      "loserNext": "",
+      "matchId": 73517404,
+      "matchType": 0,
+      "matchno": 31,
+      "matchstatus": "finished",
+      "matchstatusCode": 2,
+      "notes": [],
+      "penalty": 0,
+      "playerA": {
+        "country": {
+          "alpha3": "UKR",
+          "continent": "Europe",
+          "image": "https://cuescore.com/img/flags/png-country-4x2-none/res-640x480/ua.png",
+          "name": "Ukraine"
+        },
+        "firstname": "Ivan",
+        "image": "https://img.cuescore.com/image/2/4/2c93db15d52d17b300ed3d362a7ff6d1.png?t=1708679266",
+        "lastname": "Kuzmych",
+        "name": "Ivan Kuzmych",
+        "playerId": 39854860,
+        "represents": [],
+        "url": "https://cuescore.com/player/Ivan+Kuzmych/39854860"
+      },
+      "playerB": {
+        "country": {
+          "alpha3": "POL",
+          "continent": "Europe",
+          "image": "https://cuescore.com/img/flags/png-country-4x2-none/res-640x480/pl.png",
+          "name": "Poland"
+        },
+        "firstname": "Artur",
+        "image": "https://img.cuescore.com/image/0/4/02e36c8b4e56614a07108a70cb37e024.png?t=1554816983",
+        "lastname": "Dziechciarski",
+        "name": "Artur Dziechciarski",
+        "playerId": 2950881,
+        "represents": [],
+        "url": "https://cuescore.com/player/Artur+Dziechciarski/2950881"
+      },
+      "properties": [],
+      "raceTo": 3,
+      "round": 6,
+      "roundName": "Quarter final",
+      "runoutsA": 0,
+      "runoutsB": 0,
+      "scoreA": 3,
+      "scoreB": 1,
+      "sets": [],
+      "starttime": "2025-12-10T22:57:00",
+      "stoptime": "2025-12-10T23:46:28",
+      "table": {
+        "branch": "American pool",
+        "branchId": 1,
+        "cloth": "",
+        "description": "",
+        "manufacturer": "Euro-tech",
+        "model": "Tournament Champion",
+        "name": "5",
+        "pockets": "",
+        "size": 9,
+        "slate": "",
+        "tableId": 57053452,
+        "venue": {
+          "image": "https://img.cuescore.com/image/7/3/7afb0a44c256a53b5e27b584e3c27e2f.png?t=1742222226",
+          "name": "Shooters",
+          "owner": {
+            "logo": "//img.cuescore.com/image/9/2/9b59b70e156f2f8d0f1a879411c6ffd1.png?t=1576160578",
+            "name": "Black Ball Events",
+            "organizationId": 7011764,
+            "profileColor": "000000",
+            "stub": "blackballevents",
+            "url": "https://cuescore.com/blackballevents"
+          },
+          "url": "https://cuescore.com/venue/Shooters/57050170",
+          "venueId": 57050170
+        }
+      },
+      "tournamentId": 73438153,
+      "useInnings": false,
+      "videoLink": "",
+      "winnerNext": 34
+    },
+    {
+      "bestOfSets": 0,
+      "branch": 1,
+      "challengeId": 0,
+      "comment": "",
+      "curVersion": 199,
+      "discipline": "8-Ball",
+      "disciplineId": 2,
+      "frames": [],
+      "groupNo": 0,
+      "highBreaksA": "",
+      "highBreaksB": "",
+      "inningsPlayerA": 0,
+      "inningsPlayerB": 0,
+      "lagWinner": "B",
+      "loserNext": "",
+      "matchId": 73517407,
+      "matchType": 0,
+      "matchno": 32,
+      "matchstatus": "finished",
+      "matchstatusCode": 2,
+      "notes": [
+        {
+          "note": "frame start",
+          "time": "2025-12-10T22:33:11.506Z"
+        },
+        {
+          "note": "B breaking",
+          "time": "2025-12-10T22:33:11.506Z"
+        },
+        {
+          "note": "A frame win",
+          "time": "2025-12-10T22:37:49.571Z"
+        },
+        {
+          "note": "frame end",
+          "time": "2025-12-10T22:37:49.571Z"
+        },
+        {
+          "note": "frame start",
+          "time": "2025-12-10T22:37:49.571Z"
+        },
+        {
+          "note": "A breaking",
+          "time": "2025-12-10T22:37:49.571Z"
+        },
+        {
+          "note": "A frame win runout",
+          "time": "2025-12-10T22:39:59.079Z"
+        },
+        {
+          "note": "frame end",
+          "time": "2025-12-10T22:39:59.079Z"
+        },
+        {
+          "note": "frame start",
+          "time": "2025-12-10T22:39:59.079Z"
+        },
+        {
+          "note": "B breaking",
+          "time": "2025-12-10T22:39:59.079Z"
+        },
+        {
+          "note": "A frame win",
+          "time": "2025-12-10T22:46:25.643Z"
+        },
+        {
+          "note": "frame end",
+          "time": "2025-12-10T22:46:25.643Z"
+        },
+        {
+          "note": "match end",
+          "time": "2025-12-10T22:46:27.020Z"
+        }
+      ],
+      "penalty": 0,
+      "playerA": {
+        "country": {
+          "alpha3": "POL",
+          "continent": "Europe",
+          "image": "https://cuescore.com/img/flags/png-country-4x2-none/res-640x480/pl.png",
+          "name": "Poland"
+        },
+        "firstname": "Mirosław",
+        "image": "https://img.cuescore.com/image/5/4/50ac46cb29361bb7417fe99e9ceaf5a6.png?t=1721041648",
+        "lastname": "Galas",
+        "name": "Mirosław Galas",
+        "playerId": 32939776,
+        "represents": [],
+        "url": "https://cuescore.com/player/Miros%C5%82aw+Galas/32939776"
+      },
+      "playerB": {
+        "country": {
+          "alpha3": "POL",
+          "continent": "Europe",
+          "image": "https://cuescore.com/img/flags/png-country-4x2-none/res-640x480/pl.png",
+          "name": "Poland"
+        },
+        "firstname": "Piotr",
+        "image": "https://img.cuescore.com/image/5/4/5859c1d9450d0be5004521cfdb2938c9.png?t=1551456237",
+        "lastname": "Niewczas",
+        "name": "Piotr Niewczas",
+        "playerId": 2383646,
+        "represents": [],
+        "url": "https://cuescore.com/player/Piotr+Niewczas/2383646"
+      },
+      "properties": {
+        "lagWinsA": 0,
+        "lagWinsB": 1,
+        "runoutsA": 1,
+        "runoutsB": 0
+      },
+      "raceTo": 3,
+      "round": 6,
+      "roundName": "Quarter final",
+      "runoutsA": 1,
+      "runoutsB": 0,
+      "scoreA": 3,
+      "scoreB": 0,
+      "sets": [],
+      "starttime": "2025-12-10T23:26:59",
+      "stoptime": "2025-12-10T23:46:29",
+      "table": {
+        "branch": "American pool",
+        "branchId": 1,
+        "cloth": "",
+        "description": "",
+        "manufacturer": "Euro-tech",
+        "model": "Tournament Champion",
+        "name": "2",
+        "pockets": "",
+        "size": 9,
+        "slate": "",
+        "tableId": 57053245,
+        "venue": {
+          "image": "https://img.cuescore.com/image/7/3/7afb0a44c256a53b5e27b584e3c27e2f.png?t=1742222226",
+          "name": "Shooters",
+          "owner": {
+            "logo": "//img.cuescore.com/image/9/2/9b59b70e156f2f8d0f1a879411c6ffd1.png?t=1576160578",
+            "name": "Black Ball Events",
+            "organizationId": 7011764,
+            "profileColor": "000000",
+            "stub": "blackballevents",
+            "url": "https://cuescore.com/blackballevents"
+          },
+          "url": "https://cuescore.com/venue/Shooters/57050170",
+          "venueId": 57050170
+        }
+      },
+      "tournamentId": 73438153,
+      "useInnings": false,
+      "videoLink": "",
+      "winnerNext": 34
+    },
+    {
+      "bestOfSets": 0,
+      "branch": 1,
+      "challengeId": 0,
+      "comment": "",
+      "curVersion": 199,
+      "discipline": "8-Ball",
+      "disciplineId": 2,
+      "frames": [],
+      "groupNo": 0,
+      "highBreaksA": "",
+      "highBreaksB": "",
+      "inningsPlayerA": 0,
+      "inningsPlayerB": 0,
+      "lagWinner": "B",
+      "loserNext": "",
+      "matchId": 73517410,
+      "matchType": 0,
+      "matchno": 33,
+      "matchstatus": "finished",
+      "matchstatusCode": 2,
+      "notes": [
+        {
+          "note": "frame start",
+          "time": "2025-12-10T23:32:17.713Z"
+        },
+        {
+          "note": "B breaking",
+          "time": "2025-12-10T23:32:17.713Z"
+        },
+        {
+          "note": "A frame win",
+          "time": "2025-12-10T23:35:54.418Z"
+        },
+        {
+          "note": "frame end",
+          "time": "2025-12-10T23:35:54.418Z"
+        },
+        {
+          "note": "frame start",
+          "time": "2025-12-10T23:35:54.418Z"
+        },
+        {
+          "note": "A breaking",
+          "time": "2025-12-10T23:35:54.418Z"
+        },
+        {
+          "note": "A frame win",
+          "time": "2025-12-10T23:46:12.174Z"
+        },
+        {
+          "note": "frame end",
+          "time": "2025-12-10T23:46:12.174Z"
+        },
+        {
+          "note": "frame start",
+          "time": "2025-12-10T23:46:12.174Z"
+        },
+        {
+          "note": "B breaking",
+          "time": "2025-12-10T23:46:12.174Z"
+        },
+        {
+          "note": "A frame win",
+          "time": "2025-12-10T23:55:56.985Z"
+        },
+        {
+          "note": "frame end",
+          "time": "2025-12-10T23:55:56.985Z"
+        },
+        {
+          "note": "match end",
+          "time": "2025-12-10T23:55:57.865Z"
+        }
+      ],
+      "penalty": 0,
+      "playerA": {
+        "country": {
+          "alpha3": "POL",
+          "continent": "Europe",
+          "image": "https://cuescore.com/img/flags/png-country-4x2-none/res-640x480/pl.png",
+          "name": "Poland"
+        },
+        "firstname": "Marcin",
+        "image": "https://img.cuescore.com/image/8/4/8a2e1b8f93694be91ae1601c088c0064.png?t=1504868227",
+        "lastname": "Warmiński",
+        "name": "Marcin Warmiński",
+        "playerId": 1653458,
+        "represents": [],
+        "url": "https://cuescore.com/player/Marcin+Warmi%C5%84ski/1653458"
+      },
+      "playerB": {
+        "country": {
+          "alpha3": "POL",
+          "continent": "Europe",
+          "image": "https://cuescore.com/img/flags/png-country-4x2-none/res-640x480/pl.png",
+          "name": "Poland"
+        },
+        "firstname": "Aleksandra",
+        "image": "https://img.cuescore.com/image/5/4/5aa6aa48f7d5ffe854d5266ac08db7ef.png",
+        "lastname": "Wołek",
+        "name": "Aleksandra Wołek",
+        "playerId": 58572718,
+        "represents": [],
+        "url": "https://cuescore.com/player/Aleksandra+Wo%C5%82ek/58572718"
+      },
+      "properties": {
+        "lagWinsA": 0,
+        "lagWinsB": 1,
+        "penalty": [],
+        "runoutsA": 0,
+        "runoutsB": 0
+      },
+      "raceTo": 3,
+      "round": 7,
+      "roundName": "Semi final",
+      "runoutsA": 0,
+      "runoutsB": 0,
+      "scoreA": 3,
+      "scoreB": 0,
+      "sets": [],
+      "starttime": "2025-12-11T00:31:42",
+      "stoptime": "2025-12-11T00:56:00",
+      "table": {
+        "branch": "American pool",
+        "branchId": 1,
+        "cloth": "",
+        "description": "",
+        "manufacturer": "Euro-tech",
+        "model": "Tournament Champion",
+        "name": "6",
+        "pockets": "",
+        "size": 9,
+        "slate": "",
+        "tableId": 57053455,
+        "venue": {
+          "image": "https://img.cuescore.com/image/7/3/7afb0a44c256a53b5e27b584e3c27e2f.png?t=1742222226",
+          "name": "Shooters",
+          "owner": {
+            "logo": "//img.cuescore.com/image/9/2/9b59b70e156f2f8d0f1a879411c6ffd1.png?t=1576160578",
+            "name": "Black Ball Events",
+            "organizationId": 7011764,
+            "profileColor": "000000",
+            "stub": "blackballevents",
+            "url": "https://cuescore.com/blackballevents"
+          },
+          "url": "https://cuescore.com/venue/Shooters/57050170",
+          "venueId": 57050170
+        }
+      },
+      "tournamentId": 73438153,
+      "useInnings": false,
+      "videoLink": "",
+      "winnerNext": 35
+    },
+    {
+      "bestOfSets": 0,
+      "branch": 1,
+      "challengeId": 0,
+      "comment": "",
+      "curVersion": 199,
+      "discipline": "8-Ball",
+      "disciplineId": 2,
+      "frames": [],
+      "groupNo": 0,
+      "highBreaksA": "",
+      "highBreaksB": "",
+      "inningsPlayerA": 0,
+      "inningsPlayerB": 0,
+      "lagWinner": "",
+      "loserNext": "",
+      "matchId": 73517413,
+      "matchType": 0,
+      "matchno": 34,
+      "matchstatus": "finished",
+      "matchstatusCode": 2,
+      "notes": [],
+      "penalty": 0,
+      "playerA": {
+        "country": {
+          "alpha3": "UKR",
+          "continent": "Europe",
+          "image": "https://cuescore.com/img/flags/png-country-4x2-none/res-640x480/ua.png",
+          "name": "Ukraine"
+        },
+        "firstname": "Ivan",
+        "image": "https://img.cuescore.com/image/2/4/2c93db15d52d17b300ed3d362a7ff6d1.png?t=1708679266",
+        "lastname": "Kuzmych",
+        "name": "Ivan Kuzmych",
+        "playerId": 39854860,
+        "represents": [],
+        "url": "https://cuescore.com/player/Ivan+Kuzmych/39854860"
+      },
+      "playerB": {
+        "country": {
+          "alpha3": "POL",
+          "continent": "Europe",
+          "image": "https://cuescore.com/img/flags/png-country-4x2-none/res-640x480/pl.png",
+          "name": "Poland"
+        },
+        "firstname": "Mirosław",
+        "image": "https://img.cuescore.com/image/5/4/50ac46cb29361bb7417fe99e9ceaf5a6.png?t=1721041648",
+        "lastname": "Galas",
+        "name": "Mirosław Galas",
+        "playerId": 32939776,
+        "represents": [],
+        "url": "https://cuescore.com/player/Miros%C5%82aw+Galas/32939776"
+      },
+      "properties": {
+        "penalty": []
+      },
+      "raceTo": 3,
+      "round": 7,
+      "roundName": "Semi final",
+      "runoutsA": 0,
+      "runoutsB": 0,
+      "scoreA": 3,
+      "scoreB": 0,
+      "sets": [],
+      "starttime": "2025-12-10T23:47:00",
+      "stoptime": "2025-12-11T00:09:04",
+      "table": {
+        "branch": "American pool",
+        "branchId": 1,
+        "cloth": "",
+        "description": "",
+        "manufacturer": "Euro-tech",
+        "model": "Tournament Champion",
+        "name": "5",
+        "pockets": "",
+        "size": 9,
+        "slate": "",
+        "tableId": 57053452,
+        "venue": {
+          "image": "https://img.cuescore.com/image/7/3/7afb0a44c256a53b5e27b584e3c27e2f.png?t=1742222226",
+          "name": "Shooters",
+          "owner": {
+            "logo": "//img.cuescore.com/image/9/2/9b59b70e156f2f8d0f1a879411c6ffd1.png?t=1576160578",
+            "name": "Black Ball Events",
+            "organizationId": 7011764,
+            "profileColor": "000000",
+            "stub": "blackballevents",
+            "url": "https://cuescore.com/blackballevents"
+          },
+          "url": "https://cuescore.com/venue/Shooters/57050170",
+          "venueId": 57050170
+        }
+      },
+      "tournamentId": 73438153,
+      "useInnings": false,
+      "videoLink": "",
+      "winnerNext": 35
+    },
+    {
+      "bestOfSets": 0,
+      "branch": 1,
+      "challengeId": 0,
+      "comment": "",
+      "curVersion": 199,
+      "discipline": "8-Ball",
+      "disciplineId": 2,
+      "frames": [],
+      "groupNo": 0,
+      "highBreaksA": "",
+      "highBreaksB": "",
+      "inningsPlayerA": 0,
+      "inningsPlayerB": 0,
+      "lagWinner": "A",
+      "loserNext": "",
+      "matchId": 73517416,
+      "matchType": 0,
+      "matchno": 35,
+      "matchstatus": "finished",
+      "matchstatusCode": 2,
+      "notes": [
+        {
+          "note": "frame start",
+          "time": "2025-12-11T00:04:16.245Z"
+        },
+        {
+          "note": "A breaking",
+          "time": "2025-12-11T00:04:16.245Z"
+        },
+        {
+          "note": "B frame win",
+          "time": "2025-12-11T00:04:18.476Z"
+        },
+        {
+          "note": "frame end",
+          "time": "2025-12-11T00:04:18.476Z"
+        },
+        {
+          "note": "frame start",
+          "time": "2025-12-11T00:04:18.476Z"
+        },
+        {
+          "note": "B breaking",
+          "time": "2025-12-11T00:04:18.476Z"
+        },
+        {
+          "note": "A frame win",
+          "time": "2025-12-11T00:13:46.594Z"
+        },
+        {
+          "note": "frame end",
+          "time": "2025-12-11T00:13:46.594Z"
+        },
+        {
+          "note": "frame start",
+          "time": "2025-12-11T00:13:46.594Z"
+        },
+        {
+          "note": "A breaking",
+          "time": "2025-12-11T00:13:46.594Z"
+        },
+        {
+          "note": "B frame win",
+          "time": "2025-12-11T00:19:49.658Z"
+        },
+        {
+          "note": "frame end",
+          "time": "2025-12-11T00:19:49.658Z"
+        },
+        {
+          "note": "frame start",
+          "time": "2025-12-11T00:19:49.658Z"
+        },
+        {
+          "note": "B breaking",
+          "time": "2025-12-11T00:19:49.658Z"
+        },
+        {
+          "note": "B frame win",
+          "time": "2025-12-11T00:25:58.595Z"
+        },
+        {
+          "note": "frame end",
+          "time": "2025-12-11T00:25:58.595Z"
+        },
+        {
+          "note": "match end",
+          "time": "2025-12-11T00:26:01.848Z"
+        }
+      ],
+      "penalty": 0,
+      "playerA": {
+        "country": {
+          "alpha3": "POL",
+          "continent": "Europe",
+          "image": "https://cuescore.com/img/flags/png-country-4x2-none/res-640x480/pl.png",
+          "name": "Poland"
+        },
+        "firstname": "Marcin",
+        "image": "https://img.cuescore.com/image/8/4/8a2e1b8f93694be91ae1601c088c0064.png?t=1504868227",
+        "lastname": "Warmiński",
+        "name": "Marcin Warmiński",
+        "playerId": 1653458,
+        "represents": [],
+        "url": "https://cuescore.com/player/Marcin+Warmi%C5%84ski/1653458"
+      },
+      "playerB": {
+        "country": {
+          "alpha3": "UKR",
+          "continent": "Europe",
+          "image": "https://cuescore.com/img/flags/png-country-4x2-none/res-640x480/ua.png",
+          "name": "Ukraine"
+        },
+        "firstname": "Ivan",
+        "image": "https://img.cuescore.com/image/2/4/2c93db15d52d17b300ed3d362a7ff6d1.png?t=1708679266",
+        "lastname": "Kuzmych",
+        "name": "Ivan Kuzmych",
+        "playerId": 39854860,
+        "represents": [],
+        "url": "https://cuescore.com/player/Ivan+Kuzmych/39854860"
+      },
+      "properties": {
+        "lagWinsA": 1,
+        "lagWinsB": 0,
+        "penalty": [],
+        "runoutsA": 0,
+        "runoutsB": 0
+      },
+      "raceTo": 3,
+      "round": 8,
+      "roundName": "Final",
+      "runoutsA": 0,
+      "runoutsB": 0,
+      "scoreA": 1,
+      "scoreB": 3,
+      "sets": [],
+      "starttime": "2025-12-11T00:56:05",
+      "stoptime": "2025-12-11T01:26:04",
+      "table": [],
+      "tournamentId": 73438153,
+      "useInnings": false,
+      "videoLink": "",
+      "winnerNext": ""
+    }
+  ],
   "name": "Shooters 8 Ball Cup - turniej 15/15",
   "organizers": [
     {
@@ -68,23 +4466,618 @@
     "stub": "blackballevents",
     "url": "https://cuescore.com/blackballevents"
   },
-  "preseeds": [],
-  "rankings": [],
+  "preseeds": {
+    "1653458": 1,
+    "2383646": 4,
+    "32939776": 2,
+    "39854860": 3
+  },
+  "rankings": [
+    {
+      "bestOf": 0,
+      "branch": 1,
+      "name": "Shooters 8 Ball Cup",
+      "pointsystem": 0,
+      "rankingId": 67473103,
+      "season": 2025,
+      "url": "https://cuescore.com/ranking/Shooters+8+Ball+Cup/67473103"
+    }
+  ],
   "sequence": 0,
-  "standings": [
-    [
+  "standings": {
+    "1": [
       {
-        "frameAvg": 0,
-        "frameLosses": 0,
-        "frameScore": 0,
-        "frameWinAvg": 0,
-        "frameWins": 0,
+        "frameAvg": 0.692,
+        "frameLosses": 4,
+        "frameScore": 5,
+        "frameWinAvg": 2.25,
+        "frameWins": 9,
+        "highBreak": 0,
+        "inningAvg": 0,
+        "innings": 0,
+        "lagWins": 2,
+        "losses": 1,
+        "played": 4,
+        "player": {
+          "country": {
+            "alpha3": "POL",
+            "continent": "Europe",
+            "image": "https://cuescore.com/img/flags/png-country-4x2-none/res-640x480/pl.png",
+            "name": "Poland"
+          },
+          "firstname": "Marcin",
+          "image": "https://img.cuescore.com/image/8/4/8a2e1b8f93694be91ae1601c088c0064.png?t=1504868227",
+          "lastname": "Warmiński",
+          "name": "Marcin Warmiński",
+          "playerId": 1653458,
+          "represents": [],
+          "url": "https://cuescore.com/player/Marcin+Warmi%C5%84ski/1653458"
+        },
+        "points": 10,
+        "position": 1,
+        "runouts": 2,
+        "setLosses": 0,
+        "setScore": 0,
+        "setWins": 0,
+        "teamBestInningAvg": 0,
+        "teamIndividualPoints": 0,
+        "teamInningAvg": 0,
+        "teamInnings": 0,
+        "teamMatchPoints": 0,
+        "ties": 0,
+        "wins": 3
+      },
+      {
+        "frameAvg": 0.667,
+        "frameLosses": 5,
+        "frameScore": 5,
+        "frameWinAvg": 2.5,
+        "frameWins": 10,
+        "highBreak": 0,
+        "inningAvg": 0,
+        "innings": 0,
+        "lagWins": 0,
+        "losses": 1,
+        "played": 4,
+        "player": {
+          "country": {
+            "alpha3": "POL",
+            "continent": "Europe",
+            "image": "https://cuescore.com/img/flags/png-country-4x2-none/res-640x480/pl.png",
+            "name": "Poland"
+          },
+          "firstname": "Artur",
+          "image": "https://img.cuescore.com/image/0/4/02e36c8b4e56614a07108a70cb37e024.png?t=1554816983",
+          "lastname": "Dziechciarski",
+          "name": "Artur Dziechciarski",
+          "playerId": 2950881,
+          "represents": [],
+          "url": "https://cuescore.com/player/Artur+Dziechciarski/2950881"
+        },
+        "points": 10,
+        "position": 2,
+        "runouts": 0,
+        "setLosses": 0,
+        "setScore": 0,
+        "setWins": 0,
+        "teamBestInningAvg": 0,
+        "teamIndividualPoints": 0,
+        "teamInningAvg": 0,
+        "teamInnings": 0,
+        "teamMatchPoints": 0,
+        "ties": 0,
+        "wins": 3
+      },
+      {
+        "frameAvg": 0.625,
+        "frameLosses": 6,
+        "frameScore": 4,
+        "frameWinAvg": 2.5,
+        "frameWins": 10,
+        "highBreak": 0,
+        "inningAvg": 0,
+        "innings": 0,
+        "lagWins": 1,
+        "losses": 1,
+        "played": 4,
+        "player": {
+          "country": {
+            "alpha3": "POL",
+            "continent": "Europe",
+            "image": "https://cuescore.com/img/flags/png-country-4x2-none/res-640x480/pl.png",
+            "name": "Poland"
+          },
+          "firstname": "Michał",
+          "image": "https://img.cuescore.com/image/8/4/862c792ba8eb7f97e626fbe6cbcc59f6.png",
+          "lastname": "Daszczuk",
+          "name": "Michał Daszczuk",
+          "playerId": 29067826,
+          "represents": [],
+          "url": "https://cuescore.com/player/Micha%C5%82+Daszczuk/29067826"
+        },
+        "points": 10,
+        "position": 3,
+        "runouts": 0,
+        "setLosses": 0,
+        "setScore": 0,
+        "setWins": 0,
+        "teamBestInningAvg": 0,
+        "teamIndividualPoints": 0,
+        "teamInningAvg": 0,
+        "teamInnings": 0,
+        "teamMatchPoints": 0,
+        "ties": 0,
+        "wins": 3
+      },
+      {
+        "frameAvg": 0.333,
+        "frameLosses": 10,
+        "frameScore": -5,
+        "frameWinAvg": 1.25,
+        "frameWins": 5,
+        "highBreak": 0,
+        "inningAvg": 0,
+        "innings": 0,
+        "lagWins": 1,
+        "losses": 3,
+        "played": 4,
+        "player": {
+          "country": {
+            "alpha3": "POL",
+            "continent": "Europe",
+            "image": "https://cuescore.com/img/flags/png-country-4x2-none/res-640x480/pl.png",
+            "name": "Poland"
+          },
+          "firstname": "Adam",
+          "image": "https://img.cuescore.com/image/8/4/862c792ba8eb7f97e626fbe6cbcc59f6.png",
+          "lastname": "Toruński",
+          "name": "Adam Toruński",
+          "playerId": 52723792,
+          "represents": [],
+          "url": "https://cuescore.com/player/Adam+Toru%C5%84ski/52723792"
+        },
+        "points": 6,
+        "position": 4,
+        "runouts": 0,
+        "setLosses": 0,
+        "setScore": 0,
+        "setWins": 0,
+        "teamBestInningAvg": 0,
+        "teamIndividualPoints": 0,
+        "teamInningAvg": 0,
+        "teamInnings": 0,
+        "teamMatchPoints": 0,
+        "ties": 0,
+        "wins": 1
+      },
+      {
+        "frameAvg": 0.2,
+        "frameLosses": 12,
+        "frameScore": -9,
+        "frameWinAvg": 0.75,
+        "frameWins": 3,
+        "highBreak": 0,
+        "inningAvg": 0,
+        "innings": 0,
+        "lagWins": 2,
+        "losses": 4,
+        "played": 4,
+        "player": {
+          "country": {
+            "alpha3": "POL",
+            "continent": "Europe",
+            "image": "https://cuescore.com/img/flags/png-country-4x2-none/res-640x480/pl.png",
+            "name": "Poland"
+          },
+          "firstname": "Tomasz",
+          "image": "https://img.cuescore.com/image/a/4/a851e3dcd3a4dcbe547d02868af6b2dc.png?t=1756110828",
+          "lastname": "Sosnowski",
+          "name": "Tomasz Sosnowski",
+          "playerId": 37359511,
+          "represents": [],
+          "url": "https://cuescore.com/player/Tomasz+Sosnowski/37359511"
+        },
+        "points": 4,
+        "position": 5,
+        "runouts": 0,
+        "setLosses": 0,
+        "setScore": 0,
+        "setWins": 0,
+        "teamBestInningAvg": 0,
+        "teamIndividualPoints": 0,
+        "teamInningAvg": 0,
+        "teamInnings": 0,
+        "teamMatchPoints": 0,
+        "ties": 0,
+        "wins": 0
+      }
+    ],
+    "2": [
+      {
+        "frameAvg": 0.615,
+        "frameLosses": 5,
+        "frameScore": 3,
+        "frameWinAvg": 2.667,
+        "frameWins": 8,
+        "highBreak": 0,
+        "inningAvg": 0,
+        "innings": 0,
+        "lagWins": 2,
+        "losses": 1,
+        "played": 3,
+        "player": {
+          "country": {
+            "alpha3": "POL",
+            "continent": "Europe",
+            "image": "https://cuescore.com/img/flags/png-country-4x2-none/res-640x480/pl.png",
+            "name": "Poland"
+          },
+          "firstname": "Jakub",
+          "image": "https://img.cuescore.com/image/9/4/9aa1b4cafcfb6122667fad43a5036790.png?t=1756883433",
+          "lastname": "Tomasik",
+          "name": "Jakub Tomasik",
+          "playerId": 65042038,
+          "represents": [],
+          "url": "https://cuescore.com/player/Jakub+Tomasik/65042038"
+        },
+        "points": 7,
+        "position": 1,
+        "runouts": 0,
+        "setLosses": 0,
+        "setScore": 0,
+        "setWins": 0,
+        "teamBestInningAvg": 0,
+        "teamIndividualPoints": 0,
+        "teamInningAvg": 0,
+        "teamInnings": 0,
+        "teamMatchPoints": 0,
+        "ties": 0,
+        "wins": 2
+      },
+      {
+        "frameAvg": 0.571,
+        "frameLosses": 6,
+        "frameScore": 2,
+        "frameWinAvg": 2.667,
+        "frameWins": 8,
+        "highBreak": 0,
+        "inningAvg": 0,
+        "innings": 0,
+        "lagWins": 1,
+        "losses": 1,
+        "played": 3,
+        "player": {
+          "country": {
+            "alpha3": "POL",
+            "continent": "Europe",
+            "image": "https://cuescore.com/img/flags/png-country-4x2-none/res-640x480/pl.png",
+            "name": "Poland"
+          },
+          "firstname": "Piotr",
+          "image": "https://img.cuescore.com/image/5/4/5859c1d9450d0be5004521cfdb2938c9.png?t=1551456237",
+          "lastname": "Niewczas",
+          "name": "Piotr Niewczas",
+          "playerId": 2383646,
+          "represents": [],
+          "url": "https://cuescore.com/player/Piotr+Niewczas/2383646"
+        },
+        "points": 7,
+        "position": 2,
+        "runouts": 0,
+        "setLosses": 0,
+        "setScore": 0,
+        "setWins": 0,
+        "teamBestInningAvg": 0,
+        "teamIndividualPoints": 0,
+        "teamInningAvg": 0,
+        "teamInnings": 0,
+        "teamMatchPoints": 0,
+        "ties": 0,
+        "wins": 2
+      },
+      {
+        "frameAvg": 0.538,
+        "frameLosses": 6,
+        "frameScore": 1,
+        "frameWinAvg": 2.333,
+        "frameWins": 7,
+        "highBreak": 0,
+        "inningAvg": 0,
+        "innings": 0,
+        "lagWins": 0,
+        "losses": 1,
+        "played": 3,
+        "player": {
+          "country": {
+            "alpha3": "POL",
+            "continent": "Europe",
+            "image": "https://cuescore.com/img/flags/png-country-4x2-none/res-640x480/pl.png",
+            "name": "Poland"
+          },
+          "firstname": "Marcin",
+          "image": "https://img.cuescore.com/image/5/4/53d138da49b844a9d55e079704cfcb97.png?t=1524559982",
+          "lastname": "Gościmski",
+          "name": "Marcin Gościmski",
+          "playerId": 2014191,
+          "represents": [],
+          "url": "https://cuescore.com/player/Marcin+Go%C5%9Bcimski/2014191"
+        },
+        "points": 7,
+        "position": 3,
+        "runouts": 0,
+        "setLosses": 0,
+        "setScore": 0,
+        "setWins": 0,
+        "teamBestInningAvg": 0,
+        "teamIndividualPoints": 0,
+        "teamInningAvg": 0,
+        "teamInnings": 0,
+        "teamMatchPoints": 0,
+        "ties": 0,
+        "wins": 2
+      },
+      {
+        "frameAvg": 0.25,
+        "frameLosses": 9,
+        "frameScore": -6,
+        "frameWinAvg": 1,
+        "frameWins": 3,
+        "highBreak": 0,
+        "inningAvg": 0,
+        "innings": 0,
+        "lagWins": 2,
+        "losses": 3,
+        "played": 3,
+        "player": {
+          "country": {
+            "alpha3": "POL",
+            "continent": "Europe",
+            "image": "https://cuescore.com/img/flags/png-country-4x2-none/res-640x480/pl.png",
+            "name": "Poland"
+          },
+          "firstname": "Paweł",
+          "image": "https://img.cuescore.com/image/b/4/b2cbbdaad9b0f9c0a2a063a869e3b54f.png?t=1717415877",
+          "lastname": "Florecki",
+          "name": "Paweł Florecki",
+          "playerId": 3506000,
+          "represents": [],
+          "url": "https://cuescore.com/player/Pawe%C5%82+Florecki/3506000"
+        },
+        "points": 3,
+        "position": 4,
+        "runouts": 0,
+        "setLosses": 0,
+        "setScore": 0,
+        "setWins": 0,
+        "teamBestInningAvg": 0,
+        "teamIndividualPoints": 0,
+        "teamInningAvg": 0,
+        "teamInnings": 0,
+        "teamMatchPoints": 0,
+        "ties": 0,
+        "wins": 0
+      }
+    ],
+    "3": [
+      {
+        "frameAvg": 0.75,
+        "frameLosses": 3,
+        "frameScore": 6,
+        "frameWinAvg": 3,
+        "frameWins": 9,
         "highBreak": 0,
         "inningAvg": 0,
         "innings": 0,
         "lagWins": 0,
         "losses": 0,
-        "played": 0,
+        "played": 3,
+        "player": {
+          "country": {
+            "alpha3": "UKR",
+            "continent": "Europe",
+            "image": "https://cuescore.com/img/flags/png-country-4x2-none/res-640x480/ua.png",
+            "name": "Ukraine"
+          },
+          "firstname": "Ivan",
+          "image": "https://img.cuescore.com/image/2/4/2c93db15d52d17b300ed3d362a7ff6d1.png?t=1708679266",
+          "lastname": "Kuzmych",
+          "name": "Ivan Kuzmych",
+          "playerId": 39854860,
+          "represents": [],
+          "url": "https://cuescore.com/player/Ivan+Kuzmych/39854860"
+        },
+        "points": 9,
+        "position": 1,
+        "runouts": 0,
+        "setLosses": 0,
+        "setScore": 0,
+        "setWins": 0,
+        "teamBestInningAvg": 0,
+        "teamIndividualPoints": 0,
+        "teamInningAvg": 0,
+        "teamInnings": 0,
+        "teamMatchPoints": 0,
+        "ties": 0,
+        "wins": 3
+      },
+      {
+        "frameAvg": 0.615,
+        "frameLosses": 5,
+        "frameScore": 3,
+        "frameWinAvg": 2.667,
+        "frameWins": 8,
+        "highBreak": 0,
+        "inningAvg": 0,
+        "innings": 0,
+        "lagWins": 0,
+        "losses": 1,
+        "played": 3,
+        "player": {
+          "country": {
+            "alpha3": "POL",
+            "continent": "Europe",
+            "image": "https://cuescore.com/img/flags/png-country-4x2-none/res-640x480/pl.png",
+            "name": "Poland"
+          },
+          "firstname": "Tomek",
+          "image": "https://img.cuescore.com/image/7/4/74061c1f247d25c1c2939a2f33efb340.png?t=1677415392",
+          "lastname": "Kielmans",
+          "name": "Tomek Kielmans",
+          "playerId": 2264676,
+          "represents": [],
+          "url": "https://cuescore.com/player/Tomek+Kielmans/2264676"
+        },
+        "points": 7,
+        "position": 2,
+        "runouts": 0,
+        "setLosses": 0,
+        "setScore": 0,
+        "setWins": 0,
+        "teamBestInningAvg": 0,
+        "teamIndividualPoints": 0,
+        "teamInningAvg": 0,
+        "teamInnings": 0,
+        "teamMatchPoints": 0,
+        "ties": 0,
+        "wins": 2
+      },
+      {
+        "frameAvg": 0.429,
+        "frameLosses": 8,
+        "frameScore": -2,
+        "frameWinAvg": 2,
+        "frameWins": 6,
+        "highBreak": 0,
+        "inningAvg": 0,
+        "innings": 0,
+        "lagWins": 0,
+        "losses": 2,
+        "played": 3,
+        "player": {
+          "country": {
+            "alpha3": "POL",
+            "continent": "Europe",
+            "image": "https://cuescore.com/img/flags/png-country-4x2-none/res-640x480/pl.png",
+            "name": "Poland"
+          },
+          "firstname": "Marta",
+          "image": "https://img.cuescore.com/image/e/4/eff8001937f0a627a1c033854110bbe7.png?t=1737981612",
+          "lastname": "Wawrzyn",
+          "name": "Marta Wawrzyn",
+          "playerId": 2180579,
+          "represents": [],
+          "url": "https://cuescore.com/player/Marta+Wawrzyn/2180579"
+        },
+        "points": 5,
+        "position": 3,
+        "runouts": 0,
+        "setLosses": 0,
+        "setScore": 0,
+        "setWins": 0,
+        "teamBestInningAvg": 0,
+        "teamIndividualPoints": 0,
+        "teamInningAvg": 0,
+        "teamInnings": 0,
+        "teamMatchPoints": 0,
+        "ties": 0,
+        "wins": 1
+      },
+      {
+        "frameAvg": 0.182,
+        "frameLosses": 9,
+        "frameScore": -7,
+        "frameWinAvg": 0.667,
+        "frameWins": 2,
+        "highBreak": 0,
+        "inningAvg": 0,
+        "innings": 0,
+        "lagWins": 0,
+        "losses": 3,
+        "played": 3,
+        "player": {
+          "country": {
+            "alpha3": "POL",
+            "continent": "Europe",
+            "image": "https://cuescore.com/img/flags/png-country-4x2-none/res-640x480/pl.png",
+            "name": "Poland"
+          },
+          "firstname": "Marcin",
+          "image": "https://img.cuescore.com/image/6/4/608eb650feec311f59b628b56a77213d.png?t=1653917150",
+          "lastname": "Cieślak",
+          "name": "Marcin Cieślak",
+          "playerId": 16067179,
+          "represents": [],
+          "url": "https://cuescore.com/player/Marcin+Cie%C5%9Blak/16067179"
+        },
+        "points": 3,
+        "position": 4,
+        "runouts": 0,
+        "setLosses": 0,
+        "setScore": 0,
+        "setWins": 0,
+        "teamBestInningAvg": 0,
+        "teamIndividualPoints": 0,
+        "teamInningAvg": 0,
+        "teamInnings": 0,
+        "teamMatchPoints": 0,
+        "ties": 0,
+        "wins": 0
+      }
+    ],
+    "4": [
+      {
+        "frameAvg": 0.818,
+        "frameLosses": 2,
+        "frameScore": 7,
+        "frameWinAvg": 3,
+        "frameWins": 9,
+        "highBreak": 0,
+        "inningAvg": 0,
+        "innings": 0,
+        "lagWins": 1,
+        "losses": 0,
+        "played": 3,
+        "player": {
+          "country": {
+            "alpha3": "POL",
+            "continent": "Europe",
+            "image": "https://cuescore.com/img/flags/png-country-4x2-none/res-640x480/pl.png",
+            "name": "Poland"
+          },
+          "firstname": "Mirosław",
+          "image": "https://img.cuescore.com/image/5/4/50ac46cb29361bb7417fe99e9ceaf5a6.png?t=1721041648",
+          "lastname": "Galas",
+          "name": "Mirosław Galas",
+          "playerId": 32939776,
+          "represents": [],
+          "url": "https://cuescore.com/player/Miros%C5%82aw+Galas/32939776"
+        },
+        "points": 9,
+        "position": 1,
+        "runouts": 0,
+        "setLosses": 0,
+        "setScore": 0,
+        "setWins": 0,
+        "teamBestInningAvg": 0,
+        "teamIndividualPoints": 0,
+        "teamInningAvg": 0,
+        "teamInnings": 0,
+        "teamMatchPoints": 0,
+        "ties": 0,
+        "wins": 3
+      },
+      {
+        "frameAvg": 0.636,
+        "frameLosses": 4,
+        "frameScore": 3,
+        "frameWinAvg": 2.333,
+        "frameWins": 7,
+        "highBreak": 0,
+        "inningAvg": 0,
+        "innings": 0,
+        "lagWins": 0,
+        "losses": 1,
+        "played": 3,
         "player": {
           "country": {
             "alpha3": "POL",
@@ -100,8 +5093,8 @@
           "represents": [],
           "url": "https://cuescore.com/player/Aleksandra+Wo%C5%82ek/58572718"
         },
-        "points": 0,
-        "position": 1,
+        "points": 7,
+        "position": 2,
         "runouts": 0,
         "setLosses": 0,
         "setScore": 0,
@@ -112,20 +5105,61 @@
         "teamInnings": 0,
         "teamMatchPoints": 0,
         "ties": 0,
-        "wins": 0
+        "wins": 2
+      },
+      {
+        "frameAvg": 0.455,
+        "frameLosses": 6,
+        "frameScore": -1,
+        "frameWinAvg": 1.667,
+        "frameWins": 5,
+        "highBreak": 0,
+        "inningAvg": 0,
+        "innings": 0,
+        "lagWins": 0,
+        "losses": 2,
+        "played": 3,
+        "player": {
+          "country": {
+            "alpha3": "POL",
+            "continent": "Europe",
+            "image": "https://cuescore.com/img/flags/png-country-4x2-none/res-640x480/pl.png",
+            "name": "Poland"
+          },
+          "firstname": "Krzysztof",
+          "image": "https://img.cuescore.com/image/8/4/862c792ba8eb7f97e626fbe6cbcc59f6.png",
+          "lastname": "Doroszkiewicz",
+          "name": "Krzysztof Doroszkiewicz",
+          "playerId": 19794961,
+          "represents": [],
+          "url": "https://cuescore.com/player/Krzysztof+Doroszkiewicz/19794961"
+        },
+        "points": 5,
+        "position": 3,
+        "runouts": 0,
+        "setLosses": 0,
+        "setScore": 0,
+        "setWins": 0,
+        "teamBestInningAvg": 0,
+        "teamIndividualPoints": 0,
+        "teamInningAvg": 0,
+        "teamInnings": 0,
+        "teamMatchPoints": 0,
+        "ties": 0,
+        "wins": 1
       },
       {
         "frameAvg": 0,
-        "frameLosses": 0,
-        "frameScore": 0,
+        "frameLosses": 9,
+        "frameScore": -9,
         "frameWinAvg": 0,
         "frameWins": 0,
         "highBreak": 0,
         "inningAvg": 0,
         "innings": 0,
         "lagWins": 0,
-        "losses": 0,
-        "played": 0,
+        "losses": 3,
+        "played": 3,
         "player": {
           "country": {
             "alpha3": "POL",
@@ -141,8 +5175,8 @@
           "represents": [],
           "url": "https://cuescore.com/player/Cezary+Wo%C5%82ek/72593158"
         },
-        "points": 0,
-        "position": 1,
+        "points": 3,
+        "position": 4,
         "runouts": 0,
         "setLosses": 0,
         "setScore": 0,
@@ -156,10 +5190,10 @@
         "wins": 0
       }
     ]
-  ],
+  },
   "starttime": "2025-12-10T19:00:00+01:00",
-  "status": "Open",
-  "statusCode": 0,
+  "status": "Finished",
+  "statusCode": 2,
   "stoptime": "2025-12-10T23:59:00+01:00",
   "timezone": "Europe/Warsaw",
   "tournamentId": 73438153,

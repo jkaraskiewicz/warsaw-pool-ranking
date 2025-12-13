@@ -41,7 +41,7 @@
       "branch": 1,
       "challengeId": 0,
       "comment": "",
-      "curVersion": 154,
+      "curVersion": 185,
       "discipline": "Multiball",
       "disciplineId": 10,
       "frames": [],
@@ -55,8 +55,8 @@
       "matchId": 69499141,
       "matchType": 0,
       "matchno": 1,
-      "matchstatus": "waiting",
-      "matchstatusCode": 0,
+      "matchstatus": "finished",
+      "matchstatusCode": 2,
       "notes": [],
       "penalty": 0,
       "playerA": {
@@ -89,17 +89,92 @@
         "represents": [],
         "url": "https://cuescore.com/player/Miros%C5%82aw+Galas/32939776"
       },
-      "properties": [],
+      "properties": {
+        "lagWinsA": 0,
+        "lagWinsB": 0,
+        "runoutsA": 1,
+        "runoutsB": 0
+      },
       "raceTo": 4,
       "round": 1,
       "roundName": "Round 1",
-      "runoutsA": 0,
+      "runoutsA": 1,
       "runoutsB": 0,
-      "scoreA": 0,
-      "scoreB": 0,
-      "sets": [],
-      "starttime": "2025-10-01T17:03:00",
-      "stoptime": "",
+      "scoreA": 2,
+      "scoreB": 1,
+      "sets": [
+        {
+          "frames": [
+            {
+              "break": 0,
+              "frameNo": 1,
+              "highBreaksA": "",
+              "highBreaksB": "",
+              "inningsA": 0,
+              "inningsB": 0,
+              "pointsA": 0,
+              "pointsB": 0,
+              "runoutA": 0,
+              "runoutB": 0,
+              "scoreA": 2,
+              "scoreB": 3,
+              "starttime": "2025-10-01T15:03:00+00:00",
+              "stoptime": "2025-12-11T12:08:45+00:00"
+            }
+          ],
+          "scoreA": 2,
+          "scoreB": 3,
+          "setNo": 1
+        },
+        {
+          "frames": [
+            {
+              "break": 0,
+              "frameNo": 1,
+              "highBreaksA": "",
+              "highBreaksB": "",
+              "inningsA": 0,
+              "inningsB": 0,
+              "pointsA": 0,
+              "pointsB": 0,
+              "runoutA": 0,
+              "runoutB": 0,
+              "scoreA": 4,
+              "scoreB": 2,
+              "starttime": "2025-10-01T15:03:00+00:00",
+              "stoptime": "2025-12-11T12:08:45+00:00"
+            }
+          ],
+          "scoreA": 4,
+          "scoreB": 2,
+          "setNo": 2
+        },
+        {
+          "frames": [
+            {
+              "break": 0,
+              "frameNo": 1,
+              "highBreaksA": "",
+              "highBreaksB": "",
+              "inningsA": 0,
+              "inningsB": 0,
+              "pointsA": 0,
+              "pointsB": 0,
+              "runoutA": 0,
+              "runoutB": 0,
+              "scoreA": 4,
+              "scoreB": 2,
+              "starttime": "2025-10-01T15:03:00+00:00",
+              "stoptime": "2025-12-11T12:08:45+00:00"
+            }
+          ],
+          "scoreA": 4,
+          "scoreB": 2,
+          "setNo": 3
+        }
+      ],
+      "starttime": "2025-12-11T13:08:00",
+      "stoptime": "2025-12-11T13:09:07",
       "table": [],
       "tournamentId": 69497401,
       "useInnings": false,
@@ -111,7 +186,7 @@
       "branch": 1,
       "challengeId": 0,
       "comment": "",
-      "curVersion": 154,
+      "curVersion": 185,
       "discipline": "Multiball",
       "disciplineId": 10,
       "frames": [],
@@ -181,7 +256,7 @@
       "branch": 1,
       "challengeId": 0,
       "comment": "",
-      "curVersion": 154,
+      "curVersion": 185,
       "discipline": "Multiball",
       "disciplineId": 10,
       "frames": [],
@@ -195,10 +270,10 @@
       "matchId": 69499147,
       "matchType": 0,
       "matchno": 3,
-      "matchstatus": "waiting",
-      "matchstatusCode": 0,
+      "matchstatus": "finished",
+      "matchstatusCode": 2,
       "notes": [],
-      "penalty": 0,
+      "penalty": 16,
       "playerA": {
         "country": {
           "alpha3": "POL",
@@ -229,7 +304,12 @@
         "represents": [],
         "url": "https://cuescore.com/player/Pawe%C5%82+Florecki/3506000"
       },
-      "properties": [],
+      "properties": {
+        "penalty": {
+          "description": "",
+          "invalid": false
+        }
+      },
       "raceTo": 4,
       "round": 1,
       "roundName": "Round 1",
@@ -251,7 +331,7 @@
       "branch": 1,
       "challengeId": 0,
       "comment": "",
-      "curVersion": 154,
+      "curVersion": 185,
       "discipline": "Multiball",
       "disciplineId": 10,
       "frames": [],
@@ -391,7 +471,7 @@
       "branch": 1,
       "challengeId": 0,
       "comment": "",
-      "curVersion": 154,
+      "curVersion": 185,
       "discipline": "Multiball",
       "disciplineId": 10,
       "frames": [],
@@ -531,7 +611,7 @@
       "branch": 1,
       "challengeId": 0,
       "comment": "",
-      "curVersion": 154,
+      "curVersion": 185,
       "discipline": "Multiball",
       "disciplineId": 10,
       "frames": [],
@@ -545,10 +625,10 @@
       "matchId": 69499156,
       "matchType": 0,
       "matchno": 6,
-      "matchstatus": "waiting",
-      "matchstatusCode": 0,
+      "matchstatus": "finished",
+      "matchstatusCode": 2,
       "notes": [],
-      "penalty": 0,
+      "penalty": 32,
       "playerA": {
         "country": {
           "alpha3": "POL",
@@ -579,7 +659,12 @@
         "represents": [],
         "url": "https://cuescore.com/player/Tomasz+Deszczy%C5%84ski/40365082"
       },
-      "properties": [],
+      "properties": {
+        "penalty": {
+          "description": "",
+          "invalid": false
+        }
+      },
       "raceTo": 4,
       "round": 2,
       "roundName": "Round 2",
@@ -601,7 +686,7 @@
       "branch": 1,
       "challengeId": 0,
       "comment": "",
-      "curVersion": 154,
+      "curVersion": 185,
       "discipline": "Multiball",
       "disciplineId": 10,
       "frames": [],
@@ -741,7 +826,7 @@
       "branch": 1,
       "challengeId": 0,
       "comment": "",
-      "curVersion": 154,
+      "curVersion": 185,
       "discipline": "Multiball",
       "disciplineId": 10,
       "frames": [],
@@ -811,7 +896,7 @@
       "branch": 1,
       "challengeId": 0,
       "comment": "",
-      "curVersion": 154,
+      "curVersion": 185,
       "discipline": "Multiball",
       "disciplineId": 10,
       "frames": [],
@@ -881,7 +966,7 @@
       "branch": 1,
       "challengeId": 0,
       "comment": "",
-      "curVersion": 154,
+      "curVersion": 185,
       "discipline": "Multiball",
       "disciplineId": 10,
       "frames": [],
@@ -1021,7 +1106,7 @@
       "branch": 1,
       "challengeId": 0,
       "comment": "",
-      "curVersion": 154,
+      "curVersion": 185,
       "discipline": "Multiball",
       "disciplineId": 10,
       "frames": [],
@@ -1161,7 +1246,7 @@
       "branch": 1,
       "challengeId": 0,
       "comment": "",
-      "curVersion": 154,
+      "curVersion": 185,
       "discipline": "Multiball",
       "disciplineId": 10,
       "frames": [],
@@ -1175,10 +1260,10 @@
       "matchId": 69499174,
       "matchType": 0,
       "matchno": 12,
-      "matchstatus": "waiting",
-      "matchstatusCode": 0,
+      "matchstatus": "finished",
+      "matchstatusCode": 2,
       "notes": [],
-      "penalty": 0,
+      "penalty": 16,
       "playerA": {
         "country": {
           "alpha3": "POL",
@@ -1209,7 +1294,12 @@
         "represents": [],
         "url": "https://cuescore.com/player/Dimitar+Dimitrovski/59859109"
       },
-      "properties": [],
+      "properties": {
+        "penalty": {
+          "description": "",
+          "invalid": false
+        }
+      },
       "raceTo": 4,
       "round": 3,
       "roundName": "Round 3",
@@ -1231,7 +1321,7 @@
       "branch": 1,
       "challengeId": 0,
       "comment": "",
-      "curVersion": 154,
+      "curVersion": 185,
       "discipline": "Multiball",
       "disciplineId": 10,
       "frames": [],
@@ -1245,10 +1335,10 @@
       "matchId": 69499177,
       "matchType": 0,
       "matchno": 13,
-      "matchstatus": "waiting",
-      "matchstatusCode": 0,
+      "matchstatus": "finished",
+      "matchstatusCode": 2,
       "notes": [],
-      "penalty": 0,
+      "penalty": 32,
       "playerA": {
         "country": {
           "alpha3": "POL",
@@ -1279,7 +1369,12 @@
         "represents": [],
         "url": "https://cuescore.com/player/Tomasz+Deszczy%C5%84ski/40365082"
       },
-      "properties": [],
+      "properties": {
+        "penalty": {
+          "description": "",
+          "invalid": false
+        }
+      },
       "raceTo": 4,
       "round": 4,
       "roundName": "Round 4",
@@ -1301,7 +1396,7 @@
       "branch": 1,
       "challengeId": 0,
       "comment": "",
-      "curVersion": 154,
+      "curVersion": 185,
       "discipline": "Multiball",
       "disciplineId": 10,
       "frames": [],
@@ -1441,7 +1536,7 @@
       "branch": 1,
       "challengeId": 0,
       "comment": "",
-      "curVersion": 154,
+      "curVersion": 185,
       "discipline": "Multiball",
       "disciplineId": 10,
       "frames": [],
@@ -1581,7 +1676,7 @@
       "branch": 1,
       "challengeId": 0,
       "comment": "",
-      "curVersion": 154,
+      "curVersion": 185,
       "discipline": "Multiball",
       "disciplineId": 10,
       "frames": [],
@@ -1651,7 +1746,7 @@
       "branch": 1,
       "challengeId": 0,
       "comment": "",
-      "curVersion": 154,
+      "curVersion": 185,
       "discipline": "Multiball",
       "disciplineId": 10,
       "frames": [],
@@ -1665,8 +1760,8 @@
       "matchId": 69499189,
       "matchType": 0,
       "matchno": 17,
-      "matchstatus": "waiting",
-      "matchstatusCode": 0,
+      "matchstatus": "finished",
+      "matchstatusCode": 2,
       "notes": [],
       "penalty": 0,
       "playerA": {
@@ -1705,11 +1800,81 @@
       "roundName": "Round 5",
       "runoutsA": 0,
       "runoutsB": 0,
-      "scoreA": 0,
-      "scoreB": 0,
-      "sets": [],
-      "starttime": "2025-10-16T17:04:00",
-      "stoptime": "",
+      "scoreA": 1,
+      "scoreB": 2,
+      "sets": [
+        {
+          "frames": [
+            {
+              "break": 0,
+              "frameNo": 1,
+              "highBreaksA": "",
+              "highBreaksB": "",
+              "inningsA": 0,
+              "inningsB": 0,
+              "pointsA": 0,
+              "pointsB": 0,
+              "runoutA": 0,
+              "runoutB": 0,
+              "scoreA": 1,
+              "scoreB": 3,
+              "starttime": "2025-10-16T15:04:00+00:00",
+              "stoptime": "2025-12-11T12:06:36+00:00"
+            }
+          ],
+          "scoreA": 1,
+          "scoreB": 3,
+          "setNo": 1
+        },
+        {
+          "frames": [
+            {
+              "break": 0,
+              "frameNo": 1,
+              "highBreaksA": "",
+              "highBreaksB": "",
+              "inningsA": 0,
+              "inningsB": 0,
+              "pointsA": 0,
+              "pointsB": 0,
+              "runoutA": 0,
+              "runoutB": 0,
+              "scoreA": 1,
+              "scoreB": 4,
+              "starttime": "2025-10-16T15:04:00+00:00",
+              "stoptime": "2025-12-11T12:06:36+00:00"
+            }
+          ],
+          "scoreA": 1,
+          "scoreB": 4,
+          "setNo": 2
+        },
+        {
+          "frames": [
+            {
+              "break": 0,
+              "frameNo": 1,
+              "highBreaksA": "",
+              "highBreaksB": "",
+              "inningsA": 0,
+              "inningsB": 0,
+              "pointsA": 0,
+              "pointsB": 0,
+              "runoutA": 0,
+              "runoutB": 0,
+              "scoreA": 4,
+              "scoreB": 2,
+              "starttime": "2025-10-16T15:04:00+00:00",
+              "stoptime": "2025-12-11T12:06:36+00:00"
+            }
+          ],
+          "scoreA": 4,
+          "scoreB": 2,
+          "setNo": 3
+        }
+      ],
+      "starttime": "2025-12-11T13:06:00",
+      "stoptime": "2025-12-11T13:06:46",
       "table": [],
       "tournamentId": 69497401,
       "useInnings": false,
@@ -1721,7 +1886,7 @@
       "branch": 1,
       "challengeId": 0,
       "comment": "",
-      "curVersion": 154,
+      "curVersion": 185,
       "discipline": "Multiball",
       "disciplineId": 10,
       "frames": [],
@@ -1861,7 +2026,7 @@
       "branch": 1,
       "challengeId": 0,
       "comment": "",
-      "curVersion": 154,
+      "curVersion": 185,
       "discipline": "Multiball",
       "disciplineId": 10,
       "frames": [],
@@ -2006,7 +2171,7 @@
       "branch": 1,
       "challengeId": 0,
       "comment": "",
-      "curVersion": 154,
+      "curVersion": 185,
       "discipline": "Multiball",
       "disciplineId": 10,
       "frames": [],
@@ -2151,7 +2316,7 @@
       "branch": 1,
       "challengeId": 0,
       "comment": "",
-      "curVersion": 154,
+      "curVersion": 185,
       "discipline": "Multiball",
       "disciplineId": 10,
       "frames": [],
@@ -2165,10 +2330,10 @@
       "matchId": 69499201,
       "matchType": 0,
       "matchno": 21,
-      "matchstatus": "waiting",
-      "matchstatusCode": 0,
+      "matchstatus": "finished",
+      "matchstatusCode": 2,
       "notes": [],
-      "penalty": 0,
+      "penalty": 16,
       "playerA": {
         "country": {
           "alpha3": "POL",
@@ -2199,7 +2364,12 @@
         "represents": [],
         "url": "https://cuescore.com/player/Filip+Dro%C5%BAdziak/20516572"
       },
-      "properties": [],
+      "properties": {
+        "penalty": {
+          "description": "",
+          "invalid": false
+        }
+      },
       "raceTo": 4,
       "round": 6,
       "roundName": "Round 6",
@@ -2221,7 +2391,7 @@
       "branch": 1,
       "challengeId": 0,
       "comment": "",
-      "curVersion": 154,
+      "curVersion": 185,
       "discipline": "Multiball",
       "disciplineId": 10,
       "frames": [],
@@ -2366,7 +2536,7 @@
       "branch": 1,
       "challengeId": 0,
       "comment": "",
-      "curVersion": 154,
+      "curVersion": 185,
       "discipline": "Multiball",
       "disciplineId": 10,
       "frames": [],
@@ -2436,7 +2606,7 @@
       "branch": 1,
       "challengeId": 0,
       "comment": "",
-      "curVersion": 154,
+      "curVersion": 185,
       "discipline": "Multiball",
       "disciplineId": 10,
       "frames": [],
@@ -2506,7 +2676,7 @@
       "branch": 1,
       "challengeId": 0,
       "comment": "",
-      "curVersion": 154,
+      "curVersion": 185,
       "discipline": "Multiball",
       "disciplineId": 10,
       "frames": [],
@@ -2646,7 +2816,7 @@
       "branch": 1,
       "challengeId": 0,
       "comment": "",
-      "curVersion": 154,
+      "curVersion": 185,
       "discipline": "Multiball",
       "disciplineId": 10,
       "frames": [],
@@ -2716,7 +2886,7 @@
       "branch": 1,
       "challengeId": 0,
       "comment": "",
-      "curVersion": 154,
+      "curVersion": 185,
       "discipline": "Multiball",
       "disciplineId": 10,
       "frames": [],
@@ -3074,7 +3244,7 @@
       "branch": 1,
       "challengeId": 0,
       "comment": "",
-      "curVersion": 154,
+      "curVersion": 185,
       "discipline": "Multiball",
       "disciplineId": 10,
       "frames": [],
@@ -3088,10 +3258,10 @@
       "matchId": 69499222,
       "matchType": 0,
       "matchno": 28,
-      "matchstatus": "waiting",
-      "matchstatusCode": 0,
+      "matchstatus": "finished",
+      "matchstatusCode": 2,
       "notes": [],
-      "penalty": 0,
+      "penalty": 32,
       "playerA": {
         "country": {
           "alpha3": "POL",
@@ -3122,7 +3292,12 @@
         "represents": [],
         "url": "https://cuescore.com/player/Tomasz+Deszczy%C5%84ski/40365082"
       },
-      "properties": [],
+      "properties": {
+        "penalty": {
+          "description": "",
+          "invalid": false
+        }
+      },
       "raceTo": 4,
       "round": 7,
       "roundName": "Round 7",
@@ -3144,7 +3319,7 @@
       "branch": 1,
       "challengeId": 0,
       "comment": "",
-      "curVersion": 154,
+      "curVersion": 185,
       "discipline": "Multiball",
       "disciplineId": 10,
       "frames": [],
@@ -3284,7 +3459,7 @@
       "branch": 1,
       "challengeId": 0,
       "comment": "",
-      "curVersion": 154,
+      "curVersion": 185,
       "discipline": "Multiball",
       "disciplineId": 10,
       "frames": [],
@@ -3298,10 +3473,10 @@
       "matchId": 69499228,
       "matchType": 0,
       "matchno": 30,
-      "matchstatus": "waiting",
-      "matchstatusCode": 0,
+      "matchstatus": "finished",
+      "matchstatusCode": 2,
       "notes": [],
-      "penalty": 0,
+      "penalty": 16,
       "playerA": {
         "country": {
           "alpha3": "POL",
@@ -3332,7 +3507,12 @@
         "represents": [],
         "url": "https://cuescore.com/player/Miros%C5%82aw+Galas/32939776"
       },
-      "properties": [],
+      "properties": {
+        "penalty": {
+          "description": "",
+          "invalid": false
+        }
+      },
       "raceTo": 4,
       "round": 8,
       "roundName": "Round 8",
@@ -3354,7 +3534,7 @@
       "branch": 1,
       "challengeId": 0,
       "comment": "",
-      "curVersion": 154,
+      "curVersion": 185,
       "discipline": "Multiball",
       "disciplineId": 10,
       "frames": [],
@@ -3424,7 +3604,7 @@
       "branch": 1,
       "challengeId": 0,
       "comment": "",
-      "curVersion": 154,
+      "curVersion": 185,
       "discipline": "Multiball",
       "disciplineId": 10,
       "frames": [],
@@ -3564,7 +3744,7 @@
       "branch": 1,
       "challengeId": 0,
       "comment": "",
-      "curVersion": 154,
+      "curVersion": 185,
       "discipline": "Multiball",
       "disciplineId": 10,
       "frames": [],
@@ -3704,7 +3884,7 @@
       "branch": 1,
       "challengeId": 0,
       "comment": "",
-      "curVersion": 154,
+      "curVersion": 185,
       "discipline": "Multiball",
       "disciplineId": 10,
       "frames": [],
@@ -3844,7 +4024,7 @@
       "branch": 1,
       "challengeId": 0,
       "comment": "",
-      "curVersion": 154,
+      "curVersion": 185,
       "discipline": "Multiball",
       "disciplineId": 10,
       "frames": [],
@@ -3858,10 +4038,10 @@
       "matchId": 69499243,
       "matchType": 0,
       "matchno": 35,
-      "matchstatus": "waiting",
-      "matchstatusCode": 0,
+      "matchstatus": "finished",
+      "matchstatusCode": 2,
       "notes": [],
-      "penalty": 0,
+      "penalty": 32,
       "playerA": {
         "country": {
           "alpha3": "POL",
@@ -3892,7 +4072,12 @@
         "represents": [],
         "url": "https://cuescore.com/player/Tomasz+Deszczy%C5%84ski/40365082"
       },
-      "properties": [],
+      "properties": {
+        "penalty": {
+          "description": "",
+          "invalid": false
+        }
+      },
       "raceTo": 4,
       "round": 9,
       "roundName": "Round 9",
@@ -3914,7 +4099,7 @@
       "branch": 1,
       "challengeId": 0,
       "comment": "",
-      "curVersion": 154,
+      "curVersion": 185,
       "discipline": "Multiball",
       "disciplineId": 10,
       "frames": [],
@@ -3928,8 +4113,8 @@
       "matchId": 69499246,
       "matchType": 0,
       "matchno": 36,
-      "matchstatus": "waiting",
-      "matchstatusCode": 0,
+      "matchstatus": "finished",
+      "matchstatusCode": 2,
       "notes": [],
       "penalty": 0,
       "playerA": {
@@ -3969,10 +4154,80 @@
       "runoutsA": 0,
       "runoutsB": 0,
       "scoreA": 0,
-      "scoreB": 0,
-      "sets": [],
-      "starttime": "2025-11-03T17:06:00",
-      "stoptime": "",
+      "scoreB": 3,
+      "sets": [
+        {
+          "frames": [
+            {
+              "break": 0,
+              "frameNo": 1,
+              "highBreaksA": "",
+              "highBreaksB": "",
+              "inningsA": 0,
+              "inningsB": 0,
+              "pointsA": 0,
+              "pointsB": 0,
+              "runoutA": 0,
+              "runoutB": 0,
+              "scoreA": 1,
+              "scoreB": 3,
+              "starttime": "2025-11-03T16:06:00+00:00",
+              "stoptime": "2025-12-12T16:46:23+00:00"
+            }
+          ],
+          "scoreA": 1,
+          "scoreB": 3,
+          "setNo": 1
+        },
+        {
+          "frames": [
+            {
+              "break": 0,
+              "frameNo": 1,
+              "highBreaksA": "",
+              "highBreaksB": "",
+              "inningsA": 0,
+              "inningsB": 0,
+              "pointsA": 0,
+              "pointsB": 0,
+              "runoutA": 0,
+              "runoutB": 0,
+              "scoreA": 1,
+              "scoreB": 4,
+              "starttime": "2025-11-03T16:06:00+00:00",
+              "stoptime": "2025-12-12T16:46:23+00:00"
+            }
+          ],
+          "scoreA": 1,
+          "scoreB": 4,
+          "setNo": 2
+        },
+        {
+          "frames": [
+            {
+              "break": 0,
+              "frameNo": 1,
+              "highBreaksA": "",
+              "highBreaksB": "",
+              "inningsA": 0,
+              "inningsB": 0,
+              "pointsA": 0,
+              "pointsB": 0,
+              "runoutA": 0,
+              "runoutB": 0,
+              "scoreA": 3,
+              "scoreB": 4,
+              "starttime": "2025-11-03T16:06:00+00:00",
+              "stoptime": "2025-12-12T16:46:23+00:00"
+            }
+          ],
+          "scoreA": 3,
+          "scoreB": 4,
+          "setNo": 3
+        }
+      ],
+      "starttime": "2025-12-12T17:46:00",
+      "stoptime": "2025-12-12T17:46:49",
       "table": [],
       "tournamentId": 69497401,
       "useInnings": false,
@@ -3984,7 +4239,7 @@
       "branch": 1,
       "challengeId": 0,
       "comment": "",
-      "curVersion": 154,
+      "curVersion": 185,
       "discipline": "Multiball",
       "disciplineId": 10,
       "frames": [],
@@ -4054,7 +4309,7 @@
       "branch": 1,
       "challengeId": 0,
       "comment": "",
-      "curVersion": 154,
+      "curVersion": 185,
       "discipline": "Multiball",
       "disciplineId": 10,
       "frames": [],
@@ -4124,7 +4379,7 @@
       "branch": 1,
       "challengeId": 0,
       "comment": "",
-      "curVersion": 154,
+      "curVersion": 185,
       "discipline": "Multiball",
       "disciplineId": 10,
       "frames": [],
@@ -4138,10 +4393,10 @@
       "matchId": 69499255,
       "matchType": 0,
       "matchno": 39,
-      "matchstatus": "waiting",
-      "matchstatusCode": 0,
+      "matchstatus": "finished",
+      "matchstatusCode": 2,
       "notes": [],
-      "penalty": 0,
+      "penalty": 32,
       "playerA": {
         "country": {
           "alpha3": "POL",
@@ -4172,7 +4427,12 @@
         "represents": [],
         "url": "https://cuescore.com/player/Tomasz+Deszczy%C5%84ski/40365082"
       },
-      "properties": [],
+      "properties": {
+        "penalty": {
+          "description": "",
+          "invalid": false
+        }
+      },
       "raceTo": 4,
       "round": 10,
       "roundName": "Round 10",
@@ -4194,7 +4454,7 @@
       "branch": 1,
       "challengeId": 0,
       "comment": "",
-      "curVersion": 154,
+      "curVersion": 185,
       "discipline": "Multiball",
       "disciplineId": 10,
       "frames": [],
@@ -4264,7 +4524,7 @@
       "branch": 1,
       "challengeId": 0,
       "comment": "",
-      "curVersion": 154,
+      "curVersion": 185,
       "discipline": "Multiball",
       "disciplineId": 10,
       "frames": [],
@@ -4404,7 +4664,7 @@
       "branch": 1,
       "challengeId": 0,
       "comment": "",
-      "curVersion": 154,
+      "curVersion": 185,
       "discipline": "Multiball",
       "disciplineId": 10,
       "frames": [],
@@ -4418,10 +4678,10 @@
       "matchId": 69499264,
       "matchType": 0,
       "matchno": 42,
-      "matchstatus": "waiting",
-      "matchstatusCode": 0,
+      "matchstatus": "finished",
+      "matchstatusCode": 2,
       "notes": [],
-      "penalty": 0,
+      "penalty": 16,
       "playerA": {
         "country": {
           "alpha3": "POL",
@@ -4452,7 +4712,12 @@
         "represents": [],
         "url": "https://cuescore.com/player/Rados%C5%82aw+F.+Kos/4720099"
       },
-      "properties": [],
+      "properties": {
+        "penalty": {
+          "description": "",
+          "invalid": false
+        }
+      },
       "raceTo": 4,
       "round": 11,
       "roundName": "Round 11",
@@ -4474,7 +4739,7 @@
       "branch": 1,
       "challengeId": 0,
       "comment": "",
-      "curVersion": 154,
+      "curVersion": 185,
       "discipline": "Multiball",
       "disciplineId": 10,
       "frames": [],
@@ -4488,8 +4753,8 @@
       "matchId": 69499267,
       "matchType": 0,
       "matchno": 43,
-      "matchstatus": "waiting",
-      "matchstatusCode": 0,
+      "matchstatus": "finished",
+      "matchstatusCode": 2,
       "notes": [],
       "penalty": 0,
       "playerA": {
@@ -4528,11 +4793,81 @@
       "roundName": "Round 11",
       "runoutsA": 0,
       "runoutsB": 0,
-      "scoreA": 0,
+      "scoreA": 3,
       "scoreB": 0,
-      "sets": [],
-      "starttime": "2025-11-10T17:07:00",
-      "stoptime": "",
+      "sets": [
+        {
+          "frames": [
+            {
+              "break": 0,
+              "frameNo": 1,
+              "highBreaksA": "",
+              "highBreaksB": "",
+              "inningsA": 0,
+              "inningsB": 0,
+              "pointsA": 0,
+              "pointsB": 0,
+              "runoutA": 0,
+              "runoutB": 0,
+              "scoreA": 3,
+              "scoreB": 0,
+              "starttime": "2025-11-10T16:07:00+00:00",
+              "stoptime": "2025-12-11T12:05:33+00:00"
+            }
+          ],
+          "scoreA": 3,
+          "scoreB": 0,
+          "setNo": 1
+        },
+        {
+          "frames": [
+            {
+              "break": 0,
+              "frameNo": 1,
+              "highBreaksA": "",
+              "highBreaksB": "",
+              "inningsA": 0,
+              "inningsB": 0,
+              "pointsA": 0,
+              "pointsB": 0,
+              "runoutA": 0,
+              "runoutB": 0,
+              "scoreA": 4,
+              "scoreB": 3,
+              "starttime": "2025-11-10T16:07:00+00:00",
+              "stoptime": "2025-12-11T12:05:33+00:00"
+            }
+          ],
+          "scoreA": 4,
+          "scoreB": 3,
+          "setNo": 2
+        },
+        {
+          "frames": [
+            {
+              "break": 0,
+              "frameNo": 1,
+              "highBreaksA": "",
+              "highBreaksB": "",
+              "inningsA": 0,
+              "inningsB": 0,
+              "pointsA": 0,
+              "pointsB": 0,
+              "runoutA": 0,
+              "runoutB": 0,
+              "scoreA": 4,
+              "scoreB": 2,
+              "starttime": "2025-11-10T16:07:00+00:00",
+              "stoptime": "2025-12-11T12:05:33+00:00"
+            }
+          ],
+          "scoreA": 4,
+          "scoreB": 2,
+          "setNo": 3
+        }
+      ],
+      "starttime": "2025-12-11T13:05:00",
+      "stoptime": "2025-12-11T13:05:45",
       "table": [],
       "tournamentId": 69497401,
       "useInnings": false,
@@ -4544,7 +4879,7 @@
       "branch": 1,
       "challengeId": 0,
       "comment": "",
-      "curVersion": 154,
+      "curVersion": 185,
       "discipline": "Multiball",
       "disciplineId": 10,
       "frames": [],
@@ -4614,7 +4949,7 @@
       "branch": 1,
       "challengeId": 0,
       "comment": "",
-      "curVersion": 154,
+      "curVersion": 185,
       "discipline": "Multiball",
       "disciplineId": 10,
       "frames": [],
@@ -4684,7 +5019,7 @@
       "branch": 1,
       "challengeId": 0,
       "comment": "",
-      "curVersion": 154,
+      "curVersion": 185,
       "discipline": "Multiball",
       "disciplineId": 10,
       "frames": [],
@@ -4754,7 +5089,7 @@
       "branch": 1,
       "challengeId": 0,
       "comment": "",
-      "curVersion": 154,
+      "curVersion": 185,
       "discipline": "Multiball",
       "disciplineId": 10,
       "frames": [],
@@ -4824,7 +5159,7 @@
       "branch": 1,
       "challengeId": 0,
       "comment": "",
-      "curVersion": 154,
+      "curVersion": 185,
       "discipline": "Multiball",
       "disciplineId": 10,
       "frames": [],
@@ -4838,10 +5173,10 @@
       "matchId": 69499282,
       "matchType": 0,
       "matchno": 48,
-      "matchstatus": "waiting",
-      "matchstatusCode": 0,
+      "matchstatus": "finished",
+      "matchstatusCode": 2,
       "notes": [],
-      "penalty": 0,
+      "penalty": 32,
       "playerA": {
         "country": {
           "alpha3": "MKD",
@@ -4872,7 +5207,12 @@
         "represents": [],
         "url": "https://cuescore.com/player/Tomasz+Deszczy%C5%84ski/40365082"
       },
-      "properties": [],
+      "properties": {
+        "penalty": {
+          "description": "",
+          "invalid": false
+        }
+      },
       "raceTo": 4,
       "round": 12,
       "roundName": "Round 12",
@@ -4894,7 +5234,7 @@
       "branch": 1,
       "challengeId": 0,
       "comment": "",
-      "curVersion": 154,
+      "curVersion": 185,
       "discipline": "Multiball",
       "disciplineId": 10,
       "frames": [],
@@ -4908,10 +5248,10 @@
       "matchId": 69499285,
       "matchType": 0,
       "matchno": 49,
-      "matchstatus": "waiting",
-      "matchstatusCode": 0,
+      "matchstatus": "finished",
+      "matchstatusCode": 2,
       "notes": [],
-      "penalty": 0,
+      "penalty": 16,
       "playerA": {
         "country": {
           "alpha3": "POL",
@@ -4942,7 +5282,12 @@
         "represents": [],
         "url": "https://cuescore.com/player/Bartosz+Bany/41033260"
       },
-      "properties": [],
+      "properties": {
+        "penalty": {
+          "description": "",
+          "invalid": false
+        }
+      },
       "raceTo": 4,
       "round": 13,
       "roundName": "Round 13",
@@ -4964,7 +5309,7 @@
       "branch": 1,
       "challengeId": 0,
       "comment": "",
-      "curVersion": 154,
+      "curVersion": 185,
       "discipline": "Multiball",
       "disciplineId": 10,
       "frames": [],
@@ -5034,7 +5379,7 @@
       "branch": 1,
       "challengeId": 0,
       "comment": "",
-      "curVersion": 154,
+      "curVersion": 185,
       "discipline": "Multiball",
       "disciplineId": 10,
       "frames": [],
@@ -5104,7 +5449,7 @@
       "branch": 1,
       "challengeId": 0,
       "comment": "",
-      "curVersion": 154,
+      "curVersion": 185,
       "discipline": "Multiball",
       "disciplineId": 10,
       "frames": [],
@@ -5174,7 +5519,7 @@
       "branch": 1,
       "challengeId": 0,
       "comment": "",
-      "curVersion": 154,
+      "curVersion": 185,
       "discipline": "Multiball",
       "disciplineId": 10,
       "frames": [],
@@ -5244,7 +5589,7 @@
       "branch": 1,
       "challengeId": 0,
       "comment": "",
-      "curVersion": 154,
+      "curVersion": 185,
       "discipline": "Multiball",
       "disciplineId": 10,
       "frames": [],
@@ -5384,7 +5729,7 @@
       "branch": 1,
       "challengeId": 0,
       "comment": "",
-      "curVersion": 154,
+      "curVersion": 185,
       "discipline": "Multiball",
       "disciplineId": 10,
       "frames": [],
@@ -5454,7 +5799,7 @@
       "branch": 1,
       "challengeId": 0,
       "comment": "",
-      "curVersion": 154,
+      "curVersion": 185,
       "discipline": "Multiball",
       "disciplineId": 10,
       "frames": [],
@@ -5594,7 +5939,7 @@
       "branch": 1,
       "challengeId": 0,
       "comment": "",
-      "curVersion": 154,
+      "curVersion": 185,
       "discipline": "Multiball",
       "disciplineId": 10,
       "frames": [],
@@ -5608,10 +5953,10 @@
       "matchId": 69499309,
       "matchType": 0,
       "matchno": 57,
-      "matchstatus": "waiting",
-      "matchstatusCode": 0,
+      "matchstatus": "finished",
+      "matchstatusCode": 2,
       "notes": [],
-      "penalty": 0,
+      "penalty": 32,
       "playerA": {
         "country": {
           "alpha3": "POL",
@@ -5642,7 +5987,12 @@
         "represents": [],
         "url": "https://cuescore.com/player/Tomasz+Deszczy%C5%84ski/40365082"
       },
-      "properties": [],
+      "properties": {
+        "penalty": {
+          "description": "",
+          "invalid": false
+        }
+      },
       "raceTo": 4,
       "round": 15,
       "roundName": "Round 15",
@@ -5664,7 +6014,7 @@
       "branch": 1,
       "challengeId": 0,
       "comment": "",
-      "curVersion": 154,
+      "curVersion": 185,
       "discipline": "Multiball",
       "disciplineId": 10,
       "frames": [],
@@ -5734,7 +6084,7 @@
       "branch": 1,
       "challengeId": 0,
       "comment": "",
-      "curVersion": 154,
+      "curVersion": 185,
       "discipline": "Multiball",
       "disciplineId": 10,
       "frames": [],
@@ -5804,7 +6154,7 @@
       "branch": 1,
       "challengeId": 0,
       "comment": "",
-      "curVersion": 154,
+      "curVersion": 185,
       "discipline": "Multiball",
       "disciplineId": 10,
       "frames": [],
@@ -5874,7 +6224,7 @@
       "branch": 1,
       "challengeId": 0,
       "comment": "",
-      "curVersion": 154,
+      "curVersion": 185,
       "discipline": "Multiball",
       "disciplineId": 10,
       "frames": [],
@@ -5944,7 +6294,7 @@
       "branch": 1,
       "challengeId": 0,
       "comment": "",
-      "curVersion": 154,
+      "curVersion": 185,
       "discipline": "Multiball",
       "disciplineId": 10,
       "frames": [],
@@ -6014,7 +6364,7 @@
       "branch": 1,
       "challengeId": 0,
       "comment": "",
-      "curVersion": 154,
+      "curVersion": 185,
       "discipline": "Multiball",
       "disciplineId": 10,
       "frames": [],
@@ -6154,7 +6504,7 @@
       "branch": 1,
       "challengeId": 0,
       "comment": "",
-      "curVersion": 154,
+      "curVersion": 185,
       "discipline": "Multiball",
       "disciplineId": 10,
       "frames": [],
@@ -6168,10 +6518,10 @@
       "matchId": 69499330,
       "matchType": 0,
       "matchno": 64,
-      "matchstatus": "waiting",
-      "matchstatusCode": 0,
+      "matchstatus": "finished",
+      "matchstatusCode": 2,
       "notes": [],
-      "penalty": 0,
+      "penalty": 16,
       "playerA": {
         "country": {
           "alpha3": "POL",
@@ -6202,7 +6552,12 @@
         "represents": [],
         "url": "https://cuescore.com/player/Jakub+%C5%81ady%C5%84ski+Eighty+Nine+Pucharowo+Warszawa/15492220"
       },
-      "properties": [],
+      "properties": {
+        "penalty": {
+          "description": "",
+          "invalid": false
+        }
+      },
       "raceTo": 4,
       "round": 16,
       "roundName": "Round 16",
@@ -6224,7 +6579,7 @@
       "branch": 1,
       "challengeId": 0,
       "comment": "",
-      "curVersion": 154,
+      "curVersion": 185,
       "discipline": "Multiball",
       "disciplineId": 10,
       "frames": [],
@@ -6294,7 +6649,7 @@
       "branch": 1,
       "challengeId": 0,
       "comment": "",
-      "curVersion": 154,
+      "curVersion": 185,
       "discipline": "Multiball",
       "disciplineId": 10,
       "frames": [],
@@ -6308,10 +6663,10 @@
       "matchId": 69499336,
       "matchType": 0,
       "matchno": 66,
-      "matchstatus": "waiting",
-      "matchstatusCode": 0,
+      "matchstatus": "finished",
+      "matchstatusCode": 2,
       "notes": [],
-      "penalty": 0,
+      "penalty": 32,
       "playerA": {
         "country": {
           "alpha3": "POL",
@@ -6342,7 +6697,12 @@
         "represents": [],
         "url": "https://cuescore.com/player/Tomasz+Deszczy%C5%84ski/40365082"
       },
-      "properties": [],
+      "properties": {
+        "penalty": {
+          "description": "",
+          "invalid": false
+        }
+      },
       "raceTo": 4,
       "round": 17,
       "roundName": "Round 17",
@@ -6364,7 +6724,7 @@
       "branch": 1,
       "challengeId": 0,
       "comment": "",
-      "curVersion": 154,
+      "curVersion": 185,
       "discipline": "Multiball",
       "disciplineId": 10,
       "frames": [],
@@ -6434,7 +6794,7 @@
       "branch": 1,
       "challengeId": 0,
       "comment": "",
-      "curVersion": 154,
+      "curVersion": 185,
       "discipline": "Multiball",
       "disciplineId": 10,
       "frames": [],
@@ -6574,7 +6934,7 @@
       "branch": 1,
       "challengeId": 0,
       "comment": "",
-      "curVersion": 154,
+      "curVersion": 185,
       "discipline": "Multiball",
       "disciplineId": 10,
       "frames": [],
@@ -6644,7 +7004,7 @@
       "branch": 1,
       "challengeId": 0,
       "comment": "",
-      "curVersion": 154,
+      "curVersion": 185,
       "discipline": "Multiball",
       "disciplineId": 10,
       "frames": [],
@@ -6714,7 +7074,7 @@
       "branch": 1,
       "challengeId": 0,
       "comment": "",
-      "curVersion": 154,
+      "curVersion": 185,
       "discipline": "Multiball",
       "disciplineId": 10,
       "frames": [],
@@ -6728,10 +7088,10 @@
       "matchId": 69499351,
       "matchType": 0,
       "matchno": 71,
-      "matchstatus": "waiting",
-      "matchstatusCode": 0,
+      "matchstatus": "finished",
+      "matchstatusCode": 2,
       "notes": [],
-      "penalty": 0,
+      "penalty": 16,
       "playerA": {
         "country": {
           "alpha3": "POL",
@@ -6762,7 +7122,12 @@
         "represents": [],
         "url": "https://cuescore.com/player/Roman+Kurkiewicz/48149155"
       },
-      "properties": [],
+      "properties": {
+        "penalty": {
+          "description": "",
+          "invalid": false
+        }
+      },
       "raceTo": 4,
       "round": 18,
       "roundName": "Round 18",
@@ -6784,7 +7149,7 @@
       "branch": 1,
       "challengeId": 0,
       "comment": "",
-      "curVersion": 154,
+      "curVersion": 185,
       "discipline": "Multiball",
       "disciplineId": 10,
       "frames": [],
@@ -6875,17 +7240,17 @@
   "standings": {
     "1": [
       {
-        "frameAvg": 0.589,
-        "frameLosses": 37,
-        "frameScore": 16,
-        "frameWinAvg": 8.833,
-        "frameWins": 53,
+        "frameAvg": 0.615,
+        "frameLosses": 47,
+        "frameScore": 28,
+        "frameWinAvg": 9.375,
+        "frameWins": 75,
         "highBreak": 0,
         "inningAvg": 0,
         "innings": 0,
         "lagWins": 0,
         "losses": 1,
-        "played": 6,
+        "played": 8,
         "player": {
           "country": {
             "alpha3": "POL",
@@ -6901,32 +7266,32 @@
           "represents": [],
           "url": "https://cuescore.com/player/Filip+Dro%C5%BAdziak/20516572"
         },
-        "points": 16,
+        "points": 22,
         "position": 1,
         "runouts": 2,
         "setLosses": 5,
-        "setScore": 8,
-        "setWins": 13,
+        "setScore": 14,
+        "setWins": 19,
         "teamBestInningAvg": 0,
         "teamIndividualPoints": 0,
         "teamInningAvg": 0,
         "teamInnings": 0,
         "teamMatchPoints": 0,
         "ties": 0,
-        "wins": 5
+        "wins": 7
       },
       {
-        "frameAvg": 0.636,
-        "frameLosses": 28,
-        "frameScore": 21,
-        "frameWinAvg": 9.8,
-        "frameWins": 49,
+        "frameAvg": 0.628,
+        "frameLosses": 35,
+        "frameScore": 24,
+        "frameWinAvg": 9.833,
+        "frameWins": 59,
         "highBreak": 0,
         "inningAvg": 0,
         "innings": 0,
         "lagWins": 0,
         "losses": 0,
-        "played": 5,
+        "played": 6,
         "player": {
           "country": {
             "alpha3": "POL",
@@ -6942,19 +7307,19 @@
           "represents": [],
           "url": "https://cuescore.com/player/Jakub+%C5%81ady%C5%84ski+Eighty+Nine+Pucharowo+Warszawa/15492220"
         },
-        "points": 15,
+        "points": 18,
         "position": 2,
-        "runouts": 2,
-        "setLosses": 4,
-        "setScore": 7,
-        "setWins": 11,
+        "runouts": 3,
+        "setLosses": 5,
+        "setScore": 8,
+        "setWins": 13,
         "teamBestInningAvg": 0,
         "teamIndividualPoints": 0,
         "teamInningAvg": 0,
         "teamInnings": 0,
         "teamMatchPoints": 0,
         "ties": 0,
-        "wins": 5
+        "wins": 6
       },
       {
         "frameAvg": 0.439,
@@ -7080,58 +7445,17 @@
         "wins": 3
       },
       {
-        "frameAvg": 0.523,
-        "frameLosses": 31,
-        "frameScore": 3,
-        "frameWinAvg": 8.5,
-        "frameWins": 34,
-        "highBreak": 0,
-        "inningAvg": 0,
-        "innings": 0,
-        "lagWins": 1,
-        "losses": 2,
-        "played": 4,
-        "player": {
-          "country": {
-            "alpha3": "POL",
-            "continent": "Europe",
-            "image": "https://cuescore.com/img/flags/png-country-4x2-none/res-640x480/pl.png",
-            "name": "Poland"
-          },
-          "firstname": "Mirosław",
-          "image": "https://img.cuescore.com/image/5/4/50ac46cb29361bb7417fe99e9ceaf5a6.png?t=1721041648",
-          "lastname": "Galas",
-          "name": "Mirosław Galas",
-          "playerId": 32939776,
-          "represents": [],
-          "url": "https://cuescore.com/player/Miros%C5%82aw+Galas/32939776"
-        },
-        "points": 8,
-        "position": 6,
-        "runouts": 0,
-        "setLosses": 6,
-        "setScore": 0,
-        "setWins": 6,
-        "teamBestInningAvg": 0,
-        "teamIndividualPoints": 0,
-        "teamInningAvg": 0,
-        "teamInnings": 0,
-        "teamMatchPoints": 0,
-        "ties": 0,
-        "wins": 2
-      },
-      {
-        "frameAvg": 0.378,
-        "frameLosses": 56,
-        "frameScore": -22,
-        "frameWinAvg": 5.667,
-        "frameWins": 34,
+        "frameAvg": 0.397,
+        "frameLosses": 73,
+        "frameScore": -25,
+        "frameWinAvg": 6,
+        "frameWins": 48,
         "highBreak": 0,
         "inningAvg": 0,
         "innings": 0,
         "lagWins": 0,
-        "losses": 5,
-        "played": 6,
+        "losses": 6,
+        "played": 8,
         "player": {
           "country": {
             "alpha3": "POL",
@@ -7147,19 +7471,101 @@
           "represents": [],
           "url": "https://cuescore.com/player/Pawe%C5%82+Florecki/3506000"
         },
-        "points": 8,
-        "position": 7,
+        "points": 12,
+        "position": 6,
         "runouts": 0,
-        "setLosses": 13,
-        "setScore": -8,
-        "setWins": 5,
+        "setLosses": 17,
+        "setScore": -10,
+        "setWins": 7,
         "teamBestInningAvg": 0,
         "teamIndividualPoints": 0,
         "teamInningAvg": 0,
         "teamInnings": 0,
         "teamMatchPoints": 0,
         "ties": 0,
-        "wins": 1
+        "wins": 2
+      },
+      {
+        "frameAvg": 0.469,
+        "frameLosses": 52,
+        "frameScore": -6,
+        "frameWinAvg": 7.667,
+        "frameWins": 46,
+        "highBreak": 0,
+        "inningAvg": 0,
+        "innings": 0,
+        "lagWins": 1,
+        "losses": 4,
+        "played": 6,
+        "player": {
+          "country": {
+            "alpha3": "POL",
+            "continent": "Europe",
+            "image": "https://cuescore.com/img/flags/png-country-4x2-none/res-640x480/pl.png",
+            "name": "Poland"
+          },
+          "firstname": "Mirosław",
+          "image": "https://img.cuescore.com/image/5/4/50ac46cb29361bb7417fe99e9ceaf5a6.png?t=1721041648",
+          "lastname": "Galas",
+          "name": "Mirosław Galas",
+          "playerId": 32939776,
+          "represents": [],
+          "url": "https://cuescore.com/player/Miros%C5%82aw+Galas/32939776"
+        },
+        "points": 10,
+        "position": 7,
+        "runouts": 0,
+        "setLosses": 11,
+        "setScore": -4,
+        "setWins": 7,
+        "teamBestInningAvg": 0,
+        "teamIndividualPoints": 0,
+        "teamInningAvg": 0,
+        "teamInnings": 0,
+        "teamMatchPoints": 0,
+        "ties": 0,
+        "wins": 2
+      },
+      {
+        "frameAvg": 0.4,
+        "frameLosses": 9,
+        "frameScore": -3,
+        "frameWinAvg": 6,
+        "frameWins": 6,
+        "highBreak": 0,
+        "inningAvg": 0,
+        "innings": 0,
+        "lagWins": 0,
+        "losses": 1,
+        "played": 1,
+        "player": {
+          "country": {
+            "alpha3": "POL",
+            "continent": "Europe",
+            "image": "https://cuescore.com/img/flags/png-country-4x2-none/res-640x480/pl.png",
+            "name": "Poland"
+          },
+          "firstname": "Roman",
+          "image": "https://img.cuescore.com/image/3/4/391cc6fec5d62a13fab99caefdd9cf95.png?t=1757167562",
+          "lastname": "Kurkiewicz",
+          "name": "Roman Kurkiewicz",
+          "playerId": 48149155,
+          "represents": [],
+          "url": "https://cuescore.com/player/Roman+Kurkiewicz/48149155"
+        },
+        "points": 1,
+        "position": 8,
+        "runouts": 0,
+        "setLosses": 2,
+        "setScore": -1,
+        "setWins": 1,
+        "teamBestInningAvg": 0,
+        "teamIndividualPoints": 0,
+        "teamInningAvg": 0,
+        "teamInnings": 0,
+        "teamMatchPoints": 0,
+        "ties": 0,
+        "wins": 0
       },
       {
         "frameAvg": 0,
@@ -7189,48 +7595,7 @@
           "url": "https://cuescore.com/player/Tomasz+Deszczy%C5%84ski/40365082"
         },
         "points": 0,
-        "position": 8,
-        "runouts": 0,
-        "setLosses": 0,
-        "setScore": 0,
-        "setWins": 0,
-        "teamBestInningAvg": 0,
-        "teamIndividualPoints": 0,
-        "teamInningAvg": 0,
-        "teamInnings": 0,
-        "teamMatchPoints": 0,
-        "ties": 0,
-        "wins": 0
-      },
-      {
-        "frameAvg": 0,
-        "frameLosses": 0,
-        "frameScore": 0,
-        "frameWinAvg": 0,
-        "frameWins": 0,
-        "highBreak": 0,
-        "inningAvg": 0,
-        "innings": 0,
-        "lagWins": 0,
-        "losses": 0,
-        "played": 0,
-        "player": {
-          "country": {
-            "alpha3": "POL",
-            "continent": "Europe",
-            "image": "https://cuescore.com/img/flags/png-country-4x2-none/res-640x480/pl.png",
-            "name": "Poland"
-          },
-          "firstname": "Roman",
-          "image": "https://img.cuescore.com/image/3/4/391cc6fec5d62a13fab99caefdd9cf95.png?t=1757167562",
-          "lastname": "Kurkiewicz",
-          "name": "Roman Kurkiewicz",
-          "playerId": 48149155,
-          "represents": [],
-          "url": "https://cuescore.com/player/Roman+Kurkiewicz/48149155"
-        },
-        "points": 0,
-        "position": 8,
+        "position": 9,
         "runouts": 0,
         "setLosses": 0,
         "setScore": 0,

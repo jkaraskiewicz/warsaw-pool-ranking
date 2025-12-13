@@ -88,6 +88,52 @@ mat-dialog-content {
   }
 }
 
+.games-list {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+
+  .game-item {
+    display: grid;
+    grid-template-columns: 80px 1fr 60px 1fr;
+    align-items: center;
+    gap: 12px;
+    padding: 8px;
+    border-radius: 4px;
+    background: #fafafa;
+    font-size: 14px;
+
+    .game-date {
+      color: #757575;
+      font-size: 12px;
+    }
+
+    .game-opponent {
+      font-weight: 500;
+      white-space: nowrap;
+      overflow: hidden;
+      text-overflow: ellipsis;
+    }
+
+    .game-score {
+      font-weight: bold;
+      text-align: center;
+      
+      &.win { color: #4caf50; }
+      &.loss { color: #f44336; }
+    }
+
+    .game-tournament {
+      font-size: 12px;
+      color: #757575;
+      white-space: nowrap;
+      overflow: hidden;
+      text-overflow: ellipsis;
+      text-align: right;
+    }
+  }
+}
+
 .chart-section {
   margin-bottom: 24px;
 
@@ -127,4 +173,3 @@ mat-dialog-content {
   box-shadow: 0 8px 15px -3px rgba(0, 0, 0, 0.3);
   margin-right: 0; // Reset margin for overlay
 }
-

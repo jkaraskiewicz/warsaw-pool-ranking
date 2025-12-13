@@ -62,6 +62,20 @@
         </div>
       </div>
 
+      <div class="detail-section" *ngIf="player.lastMatches?.length">
+        <h3>{{ 'RECENT_MATCHES' | translate }}</h3>
+        <div class="games-list">
+          <div class="game-item" *ngFor="let match of player.lastMatches">
+            <div class="game-date">{{ formatDate(match.date) }}</div>
+            <div class="game-opponent">{{ match.opponentName }}</div>
+            <div class="game-score" [class.win]="match.playerTotalScore > match.opponentTotalScore" [class.loss]="match.playerTotalScore < match.opponentTotalScore">
+              {{ match.playerTotalScore }} - {{ match.opponentTotalScore }}
+            </div>
+            <div class="game-tournament">{{ match.tournamentName }}</div>
+          </div>
+        </div>
+      </div>
+
       <div class="actions-section">
         <a [href]="player.cuescoreProfileUrl" target="_blank" mat-raised-button color="primary">
           <mat-icon>open_in_new</mat-icon>

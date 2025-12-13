@@ -49,7 +49,7 @@ impl IngestionService {
         let mut all_ids = HashSet::new();
 
         for venue in venues {
-            let ids = self.scraper.scrape_venue_tournaments(venue.id, venue.name, None).await?;
+            let ids = self.scraper.scrape_venue_tournaments(venue.id, venue.slug, None).await?;
             all_ids.extend(ids);
         }
 

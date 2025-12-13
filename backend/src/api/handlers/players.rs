@@ -6,7 +6,7 @@ use axum::{
 use std::sync::Arc;
 use urlencoding::encode;
 
-use crate::api::models::{PlayerListItem, PlayerListResponse, PlayerDetail, HeadToHeadMatch, HeadToHeadResponse, HeadToHeadStats};
+use crate::api::models::{PlayerListItem, PlayerListResponse, PlayerDetail, HeadToHeadMatch, HeadToHeadResponse, HeadToHeadStats, MatchResult};
 use crate::database::{self, models::{PlayerFilter, SortColumn, SortOrder}};
 use super::{AppState, PlayerParams};
 
@@ -122,6 +122,16 @@ pub async fn get_player_detail(
                 |r| r.get(0)
             ).unwrap_or(0);
 
+            let last_matches_rows = database::games::get_player_last_matches(&mut conn, row.player_id, 10).unwrap_or_default();
+            let last_matches: Vec<MatchResult> = last_matches_rows.into_iter().map(|m| MatchResult {
+                date: m.date.to_string(),
+                tournament_name: m.tournament_name,
+                opponent_name: m.opponent_name,
+                opponent_id: m.opponent_id as i64,
+                player_total_score: m.player_total_score,
+                opponent_total_score: m.opponent_total_score,
+            }).collect();
+
             let encoded_name = encode(&row.name).replace(' ', "+");
             let cuescore_profile_url = format!(
                 "https://cuescore.com/player/{}/{}",
@@ -144,6 +154,7 @@ pub async fn get_player_detail(
                 effective_games: row.games_played,
                 last_played,
                 matches_played,
+                last_matches,
             }).into_response()
         },
         None => StatusCode::NOT_FOUND.into_response(),
@@ -247,6 +258,7 @@ pub async fn get_head_to_head_comparison(
             effective_games: p.games_played,
             last_played,
             matches_played,
+            last_matches: vec![],
         }
     };
 

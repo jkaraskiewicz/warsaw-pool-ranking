@@ -113,3 +113,47 @@ pub fn count_matches_played_for_player(
     conn.query_row(sql, params![player_id], |row| row.get(0))
         .context("Failed to count matches played for player")
 }
+
+pub fn get_player_last_matches(
+    conn: &mut DbConn,
+    player_id: i32,
+    limit: usize,
+) -> Result<Vec<super::models::MatchResultRow>> {
+    let sql = "
+        SELECT
+            g.date,
+            t.name as tournament_name,
+            CASE
+                WHEN g.first_player_id = ?1 THEN p2.name
+                ELSE p1.name
+            END as opponent_name,
+            CASE
+                WHEN g.first_player_id = ?1 THEN p2.id
+                ELSE p1.id
+            END as opponent_id,
+            SUM(CASE WHEN g.first_player_id = ?1 THEN g.first_player_score ELSE g.second_player_score END) as player_total_score,
+            SUM(CASE WHEN g.first_player_id = ?1 THEN g.second_player_score ELSE g.first_player_score END) as opponent_total_score
+        FROM games g
+        JOIN tournaments t ON g.tournament_id = t.id
+        JOIN players p1 ON g.first_player_id = p1.id
+        JOIN players p2 ON g.second_player_id = p2.id
+        WHERE g.first_player_id = ?1 OR g.second_player_id = ?1
+        GROUP BY g.date, t.name, opponent_name, opponent_id
+        ORDER BY g.date DESC
+        LIMIT ?2
+    ";
+
+    let mut stmt = conn.prepare(sql)?;
+    let rows = stmt.query_map(params![player_id, limit as i64], |row| {
+        Ok(super::models::MatchResultRow {
+            date: row.get(0)?,
+            tournament_name: row.get(1)?,
+            opponent_name: row.get(2)?,
+            opponent_id: row.get(3)?,
+            player_total_score: row.get(4)?,
+            opponent_total_score: row.get(5)?,
+        })
+    })?.collect::<rusqlite::Result<Vec<_>>>()?;
+
+    Ok(rows)
+}

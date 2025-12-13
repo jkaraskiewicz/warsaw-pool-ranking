@@ -89,3 +89,13 @@ pub struct HeadToHeadMatchRow {
     pub p1_wins: i32,
     pub p2_wins: i32,
 }
+
+#[derive(Debug, Clone)]
+pub struct MatchResultRow {
+    pub date: NaiveDateTime,
+    pub tournament_name: String,
+    pub opponent_name: String,
+    pub opponent_id: i32,
+    pub player_total_score: i32,
+    pub opponent_total_score: i32,
+}
