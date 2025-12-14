@@ -156,6 +156,27 @@
 /* Custom Table */
 .table-responsive {
   overflow-x: auto;
+  position: relative;
+}
+
+/* Loading Overlay */
+.loading-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.4);
+  backdrop-filter: blur(2px);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 10;
+  border-radius: var(--radius-xl);
+
+  mat-spinner {
+    --mdc-circular-progress-active-indicator-color: var(--color-primary);
+  }
 }
 
 .custom-table {
@@ -340,6 +361,11 @@
 
 // Light theme overrides
 :host-context(.light-theme) {
+  // Loading overlay - lighter background for light theme
+  .loading-overlay {
+    background-color: rgba(255, 255, 255, 0.7);
+  }
+
   // Stat cards - white background with strong borders
   .stat-card {
     background-color: var(--bg-card);

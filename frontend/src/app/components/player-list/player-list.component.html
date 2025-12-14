@@ -73,9 +73,15 @@
 
   <!-- Table -->
   <div class="table-responsive">
+    <!-- Loading Overlay -->
+    <div class="loading-overlay" *ngIf="facade.loading()">
+      <mat-spinner diameter="48"></mat-spinner>
+    </div>
+
     <table mat-table [dataSource]="facade.players()" matSort
            (matSortChange)="onSortChange($event)"
-           class="custom-table">
+           class="custom-table"
+           [class.loading]="facade.loading()">
 
       <!-- Select -->
       <ng-container matColumnDef="select">
