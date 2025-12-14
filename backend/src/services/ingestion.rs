@@ -5,6 +5,7 @@ use log::info;
 use crate::api::CueScoreClient;
 use crate::cache::Cache;
 use crate::config::get_venues;
+use crate::config::paths;
 use crate::domain::{FetchProgress, TournamentCollection};
 use crate::fetchers::VenueScraper;
 
@@ -17,7 +18,7 @@ pub struct IngestionService {
 impl IngestionService {
     pub fn new() -> Result<Self> {
         Ok(Self {
-            cache: Cache::new("cache")?,
+            cache: Cache::new(paths::get_cache_dir())?,
             scraper: VenueScraper::new()?,
             api_client: CueScoreClient::new()?,
         })

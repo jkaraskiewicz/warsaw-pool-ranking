@@ -5,6 +5,7 @@ use chrono::{Utc, Duration, NaiveDateTime};
 
 use crate::cache::Cache;
 use crate::config::settings::AppConfig;
+use crate::config::paths;
 use crate::database::{self, DbConn};
 use crate::domain::{self, ExpandedGame};
 use crate::rating;
@@ -18,13 +19,12 @@ impl ProcessingService {
     pub fn new(config: AppConfig) -> Result<Self> {
         Ok(Self {
             config,
-            cache: Cache::new("cache")?,
+            cache: Cache::new(paths::get_cache_dir())?,
         })
     }
 
     pub fn run(&self) -> Result<()> {
-        let db_path = std::env::var("DATABASE_PATH")
-            .unwrap_or_else(|_| "warsaw_pool_ranking.db".to_string());
+        let db_path = paths::get_database_path();
         let temp_db_path = format!("{}.tmp", db_path);
 
         info!("=== Starting Data Processing (Atomic) ===\n");

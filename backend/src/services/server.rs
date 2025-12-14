@@ -7,6 +7,7 @@ use tower_http::cors::CorsLayer;
 use crate::api::routes::create_router;
 use crate::api::handlers::AppState;
 use crate::config::settings::AppConfig;
+use crate::config::paths;
 use crate::database;
 
 pub struct ServerService {
@@ -20,8 +21,7 @@ impl ServerService {
     }
 
     pub async fn run(&self) -> Result<()> {
-        let db_path = std::env::var("DATABASE_PATH")
-            .unwrap_or_else(|_| "warsaw_pool_ranking.db".to_string());
+        let db_path = paths::get_database_path();
 
         let pool = database::create_pool(&db_path)?;
 
