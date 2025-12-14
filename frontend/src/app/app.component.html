@@ -21,6 +21,14 @@
     </div>
 
     <div class="header-actions">
+      <!-- Theme Toggle -->
+      <button
+        class="btn-icon"
+        (click)="toggleTheme()"
+        [attr.aria-label]="isDarkMode() ? 'Switch to light mode' : 'Switch to dark mode'">
+        <mat-icon>{{ isDarkMode() ? 'light_mode' : 'dark_mode' }}</mat-icon>
+      </button>
+
       <!-- Language Dropdown -->
       <button class="btn-glass" [matMenuTriggerFor]="langMenu">
         {{ currentLang() | uppercase }}

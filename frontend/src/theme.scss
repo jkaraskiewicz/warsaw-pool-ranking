@@ -143,22 +143,36 @@ $light-theme: mat.define-light-theme((
 // Light theme support via CSS class for theme toggle
 .light-theme {
   @include mat.all-component-colors($light-theme);
+
+  // Light theme body background and text
+  background-color: #f8fafc;  // --slate-50
+  color: #1e293b;  // --slate-800
 }
 
 // ============================================================================
-// CUSTOM COMPONENT OVERRIDES
+// CUSTOM COMPONENT OVERRIDES - DARK THEME
 // ============================================================================
 // Fine-tune specific components to match existing design system
 
-// Dialog: Match existing glass morphism style
+// Dialog: Match existing glass morphism style (DARK)
 .mat-mdc-dialog-container {
-  --mdc-dialog-container-color: #0f172a !important;  // --slate-900
-  --mdc-dialog-subhead-color: #e2e8f0 !important;    // --slate-200
-  --mdc-dialog-supporting-text-color: #94a3b8 !important; // --slate-400
-  border: 1px solid #1e293b;  // --slate-800
+  --mdc-dialog-container-color: var(--slate-900) !important;
+  --mdc-dialog-subhead-color: var(--text-primary) !important;
+  --mdc-dialog-supporting-text-color: var(--text-secondary) !important;
+  border: 1px solid var(--border-primary);
   border-radius: 1.5rem !important;  // Keep existing rounded-3xl
   backdrop-filter: blur(12px);
-  background: rgba(15, 23, 42, 0.5) !important;  // --bg-glass-heavy
+  background: var(--bg-card) !important;
+}
+
+// Light theme dialog overrides
+.light-theme .mat-mdc-dialog-container {
+  --mdc-dialog-container-color: var(--bg-card) !important;
+  --mdc-dialog-subhead-color: var(--text-primary) !important;
+  --mdc-dialog-supporting-text-color: var(--text-secondary) !important;
+  border: 1px solid var(--border-primary);
+  background: var(--bg-card) !important;
+  box-shadow: var(--shadow-dialog);
 }
 
 // Buttons: Enhance with existing design tokens
@@ -177,25 +191,66 @@ $light-theme: mat.define-light-theme((
 
 // Form fields: Match dark theme
 .mat-mdc-form-field {
-  --mdc-filled-text-field-container-color: #020617;  // --slate-950
-  --mdc-outlined-text-field-outline-color: #1e293b;  // --slate-800
-  --mdc-outlined-text-field-focus-outline-color: #6366f1;  // --indigo-500
-  --mdc-outlined-text-field-label-text-color: #94a3b8;  // --slate-400
-  --mdc-outlined-text-field-input-text-color: #e2e8f0;  // --slate-200
+  --mdc-filled-text-field-container-color: var(--bg-input);
+  --mdc-outlined-text-field-outline-color: var(--border-primary);
+  --mdc-outlined-text-field-focus-outline-color: var(--color-primary-hover);
+  --mdc-outlined-text-field-label-text-color: var(--text-secondary);
+  --mdc-outlined-text-field-input-text-color: var(--text-primary);
+}
+
+// Light theme form fields
+.light-theme .mat-mdc-form-field {
+  --mdc-filled-text-field-container-color: var(--bg-input);
+  --mdc-outlined-text-field-outline-color: var(--border-primary);
+  --mdc-outlined-text-field-focus-outline-color: var(--border-input-focus);
+  --mdc-outlined-text-field-label-text-color: var(--text-secondary);
+  --mdc-outlined-text-field-input-text-color: var(--text-primary);
 }
 
 // Checkboxes: Match existing overrides
 .mat-mdc-checkbox {
-  --mdc-checkbox-unselected-icon-color: #94a3b8;  // --slate-400
+  --mdc-checkbox-unselected-icon-color: var(--text-secondary);
   --mdc-checkbox-selected-checkmark-color: #ffffff;
-  --mdc-checkbox-selected-icon-color: #6366f1;  // --indigo-500
+  --mdc-checkbox-selected-icon-color: var(--color-primary-hover);
+}
+
+// Light theme checkboxes
+.light-theme .mat-mdc-checkbox {
+  --mdc-checkbox-unselected-icon-color: var(--text-tertiary);
+  --mdc-checkbox-selected-checkmark-color: #ffffff;
+  --mdc-checkbox-selected-icon-color: var(--color-primary-hover);
 }
 
 // Paginator: Match existing dark style
 .mat-mdc-paginator {
-  --mat-paginator-container-background-color: rgba(2, 6, 23, 0.3);  // Slate 950 / 30%
-  --mat-paginator-container-text-color: #64748b;  // --slate-500
-  border-top: 1px solid #1e293b;  // --slate-800
+  --mat-paginator-container-background-color: var(--bg-card-secondary);
+  --mat-paginator-container-text-color: var(--text-tertiary);
+  border-top: 1px solid var(--border-primary);
+
+  // Make navigation arrows white for visibility
+  .mat-mdc-paginator-icon {
+    fill: #ffffff !important;
+  }
+
+  // Disabled arrows should be dimmed but still somewhat visible
+  .mat-mdc-icon-button[disabled] .mat-mdc-paginator-icon {
+    fill: rgba(255, 255, 255, 0.3) !important;
+  }
+}
+
+// Light theme paginator
+.light-theme .mat-mdc-paginator {
+  --mat-paginator-container-background-color: var(--bg-card-secondary);
+  --mat-paginator-container-text-color: var(--text-secondary);
+  border-top: 1px solid var(--border-primary);
+
+  .mat-mdc-paginator-icon {
+    fill: var(--text-primary) !important;
+  }
+
+  .mat-mdc-icon-button[disabled] .mat-mdc-paginator-icon {
+    fill: rgba(15, 23, 42, 0.3) !important;
+  }
 }
 
 // Chips: Align with badge styles
@@ -210,25 +265,43 @@ $light-theme: mat.define-light-theme((
   background-color: transparent;
 
   th {
-    background-color: rgba(2, 6, 23, 0.5);
-    border-bottom: 1px solid #1e293b;
-    color: #94a3b8;
+    background-color: var(--bg-table-header);
+    border-bottom: 1px solid var(--border-primary);
+    color: var(--text-secondary);
     font-weight: 600;
     text-transform: uppercase;
     letter-spacing: 0.05em;
   }
 
   td {
-    border-bottom: 1px solid rgba(30, 41, 59, 0.5);
+    border-bottom: 1px solid var(--bg-glass-medium);
     color: #ffffff;
   }
 
   tr:hover {
-    background-color: rgba(30, 41, 59, 0.3);
+    background-color: var(--bg-hover);
   }
 }
 
-// Scrollbar: Match existing custom scrollbar
+// Light theme table
+.light-theme .mat-mdc-table {
+  th {
+    background-color: var(--bg-table-header);
+    border-bottom: 1px solid var(--border-primary);
+    color: var(--text-secondary);
+  }
+
+  td {
+    border-bottom: 1px solid var(--border-secondary);
+    color: var(--text-primary);
+  }
+
+  tr:hover {
+    background-color: var(--bg-hover);
+  }
+}
+
+// Scrollbar: Match existing custom scrollbar (DARK)
 .mat-mdc-dialog-container,
 .mat-drawer-inner-container {
   &::-webkit-scrollbar {
@@ -236,13 +309,29 @@ $light-theme: mat.define-light-theme((
     height: 8px;
   }
   &::-webkit-scrollbar-track {
-    background: #020617;  // --slate-950
+    background: var(--bg-color);
   }
   &::-webkit-scrollbar-thumb {
-    background: #1e293b;  // --slate-800
+    background: var(--border-primary);
     border-radius: 4px;
   }
   &::-webkit-scrollbar-thumb:hover {
-    background: #334155;  // --slate-700
+    background: var(--border-secondary);
+  }
+}
+
+// Light theme scrollbar
+.light-theme {
+  .mat-mdc-dialog-container,
+  .mat-drawer-inner-container {
+    &::-webkit-scrollbar-track {
+      background: var(--bg-card-secondary);
+    }
+    &::-webkit-scrollbar-thumb {
+      background: var(--border-secondary);
+    }
+    &::-webkit-scrollbar-thumb:hover {
+      background: var(--border-primary);
+    }
   }
 }

@@ -39,10 +39,27 @@
   --rose-400: #fb7185;
   --rose-500: #f43f5e;
 
-  /* Global Settings */
+  /* Dark theme global settings */
   --bg-color: var(--slate-950);
+  --bg-card: rgba(15, 23, 42, 0.5);  // Glass heavy - main cards
+  --bg-card-secondary: rgba(30, 41, 59, 0.3);  // Glass light - secondary areas
+  --bg-input: var(--slate-950);  // Input backgrounds
+  --bg-hover: rgba(30, 41, 59, 0.3);  // Hover states
+  --bg-table-header: rgba(2, 6, 23, 0.5);  // Table headers
+
   --text-primary: var(--slate-200);
   --text-secondary: var(--slate-400);
+  --text-tertiary: var(--slate-500);
+
+  --border-primary: var(--slate-800);
+  --border-secondary: var(--slate-700);
+  --border-input-focus: rgba(99, 102, 241, 0.5);
+
+  --color-primary: var(--indigo-400);
+  --color-primary-hover: var(--indigo-500);
+  --color-primary-bg: var(--indigo-500-20);
+
+  /* Legacy aliases */
   --border-color: rgba(30, 41, 59, 0.5); /* Slate 800 / 50% */
   --glass-bg: rgba(15, 23, 42, 0.5); /* Slate 900 / 50% */
   --glass-border: rgba(30, 41, 59, 1);
@@ -95,6 +112,38 @@
   --border-glass-dark: rgba(51, 65, 85, 0.5);
 }
 
+// Light theme color overrides
+.light-theme {
+  // Background colors
+  --bg-color: #e2e8f0;  // slate-200 - main background
+  --bg-card: #ffffff;  // white - card backgrounds
+  --bg-card-secondary: #f8fafc;  // slate-50 - secondary card areas (toolbar, tabs)
+  --bg-input: #ffffff;  // white - input backgrounds
+  --bg-hover: #f8fafc;  // slate-50 - hover states
+  --bg-table-header: #f1f5f9;  // slate-100 - table headers
+
+  // Text colors
+  --text-primary: #0f172a;  // slate-900 - primary text
+  --text-secondary: #475569;  // slate-600 - secondary text
+  --text-tertiary: #64748b;  // slate-500 - tertiary text/labels
+
+  // Border colors
+  --border-primary: #94a3b8;  // slate-400 - primary borders
+  --border-secondary: #cbd5e1;  // slate-300 - secondary borders
+  --border-input-focus: #6366f1;  // indigo-500 - input focus
+
+  // Interactive colors
+  --color-primary: #4f46e5;  // indigo-600 - primary actions
+  --color-primary-hover: #6366f1;  // indigo-500 - primary hover
+  --color-primary-bg: rgba(99, 102, 241, 0.1);  // indigo with transparency
+
+  // Shadows
+  --shadow-card: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
+  --shadow-card-sm: 0 1px 3px 0 rgba(0, 0, 0, 0.1);
+  --shadow-button: 0 1px 2px 0 rgba(0, 0, 0, 0.05);
+  --shadow-dialog: 0 20px 25px -5px rgba(0, 0, 0, 0.2);
+}
+
 body {
   background-color: var(--slate-950);
   color: var(--text-primary);
@@ -103,6 +152,12 @@ body {
   margin: 0;
   min-height: 100vh;
   -webkit-font-smoothing: antialiased;
+
+  // Light theme overrides
+  &.light-theme {
+    background-color: var(--bg-color);
+    color: var(--text-primary);
+  }
 }
 
 /* Material Overrides to fit the theme */
@@ -162,4 +217,15 @@ body {
   background: rgba(37, 99, 235, 0.1); /* Blue 600 / 10% */
   border-radius: 50%;
   filter: blur(120px);
+}
+
+// Light theme blobs - more subtle
+body.light-theme {
+  .blob-1 {
+    background: rgba(99, 102, 241, 0.05);  // Even more subtle indigo
+  }
+
+  .blob-2 {
+    background: rgba(168, 85, 247, 0.05);  // Subtle purple
+  }
 }

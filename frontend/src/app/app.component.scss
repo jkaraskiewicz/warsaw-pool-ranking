@@ -81,7 +81,7 @@
   cursor: pointer;
 
   &:hover {
-    background-color: var(--indigo-500);
+    background-color: var(--color-primary-hover);
   }
   &:active {
     transform: scale(0.95);
@@ -91,11 +91,11 @@
 .btn-glass {
   padding: 0.625rem 1.25rem;
   background-color: var(--slate-800);
-  color: var(--slate-200);
+  color: var(--text-primary);
   font-size: 0.875rem;
   font-weight: 500;
   border-radius: var(--radius-xl);
-  border: 1px solid var(--slate-700);
+  border: 1px solid var(--border-secondary);
   transition: all 0.2s;
   cursor: pointer;
   display: flex;
@@ -107,9 +107,79 @@
   }
 }
 
+/* Icon button for theme toggle */
+.btn-icon {
+  width: 40px;
+  height: 40px;
+  padding: 0;
+  background-color: var(--slate-800);
+  color: var(--text-primary);
+  border-radius: var(--radius-xl);
+  border: 1px solid var(--border-secondary);
+  transition: all 0.2s;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  mat-icon {
+    font-size: 1.25rem;
+    width: 1.25rem;
+    height: 1.25rem;
+  }
+
+  &:hover {
+    background-color: var(--slate-700);
+    color: var(--color-primary);
+  }
+
+  &:active {
+    transform: scale(0.95);
+  }
+}
+
 /* Ensure consistent button height */
 .btn-primary, .btn-glass {
   height: 40px;
   line-height: 40px;
   padding: 0 1.25rem;
+}
+
+/* Light theme button overrides */
+:host-context(.light-theme) {
+  .app-title {
+    background: linear-gradient(to right, var(--text-primary), var(--text-secondary));
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+  }
+
+  .app-subtitle {
+    color: var(--text-secondary);
+  }
+
+  .btn-glass {
+    background-color: var(--bg-card);
+    color: var(--text-primary);
+    border-color: var(--border-primary);
+    box-shadow: var(--shadow-button);
+
+    &:hover {
+      background-color: var(--bg-hover);
+      border-color: var(--text-tertiary);
+    }
+  }
+
+  .btn-icon {
+    background-color: var(--bg-card);
+    color: var(--text-primary);
+    border-color: var(--border-primary);
+    box-shadow: var(--shadow-button);
+
+    &:hover {
+      background-color: var(--bg-hover);
+      color: var(--color-primary);
+      border-color: var(--text-tertiary);
+    }
+  }
 }

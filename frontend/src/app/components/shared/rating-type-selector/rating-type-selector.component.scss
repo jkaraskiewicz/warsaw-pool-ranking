@@ -9,9 +9,9 @@
 
   ::ng-deep .mat-button-toggle {
     background-color: transparent;
-    border: 1px solid var(--slate-700) !important; /* Border for pill outline */
+    border: 1px solid var(--border-secondary) !important; /* Border for pill outline */
     border-radius: var(--radius-md) !important; /* Rectangular shape with slight rounding */
-    color: var(--slate-400);
+    color: var(--text-secondary);
     font-size: var(--text-sm);
     font-weight: 500;
     transition: all 0.2s;
@@ -24,20 +24,53 @@
     line-height: 1; /* Adjust line height to center text vertically */
 
     &.mat-button-toggle-checked {
-      background-color: var(--indigo-500-20);
-      color: var(--indigo-400);
-      border-color: var(--indigo-400) !important; // Consistent border color for selected state
+      background-color: var(--color-primary-bg);
+      color: var(--color-primary);
+      border-color: var(--color-primary) !important; // Consistent border color for selected state
       // Removed box-shadow here to fix irregular outline
+
+      // Hide checkmark icon added by Material
+      .mat-pseudo-checkbox,
+      .mat-mdc-checkbox,
+      ::before,
+      ::after {
+        display: none !important;
+      }
+
+      .mat-button-toggle-label-content::before {
+        display: none !important;
+      }
     }
 
     &:hover:not(.mat-button-toggle-checked) {
       background-color: var(--slate-800);
-      color: var(--slate-200);
+      color: var(--text-primary);
       border-color: var(--slate-600);
     }
 
     .mat-button-toggle-button {
       padding: 0; /* Reset internal button padding */
+    }
+  }
+}
+
+// Light theme overrides
+:host-context(.light-theme) .rating-type-selector {
+  ::ng-deep .mat-button-toggle {
+    border: 1px solid var(--border-primary) !important;
+    color: var(--text-secondary);
+    background-color: var(--bg-card);
+
+    &.mat-button-toggle-checked {
+      background-color: var(--color-primary-bg);
+      color: var(--color-primary);
+      border-color: var(--color-primary-hover) !important;
+    }
+
+    &:hover:not(.mat-button-toggle-checked) {
+      background-color: var(--bg-hover);
+      color: var(--text-primary);
+      border-color: var(--text-tertiary);
     }
   }
 }
