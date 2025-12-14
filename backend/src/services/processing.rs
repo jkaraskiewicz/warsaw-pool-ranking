@@ -1,6 +1,7 @@
-use anyhow::Result;
+use anyhow::{Result, Context};
 use log::{info, error};
 use std::collections::HashMap;
+use std::path::Path;
 use chrono::{Utc, Duration, NaiveDateTime};
 
 use crate::cache::Cache;
@@ -47,6 +48,12 @@ impl ProcessingService {
     }
 
     fn process_to_db(&self, db_path: &str) -> Result<()> {
+        // Ensure parent directory exists
+        if let Some(parent) = Path::new(db_path).parent() {
+            std::fs::create_dir_all(parent)
+                .with_context(|| format!("Failed to create directory: {:?}", parent))?;
+        }
+
         let pool = database::create_pool(db_path)?;
         let mut conn = database::get_connection(&pool)?;
 

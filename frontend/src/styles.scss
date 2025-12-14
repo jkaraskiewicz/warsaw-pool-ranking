@@ -1,3 +1,5 @@
+@import 'theme.scss';
+
 /* Global Tailwind-like Variables */
 :root {
   /* Slate Palette */
@@ -96,7 +98,8 @@
 body {
   background-color: var(--slate-950);
   color: var(--text-primary);
-  font-family: 'Inter', sans-serif;
+  font-family: 'Work Sans', sans-serif;
+  font-optical-sizing: auto;
   margin: 0;
   min-height: 100vh;
   -webkit-font-smoothing: antialiased;

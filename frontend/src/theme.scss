@@ -1,0 +1,248 @@
+// ============================================================================
+// WARSAW POOL RANKING - CUSTOM MATERIAL THEME
+// ============================================================================
+// Custom Angular Material theme with Work Sans typography and dark/light variants
+// Replaces prebuilt indigo-pink theme with proper theming API
+
+@use '@angular/material' as mat;
+
+// Include Material core styles (required once per app)
+@include mat.core();
+
+// ============================================================================
+// TYPOGRAPHY CONFIGURATION
+// ============================================================================
+// Define custom typography using Work Sans for ALL levels
+// Angular Material v17 uses Material Design 2 typography system
+$custom-typography: mat.define-typography-config(
+  $font-family: '"Work Sans", sans-serif'
+);
+
+// ============================================================================
+// COLOR PALETTE CONFIGURATION
+// ============================================================================
+// Create custom palettes matching existing CSS variables
+
+// Primary palette (Indigo) - matches existing --indigo-* variables
+$custom-primary: mat.define-palette((
+  50: #eef2ff,
+  100: #e0e7ff,
+  200: #c7d2fe,
+  300: #a5b4fc,
+  400: #818cf8,  // --indigo-400
+  500: #6366f1,  // --indigo-500 (main)
+  600: #4f46e5,  // --indigo-600
+  700: #4338ca,
+  800: #3730a3,
+  900: #312e81,
+  950: #1e1b4b,
+  contrast: (
+    50: #1e293b,
+    100: #1e293b,
+    200: #1e293b,
+    300: #1e293b,
+    400: #ffffff,
+    500: #ffffff,
+    600: #ffffff,
+    700: #ffffff,
+    800: #ffffff,
+    900: #ffffff,
+    950: #ffffff,
+  )
+), 500, 400, 600);  // main, lighter, darker
+
+// Accent palette (Pink/Rose) - from existing rose variables
+$custom-accent: mat.define-palette((
+  50: #fdf2f8,
+  100: #fce7f3,
+  200: #fbcfe8,
+  300: #f9a8d4,
+  400: #fb7185,  // --rose-400
+  500: #f43f5e,  // --rose-500 (main)
+  600: #e11d48,
+  700: #be123c,
+  800: #9f1239,
+  900: #881337,
+  950: #4c0519,
+  contrast: (
+    50: #1e293b,
+    100: #1e293b,
+    200: #1e293b,
+    300: #1e293b,
+    400: #ffffff,
+    500: #ffffff,
+    600: #ffffff,
+    700: #ffffff,
+    800: #ffffff,
+    900: #ffffff,
+    950: #ffffff,
+  )
+), 500, 400, 600);
+
+// Warn palette (Amber)
+$custom-warn: mat.define-palette((
+  50: #fffbeb,
+  100: #fef3c7,
+  200: #fde68a,
+  300: #fcd34d,
+  400: #fbbf24,  // --amber-400
+  500: #f59e0b,  // --amber-500 (main)
+  600: #d97706,
+  700: #b45309,
+  800: #92400e,
+  900: #78350f,
+  950: #451a03,
+  contrast: (
+    50: #1e293b,
+    100: #1e293b,
+    200: #1e293b,
+    300: #1e293b,
+    400: #1e293b,
+    500: #1e293b,
+    600: #ffffff,
+    700: #ffffff,
+    800: #ffffff,
+    900: #ffffff,
+    950: #ffffff,
+  )
+), 500, 400, 600);
+
+// ============================================================================
+// THEME DEFINITIONS
+// ============================================================================
+
+// Dark theme (primary theme for this app)
+$dark-theme: mat.define-dark-theme((
+  color: (
+    primary: $custom-primary,
+    accent: $custom-accent,
+    warn: $custom-warn,
+  ),
+  typography: $custom-typography,
+  density: 0,  // Default density (0 = normal, -1 = compact, -2 = very compact)
+));
+
+// Light theme (for theme toggle)
+$light-theme: mat.define-light-theme((
+  color: (
+    primary: $custom-primary,
+    accent: $custom-accent,
+    warn: $custom-warn,
+  ),
+  typography: $custom-typography,
+  density: 0,
+));
+
+// ============================================================================
+// APPLY THEMES
+// ============================================================================
+
+// Apply dark theme by default
+@include mat.all-component-themes($dark-theme);
+
+// Light theme support via CSS class for theme toggle
+.light-theme {
+  @include mat.all-component-colors($light-theme);
+}
+
+// ============================================================================
+// CUSTOM COMPONENT OVERRIDES
+// ============================================================================
+// Fine-tune specific components to match existing design system
+
+// Dialog: Match existing glass morphism style
+.mat-mdc-dialog-container {
+  --mdc-dialog-container-color: #0f172a !important;  // --slate-900
+  --mdc-dialog-subhead-color: #e2e8f0 !important;    // --slate-200
+  --mdc-dialog-supporting-text-color: #94a3b8 !important; // --slate-400
+  border: 1px solid #1e293b;  // --slate-800
+  border-radius: 1.5rem !important;  // Keep existing rounded-3xl
+  backdrop-filter: blur(12px);
+  background: rgba(15, 23, 42, 0.5) !important;  // --bg-glass-heavy
+}
+
+// Buttons: Enhance with existing design tokens
+.mat-mdc-raised-button,
+.mat-mdc-unelevated-button {
+  border-radius: 0.75rem !important;  // --radius-xl
+  font-weight: 500;
+  letter-spacing: 0.00625em;
+}
+
+.mat-mdc-fab,
+.mat-mdc-mini-fab {
+  box-shadow: 0 10px 25px -5px rgba(0, 0, 0, 0.5),
+              0 8px 10px -6px rgba(0, 0, 0, 0.5) !important;  // --shadow-fab
+}
+
+// Form fields: Match dark theme
+.mat-mdc-form-field {
+  --mdc-filled-text-field-container-color: #020617;  // --slate-950
+  --mdc-outlined-text-field-outline-color: #1e293b;  // --slate-800
+  --mdc-outlined-text-field-focus-outline-color: #6366f1;  // --indigo-500
+  --mdc-outlined-text-field-label-text-color: #94a3b8;  // --slate-400
+  --mdc-outlined-text-field-input-text-color: #e2e8f0;  // --slate-200
+}
+
+// Checkboxes: Match existing overrides
+.mat-mdc-checkbox {
+  --mdc-checkbox-unselected-icon-color: #94a3b8;  // --slate-400
+  --mdc-checkbox-selected-checkmark-color: #ffffff;
+  --mdc-checkbox-selected-icon-color: #6366f1;  // --indigo-500
+}
+
+// Paginator: Match existing dark style
+.mat-mdc-paginator {
+  --mat-paginator-container-background-color: rgba(2, 6, 23, 0.3);  // Slate 950 / 30%
+  --mat-paginator-container-text-color: #64748b;  // --slate-500
+  border-top: 1px solid #1e293b;  // --slate-800
+}
+
+// Chips: Align with badge styles
+.mat-mdc-chip {
+  border-radius: 9999px !important;  // --radius-full
+  font-weight: 600;
+  font-size: 0.75rem;  // --text-xs
+}
+
+// Table: Dark background
+.mat-mdc-table {
+  background-color: transparent;
+
+  th {
+    background-color: rgba(2, 6, 23, 0.5);
+    border-bottom: 1px solid #1e293b;
+    color: #94a3b8;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+  }
+
+  td {
+    border-bottom: 1px solid rgba(30, 41, 59, 0.5);
+    color: #ffffff;
+  }
+
+  tr:hover {
+    background-color: rgba(30, 41, 59, 0.3);
+  }
+}
+
+// Scrollbar: Match existing custom scrollbar
+.mat-mdc-dialog-container,
+.mat-drawer-inner-container {
+  &::-webkit-scrollbar {
+    width: 8px;
+    height: 8px;
+  }
+  &::-webkit-scrollbar-track {
+    background: #020617;  // --slate-950
+  }
+  &::-webkit-scrollbar-thumb {
+    background: #1e293b;  // --slate-800
+    border-radius: 4px;
+  }
+  &::-webkit-scrollbar-thumb:hover {
+    background: #334155;  // --slate-700
+  }
+}

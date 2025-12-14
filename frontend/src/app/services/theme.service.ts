@@ -18,11 +18,13 @@ export class ThemeService {
 
   setDarkMode(isDark: boolean) {
     this.darkModeSignal.set(isDark);
+    const body = document.body;
+
     if (isDark) {
-      document.body.classList.add('dark-theme');
+      body.classList.remove('light-theme');
       localStorage.setItem('theme', 'dark');
     } else {
-      document.body.classList.remove('dark-theme');
+      body.classList.add('light-theme');
       localStorage.setItem('theme', 'light');
     }
   }
