@@ -2,17 +2,17 @@
 .rating-type-selector {
   border: none;
   background: transparent;
-  gap: 8px; /* Spacing between pills */
+  gap: var(--space-2); /* Spacing between pills */
   display: flex; /* Ensure horizontal layout with wrap */
   flex-wrap: wrap;
-  margin-bottom: 1rem; /* Keep existing margin for spacing below the group */
+  margin-bottom: var(--space-4); /* Keep existing margin for spacing below the group */
 
   ::ng-deep .mat-button-toggle {
     background-color: transparent;
-    border: 1px solid var(--slate-700); /* Border for pill outline */
-    border-radius: 9999px !important; /* Pill shape */
+    border: 1px solid var(--slate-700) !important; /* Border for pill outline */
+    border-radius: var(--radius-md) !important; /* Rectangular shape with slight rounding */
     color: var(--slate-400);
-    font-size: 0.875rem;
+    font-size: var(--text-sm);
     font-weight: 500;
     transition: all 0.2s;
     overflow: hidden;
@@ -20,21 +20,14 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    padding: 0 16px; /* Horizontal padding */
+    padding: 0 var(--space-4); /* Horizontal padding */
     line-height: 1; /* Adjust line height to center text vertically */
-
-    // Remove Material's default border lines that separate toggles in a group
-    border-left: 1px solid var(--slate-700) !important;
-
-    &:first-of-type {
-      border-left: 1px solid var(--slate-700) !important;
-    }
 
     &.mat-button-toggle-checked {
       background-color: var(--indigo-500-20);
       color: var(--indigo-400);
-      border-color: var(--indigo-500);
-      box-shadow: 0 0 0 1px var(--indigo-500); /* Subtle glowing effect */
+      border-color: var(--indigo-400) !important; // Consistent border color for selected state
+      // Removed box-shadow here to fix irregular outline
     }
 
     &:hover:not(.mat-button-toggle-checked) {

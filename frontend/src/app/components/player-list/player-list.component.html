@@ -60,14 +60,6 @@
         />
         <mat-icon class="search-icon">search</mat-icon>
       </div>
-
-      <!-- Comparison FAB (Contextual) -->
-      <button class="btn-primary"
-              *ngIf="selection.size === 2"
-              (click)="comparePlayers()">
-        <mat-icon>compare_arrows</mat-icon>
-        {{ 'COMPARISON' | translate }}
-      </button>
     </div>
   </div>
 
@@ -170,3 +162,12 @@
                  class="custom-paginator">
   </mat-paginator>
 </div>
+
+<!-- Comparison FAB -->
+<button mat-fab extended color="primary"
+        class="fab-compare"
+        *ngIf="selection.size === 2"
+        (click)="comparePlayers()">
+  <mat-icon>compare_arrows</mat-icon>
+  {{ 'COMPARISON' | translate }}
+</button>
