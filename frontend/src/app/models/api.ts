@@ -23,6 +23,7 @@ export interface PlayerListItem {
   /** string for JSON compatibility ("established", etc.) */
   confidenceLevel: string;
   matchesPlayed: number;
+  avatarUrl?: string | undefined;
 }
 
 /** Detailed player view */
@@ -41,6 +42,17 @@ export interface PlayerDetail {
   /** Date string */
   lastPlayed?: string | undefined;
   matchesPlayed: number;
+  avatarUrl?: string | undefined;
+  lastMatches: MatchResult[];
+}
+
+export interface MatchResult {
+  date: string;
+  tournamentName: string;
+  opponentName: string;
+  opponentId: number;
+  playerTotalScore: number;
+  opponentTotalScore: number;
 }
 
 /** Paginated list response */
