@@ -1,4 +1,3 @@
-use axum::extract::FromRef;
 use r2d2::Pool;
 use r2d2_sqlite::SqliteConnectionManager;
 use serde::Deserialize;
