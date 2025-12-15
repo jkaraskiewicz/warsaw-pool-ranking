@@ -176,3 +176,78 @@ mat-dialog-content {
   box-shadow: 0 8px 15px -3px rgba(0, 0, 0, 0.3);
   margin-right: 0; // Reset margin for overlay
 }
+
+// Light theme overrides
+:host-context(.light-theme) {
+  .overlay-header {
+    border-bottom: 1px solid var(--border-primary);
+
+    h2 {
+      color: var(--text-primary);
+    }
+  }
+
+  .stat-card {
+    background-color: var(--bg-card-secondary);
+    border: 1px solid var(--border-primary);
+
+    .stat-label {
+      color: var(--text-secondary);
+    }
+
+    .stat-value {
+      color: var(--text-primary);
+
+      &.positive {
+        color: #10b981; // emerald-500
+      }
+
+      &.negative {
+        color: #ef4444; // red-500
+      }
+    }
+  }
+
+  .detail-section {
+    h3 {
+      color: var(--text-primary);
+    }
+
+    .detail-row {
+      border-bottom: 1px solid var(--border-secondary);
+
+      .detail-label {
+        color: var(--text-secondary);
+      }
+
+      .detail-value {
+        color: var(--text-primary);
+      }
+    }
+  }
+
+  .games-list {
+    .game-item {
+      background-color: var(--bg-card-secondary);
+      color: var(--text-primary);
+      border: 1px solid var(--border-primary);
+
+      .game-date {
+        color: var(--text-tertiary);
+      }
+
+      .game-opponent {
+        color: var(--text-primary);
+      }
+
+      .game-score {
+        &.win { color: #10b981; }
+        &.loss { color: #ef4444; }
+      }
+
+      .game-tournament {
+        color: var(--text-tertiary);
+      }
+    }
+  }
+}
