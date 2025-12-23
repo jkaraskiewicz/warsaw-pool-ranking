@@ -31,6 +31,7 @@ import { TranslatePipe } from '../../pipes/translate.pipe';
 export class AdminComponent {
   password = '';
   loading = false;
+  loginLoading = false;
 
   constructor(
     public adminService: AdminService,
@@ -38,8 +39,37 @@ export class AdminComponent {
   ) {}
 
   login(): void {
-    this.adminService.login(this.password);
-    this.password = '';
+    if (!this.password) {
+      return;
+    }
+
+    this.loginLoading = true;
+    this.adminService.login(this.password).subscribe({
+      next: (result) => {
+        this.loginLoading = false;
+        if (result.success) {
+          this.snackBar.open('Login successful', 'Close', { duration: 2000 });
+          this.password = '';
+        } else {
+          this.snackBar.open(
+            result.error || 'Login failed',
+            'Close',
+            { duration: 4000 }
+          );
+          this.password = '';
+        }
+      },
+      error: (err) => {
+        this.loginLoading = false;
+        this.snackBar.open(
+          'Login request failed. Please try again.',
+          'Close',
+          { duration: 4000 }
+        );
+        console.error('Login error:', err);
+        this.password = '';
+      }
+    });
   }
 
   logout(): void {
@@ -54,7 +84,20 @@ export class AdminComponent {
         this.loading = false;
       },
       error: (err) => {
-        this.snackBar.open('Refresh failed: ' + err.message, 'Close', { duration: 3000 });
+        if (err.status === 401) {
+          this.snackBar.open(
+            'Session expired. Please login again.',
+            'Close',
+            { duration: 4000 }
+          );
+          this.adminService.logout();
+        } else {
+          this.snackBar.open(
+            'Refresh failed: ' + err.message,
+            'Close',
+            { duration: 3000 }
+          );
+        }
         this.loading = false;
       }
     });

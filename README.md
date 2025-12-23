@@ -57,6 +57,56 @@ make down      # Stop all services
 
 See `make help` for all commands.
 
+## Admin Panel Authentication
+
+The admin panel requires password authentication to access administrative functions (data refresh, avatar refresh).
+
+### Configuration
+
+Set the admin password via the `ADMIN_PASSWORD` environment variable:
+
+**Development (Local)**:
+```bash
+# In .env file
+ADMIN_PASSWORD=admin
+```
+
+**Development (Docker)**:
+```bash
+# Set before running docker-compose
+export ADMIN_PASSWORD=mysecurepassword
+docker-compose up
+```
+
+**Production**:
+```bash
+# Generate a secure password
+openssl rand -base64 32
+
+# Set in your deployment environment
+# For Docker:
+ADMIN_PASSWORD=<your-secure-password> docker-compose up -d
+
+# For systemd/direct deployment:
+# Add to service file or export in shell
+export ADMIN_PASSWORD=<your-secure-password>
+```
+
+### Default Passwords
+
+- **Development default**: `admin` (if ADMIN_PASSWORD not set)
+- **Docker default**: `changeme` (if ADMIN_PASSWORD not set)
+
+**WARNING**: These defaults are INSECURE. Always set a strong password for production deployments.
+
+### Security Best Practices
+
+1. Use a strong, randomly generated password (minimum 20 characters)
+2. Never commit passwords to version control
+3. Rotate passwords periodically
+4. Use HTTPS in production (passwords sent in Authorization header)
+5. Monitor logs for failed authentication attempts
+
 ## Architecture
 
 ```

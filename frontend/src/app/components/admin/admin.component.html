@@ -9,9 +9,12 @@
         <form (submit)="login()">
           <mat-form-field appearance="outline" class="full-width">
             <mat-label>{{ 'PASSWORD' | translate }}</mat-label>
-            <input matInput type="password" [(ngModel)]="password" name="password" required>
+            <input matInput type="password" [(ngModel)]="password" name="password" required [disabled]="loginLoading">
           </mat-form-field>
-          <button mat-raised-button color="primary" type="submit" [disabled]="!password">{{ 'LOGIN' | translate }}</button>
+          <button mat-raised-button color="primary" type="submit" [disabled]="!password || loginLoading">
+            <span *ngIf="!loginLoading">{{ 'LOGIN' | translate }}</span>
+            <mat-spinner diameter="20" *ngIf="loginLoading"></mat-spinner>
+          </button>
         </form>
       </ng-container>
 

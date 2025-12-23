@@ -14,8 +14,8 @@ export class AdminService {
     private authService: AuthService
   ) {}
 
-  login(password: string): void {
-    this.authService.login(password);
+  login(password: string): Observable<{ success: boolean; error?: string }> {
+    return this.authService.login(password);
   }
 
   logout(): void {

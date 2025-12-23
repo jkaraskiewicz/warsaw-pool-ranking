@@ -9,6 +9,8 @@ services:
       # SQLite database path
       DATABASE_PATH: /app/data/warsaw_pool_ranking.db
       RUST_LOG: info
+      # Admin authentication - CHANGE IN PRODUCTION!
+      ADMIN_PASSWORD: ${ADMIN_PASSWORD:-changeme}
     volumes:
       # Persist the SQLite database
       - app_data:/app/data

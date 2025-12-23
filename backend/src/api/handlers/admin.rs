@@ -2,23 +2,56 @@ use axum::{
     extract::{Query, State},
     http::{StatusCode, HeaderMap},
     response::IntoResponse,
+    Json,
 };
 use serde::Deserialize;
 use std::sync::Arc;
 use log;
 
+use crate::api::models::{LoginRequest, LoginResponse};
 use crate::database;
 use crate::services::avatar_processor::AvatarProcessor;
 use crate::services::ingestion::IngestionService;
 use crate::services::processing::ProcessingService;
 use super::AppState;
 
+// Helper function to validate Authorization header
+fn validate_auth_header(headers: &HeaderMap, expected_password: &str) -> bool {
+    headers
+        .get("Authorization")
+        .and_then(|h| h.to_str().ok())
+        .and_then(|h| h.strip_prefix("Bearer "))
+        .map(|token| token == expected_password)
+        .unwrap_or(false)
+}
+
+// Admin login endpoint
+pub async fn admin_login(
+    State(state): State<Arc<AppState>>,
+    Json(payload): Json<LoginRequest>,
+) -> impl IntoResponse {
+    let is_valid = payload.password == state.config.admin.password;
+
+    if is_valid {
+        log::info!("Admin login successful");
+        Json(LoginResponse {
+            success: true,
+            message: None,
+        }).into_response()
+    } else {
+        log::warn!("Admin login failed - invalid password");
+        Json(LoginResponse {
+            success: false,
+            message: Some("Invalid password".to_string()),
+        }).into_response()
+    }
+}
+
 pub async fn admin_refresh(
     State(state): State<Arc<AppState>>,
     headers: HeaderMap,
 ) -> impl IntoResponse {
-    let auth_header = headers.get("Authorization").and_then(|h| h.to_str().ok());
-    if auth_header != Some("Bearer secret") {
+    if !validate_auth_header(&headers, &state.config.admin.password) {
         return StatusCode::UNAUTHORIZED.into_response();
     }
 
@@ -56,8 +89,7 @@ pub async fn admin_refresh_avatars(
     headers: HeaderMap,
     Query(params): Query<AvatarRefreshParams>,
 ) -> impl IntoResponse {
-    let auth_header = headers.get("Authorization").and_then(|h| h.to_str().ok());
-    if auth_header != Some("Bearer secret") {
+    if !validate_auth_header(&headers, &state.config.admin.password) {
         return StatusCode::UNAUTHORIZED.into_response();
     }
 

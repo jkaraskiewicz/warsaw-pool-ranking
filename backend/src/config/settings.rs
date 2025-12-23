@@ -58,9 +58,26 @@ impl Default for ScraperSettings {
 }
 
 #[derive(Debug, Clone)]
+pub struct AdminSettings {
+    pub password: String,
+}
+
+impl AdminSettings {
+    pub fn new() -> Self {
+        let password = std::env::var("ADMIN_PASSWORD")
+            .unwrap_or_else(|_| {
+                log::warn!("ADMIN_PASSWORD not set, using default 'admin' (INSECURE for production!)");
+                "admin".to_string()
+            });
+        Self { password }
+    }
+}
+
+#[derive(Debug, Clone)]
 pub struct AppConfig {
     pub rating: RatingSettings,
     pub scraper: ScraperSettings,
+    pub admin: AdminSettings,
 }
 
 impl Default for AppConfig {
@@ -74,6 +91,7 @@ impl AppConfig {
         Self {
             rating: RatingSettings::default(),
             scraper: ScraperSettings::default(),
+            admin: AdminSettings::new(),
         }
     }
 }
