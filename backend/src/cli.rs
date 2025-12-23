@@ -21,4 +21,6 @@ pub enum Command {
     Ingest,
     /// Calculate ratings based on data in the database
     Process,
+    /// Refresh player avatars
+    RefreshAvatars,
 }

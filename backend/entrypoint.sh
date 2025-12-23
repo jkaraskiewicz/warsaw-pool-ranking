@@ -32,6 +32,9 @@ if [ "$DB_VALID" = false ]; then
 
     echo "Running data processing to initialize database..."
     ./warsaw_pool_ranking process
+
+    echo "Fetching player avatars..."
+    ./warsaw_pool_ranking refresh-avatars
 else
     echo "Database '$DB_FILE' is valid. Skipping initialization."
 fi

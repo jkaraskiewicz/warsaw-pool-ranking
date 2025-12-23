@@ -1,7 +1,7 @@
 use anyhow::{Context, Result};
 use rusqlite::params;
 use crate::database::connection::DbConn;
-use crate::database::models::{HeadToHeadMatchRow, MatchResultRow};
+use crate::database::models::{HeadToHeadMatchRow, MatchResultRow, RivalryRow};
 
 pub struct GameRepository;
 
@@ -90,4 +90,52 @@ impl GameRepository {
     
         Ok(rows)
     }
+
+    pub fn get_player_rivalries(
+        conn: &mut DbConn,
+        player_id: i32,
+        min_games: i32,
+    ) -> Result<Vec<RivalryRow>> {
+        let sql = "
+            SELECT
+                opponent_id,
+                opponent_name,
+                COUNT(*) as matches_played,
+                SUM(is_win) as matches_won
+            FROM (
+                SELECT
+                    CASE
+                        WHEN first_player_id = ?1 THEN second_player_id
+                        ELSE first_player_id
+                    END as opponent_id,
+                    CASE
+                        WHEN first_player_id = ?1 THEN p2.name
+                        ELSE p1.name
+                    END as opponent_name,
+                    CASE
+                        WHEN (first_player_id = ?1 AND first_player_score > second_player_score) OR (second_player_id = ?1 AND second_player_score > first_player_score) THEN 1
+                        ELSE 0
+                    END as is_win
+                FROM games g
+                JOIN players p1 ON g.first_player_id = p1.id
+                JOIN players p2 ON g.second_player_id = p2.id
+                WHERE first_player_id = ?1 OR second_player_id = ?1
+            ) sub
+            GROUP BY opponent_id, opponent_name
+            HAVING matches_played >= ?2
+        ";
+
+        let mut stmt = conn.prepare(sql)?;
+        let rows = stmt.query_map(params![player_id, min_games], |row| {
+            Ok(RivalryRow {
+                opponent_id: row.get(0)?,
+                opponent_name: row.get(1)?,
+                matches_played: row.get(2)?,
+                matches_won: row.get(3)?,
+            })
+        })?.collect::<rusqlite::Result<Vec<_>>>()?;
+
+        Ok(rows)
+    }
 }
+

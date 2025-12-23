@@ -6,7 +6,7 @@ import { MatButtonModule } from '@angular/material/button';
 import { MatProgressSpinnerModule } from '@angular/material/progress-spinner';
 import { MatChipsModule } from '@angular/material/chips';
 import { PlayerService } from '../../services/player.service';
-import { PlayerDetail } from '../../models/api';
+import { PlayerDetail, PlayerRivalriesResponse } from '../../models/api';
 import { TranslatePipe } from '../../pipes/translate.pipe';
 
 @Component({
@@ -27,6 +27,7 @@ import { TranslatePipe } from '../../pipes/translate.pipe';
 })
 export class PlayerOverlayComponent implements OnInit {
   player = signal<PlayerDetail | null>(null);
+  rivalries = signal<PlayerRivalriesResponse | null>(null);
   loading = signal<boolean>(true);
 
   constructor(
@@ -51,6 +52,11 @@ export class PlayerOverlayComponent implements OnInit {
         console.error('Error loading player:', err);
         this.loading.set(false);
       }
+    });
+
+    this.playerService.getPlayerRivalries(this.data.playerId).subscribe({
+      next: (res) => this.rivalries.set(res),
+      error: (err) => console.error('Error loading rivalries:', err)
     });
   }
 

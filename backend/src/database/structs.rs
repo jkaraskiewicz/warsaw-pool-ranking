@@ -1,12 +1,12 @@
 use anyhow::Result;
 
-use crate::domain::models::{Game, Player, Rating, Tournament};
+use crate::domain::models::{Game, Player, PlayerRating, Tournament};
 
 pub struct Database {}
 
 impl Database {
     /// Create a new database connection
-    pub async fn new(database_url: &str) -> Result<Self> {
+    pub async fn new(_database_url: &str) -> Result<Self> {
         Ok(Self {})
     }
 
@@ -31,7 +31,7 @@ impl Database {
     }
 
     /// Save player ratings
-    pub async fn save_ratings(&self, ratings: &[Rating]) -> Result<()> {
+    pub async fn save_ratings(&self, _ratings: &[PlayerRating]) -> Result<()> {
         Ok(())
     }
 }

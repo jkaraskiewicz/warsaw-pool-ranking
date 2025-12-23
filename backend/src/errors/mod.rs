@@ -14,8 +14,8 @@ pub enum AppError {
     NotFound(String),
     #[error("{0}")]
     BadRequest(String),
-    #[error(transparent)]
-    DatabaseError(#[from] rusqlite::Error),
+    #[error("Database error: {0}")]
+    DatabaseError(String),
     #[error(transparent)]
     AnyhowError(#[from] anyhow::Error),
 }
@@ -29,9 +29,9 @@ impl IntoResponse for AppError {
             ),
             AppError::NotFound(msg) => (StatusCode::NOT_FOUND, msg.to_string()),
             AppError::BadRequest(msg) => (StatusCode::BAD_REQUEST, msg.to_string()),
-            AppError::DatabaseError(err) => (
+            AppError::DatabaseError(msg) => (
                 StatusCode::INTERNAL_SERVER_ERROR,
-                format!("Database error: {}", err),
+                format!("Database error: {}", msg),
             ),
             AppError::AnyhowError(err) => (
                 StatusCode::INTERNAL_SERVER_ERROR,

@@ -8,8 +8,8 @@ use crate::cache::Cache;
 use crate::config::settings::AppConfig;
 use crate::config::paths;
 use crate::database::{self, DbConn};
-use crate::domain::{ExpandedGame};
-use crate::fetchers::cuescore_models::{TournamentResponse, MatchResponse, PlayerInfo};
+use crate::domain::ExpandedGame;
+use crate::fetchers::cuescore_models::{TournamentResponse, PlayerInfo};
 use crate::rating;
 
 pub struct ProcessingService {
@@ -209,7 +209,7 @@ impl ProcessingService {
         &self,
         tournament: &TournamentResponse,
     ) -> Result<Vec<ExpandedGame>> {
-        domain::games_expansion::expand_tournament_to_games(tournament)
+        crate::domain::games_expansion::expand_tournament_to_games(tournament)
     }
 
     fn extract_player_info(

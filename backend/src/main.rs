@@ -1,7 +1,7 @@
 use anyhow::Result;
 
 use warsaw_pool_ranking::cli::Command;
-use warsaw_pool_ranking::{handle_ingest, handle_process, handle_serve, interpret};
+use warsaw_pool_ranking::{handle_ingest, handle_process, handle_refresh_avatars, handle_serve, interpret};
 
 fn main() {
     setup_logging();
@@ -25,5 +25,6 @@ fn execute_command(command: &Command) -> Result<()> {
         Command::Serve { port } => handle_serve(*port),
         Command::Ingest => handle_ingest(),
         Command::Process => handle_process(),
+        Command::RefreshAvatars => handle_refresh_avatars(),
     }
 }

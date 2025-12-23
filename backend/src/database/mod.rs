@@ -1,7 +1,6 @@
 pub mod connection;
 pub mod models;
 pub mod repositories;
-pub mod schema;
 
 pub mod avatars;
 pub mod games;

@@ -5,6 +5,13 @@ use axum::{
 use std::sync::Arc;
 use urlencoding::encode;
 
+use crate::api::models::{
+    PlayerListItem, PlayerListResponse, PlayerDetail, HeadToHeadMatch, HeadToHeadResponse, HeadToHeadStats, MatchResult,
+    PlayerRivalriesResponse, RivalryEntry
+};
+use crate::api::filter::{parser::parse_filter_dsl, sql_builder::build_sql_filter};
+use crate::database::{self, models::{PlayerFilter, SortColumn, SortOrder}, repositories::{player_repository::PlayerRepository, game_repository::GameRepository}};
+use crate::errors::AppError;
 use crate::services::player_service;
 use super::{AppState, PlayerParams};
 
@@ -115,7 +122,7 @@ pub async fn get_player_detail(
             let cuescore_profile_url = format!(
                 "https://cuescore.com/player/{}/{}",
                 encoded_name,
-                row.cuescore_id.unwrap_or(0)
+                row.cuescore_id
             );
 
             Ok(Json(PlayerDetail {
@@ -188,7 +195,7 @@ pub async fn get_head_to_head_comparison(
         }
     }).collect();
 
-    let get_full_player_detail = |p: database::models::PlayerWithRating| -> Result<PlayerDetail, AppError> {
+    let mut get_full_player_detail = |p: database::models::PlayerWithRating| -> Result<PlayerDetail, AppError> {
         let established_games = state.config.rating.established_games;
         let starter_rating = state.config.rating.starter_rating;
 
@@ -202,7 +209,7 @@ pub async fn get_head_to_head_comparison(
             .map_err(|e| AppError::DatabaseError(e.to_string()))?;
 
         let encoded_name = encode(&p.name).replace(' ', "+");
-        let cuescore_profile_url = format!("https://cuescore.com/player/{}/{}", encoded_name, p.cuescore_id.unwrap_or(0));
+        let cuescore_profile_url = format!("https://cuescore.com/player/{}/{}", encoded_name, p.cuescore_id);
 
         Ok(PlayerDetail {
             player_id: p.player_id as i64,
@@ -231,5 +238,53 @@ pub async fn get_head_to_head_comparison(
         probability_p1_wins,
         matches: h2h_matches,
         stats: Some(stats),
+    }))
+}
+
+pub async fn get_player_rivalries(
+    State(state): State<Arc<AppState>>,
+    Path(player_id): Path<i64>,
+) -> Result<Json<PlayerRivalriesResponse>, AppError> {
+    let mut conn = state.pool.get().map_err(|_| AppError::InternalServerError)?;
+
+    // Minimum games filter - could be configurable or query param
+    let min_games = 5;
+
+    let rivalries = GameRepository::get_player_rivalries(&mut conn, player_id as i32, min_games)
+        .map_err(|e| AppError::DatabaseError(e.to_string()))?;
+
+    // Map to RivalryEntry DTO intermediate struct with win_rate
+    let mut entries: Vec<RivalryEntry> = rivalries.into_iter().map(|r| {
+        let win_rate = if r.matches_played > 0 {
+            r.matches_won as f64 / r.matches_played as f64
+        } else {
+            0.0
+        };
+        RivalryEntry {
+            opponent_id: r.opponent_id as i64,
+            opponent_name: r.opponent_name,
+            matches_played: r.matches_played,
+            matches_won: r.matches_won,
+            win_rate,
+        }
+    }).collect();
+
+    // Nemeses: Lowest win rate (ascending), then highest matches played (descending)
+    entries.sort_by(|a, b| {
+        a.win_rate.partial_cmp(&b.win_rate).unwrap()
+            .then(b.matches_played.cmp(&a.matches_played))
+    });
+    let nemeses = entries.iter().take(5).cloned().collect();
+
+    // Bunnies: Highest win rate (descending), then highest matches played (descending)
+    entries.sort_by(|a, b| {
+        b.win_rate.partial_cmp(&a.win_rate).unwrap()
+            .then(b.matches_played.cmp(&a.matches_played))
+    });
+    let bunnies = entries.iter().take(5).cloned().collect();
+
+    Ok(Json(PlayerRivalriesResponse {
+        nemeses,
+        bunnies,
     }))
 }

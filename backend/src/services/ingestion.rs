@@ -7,7 +7,8 @@ use crate::cache::Cache;
 use crate::config::get_venues;
 use crate::config::paths;
 use crate::domain::{FetchProgress, TournamentCollection};
-use crate::fetchers::{VenueScraper, cuescore_models};
+use crate::fetchers::cuescore_models;
+use crate::fetchers::venue_scraper::VenueScraper;
 
 pub struct IngestionService {
     cache: Cache,

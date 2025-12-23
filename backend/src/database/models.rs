@@ -115,3 +115,11 @@ pub struct MatchResultRow {
     pub player_total_score: i32,
     pub opponent_total_score: i32,
 }
+
+#[derive(Debug, Clone)]
+pub struct RivalryRow {
+    pub opponent_id: i32,
+    pub opponent_name: String,
+    pub matches_played: i32,
+    pub matches_won: i32,
+}

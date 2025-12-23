@@ -1,7 +1,7 @@
 use anyhow::Result;
 use chrono::NaiveDateTime;
 
-use crate::domain::models::{MatchResponse, TournamentResponse};
+use crate::fetchers::cuescore_models::{MatchResponse, TournamentResponse};
 
 #[derive(Debug, Clone)]
 pub struct ExpandedGame {

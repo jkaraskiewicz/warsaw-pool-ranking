@@ -1,4 +1,4 @@
-use super::models::TournamentResponse;
+use crate::fetchers::cuescore_models::TournamentResponse;
 use std::collections::HashMap;
 
 /// Collection of tournaments indexed by ID

@@ -72,3 +72,16 @@ message HeadToHeadResponse {
   repeated HeadToHeadMatch matches = 4;
   HeadToHeadStats stats = 5;
 }
+
+message RivalryEntry {
+  int64 opponent_id = 1;
+  string opponent_name = 2;
+  int32 matches_played = 3;
+  int32 matches_won = 4;
+  double win_rate = 5;
+}
+
+message PlayerRivalriesResponse {
+  repeated RivalryEntry nemeses = 1;
+  repeated RivalryEntry bunnies = 2;
+}

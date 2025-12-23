@@ -67,6 +67,32 @@
           </div>
         </div>
 
+        @if (rivalries(); as r) {
+          <div class="detail-section">
+            <h3>Rivalries (Min 5 games)</h3>
+            <div class="rivalry-grid" style="display: flex; gap: 20px;">
+              <div class="rivalry-col" style="flex: 1;">
+                <h4 style="color: #ef4444; margin-bottom: 8px;">Nemeses</h4>
+                @for (op of r.nemeses; track op.opponentId) {
+                  <div class="rivalry-row" style="display: flex; justify-content: space-between; font-size: 0.9em; padding: 4px 0; border-bottom: 1px solid rgba(255,255,255,0.1);">
+                    <span class="name">{{ op.opponentName }}</span>
+                    <span class="stats">{{ (op.winRate * 100).toFixed(0) }}% ({{op.matchesWon}}/{{op.matchesPlayed}})</span>
+                  </div>
+                }
+              </div>
+              <div class="rivalry-col" style="flex: 1;">
+                <h4 style="color: #22c55e; margin-bottom: 8px;">Bunnies</h4>
+                @for (op of r.bunnies; track op.opponentId) {
+                  <div class="rivalry-row" style="display: flex; justify-content: space-between; font-size: 0.9em; padding: 4px 0; border-bottom: 1px solid rgba(255,255,255,0.1);">
+                    <span class="name">{{ op.opponentName }}</span>
+                    <span class="stats">{{ (op.winRate * 100).toFixed(0) }}% ({{op.matchesWon}}/{{op.matchesPlayed}})</span>
+                  </div>
+                }
+              </div>
+            </div>
+          </div>
+        }
+
         @if (p.lastMatches?.length) {
           <div class="detail-section">
             <h3>{{ 'RECENT_MATCHES' | translate }}</h3>

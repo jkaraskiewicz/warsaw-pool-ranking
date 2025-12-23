@@ -12,24 +12,19 @@ export const protobufPackage = "api";
 export interface PlayerListItem {
   rank: number;
   playerId: number;
-  /**
-   * cuescore_id is optional in Rust model, mapped to int64.
-   * In proto3, optional fields are explicit.
-   */
-  cuescoreId?: number | undefined;
+  cuescoreId: number;
   name: string;
   rating: number;
   gamesPlayed: number;
   /** string for JSON compatibility ("established", etc.) */
   confidenceLevel: string;
   matchesPlayed: number;
-  avatarUrl?: string | undefined;
 }
 
 /** Detailed player view */
 export interface PlayerDetail {
   playerId: number;
-  cuescoreId?: number | undefined;
+  cuescoreId: number;
   name: string;
   cuescoreProfileUrl: string;
   rating: number;
@@ -42,7 +37,6 @@ export interface PlayerDetail {
   /** Date string */
   lastPlayed?: string | undefined;
   matchesPlayed: number;
-  avatarUrl?: string | undefined;
   lastMatches: MatchResult[];
 }
 
@@ -85,4 +79,17 @@ export interface HeadToHeadResponse {
   probabilityP1Wins: number;
   matches: HeadToHeadMatch[];
   stats: HeadToHeadStats | undefined;
+}
+
+export interface RivalryEntry {
+  opponentId: number;
+  opponentName: string;
+  matchesPlayed: number;
+  matchesWon: number;
+  winRate: number;
+}
+
+export interface PlayerRivalriesResponse {
+  nemeses: RivalryEntry[];
+  bunnies: RivalryEntry[];
 }

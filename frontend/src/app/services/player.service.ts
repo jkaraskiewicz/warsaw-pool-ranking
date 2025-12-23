@@ -1,7 +1,7 @@
 import { Injectable } from '@angular/core';
 import { HttpClient, HttpParams } from '@angular/common/http';
 import { Observable } from 'rxjs';
-import { PlayerListItem, PlayerDetail, PlayerListResponse, HeadToHeadResponse } from '../models/api';
+import { PlayerListItem, PlayerDetail, PlayerListResponse, HeadToHeadResponse, PlayerRivalriesResponse } from '../models/api';
 import { FilterExpression } from '../models/filter';
 
 @Injectable({
@@ -53,5 +53,9 @@ export class PlayerService {
   getHeadToHeadComparison(player1Id: number, player2Id: number, ratingType: string = 'all'): Observable<HeadToHeadResponse> {
     let params = new HttpParams().set('rating_type', ratingType);
     return this.http.get<HeadToHeadResponse>(`${this.apiUrl}/compare/${player1Id}/${player2Id}`, { params });
+  }
+
+  getPlayerRivalries(playerId: number): Observable<PlayerRivalriesResponse> {
+    return this.http.get<PlayerRivalriesResponse>(`${this.apiUrl}/player/${playerId}/rivalries`);
   }
 }

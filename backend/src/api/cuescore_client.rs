@@ -1,6 +1,7 @@
 use crate::api::parsers;
 use crate::cache::Cache;
-use crate::domain::models::{Tournament, TournamentResponse};
+use crate::domain::models::Tournament;
+use crate::fetchers::cuescore_models::TournamentResponse;
 use crate::http::RateLimitedClient;
 use crate::pagination::{PageIterator, PaginationConfig};
 use anyhow::{Context, Result};
