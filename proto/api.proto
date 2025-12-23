@@ -6,15 +6,15 @@ package api;
 message PlayerListItem {
   int32 rank = 1;
   int64 player_id = 2;
-  // cuescore_id is optional in Rust model, mapped to int64. 
+  // cuescore_id is optional in Rust model, mapped to int64.
   // In proto3, optional fields are explicit.
-  optional int64 cuescore_id = 3; 
+  optional int64 cuescore_id = 3;
   string name = 4;
   double rating = 5;
   int32 games_played = 6;
   string confidence_level = 7; // string for JSON compatibility ("established", etc.)
   int32 matches_played = 8;
-  optional string avatar_url = 9;
+  // Note: avatar_url removed - avatars now served via /api/avatars/:player_id/:size
 }
 
 // Detailed player view
@@ -32,8 +32,8 @@ message PlayerDetail {
   int32 effective_games = 11;
   optional string last_played = 12; // Date string
   int32 matches_played = 13;
-  optional string avatar_url = 14;
-  repeated MatchResult last_matches = 15;
+  // Note: avatar_url removed - avatars now served via /api/avatars/:player_id/:size
+  repeated MatchResult last_matches = 14; // Field number updated from 15 to 14
 }
 
 message MatchResult {
