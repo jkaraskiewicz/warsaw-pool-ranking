@@ -1,10 +1,12 @@
 <div class="overlay-container">
   <div class="overlay-header">
     <div class="player-header-info">
-      <div class="avatar large" [ngStyle]="{'background-image': getAvatarUrl(player?.playerId, 'medium')}">
-        {{ player?.name?.charAt(0) }}
+      <div class="avatar large" [ngStyle]="{'background-image': getAvatarUrl(player()?.playerId, 'medium')}">
+        {{ player()?.name?.charAt(0) }}
       </div>
-      <h2 mat-dialog-title *ngIf="player">{{ player.name }}</h2>
+      @if (player()) {
+        <h2 mat-dialog-title>{{ player()!.name }}</h2>
+      }
     </div>
     <button mat-icon-button (click)="close()">
       <mat-icon>close</mat-icon>
@@ -12,76 +14,84 @@
   </div>
 
   <mat-dialog-content>
-    <div *ngIf="loading" class="loading-container">
-      <mat-spinner></mat-spinner>
-    </div>
+    @if (loading()) {
+      <div class="loading-container">
+        <mat-spinner></mat-spinner>
+      </div>
+    }
 
-    <div *ngIf="!loading && player" class="player-details">
-      <div class="stats-grid">
-        <div class="stat-card">
-          <div class="stat-label">{{ 'RATING' | translate }}</div>
-          <div class="stat-value">{{ player.rating.toFixed(0) }}</div>
-        </div>
-
-        <div class="stat-card">
-          <div class="stat-label">{{ 'GAMES' | translate }}</div>
-          <div class="stat-value">{{ player.gamesPlayed }}</div>
-        </div>
-
-        <div class="stat-card">
-          <div class="stat-label">{{ 'CONFIDENCE' | translate }}</div>
-          <div class="stat-value">
-            <mat-chip [color]="getConfidenceColor(player.confidenceLevel)" selected>
-              {{ player.confidenceLevel | translate }}
-            </mat-chip>
+    @if (!loading() && player(); as p) {
+      <div class="player-details">
+        <div class="stats-grid">
+          <div class="stat-card">
+            <div class="stat-label">{{ 'RATING' | translate }}</div>
+            <div class="stat-value">{{ p.rating.toFixed(0) }}</div>
           </div>
-        </div>
-      </div>
 
-      <div class="detail-section">
-        <h3>{{ 'RATING_DETAILS' | translate }}</h3>
-        <div class="detail-row">
-          <span class="detail-label">{{ 'ML_RATING' | translate }}</span>
-          <span class="detail-value">{{ player.mlRating.toFixed(1) }}</span>
-        </div>
-        <div class="detail-row">
-          <span class="detail-label">{{ 'STARTER_WEIGHT' | translate }}</span>
-          <span class="detail-value">{{ (player.starterWeight * 100).toFixed(0) }}%</span>
-        </div>
-        <div class="detail-row">
-          <span class="detail-label">{{ 'ML_WEIGHT' | translate }}</span>
-          <span class="detail-value">{{ (player.mlWeight * 100).toFixed(0) }}%</span>
-        </div>
-        <div class="detail-row">
-          <span class="detail-label">{{ 'EFFECTIVE_GAMES' | translate }}</span>
-          <span class="detail-value">{{ player.effectiveGames.toFixed(1) }}</span>
-        </div>
-        <div class="detail-row">
-          <span class="detail-label">{{ 'LAST_PLAYED' | translate }}</span>
-          <span class="detail-value">{{ formatDate(player.lastPlayed) }}</span>
-        </div>
-      </div>
+          <div class="stat-card">
+            <div class="stat-label">{{ 'GAMES' | translate }}</div>
+            <div class="stat-value">{{ p.gamesPlayed }}</div>
+          </div>
 
-      <div class="detail-section" *ngIf="player.lastMatches?.length">
-        <h3>{{ 'RECENT_MATCHES' | translate }}</h3>
-        <div class="games-list">
-          <div class="game-item" *ngFor="let match of player.lastMatches">
-            <div class="game-date">{{ formatDate(match.date) }}</div>
-            <div class="game-opponent">{{ match.opponentName }}</div>
-            <div class="game-score" [class.win]="match.playerTotalScore > match.opponentTotalScore" [class.loss]="match.playerTotalScore < match.opponentTotalScore">
-              {{ match.playerTotalScore }} - {{ match.opponentTotalScore }}
+          <div class="stat-card">
+            <div class="stat-label">{{ 'CONFIDENCE' | translate }}</div>
+            <div class="stat-value">
+              <mat-chip [color]="getConfidenceColor(p.confidenceLevel)" selected>
+                {{ p.confidenceLevel | translate }}
+              </mat-chip>
             </div>
-            <div class="game-tournament">{{ match.tournamentName }}</div>
           </div>
         </div>
-      </div>
 
-      <div class="actions-section">
-        <a [href]="player.cuescoreProfileUrl" target="_blank" mat-raised-button color="primary">
-          <mat-icon>open_in_new</mat-icon>
-          {{ 'VIEW_ON_CUESCORE' | translate }}
-        </a>
+        <div class="detail-section">
+          <h3>{{ 'RATING_DETAILS' | translate }}</h3>
+          <div class="detail-row">
+            <span class="detail-label">{{ 'ML_RATING' | translate }}</span>
+            <span class="detail-value">{{ p.mlRating.toFixed(1) }}</span>
+          </div>
+          <div class="detail-row">
+            <span class="detail-label">{{ 'STARTER_WEIGHT' | translate }}</span>
+            <span class="detail-value">{{ (p.starterWeight * 100).toFixed(0) }}%</span>
+          </div>
+          <div class="detail-row">
+            <span class="detail-label">{{ 'ML_WEIGHT' | translate }}</span>
+            <span class="detail-value">{{ (p.mlWeight * 100).toFixed(0) }}%</span>
+          </div>
+          <div class="detail-row">
+            <span class="detail-label">{{ 'EFFECTIVE_GAMES' | translate }}</span>
+            <span class="detail-value">{{ p.effectiveGames.toFixed(1) }}</span>
+          </div>
+          <div class="detail-row">
+            <span class="detail-label">{{ 'LAST_PLAYED' | translate }}</span>
+            <span class="detail-value">{{ formatDate(p.lastPlayed) }}</span>
+          </div>
+        </div>
+
+        @if (p.lastMatches?.length) {
+          <div class="detail-section">
+            <h3>{{ 'RECENT_MATCHES' | translate }}</h3>
+            <div class="games-list">
+              @for (match of p.lastMatches; track match.date) {
+                <div class="game-item">
+                  <div class="game-date">{{ formatDate(match.date) }}</div>
+                  <div class="game-opponent">{{ match.opponentName }}</div>
+                  <div class="game-score" [class.win]="match.playerTotalScore > match.opponentTotalScore" [class.loss]="match.playerTotalScore < match.opponentTotalScore">
+                    {{ match.playerTotalScore }} - {{ match.opponentTotalScore }}
+                  </div>
+                  <div class="game-tournament">{{ match.tournamentName }}</div>
+                </div>
+              }
+            </div>
+          </div>
+        }
+
+        <div class="actions-section">
+          <a [href]="p.cuescoreProfileUrl" target="_blank" mat-raised-button color="primary">
+            <mat-icon>open_in_new</mat-icon>
+            {{ 'VIEW_ON_CUESCORE' | translate }}
+          </a>
+        </div>
       </div>
-    </div>
+    }
   </mat-dialog-content>
 </div>

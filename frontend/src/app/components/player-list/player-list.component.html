@@ -91,9 +91,11 @@
   <!-- Table -->
   <div class="table-responsive">
     <!-- Loading Overlay -->
-    <div class="loading-overlay" *ngIf="facade.loading()">
-      <mat-spinner diameter="48"></mat-spinner>
-    </div>
+    @if (facade.loading()) {
+      <div class="loading-overlay">
+        <mat-spinner diameter="48"></mat-spinner>
+      </div>
+    }
 
     <table mat-table [dataSource]="facade.players()" matSort
            (matSortChange)="onSortChange($event)"
@@ -192,14 +194,16 @@
     </table>
 
     <!-- Empty State -->
-    <div class="empty-state" *ngIf="facade.hasNoResults()">
-      <mat-icon class="empty-icon">star_border</mat-icon>
-      <h3 class="empty-title">{{ 'NO_INTERESTED_PLAYERS' | translate }}</h3>
-      <p class="empty-message">{{ 'NO_INTERESTED_PLAYERS_MESSAGE' | translate }}</p>
-      <button mat-button color="primary" (click)="toggleInterestedFilter()">
-        {{ 'SHOW_ALL_PLAYERS' | translate }}
-      </button>
-    </div>
+    @if (facade.hasNoResults()) {
+      <div class="empty-state">
+        <mat-icon class="empty-icon">star_border</mat-icon>
+        <h3 class="empty-title">{{ 'NO_INTERESTED_PLAYERS' | translate }}</h3>
+        <p class="empty-message">{{ 'NO_INTERESTED_PLAYERS_MESSAGE' | translate }}</p>
+        <button mat-button color="primary" (click)="toggleInterestedFilter()">
+          {{ 'SHOW_ALL_PLAYERS' | translate }}
+        </button>
+      </div>
+    }
   </div>
 
   <!-- Paginator -->
@@ -213,10 +217,11 @@
 </div>
 
 <!-- Comparison FAB -->
-<button mat-fab extended color="primary"
-        class="fab-compare"
-        *ngIf="selection.size === 2"
-        (click)="comparePlayers()">
-  <mat-icon>compare_arrows</mat-icon>
-  {{ 'COMPARISON' | translate }}
-</button>
+@if (selection.size === 2) {
+  <button mat-fab extended color="primary"
+          class="fab-compare"
+          (click)="comparePlayers()">
+    <mat-icon>compare_arrows</mat-icon>
+    {{ 'COMPARISON' | translate }}
+  </button>
+}

@@ -1,9 +1,11 @@
-    <mat-button-toggle-group
-      [value]="selectedType"
-      (change)="typeChange.emit($event.value)"
-      aria-label="Select rating type"
-      class="rating-type-selector">
-      <mat-button-toggle *ngFor="let type of ratingTypes" [value]="type.value">
-        {{ type.viewValue | translate }}
-      </mat-button-toggle>
-    </mat-button-toggle-group>
+<mat-button-toggle-group
+  [value]="selectedType()"
+  (change)="typeChange.emit($event.value)"
+  aria-label="Select rating type"
+  class="rating-type-selector">
+  @for (type of ratingTypes; track type.value) {
+    <mat-button-toggle [value]="type.value">
+      {{ type.viewValue | translate }}
+    </mat-button-toggle>
+  }
+</mat-button-toggle-group>

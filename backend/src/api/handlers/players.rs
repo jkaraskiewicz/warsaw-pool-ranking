@@ -1,31 +1,24 @@
 use axum::{
     extract::{Path, Query, State},
-    http::StatusCode,
-    response::{IntoResponse, Json},
+    response::Json,
 };
 use std::sync::Arc;
 use urlencoding::encode;
 
-use crate::api::models::{PlayerListItem, PlayerListResponse, PlayerDetail, HeadToHeadMatch, HeadToHeadResponse, HeadToHeadStats, MatchResult};
-use crate::api::filter::{parser::parse_filter_dsl, sql_builder::build_sql_filter};
-use crate::database::{self, models::{PlayerFilter, SortColumn, SortOrder}};
+use crate::services::player_service;
 use super::{AppState, PlayerParams};
 
 pub async fn get_players(
     State(state): State<Arc<AppState>>,
     Query(params): Query<PlayerParams>,
-) -> impl IntoResponse {
+) -> Result<Json<PlayerListResponse>, AppError> {
     // Parse filter DSL
-    let filter_exprs = match parse_filter_dsl(&params.filter.unwrap_or_default()) {
-        Ok(exprs) => exprs,
-        Err(e) => return (StatusCode::BAD_REQUEST, format!("Invalid filter syntax: {}", e)).into_response(),
-    };
+    let filter_exprs = parse_filter_dsl(&params.filter.unwrap_or_default())
+        .map_err(|e| AppError::BadRequest(format!("Invalid filter syntax: {}", e)))?;
 
     // Build SQL filter
-    let sql_filter = match build_sql_filter(filter_exprs) {
-        Ok(filter) => filter,
-        Err(e) => return (StatusCode::BAD_REQUEST, format!("Invalid filter: {}", e)).into_response(),
-    };
+    let sql_filter = build_sql_filter(filter_exprs)
+        .map_err(|e| AppError::BadRequest(format!("Invalid filter: {}", e)))?;
 
     let page = params.page.unwrap_or(1).max(1);
     let page_size = params.page_size.unwrap_or(100).clamp(1, 1000);
@@ -43,10 +36,7 @@ pub async fn get_players(
         _ => SortOrder::Desc,
     };
 
-    let mut conn = match state.pool.get() {
-        Ok(conn) => conn,
-        Err(_) => return (StatusCode::INTERNAL_SERVER_ERROR, "DB Connection Error").into_response(),
-    };
+    let mut conn = state.pool.get().map_err(|_| AppError::InternalServerError)?;
 
     let filter = PlayerFilter {
         sql_filter,
@@ -57,14 +47,12 @@ pub async fn get_players(
         offset,
     };
 
-    let (rows, total) = match database::ratings::list_ranked_players(&mut conn, &filter) {
-        Ok(result) => result,
-        Err(e) => return (StatusCode::INTERNAL_SERVER_ERROR, format!("Query Error: {}", e)).into_response(),
-    };
+    let (rows, total) = PlayerRepository::list_ranked_players(&mut conn, &filter)
+        .map_err(|e| AppError::DatabaseError(e.to_string()))?;
 
     let players: Vec<PlayerListItem> = rows.into_iter().enumerate().map(|(i, row)| {
-        let player_id_i32 = row.player_id;
-        let matches_played = database::games::count_matches_played_for_player(&mut conn, player_id_i32).unwrap_or(0);
+        let matches_played = GameRepository::count_matches_played_for_player(&mut conn, row.player_id)
+            .unwrap_or(0); // Consider handling this error more robustly if it's critical
         PlayerListItem {
             rank: (offset + i + 1) as i32,
             player_id: row.player_id as i64,
@@ -77,62 +65,43 @@ pub async fn get_players(
         }
     }).collect();
 
-    Json(PlayerListResponse {
+    Ok(Json(PlayerListResponse {
         items: players,
         total: total as i32,
         page: page as i32,
         page_size: page_size as i32,
-    }).into_response()
+    }))
 }
 
 pub async fn get_player_detail(
     State(state): State<Arc<AppState>>,
     Path(player_id): Path<i64>,
     Query(params): Query<PlayerParams>,
-) -> impl IntoResponse {
+) -> Result<Json<PlayerDetail>, AppError> {
     let rating_type = params.rating_type.unwrap_or_else(|| "all".to_string());
 
-    let mut conn = match state.pool.get() {
-        Ok(conn) => conn,
-        Err(_) => return (StatusCode::INTERNAL_SERVER_ERROR, "DB Connection Error").into_response(),
-    };
+    let mut conn = state.pool.get().map_err(|_| AppError::InternalServerError)?;
 
-    let player_data = match database::ratings::get_player_rating_detail(&mut conn, player_id as i32, &rating_type) {
-        Ok(data) => data,
-        Err(e) => return (StatusCode::INTERNAL_SERVER_ERROR, format!("Query Error: {}", e)).into_response(),
-    };
+    let player_data = PlayerRepository::get_player_rating_detail(&mut conn, player_id as i32, &rating_type)
+        .map_err(|e| AppError::DatabaseError(e.to_string()))?;
 
     match player_data {
         Some(row) => {
             let established_games = state.config.rating.established_games;
             let starter_rating = state.config.rating.starter_rating;
 
-            let starter_weight = if row.games_played >= established_games {
-                0.0
-            } else {
-                (established_games - row.games_played) as f64 / established_games as f64
-            };
-            let ml_weight = 1.0 - starter_weight;
+            let (ml_rating, starter_weight, ml_weight) =
+                player_service::calculate_adjusted_ratings(row.games_played, row.rating, established_games, starter_rating);
 
-            let ml_rating = if ml_weight > 0.0001 {
-                (row.rating - (starter_weight * starter_rating)) / ml_weight
-            } else {
-                row.rating
-            };
+            let last_played = PlayerRepository::get_player_last_match_date(&mut conn, row.player_id)
+                .map_err(|e| AppError::DatabaseError(e.to_string()))?;
 
-            let last_played: Option<String> = conn.query_row(
-                "SELECT MAX(date) FROM games WHERE first_player_id = ?1 OR second_player_id = ?1",
-                rusqlite::params![row.player_id],
-                |r| r.get(0)
-            ).ok();
+            let matches_played = PlayerRepository::count_player_distinct_matches_played(&mut conn, row.player_id)
+                .map_err(|e| AppError::DatabaseError(e.to_string()))?;
 
-            let matches_played: i32 = conn.query_row(
-                "SELECT COUNT(DISTINCT date) FROM games WHERE first_player_id = ?1 OR second_player_id = ?1",
-                rusqlite::params![row.player_id],
-                |r| r.get(0)
-            ).unwrap_or(0);
+            let last_matches_rows = GameRepository::get_player_last_matches(&mut conn, row.player_id, 10)
+                .map_err(|e| AppError::DatabaseError(e.to_string()))?;
 
-            let last_matches_rows = database::games::get_player_last_matches(&mut conn, row.player_id, 10).unwrap_or_default();
             let last_matches: Vec<MatchResult> = last_matches_rows.into_iter().map(|m| MatchResult {
                 date: m.date.to_string(),
                 tournament_name: m.tournament_name,
@@ -149,7 +118,7 @@ pub async fn get_player_detail(
                 row.cuescore_id.unwrap_or(0)
             );
 
-            Json(PlayerDetail {
+            Ok(Json(PlayerDetail {
                 player_id: row.player_id as i64,
                 cuescore_id: row.cuescore_id,
                 name: row.name,
@@ -164,9 +133,9 @@ pub async fn get_player_detail(
                 last_played,
                 matches_played,
                 last_matches,
-            }).into_response()
+            }))
         },
-        None => StatusCode::NOT_FOUND.into_response(),
+        None => Err(AppError::NotFound(format!("Player {} not found", player_id))),
     }
 }
 
@@ -174,32 +143,23 @@ pub async fn get_head_to_head_comparison(
     State(state): State<Arc<AppState>>,
     Path((player1_id, player2_id)): Path<(i64, i64)>,
     Query(params): Query<PlayerParams>,
-) -> impl IntoResponse {
+) -> Result<Json<HeadToHeadResponse>, AppError> {
     let rating_type = params.rating_type.unwrap_or_else(|| "all".to_string());
 
-    let mut conn = match state.pool.get() {
-        Ok(conn) => conn,
-        Err(_) => return (StatusCode::INTERNAL_SERVER_ERROR, "DB Connection Error").into_response(),
-    };
+    let mut conn = state.pool.get().map_err(|_| AppError::InternalServerError)?;
 
-    let player1_detail_data = match database::ratings::get_player_rating_detail(&mut conn, player1_id as i32, &rating_type) {
-        Ok(Some(p)) => p,
-        Ok(None) => return (StatusCode::NOT_FOUND, format!("Player 1 ({}) not found", player1_id)).into_response(),
-        Err(e) => return (StatusCode::INTERNAL_SERVER_ERROR, format!("Query Error for Player 1: {}", e)).into_response(),
-    };
-    let player2_detail_data = match database::ratings::get_player_rating_detail(&mut conn, player2_id as i32, &rating_type) {
-        Ok(Some(p)) => p,
-        Ok(None) => return (StatusCode::NOT_FOUND, format!("Player 2 ({}) not found", player2_id)).into_response(),
-        Err(e) => return (StatusCode::INTERNAL_SERVER_ERROR, format!("Query Error for Player 2: {}", e)).into_response(),
-    };
+    let player1_detail_data = PlayerRepository::get_player_rating_detail(&mut conn, player1_id as i32, &rating_type)
+        .map_err(|e| AppError::DatabaseError(e.to_string()))?
+        .ok_or_else(|| AppError::NotFound(format!("Player 1 ({}) not found", player1_id)))?;
+    let player2_detail_data = PlayerRepository::get_player_rating_detail(&mut conn, player2_id as i32, &rating_type)
+        .map_err(|e| AppError::DatabaseError(e.to_string()))?
+        .ok_or_else(|| AppError::NotFound(format!("Player 2 ({}) not found", player2_id)))?;
 
     let rating_diff = player1_detail_data.rating - player2_detail_data.rating;
     let probability_p1_wins = 1.0 / (1.0 + (-rating_diff * std::f64::consts::LN_2 / 100.0).exp());
 
-    let matches = match database::games::get_head_to_head_matches(&mut conn, player1_detail_data.player_id, player2_detail_data.player_id) {
-        Ok(m) => m,
-        Err(e) => return (StatusCode::INTERNAL_SERVER_ERROR, format!("Query Error for matches: {}", e)).into_response(),
-    };
+    let matches = GameRepository::get_head_to_head_matches(&mut conn, player1_detail_data.player_id, player2_detail_data.player_id)
+        .map_err(|e| AppError::DatabaseError(e.to_string()))?;
 
     let mut stats = HeadToHeadStats {
         total_matches: matches.len() as i32,
@@ -228,31 +188,23 @@ pub async fn get_head_to_head_comparison(
         }
     }).collect();
 
-    let get_full_player_detail = |p: database::models::PlayerWithRating| -> PlayerDetail {
+    let get_full_player_detail = |p: database::models::PlayerWithRating| -> Result<PlayerDetail, AppError> {
         let established_games = state.config.rating.established_games;
         let starter_rating = state.config.rating.starter_rating;
 
-        let starter_weight = if p.games_played >= established_games { 0.0 } else { (established_games - p.games_played) as f64 / established_games as f64 };
-        let ml_weight = 1.0 - starter_weight;
+        let (ml_rating, starter_weight, ml_weight) =
+            player_service::calculate_adjusted_ratings(p.games_played, p.rating, established_games, starter_rating);
 
-        let ml_rating = if ml_weight > 0.0001 { (p.rating - (starter_weight * starter_rating)) / ml_weight } else { p.rating };
+        let last_played = PlayerRepository::get_player_last_match_date(&mut conn, p.player_id)
+            .map_err(|e| AppError::DatabaseError(e.to_string()))?;
 
-        let last_played: Option<String> = conn.query_row(
-            "SELECT MAX(date) FROM games WHERE first_player_id = ?1 OR second_player_id = ?1",
-            rusqlite::params![p.player_id],
-            |r| r.get(0)
-        ).ok();
-
-        let matches_played: i32 = conn.query_row(
-            "SELECT COUNT(DISTINCT date) FROM games WHERE first_player_id = ?1 OR second_player_id = ?1",
-            rusqlite::params![p.player_id],
-            |r| r.get(0)
-        ).unwrap_or(0);
+        let matches_played = PlayerRepository::count_player_distinct_matches_played(&mut conn, p.player_id)
+            .map_err(|e| AppError::DatabaseError(e.to_string()))?;
 
         let encoded_name = encode(&p.name).replace(' ', "+");
         let cuescore_profile_url = format!("https://cuescore.com/player/{}/{}", encoded_name, p.cuescore_id.unwrap_or(0));
 
-        PlayerDetail {
+        Ok(PlayerDetail {
             player_id: p.player_id as i64,
             cuescore_id: p.cuescore_id,
             name: p.name,
@@ -267,17 +219,17 @@ pub async fn get_head_to_head_comparison(
             last_played,
             matches_played,
             last_matches: vec![],
-        }
+        })
     };
 
-    let player1_api_detail = get_full_player_detail(player1_detail_data);
-    let player2_api_detail = get_full_player_detail(player2_detail_data);
+    let player1_api_detail = get_full_player_detail(player1_detail_data)?;
+    let player2_api_detail = get_full_player_detail(player2_detail_data)?;
 
-    Json(HeadToHeadResponse {
+    Ok(Json(HeadToHeadResponse {
         player1: Some(player1_api_detail),
         player2: Some(player2_api_detail),
         probability_p1_wins,
         matches: h2h_matches,
         stats: Some(stats),
-    }).into_response()
+    }))
 }

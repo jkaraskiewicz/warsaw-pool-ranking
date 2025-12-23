@@ -1,13 +1,19 @@
 <div class="history-section">
   <h3>{{ 'MATCH_HISTORY' | translate }}</h3>
-  <div *ngIf="matches.length > 0" class="matches-list">
-    <div class="match-item" *ngFor="let match of matches">
-      <div class="match-date">{{ formatDate(match.date) }}</div>
-      <div class="match-tournament">{{ match.tournamentName }}</div>
-      <div class="match-score">{{ match.player1Wins }} - {{ match.player2Wins }}</div>
+  @if (matches().length > 0) {
+    <div class="matches-list">
+      @for (match of matches(); track match.date) {
+        <div class="match-item">
+          <div class="match-date">{{ formatDate(match.date) }}</div>
+          <div class="match-tournament">{{ match.tournamentName }}</div>
+          <div class="match-score">{{ match.player1Wins }} - {{ match.player2Wins }}</div>
+        </div>
+      }
     </div>
-  </div>
-  <div *ngIf="matches.length === 0" class="no-matches">
-    No matches found between these players.
-  </div>
+  }
+  @if (matches().length === 0) {
+    <div class="no-matches">
+      No matches found between these players.
+    </div>
+  }
 </div>

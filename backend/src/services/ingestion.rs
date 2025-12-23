@@ -7,7 +7,7 @@ use crate::cache::Cache;
 use crate::config::get_venues;
 use crate::config::paths;
 use crate::domain::{FetchProgress, TournamentCollection};
-use crate::fetchers::VenueScraper;
+use crate::fetchers::{VenueScraper, cuescore_models};
 
 pub struct IngestionService {
     cache: Cache,
@@ -81,7 +81,7 @@ impl IngestionService {
         Ok(self.cache.load_raw(&tournament_id.to_string())?.is_some())
     }
 
-    async fn fetch_single_tournament(&mut self, tournament_id: i64) -> Result<Option<crate::domain::TournamentResponse>> {
+    async fn fetch_single_tournament(&mut self, tournament_id: i64) -> Result<Option<cuescore_models::TournamentResponse>> {
         self.api_client.fetch_and_cache_tournament(tournament_id, &self.cache).await
     }
 

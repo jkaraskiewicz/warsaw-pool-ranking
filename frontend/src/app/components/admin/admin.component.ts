@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, ChangeDetectionStrategy, signal } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { FormsModule } from '@angular/forms';
 import { MatCardModule } from '@angular/material/card';
@@ -9,6 +9,7 @@ import { MatIconModule } from '@angular/material/icon';
 import { MatProgressSpinnerModule } from '@angular/material/progress-spinner';
 import { MatSnackBar } from '@angular/material/snack-bar';
 import { AdminService } from '../../services/admin.service';
+import { TranslationService } from '../../services/translation.service';
 import { TranslatePipe } from '../../pipes/translate.pipe';
 
 @Component({
@@ -26,48 +27,54 @@ import { TranslatePipe } from '../../pipes/translate.pipe';
     TranslatePipe
   ],
   templateUrl: './admin.component.html',
-  styleUrls: ['./admin.component.scss']
+  styleUrls: ['./admin.component.scss'],
+  changeDetection: ChangeDetectionStrategy.OnPush
 })
 export class AdminComponent {
-  password = '';
-  loading = false;
-  loginLoading = false;
+  password = signal('');
+  loading = signal(false);
+  loginLoading = signal(false);
 
   constructor(
     public adminService: AdminService,
-    private snackBar: MatSnackBar
+    private snackBar: MatSnackBar,
+    private translationService: TranslationService
   ) {}
 
   login(): void {
-    if (!this.password) {
+    if (!this.password()) {
       return;
     }
 
-    this.loginLoading = true;
-    this.adminService.login(this.password).subscribe({
+    this.loginLoading.set(true);
+    this.adminService.login(this.password()).subscribe({
       next: (result) => {
-        this.loginLoading = false;
+        this.loginLoading.set(false);
         if (result.success) {
-          this.snackBar.open('Login successful', 'Close', { duration: 2000 });
-          this.password = '';
+          this.snackBar.open(
+            this.translationService.translate('LOGIN_SUCCESSFUL'),
+            this.translationService.translate('CLOSE'),
+            { duration: 2000 }
+          );
+          this.password.set('');
         } else {
           this.snackBar.open(
-            result.error || 'Login failed',
-            'Close',
+            result.error || this.translationService.translate('LOGIN_FAILED'),
+            this.translationService.translate('CLOSE'),
             { duration: 4000 }
           );
-          this.password = '';
+          this.password.set('');
         }
       },
       error: (err) => {
-        this.loginLoading = false;
+        this.loginLoading.set(false);
         this.snackBar.open(
-          'Login request failed. Please try again.',
-          'Close',
+          this.translationService.translate('LOGIN_REQUEST_FAILED'),
+          this.translationService.translate('CLOSE'),
           { duration: 4000 }
         );
         console.error('Login error:', err);
-        this.password = '';
+        this.password.set('');
       }
     });
   }
@@ -77,29 +84,32 @@ export class AdminComponent {
   }
 
   refreshData(): void {
-    this.loading = true;
+    this.loading.set(true);
     this.adminService.triggerRefresh().subscribe({
       next: () => {
-        this.snackBar.open('Refresh triggered successfully', 'Close', { duration: 3000 });
-        this.loading = false;
+        this.snackBar.open(
+          this.translationService.translate('REFRESH_SUCCESSFUL'),
+          this.translationService.translate('CLOSE'),
+          { duration: 3000 }
+        );
+        this.loading.set(false);
       },
       error: (err) => {
         if (err.status === 401) {
           this.snackBar.open(
-            'Session expired. Please login again.',
-            'Close',
+            this.translationService.translate('SESSION_EXPIRED'),
+            this.translationService.translate('CLOSE'),
             { duration: 4000 }
           );
           this.adminService.logout();
         } else {
           this.snackBar.open(
-            'Refresh failed: ' + err.message,
-            'Close',
+            this.translationService.translate('REFRESH_FAILED') + ': ' + err.message,
+            this.translationService.translate('CLOSE'),
             { duration: 3000 }
           );
         }
-        this.loading = false;
+        this.loading.set(false);
       }
     });
   }
-}

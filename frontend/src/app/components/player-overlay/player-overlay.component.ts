@@ -1,4 +1,4 @@
-import { Component, OnInit, Inject } from '@angular/core';
+import { Component, OnInit, Inject, ChangeDetectionStrategy, signal } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { MAT_DIALOG_DATA, MatDialogRef, MatDialogModule } from '@angular/material/dialog';
 import { MatIconModule } from '@angular/material/icon';
@@ -22,11 +22,12 @@ import { TranslatePipe } from '../../pipes/translate.pipe';
     TranslatePipe
   ],
   templateUrl: './player-overlay.component.html',
-  styleUrls: ['./player-overlay.component.scss']
+  styleUrls: ['./player-overlay.component.scss'],
+  changeDetection: ChangeDetectionStrategy.OnPush
 })
 export class PlayerOverlayComponent implements OnInit {
-  player: PlayerDetail | null = null;
-  loading: boolean = true;
+  player = signal<PlayerDetail | null>(null);
+  loading = signal<boolean>(true);
 
   constructor(
     private playerService: PlayerService,
@@ -39,23 +40,23 @@ export class PlayerOverlayComponent implements OnInit {
   }
 
   loadPlayerData(): void {
-    this.loading = true;
+    this.loading.set(true);
 
     this.playerService.getPlayerDetail(this.data.playerId, this.data.ratingType).subscribe({
       next: (player) => {
-        this.player = player;
-        this.loading = false;
+        this.player.set(player);
+        this.loading.set(false);
       },
       error: (err) => {
         console.error('Error loading player:', err);
-        this.loading = false;
+        this.loading.set(false);
       }
     });
   }
 
   getCueScoreUrl(): string {
-    if (!this.player) return '#';
-    return this.player.cuescoreProfileUrl;
+    if (!this.player()) return '#';
+    return this.player()!.cuescoreProfileUrl;
   }
 
   getConfidenceColor(level: string): string {

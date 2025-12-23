@@ -1,4 +1,4 @@
-import { Component, EventEmitter, Input, Output } from '@angular/core';
+import { Component, EventEmitter, input, Output, ChangeDetectionStrategy } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { MatButtonToggleModule } from '@angular/material/button-toggle';
 import { TranslatePipe } from '../../../pipes/translate.pipe';
@@ -8,10 +8,11 @@ import { TranslatePipe } from '../../../pipes/translate.pipe';
   standalone: true,
   imports: [CommonModule, MatButtonToggleModule, TranslatePipe],
   templateUrl: './rating-type-selector.component.html',
-  styleUrls: ['./rating-type-selector.component.scss']
+  styleUrls: ['./rating-type-selector.component.scss'],
+  changeDetection: ChangeDetectionStrategy.OnPush
 })
 export class RatingTypeSelectorComponent {
-  @Input() selectedType: string = 'all';
+  selectedType = input<string>('all');
   @Output() typeChange = new EventEmitter<string>();
 
   ratingTypes = [

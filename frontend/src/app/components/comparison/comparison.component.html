@@ -7,68 +7,72 @@
   </div>
 
   <mat-dialog-content>
-    <div *ngIf="loading()" class="loading-container">
-      <mat-spinner></mat-spinner>
-    </div>
-
-    <div *ngIf="comparison() as comp" class="comparison-content">
-      <!-- Players Side by Side -->
-      <div class="players-row">
-        <!-- Player 1 -->
-        <div class="player-card">
-          <div class="player-avatar-wrapper">
-            <div class="avatar large" [ngStyle]="{'background-image': getAvatarUrl(comp.player1?.playerId, 'large')}">
-              {{ comp.player1?.name?.charAt(0) }}
-            </div>
-            <h3>{{ comp.player1?.name }}</h3>
-          </div>
-          <div class="stat">
-            <span class="label">{{ 'RATING' | translate }}</span>
-            <span class="value">{{ comp.player1?.rating?.toFixed(0) }}</span>
-          </div>
-          <div class="stat">
-            <span class="label">{{ 'CONFIDENCE' | translate }}</span>
-             <mat-chip [color]="getConfidenceColor(comp.player1?.confidenceLevel || '')" selected>
-              {{ (comp.player1?.confidenceLevel || '') | translate }}
-            </mat-chip>
-          </div>
-        </div>
-
-        <!-- Center Stats -->
-        <div class="center-stats">
-          <div class="prob-box">
-            <div class="prob-label">{{ 'WIN_PROBABILITY' | translate }}</div>
-            <div class="prob-value">{{ formatProb(comp.probabilityP1Wins) }}</div>
-            <div class="prob-sub">for {{ comp.player1?.name }}</div>
-          </div>
-        </div>
-
-        <!-- Player 2 -->
-        <div class="player-card">
-          <div class="player-avatar-wrapper">
-            <div class="avatar large" [ngStyle]="{'background-image': getAvatarUrl(comp.player2?.playerId, 'large')}">
-              {{ comp.player2?.name?.charAt(0) }}
-            </div>
-            <h3>{{ comp.player2?.name }}</h3>
-          </div>
-          <div class="stat">
-            <span class="label">{{ 'RATING' | translate }}</span>
-            <span class="value">{{ comp.player2?.rating?.toFixed(0) }}</span>
-          </div>
-           <div class="stat">
-            <span class="label">{{ 'CONFIDENCE' | translate }}</span>
-             <mat-chip [color]="getConfidenceColor(comp.player2?.confidenceLevel || '')" selected>
-              {{ (comp.player2?.confidenceLevel || '') | translate }}
-            </mat-chip>
-          </div>
-        </div>
+    @if (loading()) {
+      <div class="loading-container">
+        <mat-spinner></mat-spinner>
       </div>
+    }
 
-      <!-- Head to Head Stats -->
-      <app-head-to-head-stats [comparison]="comp"></app-head-to-head-stats>
+    @if (comparison(); as comp) {
+      <div class="comparison-content">
+        <!-- Players Side by Side -->
+        <div class="players-row">
+          <!-- Player 1 -->
+          <div class="player-card">
+            <div class="player-avatar-wrapper">
+              <div class="avatar large" [ngStyle]="{'background-image': getAvatarUrl(comp.player1?.playerId, 'large')}">
+                {{ comp.player1?.name?.charAt(0) }}
+              </div>
+              <h3>{{ comp.player1?.name }}</h3>
+            </div>
+            <div class="stat">
+              <span class="label">{{ 'RATING' | translate }}</span>
+              <span class="value">{{ comp.player1?.rating?.toFixed(0) }}</span>
+            </div>
+            <div class="stat">
+              <span class="label">{{ 'CONFIDENCE' | translate }}</span>
+               <mat-chip [color]="getConfidenceColor(comp.player1?.confidenceLevel || '')" selected>
+                {{ (comp.player1?.confidenceLevel || '') | translate }}
+              </mat-chip>
+            </div>
+          </div>
 
-      <!-- Match History -->
-      <app-match-history [matches]="comp.matches"></app-match-history>
-    </div>
+          <!-- Center Stats -->
+          <div class="center-stats">
+            <div class="prob-box">
+              <div class="prob-label">{{ 'WIN_PROBABILITY' | translate }}</div>
+              <div class="prob-value">{{ formatProb(comp.probabilityP1Wins) }}</div>
+              <div class="prob-sub">for {{ comp.player1?.name }}</div>
+            </div>
+          </div>
+
+          <!-- Player 2 -->
+          <div class="player-card">
+            <div class="player-avatar-wrapper">
+              <div class="avatar large" [ngStyle]="{'background-image': getAvatarUrl(comp.player2?.playerId, 'large')}">
+                {{ comp.player2?.name?.charAt(0) }}
+              </div>
+              <h3>{{ comp.player2?.name }}</h3>
+            </div>
+            <div class="stat">
+              <span class="label">{{ 'RATING' | translate }}</span>
+              <span class="value">{{ comp.player2?.rating?.toFixed(0) }}</span>
+            </div>
+             <div class="stat">
+              <span class="label">{{ 'CONFIDENCE' | translate }}</span>
+               <mat-chip [color]="getConfidenceColor(comp.player2?.confidenceLevel || '')" selected>
+                {{ (comp.player2?.confidenceLevel || '') | translate }}
+              </mat-chip>
+            </div>
+          </div>
+        </div>
+
+        <!-- Head to Head Stats -->
+        <app-head-to-head-stats [comparison]="comp"></app-head-to-head-stats>
+
+        <!-- Match History -->
+        <app-match-history [matches]="comp.matches"></app-match-history>
+      </div>
+    }
   </mat-dialog-content>
 </div>

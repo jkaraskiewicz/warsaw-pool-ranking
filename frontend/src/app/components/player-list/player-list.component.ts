@@ -1,4 +1,4 @@
-import { Component, computed } from '@angular/core';
+import { Component, computed, ChangeDetectionStrategy } from '@angular/core';
 import { CommonModule, DecimalPipe } from '@angular/common';
 import { FormsModule } from '@angular/forms';
 import { MatDialog } from '@angular/material/dialog';
@@ -48,7 +48,8 @@ import { TranslatePipe } from '../../pipes/translate.pipe';
     DecimalPipe
   ],
   templateUrl: './player-list.component.html',
-  styleUrls: ['./player-list.component.scss']
+  styleUrls: ['./player-list.component.scss'],
+  changeDetection: ChangeDetectionStrategy.OnPush
 })
 export class PlayerListComponent {
   displayedColumns: string[] = ['select', 'interested', 'rank', 'name', 'rating', 'games', 'matches', 'confidence'];

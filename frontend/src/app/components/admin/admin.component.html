@@ -5,30 +5,38 @@
     </mat-card-header>
 
     <mat-card-content>
-      <ng-container *ngIf="!adminService.isLoggedIn()">
+      @if (!adminService.isLoggedIn()) {
         <form (submit)="login()">
           <mat-form-field appearance="outline" class="full-width">
             <mat-label>{{ 'PASSWORD' | translate }}</mat-label>
-            <input matInput type="password" [(ngModel)]="password" name="password" required [disabled]="loginLoading">
+            <input matInput type="password" [ngModel]="password()" (ngModelChange)="password.set($event)" name="password" required [disabled]="loginLoading()">
           </mat-form-field>
-          <button mat-raised-button color="primary" type="submit" [disabled]="!password || loginLoading">
-            <span *ngIf="!loginLoading">{{ 'LOGIN' | translate }}</span>
-            <mat-spinner diameter="20" *ngIf="loginLoading"></mat-spinner>
+          <button mat-raised-button color="primary" type="submit" [disabled]="!password() || loginLoading()">
+            @if (!loginLoading()) {
+              <span>{{ 'LOGIN' | translate }}</span>
+            }
+            @if (loginLoading()) {
+              <mat-spinner diameter="20"></mat-spinner>
+            }
           </button>
         </form>
-      </ng-container>
+      }
 
-      <ng-container *ngIf="adminService.isLoggedIn()">
-        <p>{{ 'LOGGED_IN_AS_ADMIN' | translate }}</p>
-        <div class="actions">
-          <button mat-raised-button color="accent" (click)="refreshData()" [disabled]="loading">
-            <mat-icon>refresh</mat-icon>
-            {{ 'REFRESH_DATA' | translate }}
-            <mat-spinner diameter="20" *ngIf="loading" class="spinner-inline"></mat-spinner>
-          </button>
-          <button mat-stroked-button color="warn" (click)="logout()">{{ 'LOGOUT' | translate }}</button>
-        </div>
-      </ng-container>
+      @if (adminService.isLoggedIn()) {
+        <ng-container>
+          <p>{{ 'LOGGED_IN_AS_ADMIN' | translate }}</p>
+          <div class="actions">
+            <button mat-raised-button color="accent" (click)="refreshData()" [disabled]="loading()">
+              <mat-icon>refresh</mat-icon>
+              {{ 'REFRESH_DATA' | translate }}
+              @if (loading()) {
+                <mat-spinner diameter="20" class="spinner-inline"></mat-spinner>
+              }
+            </button>
+            <button mat-stroked-button color="warn" (click)="logout()">{{ 'LOGOUT' | translate }}</button>
+          </div>
+        </ng-container>
+      }
     </mat-card-content>
   </mat-card>
 </div>

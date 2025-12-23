@@ -1,4 +1,4 @@
-import { Component, Inject, OnInit, signal } from '@angular/core';
+import { Component, Inject, OnInit, signal, ChangeDetectionStrategy } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { MAT_DIALOG_DATA, MatDialogRef, MatDialogModule } from '@angular/material/dialog';
 import { MatIconModule } from '@angular/material/icon';
@@ -26,7 +26,8 @@ import { MatchHistoryComponent } from './history/match-history.component';
     MatchHistoryComponent
   ],
   templateUrl: './comparison.component.html',
-  styleUrls: ['./comparison.component.scss']
+  styleUrls: ['./comparison.component.scss'],
+  changeDetection: ChangeDetectionStrategy.OnPush
 })
 export class ComparisonComponent implements OnInit {
   comparison = signal<HeadToHeadResponse | null>(null);

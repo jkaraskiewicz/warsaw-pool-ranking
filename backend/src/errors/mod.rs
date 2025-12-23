@@ -1,32 +1,48 @@
-use anyhow::Context as _;
+use axum::{
+    http::StatusCode,
+    response::{IntoResponse, Response},
+    Json,
+};
+use serde_json::json;
+use thiserror::Error;
 
-/// Add context to fetch errors
-pub fn fetch_context(url: &str) -> String {
-    format!("Failed to fetch from: {}", url)
+#[derive(Debug, Error)]
+pub enum AppError {
+    #[error("Internal Server Error")]
+    InternalServerError,
+    #[error("{0}")]
+    NotFound(String),
+    #[error("{0}")]
+    BadRequest(String),
+    #[error(transparent)]
+    DatabaseError(#[from] rusqlite::Error),
+    #[error(transparent)]
+    AnyhowError(#[from] anyhow::Error),
 }
 
-/// Add context to parse errors
-pub fn parse_context(data_type: &str) -> String {
-    format!("Failed to parse {}", data_type)
-}
+impl IntoResponse for AppError {
+    fn into_response(self) -> Response {
+        let (status, error_message) = match self {
+            AppError::InternalServerError => (
+                StatusCode::INTERNAL_SERVER_ERROR,
+                "Internal Server Error".to_string(),
+            ),
+            AppError::NotFound(msg) => (StatusCode::NOT_FOUND, msg.to_string()),
+            AppError::BadRequest(msg) => (StatusCode::BAD_REQUEST, msg.to_string()),
+            AppError::DatabaseError(err) => (
+                StatusCode::INTERNAL_SERVER_ERROR,
+                format!("Database error: {}", err),
+            ),
+            AppError::AnyhowError(err) => (
+                StatusCode::INTERNAL_SERVER_ERROR,
+                format!("Internal error: {}", err),
+            ),
+        };
 
-/// Add context to cache errors
-pub fn cache_context(operation: &str, key: &str) -> String {
-    format!("Failed to {} cache for key: {}", operation, key)
-}
+        let body = Json(json!({
+            "error": error_message,
+        }));
 
-/// Wrap result with fetch context
-pub fn with_fetch_context<T, E>(result: Result<T, E>, url: &str) -> anyhow::Result<T>
-where
-    E: std::error::Error + Send + Sync + 'static,
-{
-    result.context(fetch_context(url))
-}
-
-/// Wrap result with parse context
-pub fn with_parse_context<T, E>(result: Result<T, E>, data_type: &str) -> anyhow::Result<T>
-where
-    E: std::error::Error + Send + Sync + 'static,
-{
-    result.context(parse_context(data_type))
+        (status, body).into_response()
+    }
 }

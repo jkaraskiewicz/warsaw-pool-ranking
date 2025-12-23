@@ -1,4 +1,4 @@
-import { Component, Input } from '@angular/core';
+import { Component, input, ChangeDetectionStrategy } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { TranslatePipe } from '../../../pipes/translate.pipe';
 import { HeadToHeadResponse } from '../../../models/api';
@@ -8,8 +8,9 @@ import { HeadToHeadResponse } from '../../../models/api';
   standalone: true,
   imports: [CommonModule, TranslatePipe],
   templateUrl: './head-to-head-stats.component.html',
-  styleUrls: ['./head-to-head-stats.component.scss']
+  styleUrls: ['./head-to-head-stats.component.scss'],
+  changeDetection: ChangeDetectionStrategy.OnPush
 })
 export class HeadToHeadStatsComponent {
-  @Input({ required: true }) comparison!: HeadToHeadResponse;
+  comparison = input.required<HeadToHeadResponse>();
 }

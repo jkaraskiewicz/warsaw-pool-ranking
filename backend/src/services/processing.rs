@@ -8,7 +8,8 @@ use crate::cache::Cache;
 use crate::config::settings::AppConfig;
 use crate::config::paths;
 use crate::database::{self, DbConn};
-use crate::domain::{self, ExpandedGame};
+use crate::domain::{ExpandedGame};
+use crate::fetchers::cuescore_models::{TournamentResponse, MatchResponse, PlayerInfo};
 use crate::rating;
 
 pub struct ProcessingService {
@@ -95,7 +96,7 @@ impl ProcessingService {
         Ok(())
     }
 
-    fn load_tournaments_from_cache(&self) -> Result<Vec<crate::domain::TournamentResponse>> {
+    fn load_tournaments_from_cache(&self) -> Result<Vec<TournamentResponse>> {
         self.cache
             .load_parsed("tournaments")?
             .ok_or_else(|| anyhow::anyhow!("No tournaments found in cache"))
@@ -104,7 +105,7 @@ impl ProcessingService {
     fn process_tournaments(
         &self,
         conn: &mut DbConn,
-        tournaments: &[crate::domain::TournamentResponse],
+        tournaments: &[TournamentResponse],
     ) -> Result<Vec<ExpandedGame>> {
         let mut all_games = Vec::new();
         let mut skipped_count = 0;
@@ -160,7 +161,7 @@ impl ProcessingService {
     fn insert_tournament_to_db(
         &self,
         conn: &mut DbConn,
-        tournament: &crate::domain::TournamentResponse,
+        tournament: &TournamentResponse,
     ) -> Result<database::Tournament> {
         let start_date = self.parse_tournament_date(&tournament.starttime)?;
         let end_date = self.parse_optional_tournament_date(&tournament.stoptime)?;
@@ -206,15 +207,15 @@ impl ProcessingService {
 
     fn expand_tournament_games(
         &self,
-        tournament: &crate::domain::TournamentResponse,
+        tournament: &TournamentResponse,
     ) -> Result<Vec<ExpandedGame>> {
         domain::games_expansion::expand_tournament_to_games(tournament)
     }
 
     fn extract_player_info(
         &self,
-        tournament: &crate::domain::TournamentResponse,
-    ) -> HashMap<i64, domain::PlayerInfo> {
+        tournament: &TournamentResponse,
+    ) -> HashMap<i64, PlayerInfo> {
         let mut players = HashMap::new();
 
         for match_data in &tournament.matches {
@@ -236,7 +237,7 @@ impl ProcessingService {
         conn: &mut DbConn,
         games: &[ExpandedGame],
         tournament_db_id: i32,
-        player_info_map: &HashMap<i64, domain::PlayerInfo>,
+        player_info_map: &HashMap<i64, PlayerInfo>,
     ) -> Result<()> {
         for game in games {
             let first_player_info = player_info_map.get(&game.winner_id)
@@ -265,9 +266,9 @@ impl ProcessingService {
     fn upsert_player(
         &self,
         conn: &mut DbConn,
-        player_info: &crate::domain::PlayerInfo,
+        player_info: &PlayerInfo,
     ) -> Result<database::Player> {
-        let cuescore_id = player_info.player_id.unwrap_or(0);
+        let cuescore_id = player_info.player_id.ok_or_else(|| anyhow::anyhow!("Missing cuescore_id for player: {}", player_info.name))?;
         let name = &player_info.name;
         let avatar_url = player_info.image.as_deref();
         database::players::upsert_player(conn, cuescore_id, name, avatar_url)

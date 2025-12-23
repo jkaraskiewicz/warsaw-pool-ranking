@@ -56,7 +56,14 @@ export const TRANSLATION_KEYS = {
   ADD_TO_INTERESTED: 'ADD_TO_INTERESTED',
   REMOVE_FROM_INTERESTED: 'REMOVE_FROM_INTERESTED',
   NO_INTERESTED_PLAYERS: 'NO_INTERESTED_PLAYERS',
-  NO_INTERESTED_PLAYERS_MESSAGE: 'NO_INTERESTED_PLAYERS_MESSAGE'
+  NO_INTERESTED_PLAYERS_MESSAGE: 'NO_INTERESTED_PLAYERS_MESSAGE',
+  LOGIN_SUCCESSFUL: 'LOGIN_SUCCESSFUL',
+  LOGIN_FAILED: 'LOGIN_FAILED',
+  LOGIN_REQUEST_FAILED: 'LOGIN_REQUEST_FAILED',
+  REFRESH_SUCCESSFUL: 'REFRESH_SUCCESSFUL',
+  SESSION_EXPIRED: 'SESSION_EXPIRED',
+  REFRESH_FAILED: 'REFRESH_FAILED',
+  CLOSE: 'CLOSE'
 };
 
 export const DICTIONARY = {
@@ -118,7 +125,14 @@ export const DICTIONARY = {
     [TRANSLATION_KEYS.ADD_TO_INTERESTED]: 'Add to interested players',
     [TRANSLATION_KEYS.REMOVE_FROM_INTERESTED]: 'Remove from interested players',
     [TRANSLATION_KEYS.NO_INTERESTED_PLAYERS]: 'No Interested Players Found',
-    [TRANSLATION_KEYS.NO_INTERESTED_PLAYERS_MESSAGE]: 'You haven\'t marked any players as interested yet, or none of your interested players match the current filters.'
+    [TRANSLATION_KEYS.NO_INTERESTED_PLAYERS_MESSAGE]: 'You haven\'t marked any players as interested yet, or none of your interested players match the current filters.',
+    [TRANSLATION_KEYS.LOGIN_SUCCESSFUL]: 'Login successful',
+    [TRANSLATION_KEYS.LOGIN_FAILED]: 'Login failed',
+    [TRANSLATION_KEYS.LOGIN_REQUEST_FAILED]: 'Login request failed. Please try again.',
+    [TRANSLATION_KEYS.REFRESH_SUCCESSFUL]: 'Refresh triggered successfully',
+    [TRANSLATION_KEYS.SESSION_EXPIRED]: 'Session expired. Please login again.',
+    [TRANSLATION_KEYS.REFRESH_FAILED]: 'Refresh failed',
+    [TRANSLATION_KEYS.CLOSE]: 'Close'
   },
   pl: {
     [TRANSLATION_KEYS.PLAYER_RANKINGS]: 'Ranking Graczy',
@@ -178,6 +192,13 @@ export const DICTIONARY = {
     [TRANSLATION_KEYS.ADD_TO_INTERESTED]: 'Dodaj do obserwowanych',
     [TRANSLATION_KEYS.REMOVE_FROM_INTERESTED]: 'Usuń z obserwowanych',
     [TRANSLATION_KEYS.NO_INTERESTED_PLAYERS]: 'Nie Znaleziono Obserwowanych Graczy',
-    [TRANSLATION_KEYS.NO_INTERESTED_PLAYERS_MESSAGE]: 'Nie oznaczyłeś jeszcze żadnych graczy jako obserwowanych lub żaden z obserwowanych graczy nie pasuje do obecnych filtrów.'
+    [TRANSLATION_KEYS.NO_INTERESTED_PLAYERS_MESSAGE]: 'Nie oznaczyłeś jeszcze żadnych graczy jako obserwowanych lub żaden z obserwowanych graczy nie pasuje do obecnych filtrów.',
+    [TRANSLATION_KEYS.LOGIN_SUCCESSFUL]: 'Logowanie udane',
+    [TRANSLATION_KEYS.LOGIN_FAILED]: 'Logowanie nieudane',
+    [TRANSLATION_KEYS.LOGIN_REQUEST_FAILED]: 'Błąd logowania. Spróbuj ponownie.',
+    [TRANSLATION_KEYS.REFRESH_SUCCESSFUL]: 'Pomyślnie rozpoczęto odświeżanie',
+    [TRANSLATION_KEYS.SESSION_EXPIRED]: 'Sesja wygasła. Zaloguj się ponownie.',
+    [TRANSLATION_KEYS.REFRESH_FAILED]: 'Odświeżanie nieudane',
+    [TRANSLATION_KEYS.CLOSE]: 'Zamknij'
   }
 };

@@ -1,4 +1,4 @@
-import { Component, Input } from '@angular/core';
+import { Component, input, ChangeDetectionStrategy } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { TranslatePipe } from '../../../pipes/translate.pipe';
 import { HeadToHeadMatch } from '../../../models/api';
@@ -8,10 +8,11 @@ import { HeadToHeadMatch } from '../../../models/api';
   standalone: true,
   imports: [CommonModule, TranslatePipe],
   templateUrl: './match-history.component.html',
-  styleUrls: ['./match-history.component.scss']
+  styleUrls: ['./match-history.component.scss'],
+  changeDetection: ChangeDetectionStrategy.OnPush
 })
 export class MatchHistoryComponent {
-  @Input({ required: true }) matches!: HeadToHeadMatch[];
+  matches = input.required<HeadToHeadMatch[]>();
 
   formatDate(dateStr: string): string {
     const date = new Date(dateStr);
