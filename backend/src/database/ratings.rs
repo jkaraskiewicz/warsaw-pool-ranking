@@ -94,20 +94,24 @@ pub fn list_ranked_players(
     filter: &PlayerFilter,
 ) -> Result<(Vec<PlayerWithRating>, usize)> {
     let mut where_clauses = Vec::new();
-    let mut params: Vec<Box<dyn rusqlite::ToSql>> = Vec::new();
+    let mut count_params: Vec<&dyn rusqlite::ToSql> = Vec::new();
+    let mut query_params: Vec<&dyn rusqlite::ToSql> = Vec::new();
 
-    // Mandatory filters
-    where_clauses.push("r.rating_type = ?");
-    params.push(Box::new(filter.rating_type.clone()));
-
-    if let Some(min_games) = filter.min_games {
-        where_clauses.push("r.games_played >= ?");
-        params.push(Box::new(min_games));
+    // Add DSL-generated filters
+    if !filter.sql_filter.is_empty() {
+        where_clauses.push(filter.sql_filter.where_clause.as_str());
+        for param in &filter.sql_filter.params {
+            count_params.push(param.as_ref());
+            query_params.push(param.as_ref());
+        }
     }
 
-    if let Some(name_filter) = &filter.name_contains {
-        where_clauses.push("p.name LIKE ?");
-        params.push(Box::new(format!("%{}%", name_filter)));
+    // Store min_games for later use (can't push reference to local variable)
+    let min_games_holder = filter.min_games;
+    if let Some(ref min_games) = min_games_holder {
+        where_clauses.push("r.games_played >= ?");
+        count_params.push(min_games);
+        query_params.push(min_games);
     }
 
     let where_sql = if where_clauses.is_empty() {
@@ -121,7 +125,7 @@ pub fn list_ranked_players(
         "SELECT COUNT(*) FROM players p JOIN ratings r ON p.id = r.player_id {}",
         where_sql
     );
-    let total: usize = conn.query_row(&count_sql, rusqlite::params_from_iter(params.iter()), |row| row.get(0))?;
+    let total: usize = conn.query_row(&count_sql, rusqlite::params_from_iter(&count_params), |row| row.get(0))?;
 
     // Sort
     let sort_col = match filter.sort_by {
@@ -144,11 +148,13 @@ pub fn list_ranked_players(
         where_sql, sort_col, sort_dir
     );
 
-    params.push(Box::new(filter.limit as i64));
-    params.push(Box::new(filter.offset as i64));
+    let limit_value = filter.limit as i64;
+    let offset_value = filter.offset as i64;
+    query_params.push(&limit_value);
+    query_params.push(&offset_value);
 
     let mut stmt = conn.prepare(&sql)?;
-    let rows = stmt.query_map(rusqlite::params_from_iter(params.iter()), |row| {
+    let rows = stmt.query_map(rusqlite::params_from_iter(&query_params), |row| {
         Ok(PlayerWithRating {
             player_id: row.get(0)?,
             cuescore_id: row.get(1)?,

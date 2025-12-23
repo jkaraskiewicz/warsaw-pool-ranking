@@ -1,5 +1,7 @@
 use chrono::NaiveDateTime;
 
+use crate::api::filter::SqlFilter;
+
 #[derive(Debug, Clone)]
 pub struct Player {
     pub id: i32,
@@ -46,6 +48,21 @@ pub struct DbRating {
     pub created_at: Option<NaiveDateTime>,
 }
 
+#[derive(Debug, Clone)]
+pub struct AvatarBlob {
+    pub id: i32,
+    pub player_id: i32,
+    pub size: String,
+    pub image_data: Vec<u8>,
+    pub format: String,
+    pub source_url: String,
+    pub source_url_hash: String,
+    pub width: i32,
+    pub height: i32,
+    pub created_at: Option<NaiveDateTime>,
+    pub updated_at: Option<NaiveDateTime>,
+}
+
 // DTOs for joined queries
 #[derive(Debug, Clone)]
 pub struct PlayerWithRating {
@@ -71,11 +88,10 @@ pub enum SortOrder {
     Desc,
 }
 
-#[derive(Debug, Clone)]
+#[derive(Debug)]
 pub struct PlayerFilter {
-    pub name_contains: Option<String>,
+    pub sql_filter: SqlFilter,
     pub min_games: Option<i32>,
-    pub rating_type: String,
     pub sort_by: SortColumn,
     pub sort_order: SortOrder,
     pub limit: usize,

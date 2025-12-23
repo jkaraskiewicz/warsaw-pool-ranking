@@ -49,6 +49,23 @@
     <h2 class="card-title">{{ 'PLAYER_RANKINGS' | translate }}</h2>
 
     <div class="toolbar-actions">
+      <!-- Interested Players Filter Button -->
+      <button
+        mat-icon-button
+        [class.active]="interestedFilterActive()"
+        (click)="toggleInterestedFilter()"
+        [matTooltip]="(interestedFilterActive() ? 'SHOW_ALL_PLAYERS' : 'SHOW_INTERESTED_ONLY') | translate"
+        class="interested-filter-btn"
+      >
+        <mat-icon
+          [matBadge]="interestedCount() > 0 ? interestedCount() : null"
+          matBadgeColor="accent"
+          matBadgeSize="small"
+        >
+          {{ interestedFilterActive() ? 'filter_alt' : 'filter_alt_off' }}
+        </mat-icon>
+      </button>
+
       <!-- Search -->
       <div class="search-wrapper">
         <input
@@ -94,6 +111,22 @@
         </td>
       </ng-container>
 
+      <!-- Interested Star -->
+      <ng-container matColumnDef="interested">
+        <th mat-header-cell *matHeaderCellDef></th>
+        <td mat-cell *matCellDef="let player">
+          <button
+            mat-icon-button
+            (click)="toggleInterested($event, player)"
+            [class.interested]="isInterested(player)"
+            class="star-btn"
+            [matTooltip]="(isInterested(player) ? 'REMOVE_FROM_INTERESTED' : 'ADD_TO_INTERESTED') | translate"
+          >
+            <mat-icon>{{ isInterested(player) ? 'star' : 'star_border' }}</mat-icon>
+          </button>
+        </td>
+      </ng-container>
+
       <!-- Rank -->
       <ng-container matColumnDef="rank">
         <th mat-header-cell *matHeaderCellDef>{{ 'RANK' | translate }}</th>
@@ -109,7 +142,7 @@
         <th mat-header-cell *matHeaderCellDef mat-sort-header="name">{{ 'NAME' | translate }}</th>
         <td mat-cell *matCellDef="let player">
           <div class="player-cell">
-            <div class="avatar" [ngStyle]="{'background-image': player.avatarUrl ? 'url(' + player.avatarUrl + ')' : 'none'}">
+            <div class="avatar" [ngStyle]="{'background-image': getAvatarUrl(player.playerId, 'small')}">
               <ng-container *ngIf="!player.avatarUrl">{{ player.name.charAt(0) }}</ng-container>
             </div>
             <div class="player-info">
@@ -157,6 +190,16 @@
       <tr mat-header-row *matHeaderRowDef="displayedColumns"></tr>
       <tr mat-row *matRowDef="let row; columns: displayedColumns;" class="table-row"></tr>
     </table>
+
+    <!-- Empty State -->
+    <div class="empty-state" *ngIf="facade.hasNoResults()">
+      <mat-icon class="empty-icon">star_border</mat-icon>
+      <h3 class="empty-title">{{ 'NO_INTERESTED_PLAYERS' | translate }}</h3>
+      <p class="empty-message">{{ 'NO_INTERESTED_PLAYERS_MESSAGE' | translate }}</p>
+      <button mat-button color="primary" (click)="toggleInterestedFilter()">
+        {{ 'SHOW_ALL_PLAYERS' | translate }}
+      </button>
+    </div>
   </div>
 
   <!-- Paginator -->

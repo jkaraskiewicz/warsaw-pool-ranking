@@ -17,7 +17,7 @@
         <!-- Player 1 -->
         <div class="player-card">
           <div class="player-avatar-wrapper">
-            <div class="avatar large" [ngStyle]="{'background-image': comp.player1?.avatarUrl ? 'url(' + comp.player1?.avatarUrl + ')' : 'none'}">
+            <div class="avatar large" [ngStyle]="{'background-image': getAvatarUrl(comp.player1?.playerId, 'large')}">
               <ng-container *ngIf="!comp.player1?.avatarUrl">{{ comp.player1?.name?.charAt(0) }}</ng-container>
             </div>
             <h3>{{ comp.player1?.name }}</h3>
@@ -46,7 +46,7 @@
         <!-- Player 2 -->
         <div class="player-card">
           <div class="player-avatar-wrapper">
-            <div class="avatar large" [ngStyle]="{'background-image': comp.player2?.avatarUrl ? 'url(' + comp.player2?.avatarUrl + ')' : 'none'}">
+            <div class="avatar large" [ngStyle]="{'background-image': getAvatarUrl(comp.player2?.playerId, 'large')}">
               <ng-container *ngIf="!comp.player2?.avatarUrl">{{ comp.player2?.name?.charAt(0) }}</ng-container>
             </div>
             <h3>{{ comp.player2?.name }}</h3>

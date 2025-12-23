@@ -1,3 +1,4 @@
+pub mod avatars;
 pub mod connection;
 pub mod games;
 pub mod models;

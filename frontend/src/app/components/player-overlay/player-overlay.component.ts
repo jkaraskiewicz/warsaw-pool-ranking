@@ -80,6 +80,11 @@ export class PlayerOverlayComponent implements OnInit {
     return `${day}/${month}/${year}`;
   }
 
+  getAvatarUrl(playerId: number | undefined, size: 'small' | 'medium' | 'large'): string {
+    if (!playerId) return 'none';
+    return `url(/api/avatars/${playerId}/${size})`;
+  }
+
   close(): void {
     this.dialogRef.close();
   }

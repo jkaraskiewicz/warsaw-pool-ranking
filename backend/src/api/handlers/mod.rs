@@ -4,8 +4,9 @@ use serde::Deserialize;
 
 use crate::config::settings::AppConfig;
 
-pub mod players;
 pub mod admin;
+pub mod avatars;
+pub mod players;
 
 #[derive(Clone)] // AppState usually needs Clone if used in FromRef, but here we use Arc<AppState> so it's fine.
 pub struct AppState {
@@ -20,5 +21,5 @@ pub struct PlayerParams {
     pub sort_by: Option<String>,
     pub order: Option<String>,
     pub filter: Option<String>,
-    pub rating_type: Option<String>,
+    pub rating_type: Option<String>, // Keep for detail/comparison endpoints
 }

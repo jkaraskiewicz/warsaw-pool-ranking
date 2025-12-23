@@ -359,6 +359,86 @@
   }
 }
 
+/* Interested Filter Button */
+.interested-filter-btn {
+  transition: all 0.2s;
+  margin-right: var(--space-3);
+
+  &.active {
+    background-color: var(--indigo-500-10);
+    color: var(--color-primary);
+  }
+
+  mat-icon {
+    color: var(--text-tertiary);
+  }
+
+  &.active mat-icon {
+    color: var(--color-primary);
+  }
+}
+
+/* Star Button in Table */
+.star-btn {
+  width: 36px;
+  height: 36px;
+  padding: 0;
+
+  mat-icon {
+    color: var(--text-tertiary);
+    transition: color 0.2s, transform 0.2s;
+  }
+
+  &.interested mat-icon {
+    color: var(--amber-400);
+    transform: scale(1.1);
+  }
+
+  &:hover mat-icon {
+    color: var(--amber-500);
+    transform: scale(1.15);
+  }
+}
+
+/* Interested Column Width */
+.mat-column-interested {
+  width: 56px;
+  text-align: center;
+  padding: 0 var(--space-2) !important;
+}
+
+/* Empty State */
+.empty-state {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: var(--space-16) var(--space-8);
+  text-align: center;
+
+  .empty-icon {
+    font-size: 4rem;
+    width: 4rem;
+    height: 4rem;
+    color: var(--text-tertiary);
+    margin-bottom: var(--space-4);
+    opacity: 0.5;
+  }
+
+  .empty-title {
+    font-size: var(--text-xl);
+    font-weight: 600;
+    color: var(--text-primary);
+    margin: 0 0 var(--space-2);
+  }
+
+  .empty-message {
+    color: var(--text-secondary);
+    margin: 0 0 var(--space-6);
+    max-width: 400px;
+  }
+}
+
 // Light theme overrides
 :host-context(.light-theme) {
   // Loading overlay - lighter background for light theme
@@ -487,6 +567,35 @@
     ::ng-deep .mat-mdc-select-arrow svg {
       color: var(--text-primary) !important;
       fill: var(--text-primary) !important;
+    }
+  }
+
+  // Interested filter button
+  .interested-filter-btn.active {
+    background-color: var(--color-primary-bg);
+  }
+
+  // Star button
+  .star-btn mat-icon {
+    color: var(--text-tertiary);
+  }
+
+  .star-btn.interested mat-icon {
+    color: var(--amber-500);
+  }
+
+  // Empty state
+  .empty-state {
+    .empty-icon {
+      color: var(--text-tertiary);
+    }
+
+    .empty-title {
+      color: var(--text-primary);
+    }
+
+    .empty-message {
+      color: var(--text-secondary);
     }
   }
 }

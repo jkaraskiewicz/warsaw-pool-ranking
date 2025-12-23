@@ -13,8 +13,11 @@ import { MatProgressSpinnerModule } from '@angular/material/progress-spinner';
 import { MatChipsModule } from '@angular/material/chips';
 import { MatCheckboxModule } from '@angular/material/checkbox';
 import { MatButtonModule } from '@angular/material/button';
+import { MatBadgeModule } from '@angular/material/badge';
+import { MatTooltipModule } from '@angular/material/tooltip';
 
 import { PlayerListFacade } from './player-list.facade';
+import { InterestedPlayersService } from '../../services/interested-players.service';
 import { PlayerListItem } from '../../models/api';
 import { PlayerOverlayComponent } from '../player-overlay/player-overlay.component';
 import { ComparisonComponent } from '../comparison/comparison.component';
@@ -38,6 +41,8 @@ import { TranslatePipe } from '../../pipes/translate.pipe';
     MatChipsModule,
     MatCheckboxModule,
     MatButtonModule,
+    MatBadgeModule,
+    MatTooltipModule,
     RatingTypeSelectorComponent,
     TranslatePipe,
     DecimalPipe
@@ -46,11 +51,15 @@ import { TranslatePipe } from '../../pipes/translate.pipe';
   styleUrls: ['./player-list.component.scss']
 })
 export class PlayerListComponent {
-  displayedColumns: string[] = ['select', 'rank', 'name', 'rating', 'games', 'matches', 'confidence'];
+  displayedColumns: string[] = ['select', 'interested', 'rank', 'name', 'rating', 'games', 'matches', 'confidence'];
   pageSizeOptions: number[] = [10, 25, 50, 100];
   searchQuery = '';
 
   selection = new Set<PlayerListItem>();
+
+  // Computed signals for interested filter UI
+  interestedFilterActive = computed(() => this.facade.state().showInterestedOnly);
+  interestedCount = computed(() => this.interestedPlayersService.count());
 
   // Computed signals for stats of current page
   averageRating = computed(() => {
@@ -73,7 +82,8 @@ export class PlayerListComponent {
 
   constructor(
     public facade: PlayerListFacade,
-    private dialog: MatDialog
+    private dialog: MatDialog,
+    public interestedPlayersService: InterestedPlayersService
   ) {}
 
   onSearchChange(): void {
@@ -90,6 +100,20 @@ export class PlayerListComponent {
 
   onRatingTypeChange(type: string): void {
     this.facade.setRatingType(type);
+  }
+
+  toggleInterestedFilter(): void {
+    const current = this.facade.state().showInterestedOnly;
+    this.facade.setShowInterestedOnly(!current);
+  }
+
+  toggleInterested(event: Event, player: PlayerListItem): void {
+    event.stopPropagation();
+    this.interestedPlayersService.toggleInterested(player.playerId);
+  }
+
+  isInterested(player: PlayerListItem): boolean {
+    return this.interestedPlayersService.isInterested(player.playerId);
   }
 
   toggleSelection(player: PlayerListItem) {
@@ -142,5 +166,10 @@ export class PlayerListComponent {
       default:
         return '';
     }
+  }
+
+  getAvatarUrl(playerId: number | undefined, size: 'small' | 'medium' | 'large'): string {
+    if (!playerId) return 'none';
+    return `url(/api/avatars/${playerId}/${size})`;
   }
 }

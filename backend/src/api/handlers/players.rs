@@ -7,6 +7,7 @@ use std::sync::Arc;
 use urlencoding::encode;
 
 use crate::api::models::{PlayerListItem, PlayerListResponse, PlayerDetail, HeadToHeadMatch, HeadToHeadResponse, HeadToHeadStats, MatchResult};
+use crate::api::filter::{parser::parse_filter_dsl, sql_builder::build_sql_filter};
 use crate::database::{self, models::{PlayerFilter, SortColumn, SortOrder}};
 use super::{AppState, PlayerParams};
 
@@ -14,10 +15,21 @@ pub async fn get_players(
     State(state): State<Arc<AppState>>,
     Query(params): Query<PlayerParams>,
 ) -> impl IntoResponse {
+    // Parse filter DSL
+    let filter_exprs = match parse_filter_dsl(&params.filter.unwrap_or_default()) {
+        Ok(exprs) => exprs,
+        Err(e) => return (StatusCode::BAD_REQUEST, format!("Invalid filter syntax: {}", e)).into_response(),
+    };
+
+    // Build SQL filter
+    let sql_filter = match build_sql_filter(filter_exprs) {
+        Ok(filter) => filter,
+        Err(e) => return (StatusCode::BAD_REQUEST, format!("Invalid filter: {}", e)).into_response(),
+    };
+
     let page = params.page.unwrap_or(1).max(1);
     let page_size = params.page_size.unwrap_or(100).clamp(1, 1000);
     let offset = (page - 1) * page_size;
-    let rating_type = params.rating_type.unwrap_or_else(|| "all".to_string());
 
     let sort_by = match params.sort_by.as_deref() {
         Some("name") => SortColumn::Name,
@@ -37,9 +49,8 @@ pub async fn get_players(
     };
 
     let filter = PlayerFilter {
-        name_contains: params.filter,
+        sql_filter,
         min_games: Some(state.config.rating.min_ranked_games),
-        rating_type,
         sort_by,
         sort_order,
         limit: page_size,

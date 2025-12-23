@@ -73,4 +73,9 @@ export class ComparisonComponent implements OnInit {
   formatProb(prob: number): string {
     return (prob * 100).toFixed(1) + '%';
   }
+
+  getAvatarUrl(playerId: number | undefined, size: 'small' | 'medium' | 'large'): string {
+    if (!playerId) return 'none';
+    return `url(/api/avatars/${playerId}/${size})`;
+  }
 }

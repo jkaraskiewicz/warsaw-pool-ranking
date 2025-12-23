@@ -1,5 +1,6 @@
 -- SQLite Schema
 
+DROP TABLE IF EXISTS avatars;
 DROP TABLE IF EXISTS ratings;
 DROP TABLE IF EXISTS games;
 DROP TABLE IF EXISTS tournaments;
@@ -60,3 +61,21 @@ CREATE TABLE ratings (
 CREATE INDEX idx_ratings_player ON ratings(player_id);
 CREATE INDEX idx_ratings_type_rank ON ratings(rating_type, rating DESC);
 CREATE INDEX idx_ratings_calculated_at ON ratings(calculated_at);
+
+CREATE TABLE avatars (
+    id INTEGER PRIMARY KEY AUTOINCREMENT,
+    player_id INTEGER NOT NULL REFERENCES players(id) ON DELETE CASCADE,
+    size TEXT NOT NULL CHECK(size IN ('small', 'medium', 'large')),
+    image_data BLOB NOT NULL,
+    format TEXT NOT NULL DEFAULT 'webp',
+    source_url TEXT NOT NULL,
+    source_url_hash TEXT NOT NULL,
+    width INTEGER NOT NULL,
+    height INTEGER NOT NULL,
+    created_at TEXT DEFAULT CURRENT_TIMESTAMP,
+    updated_at TEXT DEFAULT CURRENT_TIMESTAMP,
+    UNIQUE(player_id, size)
+);
+
+CREATE INDEX idx_avatars_player_size ON avatars(player_id, size);
+CREATE INDEX idx_avatars_source_hash ON avatars(source_url_hash);

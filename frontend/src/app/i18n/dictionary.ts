@@ -50,7 +50,13 @@ export const TRANSLATION_KEYS = {
   HIGHEST_RATING: 'HIGHEST_RATING',
   TOTAL_GAMES: 'TOTAL_GAMES',
   CURRENT_PAGE: 'CURRENT_PAGE',
-  RECENT_MATCHES: 'RECENT_MATCHES'
+  RECENT_MATCHES: 'RECENT_MATCHES',
+  SHOW_INTERESTED_ONLY: 'SHOW_INTERESTED_ONLY',
+  SHOW_ALL_PLAYERS: 'SHOW_ALL_PLAYERS',
+  ADD_TO_INTERESTED: 'ADD_TO_INTERESTED',
+  REMOVE_FROM_INTERESTED: 'REMOVE_FROM_INTERESTED',
+  NO_INTERESTED_PLAYERS: 'NO_INTERESTED_PLAYERS',
+  NO_INTERESTED_PLAYERS_MESSAGE: 'NO_INTERESTED_PLAYERS_MESSAGE'
 };
 
 export const DICTIONARY = {
@@ -106,7 +112,13 @@ export const DICTIONARY = {
     [TRANSLATION_KEYS.HIGHEST_RATING]: 'Highest Rating',
     [TRANSLATION_KEYS.TOTAL_GAMES]: 'Total Games',
     [TRANSLATION_KEYS.CURRENT_PAGE]: 'Current Page',
-    [TRANSLATION_KEYS.RECENT_MATCHES]: 'Recent Matches'
+    [TRANSLATION_KEYS.RECENT_MATCHES]: 'Recent Matches',
+    [TRANSLATION_KEYS.SHOW_INTERESTED_ONLY]: 'Show Interested Only',
+    [TRANSLATION_KEYS.SHOW_ALL_PLAYERS]: 'Show All Players',
+    [TRANSLATION_KEYS.ADD_TO_INTERESTED]: 'Add to interested players',
+    [TRANSLATION_KEYS.REMOVE_FROM_INTERESTED]: 'Remove from interested players',
+    [TRANSLATION_KEYS.NO_INTERESTED_PLAYERS]: 'No Interested Players Found',
+    [TRANSLATION_KEYS.NO_INTERESTED_PLAYERS_MESSAGE]: 'You haven\'t marked any players as interested yet, or none of your interested players match the current filters.'
   },
   pl: {
     [TRANSLATION_KEYS.PLAYER_RANKINGS]: 'Ranking Graczy',
@@ -160,6 +172,12 @@ export const DICTIONARY = {
     [TRANSLATION_KEYS.HIGHEST_RATING]: 'Najwyższy Ranking',
     [TRANSLATION_KEYS.TOTAL_GAMES]: 'Liczba Gier',
     [TRANSLATION_KEYS.CURRENT_PAGE]: 'Obecna Strona',
-    [TRANSLATION_KEYS.RECENT_MATCHES]: 'Ostatnie Mecze'
+    [TRANSLATION_KEYS.RECENT_MATCHES]: 'Ostatnie Mecze',
+    [TRANSLATION_KEYS.SHOW_INTERESTED_ONLY]: 'Pokaż Tylko Obserwowanych',
+    [TRANSLATION_KEYS.SHOW_ALL_PLAYERS]: 'Pokaż Wszystkich Graczy',
+    [TRANSLATION_KEYS.ADD_TO_INTERESTED]: 'Dodaj do obserwowanych',
+    [TRANSLATION_KEYS.REMOVE_FROM_INTERESTED]: 'Usuń z obserwowanych',
+    [TRANSLATION_KEYS.NO_INTERESTED_PLAYERS]: 'Nie Znaleziono Obserwowanych Graczy',
+    [TRANSLATION_KEYS.NO_INTERESTED_PLAYERS_MESSAGE]: 'Nie oznaczyłeś jeszcze żadnych graczy jako obserwowanych lub żaden z obserwowanych graczy nie pasuje do obecnych filtrów.'
   }
 };
