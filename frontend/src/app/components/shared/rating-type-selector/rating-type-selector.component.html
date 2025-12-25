@@ -4,7 +4,10 @@
   aria-label="Select rating type"
   class="rating-type-selector">
   @for (type of ratingTypes; track type.value) {
-    <mat-button-toggle [value]="type.value">
+    <mat-button-toggle [value]="type.value" [class.active-rating-type]="type.value === 'active'">
+      @if (type.value === 'active') {
+        <mat-icon>local_fire_department</mat-icon> <!-- Or 'flash_on', 'trending_up', 'star' -->
+      }
       {{ type.viewValue | translate }}
     </mat-button-toggle>
   }

@@ -26,7 +26,7 @@ export class PlayerListFacade {
     sortActive: 'rating',
     sortDirection: 'desc',
     nameFilter: '',
-    ratingType: 'all',
+    ratingType: 'active',
     showInterestedOnly: false
   });
 
