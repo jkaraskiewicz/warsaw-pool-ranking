@@ -36,10 +36,10 @@
   color: white;
   box-shadow: var(--shadow-primary);
   
-  mat-icon {
-    font-size: 2rem;
-    width: 2rem;
-    height: 2rem;
+  .custom-logo {
+    width: 2.5rem;
+    height: 2.5rem;
+    filter: drop-shadow(0 2px 4px rgba(0,0,0,0.2));
   }
 }
 

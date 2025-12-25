@@ -70,6 +70,12 @@ impl ProcessingService {
         let all_expanded_games = self.process_tournaments(&mut conn, &tournaments)?;
         info!("  → Expanded to {} individual games (total)", all_expanded_games.len());
 
+        // Apply time decay only once, on the full set of games, before filtering by period
+        self.apply_time_decay_weights(&mut all_expanded_games);
+
+        // Update player last_played dates based on processed games
+        self.update_player_last_played_dates(&mut conn)?;
+
         // Step 4: Calculate and save ratings for each period
         for period in &self.config.rating.periods {
             info!("  Calculating ratings for period: {}", period.name);
@@ -93,6 +99,25 @@ impl ProcessingService {
             info!("    → Saved ratings for period {} to database\n", period.name);
         }
 
+        Ok(())
+    }
+
+    fn update_player_last_played_dates(&self, conn: &mut DbConn) -> Result<()> {
+        info!("  Updating player last played dates...");
+        let player_ids = database::players::list_all(conn)?;
+
+        for player in player_ids {
+            // Query for the maximum game date for this player
+            let last_played_date: Option<NaiveDateTime> = conn.query_row(
+                "SELECT MAX(date) FROM games WHERE first_player_id = ?1 OR second_player_id = ?1",
+                rusqlite::params![player.id],
+                |row| row.get(0),
+            ).optional().context("Failed to query max game date")?;
+
+            if let Some(date) = last_played_date {
+                database::players::update_player_last_played(conn, player.id, date)?;
+            }
+        }
         Ok(())
     }
 

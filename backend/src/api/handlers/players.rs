@@ -4,6 +4,7 @@ use axum::{
 };
 use std::sync::Arc;
 use urlencoding::encode;
+use chrono::{Duration, Utc, NaiveDateTime};
 
 use crate::api::models::{
     PlayerListItem, PlayerListResponse, PlayerDetail, HeadToHeadMatch, HeadToHeadResponse, HeadToHeadStats, MatchResult,
@@ -43,11 +44,22 @@ pub async fn get_players(
         _ => SortOrder::Desc,
     };
 
+    let mut actual_rating_type = params.rating_type.unwrap_or_else(|| "all".to_string());
+    let mut last_played_cutoff: Option<NaiveDateTime> = None;
+
+    if actual_rating_type == "active" {
+        // For "active" ranking, we still query the "all" time rating, but filter by activity
+        actual_rating_type = "all".to_string();
+        let six_months_ago = Utc::now().naive_utc() - Duration::days(6 * 30); // Approximate 6 months
+        last_played_cutoff = Some(six_months_ago);
+    }
+
     let mut conn = state.pool.get().map_err(|_| AppError::InternalServerError)?;
 
     let filter = PlayerFilter {
         sql_filter,
         min_games: Some(state.config.rating.min_ranked_games),
+        last_played_cutoff, // Pass the new cutoff
         sort_by,
         sort_order,
         limit: page_size,

@@ -12,15 +12,13 @@ import { TranslatePipe } from '../../../pipes/translate.pipe';
   changeDetection: ChangeDetectionStrategy.OnPush
 })
 export class RatingTypeSelectorComponent {
-  selectedType = input<string>('all');
+  selectedType = input<string>('active');
   @Output() typeChange = new EventEmitter<string>();
 
   ratingTypes = [
+    { value: 'active', viewValue: 'ACTIVE' },
     { value: 'all', viewValue: 'ALL_TIME' },
     { value: '1y', viewValue: 'LAST_YEAR' },
     { value: '2y', viewValue: 'LAST_2_YEARS' },
-    { value: '3y', viewValue: 'LAST_3_YEARS' },
-    { value: '4y', viewValue: 'LAST_4_YEARS' },
-    { value: '5y', viewValue: 'LAST_5_YEARS' },
   ];
 }

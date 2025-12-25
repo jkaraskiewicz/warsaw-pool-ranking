@@ -10,6 +10,7 @@ import { HeadToHeadResponse } from '../../models/api';
 import { TranslatePipe } from '../../pipes/translate.pipe';
 import { HeadToHeadStatsComponent } from './stats/head-to-head-stats.component';
 import { MatchHistoryComponent } from './history/match-history.component';
+import { SkeletonComponent } from '../shared/skeleton/skeleton.component';
 
 @Component({
   selector: 'app-comparison',
@@ -23,7 +24,8 @@ import { MatchHistoryComponent } from './history/match-history.component';
     MatChipsModule,
     TranslatePipe,
     HeadToHeadStatsComponent,
-    MatchHistoryComponent
+    MatchHistoryComponent,
+    SkeletonComponent
   ],
   templateUrl: './comparison.component.html',
   styleUrls: ['./comparison.component.scss'],

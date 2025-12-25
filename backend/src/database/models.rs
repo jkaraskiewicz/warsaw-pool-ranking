@@ -8,6 +8,7 @@ pub struct Player {
     pub cuescore_id: i64,
     pub name: String,
     pub avatar_url: Option<String>,
+    pub last_played: Option<NaiveDateTime>, // New field
     pub created_at: Option<NaiveDateTime>,
 }
 
@@ -92,6 +93,7 @@ pub enum SortOrder {
 pub struct PlayerFilter {
     pub sql_filter: SqlFilter,
     pub min_games: Option<i32>,
+    pub last_played_cutoff: Option<NaiveDateTime>, // New field for filtering active players
     pub sort_by: SortColumn,
     pub sort_order: SortOrder,
     pub limit: usize,

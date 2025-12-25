@@ -30,6 +30,14 @@ impl PlayerRepository {
             count_params.push(min_games);
             query_params.push(min_games);
         }
+
+        // Add last_played_cutoff filter for active players
+        let last_played_cutoff_holder = filter.last_played_cutoff;
+        if let Some(ref cutoff) = last_played_cutoff_holder {
+            where_clauses.push("p.last_played >= ?");
+            count_params.push(cutoff);
+            query_params.push(cutoff);
+        }
     
         let where_sql = if where_clauses.is_empty() {
             String::new()

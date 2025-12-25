@@ -11,6 +11,7 @@ CREATE TABLE players (
     cuescore_id INTEGER UNIQUE,
     name TEXT NOT NULL,
     avatar_url TEXT,
+    last_played TEXT, -- New column
     created_at TEXT DEFAULT CURRENT_TIMESTAMP
 );
 

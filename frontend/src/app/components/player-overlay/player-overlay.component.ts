@@ -8,6 +8,7 @@ import { MatChipsModule } from '@angular/material/chips';
 import { PlayerService } from '../../services/player.service';
 import { PlayerDetail, PlayerRivalriesResponse } from '../../models/api';
 import { TranslatePipe } from '../../pipes/translate.pipe';
+import { SkeletonComponent } from '../shared/skeleton/skeleton.component';
 
 @Component({
   selector: 'app-player-overlay',
@@ -19,7 +20,8 @@ import { TranslatePipe } from '../../pipes/translate.pipe';
     MatButtonModule,
     MatProgressSpinnerModule,
     MatChipsModule,
-    TranslatePipe
+    TranslatePipe,
+    SkeletonComponent
   ],
   templateUrl: './player-overlay.component.html',
   styleUrls: ['./player-overlay.component.scss'],

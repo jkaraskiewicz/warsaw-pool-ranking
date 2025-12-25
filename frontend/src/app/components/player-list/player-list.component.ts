@@ -23,6 +23,7 @@ import { PlayerOverlayComponent } from '../player-overlay/player-overlay.compone
 import { ComparisonComponent } from '../comparison/comparison.component';
 import { RatingTypeSelectorComponent } from '../shared/rating-type-selector/rating-type-selector.component';
 import { TranslatePipe } from '../../pipes/translate.pipe';
+import { SkeletonComponent } from '../shared/skeleton/skeleton.component';
 
 @Component({
   selector: 'app-player-list',
@@ -45,7 +46,8 @@ import { TranslatePipe } from '../../pipes/translate.pipe';
     MatTooltipModule,
     RatingTypeSelectorComponent,
     TranslatePipe,
-    DecimalPipe
+    DecimalPipe,
+    SkeletonComponent
   ],
   templateUrl: './player-list.component.html',
   styleUrls: ['./player-list.component.scss'],

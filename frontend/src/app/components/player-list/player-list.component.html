@@ -89,11 +89,37 @@
   </div>
 
   <!-- Table -->
-  <div class="table-responsive">
+  <div class="table-responsive" style="position: relative; min-height: 400px;">
     <!-- Loading Overlay -->
     @if (facade.loading()) {
-      <div class="loading-overlay">
-        <mat-spinner diameter="48"></mat-spinner>
+      <div class="loading-overlay skeleton-overlay" style="background: var(--bg-card); position: absolute; inset: 0; z-index: 10; padding: 0 16px; overflow: hidden;">
+        <!-- Header Mockup (optional, or just hide real header) -->
+        <div class="skeleton-header" style="display: flex; gap: 16px; margin-bottom: 12px; padding-top: 16px; opacity: 0.5;">
+           <app-skeleton width="40px" height="20px"></app-skeleton>
+           <app-skeleton width="40px" height="20px"></app-skeleton>
+           <app-skeleton width="60px" height="20px"></app-skeleton>
+           <app-skeleton width="200px" height="20px"></app-skeleton>
+           <div style="flex: 1"></div>
+           <app-skeleton width="60px" height="20px"></app-skeleton>
+        </div>
+        @for (i of [1,2,3,4,5,6,7,8,9,10]; track i) {
+           <div class="skeleton-row" style="display: flex; align-items: center; gap: 16px; height: 60px; border-bottom: 1px solid var(--border-secondary);">
+              <app-skeleton width="20px" height="20px" borderRadius="4px"></app-skeleton> <!-- Checkbox -->
+              <app-skeleton width="24px" height="24px" borderRadius="12px"></app-skeleton> <!-- Star -->
+              <app-skeleton width="30px" height="24px" borderRadius="4px"></app-skeleton> <!-- Rank -->
+              <div style="flex: 1; display: flex; gap: 12px; align-items: center;">
+                 <app-skeleton width="40px" height="40px" borderRadius="50%"></app-skeleton> <!-- Avatar -->
+                 <div style="display: flex; flex-direction: column; gap: 6px;">
+                    <app-skeleton width="140px" height="16px"></app-skeleton>
+                    <app-skeleton width="80px" height="12px"></app-skeleton>
+                 </div>
+              </div>
+              <app-skeleton width="60px" height="20px"></app-skeleton> <!-- Rating -->
+              <app-skeleton width="40px" height="20px"></app-skeleton> <!-- Games -->
+              <app-skeleton width="40px" height="20px"></app-skeleton> <!-- Matches -->
+              <app-skeleton width="90px" height="24px" borderRadius="16px"></app-skeleton> <!-- Confidence -->
+           </div>
+        }
       </div>
     }
 

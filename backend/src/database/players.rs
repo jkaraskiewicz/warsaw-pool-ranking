@@ -1,5 +1,6 @@
 use anyhow::{Context, Result};
 use rusqlite::{params, OptionalExtension};
+use chrono::NaiveDateTime;
 
 use super::connection::DbConn;
 use super::models::Player;
@@ -13,7 +14,7 @@ pub fn upsert_player(
     if let Some(mut existing) = find_by_cuescore_id(conn, cuescore_id)? {
         // If avatar_url is now available, update it
         if existing.avatar_url.is_none() && avatar_url.is_some() {
-            let sql = "UPDATE players SET avatar_url = ?1 WHERE id = ?2 RETURNING id, cuescore_id, name, avatar_url, created_at";
+            let sql = "UPDATE players SET avatar_url = ?1 WHERE id = ?2 RETURNING id, cuescore_id, name, avatar_url, last_played, created_at";
             existing = conn.query_row(sql, params![avatar_url, existing.id], parse_player_row)?;
         }
         return Ok(existing);
@@ -26,7 +27,7 @@ fn find_by_cuescore_id(
     conn: &mut DbConn,
     cuescore_id: i64,
 ) -> Result<Option<Player>> {
-    let sql = "SELECT id, cuescore_id, name, avatar_url, created_at FROM players WHERE cuescore_id = ?1";
+    let sql = "SELECT id, cuescore_id, name, avatar_url, last_played, created_at FROM players WHERE cuescore_id = ?1";
 
     conn.query_row(sql, params![cuescore_id], parse_player_row)
         .optional()
@@ -39,7 +40,7 @@ fn insert_new_player(
     name: &str,
     avatar_url: Option<&str>,
 ) -> Result<Player> {
-    let sql = "INSERT INTO players (cuescore_id, name, avatar_url) VALUES (?1, ?2, ?3) RETURNING id, cuescore_id, name, avatar_url, created_at";
+    let sql = "INSERT INTO players (cuescore_id, name, avatar_url, last_played) VALUES (?1, ?2, ?3, NULL) RETURNING id, cuescore_id, name, avatar_url, last_played, created_at";
 
     conn.query_row(sql, params![cuescore_id, name, avatar_url], parse_player_row)
         .context("Failed to insert new player")
@@ -51,12 +52,13 @@ fn parse_player_row(row: &rusqlite::Row) -> rusqlite::Result<Player> {
         cuescore_id: row.get(1)?,
         name: row.get(2)?,
         avatar_url: row.get(3)?,
-        created_at: row.get(4)?,
+        last_played: row.get(4)?,
+        created_at: row.get(5)?,
     })
 }
 
 pub fn find_by_id(conn: &mut DbConn, id: i32) -> Result<Option<Player>> {
-    let sql = "SELECT id, cuescore_id, name, avatar_url, created_at FROM players WHERE id = ?1";
+    let sql = "SELECT id, cuescore_id, name, avatar_url, last_played, created_at FROM players WHERE id = ?1";
 
     conn.query_row(sql, params![id], parse_player_row)
         .optional()
@@ -64,7 +66,7 @@ pub fn find_by_id(conn: &mut DbConn, id: i32) -> Result<Option<Player>> {
 }
 
 pub fn list_all(conn: &mut DbConn) -> Result<Vec<Player>> {
-    let sql = "SELECT id, cuescore_id, name, avatar_url, created_at FROM players";
+    let sql = "SELECT id, cuescore_id, name, avatar_url, last_played, created_at FROM players";
 
     let mut stmt = conn.prepare(sql)?;
     let rows = stmt
@@ -72,4 +74,11 @@ pub fn list_all(conn: &mut DbConn) -> Result<Vec<Player>> {
         .collect::<rusqlite::Result<Vec<_>>>()?;
 
     Ok(rows)
+}
+
+pub fn update_player_last_played(conn: &mut DbConn, player_id: i32, last_played: NaiveDateTime) -> Result<()> {
+    let sql = "UPDATE players SET last_played = ?1 WHERE id = ?2";
+    conn.execute(sql, params![last_played, player_id])
+        .context("Failed to update player last_played date")?;
+    Ok(())
 }
