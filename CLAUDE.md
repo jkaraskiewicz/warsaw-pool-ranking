@@ -20,11 +20,12 @@
 11. [Avatar Storage](#11-avatar-storage)
 12. [Development Workflows](#12-development-workflows)
 13. [Common Patterns & Conventions](#13-common-patterns--conventions)
-14. [Key Design Decisions](#14-key-design-decisions)
-15. [File Paths Reference](#15-file-paths-reference)
-16. [Testing](#16-testing)
-17. [Deployment](#17-deployment)
-18. [Future Enhancements](#18-future-enhancements)
+14. [File Organization & Git Strategy](#14-file-organization--git-strategy)
+15. [Key Design Decisions](#15-key-design-decisions)
+16. [File Paths Reference](#16-file-paths-reference)
+17. [Testing](#17-testing)
+18. [Recent Refactoring (Completed)](#18-recent-refactoring-completed)
+19. [Future Enhancements](#19-future-enhancements)
 
 ---
 
@@ -721,6 +722,82 @@ for player in players {
 - Batch queries with O(1) lookups
 - Proper error propagation
 - Optimized with database indexes
+
+---
+
+## 14. File Organization & Git Strategy
+
+### Design Decision: Data Files Tracked in Git
+
+**Unlike typical web applications**, this project intentionally tracks data files in the repository:
+
+#### What's Tracked:
+- ✅ **Database**: `backend/data/warsaw_pool_ranking.db` (~50 MB)
+- ✅ **Cache**: `backend/cache/raw/*.json` (~1500 files, ~30 MB)
+- ✅ **Cache**: `backend/cache/parsed/tournaments.json`
+
+#### Why:
+
+1. **No External API Dependencies**: CueScore data is scraped (time-consuming, rate-limited)
+2. **Portability**: Clone and have full data immediately
+3. **Historical Preservation**: Tournaments may be deleted from source
+4. **Development Speed**: No need to run ingestion on every fresh clone
+
+#### Trade-offs:
+
+**Pros:**
+- One-command setup for new developers
+- Guaranteed reproducibility
+- Built-in backup through git history
+
+**Cons:**
+- Larger repository size (~80 MB vs ~1 MB without data)
+- Slower clones (mitigated: only affects initial clone)
+- Binary diff issues (git can't show meaningful diffs for .db files)
+
+**Future Consideration**: If database exceeds 100 MB, migrate to git-lfs.
+
+### Directory Structure
+
+```
+backend/
+├── cache/                        # API response cache (tracked in git)
+│   ├── README.md                 # Cache documentation
+│   ├── raw/                      # Raw CueScore API responses
+│   │   └── {tournament_id}.json  # Individual tournament data
+│   └── parsed/                   # Processed data
+│       └── tournaments.json      # Consolidated tournament list
+│
+├── data/                         # Application data (tracked in git)
+│   ├── README.md                 # Data directory documentation
+│   └── warsaw_pool_ranking.db    # SQLite database (~50 MB)
+│
+├── src/                          # Rust source code
+│   └── ...
+│
+├── Cargo.toml                    # Rust dependencies
+├── Dockerfile                    # Docker image definition
+└── entrypoint.sh                 # Container startup script
+```
+
+### File Naming Conventions
+
+**CRITICAL**: Database filename is **singular** (no 's'):
+- ✅ `warsaw_pool_ranking.db` (correct)
+- ❌ `warsaw_pool_rankings.db` (WRONG - this was a typo that has been fixed)
+
+### Documentation Files
+
+Each data directory includes a README.md explaining:
+- Purpose of the directory
+- File formats and structure
+- Why files are tracked in git
+- Configuration details
+- Usage patterns
+
+See:
+- `backend/data/README.md`
+- `backend/cache/README.md`
 
 ---
 
