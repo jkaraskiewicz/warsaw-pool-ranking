@@ -1,12 +1,13 @@
 import { Component, EventEmitter, input, Output, ChangeDetectionStrategy } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { MatButtonToggleModule } from '@angular/material/button-toggle';
+import { MatIconModule } from '@angular/material/icon';
 import { TranslatePipe } from '../../../pipes/translate.pipe';
 
 @Component({
   selector: 'app-rating-type-selector',
   standalone: true,
-  imports: [CommonModule, MatButtonToggleModule, TranslatePipe],
+  imports: [CommonModule, MatButtonToggleModule, MatIconModule, TranslatePipe],
   templateUrl: './rating-type-selector.component.html',
   styleUrls: ['./rating-type-selector.component.scss'],
   changeDetection: ChangeDetectionStrategy.OnPush

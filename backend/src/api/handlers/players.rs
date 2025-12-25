@@ -10,7 +10,7 @@ use crate::api::models::{
     PlayerListItem, PlayerListResponse, PlayerDetail, HeadToHeadMatch, HeadToHeadResponse, HeadToHeadStats, MatchResult,
     PlayerRivalriesResponse, RivalryEntry
 };
-use crate::api::filter::{parser::parse_filter_dsl, sql_builder::build_sql_filter};
+use crate::api::filter::{parser::parse_filter_dsl, sql_builder::build_sql_filter, FilterValue};
 use crate::database::{self, models::{PlayerFilter, SortColumn, SortOrder}, repositories::{player_repository::PlayerRepository, game_repository::GameRepository}};
 use crate::errors::AppError;
 use crate::services::player_service;
@@ -21,10 +21,25 @@ pub async fn get_players(
     Query(params): Query<PlayerParams>,
 ) -> Result<Json<PlayerListResponse>, AppError> {
     // Parse filter DSL
-    let filter_exprs = parse_filter_dsl(&params.filter.unwrap_or_default())
+    let mut filter_exprs = parse_filter_dsl(&params.filter.unwrap_or_default())
         .map_err(|e| AppError::BadRequest(format!("Invalid filter syntax: {}", e)))?;
 
-    // Build SQL filter
+    let mut last_played_cutoff: Option<NaiveDateTime> = None;
+
+    // Check for "active" rating type in filters and adjust
+    for expr in &mut filter_exprs {
+        if expr.field == "rating_type" {
+            if let FilterValue::Single(ref mut val) = expr.value {
+                if val == "active" {
+                    *val = "all".to_string(); // Switch to 'all' rating type for DB query
+                    let six_months_ago = Utc::now().naive_utc() - Duration::days(6 * 30);
+                    last_played_cutoff = Some(six_months_ago);
+                }
+            }
+        }
+    }
+
+    // Build SQL filter (using modified expressions)
     let sql_filter = build_sql_filter(filter_exprs)
         .map_err(|e| AppError::BadRequest(format!("Invalid filter: {}", e)))?;
 
@@ -44,22 +59,12 @@ pub async fn get_players(
         _ => SortOrder::Desc,
     };
 
-    let mut actual_rating_type = params.rating_type.unwrap_or_else(|| "all".to_string());
-    let mut last_played_cutoff: Option<NaiveDateTime> = None;
-
-    if actual_rating_type == "active" {
-        // For "active" ranking, we still query the "all" time rating, but filter by activity
-        actual_rating_type = "all".to_string();
-        let six_months_ago = Utc::now().naive_utc() - Duration::days(6 * 30); // Approximate 6 months
-        last_played_cutoff = Some(six_months_ago);
-    }
-
     let mut conn = state.pool.get().map_err(|_| AppError::InternalServerError)?;
 
     let filter = PlayerFilter {
         sql_filter,
         min_games: Some(state.config.rating.min_ranked_games),
-        last_played_cutoff, // Pass the new cutoff
+        last_played_cutoff,
         sort_by,
         sort_order,
         limit: page_size,
@@ -97,7 +102,10 @@ pub async fn get_player_detail(
     Path(player_id): Path<i64>,
     Query(params): Query<PlayerParams>,
 ) -> Result<Json<PlayerDetail>, AppError> {
-    let rating_type = params.rating_type.unwrap_or_else(|| "all".to_string());
+    let mut rating_type = params.rating_type.unwrap_or_else(|| "all".to_string());
+    if rating_type == "active" {
+        rating_type = "all".to_string();
+    }
 
     let mut conn = state.pool.get().map_err(|_| AppError::InternalServerError)?;
 
@@ -163,7 +171,10 @@ pub async fn get_head_to_head_comparison(
     Path((player1_id, player2_id)): Path<(i64, i64)>,
     Query(params): Query<PlayerParams>,
 ) -> Result<Json<HeadToHeadResponse>, AppError> {
-    let rating_type = params.rating_type.unwrap_or_else(|| "all".to_string());
+    let mut rating_type = params.rating_type.unwrap_or_else(|| "all".to_string());
+    if rating_type == "active" {
+        rating_type = "all".to_string();
+    }
 
     let mut conn = state.pool.get().map_err(|_| AppError::InternalServerError)?;
 

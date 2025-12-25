@@ -9,7 +9,7 @@ pub struct Cli {
 }
 
 #[derive(Subcommand, Debug, Clone, PartialEq)]
-#[clap(rename_all = "lower_case")]
+#[clap(rename_all = "kebab-case")]
 pub enum Command {
     /// Start the backend server
     Serve {

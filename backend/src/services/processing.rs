@@ -11,6 +11,7 @@ use crate::database::{self, DbConn};
 use crate::domain::ExpandedGame;
 use crate::fetchers::cuescore_models::{TournamentResponse, PlayerInfo};
 use crate::rating;
+use rusqlite::OptionalExtension;
 
 pub struct ProcessingService {
     config: AppConfig,
@@ -58,6 +59,9 @@ impl ProcessingService {
         let pool = database::create_pool(db_path)?;
         let mut conn = database::get_connection(&pool)?;
 
+        // Ensure avatars table exists before other schema operations
+        database::setup::create_avatars_table_if_missing(&mut conn)?;
+
         // Step 1: Reset database (PoC - no migrations)
         database::setup::reset_database(&mut conn)?;
         info!("  → Database schema reset\n");
@@ -67,7 +71,7 @@ impl ProcessingService {
         info!("  → Loaded {} tournaments from cache\n", tournaments.len());
 
         // Step 3: Insert tournaments and expand to games (all games, before filtering for periods)
-        let all_expanded_games = self.process_tournaments(&mut conn, &tournaments)?;
+        let mut all_expanded_games = self.process_tournaments(&mut conn, &tournaments)?;
         info!("  → Expanded to {} individual games (total)", all_expanded_games.len());
 
         // Apply time decay only once, on the full set of games, before filtering by period

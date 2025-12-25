@@ -19,6 +19,7 @@ use log;
 
 use crate::cli::Command;
 use crate::config::settings::AppConfig;
+use crate::config::paths;
 use crate::services::ingestion::IngestionService;
 use crate::services::processing::ProcessingService;
 use crate::services::server::ServerService;
@@ -55,8 +56,9 @@ pub fn handle_process() -> Result<()> {
 pub fn handle_refresh_avatars() -> Result<()> {
     let runtime = tokio::runtime::Runtime::new()?;
     runtime.block_on(async {
-        let config = AppConfig::new();
-        let pool = database::create_pool(&config.database.file)?;
+        let _config = AppConfig::new(); // Config might be needed for other things implicitly? No, but let's keep it or remove it.
+        let db_path = paths::get_database_path();
+        let pool = database::create_pool(&db_path)?;
         let mut processor = AvatarProcessor::new()?;
         let mut conn = pool.get()?;
 
