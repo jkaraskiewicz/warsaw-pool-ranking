@@ -9,7 +9,7 @@ use std::sync::Arc;
 use log;
 
 use crate::api::models::{LoginRequest, LoginResponse};
-use crate::database;
+use crate::database::repositories::player_repository::PlayerRepository;
 use crate::services::avatar_processor::AvatarProcessor;
 use crate::services::ingestion::IngestionService;
 use crate::services::processing::ProcessingService;
@@ -112,12 +112,12 @@ async fn refresh_avatars_task(state: &AppState, player_id: Option<i32>) -> anyho
 
     let players = match player_id {
         Some(id) => {
-            match database::players::find_by_id(&mut conn, id)? {
+            match PlayerRepository::find_by_id(&mut conn, id)? {
                 Some(player) => vec![player],
                 None => anyhow::bail!("Player {} not found", id),
             }
         }
-        None => database::players::list_all(&mut conn)?,
+        None => PlayerRepository::list_all(&mut conn)?,
     };
 
     let total_players = players.len();

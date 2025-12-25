@@ -20,6 +20,7 @@ use log;
 use crate::cli::Command;
 use crate::config::settings::AppConfig;
 use crate::config::paths;
+use crate::database::repositories::player_repository::PlayerRepository;
 use crate::services::ingestion::IngestionService;
 use crate::services::processing::ProcessingService;
 use crate::services::server::ServerService;
@@ -62,7 +63,7 @@ pub fn handle_refresh_avatars() -> Result<()> {
         let mut processor = AvatarProcessor::new()?;
         let mut conn = pool.get()?;
 
-        let players = database::players::list_all(&mut conn)?;
+        let players = PlayerRepository::list_all(&mut conn)?;
         log::info!("Starting avatar refresh for {} players...", players.len());
 
         for player in players {

@@ -1,7 +1,8 @@
 use anyhow::{Context, Result};
+use chrono::NaiveDateTime;
 use rusqlite::{params, OptionalExtension};
 use crate::database::connection::DbConn;
-use crate::database::models::{PlayerFilter, PlayerWithRating, SortColumn, SortOrder};
+use crate::database::models::{Player, PlayerFilter, PlayerWithRating, SortColumn, SortOrder};
 
 pub struct PlayerRepository;
 
@@ -130,14 +131,104 @@ impl PlayerRepository {
         ).optional().context("Failed to get player last match date")
     }
 
-    pub fn count_player_distinct_matches_played(
+    pub fn find_by_id(conn: &mut DbConn, id: i32) -> Result<Option<Player>> {
+        let sql = "SELECT id, cuescore_id, name, avatar_url, last_played, created_at FROM players WHERE id = ?1";
+
+        conn.query_row(sql, params![id], |row| {
+            Ok(Player {
+                id: row.get(0)?,
+                cuescore_id: row.get(1)?,
+                name: row.get(2)?,
+                avatar_url: row.get(3)?,
+                last_played: row.get(4)?,
+                created_at: row.get(5)?,
+            })
+        }).optional().context("Failed to query player by id")
+    }
+
+    pub fn list_all(conn: &mut DbConn) -> Result<Vec<Player>> {
+        let sql = "SELECT id, cuescore_id, name, avatar_url, last_played, created_at FROM players";
+
+        let mut stmt = conn.prepare(sql)?;
+        let rows = stmt
+            .query_map([], |row| {
+                Ok(Player {
+                    id: row.get(0)?,
+                    cuescore_id: row.get(1)?,
+                    name: row.get(2)?,
+                    avatar_url: row.get(3)?,
+                    last_played: row.get(4)?,
+                    created_at: row.get(5)?,
+                })
+            })?
+            .collect::<rusqlite::Result<Vec<_>>>()?;
+
+        Ok(rows)
+    }
+
+    pub fn update_player_last_played(
         conn: &mut DbConn,
         player_id: i32,
-    ) -> Result<i32> {
-        conn.query_row(
-            "SELECT COUNT(DISTINCT date) FROM games WHERE first_player_id = ?1 OR second_player_id = ?1",
-            params![player_id],
-            |r| r.get(0)
-        ).context("Failed to count player distinct matches played")
+        last_played: NaiveDateTime,
+    ) -> Result<()> {
+        let sql = "UPDATE players SET last_played = ?1 WHERE id = ?2";
+        conn.execute(sql, params![last_played, player_id])
+            .context("Failed to update player last_played date")?;
+        Ok(())
+    }
+
+    pub fn upsert_player(
+        conn: &mut DbConn,
+        cuescore_id: i64,
+        name: &str,
+        avatar_url: Option<&str>,
+    ) -> Result<Player> {
+        // Check if player exists
+        let existing: Option<Player> = conn.query_row(
+            "SELECT id, cuescore_id, name, avatar_url, last_played, created_at FROM players WHERE cuescore_id = ?1",
+            params![cuescore_id],
+            |row| {
+                Ok(Player {
+                    id: row.get(0)?,
+                    cuescore_id: row.get(1)?,
+                    name: row.get(2)?,
+                    avatar_url: row.get(3)?,
+                    last_played: row.get(4)?,
+                    created_at: row.get(5)?,
+                })
+            }
+        ).optional().context("Failed to query player by cuescore_id")?;
+
+        if let Some(mut existing_player) = existing {
+            // If avatar_url is now available, update it
+            if existing_player.avatar_url.is_none() && avatar_url.is_some() {
+                let sql = "UPDATE players SET avatar_url = ?1 WHERE id = ?2 RETURNING id, cuescore_id, name, avatar_url, last_played, created_at";
+                existing_player = conn.query_row(sql, params![avatar_url, existing_player.id], |row| {
+                    Ok(Player {
+                        id: row.get(0)?,
+                        cuescore_id: row.get(1)?,
+                        name: row.get(2)?,
+                        avatar_url: row.get(3)?,
+                        last_played: row.get(4)?,
+                        created_at: row.get(5)?,
+                    })
+                })?;
+            }
+            return Ok(existing_player);
+        }
+
+        // Insert new player
+        let sql = "INSERT INTO players (cuescore_id, name, avatar_url, last_played) VALUES (?1, ?2, ?3, NULL) RETURNING id, cuescore_id, name, avatar_url, last_played, created_at";
+
+        conn.query_row(sql, params![cuescore_id, name, avatar_url], |row| {
+            Ok(Player {
+                id: row.get(0)?,
+                cuescore_id: row.get(1)?,
+                name: row.get(2)?,
+                avatar_url: row.get(3)?,
+                last_played: row.get(4)?,
+                created_at: row.get(5)?,
+            })
+        }).context("Failed to insert new player")
     }
 }

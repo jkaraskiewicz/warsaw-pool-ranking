@@ -3,7 +3,8 @@ use image::{imageops::FilterType, DynamicImage, GenericImageView, ImageFormat};
 use sha2::{Digest, Sha256};
 use std::io::Cursor;
 
-use crate::database::{self, DbConn};
+use crate::database::DbConn;
+use crate::database::repositories::avatar_repository::AvatarRepository;
 use crate::http::RateLimitedClient;
 
 const USER_AGENT: &str = "WarsawPoolRankings/2.0";
@@ -30,7 +31,7 @@ impl AvatarProcessor {
         let new_hash = Self::hash_url(source_url);
 
         // Check if we already have this exact avatar (any size will have same hash)
-        if let Some(existing_hash) = database::avatars::get_avatar_hash(conn, player_id, "small")? {
+        if let Some(existing_hash) = AvatarRepository::get_avatar_hash(conn, player_id, "small")? {
             if existing_hash == new_hash {
                 log::debug!("Avatar unchanged for player {}, skipping download", player_id);
                 return Ok(false);
@@ -69,7 +70,7 @@ impl AvatarProcessor {
         for (size_name, target_size) in sizes.iter() {
             match self.resize_and_encode(&img, *target_size) {
                 Ok((webp_data, width, height)) => {
-                    database::avatars::upsert_avatar(
+                    AvatarRepository::upsert_avatar(
                         conn,
                         player_id,
                         size_name,

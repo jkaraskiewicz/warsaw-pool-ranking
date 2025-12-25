@@ -6,7 +6,7 @@ use axum::{
 };
 use std::sync::Arc;
 
-use crate::database;
+use crate::database::repositories::avatar_repository::AvatarRepository;
 use super::AppState;
 
 pub async fn serve_avatar(
@@ -31,7 +31,7 @@ pub async fn serve_avatar(
         }
     };
 
-    match database::avatars::get_avatar(&mut conn, player_id, avatar_size) {
+    match AvatarRepository::get_avatar(&mut conn, player_id, avatar_size) {
         Ok(Some(avatar)) => {
             Response::builder()
                 .status(StatusCode::OK)

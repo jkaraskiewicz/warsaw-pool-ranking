@@ -63,15 +63,17 @@ All data is collected from [CueScore](https://cuescore.com), a tournament manage
 
 **Rust**:
 - Use Rust 2021+ edition idioms
-- **Repository Pattern**: All database access must go through `GameRepository` or `PlayerRepository`.
+- **Repository Pattern**: ALL database access MUST go through repositories (PlayerRepository, GameRepository, TournamentRepository, RatingRepository, AvatarRepository). Direct SQL in services/handlers is prohibited.
 - **Service Layer**: Business logic lives in `PlayerService` and other services.
 - **Error Handling**: Use `AppError` enum for centralized error handling.
-- Prefer `?` operator over manual error handling
+- **Performance**: Use batch queries to avoid N+1 problems (see GameRepository::count_matches_for_players)
+- Prefer `?` operator over manual error handling (never use `unwrap_or()` to hide errors)
 - Use `impl Trait` for return types where appropriate
 - Leverage type system for compile-time guarantees
 - Modern async/await (not manual futures)
 - Use `cargo clippy` and address ALL warnings
 - Format with `cargo fmt`
+- Delete dead code instead of suppressing warnings with `#[allow(dead_code)]`
 
 **Angular**:
 - Angular 17+ features exclusively
@@ -317,14 +319,20 @@ backend/
 │   ├── config/                  # Configuration management
 │   │   ├── settings.rs          # AppConfig, RatingSettings, etc.
 │   │   └── venues.rs            # Venue configuration
-│   ├── database/                # SQLite interaction
+│   ├── database/                # SQLite interaction (Repository Pattern)
 │   │   ├── mod.rs               # Database connection & initialization
 │   │   ├── schema.sql           # SQL schema definition
-│   │   ├── repositories/        # Data access layer
-│   │   │   ├── game_repository.rs
-│   │   │   └── player_repository.rs
+│   │   ├── repositories/        # Data access layer (ONLY place for SQL)
+│   │   │   ├── mod.rs
+│   │   │   ├── avatar_repository.rs   # Avatar CRUD operations
+│   │   │   ├── game_repository.rs     # Game CRUD + batch queries
+│   │   │   ├── player_repository.rs   # Player CRUD operations
+│   │   │   ├── rating_repository.rs   # Rating CRUD operations
+│   │   │   └── tournament_repository.rs # Tournament CRUD operations
+│   │   ├── connection.rs        # Connection pool management
 │   │   ├── models.rs            # Database Entity models
-│   │   └── ...                  # Legacy/Migration modules
+│   │   ├── setup.rs             # Schema initialization
+│   │   └── structs.rs           # Helper structures
 │   ├── domain/                  # Core domain models
 │   │   ├── models.rs            # Shared domain structures
 │   │   └── ...
@@ -345,9 +353,16 @@ backend/
 
 ### Key Design Patterns
 
-#### 1. Repository Pattern
+#### 1. Repository Pattern (Strictly Enforced)
 
-All raw SQL queries are encapsulated in `repositories/`:
+All raw SQL queries are encapsulated in `repositories/`. **NO SQL is allowed in handlers or services**.
+
+**Available Repositories:**
+- `PlayerRepository` - Player CRUD, ranked lists, last played updates
+- `GameRepository` - Game CRUD, H2H matches, batch queries
+- `TournamentRepository` - Tournament CRUD
+- `RatingRepository` - Rating CRUD
+- `AvatarRepository` - Avatar storage and retrieval
 
 ```rust
 // backend/src/database/repositories/player_repository.rs
@@ -356,10 +371,38 @@ impl PlayerRepository {
     pub fn list_ranked_players(...) -> Result<Vec<PlayerWithRating>> {
         // SQL query execution
     }
+
+    pub fn upsert_player(...) -> Result<Player> { /* ... */ }
+    pub fn find_by_id(...) -> Result<Option<Player>> { /* ... */ }
+    pub fn list_all(...) -> Result<Vec<Player>> { /* ... */ }
 }
 ```
 
-**Why**: Decouples API handlers from database details, makes testing easier.
+**Performance Pattern - Batch Queries:**
+
+To avoid N+1 query problems, use batch query methods that return `HashMap` for O(1) lookups:
+
+```rust
+// backend/src/database/repositories/game_repository.rs
+pub fn count_matches_for_players(
+    conn: &mut DbConn,
+    player_ids: &[i32],
+) -> Result<HashMap<i32, i32>> {
+    // Single query using UNION ALL + GROUP BY
+    // Returns HashMap for fast lookup
+}
+
+// Usage in handler:
+let player_ids: Vec<i32> = rows.iter().map(|r| r.player_id).collect();
+let match_counts = GameRepository::count_matches_for_players(&mut conn, &player_ids)?;
+let matches = match_counts.get(&player_id).copied().unwrap_or(0);
+```
+
+**Why**:
+- Decouples API handlers from database details
+- Makes testing easier (can mock repositories)
+- Single source of truth for queries (DRY)
+- Enforces performance patterns (batch queries)
 
 #### 2. Service Layer
 
@@ -462,7 +505,7 @@ Templates use the new built-in control flow syntax:
 
 ## 7. Database Schema
 
-### Updated `players` Table
+### `players` Table
 
 ```sql
 CREATE TABLE players (
@@ -470,10 +513,26 @@ CREATE TABLE players (
     cuescore_id INTEGER UNIQUE,
     name TEXT NOT NULL,
     avatar_url TEXT,
-    last_played TEXT, -- NEW: Track last activity for "Active" filter
+    last_played TEXT, -- Track last activity for "Active" filter
     created_at TEXT DEFAULT CURRENT_TIMESTAMP
 );
+
+-- Performance index for active player queries
+CREATE INDEX idx_players_last_played ON players(last_played);
 ```
+
+**Key Points:**
+- `last_played` column tracks most recent game date for "Active" filter
+- Index on `last_played` enables O(log n) filtering instead of full table scans
+- Used in `PlayerRepository::list_ranked_players()` with `WHERE p.last_played >= ?`
+
+### Other Tables
+
+See `backend/src/database/schema.sql` for complete schema:
+- `tournaments` - Tournament metadata
+- `games` - Individual game results with weights
+- `ratings` - Calculated ratings per player per period
+- `avatars` - WebP images (small/medium/large) with hash-based change detection
 
 ---
 
@@ -504,9 +563,171 @@ This runs the build inside the Docker container where `protobuf-compiler` is ins
 
 ---
 
-## 18. Future Enhancements
+## 13. Common Patterns & Conventions
+
+### Repository Pattern Usage
+
+**✅ CORRECT - Use repositories in services:**
+```rust
+// backend/src/services/processing.rs
+use crate::database::repositories::player_repository::PlayerRepository;
+
+let players = PlayerRepository::list_all(&mut conn)?;
+PlayerRepository::update_player_last_played(&mut conn, player_id, date)?;
+```
+
+**❌ INCORRECT - Direct SQL in services:**
+```rust
+// NEVER DO THIS
+conn.execute("UPDATE players SET last_played = ?1 WHERE id = ?2", params![date, id])?;
+```
+
+### Avoiding N+1 Query Problems
+
+**✅ CORRECT - Batch query with HashMap:**
+```rust
+// Collect IDs first
+let player_ids: Vec<i32> = rows.iter().map(|r| r.player_id).collect();
+
+// Single batch query
+let match_counts = GameRepository::count_matches_for_players(&mut conn, &player_ids)?;
+
+// Map without mutating connection
+let players = rows.into_iter().map(|(i, row)| {
+    let matches = match_counts.get(&row.player_id).copied().unwrap_or(0);
+    // ... build result
+}).collect();
+```
+
+**❌ INCORRECT - Query inside iterator:**
+```rust
+// NEVER DO THIS - causes N+1 queries and violates borrow rules
+let players = rows.into_iter().map(|row| {
+    let matches = GameRepository::count_matches(&mut conn, row.player_id).unwrap_or(0); // ❌
+    // ...
+}).collect();
+```
+
+### Error Handling
+
+**✅ CORRECT - Propagate errors with `?`:**
+```rust
+let match_counts = GameRepository::count_matches_for_players(&mut conn, &player_ids)
+    .map_err(|e| AppError::DatabaseError(e.to_string()))?;
+```
+
+**❌ INCORRECT - Silent error suppression:**
+```rust
+// NEVER DO THIS - hides real errors
+let matches = GameRepository::count_matches(&mut conn, id).unwrap_or(0);
+```
+
+### Dead Code Management
+
+**✅ CORRECT - Delete unused code:**
+```rust
+// If code is no longer used, DELETE the entire file/module
+```
+
+**❌ INCORRECT - Suppressing warnings:**
+```rust
+// NEVER DO THIS
+#[allow(dead_code)]
+mod legacy_module {
+    // unused code...
+}
+```
+
+### Connection Management
+
+**✅ CORRECT - Get connection once, pass to repositories:**
+```rust
+let mut conn = state.pool.get()
+    .map_err(|e| AppError::DatabaseError(e.to_string()))?;
+
+let players = PlayerRepository::list_ranked_players(&mut conn, &filter)?;
+let counts = GameRepository::count_matches_for_players(&mut conn, &ids)?;
+```
+
+**❌ INCORRECT - Multiple connection acquisitions:**
+```rust
+// Avoid this - less efficient
+for player in players {
+    let mut conn = state.pool.get()?; // ❌ New connection each iteration
+    // ...
+}
+```
+
+### File Organization
+
+**Repository Files:**
+- One repository struct per file
+- Methods grouped logically (CRUD, queries, batch operations)
+- Use `impl` blocks for organization
+
+**Service Files:**
+- Business logic only, no SQL
+- Use repositories for all data access
+- Keep services stateless where possible
+
+---
+
+## 18. Recent Refactoring (Completed)
+
+**Date:** December 2025
+**Scope:** Complete Repository Pattern migration and performance optimization
+
+### What Was Fixed:
+
+1. **✅ Eliminated Duplicated SQL Queries**
+   - Removed ~400 lines of duplicated code from legacy database modules
+   - Established repositories as single source of truth
+
+2. **✅ Fixed N+1 Query Problems**
+   - Added `GameRepository::count_matches_for_players()` batch query
+   - Refactored handlers to use HashMap-based lookups
+   - Changed from O(n) individual queries to O(1) lookups
+
+3. **✅ Completed Repository Pattern Migration**
+   - Created 3 new repositories: `TournamentRepository`, `RatingRepository`, `AvatarRepository`
+   - Migrated all services from direct SQL to repository pattern
+   - Removed all legacy database modules (avatars.rs, games.rs, players.rs, ratings.rs, tournaments.rs)
+
+4. **✅ Added Database Index**
+   - Created index on `players.last_played` column
+   - Improved "Active" filter performance from O(n) to O(log n)
+
+5. **✅ Improved Error Handling**
+   - Replaced silent `unwrap_or()` calls with proper `?` propagation
+   - All errors now flow to `AppError` for consistent API responses
+
+6. **✅ Code Quality Improvements**
+   - Deleted dead code instead of suppressing warnings
+   - Enforced strict repository pattern (NO SQL outside repositories)
+   - Applied DRY principle aggressively
+
+### Architecture Before vs After:
+
+**BEFORE:**
+- Mixed old/new patterns (confusion)
+- 3 copies of same SQL queries
+- N+1 query problems
+- Silent error handling
+- Missing database index
+
+**AFTER:**
+- Consistent repository pattern throughout
+- Single source of truth for all queries
+- Batch queries with O(1) lookups
+- Proper error propagation
+- Optimized with database indexes
+
+---
+
+## 19. Future Enhancements
 
 - **Database Migrations System**: Replace `schema.sql` resets with a proper migration tool (e.g., `sqlx-cli` or `refinery`) to handle schema evolution without data loss.
 - **Automated Protobuf Sync**: Add CI/CD step to ensure frontend models are always in sync with proto definitions.
 - **Venue Leaderboards**: "King of the Hill" stats per venue.
 - **PWA Support**: Make the app installable on mobile devices.
+- **Repository Trait Abstraction**: Add trait interfaces for repositories to enable mocking in tests.

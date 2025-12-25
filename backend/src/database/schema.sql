@@ -15,6 +15,7 @@ CREATE TABLE players (
 );
 
 CREATE INDEX idx_players_cuescore_id ON players(cuescore_id);
+CREATE INDEX idx_players_last_played ON players(last_played);
 
 CREATE TABLE tournaments (
     id INTEGER PRIMARY KEY AUTOINCREMENT,

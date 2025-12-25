@@ -74,9 +74,16 @@ pub async fn get_players(
     let (rows, total) = PlayerRepository::list_ranked_players(&mut conn, &filter)
         .map_err(|e| AppError::DatabaseError(e.to_string()))?;
 
+    // Collect player IDs for batch query
+    let player_ids: Vec<i32> = rows.iter().map(|row| row.player_id).collect();
+
+    // Batch fetch match counts for all players (single query instead of N+1)
+    let match_counts = GameRepository::count_matches_for_players(&mut conn, &player_ids)
+        .map_err(|e| AppError::DatabaseError(e.to_string()))?;
+
+    // Map to PlayerListItem using the batch results
     let players: Vec<PlayerListItem> = rows.into_iter().enumerate().map(|(i, row)| {
-        let matches_played = GameRepository::count_matches_played_for_player(&mut conn, row.player_id)
-            .unwrap_or(0); // Consider handling this error more robustly if it's critical
+        let matches_played = match_counts.get(&row.player_id).copied().unwrap_or(0);
         PlayerListItem {
             rank: (offset + i + 1) as i32,
             player_id: row.player_id as i64,
@@ -123,7 +130,7 @@ pub async fn get_player_detail(
             let last_played = PlayerRepository::get_player_last_match_date(&mut conn, row.player_id)
                 .map_err(|e| AppError::DatabaseError(e.to_string()))?;
 
-            let matches_played = PlayerRepository::count_player_distinct_matches_played(&mut conn, row.player_id)
+            let matches_played = GameRepository::count_matches_played_for_player(&mut conn, row.player_id)
                 .map_err(|e| AppError::DatabaseError(e.to_string()))?;
 
             let last_matches_rows = GameRepository::get_player_last_matches(&mut conn, row.player_id, 10)
@@ -228,7 +235,7 @@ pub async fn get_head_to_head_comparison(
         let last_played = PlayerRepository::get_player_last_match_date(&mut conn, p.player_id)
             .map_err(|e| AppError::DatabaseError(e.to_string()))?;
 
-        let matches_played = PlayerRepository::count_player_distinct_matches_played(&mut conn, p.player_id)
+        let matches_played = GameRepository::count_matches_played_for_player(&mut conn, p.player_id)
             .map_err(|e| AppError::DatabaseError(e.to_string()))?;
 
         let encoded_name = encode(&p.name).replace(' ', "+");

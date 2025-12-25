@@ -8,6 +8,12 @@ use crate::cache::Cache;
 use crate::config::settings::AppConfig;
 use crate::config::paths;
 use crate::database::{self, DbConn};
+use crate::database::repositories::{
+    game_repository::GameRepository,
+    player_repository::PlayerRepository,
+    rating_repository::RatingRepository,
+    tournament_repository::TournamentRepository,
+};
 use crate::domain::ExpandedGame;
 use crate::fetchers::cuescore_models::{TournamentResponse, PlayerInfo};
 use crate::rating;
@@ -108,7 +114,7 @@ impl ProcessingService {
 
     fn update_player_last_played_dates(&self, conn: &mut DbConn) -> Result<()> {
         info!("  Updating player last played dates...");
-        let player_ids = database::players::list_all(conn)?;
+        let player_ids = PlayerRepository::list_all(conn)?;
 
         for player in player_ids {
             // Query for the maximum game date for this player
@@ -119,7 +125,7 @@ impl ProcessingService {
             ).optional().context("Failed to query max game date")?;
 
             if let Some(date) = last_played_date {
-                database::players::update_player_last_played(conn, player.id, date)?;
+                PlayerRepository::update_player_last_played(conn, player.id, date)?;
             }
         }
         Ok(())
@@ -195,7 +201,7 @@ impl ProcessingService {
         let start_date = self.parse_tournament_date(&tournament.starttime)?;
         let end_date = self.parse_optional_tournament_date(&tournament.stoptime)?;
 
-        database::tournaments::upsert_tournament(
+        TournamentRepository::upsert_tournament(
             conn,
             tournament.id,
             &tournament.name,
@@ -277,7 +283,7 @@ impl ProcessingService {
             let first_player_db = self.upsert_player(conn, first_player_info)?;
             let second_player_db = self.upsert_player(conn, second_player_info)?;
 
-            database::games::insert_game(
+            GameRepository::insert_game(
                 conn,
                 tournament_db_id,
                 first_player_db.id,
@@ -300,7 +306,7 @@ impl ProcessingService {
         let cuescore_id = player_info.player_id.ok_or_else(|| anyhow::anyhow!("Missing cuescore_id for player: {}", player_info.name))?;
         let name = &player_info.name;
         let avatar_url = player_info.image.as_deref();
-        database::players::upsert_player(conn, cuescore_id, name, avatar_url)
+        PlayerRepository::upsert_player(conn, cuescore_id, name, avatar_url)
     }
 
     fn apply_time_decay_weights(&self, games: &mut [ExpandedGame]) {
@@ -349,9 +355,9 @@ impl ProcessingService {
             // So, for existing players, this upsert will just update rating-related fields if needed,
             // but won't overwrite avatar_url if it's already set.
             // For new players inserted here, avatar_url will be None, to be updated later by game insertion path.
-            let player = database::players::upsert_player(conn, cuescore_id, "Unknown Player", None)?;
+            let player = PlayerRepository::upsert_player(conn, cuescore_id, "Unknown Player", None)?;
 
-            if let Err(e) = database::ratings::insert_rating(
+            if let Err(e) = RatingRepository::insert_rating(
                 conn,
                 player.id,
                 rating_type,
