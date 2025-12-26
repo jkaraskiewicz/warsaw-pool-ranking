@@ -363,6 +363,26 @@ app-avatar {
   }
 }
 
+/* Clear Interested Players Button */
+.clear-interested-btn {
+  transition: all 0.2s;
+  margin-right: var(--space-3);
+  opacity: 0.7;
+
+  &:hover {
+    opacity: 1;
+    background-color: rgba(239, 68, 68, 0.1);
+
+    mat-icon {
+      color: rgb(239, 68, 68);
+    }
+  }
+
+  mat-icon {
+    color: var(--text-secondary);
+  }
+}
+
 /* Star Button in Table */
 .star-btn {
   width: 36px;

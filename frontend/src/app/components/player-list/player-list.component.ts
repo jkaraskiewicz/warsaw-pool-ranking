@@ -121,6 +121,11 @@ export class PlayerListComponent {
     return this.interestedPlayersService.isInterested(player.playerId);
   }
 
+  clearInterestedPlayers(event: Event): void {
+    event.stopPropagation();
+    this.interestedPlayersService.clearAll();
+  }
+
   toggleSelection(player: PlayerListItem) {
     if (this.selection.has(player)) {
       this.selection.delete(player);

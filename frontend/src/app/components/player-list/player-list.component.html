@@ -66,6 +66,18 @@
         </mat-icon>
       </button>
 
+      <!-- Clear Interested Players Button -->
+      @if (interestedCount() > 0) {
+        <button
+          mat-icon-button
+          (click)="clearInterestedPlayers($event)"
+          [matTooltip]="'CLEAR_INTERESTED_PLAYERS' | translate"
+          class="clear-interested-btn"
+        >
+          <mat-icon>clear</mat-icon>
+        </button>
+      }
+
       <!-- Search -->
       <div class="search-wrapper">
         <input
