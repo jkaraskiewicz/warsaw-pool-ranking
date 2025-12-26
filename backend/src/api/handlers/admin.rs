@@ -107,7 +107,7 @@ pub async fn admin_refresh_avatars(
 }
 
 async fn refresh_avatars_task(state: &AppState, player_id: Option<i32>) -> anyhow::Result<()> {
-    let mut processor = AvatarProcessor::new()?;
+    let mut processor = AvatarProcessor::new(state.config.avatar.clone())?;
     let mut conn = state.pool.get()?;
 
     let players = match player_id {
@@ -131,22 +131,22 @@ async fn refresh_avatars_task(state: &AppState, player_id: Option<i32>) -> anyho
         }
 
         if let Some(avatar_url) = &player.avatar_url {
-            match processor.refresh_avatar_if_changed(&mut conn, player.id, avatar_url).await {
+            match processor.refresh_avatar_if_changed(&mut conn, player.cuescore_id, avatar_url).await {
                 Ok(updated) => {
                     if updated {
-                        log::info!("Updated avatar for player {}: {}", player.id, player.name);
+                        log::info!("Updated avatar for player {} (cuescore_id={})", player.name, player.cuescore_id);
                         updated_count += 1;
                     } else {
                         skipped_count += 1;
                     }
                 }
                 Err(e) => {
-                    log::warn!("Failed to refresh avatar for player {} ({}): {:?}", player.id, player.name, e);
+                    log::warn!("Failed to refresh avatar for player {} (cuescore_id={}): {:?}", player.name, player.cuescore_id, e);
                     failed_count += 1;
                 }
             }
         } else {
-            log::debug!("Skipping player {} (no avatar URL)", player.id);
+            log::debug!("Skipping player {} (no avatar URL)", player.name);
             skipped_count += 1;
         }
     }

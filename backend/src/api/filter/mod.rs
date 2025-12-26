@@ -20,7 +20,8 @@ pub enum FilterOperator {
 }
 
 impl FilterOperator {
-    pub fn from_str(s: &str) -> Result<Self> {
+    /// Parse operator from string representation
+    pub fn parse(s: &str) -> Result<Self> {
         match s {
             "eq" => Ok(Self::Eq),
             "ne" => Ok(Self::Ne),

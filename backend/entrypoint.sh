@@ -25,13 +25,13 @@ if [ "$DB_VALID" = false ]; then
     # Check if we have cached data (to skip full ingest if possible)
     if [ ! -f "cache/parsed/tournaments.json" ]; then
         echo "Parsed cache file not found. Running full data ingestion..."
-        ./warsaw_pool_ranking ingest
+        ./warsaw_pool_ranking tournaments refresh
     else
         echo "Cache found. Skipping ingestion."
     fi
 
     echo "Running data processing to initialize database..."
-    ./warsaw_pool_ranking process
+    ./warsaw_pool_ranking rankings refresh
 else
     echo "Database '$DB_FILE' is valid. Skipping initialization."
 fi

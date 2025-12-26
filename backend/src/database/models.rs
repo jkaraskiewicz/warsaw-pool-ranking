@@ -1,4 +1,5 @@
 use chrono::NaiveDateTime;
+use serde::Serialize;
 
 use crate::api::filter::SqlFilter;
 
@@ -37,7 +38,7 @@ pub struct Game {
     pub created_at: Option<NaiveDateTime>,
 }
 
-#[derive(Debug, Clone)]
+#[derive(Debug, Clone, Serialize)]
 pub struct DbRating {
     pub id: i32,
     pub player_id: i32,
@@ -52,7 +53,7 @@ pub struct DbRating {
 #[derive(Debug, Clone)]
 pub struct AvatarBlob {
     pub id: i32,
-    pub player_id: i32,
+    pub player_cuescore_id: i64,  // Changed from player_id to use stable cuescore_id
     pub size: String,
     pub image_data: Vec<u8>,
     pub format: String,

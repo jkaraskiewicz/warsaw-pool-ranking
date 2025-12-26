@@ -27,7 +27,7 @@ fn parse_single_expression(expr: &str) -> Result<FilterExpression> {
     let operator_str = parts[1].trim();
     let value_str = parts[2].trim();
 
-    let operator = FilterOperator::from_str(operator_str)
+    let operator = FilterOperator::parse(operator_str)
         .with_context(|| format!("Invalid operator '{}' in expression '{}'", operator_str, expr))?;
 
     let value = match operator {

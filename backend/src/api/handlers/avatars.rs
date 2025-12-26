@@ -7,6 +7,7 @@ use axum::{
 use std::sync::Arc;
 
 use crate::database::repositories::avatar_repository::AvatarRepository;
+use crate::database::repositories::player_repository::PlayerRepository;
 use super::AppState;
 
 pub async fn serve_avatar(
@@ -31,7 +32,20 @@ pub async fn serve_avatar(
         }
     };
 
-    match AvatarRepository::get_avatar(&mut conn, player_id, avatar_size) {
+    // Look up player to get cuescore_id (avatars are keyed by cuescore_id, not player_id)
+    let player = match PlayerRepository::find_by_id(&mut conn, player_id) {
+        Ok(Some(p)) => p,
+        Ok(None) => {
+            log::debug!("Player {} not found", player_id);
+            return StatusCode::NOT_FOUND.into_response();
+        }
+        Err(e) => {
+            log::error!("Database error fetching player: {:?}", e);
+            return StatusCode::INTERNAL_SERVER_ERROR.into_response();
+        }
+    };
+
+    match AvatarRepository::get_avatar(&mut conn, player.cuescore_id, avatar_size) {
         Ok(Some(avatar)) => {
             Response::builder()
                 .status(StatusCode::OK)

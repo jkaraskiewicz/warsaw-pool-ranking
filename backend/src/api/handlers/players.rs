@@ -3,15 +3,15 @@ use axum::{
     response::Json,
 };
 use std::sync::Arc;
-use urlencoding::encode;
 use chrono::{Duration, Utc, NaiveDateTime};
 
 use crate::api::models::{
-    PlayerListItem, PlayerListResponse, PlayerDetail, HeadToHeadMatch, HeadToHeadResponse, HeadToHeadStats, MatchResult,
+    PlayerListItem, PlayerListResponse, PlayerDetail, HeadToHeadMatch, HeadToHeadResponse, HeadToHeadStats,
     PlayerRivalriesResponse, RivalryEntry
 };
 use crate::api::filter::{parser::parse_filter_dsl, sql_builder::build_sql_filter, FilterValue};
-use crate::database::{self, models::{PlayerFilter, SortColumn, SortOrder}, repositories::{player_repository::PlayerRepository, game_repository::GameRepository}};
+use crate::database::models::{PlayerFilter, SortColumn, SortOrder};
+use crate::database::repositories::{player_repository::PlayerRepository, game_repository::GameRepository};
 use crate::errors::AppError;
 use crate::services::player_service;
 use super::{AppState, PlayerParams};
@@ -28,14 +28,13 @@ pub async fn get_players(
 
     // Check for "active" rating type in filters and adjust
     for expr in &mut filter_exprs {
-        if expr.field == "rating_type" {
-            if let FilterValue::Single(ref mut val) = expr.value {
-                if val == "active" {
-                    *val = "all".to_string(); // Switch to 'all' rating type for DB query
-                    let six_months_ago = Utc::now().naive_utc() - Duration::days(6 * 30);
-                    last_played_cutoff = Some(six_months_ago);
-                }
-            }
+        if expr.field == "rating_type"
+            && let FilterValue::Single(ref mut val) = expr.value
+            && val == "active"
+        {
+            *val = "all".to_string(); // Switch to 'all' rating type for DB query
+            let six_months_ago = Utc::now().naive_utc() - Duration::days(6 * 30);
+            last_played_cutoff = Some(six_months_ago);
         }
     }
 
@@ -124,50 +123,15 @@ pub async fn get_player_detail(
             let established_games = state.config.rating.established_games;
             let starter_rating = state.config.rating.starter_rating;
 
-            let (ml_rating, starter_weight, ml_weight) =
-                player_service::calculate_adjusted_ratings(row.games_played, row.rating, established_games, starter_rating);
+            let detail = player_service::build_player_detail(
+                &mut conn,
+                row,
+                established_games,
+                starter_rating,
+                true, // include last matches
+            )?;
 
-            let last_played = PlayerRepository::get_player_last_match_date(&mut conn, row.player_id)
-                .map_err(|e| AppError::DatabaseError(e.to_string()))?;
-
-            let matches_played = GameRepository::count_matches_played_for_player(&mut conn, row.player_id)
-                .map_err(|e| AppError::DatabaseError(e.to_string()))?;
-
-            let last_matches_rows = GameRepository::get_player_last_matches(&mut conn, row.player_id, 10)
-                .map_err(|e| AppError::DatabaseError(e.to_string()))?;
-
-            let last_matches: Vec<MatchResult> = last_matches_rows.into_iter().map(|m| MatchResult {
-                date: m.date.to_string(),
-                tournament_name: m.tournament_name,
-                opponent_name: m.opponent_name,
-                opponent_id: m.opponent_id as i64,
-                player_total_score: m.player_total_score,
-                opponent_total_score: m.opponent_total_score,
-            }).collect();
-
-            let encoded_name = encode(&row.name).replace(' ', "+");
-            let cuescore_profile_url = format!(
-                "https://cuescore.com/player/{}/{}",
-                encoded_name,
-                row.cuescore_id
-            );
-
-            Ok(Json(PlayerDetail {
-                player_id: row.player_id as i64,
-                cuescore_id: row.cuescore_id,
-                name: row.name,
-                cuescore_profile_url,
-                rating: row.rating,
-                games_played: row.games_played,
-                confidence_level: row.confidence_level,
-                ml_rating,
-                starter_weight,
-                ml_weight,
-                effective_games: row.games_played,
-                last_played,
-                matches_played,
-                last_matches,
-            }))
+            Ok(Json(detail))
         },
         None => Err(AppError::NotFound(format!("Player {} not found", player_id))),
     }
@@ -225,42 +189,24 @@ pub async fn get_head_to_head_comparison(
         }
     }).collect();
 
-    let mut get_full_player_detail = |p: database::models::PlayerWithRating| -> Result<PlayerDetail, AppError> {
-        let established_games = state.config.rating.established_games;
-        let starter_rating = state.config.rating.starter_rating;
+    let established_games = state.config.rating.established_games;
+    let starter_rating = state.config.rating.starter_rating;
 
-        let (ml_rating, starter_weight, ml_weight) =
-            player_service::calculate_adjusted_ratings(p.games_played, p.rating, established_games, starter_rating);
+    let player1_api_detail = player_service::build_player_detail(
+        &mut conn,
+        player1_detail_data,
+        established_games,
+        starter_rating,
+        false, // no last matches for comparison view
+    )?;
 
-        let last_played = PlayerRepository::get_player_last_match_date(&mut conn, p.player_id)
-            .map_err(|e| AppError::DatabaseError(e.to_string()))?;
-
-        let matches_played = GameRepository::count_matches_played_for_player(&mut conn, p.player_id)
-            .map_err(|e| AppError::DatabaseError(e.to_string()))?;
-
-        let encoded_name = encode(&p.name).replace(' ', "+");
-        let cuescore_profile_url = format!("https://cuescore.com/player/{}/{}", encoded_name, p.cuescore_id);
-
-        Ok(PlayerDetail {
-            player_id: p.player_id as i64,
-            cuescore_id: p.cuescore_id,
-            name: p.name,
-            cuescore_profile_url,
-            rating: p.rating,
-            games_played: p.games_played,
-            confidence_level: p.confidence_level,
-            ml_rating,
-            starter_weight,
-            ml_weight,
-            effective_games: p.games_played,
-            last_played,
-            matches_played,
-            last_matches: vec![],
-        })
-    };
-
-    let player1_api_detail = get_full_player_detail(player1_detail_data)?;
-    let player2_api_detail = get_full_player_detail(player2_detail_data)?;
+    let player2_api_detail = player_service::build_player_detail(
+        &mut conn,
+        player2_detail_data,
+        established_games,
+        starter_rating,
+        false, // no last matches for comparison view
+    )?;
 
     Ok(Json(HeadToHeadResponse {
         player1: Some(player1_api_detail),

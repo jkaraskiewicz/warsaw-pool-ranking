@@ -62,6 +62,12 @@ pub struct AdminSettings {
     pub password: String,
 }
 
+impl Default for AdminSettings {
+    fn default() -> Self {
+        Self::new()
+    }
+}
+
 impl AdminSettings {
     pub fn new() -> Self {
         let password = std::env::var("ADMIN_PASSWORD")
@@ -74,10 +80,58 @@ impl AdminSettings {
 }
 
 #[derive(Debug, Clone)]
+pub struct AvatarSize {
+    pub name: &'static str,
+    pub pixels: u32,
+}
+
+#[derive(Debug, Clone)]
+pub struct AvatarSettings {
+    pub sizes: Vec<AvatarSize>,
+    pub max_width: u32,
+    pub max_height: u32,
+    pub quality: u32,
+}
+
+impl Default for AvatarSettings {
+    fn default() -> Self {
+        Self {
+            sizes: vec![
+                AvatarSize { name: "small", pixels: 60 },
+                AvatarSize { name: "medium", pixels: 120 },
+                AvatarSize { name: "large", pixels: 144 },
+            ],
+            max_width: 1000,
+            max_height: 4000,
+            quality: 80,
+        }
+    }
+}
+
+#[derive(Debug, Clone)]
+pub struct TournamentProcessingSettings {
+    pub doubles_keywords: Vec<&'static str>,
+    pub team_player_separators: Vec<&'static str>,
+    pub team_player_prefixes: Vec<&'static str>,
+}
+
+impl Default for TournamentProcessingSettings {
+    fn default() -> Self {
+        Self {
+            doubles_keywords: vec!["debel", "deblowy", "double", " par", "pary", "team"],
+            team_player_separators: vec!["/", "&", "+"],
+            team_player_prefixes: vec!["team", "6ur"],
+        }
+    }
+}
+
+#[derive(Debug, Clone)]
 pub struct AppConfig {
     pub rating: RatingSettings,
     pub scraper: ScraperSettings,
     pub admin: AdminSettings,
+    pub avatar: AvatarSettings,
+    pub tournament_processing: TournamentProcessingSettings,
 }
 
 impl Default for AppConfig {
@@ -92,6 +146,8 @@ impl AppConfig {
             rating: RatingSettings::default(),
             scraper: ScraperSettings::default(),
             admin: AdminSettings::new(),
+            avatar: AvatarSettings::default(),
+            tournament_processing: TournamentProcessingSettings::default(),
         }
     }
 }

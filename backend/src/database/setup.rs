@@ -18,10 +18,13 @@ pub fn reset_database(conn: &mut DbConn) -> Result<()> {
 }
 
 pub fn create_avatars_table_if_missing(conn: &mut DbConn) -> Result<()> {
+    // IMPORTANT: Avatars table uses cuescore_id instead of player_id!
+    // This allows avatars to persist when players table is reset during processing.
+    // Using cuescore_id as the stable foreign key ensures avatars survive DB resets.
     let create_sql = "
         CREATE TABLE IF NOT EXISTS avatars (
             id INTEGER PRIMARY KEY AUTOINCREMENT,
-            player_id INTEGER NOT NULL REFERENCES players(id) ON DELETE CASCADE,
+            player_cuescore_id INTEGER NOT NULL,
             size TEXT NOT NULL CHECK(size IN ('small', 'medium', 'large')),
             image_data BLOB NOT NULL,
             format TEXT NOT NULL DEFAULT 'webp',
@@ -31,9 +34,9 @@ pub fn create_avatars_table_if_missing(conn: &mut DbConn) -> Result<()> {
             height INTEGER NOT NULL,
             created_at TEXT DEFAULT CURRENT_TIMESTAMP,
             updated_at TEXT DEFAULT CURRENT_TIMESTAMP,
-            UNIQUE(player_id, size)
+            UNIQUE(player_cuescore_id, size)
         );
-        CREATE INDEX IF NOT EXISTS idx_avatars_player_size ON avatars(player_id, size);
+        CREATE INDEX IF NOT EXISTS idx_avatars_player_cuescore ON avatars(player_cuescore_id, size);
         CREATE INDEX IF NOT EXISTS idx_avatars_source_hash ON avatars(source_url_hash);
     ";
 

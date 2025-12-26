@@ -15,7 +15,6 @@ pub mod services;
 use anyhow::Result;
 use clap::Parser;
 use cli::Cli;
-use log;
 
 use crate::cli::Command;
 use crate::config::settings::AppConfig;
@@ -57,21 +56,20 @@ pub fn handle_process() -> Result<()> {
 pub fn handle_refresh_avatars() -> Result<()> {
     let runtime = tokio::runtime::Runtime::new()?;
     runtime.block_on(async {
-        let _config = AppConfig::new(); // Config might be needed for other things implicitly? No, but let's keep it or remove it.
+        let config = AppConfig::new();
         let db_path = paths::get_database_path();
         let pool = database::create_pool(&db_path)?;
-        let mut processor = AvatarProcessor::new()?;
+        let mut processor = AvatarProcessor::new(config.avatar)?;
         let mut conn = pool.get()?;
 
         let players = PlayerRepository::list_all(&mut conn)?;
         log::info!("Starting avatar refresh for {} players...", players.len());
 
         for player in players {
-            if let Some(url) = player.avatar_url {
-                if let Err(e) = processor.refresh_avatar_if_changed(&mut conn, player.id, &url).await {
+            if let Some(url) = player.avatar_url
+                && let Err(e) = processor.refresh_avatar_if_changed(&mut conn, player.cuescore_id, &url).await {
                     log::warn!("Failed to refresh avatar for {}: {}", player.name, e);
                 }
-            }
         }
         log::info!("Avatar refresh complete.");
         Ok(())

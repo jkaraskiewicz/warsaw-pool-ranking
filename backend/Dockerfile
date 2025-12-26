@@ -46,4 +46,4 @@ COPY backend/entrypoint.sh ./
 ENV DATABASE_PATH="warsaw_pool_ranking.db"
 
 # Command to run the application (will be overridden by docker-compose.yml)
-# CMD ["./warsaw_pool_ranking", "process"]
+# CMD ["./warsaw_pool_ranking", "rankings", "refresh"]

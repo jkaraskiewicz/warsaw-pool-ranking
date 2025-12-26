@@ -1,7 +1,11 @@
 use anyhow::Result;
 
 use warsaw_pool_ranking::cli::Command;
-use warsaw_pool_ranking::{handle_ingest, handle_process, handle_refresh_avatars, handle_serve, interpret};
+use warsaw_pool_ranking::cli::handlers::{
+    handle_tournament_command, handle_ranking_command,
+    handle_avatar_command, handle_database_command,
+};
+use warsaw_pool_ranking::{handle_serve, interpret};
 
 fn main() {
     setup_logging();
@@ -17,14 +21,19 @@ fn setup_logging() {
 
 fn parse_and_execute() -> Result<()> {
     let command = interpret();
-    execute_command(&command)
+    execute_command(command)
 }
 
-fn execute_command(command: &Command) -> Result<()> {
-    match command {
-        Command::Serve { port } => handle_serve(*port),
-        Command::Ingest => handle_ingest(),
-        Command::Process => handle_process(),
-        Command::RefreshAvatars => handle_refresh_avatars(),
-    }
+fn execute_command(command: Command) -> Result<()> {
+    let runtime = tokio::runtime::Runtime::new()?;
+
+    runtime.block_on(async {
+        match command {
+            Command::Serve { port } => handle_serve(port),
+            Command::Tournaments(cmd) => handle_tournament_command(cmd).await,
+            Command::Rankings(cmd) => handle_ranking_command(cmd).await,
+            Command::Avatars(cmd) => handle_avatar_command(cmd).await,
+            Command::Database(cmd) => handle_database_command(cmd).await,
+        }
+    })
 }

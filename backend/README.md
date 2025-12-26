@@ -52,7 +52,7 @@ To find venue IDs:
 export RUST_LOG=info
 
 # Run ingestion
-cargo run -- ingest
+cargo run -- tournaments refresh
 ```
 
 ### Output
@@ -68,7 +68,7 @@ Data is saved to `cache/` directory:
 cargo check
 
 # Run with logs
-RUST_LOG=debug cargo run -- ingest
+RUST_LOG=debug cargo run -- tournaments refresh
 
 # Build release version
 cargo build --release

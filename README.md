@@ -30,12 +30,13 @@ pub fn get_venues() -> Vec<VenueConfig> {
 ### 2. Start Services
 
 ```bash
-# Build and start all services (PostgreSQL, Backend, Frontend)
+# Build and start all services (Backend, Frontend)
 docker-compose up -d --build
 
-# The Rust backend will automatically run `process` on startup.
-# To manually trigger ingest (e.g., for new data):
-# docker-compose exec backend ./warsaw_pool_ranking ingest
+# The Rust backend will automatically run `rankings refresh` on startup.
+# To manually trigger data refresh:
+# docker-compose exec backend ./warsaw_pool_ranking tournaments refresh
+# docker-compose exec backend ./warsaw_pool_ranking rankings refresh
 ```
 
 ### 3. Access Application
@@ -46,13 +47,16 @@ docker-compose up -d --build
 ## Using Makefile (Optional)
 
 ```bash
-make up        # Start all services
-make init      # The Rust backend initializes on start, this command is deprecated.
-make logs      # View logs
-make players   # Show top 10 players (requires custom Docker exec command for Rust)
-make stats     # Show database statistics (requires custom Docker exec command for Rust)
-make update    # The Rust backend processes on start, this command is deprecated.
-make down      # Stop all services
+make up               # Start all services
+make tournaments      # Fetch tournament data
+make rankings         # Calculate player ratings
+make avatars          # Download/update avatars
+make avatars-stats    # Show avatar storage statistics
+make players          # Show top 10 players
+make database-stats   # Show database statistics
+make database-backup  # Backup SQLite database
+make logs             # View logs
+make down             # Stop all services
 ```
 
 See `make help` for all commands.
@@ -199,11 +203,11 @@ cd backend
 # First, build the project
 cargo build --release
 
-# Then, run the processing step. It will ingest data if not cached.
-./target/release/warsaw_pool_ranking process
+# Then, run the processing step. It will fetch data if not cached.
+./target/release/warsaw_pool_ranking rankings refresh
 
-# To ingest new data (and recache):
-./target/release/warsaw_pool_ranking ingest
+# To fetch new tournament data:
+./target/release/warsaw_pool_ranking tournaments refresh
 ```
 
 ### Running Tests
@@ -225,7 +229,7 @@ docker-compose up -d backend
 
 # Local (with hot reload via `cargo watch` or manual recompilation)
 cd backend
-cargo watch -x run -- process # Runs `process` on file changes
+cargo watch -x run -- rankings refresh # Runs `rankings refresh` on file changes
 ```
 
 ### Frontend Development

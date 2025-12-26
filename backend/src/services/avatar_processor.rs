@@ -3,8 +3,9 @@ use image::{imageops::FilterType, DynamicImage, GenericImageView, ImageFormat};
 use sha2::{Digest, Sha256};
 use std::io::Cursor;
 
+use crate::config::settings::AvatarSettings;
 use crate::database::DbConn;
-use crate::database::repositories::avatar_repository::AvatarRepository;
+use crate::database::repositories::avatar_repository::{AvatarRepository, UpsertAvatarParams};
 use crate::http::RateLimitedClient;
 
 const USER_AGENT: &str = "WarsawPoolRankings/2.0";
@@ -13,34 +14,34 @@ const RATE_LIMIT_MS: u64 = 100;
 
 pub struct AvatarProcessor {
     http_client: RateLimitedClient,
+    settings: AvatarSettings,
 }
 
 impl AvatarProcessor {
-    pub fn new() -> Result<Self> {
+    pub fn new(settings: AvatarSettings) -> Result<Self> {
         let http_client = RateLimitedClient::new(USER_AGENT, TIMEOUT_SECS, RATE_LIMIT_MS)?;
-        Ok(Self { http_client })
+        Ok(Self { http_client, settings })
     }
 
     /// Smart refresh: check if avatar changed before downloading
     pub async fn refresh_avatar_if_changed(
         &mut self,
         conn: &mut DbConn,
-        player_id: i32,
+        player_cuescore_id: i64,
         source_url: &str,
     ) -> Result<bool> {
         let new_hash = Self::hash_url(source_url);
 
         // Check if we already have this exact avatar (any size will have same hash)
-        if let Some(existing_hash) = AvatarRepository::get_avatar_hash(conn, player_id, "small")? {
-            if existing_hash == new_hash {
-                log::debug!("Avatar unchanged for player {}, skipping download", player_id);
+        if let Some(existing_hash) = AvatarRepository::get_avatar_hash(conn, player_cuescore_id, "small")?
+            && existing_hash == new_hash {
+                log::debug!("Avatar unchanged for player (cuescore_id={}), skipping download", player_cuescore_id);
                 return Ok(false);
             }
-        }
 
         // Avatar changed or doesn't exist, download and process
-        log::info!("Downloading new/changed avatar for player {}", player_id);
-        self.process_avatar(conn, player_id, source_url).await?;
+        log::info!("Downloading new/changed avatar for player (cuescore_id={})", player_cuescore_id);
+        self.process_avatar(conn, player_cuescore_id, source_url).await?;
         Ok(true)
     }
 
@@ -48,7 +49,7 @@ impl AvatarProcessor {
     async fn process_avatar(
         &mut self,
         conn: &mut DbConn,
-        player_id: i32,
+        player_cuescore_id: i64,
         source_url: &str,
     ) -> Result<()> {
         // Download image
@@ -60,39 +61,35 @@ impl AvatarProcessor {
 
         let source_url_hash = Self::hash_url(source_url);
 
-        // Process and store each size
-        let sizes = [
-            ("small", 40u32),
-            ("medium", 80u32),
-            ("large", 96u32),
-        ];
-
-        for (size_name, target_size) in sizes.iter() {
-            match self.resize_and_encode(&img, *target_size) {
+        // Process and store each configured size
+        for size_config in &self.settings.sizes {
+            match self.resize_and_encode(&img, size_config.pixels) {
                 Ok((webp_data, width, height)) => {
                     AvatarRepository::upsert_avatar(
                         conn,
-                        player_id,
-                        size_name,
-                        &webp_data,
-                        source_url,
-                        &source_url_hash,
-                        width,
-                        height,
+                        UpsertAvatarParams {
+                            player_cuescore_id,
+                            size: size_config.name,
+                            image_data: &webp_data,
+                            source_url,
+                            source_url_hash: &source_url_hash,
+                            width,
+                            height,
+                        },
                     )?;
                     log::debug!(
-                        "Stored {} avatar for player {}: {}x{}",
-                        size_name,
-                        player_id,
+                        "Stored {} avatar for player (cuescore_id={}): {}x{}",
+                        size_config.name,
+                        player_cuescore_id,
                         width,
                         height
                     );
                 }
                 Err(e) => {
                     log::warn!(
-                        "Failed to process {} avatar for player {}: {:?}",
-                        size_name,
-                        player_id,
+                        "Failed to process {} avatar for player (cuescore_id={}): {:?}",
+                        size_config.name,
+                        player_cuescore_id,
                         e
                     );
                 }
