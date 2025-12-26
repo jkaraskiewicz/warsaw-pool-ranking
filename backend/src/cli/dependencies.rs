@@ -144,8 +144,8 @@ impl OperationOrchestrator {
                 service.run()
             },
             Resource::Avatars => {
-                // Call existing handle_refresh_avatars logic
-                crate::handle_refresh_avatars()
+                // Call handler directly
+                crate::cli::handlers::avatars::execute_avatar_refresh(None).await
             },
             Resource::Database => {
                 anyhow::bail!("Database is not a refreshable resource")

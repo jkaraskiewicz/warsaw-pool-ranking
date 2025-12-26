@@ -27,7 +27,7 @@ async fn handle_refresh(player_id: Option<i64>, force: bool) -> Result<()> {
     }
 }
 
-async fn execute_avatar_refresh(player_id: Option<i64>) -> Result<()> {
+pub async fn execute_avatar_refresh(player_id: Option<i64>) -> Result<()> {
     let config = AppConfig::new();
     let db_path = paths::get_database_path();
     let pool = database::create_pool(&db_path)?;

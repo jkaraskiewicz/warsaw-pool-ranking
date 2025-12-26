@@ -1,0 +1,100 @@
+{
+  "access": [
+    1612287
+  ],
+  "banner": [],
+  "branch": 1,
+  "breakrule": "alternate",
+  "contacts": [
+    {
+      "country": {
+        "alpha3": "POL",
+        "continent": "Europe",
+        "image": "https://cuescore.com/img/flags/png-country-4x2-none/res-640x480/pl.png",
+        "name": "Poland"
+      },
+      "firstname": "Maciej Grzegorz",
+      "image": "https://img.cuescore.com/image/2/4/2cf115d1df0825752b34e0510547da26.png?t=1683467983",
+      "lastname": "Lesiak",
+      "name": "Maciej Grzegorz Lesiak",
+      "playerId": 1612287,
+      "represents": {
+        "logo": "//img.cuescore.com/image/7/2/71487152007d737c2f5de4f7821f7c9e.png?t=1555512394",
+        "name": "MGL Cue Sports",
+        "organizationId": 5133719,
+        "profileColor": "58a5fc",
+        "stub": "mglcuesports",
+        "url": "https://cuescore.com/mglcuesports"
+      },
+      "url": "https://cuescore.com/player/Maciej+Grzegorz+Lesiak/1612287"
+    }
+  ],
+  "deadline": "2026-01-12T18:45:00+01:00",
+  "defaultRaceTo": 4,
+  "description": "Turniej w 9-bil, w systemie szwajcarskim dla zawodniczek i zawodników rocznika 1985 i starszych.<br />\r\n<br />\r\nRozgrzewka: 18:30<br />\r\nLosowanie pierwszej rundy i start turnieju: 19:00<br />\r\nSystem szwajcarski: każdy gra co rundę (w przypadku nieparzystej liczby zawodników jeden otrzymuje wygraną walkowerem), rundy są ograniczone czasowo, a kolejne pary losowane na podstawie dotychczasowych wyników w turnieju.<br />\r\nLimit miejsc: 35. ZAPISY (przez formularz, od 5.01.2026, godz. 13:00):",
+  "discipline": "9-Ball",
+  "disciplineId": 3,
+  "displayDate": "January 12, 2026",
+  "dresscode": "",
+  "entrystart": "2026-01-05T13:00:00+01:00",
+  "format": 256,
+  "handicap": [],
+  "matches": [],
+  "name": "Oldboyowy poniedziałek po szwajcarsku 2026 (1)",
+  "organizers": [
+    {
+      "logo": "//img.cuescore.com/image/7/2/71487152007d737c2f5de4f7821f7c9e.png?t=1555512394",
+      "name": "MGL Cue Sports",
+      "organizationId": 5133719,
+      "profileColor": "58a5fc",
+      "stub": "mglcuesports",
+      "url": "https://cuescore.com/mglcuesports"
+    }
+  ],
+  "owner": {
+    "logo": "//img.cuescore.com/image/7/2/71487152007d737c2f5de4f7821f7c9e.png?t=1555512394",
+    "name": "MGL Cue Sports",
+    "organizationId": 5133719,
+    "profileColor": "58a5fc",
+    "stub": "mglcuesports",
+    "url": "https://cuescore.com/mglcuesports"
+  },
+  "preseeds": [],
+  "rankings": [
+    {
+      "bestOf": 0,
+      "branch": 1,
+      "name": "Złota Bila (Mondays 2026) MGL",
+      "pointsystem": 0,
+      "rankingId": 73908571,
+      "season": 2025,
+      "url": "https://cuescore.com/ranking/Z%C5%82ota+Bila+%28Mondays+2026%29+MGL/73908571"
+    }
+  ],
+  "sequence": 0,
+  "standings": [],
+  "starttime": "2026-01-12T19:00:00+01:00",
+  "status": "Open",
+  "statusCode": 0,
+  "stoptime": "2026-01-12T23:59:00+01:00",
+  "timezone": "Europe/Warsaw",
+  "tournamentId": 73908577,
+  "type": 0,
+  "url": "https://cuescore.com/tournament/Oldboyowy+poniedzia%C5%82ek+po+szwajcarsku+2026+%281%29/73908577",
+  "venues": [
+    {
+      "image": "https://img.cuescore.com/image/c/3/c3e5cabdb95fe2a3f6664b3c6d2f6e8f.png?t=1702215114",
+      "name": "Złota Bila - Centrum Bilardowe",
+      "owner": {
+        "logo": "//img.cuescore.com/image/9/2/9b59b70e156f2f8d0f1a879411c6ffd1.png?t=1576160578",
+        "name": "Black Ball Events",
+        "organizationId": 7011764,
+        "profileColor": "000000",
+        "stub": "blackballevents",
+        "url": "https://cuescore.com/blackballevents"
+      },
+      "url": "https://cuescore.com/venue/Z%C5%82ota+Bila+-+Centrum+Bilardowe/36031138",
+      "venueId": 36031138
+    }
+  ]
+}
