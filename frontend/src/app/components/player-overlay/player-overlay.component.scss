@@ -169,14 +169,6 @@ mat-dialog-content {
   }
 }
 
-.avatar.large {
-  width: 80px;
-  height: 80px;
-  font-size: 2.5rem;
-  box-shadow: 0 8px 15px -3px rgba(0, 0, 0, 0.3);
-  margin-right: 0; // Reset margin for overlay
-}
-
 // Light theme overrides
 :host-context(.light-theme) {
   .overlay-header {

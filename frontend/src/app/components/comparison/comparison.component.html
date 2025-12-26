@@ -53,9 +53,7 @@
           <!-- Player 1 -->
           <div class="player-card">
             <div class="player-avatar-wrapper">
-              <div class="avatar large" [ngStyle]="{'background-image': getAvatarUrl(comp.player1?.playerId, 'large')}">
-                {{ comp.player1?.name?.charAt(0) }}
-              </div>
+              <app-avatar [playerId]="comp.player1?.playerId" [name]="comp.player1?.name" size="large"></app-avatar>
               <h3>{{ comp.player1?.name }}</h3>
             </div>
             <div class="stat">
@@ -82,9 +80,7 @@
           <!-- Player 2 -->
           <div class="player-card">
             <div class="player-avatar-wrapper">
-              <div class="avatar large" [ngStyle]="{'background-image': getAvatarUrl(comp.player2?.playerId, 'large')}">
-                {{ comp.player2?.name?.charAt(0) }}
-              </div>
+              <app-avatar [playerId]="comp.player2?.playerId" [name]="comp.player2?.name" size="large"></app-avatar>
               <h3>{{ comp.player2?.name }}</h3>
             </div>
             <div class="stat">

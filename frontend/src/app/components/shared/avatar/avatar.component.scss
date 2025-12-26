@@ -1,0 +1,61 @@
+.avatar-container {
+  border-radius: var(--radius-full);
+  background: linear-gradient(135deg, var(--indigo-500), #9333ea);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  font-weight: 700;
+  box-shadow: var(--shadow-primary);
+  position: relative;
+  overflow: hidden;
+  flex-shrink: 0;
+
+  &.small {
+    height: var(--space-10); /* 2.5rem / 40px */
+    width: var(--space-10);
+  }
+
+  &.medium {
+    height: 4rem; /* 64px */
+    width: 4rem;
+  }
+
+  &.large {
+    height: 6rem; /* 96px */
+    width: 6rem;
+  }
+
+  &.xlarge {
+    height: 8rem; /* 128px */
+    width: 8rem;
+  }
+}
+
+.initial {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 0;
+}
+
+.avatar-img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  opacity: 0;
+  transition: opacity 0.2s ease-in-out;
+  z-index: 1;
+
+  &.loaded {
+    opacity: 1;
+  }
+}
