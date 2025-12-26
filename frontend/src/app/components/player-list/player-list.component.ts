@@ -66,25 +66,6 @@ export class PlayerListComponent {
   interestedFilterActive = computed(() => this.facade.state().showInterestedOnly);
   interestedCount = computed(() => this.interestedPlayersService.count());
 
-  // Computed signals for stats of current page
-  averageRating = computed(() => {
-    const players = this.facade.players();
-    if (players.length === 0) return 0;
-    const totalRating = players.reduce((sum, p) => sum + p.rating, 0);
-    return totalRating / players.length;
-  });
-
-  highestRating = computed(() => {
-    const players = this.facade.players();
-    if (players.length === 0) return 0;
-    return Math.max(...players.map(p => p.rating));
-  });
-
-  totalGames = computed(() => {
-    const players = this.facade.players();
-    return players.reduce((sum, p) => sum + p.gamesPlayed, 0);
-  });
-
   constructor(
     public facade: PlayerListFacade,
     private dialog: MatDialog,
