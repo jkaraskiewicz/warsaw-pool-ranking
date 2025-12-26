@@ -261,23 +261,8 @@
   align-items: center;
 }
 
-.avatar {
-  height: var(--space-10);
-  width: var(--space-10);
-  border-radius: var(--radius-full);
-  background: linear-gradient(135deg, var(--indigo-500), #9333ea); /* Indigo to Purple */
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  color: white;
-  font-weight: 700;
-  font-size: var(--text-sm);
-  box-shadow: var(--shadow-primary);
+app-avatar {
   margin-right: var(--space-4);
-
-  background-size: cover;
-  background-position: center;
-  background-color: var(--indigo-500); // Fallback color
 }
 
 .player-info {

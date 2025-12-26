@@ -1,9 +1,7 @@
 <div class="overlay-container">
   <div class="overlay-header">
     <div class="player-header-info">
-      <div class="avatar large" [ngStyle]="{'background-image': getAvatarUrl(player()?.playerId, 'medium')}">
-        {{ player()?.name?.charAt(0) }}
-      </div>
+      <app-avatar [playerId]="player()?.playerId" [name]="player()?.name" size="large"></app-avatar>
       @if (player()) {
         <h2 mat-dialog-title>{{ player()!.name }}</h2>
       }

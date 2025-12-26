@@ -24,6 +24,7 @@ import { ComparisonComponent } from '../comparison/comparison.component';
 import { RatingTypeSelectorComponent } from '../shared/rating-type-selector/rating-type-selector.component';
 import { TranslatePipe } from '../../pipes/translate.pipe';
 import { SkeletonComponent } from '../shared/skeleton/skeleton.component';
+import { AvatarComponent } from '../shared/avatar/avatar.component';
 
 @Component({
   selector: 'app-player-list',
@@ -47,7 +48,8 @@ import { SkeletonComponent } from '../shared/skeleton/skeleton.component';
     RatingTypeSelectorComponent,
     TranslatePipe,
     DecimalPipe,
-    SkeletonComponent
+    SkeletonComponent,
+    AvatarComponent
   ],
   templateUrl: './player-list.component.html',
   styleUrls: ['./player-list.component.scss'],
@@ -169,10 +171,5 @@ export class PlayerListComponent {
       default:
         return '';
     }
-  }
-
-  getAvatarUrl(playerId: number | undefined, size: 'small' | 'medium' | 'large'): string {
-    if (!playerId) return 'none';
-    return `url(/api/avatars/${playerId}/${size})`;
   }
 }

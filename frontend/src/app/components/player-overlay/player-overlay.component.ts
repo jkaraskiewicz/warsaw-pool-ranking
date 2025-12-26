@@ -9,6 +9,7 @@ import { PlayerService } from '../../services/player.service';
 import { PlayerDetail, PlayerRivalriesResponse } from '../../models/api';
 import { TranslatePipe } from '../../pipes/translate.pipe';
 import { SkeletonComponent } from '../shared/skeleton/skeleton.component';
+import { AvatarComponent } from '../shared/avatar/avatar.component';
 
 @Component({
   selector: 'app-player-overlay',
@@ -21,7 +22,8 @@ import { SkeletonComponent } from '../shared/skeleton/skeleton.component';
     MatProgressSpinnerModule,
     MatChipsModule,
     TranslatePipe,
-    SkeletonComponent
+    SkeletonComponent,
+    AvatarComponent
   ],
   templateUrl: './player-overlay.component.html',
   styleUrls: ['./player-overlay.component.scss'],
@@ -87,11 +89,6 @@ export class PlayerOverlayComponent implements OnInit {
     const month = (date.getMonth() + 1).toString().padStart(2, '0');
     const year = date.getFullYear();
     return `${day}/${month}/${year}`;
-  }
-
-  getAvatarUrl(playerId: number | undefined, size: 'small' | 'medium' | 'large'): string {
-    if (!playerId) return 'none';
-    return `url(/api/avatars/${playerId}/${size})`;
   }
 
   close(): void {

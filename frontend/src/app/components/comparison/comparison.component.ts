@@ -11,6 +11,7 @@ import { TranslatePipe } from '../../pipes/translate.pipe';
 import { HeadToHeadStatsComponent } from './stats/head-to-head-stats.component';
 import { MatchHistoryComponent } from './history/match-history.component';
 import { SkeletonComponent } from '../shared/skeleton/skeleton.component';
+import { AvatarComponent } from '../shared/avatar/avatar.component';
 
 @Component({
   selector: 'app-comparison',
@@ -25,7 +26,8 @@ import { SkeletonComponent } from '../shared/skeleton/skeleton.component';
     TranslatePipe,
     HeadToHeadStatsComponent,
     MatchHistoryComponent,
-    SkeletonComponent
+    SkeletonComponent,
+    AvatarComponent
   ],
   templateUrl: './comparison.component.html',
   styleUrls: ['./comparison.component.scss'],
@@ -75,10 +77,5 @@ export class ComparisonComponent implements OnInit {
 
   formatProb(prob: number): string {
     return (prob * 100).toFixed(1) + '%';
-  }
-
-  getAvatarUrl(playerId: number | undefined, size: 'small' | 'medium' | 'large'): string {
-    if (!playerId) return 'none';
-    return `url(/api/avatars/${playerId}/${size})`;
   }
 }
