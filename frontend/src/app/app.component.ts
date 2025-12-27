@@ -42,4 +42,12 @@ export class AppComponent {
   setLanguage(lang: 'en' | 'pl') {
     this.translationService.setLanguage(lang);
   }
+
+  getLanguageFlag(lang: string): string {
+    return lang === 'en' ? '🇬🇧' : '🇵🇱';
+  }
+
+  getLanguageLabel(lang: string): string {
+    return lang === 'en' ? 'EN' : 'PL';
+  }
 }

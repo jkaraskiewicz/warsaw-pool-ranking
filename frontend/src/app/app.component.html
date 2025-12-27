@@ -31,12 +31,17 @@
 
       <!-- Language Dropdown -->
       <button class="btn-glass" [matMenuTriggerFor]="langMenu">
-        {{ currentLang() | uppercase }}
+        <span class="flag-icon">{{ getLanguageFlag(currentLang()) }}</span>
+        {{ getLanguageLabel(currentLang()) }}
         <mat-icon iconPositionEnd>arrow_drop_down</mat-icon>
       </button>
       <mat-menu #langMenu="matMenu" class="custom-menu">
-        <button mat-menu-item (click)="setLanguage('en')">English (EN)</button>
-        <button mat-menu-item (click)="setLanguage('pl')">Polski (PL)</button>
+        <button mat-menu-item (click)="setLanguage('en')">
+          <span class="flag-icon">🇬🇧</span> English (EN)
+        </button>
+        <button mat-menu-item (click)="setLanguage('pl')">
+          <span class="flag-icon">🇵🇱</span> Polski (PL)
+        </button>
       </mat-menu>
 
       <!-- Admin Button -->

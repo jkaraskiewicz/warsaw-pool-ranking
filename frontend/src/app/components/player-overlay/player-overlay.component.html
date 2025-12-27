@@ -77,34 +77,52 @@
 
         <div class="detail-section">
           <h3>{{ 'RATING_DETAILS' | translate }}</h3>
+
+          <!-- Rating with interpretation -->
           <div class="detail-row">
-            <span class="detail-label">{{ 'ML_RATING' | translate }}</span>
-            <span class="detail-value">{{ p.mlRating.toFixed(1) }}</span>
+            <span class="detail-label">{{ 'RATING' | translate }}</span>
+            <span class="detail-value">
+              {{ p.rating.toFixed(0) }}
+              <span class="rating-interpretation">({{ getRatingInterpretation(p.rating) }})</span>
+            </span>
           </div>
+
+          <!-- Confidence Level with explanation -->
           <div class="detail-row">
-            <span class="detail-label">{{ 'STARTER_WEIGHT' | translate }}</span>
-            <span class="detail-value">{{ (p.starterWeight * 100).toFixed(0) }}%</span>
+            <span class="detail-label">{{ 'RATING_CONFIDENCE' | translate }}</span>
+            <span class="detail-value">
+              {{ getConfidenceLabel(p.confidenceLevel) }}
+              <mat-icon class="info-icon"
+                        [matTooltip]="getConfidenceTooltip(p.confidenceLevel, p.gamesPlayed)">
+                info_outline
+              </mat-icon>
+            </span>
           </div>
+
+          <!-- Games Played with context -->
           <div class="detail-row">
-            <span class="detail-label">{{ 'ML_WEIGHT' | translate }}</span>
-            <span class="detail-value">{{ (p.mlWeight * 100).toFixed(0) }}%</span>
+            <span class="detail-label">{{ 'GAMES_PLAYED' | translate }}</span>
+            <span class="detail-value">
+              {{ p.gamesPlayed }}
+              <span class="games-context">({{ getGamesContext(p.effectiveGames) }})</span>
+            </span>
           </div>
-          <div class="detail-row">
-            <span class="detail-label">{{ 'EFFECTIVE_GAMES' | translate }}</span>
-            <span class="detail-value">{{ p.effectiveGames.toFixed(1) }}</span>
-          </div>
-          <div class="detail-row">
-            <span class="detail-label">{{ 'LAST_PLAYED' | translate }}</span>
-            <span class="detail-value">{{ formatDate(p.lastPlayed) }}</span>
-          </div>
+
+          <!-- Last Activity -->
+          @if (p.lastPlayed) {
+            <div class="detail-row">
+              <span class="detail-label">{{ 'LAST_PLAYED' | translate }}</span>
+              <span class="detail-value">{{ formatDate(p.lastPlayed) }}</span>
+            </div>
+          }
         </div>
 
         @if (rivalries(); as r) {
           <div class="detail-section">
-            <h3>Rivalries (Min 5 games)</h3>
+            <h3>{{ 'RIVALRIES' | translate }} ({{ 'MIN_GAMES_REQUIRED' | translate }})</h3>
             <div class="rivalry-grid" style="display: flex; gap: 20px;">
               <div class="rivalry-col" style="flex: 1;">
-                <h4 style="color: #ef4444; margin-bottom: 8px;">Nemeses</h4>
+                <h4 style="color: #ef4444; margin-bottom: 8px;">{{ 'NEMESES' | translate }}</h4>
                 @for (op of r.nemeses; track op.opponentId) {
                   <div class="rivalry-row" style="display: flex; justify-content: space-between; font-size: 0.9em; padding: 4px 0; border-bottom: 1px solid rgba(255,255,255,0.1);">
                     <span class="name">{{ op.opponentName }}</span>
@@ -113,7 +131,7 @@
                 }
               </div>
               <div class="rivalry-col" style="flex: 1;">
-                <h4 style="color: #22c55e; margin-bottom: 8px;">Bunnies</h4>
+                <h4 style="color: #22c55e; margin-bottom: 8px;">{{ 'BUNNIES' | translate }}</h4>
                 @for (op of r.bunnies; track op.opponentId) {
                   <div class="rivalry-row" style="display: flex; justify-content: space-between; font-size: 0.9em; padding: 4px 0; border-bottom: 1px solid rgba(255,255,255,0.1);">
                     <span class="name">{{ op.opponentName }}</span>

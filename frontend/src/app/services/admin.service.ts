@@ -31,4 +31,10 @@ export class AdminService {
     const headers = new HttpHeaders().set('Authorization', `Bearer ${token}`);
     return this.http.post(`${this.apiUrl}/refresh`, {}, { headers });
   }
+
+  refreshAvatars(): Observable<any> {
+    const token = this.authService.getToken();
+    const headers = new HttpHeaders().set('Authorization', `Bearer ${token}`);
+    return this.http.post(`${this.apiUrl}/refresh-avatars`, {}, { headers });
+  }
 }
