@@ -19,6 +19,7 @@ import { MatTooltipModule } from '@angular/material/tooltip';
 import { PlayerListFacade } from './player-list.facade';
 import { InterestedPlayersService } from '../../services/interested-players.service';
 import { PlayerListItem } from '../../models/api';
+import { getConfidenceColor } from '../../utils/format.utils';
 import { PlayerOverlayComponent } from '../player-overlay/player-overlay.component';
 import { ComparisonComponent } from '../comparison/comparison.component';
 import { RatingTypeSelectorComponent } from '../shared/rating-type-selector/rating-type-selector.component';
@@ -146,16 +147,5 @@ export class PlayerListComponent {
     });
   }
 
-  getConfidenceColor(level: string): string {
-    switch (level) {
-      case 'established':
-        return 'primary';
-      case 'emerging':
-        return 'accent';
-      case 'provisional':
-        return 'warn';
-      default:
-        return '';
-    }
-  }
+  getConfidenceColor = getConfidenceColor;
 }

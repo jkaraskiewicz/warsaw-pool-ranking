@@ -34,7 +34,6 @@ export class AdminComponent {
   password = signal('');
   loading = signal(false);
   loginLoading = signal(false);
-  refreshingAvatars = signal(false);
 
   constructor(
     public adminService: AdminService,
@@ -115,34 +114,4 @@ export class AdminComponent {
     });
   }
 
-  refreshAvatars(): void {
-    this.refreshingAvatars.set(true);
-    this.adminService.refreshAvatars().subscribe({
-      next: () => {
-        this.snackBar.open(
-          this.translationService.translate('REFRESH_SUCCESSFUL'),
-          this.translationService.translate('CLOSE'),
-          { duration: 3000 }
-        );
-        this.refreshingAvatars.set(false);
-      },
-      error: (err) => {
-        if (err.status === 401) {
-          this.snackBar.open(
-            this.translationService.translate('SESSION_EXPIRED'),
-            this.translationService.translate('CLOSE'),
-            { duration: 4000 }
-          );
-          this.adminService.logout();
-        } else {
-          this.snackBar.open(
-            this.translationService.translate('REFRESH_FAILED') + ': ' + err.message,
-            this.translationService.translate('CLOSE'),
-            { duration: 3000 }
-          );
-        }
-        this.refreshingAvatars.set(false);
-      }
-    });
-  }
 }

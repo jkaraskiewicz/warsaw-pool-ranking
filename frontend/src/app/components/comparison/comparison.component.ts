@@ -7,6 +7,7 @@ import { MatProgressSpinnerModule } from '@angular/material/progress-spinner';
 import { MatChipsModule } from '@angular/material/chips';
 import { PlayerService } from '../../services/player.service';
 import { HeadToHeadResponse } from '../../models/api';
+import { getConfidenceColor, formatProbability } from '../../utils/format.utils';
 import { TranslatePipe } from '../../pipes/translate.pipe';
 import { HeadToHeadStatsComponent } from './stats/head-to-head-stats.component';
 import { MatchHistoryComponent } from './history/match-history.component';
@@ -66,16 +67,6 @@ export class ComparisonComponent implements OnInit {
     this.dialogRef.close();
   }
 
-  getConfidenceColor(level: string): string {
-    switch (level) {
-      case 'established': return 'primary';
-      case 'emerging': return 'accent';
-      case 'provisional': return 'warn';
-      default: return '';
-    }
-  }
-
-  formatProb(prob: number): string {
-    return (prob * 100).toFixed(1) + '%';
-  }
+  getConfidenceColor = getConfidenceColor;
+  formatProb = formatProbability;
 }

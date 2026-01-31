@@ -1,12 +1,11 @@
 use axum::{
-    extract::{Query, State},
-    http::{StatusCode, HeaderMap},
+    extract::State,
+    http::{HeaderMap, StatusCode},
     response::IntoResponse,
     Json,
 };
-use serde::Deserialize;
-use std::sync::Arc;
 use log;
+use std::sync::Arc;
 
 use crate::api::models::{LoginRequest, LoginResponse};
 use crate::database::repositories::player_repository::PlayerRepository;
@@ -56,69 +55,48 @@ pub async fn admin_refresh(
     }
 
     tokio::spawn(async move {
-        log::info!("Admin triggered refresh started");
+        log::info!("=== Admin Full Sync Started ===");
+
+        // Step 1: Fetch tournaments
+        log::info!("Step 1/3: Fetching tournament data...");
         let ingest_result = async {
             let mut ingest_service = IngestionService::new()?;
             ingest_service.run().await
         }.await;
         if let Err(e) = ingest_result {
-            log::error!("Refresh failed at ingestion: {:?}", e);
+            log::error!("Sync failed at ingestion: {:?}", e);
             return;
         }
+
+        // Step 2: Calculate ratings
+        log::info!("Step 2/3: Calculating player ratings...");
         let process_result = async {
             let process_service = ProcessingService::new(state.config.clone())?;
             process_service.run()
         }.await;
         if let Err(e) = process_result {
-            log::error!("Refresh failed at processing: {:?}", e);
+            log::error!("Sync failed at processing: {:?}", e);
             return;
         }
-        log::info!("Admin triggered refresh completed successfully");
-    });
 
-    (StatusCode::ACCEPTED, "Refresh triggered").into_response()
-}
-
-#[derive(Deserialize)]
-pub struct AvatarRefreshParams {
-    player_id: Option<i32>,
-}
-
-pub async fn admin_refresh_avatars(
-    State(state): State<Arc<AppState>>,
-    headers: HeaderMap,
-    Query(params): Query<AvatarRefreshParams>,
-) -> impl IntoResponse {
-    if !validate_auth_header(&headers, &state.config.admin.password) {
-        return StatusCode::UNAUTHORIZED.into_response();
-    }
-
-    tokio::spawn(async move {
-        log::info!("Admin triggered avatar refresh started");
-        let result = refresh_avatars_task(&state, params.player_id).await;
-        if let Err(e) = result {
-            log::error!("Avatar refresh failed: {:?}", e);
+        // Step 3: Update avatars
+        log::info!("Step 3/3: Updating player avatars...");
+        let avatar_result = refresh_avatars_task(&state).await;
+        if let Err(e) = avatar_result {
+            log::error!("Sync failed at avatar refresh: {:?}", e);
             return;
         }
-        log::info!("Avatar refresh completed successfully");
+
+        log::info!("=== Admin Full Sync Completed ===");
     });
 
-    (StatusCode::ACCEPTED, "Avatar refresh triggered").into_response()
+    (StatusCode::ACCEPTED, "Full sync triggered").into_response()
 }
 
-async fn refresh_avatars_task(state: &AppState, player_id: Option<i32>) -> anyhow::Result<()> {
+async fn refresh_avatars_task(state: &AppState) -> anyhow::Result<()> {
     let mut processor = AvatarProcessor::new(state.config.avatar.clone())?;
     let mut conn = state.pool.get()?;
-
-    let players = match player_id {
-        Some(id) => {
-            match PlayerRepository::find_by_id(&mut conn, id)? {
-                Some(player) => vec![player],
-                None => anyhow::bail!("Player {} not found", id),
-            }
-        }
-        None => PlayerRepository::list_all(&mut conn)?,
-    };
+    let players = PlayerRepository::list_all(&mut conn)?;
 
     let total_players = players.len();
     let mut updated_count = 0;

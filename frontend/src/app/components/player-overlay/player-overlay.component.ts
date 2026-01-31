@@ -9,6 +9,7 @@ import { MatTooltipModule } from '@angular/material/tooltip';
 import { PlayerService } from '../../services/player.service';
 import { TranslationService } from '../../services/translation.service';
 import { PlayerDetail, PlayerRivalriesResponse } from '../../models/api';
+import { getConfidenceColor, formatDate } from '../../utils/format.utils';
 import { TranslatePipe } from '../../pipes/translate.pipe';
 import { SkeletonComponent } from '../shared/skeleton/skeleton.component';
 import { AvatarComponent } from '../shared/avatar/avatar.component';
@@ -73,27 +74,8 @@ export class PlayerOverlayComponent implements OnInit {
     return this.player()!.cuescoreProfileUrl;
   }
 
-  getConfidenceColor(level: string): string {
-    switch (level) {
-      case 'established':
-        return 'primary';
-      case 'emerging':
-        return 'accent';
-      case 'provisional':
-        return 'warn';
-      default:
-        return '';
-    }
-  }
-
-  formatDate(dateString: string | null | undefined): string {
-    if (!dateString) return 'N/A';
-    const date = new Date(dateString);
-    const day = date.getDate().toString().padStart(2, '0');
-    const month = (date.getMonth() + 1).toString().padStart(2, '0');
-    const year = date.getFullYear();
-    return `${day}/${month}/${year}`;
-  }
+  getConfidenceColor = getConfidenceColor;
+  formatDate = formatDate;
 
   getRatingInterpretation(rating: number): string {
     if (rating >= 2000) return this.translationService.translate('RATING_EXPERT');

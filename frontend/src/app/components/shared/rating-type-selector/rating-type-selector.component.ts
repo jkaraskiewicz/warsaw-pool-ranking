@@ -1,4 +1,4 @@
-import { Component, EventEmitter, input, Output, ChangeDetectionStrategy } from '@angular/core';
+import { Component, input, output, ChangeDetectionStrategy } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { MatButtonToggleModule } from '@angular/material/button-toggle';
 import { MatIconModule } from '@angular/material/icon';
@@ -14,7 +14,7 @@ import { TranslatePipe } from '../../../pipes/translate.pipe';
 })
 export class RatingTypeSelectorComponent {
   selectedType = input<string>('active');
-  @Output() typeChange = new EventEmitter<string>();
+  typeChange = output<string>();
 
   ratingTypes = [
     { value: 'active', viewValue: 'ACTIVE' },

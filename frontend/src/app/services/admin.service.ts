@@ -3,6 +3,15 @@ import { HttpClient, HttpHeaders } from '@angular/common/http';
 import { Observable } from 'rxjs';
 import { AuthService } from './auth.service';
 
+export interface LoginResponse {
+  success: boolean;
+  error?: string;
+}
+
+export interface RefreshResponse {
+  message: string;
+}
+
 @Injectable({
   providedIn: 'root'
 })
@@ -14,7 +23,7 @@ export class AdminService {
     private authService: AuthService
   ) {}
 
-  login(password: string): Observable<{ success: boolean; error?: string }> {
+  login(password: string): Observable<LoginResponse> {
     return this.authService.login(password);
   }
 
@@ -26,15 +35,13 @@ export class AdminService {
     return this.authService.isLoggedIn();
   }
 
-  triggerRefresh(): Observable<any> {
-    const token = this.authService.getToken();
-    const headers = new HttpHeaders().set('Authorization', `Bearer ${token}`);
-    return this.http.post(`${this.apiUrl}/refresh`, {}, { headers });
+  triggerRefresh(): Observable<string> {
+    const headers = this.getAuthHeaders();
+    return this.http.post(`${this.apiUrl}/refresh`, {}, { headers, responseType: 'text' });
   }
 
-  refreshAvatars(): Observable<any> {
+  private getAuthHeaders(): HttpHeaders {
     const token = this.authService.getToken();
-    const headers = new HttpHeaders().set('Authorization', `Bearer ${token}`);
-    return this.http.post(`${this.apiUrl}/refresh-avatars`, {}, { headers });
+    return new HttpHeaders().set('Authorization', `Bearer ${token}`);
   }
 }

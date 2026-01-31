@@ -28,15 +28,8 @@
           <div class="actions">
             <button mat-raised-button color="primary" (click)="refreshData()" [disabled]="loading()">
               <mat-icon>sync</mat-icon>
-              {{ loading() ? ('REFRESHING_TOURNAMENTS' | translate) : ('REFRESH_TOURNAMENTS_RATINGS' | translate) }}
+              {{ loading() ? ('SYNCING' | translate) : ('SYNC_DATA' | translate) }}
               @if (loading()) {
-                <mat-spinner diameter="20" class="spinner-inline"></mat-spinner>
-              }
-            </button>
-            <button mat-raised-button color="accent" (click)="refreshAvatars()" [disabled]="refreshingAvatars()">
-              <mat-icon>face</mat-icon>
-              {{ refreshingAvatars() ? ('REFRESHING_AVATARS' | translate) : ('REFRESH_AVATARS' | translate) }}
-              @if (refreshingAvatars()) {
                 <mat-spinner diameter="20" class="spinner-inline"></mat-spinner>
               }
             </button>
