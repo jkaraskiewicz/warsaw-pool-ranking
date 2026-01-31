@@ -2,7 +2,7 @@ use anyhow::{Result, Context};
 use log::info;
 use std::path::Path;
 use chrono::{Utc, Duration};
-use rusqlite::OptionalExtension;
+use rusqlite::{OptionalExtension, params};
 
 use crate::cache::Cache;
 use crate::config::settings::AppConfig;
@@ -59,10 +59,23 @@ impl ProcessingService {
         let pool = database::create_pool(db_path)?;
         let mut conn = database::get_connection(&pool)?;
 
-        // Setup database schema
+        // Step 1: Backup existing avatars if database already exists
+        let existing_avatars = if Path::new(db_path).exists() {
+            Some(Self::backup_existing_avatars(&mut conn)?)
+        } else {
+            None
+        };
+
+        // Setup database schema - create avatars table FIRST
         database::setup::create_avatars_table_if_missing(&mut conn)?;
         database::setup::reset_database(&mut conn)?;
         info!("  → Database schema reset\n");
+
+        // Step 2: Restore avatars from backup
+        if let Some(backup) = existing_avatars {
+            Self::restore_avatars(&mut conn, &backup)?;
+            info!("  → Restored {} avatars from previous session\n", backup.len());
+        }
 
         // Load tournaments from cache
         let tournaments = self.load_tournaments_from_cache()?;
@@ -192,6 +205,43 @@ impl ProcessingService {
             // Save to database
             RatingProcessor::save_ratings(conn, &ratings, &period.name)?;
             info!("    → Saved ratings for period {} to database\n", period.name);
+        }
+
+        Ok(())
+    }
+
+    /// Backup all avatars before database reset
+    fn backup_existing_avatars(conn: &mut DbConn) -> Result<Vec<(i64, String, Vec<u8>)>> {
+        use rusqlite::params;
+
+        let backup = conn
+            .prepare(
+                "SELECT player_cuescore_id, size, image_data, source_url, width, height 
+                 FROM avatars"
+            )?
+            .query_map(params![], |row| {
+                Ok((
+                    row.get::<_, i64>(0)?,
+                    row.get::<_, String>(1)?,
+                    row.get::<_, Vec<u8>>(2)?,
+                ))
+            })?
+            .collect::<Result<Vec<(i64, String, Vec<u8>)>, _>>()?;
+
+        Ok(backup)
+    }
+
+    /// Restore avatars from backup after database reset
+    fn restore_avatars(conn: &mut DbConn, backup: &[(i64, String, Vec<u8>)]) -> Result<()> {
+        for (player_cuescore_id, size, image_data) in backup {
+            let sql = "INSERT OR REPLACE INTO avatars 
+                       (player_cuescore_id, size, image_data, source_url, source_url_hash, width, height, created_at, updated_at)
+                       VALUES (?1, ?2, ?3, 'restored', '', 0, 0, CURRENT_TIMESTAMP, CURRENT_TIMESTAMP)";
+
+            conn.execute(
+                sql,
+                params![player_cuescore_id, size, image_data],
+            ).context("Failed to restore avatar")?;
         }
 
         Ok(())
