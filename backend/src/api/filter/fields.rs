@@ -202,7 +202,7 @@ mod tests {
     fn test_validate_enum_value() {
         let field_def = get_field_definition("rating_type").unwrap();
         assert!(validate_value(field_def, "all").is_ok());
-        assert!(validate_value(field_def, "8ball").is_ok());
+        assert!(validate_value(field_def, "1y").is_ok());
         assert!(validate_value(field_def, "invalid").is_err());
     }
 

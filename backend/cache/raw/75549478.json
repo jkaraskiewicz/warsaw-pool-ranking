@@ -1,0 +1,885 @@
+{
+  "access": [],
+  "banner": [],
+  "branch": 1,
+  "breakrule": "alternate",
+  "contacts": [
+    {
+      "country": {
+        "alpha3": "POL",
+        "continent": "Europe",
+        "image": "https://cuescore.com/img/flags/png-country-4x2-none/res-640x480/pl.png",
+        "name": "Poland"
+      },
+      "firstname": "Michał",
+      "image": "https://img.cuescore.com/image/1/4/15d291e83ead350107ae474e8623a6f5.png?t=1504629089",
+      "lastname": "Nowak",
+      "name": "Michał Nowak",
+      "playerId": 1620195,
+      "represents": [],
+      "url": "https://cuescore.com/player/Micha%C5%82+Nowak/1620195"
+    }
+  ],
+  "deadline": "",
+  "defaultRaceTo": 3,
+  "description": "",
+  "discipline": "Multiball",
+  "disciplineId": 10,
+  "displayDate": "January 29, 2026",
+  "draw": 1,
+  "dresscode": "",
+  "entrystart": "",
+  "format": 1,
+  "handicap": [],
+  "matches": [
+    {
+      "bestOfSets": 3,
+      "branch": 1,
+      "challengeId": 0,
+      "comment": "",
+      "curVersion": 49,
+      "discipline": "Multiball",
+      "disciplineId": 10,
+      "frames": [],
+      "groupNo": 0,
+      "highBreaksA": "",
+      "highBreaksB": "",
+      "inningsPlayerA": 0,
+      "inningsPlayerB": 0,
+      "lagWinner": "",
+      "loserNext": "",
+      "matchId": 75549502,
+      "matchType": 0,
+      "matchno": 1,
+      "matchstatus": "finished",
+      "matchstatusCode": 2,
+      "notes": [],
+      "penalty": 0,
+      "playerA": {
+        "country": {
+          "alpha3": "POL",
+          "continent": "Europe",
+          "image": "https://cuescore.com/img/flags/png-country-4x2-none/res-640x480/pl.png",
+          "name": "Poland"
+        },
+        "firstname": "Filip",
+        "image": "https://img.cuescore.com/image/8/4/862c792ba8eb7f97e626fbe6cbcc59f6.png",
+        "lastname": "Droździak",
+        "name": "Filip Droździak",
+        "playerId": 20516572,
+        "represents": [],
+        "url": "https://cuescore.com/player/Filip+Dro%C5%BAdziak/20516572"
+      },
+      "playerB": {
+        "country": {
+          "alpha3": "MKD",
+          "continent": "Europe",
+          "image": "https://cuescore.com/img/flags/png-country-4x2-none/res-640x480/mk.png",
+          "name": "North Macedonia"
+        },
+        "firstname": "Dimitar",
+        "image": "https://img.cuescore.com/image/0/4/0b6d39576a1463c62d0af75e56d546bb.png?t=1747656476",
+        "lastname": "Dimitrovski",
+        "name": "Dimitar Dimitrovski",
+        "playerId": 59859109,
+        "represents": [],
+        "url": "https://cuescore.com/player/Dimitar+Dimitrovski/59859109"
+      },
+      "properties": {
+        "lagWinsA": 0,
+        "lagWinsB": 0,
+        "penalty": [],
+        "runoutsA": 1,
+        "runoutsB": 1
+      },
+      "raceTo": 3,
+      "round": 1,
+      "roundName": "Semi final",
+      "runoutsA": 1,
+      "runoutsB": 1,
+      "scoreA": 1,
+      "scoreB": 2,
+      "sets": [
+        {
+          "frames": [
+            {
+              "break": 0,
+              "frameNo": 1,
+              "highBreaksA": "",
+              "highBreaksB": "",
+              "inningsA": 0,
+              "inningsB": 0,
+              "pointsA": 0,
+              "pointsB": 0,
+              "runoutA": 0,
+              "runoutB": 0,
+              "scoreA": 3,
+              "scoreB": 1,
+              "starttime": "2026-01-29T18:05:00+00:00",
+              "stoptime": "2026-01-29T20:48:58+00:00"
+            }
+          ],
+          "scoreA": 3,
+          "scoreB": 1,
+          "setNo": 1
+        },
+        {
+          "frames": [
+            {
+              "break": 0,
+              "frameNo": 1,
+              "highBreaksA": "",
+              "highBreaksB": "",
+              "inningsA": 0,
+              "inningsB": 0,
+              "pointsA": 0,
+              "pointsB": 0,
+              "runoutA": 0,
+              "runoutB": 0,
+              "scoreA": 3,
+              "scoreB": 4,
+              "starttime": "2026-01-29T18:05:00+00:00",
+              "stoptime": "2026-01-29T20:48:58+00:00"
+            }
+          ],
+          "scoreA": 3,
+          "scoreB": 4,
+          "setNo": 2
+        },
+        {
+          "frames": [
+            {
+              "break": 0,
+              "frameNo": 1,
+              "highBreaksA": "",
+              "highBreaksB": "",
+              "inningsA": 0,
+              "inningsB": 0,
+              "pointsA": 0,
+              "pointsB": 0,
+              "runoutA": 0,
+              "runoutB": 0,
+              "scoreA": 0,
+              "scoreB": 4,
+              "starttime": "2026-01-29T18:05:00+00:00",
+              "stoptime": "2026-01-29T20:48:58+00:00"
+            }
+          ],
+          "scoreA": 0,
+          "scoreB": 4,
+          "setNo": 3
+        }
+      ],
+      "starttime": "2026-01-29T19:05:00",
+      "stoptime": "2026-01-29T21:48:24",
+      "table": {
+        "branch": "American pool",
+        "branchId": 1,
+        "cloth": "",
+        "description": "",
+        "manufacturer": "Euro-tech",
+        "model": "Tournament Champion",
+        "name": "2",
+        "pockets": "",
+        "size": 9,
+        "slate": "",
+        "tableId": 57053245,
+        "venue": {
+          "image": "https://img.cuescore.com/image/7/3/7afb0a44c256a53b5e27b584e3c27e2f.png?t=1742222226",
+          "name": "Shooters",
+          "owner": {
+            "logo": "//img.cuescore.com/image/9/2/9b59b70e156f2f8d0f1a879411c6ffd1.png?t=1576160578",
+            "name": "Black Ball Events",
+            "organizationId": 7011764,
+            "profileColor": "000000",
+            "stub": "blackballevents",
+            "url": "https://cuescore.com/blackballevents"
+          },
+          "url": "https://cuescore.com/venue/Shooters/57050170",
+          "venueId": 57050170
+        }
+      },
+      "tournamentId": 75549478,
+      "useInnings": false,
+      "videoLink": "",
+      "winnerNext": 3
+    },
+    {
+      "bestOfSets": 3,
+      "branch": 1,
+      "challengeId": 0,
+      "comment": "",
+      "curVersion": 49,
+      "discipline": "Multiball",
+      "disciplineId": 10,
+      "frames": [],
+      "groupNo": 0,
+      "highBreaksA": "",
+      "highBreaksB": "",
+      "inningsPlayerA": 0,
+      "inningsPlayerB": 0,
+      "lagWinner": "A",
+      "loserNext": "",
+      "matchId": 75549505,
+      "matchType": 0,
+      "matchno": 2,
+      "matchstatus": "finished",
+      "matchstatusCode": 2,
+      "notes": [
+        {
+          "note": "set start",
+          "time": "2026-01-29T18:22:20.859Z"
+        },
+        {
+          "note": "frame start",
+          "time": "2026-01-29T18:22:20.859Z"
+        },
+        {
+          "note": "A breaking",
+          "time": "2026-01-29T18:22:20.859Z"
+        },
+        {
+          "note": "B frame win",
+          "time": "2026-01-29T18:30:47.462Z"
+        },
+        {
+          "note": "frame end",
+          "time": "2026-01-29T18:30:47.462Z"
+        },
+        {
+          "note": "frame start",
+          "time": "2026-01-29T18:30:47.462Z"
+        },
+        {
+          "note": "B breaking",
+          "time": "2026-01-29T18:30:47.462Z"
+        },
+        {
+          "note": "B frame win",
+          "time": "2026-01-29T18:39:21.546Z"
+        },
+        {
+          "note": "frame end",
+          "time": "2026-01-29T18:39:21.546Z"
+        },
+        {
+          "note": "frame start",
+          "time": "2026-01-29T18:39:21.546Z"
+        },
+        {
+          "note": "A breaking",
+          "time": "2026-01-29T18:39:21.546Z"
+        },
+        {
+          "note": "A frame win",
+          "time": "2026-01-29T18:49:42.509Z"
+        },
+        {
+          "note": "frame end",
+          "time": "2026-01-29T18:49:42.509Z"
+        },
+        {
+          "note": "frame start",
+          "time": "2026-01-29T18:49:42.509Z"
+        },
+        {
+          "note": "B breaking",
+          "time": "2026-01-29T18:49:42.509Z"
+        },
+        {
+          "note": "A frame win",
+          "time": "2026-01-29T18:59:56.854Z"
+        },
+        {
+          "note": "frame end",
+          "time": "2026-01-29T18:59:56.854Z"
+        },
+        {
+          "note": "frame start",
+          "time": "2026-01-29T18:59:56.854Z"
+        },
+        {
+          "note": "A breaking",
+          "time": "2026-01-29T18:59:56.854Z"
+        },
+        {
+          "note": "A frame win runout",
+          "time": "2026-01-29T19:05:21.386Z"
+        },
+        {
+          "note": "frame end",
+          "time": "2026-01-29T19:05:21.386Z"
+        },
+        {
+          "note": "set end",
+          "time": "2026-01-29T19:05:21.386Z"
+        },
+        {
+          "note": "set start",
+          "time": "2026-01-29T19:05:21.386Z"
+        },
+        {
+          "note": "frame start",
+          "time": "2026-01-29T19:05:21.386Z"
+        },
+        {
+          "note": "B breaking",
+          "time": "2026-01-29T19:05:21.386Z"
+        },
+        {
+          "note": "A frame win",
+          "time": "2026-01-29T19:12:18.682Z"
+        },
+        {
+          "note": "frame end",
+          "time": "2026-01-29T19:12:18.682Z"
+        },
+        {
+          "note": "frame start",
+          "time": "2026-01-29T19:12:18.682Z"
+        },
+        {
+          "note": "A breaking",
+          "time": "2026-01-29T19:12:18.682Z"
+        },
+        {
+          "note": "B frame win",
+          "time": "2026-01-29T19:20:03.072Z"
+        },
+        {
+          "note": "frame end",
+          "time": "2026-01-29T19:20:03.072Z"
+        },
+        {
+          "note": "frame start",
+          "time": "2026-01-29T19:20:03.072Z"
+        },
+        {
+          "note": "B breaking",
+          "time": "2026-01-29T19:20:03.072Z"
+        },
+        {
+          "note": "B frame win",
+          "time": "2026-01-29T19:28:33.171Z"
+        },
+        {
+          "note": "frame end",
+          "time": "2026-01-29T19:28:33.171Z"
+        },
+        {
+          "note": "frame start",
+          "time": "2026-01-29T19:28:33.171Z"
+        },
+        {
+          "note": "A breaking",
+          "time": "2026-01-29T19:28:33.171Z"
+        },
+        {
+          "note": "B frame win",
+          "time": "2026-01-29T19:37:18.573Z"
+        },
+        {
+          "note": "frame end",
+          "time": "2026-01-29T19:37:18.573Z"
+        },
+        {
+          "note": "set end",
+          "time": "2026-01-29T19:37:18.573Z"
+        },
+        {
+          "note": "set start",
+          "time": "2026-01-29T19:37:18.573Z"
+        },
+        {
+          "note": "frame start",
+          "time": "2026-01-29T19:37:18.573Z"
+        },
+        {
+          "note": "A breaking",
+          "time": "2026-01-29T19:37:18.573Z"
+        },
+        {
+          "note": "B frame win runout",
+          "time": "2026-01-29T19:48:31.704Z"
+        },
+        {
+          "note": "frame end",
+          "time": "2026-01-29T19:48:31.704Z"
+        },
+        {
+          "note": "frame start",
+          "time": "2026-01-29T19:48:31.704Z"
+        },
+        {
+          "note": "B breaking",
+          "time": "2026-01-29T19:48:31.704Z"
+        },
+        {
+          "note": "A frame win",
+          "time": "2026-01-29T19:56:48.223Z"
+        },
+        {
+          "note": "frame end",
+          "time": "2026-01-29T19:56:48.223Z"
+        },
+        {
+          "note": "frame start",
+          "time": "2026-01-29T19:56:48.223Z"
+        },
+        {
+          "note": "A breaking",
+          "time": "2026-01-29T19:56:48.223Z"
+        },
+        {
+          "note": "A frame win",
+          "time": "2026-01-29T20:05:49.905Z"
+        },
+        {
+          "note": "frame end",
+          "time": "2026-01-29T20:05:49.905Z"
+        },
+        {
+          "note": "frame start",
+          "time": "2026-01-29T20:05:49.905Z"
+        },
+        {
+          "note": "B breaking",
+          "time": "2026-01-29T20:05:49.905Z"
+        },
+        {
+          "note": "B frame win",
+          "time": "2026-01-29T20:13:35.123Z"
+        },
+        {
+          "note": "frame end",
+          "time": "2026-01-29T20:13:35.123Z"
+        },
+        {
+          "note": "frame start",
+          "time": "2026-01-29T20:13:35.123Z"
+        },
+        {
+          "note": "A breaking",
+          "time": "2026-01-29T20:13:35.123Z"
+        },
+        {
+          "note": "B frame win",
+          "time": "2026-01-29T20:19:14.964Z"
+        },
+        {
+          "note": "frame end",
+          "time": "2026-01-29T20:19:14.964Z"
+        },
+        {
+          "note": "frame start",
+          "time": "2026-01-29T20:19:14.964Z"
+        },
+        {
+          "note": "B breaking",
+          "time": "2026-01-29T20:19:14.964Z"
+        },
+        {
+          "note": "A frame win",
+          "time": "2026-01-29T20:25:07.168Z"
+        },
+        {
+          "note": "frame end",
+          "time": "2026-01-29T20:25:07.168Z"
+        },
+        {
+          "note": "frame start",
+          "time": "2026-01-29T20:25:07.168Z"
+        },
+        {
+          "note": "A breaking",
+          "time": "2026-01-29T20:25:07.168Z"
+        },
+        {
+          "note": "A frame win",
+          "time": "2026-01-29T20:30:20.862Z"
+        },
+        {
+          "note": "frame end",
+          "time": "2026-01-29T20:30:20.862Z"
+        },
+        {
+          "note": "set end",
+          "time": "2026-01-29T20:30:22.095Z"
+        },
+        {
+          "note": "match end",
+          "time": "2026-01-29T20:30:22.095Z"
+        }
+      ],
+      "penalty": 0,
+      "playerA": {
+        "country": {
+          "alpha3": "POL",
+          "continent": "Europe",
+          "image": "https://cuescore.com/img/flags/png-country-4x2-none/res-640x480/pl.png",
+          "name": "Poland"
+        },
+        "firstname": "Radosław F.",
+        "image": "https://img.cuescore.com/image/3/4/3db0e82c321abfff746b9867e98f8e41.png?t=1731667215",
+        "lastname": "Kos",
+        "name": "Radosław F. Kos",
+        "playerId": 4720099,
+        "represents": [],
+        "url": "https://cuescore.com/player/Rados%C5%82aw+F.+Kos/4720099"
+      },
+      "playerB": {
+        "country": {
+          "alpha3": "POL",
+          "continent": "Europe",
+          "image": "https://cuescore.com/img/flags/png-country-4x2-none/res-640x480/pl.png",
+          "name": "Poland"
+        },
+        "firstname": "Jakub",
+        "image": "https://img.cuescore.com/image/0/4/0878e968cba11bd8ceb21fa4b3364c2a.png?t=1744922337",
+        "lastname": "Ładyński Eighty Nine Pucharowo Warszawa",
+        "name": "Jakub Ładyński Eighty Nine Pucharowo Warszawa",
+        "playerId": 15492220,
+        "represents": [],
+        "url": "https://cuescore.com/player/Jakub+%C5%81ady%C5%84ski+Eighty+Nine+Pucharowo+Warszawa/15492220"
+      },
+      "properties": {
+        "lagWinsA": 1,
+        "lagWinsB": 0,
+        "runoutsA": 1,
+        "runoutsB": 1
+      },
+      "raceTo": 3,
+      "round": 1,
+      "roundName": "Semi final",
+      "runoutsA": 1,
+      "runoutsB": 1,
+      "scoreA": 2,
+      "scoreB": 1,
+      "sets": [
+        {
+          "frames": [
+            {
+              "break": 0,
+              "frameNo": 1,
+              "highBreaksA": "",
+              "highBreaksB": "",
+              "inningsA": 0,
+              "inningsB": 0,
+              "pointsA": 0,
+              "pointsB": 0,
+              "runoutA": 0,
+              "runoutB": 0,
+              "scoreA": 3,
+              "scoreB": 2,
+              "starttime": "2026-01-29T18:05:00+00:00",
+              "stoptime": "2026-01-29T20:30:47+00:00"
+            }
+          ],
+          "scoreA": 3,
+          "scoreB": 2,
+          "setNo": 1
+        },
+        {
+          "frames": [
+            {
+              "break": 0,
+              "frameNo": 1,
+              "highBreaksA": "",
+              "highBreaksB": "",
+              "inningsA": 0,
+              "inningsB": 0,
+              "pointsA": 0,
+              "pointsB": 0,
+              "runoutA": 0,
+              "runoutB": 0,
+              "scoreA": 1,
+              "scoreB": 4,
+              "starttime": "2026-01-29T18:05:00+00:00",
+              "stoptime": "2026-01-29T20:30:47+00:00"
+            }
+          ],
+          "scoreA": 1,
+          "scoreB": 4,
+          "setNo": 2
+        },
+        {
+          "frames": [
+            {
+              "break": 0,
+              "frameNo": 1,
+              "highBreaksA": "",
+              "highBreaksB": "",
+              "inningsA": 0,
+              "inningsB": 0,
+              "pointsA": 0,
+              "pointsB": 0,
+              "runoutA": 0,
+              "runoutB": 0,
+              "scoreA": 4,
+              "scoreB": 3,
+              "starttime": "2026-01-29T18:05:00+00:00",
+              "stoptime": "2026-01-29T20:30:47+00:00"
+            }
+          ],
+          "scoreA": 4,
+          "scoreB": 3,
+          "setNo": 3
+        }
+      ],
+      "starttime": "2026-01-29T19:05:00",
+      "stoptime": "2026-01-29T21:30:24",
+      "table": {
+        "branch": "American pool",
+        "branchId": 1,
+        "cloth": "",
+        "description": "",
+        "manufacturer": "Euro-tech",
+        "model": "Tournament Champion",
+        "name": "3",
+        "pockets": "",
+        "size": 9,
+        "slate": "",
+        "tableId": 57053251,
+        "venue": {
+          "image": "https://img.cuescore.com/image/7/3/7afb0a44c256a53b5e27b584e3c27e2f.png?t=1742222226",
+          "name": "Shooters",
+          "owner": {
+            "logo": "//img.cuescore.com/image/9/2/9b59b70e156f2f8d0f1a879411c6ffd1.png?t=1576160578",
+            "name": "Black Ball Events",
+            "organizationId": 7011764,
+            "profileColor": "000000",
+            "stub": "blackballevents",
+            "url": "https://cuescore.com/blackballevents"
+          },
+          "url": "https://cuescore.com/venue/Shooters/57050170",
+          "venueId": 57050170
+        }
+      },
+      "tournamentId": 75549478,
+      "useInnings": false,
+      "videoLink": "",
+      "winnerNext": 3
+    },
+    {
+      "bestOfSets": 3,
+      "branch": 1,
+      "challengeId": 0,
+      "comment": "",
+      "curVersion": 49,
+      "discipline": "Multiball",
+      "disciplineId": 10,
+      "frames": [],
+      "groupNo": 0,
+      "highBreaksA": "",
+      "highBreaksB": "",
+      "inningsPlayerA": 0,
+      "inningsPlayerB": 0,
+      "lagWinner": "",
+      "loserNext": "",
+      "matchId": 75549508,
+      "matchType": 0,
+      "matchno": 3,
+      "matchstatus": "finished",
+      "matchstatusCode": 2,
+      "notes": [],
+      "penalty": 0,
+      "playerA": {
+        "country": {
+          "alpha3": "MKD",
+          "continent": "Europe",
+          "image": "https://cuescore.com/img/flags/png-country-4x2-none/res-640x480/mk.png",
+          "name": "North Macedonia"
+        },
+        "firstname": "Dimitar",
+        "image": "https://img.cuescore.com/image/0/4/0b6d39576a1463c62d0af75e56d546bb.png?t=1747656476",
+        "lastname": "Dimitrovski",
+        "name": "Dimitar Dimitrovski",
+        "playerId": 59859109,
+        "represents": [],
+        "url": "https://cuescore.com/player/Dimitar+Dimitrovski/59859109"
+      },
+      "playerB": {
+        "country": {
+          "alpha3": "POL",
+          "continent": "Europe",
+          "image": "https://cuescore.com/img/flags/png-country-4x2-none/res-640x480/pl.png",
+          "name": "Poland"
+        },
+        "firstname": "Radosław F.",
+        "image": "https://img.cuescore.com/image/3/4/3db0e82c321abfff746b9867e98f8e41.png?t=1731667215",
+        "lastname": "Kos",
+        "name": "Radosław F. Kos",
+        "playerId": 4720099,
+        "represents": [],
+        "url": "https://cuescore.com/player/Rados%C5%82aw+F.+Kos/4720099"
+      },
+      "properties": {
+        "penalty": []
+      },
+      "raceTo": 2,
+      "round": 2,
+      "roundName": "Final",
+      "runoutsA": 0,
+      "runoutsB": 0,
+      "scoreA": 1,
+      "scoreB": 2,
+      "sets": [
+        {
+          "frames": [
+            {
+              "break": 0,
+              "frameNo": 1,
+              "highBreaksA": "",
+              "highBreaksB": "",
+              "inningsA": 0,
+              "inningsB": 0,
+              "pointsA": 0,
+              "pointsB": 0,
+              "runoutA": 0,
+              "runoutB": 0,
+              "scoreA": 0,
+              "scoreB": 3,
+              "starttime": "2026-01-29T20:49:00+00:00",
+              "stoptime": "2026-01-29T22:38:01+00:00"
+            }
+          ],
+          "scoreA": 0,
+          "scoreB": 3,
+          "setNo": 1
+        },
+        {
+          "frames": [
+            {
+              "break": 0,
+              "frameNo": 1,
+              "highBreaksA": "",
+              "highBreaksB": "",
+              "inningsA": 0,
+              "inningsB": 0,
+              "pointsA": 0,
+              "pointsB": 0,
+              "runoutA": 0,
+              "runoutB": 0,
+              "scoreA": 4,
+              "scoreB": 3,
+              "starttime": "2026-01-29T20:49:00+00:00",
+              "stoptime": "2026-01-29T22:38:01+00:00"
+            }
+          ],
+          "scoreA": 4,
+          "scoreB": 3,
+          "setNo": 2
+        },
+        {
+          "frames": [
+            {
+              "break": 0,
+              "frameNo": 1,
+              "highBreaksA": "",
+              "highBreaksB": "",
+              "inningsA": 0,
+              "inningsB": 0,
+              "pointsA": 0,
+              "pointsB": 0,
+              "runoutA": 0,
+              "runoutB": 0,
+              "scoreA": 1,
+              "scoreB": 4,
+              "starttime": "2026-01-29T20:49:00+00:00",
+              "stoptime": "2026-01-29T22:38:01+00:00"
+            }
+          ],
+          "scoreA": 1,
+          "scoreB": 4,
+          "setNo": 3
+        }
+      ],
+      "starttime": "2026-01-29T21:49:00",
+      "stoptime": "2026-01-29T23:38:26",
+      "table": {
+        "branch": "American pool",
+        "branchId": 1,
+        "cloth": "",
+        "description": "",
+        "manufacturer": "Euro-tech",
+        "model": "Tournament Champion",
+        "name": "3",
+        "pockets": "",
+        "size": 9,
+        "slate": "",
+        "tableId": 57053251,
+        "venue": {
+          "image": "https://img.cuescore.com/image/7/3/7afb0a44c256a53b5e27b584e3c27e2f.png?t=1742222226",
+          "name": "Shooters",
+          "owner": {
+            "logo": "//img.cuescore.com/image/9/2/9b59b70e156f2f8d0f1a879411c6ffd1.png?t=1576160578",
+            "name": "Black Ball Events",
+            "organizationId": 7011764,
+            "profileColor": "000000",
+            "stub": "blackballevents",
+            "url": "https://cuescore.com/blackballevents"
+          },
+          "url": "https://cuescore.com/venue/Shooters/57050170",
+          "venueId": 57050170
+        }
+      },
+      "tournamentId": 75549478,
+      "useInnings": false,
+      "videoLink": "",
+      "winnerNext": ""
+    }
+  ],
+  "name": "II Warszawska Liga Bilardowa - play off",
+  "organizers": [
+    {
+      "logo": "//img.cuescore.com/image/9/2/9b59b70e156f2f8d0f1a879411c6ffd1.png?t=1576160578",
+      "name": "Black Ball Events",
+      "organizationId": 7011764,
+      "profileColor": "000000",
+      "stub": "blackballevents",
+      "url": "https://cuescore.com/blackballevents"
+    }
+  ],
+  "owner": {
+    "logo": "//img.cuescore.com/image/9/2/9b59b70e156f2f8d0f1a879411c6ffd1.png?t=1576160578",
+    "name": "Black Ball Events",
+    "organizationId": 7011764,
+    "profileColor": "000000",
+    "stub": "blackballevents",
+    "url": "https://cuescore.com/blackballevents"
+  },
+  "preseeds": {
+    "15492220": 2,
+    "20516572": 1,
+    "4720099": 3,
+    "59859109": 4
+  },
+  "rankings": [],
+  "sequence": 0,
+  "standings": [],
+  "starttime": "2026-01-29T19:00:00+01:00",
+  "status": "Finished",
+  "statusCode": 2,
+  "stoptime": "2026-01-29T23:00:00+01:00",
+  "timezone": "Europe/Warsaw",
+  "tournamentId": 75549478,
+  "type": 0,
+  "url": "https://cuescore.com/tournament/II+Warszawska+Liga+Bilardowa+-+play+off/75549478",
+  "venues": [
+    {
+      "image": "https://img.cuescore.com/image/7/3/7afb0a44c256a53b5e27b584e3c27e2f.png?t=1742222226",
+      "name": "Shooters",
+      "owner": {
+        "logo": "//img.cuescore.com/image/9/2/9b59b70e156f2f8d0f1a879411c6ffd1.png?t=1576160578",
+        "name": "Black Ball Events",
+        "organizationId": 7011764,
+        "profileColor": "000000",
+        "stub": "blackballevents",
+        "url": "https://cuescore.com/blackballevents"
+      },
+      "url": "https://cuescore.com/venue/Shooters/57050170",
+      "venueId": 57050170
+    }
+  ],
+  "videos": []
+}

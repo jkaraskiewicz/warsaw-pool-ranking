@@ -1,6 +1,55 @@
 # Changelog
 
-## 2025-11-20 - Initial Release
+## 2025-12-26 - Rust Rewrite
+
+### Changed
+- **Complete backend rewrite** from Python/FastAPI to Rust/Axum
+- **Database migration** from PostgreSQL to SQLite (embedded, portable)
+- **Architecture refactoring** following Repository Pattern and SOLID principles
+
+### Added
+- **CLI Commands**: tournaments, rankings, avatars, database, serve
+- **Avatar System**: WebP encoding with hash-based change detection, multiple sizes
+- **Admin Panel**: Password-protected with background refresh jobs
+- **Head-to-Head Comparison**: Direct player matchup analysis
+- **Rivalry Analysis**: "Nemesis" (lowest win %) and "Bunny" (highest win %) stats
+- **Filter DSL**: Advanced player queries with syntax like `rating:>600 matches:>50`
+- **Time Decay Weighting**: 3-year half-life (recent games weighted more)
+- **Interested Players**: Bookmark players for quick access
+- **Dark/Light Theme**: Persistent user preference
+- **i18n Support**: English and Polish translations
+
+### Technical Improvements
+- Zero clippy warnings (`cargo clippy -- -D warnings`)
+- Repository Pattern (5 repositories: Player, Game, Rating, Tournament, Avatar)
+- Service Layer with specialized processors (<100 lines each)
+- Batch queries preventing N+1 problems
+- Configuration-driven design (AppConfig with DI)
+- r2d2 connection pooling (10 connections)
+- Protobuf for API type definitions
+
+### API Endpoints
+- `GET /api/players` - Paginated rankings with filtering, sorting
+- `GET /api/player/{id}` - Player details with stats
+- `GET /api/compare/{id1}/{id2}` - Head-to-head comparison
+- `GET /api/player/{id}/rivalries` - Nemesis & Bunny analysis
+- `GET /api/avatars/{id}/{size}` - WebP avatar images
+- `POST /api/admin/login` - Authentication
+- `POST /api/admin/refresh` - Trigger data sync (async background)
+- `POST /api/admin/refresh-avatars` - Trigger avatar refresh
+
+### Frontend Improvements
+- Angular 17 standalone components (no NgModules)
+- Signal inputs (`input<T>()`) with OnPush change detection
+- Modern control flow (`@if`, `@for`, `@switch`)
+- Skeleton loading placeholders
+- Reusable AvatarComponent and RatingTypeSelectorComponent
+
+---
+
+## 2025-11-20 - Initial Release (Python - Superseded)
+
+> **Note:** This version was completely replaced by the Rust rewrite above.
 
 ### Added
 - Complete Warsaw Pool Rankings system
@@ -10,7 +59,6 @@
 - FastAPI backend with RESTful API
 - PostgreSQL database schema
 - Docker deployment configuration
-- Comprehensive test suite (48 unit tests)
 
 ### Venues Configured (9 Warsaw venues)
 1. 147 Break Zamieniecka
@@ -57,8 +105,3 @@
 - DATABASE_SETUP.md - Manual database setup
 - DESIGN.md - System architecture and design decisions
 - Makefile - Convenient commands for Docker operations
-
-### Testing
-- 48 unit tests for rating algorithm
-- Parser tests including discipline filtering
-- Coverage for calculator, time decay, confidence, and parser modules

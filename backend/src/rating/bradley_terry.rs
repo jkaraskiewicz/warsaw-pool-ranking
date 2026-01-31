@@ -189,3 +189,247 @@ fn build_player_ratings(
 
     ratings
 }
+
+#[cfg(test)]
+mod tests {
+    use super::*;
+    use crate::config::settings::RatingSettings;
+
+    fn test_config() -> RatingSettings {
+        RatingSettings {
+            starter_rating: 500.0,
+            virtual_games_weight: 5.0,
+            min_ranked_games: 10,
+            established_games: 200,
+            convergence_tolerance: 1e-6,
+            max_iterations: 100,
+            periods: vec![],
+        }
+    }
+
+    #[test]
+    fn test_two_player_equal_results() {
+        // Two players who split games evenly should have similar ratings
+        let games = vec![
+            GameResult { winner_id: 1, loser_id: 2, weight: 1.0 },
+            GameResult { winner_id: 2, loser_id: 1, weight: 1.0 },
+        ];
+        let mut config = test_config();
+        config.min_ranked_games = 1;
+
+        let ratings = calculate_ratings(&games, &config);
+        assert_eq!(ratings.len(), 2);
+
+        let r1 = ratings.iter().find(|r| r.player_id == 1).unwrap();
+        let r2 = ratings.iter().find(|r| r.player_id == 2).unwrap();
+
+        // Ratings should be approximately equal
+        assert!(
+            (r1.rating - r2.rating).abs() < 10.0,
+            "Equal results should yield similar ratings: {} vs {}",
+            r1.rating,
+            r2.rating
+        );
+    }
+
+    #[test]
+    fn test_dominant_player_higher_rating() {
+        // Player 1 wins all games against player 2
+        let games = vec![
+            GameResult { winner_id: 1, loser_id: 2, weight: 1.0 },
+            GameResult { winner_id: 1, loser_id: 2, weight: 1.0 },
+            GameResult { winner_id: 1, loser_id: 2, weight: 1.0 },
+            GameResult { winner_id: 1, loser_id: 2, weight: 1.0 },
+        ];
+        let mut config = test_config();
+        config.min_ranked_games = 1;
+
+        let ratings = calculate_ratings(&games, &config);
+        let r1 = ratings.iter().find(|r| r.player_id == 1).unwrap();
+        let r2 = ratings.iter().find(|r| r.player_id == 2).unwrap();
+
+        assert!(
+            r1.rating > r2.rating,
+            "Dominant player should have higher rating: {} vs {}",
+            r1.rating,
+            r2.rating
+        );
+    }
+
+    #[test]
+    fn test_2_to_1_odds_approx_100_points() {
+        // If player A beats B twice as often, rating difference should be ~100 points
+        // Create 400 games: A wins 267, B wins 133 (2:1 ratio)
+        // We need many games to overcome blending and virtual games effects
+        let mut games = Vec::new();
+        for _ in 0..267 {
+            games.push(GameResult { winner_id: 1, loser_id: 2, weight: 1.0 });
+        }
+        for _ in 0..133 {
+            games.push(GameResult { winner_id: 2, loser_id: 1, weight: 1.0 });
+        }
+
+        let mut config = test_config();
+        config.min_ranked_games = 1;
+        config.established_games = 200; // Both players have 400 games, above threshold
+        config.virtual_games_weight = 1.0; // Reduce virtual games impact
+
+        let ratings = calculate_ratings(&games, &config);
+        let r1 = ratings.iter().find(|r| r.player_id == 1).unwrap();
+        let r2 = ratings.iter().find(|r| r.player_id == 2).unwrap();
+
+        let diff = r1.rating - r2.rating;
+        // 2:1 odds = ~100 point difference (with tolerance for virtual games)
+        // The theoretical 100 points is moderated by virtual games anchoring
+        assert!(
+            diff > 50.0 && diff < 150.0,
+            "2:1 win ratio should yield ~100 point difference, got {}",
+            diff
+        );
+    }
+
+    #[test]
+    fn test_circular_results_convergence() {
+        // A beats B, B beats C, C beats A - algorithm should still converge
+        let games = vec![
+            GameResult { winner_id: 1, loser_id: 2, weight: 1.0 },
+            GameResult { winner_id: 2, loser_id: 3, weight: 1.0 },
+            GameResult { winner_id: 3, loser_id: 1, weight: 1.0 },
+        ];
+        let mut config = test_config();
+        config.min_ranked_games = 1;
+
+        let ratings = calculate_ratings(&games, &config);
+        assert_eq!(ratings.len(), 3);
+
+        // All three should have similar ratings due to circular dominance
+        let r1 = ratings.iter().find(|r| r.player_id == 1).unwrap().rating;
+        let r2 = ratings.iter().find(|r| r.player_id == 2).unwrap().rating;
+        let r3 = ratings.iter().find(|r| r.player_id == 3).unwrap().rating;
+
+        assert!((r1 - r2).abs() < 50.0, "Circular results should balance out");
+        assert!((r2 - r3).abs() < 50.0, "Circular results should balance out");
+    }
+
+    #[test]
+    fn test_ratings_center_around_starter() {
+        // Virtual games anchor ratings around the starter rating (500)
+        let games = vec![
+            GameResult { winner_id: 1, loser_id: 2, weight: 1.0 },
+            GameResult { winner_id: 2, loser_id: 3, weight: 1.0 },
+            GameResult { winner_id: 3, loser_id: 4, weight: 1.0 },
+        ];
+        let mut config = test_config();
+        config.min_ranked_games = 1;
+        config.established_games = 500;
+
+        let ratings = calculate_ratings(&games, &config);
+        let avg_rating: f64 = ratings.iter().map(|r| r.rating).sum::<f64>() / ratings.len() as f64;
+
+        // Average should be close to starter rating (500) due to virtual games
+        assert!(
+            (avg_rating - 500.0).abs() < 100.0,
+            "Average rating should be near 500, got {}",
+            avg_rating
+        );
+    }
+
+    #[test]
+    fn test_min_games_threshold() {
+        // Player with fewer than min_ranked_games gets starter rating
+        let games = vec![
+            GameResult { winner_id: 1, loser_id: 2, weight: 1.0 },
+        ];
+        let config = test_config(); // min_ranked_games = 10
+
+        let ratings = calculate_ratings(&games, &config);
+        let r1 = ratings.iter().find(|r| r.player_id == 1).unwrap();
+
+        // With only 1 game (below threshold of 10), should get starter rating
+        assert_eq!(
+            r1.rating, 500.0,
+            "Player below min_ranked_games should have starter rating"
+        );
+    }
+
+    #[test]
+    fn test_blending_for_few_games() {
+        // Players with games between min_ranked and established get blended ratings
+        let mut games = Vec::new();
+        // Player 1 wins 50 games against player 2 (above min, below established)
+        for _ in 0..50 {
+            games.push(GameResult { winner_id: 1, loser_id: 2, weight: 1.0 });
+        }
+
+        let mut config = test_config();
+        config.min_ranked_games = 10;
+        config.established_games = 200;
+
+        let ratings = calculate_ratings(&games, &config);
+        let r1 = ratings.iter().find(|r| r.player_id == 1).unwrap();
+
+        // With blending, even a dominant player is pulled toward 500
+        // The pure ML rating would be much higher, but blending moderates it
+        assert!(
+            r1.rating > 500.0 && r1.rating < 700.0,
+            "Blended rating should be moderate, got {}",
+            r1.rating
+        );
+    }
+
+    #[test]
+    fn test_games_count_tracked() {
+        let games = vec![
+            GameResult { winner_id: 1, loser_id: 2, weight: 1.0 },
+            GameResult { winner_id: 1, loser_id: 3, weight: 1.0 },
+            GameResult { winner_id: 2, loser_id: 3, weight: 1.0 },
+        ];
+        let config = test_config();
+
+        let ratings = calculate_ratings(&games, &config);
+        let r1 = ratings.iter().find(|r| r.player_id == 1).unwrap();
+        let r2 = ratings.iter().find(|r| r.player_id == 2).unwrap();
+        let r3 = ratings.iter().find(|r| r.player_id == 3).unwrap();
+
+        assert_eq!(r1.games_played, 2, "Player 1 played 2 games");
+        assert_eq!(r2.games_played, 2, "Player 2 played 2 games");
+        assert_eq!(r3.games_played, 2, "Player 3 played 2 games");
+    }
+
+    #[test]
+    fn test_confidence_level_assigned() {
+        let mut games = Vec::new();
+        // Player 1 plays 200+ games (Established)
+        for _ in 0..200 {
+            games.push(GameResult { winner_id: 1, loser_id: 2, weight: 1.0 });
+        }
+
+        let mut config = test_config();
+        config.min_ranked_games = 1;
+
+        let ratings = calculate_ratings(&games, &config);
+        let r1 = ratings.iter().find(|r| r.player_id == 1).unwrap();
+        let r2 = ratings.iter().find(|r| r.player_id == 2).unwrap();
+
+        assert_eq!(r1.confidence_level, ConfidenceLevel::Established);
+        assert_eq!(r2.confidence_level, ConfidenceLevel::Established);
+    }
+
+    #[test]
+    fn test_rating_clamped_to_range() {
+        // Even with extreme results, ratings should stay in 0-2000 range
+        let mut games = Vec::new();
+        for _ in 0..500 {
+            games.push(GameResult { winner_id: 1, loser_id: 2, weight: 1.0 });
+        }
+
+        let mut config = test_config();
+        config.min_ranked_games = 1;
+        config.established_games = 1000;
+
+        let ratings = calculate_ratings(&games, &config);
+        for r in &ratings {
+            assert!(r.rating >= 0.0 && r.rating <= 2000.0, "Rating {} out of range", r.rating);
+        }
+    }
+}

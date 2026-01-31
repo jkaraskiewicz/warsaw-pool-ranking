@@ -52,3 +52,44 @@ pub struct GameResult {
     pub loser_id: PlayerId,
     pub weight: f64,
 }
+
+#[cfg(test)]
+mod tests {
+    use super::*;
+
+    #[test]
+    fn test_confidence_level_unranked_below_10() {
+        assert_eq!(ConfidenceLevel::from_games_played(0), ConfidenceLevel::Unranked);
+        assert_eq!(ConfidenceLevel::from_games_played(5), ConfidenceLevel::Unranked);
+        assert_eq!(ConfidenceLevel::from_games_played(9), ConfidenceLevel::Unranked);
+    }
+
+    #[test]
+    fn test_confidence_level_provisional_10_to_49() {
+        assert_eq!(ConfidenceLevel::from_games_played(10), ConfidenceLevel::Provisional);
+        assert_eq!(ConfidenceLevel::from_games_played(25), ConfidenceLevel::Provisional);
+        assert_eq!(ConfidenceLevel::from_games_played(49), ConfidenceLevel::Provisional);
+    }
+
+    #[test]
+    fn test_confidence_level_emerging_50_to_199() {
+        assert_eq!(ConfidenceLevel::from_games_played(50), ConfidenceLevel::Emerging);
+        assert_eq!(ConfidenceLevel::from_games_played(100), ConfidenceLevel::Emerging);
+        assert_eq!(ConfidenceLevel::from_games_played(199), ConfidenceLevel::Emerging);
+    }
+
+    #[test]
+    fn test_confidence_level_established_200_plus() {
+        assert_eq!(ConfidenceLevel::from_games_played(200), ConfidenceLevel::Established);
+        assert_eq!(ConfidenceLevel::from_games_played(500), ConfidenceLevel::Established);
+        assert_eq!(ConfidenceLevel::from_games_played(1000), ConfidenceLevel::Established);
+    }
+
+    #[test]
+    fn test_confidence_level_as_str() {
+        assert_eq!(ConfidenceLevel::Unranked.as_str(), "unranked");
+        assert_eq!(ConfidenceLevel::Provisional.as_str(), "provisional");
+        assert_eq!(ConfidenceLevel::Emerging.as_str(), "emerging");
+        assert_eq!(ConfidenceLevel::Established.as_str(), "established");
+    }
+}

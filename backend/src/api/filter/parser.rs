@@ -139,4 +139,137 @@ mod tests {
         let result = parse_filter_dsl("id:in:");
         assert!(result.is_err());
     }
+
+    // Additional tests
+
+    #[test]
+    fn test_parse_all_comparison_operators() {
+        let test_cases = vec![
+            ("rating:gt:600", FilterOperator::Gt),
+            ("rating:gte:600", FilterOperator::Gte),
+            ("rating:lt:400", FilterOperator::Lt),
+            ("rating:lte:400", FilterOperator::Lte),
+            ("name:ne:John", FilterOperator::Ne),
+        ];
+
+        for (input, expected_op) in test_cases {
+            let result = parse_filter_dsl(input);
+            assert!(result.is_ok(), "Failed to parse: {}", input);
+            let exprs = result.unwrap();
+            assert_eq!(exprs[0].operator, expected_op, "Wrong operator for: {}", input);
+        }
+    }
+
+    #[test]
+    fn test_parse_contains_operator() {
+        let result = parse_filter_dsl("name:contains:ski");
+        assert!(result.is_ok());
+        let exprs = result.unwrap();
+        assert_eq!(exprs[0].operator, FilterOperator::Contains);
+        match &exprs[0].value {
+            FilterValue::Single(s) => assert_eq!(s, "ski"),
+            _ => panic!("Expected single value"),
+        }
+    }
+
+    #[test]
+    fn test_parse_not_contains_operator() {
+        let result = parse_filter_dsl("name:not_contains:test");
+        assert!(result.is_ok());
+        let exprs = result.unwrap();
+        assert_eq!(exprs[0].operator, FilterOperator::NotContains);
+    }
+
+    #[test]
+    fn test_parse_not_in_operator() {
+        let result = parse_filter_dsl("id:not_in:1,2,3");
+        assert!(result.is_ok());
+        let exprs = result.unwrap();
+        assert_eq!(exprs[0].operator, FilterOperator::NotIn);
+        match &exprs[0].value {
+            FilterValue::List(list) => {
+                assert_eq!(list.len(), 3);
+                assert_eq!(list[0], "1");
+                assert_eq!(list[1], "2");
+                assert_eq!(list[2], "3");
+            }
+            _ => panic!("Expected list value"),
+        }
+    }
+
+    #[test]
+    fn test_parse_in_with_whitespace() {
+        let result = parse_filter_dsl("id:in: 1 , 2 , 3 ");
+        assert!(result.is_ok());
+        let exprs = result.unwrap();
+        match &exprs[0].value {
+            FilterValue::List(list) => {
+                assert_eq!(list.len(), 3);
+                // Values should be trimmed
+                assert_eq!(list[0], "1");
+                assert_eq!(list[1], "2");
+                assert_eq!(list[2], "3");
+            }
+            _ => panic!("Expected list value"),
+        }
+    }
+
+    #[test]
+    fn test_parse_three_expressions() {
+        let result = parse_filter_dsl("rating:gt:500|name:contains:a|games:gte:10");
+        assert!(result.is_ok());
+        let exprs = result.unwrap();
+        assert_eq!(exprs.len(), 3);
+        assert_eq!(exprs[0].field, "rating");
+        assert_eq!(exprs[1].field, "name");
+        assert_eq!(exprs[2].field, "games");
+    }
+
+    #[test]
+    fn test_parse_too_many_values_in_list() {
+        // Build a list with 101 values (exceeds max of 100)
+        let values: Vec<String> = (1..=101).map(|i| i.to_string()).collect();
+        let input = format!("id:in:{}", values.join(","));
+        let result = parse_filter_dsl(&input);
+        assert!(result.is_err());
+        let err_msg = result.unwrap_err().to_string();
+        assert!(err_msg.contains("Too many values"));
+    }
+
+    #[test]
+    fn test_parse_preserves_field_case() {
+        let result = parse_filter_dsl("RatingType:eq:all");
+        assert!(result.is_ok());
+        let exprs = result.unwrap();
+        assert_eq!(exprs[0].field, "RatingType");
+    }
+
+    #[test]
+    fn test_parse_value_with_special_chars() {
+        let result = parse_filter_dsl("name:contains:O'Brien");
+        assert!(result.is_ok());
+        let exprs = result.unwrap();
+        match &exprs[0].value {
+            FilterValue::Single(s) => assert_eq!(s, "O'Brien"),
+            _ => panic!("Expected single value"),
+        }
+    }
+
+    #[test]
+    fn test_filter_value_as_single() {
+        let single = FilterValue::Single("test".to_string());
+        assert_eq!(single.as_single().unwrap(), "test");
+
+        let list = FilterValue::List(vec!["a".to_string()]);
+        assert!(list.as_single().is_err());
+    }
+
+    #[test]
+    fn test_filter_value_as_list() {
+        let list = FilterValue::List(vec!["a".to_string(), "b".to_string()]);
+        assert_eq!(list.as_list().unwrap(), &["a".to_string(), "b".to_string()]);
+
+        let single = FilterValue::Single("test".to_string());
+        assert!(single.as_list().is_err());
+    }
 }
