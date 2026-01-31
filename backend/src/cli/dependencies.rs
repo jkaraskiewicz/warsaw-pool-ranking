@@ -112,6 +112,11 @@ impl OperationOrchestrator {
         }
     }
 
+    /// Execute a single resource refresh (no dependency resolution)
+    pub async fn execute(&self, resource: Resource) -> Result<()> {
+        self.execute_refresh(resource).await
+    }
+
     /// Execute refresh operation with dependency resolution
     pub async fn refresh_with_deps(&self, resource: Resource, force: bool) -> Result<()> {
         if force {
@@ -144,8 +149,7 @@ impl OperationOrchestrator {
                 service.run()
             },
             Resource::Avatars => {
-                // Call handler directly
-                crate::cli::handlers::avatars::execute_avatar_refresh(None).await
+                crate::services::avatar_service::refresh_all_avatars().await
             },
             Resource::Database => {
                 anyhow::bail!("Database is not a refreshable resource")

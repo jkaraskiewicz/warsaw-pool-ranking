@@ -1,11 +1,13 @@
+pub mod backup;
+pub mod export;
+pub mod reset;
 pub mod serve;
-pub mod tournaments;
-pub mod rankings;
-pub mod avatars;
-pub mod database;
+pub mod status;
+pub mod sync;
 
+pub use backup::{handle_backup, handle_restore};
+pub use export::handle_export;
+pub use reset::handle_reset;
 pub use serve::handle_serve;
-pub use tournaments::handle_tournament_command;
-pub use rankings::handle_ranking_command;
-pub use avatars::handle_avatar_command;
-pub use database::handle_database_command;
+pub use status::handle_status;
+pub use sync::handle_sync;

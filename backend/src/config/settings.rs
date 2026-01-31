@@ -28,9 +28,6 @@ impl Default for RatingSettings {
                 RatingPeriod { name: "all".to_string(), years: None },
                 RatingPeriod { name: "1y".to_string(), years: Some(1) },
                 RatingPeriod { name: "2y".to_string(), years: Some(2) },
-                RatingPeriod { name: "3y".to_string(), years: Some(3) },
-                RatingPeriod { name: "4y".to_string(), years: Some(4) },
-                RatingPeriod { name: "5y".to_string(), years: Some(5) },
             ],
         }
     }

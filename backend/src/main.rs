@@ -1,10 +1,10 @@
 use anyhow::Result;
 
-use warsaw_pool_ranking::cli::Command;
 use warsaw_pool_ranking::cli::handlers::{
-    handle_serve, handle_tournament_command, handle_ranking_command,
-    handle_avatar_command, handle_database_command,
+    handle_backup, handle_export, handle_reset, handle_restore, handle_serve, handle_status,
+    handle_sync,
 };
+use warsaw_pool_ranking::cli::Command;
 use warsaw_pool_ranking::interpret;
 
 fn main() {
@@ -30,10 +30,16 @@ fn execute_command(command: Command) -> Result<()> {
     runtime.block_on(async {
         match command {
             Command::Serve { port } => handle_serve(port).await,
-            Command::Tournaments(cmd) => handle_tournament_command(cmd).await,
-            Command::Rankings(cmd) => handle_ranking_command(cmd).await,
-            Command::Avatars(cmd) => handle_avatar_command(cmd).await,
-            Command::Database(cmd) => handle_database_command(cmd).await,
+            Command::Sync { step, force } => handle_sync(step, force).await,
+            Command::Status => handle_status().await,
+            Command::Export {
+                output,
+                r#type,
+                format,
+            } => handle_export(output, r#type, format).await,
+            Command::Reset { keep_cache, yes } => handle_reset(keep_cache, yes).await,
+            Command::Backup { to } => handle_backup(to).await,
+            Command::Restore { from, yes } => handle_restore(from, yes).await,
         }
     })
 }

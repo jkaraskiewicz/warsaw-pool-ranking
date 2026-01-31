@@ -1,8 +1,9 @@
 pub mod avatar_processor;
-pub mod ingestion;
-pub mod processing;
-pub mod server;
-pub mod player_service;
-pub mod tournament_processor;
+pub mod avatar_service;
 pub mod game_processor;
+pub mod ingestion;
+pub mod player_service;
+pub mod processing;
 pub mod rating_processor;
+pub mod server;
+pub mod tournament_processor;

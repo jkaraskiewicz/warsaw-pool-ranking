@@ -13,6 +13,18 @@ use crate::domain::ExpandedGame;
 use crate::fetchers::cuescore_models::TournamentResponse;
 use crate::services::{tournament_processor::TournamentProcessor, game_processor::GameProcessor, rating_processor::RatingProcessor};
 
+/// Holds avatar data during database reset
+struct AvatarBackup {
+    player_cuescore_id: i64,
+    size: String,
+    image_data: Vec<u8>,
+    format: String,
+    source_url: String,
+    source_url_hash: String,
+    width: i32,
+    height: i32,
+}
+
 pub struct ProcessingService {
     config: AppConfig,
     cache: Cache,
@@ -38,8 +50,11 @@ impl ProcessingService {
             std::fs::remove_file(&temp_db_path)?;
         }
 
+        // Backup avatars from the REAL database before processing
+        let avatar_backup = self.backup_avatars_from_real_db(&db_path)?;
+
         // Process to temp DB
-        self.process_to_db(&temp_db_path)?;
+        self.process_to_db(&temp_db_path, &avatar_backup)?;
 
         // Atomic swap
         std::fs::rename(&temp_db_path, &db_path)?;
@@ -49,7 +64,50 @@ impl ProcessingService {
         Ok(())
     }
 
-    fn process_to_db(&self, db_path: &str) -> Result<()> {
+    /// Backup avatars from the real database before processing
+    fn backup_avatars_from_real_db(&self, db_path: &str) -> Result<Vec<AvatarBackup>> {
+        if !Path::new(db_path).exists() {
+            return Ok(Vec::new());
+        }
+
+        let pool = database::create_pool(db_path)?;
+        let conn = pool.get()?;
+
+        // Check if avatars table exists
+        let table_exists: i64 = conn.query_row(
+            "SELECT COUNT(*) FROM sqlite_master WHERE type='table' AND name='avatars'",
+            [],
+            |r| r.get(0),
+        )?;
+
+        if table_exists == 0 {
+            return Ok(Vec::new());
+        }
+
+        let backup = conn
+            .prepare(
+                "SELECT player_cuescore_id, size, image_data, format, source_url, source_url_hash, width, height
+                 FROM avatars",
+            )?
+            .query_map([], |row| {
+                Ok(AvatarBackup {
+                    player_cuescore_id: row.get(0)?,
+                    size: row.get(1)?,
+                    image_data: row.get(2)?,
+                    format: row.get(3)?,
+                    source_url: row.get(4)?,
+                    source_url_hash: row.get(5)?,
+                    width: row.get(6)?,
+                    height: row.get(7)?,
+                })
+            })?
+            .collect::<Result<Vec<_>, _>>()?;
+
+        info!("  → Backed up {} avatar records from existing database", backup.len());
+        Ok(backup)
+    }
+
+    fn process_to_db(&self, db_path: &str, avatar_backup: &[AvatarBackup]) -> Result<()> {
         // Ensure parent directory exists
         if let Some(parent) = Path::new(db_path).parent() {
             std::fs::create_dir_all(parent)
@@ -59,22 +117,15 @@ impl ProcessingService {
         let pool = database::create_pool(db_path)?;
         let mut conn = database::get_connection(&pool)?;
 
-        // Step 1: Backup existing avatars if database already exists
-        let existing_avatars = if Path::new(db_path).exists() {
-            Some(Self::backup_existing_avatars(&mut conn)?)
-        } else {
-            None
-        };
-
-        // Setup database schema - create avatars table FIRST
-        database::setup::create_avatars_table_if_missing(&mut conn)?;
+        // Setup database schema (fresh temp database)
         database::setup::reset_database(&mut conn)?;
-        info!("  → Database schema reset\n");
+        database::setup::create_avatars_table_if_missing(&mut conn)?;
+        info!("  → Database schema initialized\n");
 
-        // Step 2: Restore avatars from backup
-        if let Some(backup) = existing_avatars {
-            Self::restore_avatars(&mut conn, &backup)?;
-            info!("  → Restored {} avatars from previous session\n", backup.len());
+        // Restore avatars from backup (taken from real DB before processing)
+        if !avatar_backup.is_empty() {
+            Self::restore_avatars(&mut conn, avatar_backup)?;
+            info!("  → Restored {} avatar records\n", avatar_backup.len());
         }
 
         // Load tournaments from cache
@@ -210,38 +261,25 @@ impl ProcessingService {
         Ok(())
     }
 
-    /// Backup all avatars before database reset
-    fn backup_existing_avatars(conn: &mut DbConn) -> Result<Vec<(i64, String, Vec<u8>)>> {
-        use rusqlite::params;
-
-        let backup = conn
-            .prepare(
-                "SELECT player_cuescore_id, size, image_data, source_url, width, height 
-                 FROM avatars"
-            )?
-            .query_map(params![], |row| {
-                Ok((
-                    row.get::<_, i64>(0)?,
-                    row.get::<_, String>(1)?,
-                    row.get::<_, Vec<u8>>(2)?,
-                ))
-            })?
-            .collect::<Result<Vec<(i64, String, Vec<u8>)>, _>>()?;
-
-        Ok(backup)
-    }
-
     /// Restore avatars from backup after database reset
-    fn restore_avatars(conn: &mut DbConn, backup: &[(i64, String, Vec<u8>)]) -> Result<()> {
-        for (player_cuescore_id, size, image_data) in backup {
-            let sql = "INSERT OR REPLACE INTO avatars 
-                       (player_cuescore_id, size, image_data, source_url, source_url_hash, width, height, created_at, updated_at)
-                       VALUES (?1, ?2, ?3, 'restored', '', 0, 0, CURRENT_TIMESTAMP, CURRENT_TIMESTAMP)";
-
+    fn restore_avatars(conn: &mut DbConn, backup: &[AvatarBackup]) -> Result<()> {
+        for avatar in backup {
             conn.execute(
-                sql,
-                params![player_cuescore_id, size, image_data],
-            ).context("Failed to restore avatar")?;
+                "INSERT INTO avatars
+                 (player_cuescore_id, size, image_data, format, source_url, source_url_hash, width, height, created_at, updated_at)
+                 VALUES (?1, ?2, ?3, ?4, ?5, ?6, ?7, ?8, CURRENT_TIMESTAMP, CURRENT_TIMESTAMP)",
+                params![
+                    avatar.player_cuescore_id,
+                    avatar.size,
+                    avatar.image_data,
+                    avatar.format,
+                    avatar.source_url,
+                    avatar.source_url_hash,
+                    avatar.width,
+                    avatar.height,
+                ],
+            )
+            .context("Failed to restore avatar")?;
         }
 
         Ok(())
